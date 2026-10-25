@@ -549,3 +549,17 @@
 1266	Numéro d'urgence dans tous les pays du trajet : 112.
 1267	Vieux diesels interdits dans l'agglomération de 08:30 à 18:30 en semaine : garez-vous avant le panneau d'entrée
 1268	Lun. 28 déc. : les vieux diesels sont interdits de 08:30 à 18:30 dans les communes de la plaine du Pô, Comacchio compris : voir Règles
+1269	Par catégorie
+1270	Par jour
+1271	Par pays
+1272	Pneus, chaînes et équipement obligatoire.
+1273	Papiers et frais
+1274	Documents, assurance et vignettes à acheter avant chaque frontière.
+1275	Où la voiture peut aller
+1276	Zones à faibles émissions et centres fermés.
+1277	Code de la route
+1278	Limitations de vitesse et feux.
+1279	Péages
+1280	Comment payer sur les autoroutes.
+1281	Cette voiture est un diesel Euro 0 sans vignette environnementale en Espagne ni Crit'Air en France : toute zone à faibles émissions la classe dans la catégorie la plus ancienne.
+1282	Tous

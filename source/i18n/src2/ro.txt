@@ -547,3 +547,17 @@
 1266	Numărul de urgență în toate țările de pe traseu: 112.
 1267	Dieselurile vechi sunt interzise în localitate 08:30–18:30 în zilele lucrătoare: parchează în afara indicatorului de localitate
 1268	Luni 28 dec.: dieselurile vechi sunt interzise 08:30–18:30 în localitățile din Câmpia Padului, inclusiv Comacchio: vezi Reguli
+1269	După categorie
+1270	Pe zile
+1271	Pe țări
+1272	Anvelope, lanțuri și trusa obligatorie.
+1273	Acte și taxe
+1274	Documente, asigurare și vinietele de cumpărat înainte de graniță.
+1275	Unde poate circula mașina
+1276	Zone cu emisii reduse și centre închise.
+1277	Legi de circulație
+1278	Limite de viteză și faruri.
+1279	Taxe de autostradă
+1280	Cum plătești pe autostrăzi.
+1281	Mașina e un diesel Euro 0, fără etichetă de mediu în Spania și fără Crit'Air în Franța, deci orice zonă cu emisii reduse o tratează ca pe cea mai veche categorie.
+1282	Toate

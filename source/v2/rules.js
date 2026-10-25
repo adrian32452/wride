@@ -87,3 +87,27 @@ const DAYRULES = {
   15: [['act', 'Romania: rovinietă from the border at the Iron Gates.'], ['watch', 'Romania: winter tyres if there is snow or ice.']],
   16: [['info', 'Bucharest: no low-emission zone yet.'], ['info', 'The rovinietă bought on Day 15 is still valid.']]
 };
+
+/* ---------- grouping by category ---------- */
+const RCATS = [
+  ['car', 'The car', 'Tyres, chains and the kit you must carry.'],
+  ['papers', 'Papers and fees', 'Documents, insurance and the vignettes to buy before a border.'],
+  ['zones', 'Where the car may go', 'Low-emission zones and closed town centres.'],
+  ['laws', 'Driving laws', 'Speed limits and headlights.'],
+  ['tolls', 'Tolls', 'How to pay on the motorways.']
+];
+const PREP_CAT = ['car', 'car', 'car', 'papers', 'papers'];
+function ruleCat(cc, kind) {
+  if (kind === 'winter' || kind === 'kit') return 'car';
+  if (kind === 'docs') return 'papers';
+  if (kind === 'toll') return (cc === 'SI' || cc === 'RO') ? 'papers' : 'tolls';
+  if (kind === 'speed') return 'laws';
+  return 'zones';
+}
+const LVORD = { act: 0, watch: 1, info: 2 };
+function rulesByCat() {
+  const out = {}; RCATS.forEach(([k]) => out[k] = []);
+  PREP.forEach((p, i) => out[PREP_CAT[i]].push({ cc: '', lv: p[0], t: p[1] }));
+  COUNTRIES.forEach(c => c.items.forEach(([kind, lv, t]) => out[ruleCat(c.cc, kind)].push({ cc: c.cc, lv, t })));
+  return out;
+}

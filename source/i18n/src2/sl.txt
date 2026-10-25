@@ -547,3 +547,17 @@
 1266	Številka za klic v sili v vseh državah na poti: 112.
 1267	Stari dizli so v naselju ob delavnikih prepovedani 08:30–18:30: parkirajte pred tablo naselja
 1268	Pon. 28. dec.: stari dizli so prepovedani 08:30–18:30 v naseljih Padske nižine, tudi v Comacchiu: glejte Pravila
+1269	Po kategorijah
+1270	Po dnevih
+1271	Po državah
+1272	Pnevmatike, verige in obvezna oprema.
+1273	Dokumenti in pristojbine
+1274	Dokumenti, zavarovanje in vinjete, ki jih kupite pred mejo.
+1275	Kam sme avto
+1276	Nizkoemisijske cone in zaprta mestna središča.
+1277	Prometna pravila
+1278	Omejitve hitrosti in luči.
+1279	Cestnine
+1280	Kako plačati na avtocestah.
+1281	Ta avto je dizel Euro 0 brez okoljske nalepke v Španiji in brez Crit'Air v Franciji, zato ga vsaka nizkoemisijska cona uvršča v najstarejšo kategorijo.
+1282	Vse

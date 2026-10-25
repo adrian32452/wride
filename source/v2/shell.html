@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>W123 Run V2</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -83,6 +84,17 @@ p { margin: 0; }
 .tab svg { width: 22px; height: 22px; }
 .tab span { max-width: 100%; padding: 0 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: -0.01em; }
 .rday { scroll-margin-top: 12px; }
+.seg3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: var(--panel-2); border-radius: 10px; padding: 3px; gap: 3px; margin: 4px 0 12px; }
+.seg3 button { min-height: 44px; border: 0; border-radius: 8px; background: none; font: 600 15px/1.1 var(--f-text); color: var(--ink-2); cursor: pointer; padding: 4px 2px; }
+.seg3 button[aria-pressed="true"] { background: var(--panel); color: var(--ink); box-shadow: 0 1px 2px #0003; }
+.rcat { padding-top: 6px; padding-bottom: 6px; }
+.rcat > summary { list-style: none; display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 12px; align-items: center; min-height: 64px; cursor: pointer; }
+.rcat > summary::-webkit-details-marker { display: none; }
+.rcat > summary b { font: 700 22px/1.15 var(--f-num); }
+.rcat[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 4px; }
+.rcount { font: 600 15px var(--f-num); color: var(--ink-2); }
+.rcat .cc { display: inline-block; min-width: 30px; padding: 2px 5px; margin-right: 4px; border-radius: 4px; background: var(--k-main); color: #fff; text-align: center; font: 700 13px/1.2 var(--f-num); vertical-align: 1px; }
+.cc.all { background: var(--ink-2); }
 .tab[aria-current="page"] { color: var(--ink); background: var(--panel-2); }
 .tab.rec { background: var(--needle); color: var(--needle-ink); }
 @media (min-width: 760px) { .tabbar { left: 50%; transform: translateX(-50%); max-width: 720px; border: 1px solid var(--line); border-bottom: 0; border-radius: 14px 14px 0 0; } }

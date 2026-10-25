@@ -547,3 +547,17 @@
 1266	Numero di emergenza in tutti i paesi del percorso: 112.
 1267	Vecchi diesel vietati nel centro abitato 08:30–18:30 nei giorni feriali: parcheggia prima del cartello di inizio centro abitato
 1268	Lun. 28 dic.: i vecchi diesel sono vietati 08:30–18:30 nei comuni della pianura padana, Comacchio compreso: vedi Regole
+1269	Per categoria
+1270	Per giorno
+1271	Per paese
+1272	Gomme, catene e dotazioni obbligatorie.
+1273	Documenti e tasse
+1274	Documenti, assicurazione e le vignette da comprare prima di ogni confine.
+1275	Dove può andare l'auto
+1276	Zone a basse emissioni e centri chiusi.
+1277	Codice della strada
+1278	Limiti di velocità e luci.
+1279	Pedaggi
+1280	Come pagare in autostrada.
+1281	Questa auto è un diesel Euro 0 senza bollino ambientale in Spagna né Crit'Air in Francia, quindi ogni zona a basse emissioni la tratta come la categoria più vecchia.
+1282	Tutti

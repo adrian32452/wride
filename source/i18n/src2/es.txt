@@ -547,3 +547,17 @@
 1266	Número de emergencias en todos los países de la ruta: 112.
 1267	Diésel antiguos prohibidos en el casco urbano de 08:30 a 18:30 los días laborables: aparca fuera del cartel de la localidad
 1268	Lun. 28 dic.: los diésel antiguos están prohibidos de 08:30 a 18:30 en los municipios de la llanura del Po, Comacchio incluido: ver Normas
+1269	Por categoría
+1270	Por día
+1271	Por país
+1272	Neumáticos, cadenas y el equipo obligatorio.
+1273	Papeles y tasas
+1274	Documentos, seguro y las viñetas que hay que comprar antes de cada frontera.
+1275	Por dónde puede ir el coche
+1276	Zonas de bajas emisiones y centros cerrados.
+1277	Normas de circulación
+1278	Límites de velocidad y luces.
+1279	Peajes
+1280	Cómo pagar en las autopistas.
+1281	Este coche es un diésel Euro 0 sin etiqueta ambiental en España ni Crit'Air en Francia, así que toda zona de bajas emisiones lo trata como la categoría más antigua.
+1282	Todos

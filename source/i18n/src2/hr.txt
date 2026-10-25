@@ -547,3 +547,17 @@
 1266	Broj za hitne slučajeve u svim zemljama na ruti: 112.
 1267	Stari dizelaši zabranjeni su u naselju radnim danima 08:30–18:30: parkirajte prije table naselja
 1268	Pon. 28. pros.: stari dizelaši zabranjeni su 08:30–18:30 u naseljima Padske nizine, uključujući Comacchio: vidi Pravila
+1269	Po kategorijama
+1270	Po danima
+1271	Po zemljama
+1272	Gume, lanci i obvezna oprema.
+1273	Dokumenti i pristojbe
+1274	Dokumenti, osiguranje i vinjete koje treba kupiti prije granice.
+1275	Kamo automobil smije
+1276	Niskoemisijske zone i zatvorena središta.
+1277	Prometni propisi
+1278	Ograničenja brzine i svjetla.
+1279	Cestarine
+1280	Kako platiti na autocestama.
+1281	Ovaj automobil je dizelaš Euro 0 bez ekološke naljepnice u Španjolskoj i bez Crit'Air u Francuskoj, pa ga svaka niskoemisijska zona svrstava u najstariju kategoriju.
+1282	Sve

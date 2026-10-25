@@ -264,21 +264,34 @@ const LVL = { act: 'act', watch: 'watch', info: 'ok' };
 const ruleRow = ([lv, txt]) => `<div class="lrow"><span class="lamp on ${LVL[lv]}"></span><span>${esc(T(txt))}</span></div>`;
 function renderRules() {
   const sel = VIEW.rulesDay || (tripDayNow() >= 1 && tripDayNow() <= 16 ? tripDayNow() : 0);
+  const by = VIEW.rulesBy || 'cat';
   let h = `<h1>${T('Rules on the road')}</h1><p class="note">${esc(T('Checked on {0} against official and reliable sources. Rules change: the news bulletin checks them again one or two days before each drive.', fmtDate(RULES_CHECKED)))}</p>`;
-  h += `<div class="block"><h2>${T('Before you leave')}</h2><div class="lamps">${PREP.map(ruleRow).join('')}</div></div>`;
-  h += `<div class="block"><h2>${T('Day by day')}</h2>` + TRIP.days.map(day => {
-    const d = day.d, items = DAYRULES[d] || [], worst = items.some(x => x[0] === 'act') ? 'act' : items.some(x => x[0] === 'watch') ? 'watch' : 'ok';
-    return `<details class="rday" id="rd${d}"${d === sel ? ' open' : ''}><summary>${stone(d)}<span><b>${day.from === day.to ? esc(T(day.title)) : `${esc(T(day.from))} → ${esc(T(day.to))}`}</b><br><small class="muted">${fmtDate(PLAN[d].date)}</small></span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(ruleRow).join('')}</div></details>`;
-  }).join('') + `</div>`;
-  h += `<div class="block"><h2>${T('Country by country')}</h2>` + COUNTRIES.map(c => {
-    const kinds = [...new Set(c.items.map(i => i[0]))];
-    return `<details class="rcountry"><summary><span class="cc">${c.cc}</span><b>${esc(T(c.n))}</b></summary>` +
-      kinds.map(k => `<h3>${esc(T(RKIND[k]))}</h3><div class="lamps">${c.items.filter(i => i[0] === k).map(i => ruleRow([i[1], i[2]])).join('')}</div>`).join('') +
-      (c.src.length ? `<p class="small muted">${T('Sources')}: ${c.src.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(', ')}</p>` : '') + `</details>`;
-  }).join('') + `</div>` +
-    `<p class="note">${T('Emergency number in every country on the route: 112.')}</p>`;
+  h += `<div class="seg3" role="group">${[['cat', 'By category'], ['day', 'By day'], ['country', 'By country']].map(([k, l]) => `<button type="button" data-go="#/rules/${k}" aria-pressed="${by === k}">${esc(T(l))}</button>`).join('')}</div>`;
+  if (by === 'cat') {
+    const g = rulesByCat();
+    h += `<div class="block carfact"><div class="lrow"><span class="lamp on watch"></span><span>${esc(T("This car is a Euro 0 diesel with no environmental sticker in Spain and no Crit'Air in France, so every low-emission zone treats it as the oldest category."))}</span></div></div>`;
+    h += RCATS.map(([k, name, desc]) => {
+      const items = g[k].slice().sort((x, y) => LVORD[x.lv] - LVORD[y.lv]);
+      const worst = LVL[items[0] ? items[0].lv : 'info'];
+      return `<details class="block rcat"><summary><span><b>${esc(T(name))}</b><br><small class="muted">${esc(T(desc))}</small></span><span class="rcount">${items.length}</span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(it => `<div class="lrow"><span class="lamp on ${LVL[it.lv]}"></span><span>${it.cc ? `<span class="cc">${it.cc}</span> ` : `<span class="cc all">${esc(T('All'))}</span> `}${esc(T(it.t))}</span></div>`).join('')}</div></details>`;
+    }).join('');
+    h += `<p class="small muted">${T('Sources')}: ${COUNTRIES.flatMap(c => c.src).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(', ')}</p>`;
+  } else if (by === 'day') {
+    h += `<div class="block">` + TRIP.days.map(day => {
+      const d = day.d, items = DAYRULES[d] || [], worst = items.some(x => x[0] === 'act') ? 'act' : items.some(x => x[0] === 'watch') ? 'watch' : 'ok';
+      return `<details class="rday" id="rd${d}"${d === sel ? ' open' : ''}><summary>${stone(d)}<span><b>${day.from === day.to ? esc(T(day.title)) : `${esc(T(day.from))} → ${esc(T(day.to))}`}</b><br><small class="muted">${fmtDate(PLAN[d].date)}</small></span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(ruleRow).join('')}</div></details>`;
+    }).join('') + `</div>`;
+  } else {
+    h += `<div class="block">` + COUNTRIES.map(c => {
+      const kinds = [...new Set(c.items.map(i => i[0]))];
+      return `<details class="rcountry"><summary><span class="cc">${c.cc}</span><b>${esc(T(c.n))}</b></summary>` +
+        kinds.map(k => `<h3>${esc(T(RKIND[k]))}</h3><div class="lamps">${c.items.filter(i => i[0] === k).map(i => ruleRow([i[1], i[2]])).join('')}</div>`).join('') +
+        (c.src.length ? `<p class="small muted">${T('Sources')}: ${c.src.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(', ')}</p>` : '') + `</details>`;
+    }).join('') + `</div>`;
+  }
+  h += `<p class="note">${T('Emergency number in every country on the route: 112.')}</p>`;
   main.innerHTML = h;
-  RULES_JUMP = (sel && VIEW.scrollRules) ? 'rd' + sel : '';
+  RULES_JUMP = (by === 'day' && sel && VIEW.scrollRules) ? 'rd' + sel : '';
   VIEW.scrollRules = false;
 }
 let RULES_JUMP = '';
@@ -448,7 +461,10 @@ function parseHash() {
   if (h[0] === 'day' && +h[1] >= 1 && +h[1] <= 16) Object.assign(VIEW, { name: 'day', d: +h[1], tab: ['plan', 'stops', 'weather', 'news'].includes(h[2]) ? h[2] : 'plan' });
   else if (h[0] === 'days') VIEW.name = 'days';
   else if (h[0] === 'map') { VIEW.name = 'map'; VIEW.mapDay = +h[1] || 0; }
-  else if (h[0] === 'rules') { VIEW.name = 'rules'; const rd = +h[1] || 0; if (rd !== VIEW.rulesDay) VIEW.scrollRules = !!rd; VIEW.rulesDay = rd; }
+  else if (h[0] === 'rules') { VIEW.name = 'rules'; const rd = +h[1] || 0;
+    if (rd) { VIEW.rulesBy = 'day'; if (rd !== VIEW.rulesDay) VIEW.scrollRules = true; VIEW.rulesDay = rd; }
+    else if (['cat', 'day', 'country'].includes(h[1])) { VIEW.rulesBy = h[1]; try { localStorage.setItem('w123-rulesby', h[1]); } catch (e) {} }
+    else if (!VIEW.rulesBy) { try { VIEW.rulesBy = localStorage.getItem('w123-rulesby') || 'cat'; } catch (e) { VIEW.rulesBy = 'cat'; } } }
   else { VIEW.name = 'today'; if (+h[1] >= 1 && +h[1] <= 16) VIEW.d = +h[1]; }
 }
 function go(hash) { if (location.hash !== hash) location.hash = hash; else render(); }
