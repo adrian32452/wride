@@ -520,7 +520,7 @@ async function saveModes() {
   }, () => {});
 })();
 
-$('#lang').setAttribute('aria-label', T('Language')); $('#theme').setAttribute('aria-label', T('Day or night display')); tabsEl.setAttribute('aria-label', T('Sections'));
+$('#lang').setAttribute('aria-label', T('Language')); if (!/\/v2\/?(index\.html)?$/.test(location.pathname)) $('#v1link').hidden = true; $('#theme').setAttribute('aria-label', T('Day or night display')); tabsEl.setAttribute('aria-label', T('Sections'));
 /* ---------- start ---------- */
 { const lastD = Object.keys(PROG).map(Number).filter(d => PROG[d] && PROG[d].last).sort((a, b) => b - a)[0]; if (lastD) WHERE.ll = PROG[lastD].last.ll; }
 applyTheme();

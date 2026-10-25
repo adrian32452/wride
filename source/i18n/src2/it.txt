@@ -454,3 +454,4 @@
 1173	Automatico: schermo notturno dopo il buio
 1174	Schermo giorno o notte
 1175	Sezioni
+1176	Prova il nuovo design (V2)

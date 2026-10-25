@@ -456,3 +456,4 @@
 1173	Automatique : affichage de nuit après la tombée de la nuit
 1174	Affichage jour ou nuit
 1175	Sections
+1176	Essayer le nouveau design (V2)

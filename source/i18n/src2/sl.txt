@@ -454,3 +454,4 @@
 1173	Samodejno: nočni prikaz po mraku
 1174	Dnevni ali nočni prikaz
 1175	Razdelki
+1176	Preizkusi novo podobo (V2)

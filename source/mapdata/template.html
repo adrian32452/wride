@@ -103,6 +103,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline
 .langbar select { font: 600 14px var(--f-display); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 6px 8px; min-height: 36px; }
 .langbar .lang-hint { flex-basis: 100%; text-align: right; font-size: 12px; }
 .langbar { flex-wrap: wrap; }
+.v2link { margin-right: auto; font: 700 15px var(--f-display); color: var(--route); min-height: 36px; display: inline-flex; align-items: center; }
 .eyebrow {
   font-family: var(--f-display); font-weight: 600; font-size: 13px;
   letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
@@ -613,7 +614,7 @@ button.thumb { padding: 0; border: 0; cursor: zoom-in; }
 
 <div class="alertbar" id="alertbar" role="alert" hidden><span id="alerttext"></span><button type="button" id="alertclose" aria-label="Close">✕</button></div>
 <div class="wrap">
-  <div class="langbar"><label for="lang">Language</label><select id="lang"></select><span class="lang-hint" id="lang-hint"></span></div>
+  <div class="langbar"><a class="v2link" id="v2link" href="v2/index.html">Try the new design (V2)</a><label for="lang">Language</label><select id="lang"></select><span class="lang-hint" id="lang-hint"></span></div>
   <header class="head">
     <div class="eyebrow">Road book · Sat 19 Dec 2026 – Sun 3 Jan 2027 · 16 days</div>
     <h1>Madrid <span class="arrow">→</span> Bucharest</h1>
@@ -2326,4 +2327,5 @@ document.querySelectorAll('.checks input').forEach(cb => {
   try { cb.checked = localStorage.getItem('w123-' + cb.id) === '1'; } catch (e) {}
   cb.addEventListener('change', () => { try { localStorage.setItem('w123-' + cb.id, cb.checked ? '1' : '0'); } catch (e) {} });
 });
+try { document.getElementById('v2link').textContent = T('Try the new design (V2)'); } catch (e) {}
 </script>

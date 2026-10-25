@@ -458,3 +458,4 @@
 1173	Automatski: noćni prikaz posle mraka
 1174	Dnevni ili noćni prikaz
 1175	Odeljci
+1176	Isprobaj novi dizajn (V2)

@@ -454,3 +454,4 @@
 1173	Automático: pantalla nocturna al anochecer
 1174	Pantalla de día o de noche
 1175	Secciones
+1176	Prueba el nuevo diseño (V2)

@@ -454,3 +454,4 @@
 1173	Automat: afișaj de noapte după lăsarea întunericului
 1174	Afișaj de zi sau de noapte
 1175	Secțiuni
+1176	Încearcă noul design (V2)
