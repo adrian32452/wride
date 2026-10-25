@@ -185,7 +185,8 @@ function planTab(d) {
   const P = curPlan(d), day = TRIP.days[d - 1], m = modeOf(d), v = variant(d, m); if (!P) return '';
   const rows = P.rows.map(r => {
     if (r.k === 'drive') return `<li class="drive"><span class="tt">${r.t}</span><span><b>${esc(T('Drive to {0}', T(r.to)))}</b><br><span class="meta">${r.km} km · ${durTxt(r.min)} · ${esc(T(r.roads))} · ${T('arr. {0}', r.arr)}</span>` +
-      `<span class="tags"><span class="tag">${T(KINDT[r.kind] || 'Road')}</span>${(r.light || []).filter((c, i, a) => a.indexOf(c) === i && LT[c]).map(c => `<span class="tag ${LTAG(c)}">${T(LT[c][0])}</span>`).join('')}</span></span></li>`;
+      `<span class="tags"><span class="tag">${T(KINDT[r.kind] || 'Road')}</span>${(r.light || []).filter((c, i, a) => a.indexOf(c) === i && LT[c]).map(c => `<span class="tag ${LTAG(c)}">${T(LT[c][0])}</span>`).join('')}</span>` +
+      (() => { const ds = stopByName(d, r.to); return ds ? `<span class="links"><a href="${wazeLL(ds.lat, ds.lon)}" target="_blank" rel="noopener">${esc(T('Waze to {0}', T(ds.n)))}</a></span>` : ''; })() + `</span></li>`;
     if (r.k === 'stop') return `<li class="stop"><span class="tt">${r.t}</span><span><b>${esc(T(r.name))}</b>${r.note ? `<br><span class="meta">${esc(T(r.note))}</span>` : ''}<span class="tags"><span class="tag ${r.mo === 'M' ? 'must' : 'opt'}">${T(r.mo === 'M' ? 'Must' : 'Optional')}</span>${r.min ? `<span class="tag">${durTxt(r.min)}</span>` : ''}</span></span></li>`;
     if (r.k === 'border') return `<li class="stop"><span class="tt">${r.t}</span><span><b>${esc(T(r.name))}</b><br><span class="meta">${T('Allow {0} min', r.min)}</span></span></li>`;
     if (r.k === 'tz') return `<li class="stop"><span class="tt">${r.t}</span><span><b>${esc(T(r.name))}</b></span></li>`;
@@ -197,7 +198,9 @@ function planTab(d) {
     (off ? `<p class="stylenote">${T('Re-timed from your real start ({0} {1}).', off > 0 ? '+' : '−', fmtDur(Math.abs(off)))}</p>` : '') + `</div>` +
     `<div class="block"><ol class="tl">${rows}<li class="end"><span class="tt">${P.end}</span><span><b>${T('Day ends')}</b></span></li></ol></div>` +
     (flags.length ? `<div class="block"><h3>${T('Good to know')}</h3>${flags.map(f => `<p class="small">${esc(T(f))}</p>`).join('')}</div>` : '') +
-    `<a class="btn" href="${gmapsDay(d)}" target="_blank" rel="noopener">${esc(T('Whole day in Google Maps'))}</a>`;
+    (() => { const end = stopsFor(day, m).filter(s => s.t !== 'via' && s.t !== 'visit').slice(-1)[0];
+      return `<div class="btnrow">${end ? `<a class="btn primary" href="${wazeLL(end.lat, end.lon)}" target="_blank" rel="noopener">${esc(T('Waze to {0}', T(end.n)))}</a>` : ''}<a class="btn" href="${gmapsDay(d)}" target="_blank" rel="noopener">${esc(T('Whole day in Google Maps'))}</a></div>` +
+        `<p class="note">${IS_ANDROID || IS_IOS ? T('Opens the Waze app. Not installed?') + ` <a href="${end ? wazeWeb(end.lat, end.lon) : '#'}" target="_blank" rel="noopener">${T('Waze on the web')}</a>. ` : T('On a phone this opens the Waze app.') + ' '}${T('Waze takes one destination at a time; use the Waze link on each stop above.')}</p>`; })();
 }
 const TAGN = { start: 'Start', stop: 'Stop', road: 'On the road', sleep: 'Overnight', visit: 'Visit, no car', end: 'Finish' };
 function stopsTab(d) {
