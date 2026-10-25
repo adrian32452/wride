@@ -7229,7 +7229,7 @@ function assess(d, ll, acc) {
   }
   if (early && m !== 'cine' && hasMode(d, 'cine')) tips.push(T('You have time to spare: the Cinematic version of today fits if you switch now.'));
   else if (early) tips.push(T('You have time to spare: take an optional stop slowly, or arrive early.'));
-  if (window.__wxReady && WX[d] && WX[d].verdict && WX[d].verdict.level === 'switch' && m !== 'safe' && hasMode(d, 'safe')) tips.unshift(T('The weather check says take the Safe route today; see the Safe option below.'));
+  if (window.__wxReady && WX[d] && wxVerdict(d) && wxVerdict(d).level === 'switch' && m !== 'safe' && hasMode(d, 'safe')) tips.unshift(T('The weather check says take the Safe route today; see the Safe option below.'));
   if (!tips.length && !late) tips.push(T('Nothing to change. Keep going.'));
   const head = arrived ? T('Arrived in {0}', T(sleep)) : late ? T('About {0} behind the plan', fmtDur(rel)) : early ? T('About {0} ahead of the plan', fmtDur(-rel)) : T('On schedule');
   const copy = `Day ${d}, ${hhmm(now)}: I'm between ${loc.prev} and ${loc.next} (${ll[1].toFixed(4)}, ${ll[0].toFixed(4)}), ${late ? fmtDur(rel) + ' behind' : early ? fmtDur(-rel) + ' ahead of' : 'on'} plan, ${MODE_NAME[m].toLowerCase()} route${g.started ? ', started ' + hhmm(g.startMin) : ''}.`;
@@ -7469,8 +7469,9 @@ function hotTime(d, m, h) {
   const row = P && key ? P.rows.find(x => x.k === 'drive' && x.to.startsWith(key)) : null;
   return row ? `${row.t}–${row.arr}` : '';
 }
+const wxVerdict = d => { const w = WX[d]; if (!w) return null; const vs = w.verdicts; return (vs && (vs[modeOf(d)] || vs.bal)) || w.verdict || null; };
 function verdictHtml(d) {
-  const w = WX[d], v = w && w.verdict; if (!v || !HLEV[v.level]) return '';
+  const w = WX[d], v = wxVerdict(d); if (!v || !HLEV[v.level]) return '';
   const cur = modeOf(d), test = w.mode === 'test';
   const head = { ok: T('Weather check: all clear on your route'), watch: T('Weather check: keep an eye on it'),
     switch: T('Weather check: take the Safe route'), wait: T('Weather check: no safe road at the planned time') }[v.level];
@@ -7510,7 +7511,7 @@ function wxAlert() {
   const today = new Date(); const iso = x => x.toISOString().slice(0, 10);
   const tom = new Date(today.getTime() + 864e5), days = [iso(today), iso(tom)];
   for (const day of TRIP.days) {
-    const w = WX[day.d], v = w && w.verdict, P = PLAN[day.d];
+    const w = WX[day.d], v = wxVerdict(day.d), P = PLAN[day.d];
     if (!v || w.mode !== 'forecast' || !P || !days.includes(P.date)) continue;
     if ((v.level === 'switch' && modeOf(day.d) !== 'safe' && hasMode(day.d, 'safe')) || v.level === 'wait') {
       wxAlerted = true;
