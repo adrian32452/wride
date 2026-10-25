@@ -1,0 +1,2674 @@
+{
+ "1": {
+  "date": "2026-12-19",
+  "dow": "Sat",
+  "dlabel": "Sat 19 Dec",
+  "start": "11:30",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "11:30",
+    "to": "Burgos",
+    "km": 245,
+    "min": 170,
+    "roads": "A-1 autovía",
+    "arr": "14:20",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "14:20",
+    "name": "Burgos Cathedral + lunch",
+    "min": 120,
+    "mo": "O",
+    "note": "Plaza Mayor car park",
+    "end": "16:20"
+   },
+   {
+    "k": "drive",
+    "t": "16:20",
+    "to": "Bilbao",
+    "km": 160,
+    "min": 115,
+    "roads": "AP-1 / AP-68",
+    "arr": "18:15",
+    "kind": "mw",
+    "light": [
+     "afterdark"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "18:15",
+    "name": "Floodlit Guggenheim and Casco Viejo pintxos",
+    "min": 150,
+    "mo": "M",
+    "note": "Museum last entry 18:30",
+    "end": "20:45"
+   }
+  ],
+  "end": "20:45",
+  "drive": "4h45",
+  "km": 405,
+  "sunset": "17:38",
+  "sunrise": "08:33",
+  "dusk": "18:11",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "9h05",
+  "modes": {}
+ },
+ "2": {
+  "date": "2026-12-20",
+  "dow": "Sun",
+  "dlabel": "Sun 20 Dec",
+  "start": "09:00",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "09:00",
+    "to": "Zumaia",
+    "km": 80,
+    "min": 90,
+    "roads": "N-634 coast road",
+    "arr": "10:30",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "10:30",
+    "name": "Itzurun flysch cliffs",
+    "min": 45,
+    "mo": "O",
+    "note": "",
+    "end": "11:15"
+   },
+   {
+    "k": "drive",
+    "t": "11:15",
+    "to": "Getaria",
+    "km": 12,
+    "min": 20,
+    "roads": "N-634",
+    "arr": "11:35",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "11:35",
+    "name": "Getaria harbour",
+    "min": 60,
+    "mo": "O",
+    "note": "",
+    "end": "12:35"
+   },
+   {
+    "k": "drive",
+    "t": "12:35",
+    "to": "San Sebastián (Illunbe P+R)",
+    "km": 30,
+    "min": 40,
+    "roads": "N-634 / GI-20",
+    "arr": "13:15",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "13:15",
+    "name": "La Concha + pintxos lunch",
+    "min": 150,
+    "mo": "O",
+    "note": "Bus 28 into town",
+    "end": "15:45"
+   },
+   {
+    "k": "drive",
+    "t": "15:45",
+    "to": "Biarritz",
+    "km": 50,
+    "min": 60,
+    "roads": "AP-8 / A63",
+    "arr": "16:45",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "16:45",
+    "name": "Rocher de la Vierge at sunset",
+    "min": 60,
+    "mo": "M",
+    "note": "",
+    "end": "17:45"
+   }
+  ],
+  "end": "17:45",
+  "drive": "3h30",
+  "km": 172,
+  "sunset": "17:32",
+  "sunrise": "08:40",
+  "dusk": "18:05",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h52",
+  "modes": {
+   "fast": {
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "dlabel": "Sun 20 Dec",
+    "start": "09:00",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "09:00",
+      "to": "Zumaia",
+      "km": 70,
+      "min": 60,
+      "roads": "AP-8",
+      "arr": "10:00",
+      "kind": "mw",
+      "light": [
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "10:00",
+      "name": "Itzurun flysch cliffs",
+      "min": 45,
+      "mo": "O",
+      "note": "",
+      "end": "10:45"
+     },
+     {
+      "k": "drive",
+      "t": "10:45",
+      "to": "Getaria",
+      "km": 12,
+      "min": 20,
+      "roads": "N-634",
+      "arr": "11:05",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:05",
+      "name": "Getaria harbour",
+      "min": 60,
+      "mo": "O",
+      "note": "",
+      "end": "12:05"
+     },
+     {
+      "k": "drive",
+      "t": "12:05",
+      "to": "San Sebastián (Illunbe P+R)",
+      "km": 30,
+      "min": 35,
+      "roads": "N-634 / AP-8",
+      "arr": "12:40",
+      "kind": "mw",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "12:40",
+      "name": "La Concha + pintxos lunch",
+      "min": 150,
+      "mo": "O",
+      "note": "Bus 28 into town",
+      "end": "15:10"
+     },
+     {
+      "k": "drive",
+      "t": "15:10",
+      "to": "Biarritz",
+      "km": 50,
+      "min": 50,
+      "roads": "AP-8 / A63",
+      "arr": "16:00",
+      "kind": "mw",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "16:00",
+      "name": "Rocher de la Vierge at sunset",
+      "min": 60,
+      "mo": "M",
+      "note": "",
+      "end": "17:00"
+     }
+    ],
+    "end": "17:00",
+    "drive": "2h45",
+    "km": 162,
+    "sunset": "17:32",
+    "sunrise": "08:40",
+    "dusk": "18:05",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h52"
+   },
+   "cine": {
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "dlabel": "Sun 20 Dec",
+    "start": "09:00",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "09:00",
+      "to": "Lekeitio",
+      "km": 60,
+      "min": 70,
+      "roads": "BI-635 / BI-2238 via Gernika",
+      "arr": "10:10",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "10:10",
+      "name": "Lekeitio harbour",
+      "min": 20,
+      "mo": "O",
+      "note": "",
+      "end": "10:30"
+     },
+     {
+      "k": "drive",
+      "t": "10:30",
+      "to": "Zumaia",
+      "km": 45,
+      "min": 65,
+      "roads": "Cliff road via Ondarroa and Mutriku (BI-3438 / GI-638)",
+      "arr": "11:35",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:35",
+      "name": "Itzurun flysch cliffs",
+      "min": 30,
+      "mo": "O",
+      "note": "",
+      "end": "12:05"
+     },
+     {
+      "k": "drive",
+      "t": "12:05",
+      "to": "Getaria",
+      "km": 12,
+      "min": 20,
+      "roads": "N-634",
+      "arr": "12:25",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "12:25",
+      "name": "Getaria: grilled-fish lunch",
+      "min": 90,
+      "mo": "O",
+      "note": "",
+      "end": "13:55"
+     },
+     {
+      "k": "drive",
+      "t": "13:55",
+      "to": "San Sebastián (Illunbe P+R)",
+      "km": 30,
+      "min": 40,
+      "roads": "N-634 / GI-20",
+      "arr": "14:35",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "14:35",
+      "name": "La Concha walk",
+      "min": 60,
+      "mo": "O",
+      "note": "Bus 28 into town",
+      "end": "15:35"
+     },
+     {
+      "k": "drive",
+      "t": "15:35",
+      "to": "Hondarribia via the Jaizkibel ridge",
+      "km": 30,
+      "min": 55,
+      "roads": "GI-3440 Jaizkibel road, viewpoint stops",
+      "arr": "16:30",
+      "kind": "scenic",
+      "light": [
+       "golden"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "16:30",
+      "name": "Hondarribia old town",
+      "min": 30,
+      "mo": "O",
+      "note": "",
+      "end": "17:00"
+     },
+     {
+      "k": "drive",
+      "t": "17:00",
+      "to": "Biarritz",
+      "km": 35,
+      "min": 40,
+      "roads": "A63",
+      "arr": "17:40",
+      "kind": "mw",
+      "light": [
+       "dusk"
+      ]
+     }
+    ],
+    "end": "17:40",
+    "drive": "4h50",
+    "km": 212,
+    "sunset": "17:32",
+    "sunrise": "08:40",
+    "dusk": "18:05",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h52"
+   },
+   "safe": {
+    "date": "2026-12-20",
+    "dow": "Sun",
+    "dlabel": "Sun 20 Dec",
+    "start": "09:00",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "09:00",
+      "to": "San Sebastián (Illunbe P+R)",
+      "km": 100,
+      "min": 80,
+      "roads": "AP-8 inland",
+      "arr": "10:20",
+      "kind": "mw",
+      "light": [
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "10:20",
+      "name": "La Concha + pintxos lunch",
+      "min": 150,
+      "mo": "O",
+      "note": "Bus 28 into town",
+      "end": "12:50"
+     },
+     {
+      "k": "drive",
+      "t": "12:50",
+      "to": "Biarritz",
+      "km": 50,
+      "min": 50,
+      "roads": "AP-8 / A63",
+      "arr": "13:40",
+      "kind": "mw",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "13:40",
+      "name": "Rocher de la Vierge, from a safe distance",
+      "min": 45,
+      "mo": "M",
+      "note": "",
+      "end": "14:25"
+     }
+    ],
+    "end": "14:25",
+    "drive": "2h10",
+    "km": 150,
+    "sunset": "17:32",
+    "sunrise": "08:40",
+    "dusk": "18:05",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h52"
+   }
+  }
+ },
+ "3": {
+  "date": "2026-12-21",
+  "dow": "Mon",
+  "dlabel": "Mon 21 Dec",
+  "start": "08:30",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "08:30",
+    "to": "Pau",
+    "km": 115,
+    "min": 90,
+    "roads": "A63 / A64",
+    "arr": "10:00",
+    "kind": "mw",
+    "light": [
+     "predawn",
+     "glare_east"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "10:00",
+    "name": "Boulevard des Pyrénées",
+    "min": 60,
+    "mo": "O",
+    "note": "",
+    "end": "11:00"
+   },
+   {
+    "k": "drive",
+    "t": "11:00",
+    "to": "Carcassonne",
+    "km": 290,
+    "min": 255,
+    "roads": "A64 / A61, lunch break on the way",
+    "arr": "15:15",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "15:15",
+    "name": "Floodlit Cité walk",
+    "min": 120,
+    "mo": "M",
+    "note": "Evening, P1/P2 free after 20:00",
+    "end": "17:15"
+   }
+  ],
+  "end": "17:15",
+  "drive": "5h45",
+  "km": 405,
+  "sunset": "17:18",
+  "sunrise": "08:36",
+  "dusk": "17:50",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h42",
+  "modes": {
+   "cine": {
+    "date": "2026-12-21",
+    "dow": "Mon",
+    "dlabel": "Mon 21 Dec",
+    "start": "08:30",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "08:30",
+      "to": "Pau",
+      "km": 115,
+      "min": 90,
+      "roads": "A63 / A64",
+      "arr": "10:00",
+      "kind": "mw",
+      "light": [
+       "predawn",
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "10:00",
+      "name": "Boulevard des Pyrénées",
+      "min": 60,
+      "mo": "O",
+      "note": "",
+      "end": "11:00"
+     },
+     {
+      "k": "drive",
+      "t": "11:00",
+      "to": "Saint-Girons",
+      "km": 155,
+      "min": 130,
+      "roads": "A64, then D117 into the Ariège foothills",
+      "arr": "13:10",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "drive",
+      "t": "13:10",
+      "to": "Foix",
+      "km": 45,
+      "min": 50,
+      "roads": "D117 along the foothills",
+      "arr": "14:00",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "14:00",
+      "name": "Foix: lunch below the castle",
+      "min": 60,
+      "mo": "O",
+      "note": "",
+      "end": "15:00"
+     },
+     {
+      "k": "drive",
+      "t": "15:00",
+      "to": "Mirepoix",
+      "km": 35,
+      "min": 40,
+      "roads": "D119",
+      "arr": "15:40",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "15:40",
+      "name": "Mirepoix arcaded square",
+      "min": 20,
+      "mo": "O",
+      "note": "",
+      "end": "16:00"
+     },
+     {
+      "k": "drive",
+      "t": "16:00",
+      "to": "Carcassonne",
+      "km": 55,
+      "min": 55,
+      "roads": "D119 / D6113",
+      "arr": "16:55",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "16:55",
+      "name": "Floodlit Cité walk",
+      "min": 120,
+      "mo": "M",
+      "note": "Evening, P1/P2 free after 20:00",
+      "end": "18:55"
+     }
+    ],
+    "end": "18:55",
+    "drive": "6h05",
+    "km": 405,
+    "sunset": "17:18",
+    "sunrise": "08:36",
+    "dusk": "17:50",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h42"
+   }
+  }
+ },
+ "4": {
+  "date": "2026-12-22",
+  "dow": "Tue",
+  "dlabel": "Tue 22 Dec",
+  "start": "07:15",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "07:15",
+    "to": "Pont du Gard",
+    "km": 225,
+    "min": 165,
+    "roads": "A61 / A9",
+    "arr": "10:00",
+    "kind": "mw",
+    "light": [
+     "predawn",
+     "glare_east"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "10:00",
+    "name": "Pont du Gard",
+    "min": 45,
+    "mo": "O",
+    "note": "€9 car park",
+    "end": "10:45"
+   },
+   {
+    "k": "drive",
+    "t": "10:45",
+    "to": "Saint-Raphaël",
+    "km": 230,
+    "min": 195,
+    "roads": "A9 / A8, lunch break on the way",
+    "arr": "14:00",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "drive",
+    "t": "14:00",
+    "to": "Théoule-sur-Mer via the Estérel corniche",
+    "km": 30,
+    "min": 75,
+    "roads": "D559 with viewpoint stops",
+    "arr": "15:15",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "15:15",
+    "name": "Corniche viewpoints (inside the drive)",
+    "min": 0,
+    "mo": "M",
+    "note": "Cap Dramont, Cap Roux, Esquillon",
+    "end": "15:15"
+   },
+   {
+    "k": "drive",
+    "t": "15:15",
+    "to": "Menton",
+    "km": 75,
+    "min": 75,
+    "roads": "A8",
+    "arr": "16:30",
+    "kind": "mw",
+    "light": []
+   }
+  ],
+  "end": "16:30",
+  "drive": "8h30",
+  "km": 560,
+  "sunset": "16:56",
+  "sunrise": "08:19",
+  "dusk": "17:29",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h36",
+  "modes": {
+   "fast": {
+    "date": "2026-12-22",
+    "dow": "Tue",
+    "dlabel": "Tue 22 Dec",
+    "start": "07:15",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "07:15",
+      "to": "Pont du Gard",
+      "km": 225,
+      "min": 165,
+      "roads": "A61 / A9",
+      "arr": "10:00",
+      "kind": "mw",
+      "light": [
+       "predawn",
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "10:00",
+      "name": "Pont du Gard",
+      "min": 45,
+      "mo": "O",
+      "note": "€9 car park",
+      "end": "10:45"
+     },
+     {
+      "k": "drive",
+      "t": "10:45",
+      "to": "Menton",
+      "km": 305,
+      "min": 250,
+      "roads": "A9 / A8, lunch break on the way",
+      "arr": "14:55",
+      "kind": "mw",
+      "light": []
+     }
+    ],
+    "end": "14:55",
+    "drive": "6h55",
+    "km": 530,
+    "sunset": "16:56",
+    "sunrise": "08:19",
+    "dusk": "17:29",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h36"
+   },
+   "safe": {
+    "date": "2026-12-22",
+    "dow": "Tue",
+    "dlabel": "Tue 22 Dec",
+    "start": "07:15",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "07:15",
+      "to": "Pont du Gard",
+      "km": 225,
+      "min": 165,
+      "roads": "A61 / A9",
+      "arr": "10:00",
+      "kind": "mw",
+      "light": [
+       "predawn",
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "10:00",
+      "name": "Pont du Gard",
+      "min": 45,
+      "mo": "O",
+      "note": "€9 car park",
+      "end": "10:45"
+     },
+     {
+      "k": "drive",
+      "t": "10:45",
+      "to": "Menton",
+      "km": 305,
+      "min": 250,
+      "roads": "A9 / A8, lunch break on the way",
+      "arr": "14:55",
+      "kind": "mw",
+      "light": []
+     }
+    ],
+    "end": "14:55",
+    "drive": "6h55",
+    "km": 530,
+    "sunset": "16:56",
+    "sunrise": "08:19",
+    "dusk": "17:29",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h36"
+   }
+  }
+ },
+ "5": {
+  "date": "2026-12-23",
+  "dow": "Wed",
+  "dlabel": "Wed 23 Dec",
+  "start": "09:30",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "09:30",
+    "to": "Villefranche-sur-Mer",
+    "km": 25,
+    "min": 40,
+    "roads": "Basse Corniche",
+    "arr": "10:10",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "10:10",
+    "name": "Villefranche harbour and citadel",
+    "min": 75,
+    "mo": "O",
+    "note": "Free parking Nov–Mar",
+    "end": "11:25"
+   },
+   {
+    "k": "drive",
+    "t": "11:25",
+    "to": "Èze",
+    "km": 10,
+    "min": 20,
+    "roads": "Moyenne Corniche",
+    "arr": "11:45",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "11:45",
+    "name": "Èze village + lunch",
+    "min": 90,
+    "mo": "M",
+    "note": "",
+    "end": "13:15"
+   },
+   {
+    "k": "drive",
+    "t": "13:15",
+    "to": "Monaco",
+    "km": 10,
+    "min": 25,
+    "roads": "M6007",
+    "arr": "13:40",
+    "kind": "main",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "13:40",
+    "name": "Monaco Rock and harbour",
+    "min": 120,
+    "mo": "M",
+    "note": "Parking des Pêcheurs",
+    "end": "15:40"
+   },
+   {
+    "k": "drive",
+    "t": "15:40",
+    "to": "Menton via the Grande Corniche",
+    "km": 20,
+    "min": 45,
+    "roads": "M2564, viewpoints",
+    "arr": "16:25",
+    "kind": "scenic",
+    "light": [
+     "golden"
+    ]
+   }
+  ],
+  "end": "16:25",
+  "drive": "2h10",
+  "km": 65,
+  "sunset": "16:56",
+  "sunrise": "08:01",
+  "dusk": "17:29",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h55",
+  "modes": {
+   "safe": {
+    "date": "2026-12-23",
+    "dow": "Wed",
+    "dlabel": "Wed 23 Dec",
+    "start": "09:30",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "09:30",
+      "to": "Villefranche-sur-Mer",
+      "km": 25,
+      "min": 40,
+      "roads": "Basse Corniche",
+      "arr": "10:10",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "10:10",
+      "name": "Villefranche harbour and citadel",
+      "min": 75,
+      "mo": "O",
+      "note": "Free parking Nov–Mar",
+      "end": "11:25"
+     },
+     {
+      "k": "drive",
+      "t": "11:25",
+      "to": "Èze",
+      "km": 10,
+      "min": 20,
+      "roads": "Moyenne Corniche",
+      "arr": "11:45",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:45",
+      "name": "Èze village + lunch",
+      "min": 90,
+      "mo": "M",
+      "note": "",
+      "end": "13:15"
+     },
+     {
+      "k": "drive",
+      "t": "13:15",
+      "to": "Monaco",
+      "km": 10,
+      "min": 25,
+      "roads": "M6007",
+      "arr": "13:40",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "13:40",
+      "name": "Monaco Rock and harbour",
+      "min": 120,
+      "mo": "M",
+      "note": "Parking des Pêcheurs",
+      "end": "15:40"
+     },
+     {
+      "k": "drive",
+      "t": "15:40",
+      "to": "Menton along the Basse Corniche",
+      "km": 12,
+      "min": 30,
+      "roads": "M6098 by the sea",
+      "arr": "16:10",
+      "kind": "main",
+      "light": []
+     }
+    ],
+    "end": "16:10",
+    "drive": "1h55",
+    "km": 57,
+    "sunset": "16:56",
+    "sunrise": "08:01",
+    "dusk": "17:29",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h55"
+   }
+  }
+ },
+ "6": {
+  "date": "2026-12-24",
+  "dow": "Thu",
+  "dlabel": "Thu 24 Dec",
+  "start": "08:30",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "08:30",
+    "to": "Pisa (Via Pietrasantina P+R)",
+    "km": 290,
+    "min": 270,
+    "roads": "A10 / A12, lunch break on the way",
+    "arr": "13:00",
+    "kind": "mw",
+    "light": [
+     "glare_east"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "13:00",
+    "name": "Piazza dei Miracoli",
+    "min": 120,
+    "mo": "M",
+    "note": "Shuttle from the P+R",
+    "end": "15:00"
+   },
+   {
+    "k": "drive",
+    "t": "15:00",
+    "to": "Lucca",
+    "km": 25,
+    "min": 35,
+    "roads": "SS12",
+    "arr": "15:35",
+    "kind": "main",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "15:35",
+    "name": "Evening on the city walls",
+    "min": 60,
+    "mo": "O",
+    "note": "",
+    "end": "16:35"
+   }
+  ],
+  "end": "16:35",
+  "drive": "5h05",
+  "km": 315,
+  "sunset": "16:44",
+  "sunrise": "08:02",
+  "dusk": "17:17",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h43",
+  "modes": {
+   "cine": {
+    "date": "2026-12-24",
+    "dow": "Thu",
+    "dlabel": "Thu 24 Dec",
+    "start": "08:30",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "08:30",
+      "to": "La Spezia",
+      "km": 225,
+      "min": 200,
+      "roads": "A10 / A12, break on the way",
+      "arr": "11:50",
+      "kind": "mw",
+      "light": [
+       "glare_east"
+      ]
+     },
+     {
+      "k": "drive",
+      "t": "11:50",
+      "to": "Portovenere",
+      "km": 13,
+      "min": 30,
+      "roads": "SP530 coast road",
+      "arr": "12:20",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "12:20",
+      "name": "Portovenere: lunch and San Pietro church",
+      "min": 60,
+      "mo": "O",
+      "note": "",
+      "end": "13:20"
+     },
+     {
+      "k": "drive",
+      "t": "13:20",
+      "to": "Pisa (Via Pietrasantina P+R)",
+      "km": 90,
+      "min": 90,
+      "roads": "SP530, then A12",
+      "arr": "14:50",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "14:50",
+      "name": "Piazza dei Miracoli",
+      "min": 90,
+      "mo": "M",
+      "note": "Shuttle from the P+R",
+      "end": "16:20"
+     },
+     {
+      "k": "drive",
+      "t": "16:20",
+      "to": "Lucca",
+      "km": 25,
+      "min": 30,
+      "roads": "A11",
+      "arr": "16:50",
+      "kind": "mw",
+      "light": [
+       "dusk"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "16:50",
+      "name": "Evening on the city walls",
+      "min": 60,
+      "mo": "O",
+      "note": "",
+      "end": "17:50"
+     }
+    ],
+    "end": "17:50",
+    "drive": "5h50",
+    "km": 353,
+    "sunset": "16:44",
+    "sunrise": "08:02",
+    "dusk": "17:17",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h43"
+   }
+  }
+ },
+ "7": {
+  "date": "2026-12-25",
+  "dow": "Fri",
+  "dlabel": "Fri 25 Dec",
+  "start": "08:30",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "08:30",
+    "to": "Castellina in Chianti",
+    "km": 110,
+    "min": 105,
+    "roads": "Firenze–Siena dual carriageway to Poggibonsi, then SR222",
+    "arr": "10:15",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "10:15",
+    "name": "Castellina village walk",
+    "min": 45,
+    "mo": "O",
+    "note": "Christmas Day: outdoors, villages lit up",
+    "end": "11:00"
+   },
+   {
+    "k": "drive",
+    "t": "11:00",
+    "to": "Panzano in Chianti",
+    "km": 12,
+    "min": 20,
+    "roads": "SR222",
+    "arr": "11:20",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "11:20",
+    "name": "Christmas lunch above the vineyards",
+    "min": 120,
+    "mo": "M",
+    "note": "Book ahead",
+    "end": "13:20"
+   },
+   {
+    "k": "drive",
+    "t": "13:20",
+    "to": "Greve in Chianti",
+    "km": 7,
+    "min": 15,
+    "roads": "SR222",
+    "arr": "13:35",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "13:35",
+    "name": "Greve piazza",
+    "min": 45,
+    "mo": "O",
+    "note": "",
+    "end": "14:20"
+   },
+   {
+    "k": "drive",
+    "t": "14:20",
+    "to": "Figline Valdarno (hotel)",
+    "km": 20,
+    "min": 30,
+    "roads": "SP16 over the hills",
+    "arr": "14:50",
+    "kind": "scenic",
+    "light": []
+   }
+  ],
+  "end": "14:50",
+  "drive": "2h50",
+  "km": 149,
+  "sunset": "16:42",
+  "sunrise": "07:50",
+  "dusk": "17:15",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h51",
+  "modes": {
+   "safe": {
+    "date": "2026-12-25",
+    "dow": "Fri",
+    "dlabel": "Fri 25 Dec",
+    "start": "08:30",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "08:30",
+      "to": "Castellina in Chianti",
+      "km": 110,
+      "min": 105,
+      "roads": "Firenze–Siena dual carriageway to Poggibonsi, then SR222",
+      "arr": "10:15",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "10:15",
+      "name": "Castellina village walk",
+      "min": 45,
+      "mo": "O",
+      "note": "Christmas Day: outdoors, villages lit up",
+      "end": "11:00"
+     },
+     {
+      "k": "drive",
+      "t": "11:00",
+      "to": "Panzano in Chianti",
+      "km": 12,
+      "min": 20,
+      "roads": "SR222",
+      "arr": "11:20",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:20",
+      "name": "Christmas lunch above the vineyards",
+      "min": 120,
+      "mo": "M",
+      "note": "Book ahead",
+      "end": "13:20"
+     },
+     {
+      "k": "drive",
+      "t": "13:20",
+      "to": "Greve in Chianti",
+      "km": 7,
+      "min": 15,
+      "roads": "SR222",
+      "arr": "13:35",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "13:35",
+      "name": "Greve piazza",
+      "min": 45,
+      "mo": "O",
+      "note": "",
+      "end": "14:20"
+     },
+     {
+      "k": "drive",
+      "t": "14:20",
+      "to": "Figline Valdarno (hotel)",
+      "km": 50,
+      "min": 50,
+      "roads": "SR222 north, then A1 Firenze Impruneta → Incisa",
+      "arr": "15:10",
+      "kind": "mw",
+      "light": []
+     }
+    ],
+    "end": "15:10",
+    "drive": "3h10",
+    "km": 179,
+    "sunset": "16:42",
+    "sunrise": "07:50",
+    "dusk": "17:15",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h51"
+   }
+  }
+ },
+ "8": {
+  "date": "2026-12-26",
+  "dow": "Sat",
+  "dlabel": "Sat 26 Dec",
+  "start": "09:00",
+  "rows": [
+   {
+    "k": "stop",
+    "t": "09:00",
+    "name": "Train Figline → Firenze SMN",
+    "min": 40,
+    "mo": "M",
+    "note": "Holiday timetable; car stays at the hotel",
+    "end": "09:40"
+   },
+   {
+    "k": "stop",
+    "t": "09:40",
+    "name": "Florence: Uffizi, Ponte Vecchio, Baptistery, Cupola",
+    "min": 450,
+    "mo": "M",
+    "note": "26 Dec: museums open, Cathedral closed",
+    "end": "17:10"
+   },
+   {
+    "k": "stop",
+    "t": "17:10",
+    "name": "Train back to Figline",
+    "min": 40,
+    "mo": "M",
+    "note": "",
+    "end": "17:50"
+   }
+  ],
+  "end": "17:50",
+  "drive": "0h",
+  "km": 0,
+  "sunset": "16:43",
+  "sunrise": "07:46",
+  "dusk": "17:16",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h57",
+  "modes": {}
+ },
+ "9": {
+  "date": "2026-12-27",
+  "dow": "Sun",
+  "dlabel": "Sun 27 Dec",
+  "start": "08:00",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "08:00",
+    "to": "Arezzo",
+    "km": 50,
+    "min": 45,
+    "roads": "A1 (Valdarno to Arezzo)",
+    "arr": "08:45",
+    "kind": "mw",
+    "light": [
+     "glare_east"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "08:45",
+    "name": "Piazza Grande",
+    "min": 90,
+    "mo": "M",
+    "note": "Parcheggio Pietri + lift",
+    "end": "10:15"
+   },
+   {
+    "k": "drive",
+    "t": "10:15",
+    "to": "Anghiari",
+    "km": 30,
+    "min": 40,
+    "roads": "SR73",
+    "arr": "10:55",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "10:55",
+    "name": "Anghiari + quick lunch",
+    "min": 60,
+    "mo": "O",
+    "note": "",
+    "end": "11:55"
+   },
+   {
+    "k": "drive",
+    "t": "11:55",
+    "to": "Bocca Trabaria (1,049 m)",
+    "km": 35,
+    "min": 50,
+    "roads": "SS73bis",
+    "arr": "12:45",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "12:45",
+    "name": "Pass photo stop",
+    "min": 10,
+    "mo": "O",
+    "note": "",
+    "end": "12:55"
+   },
+   {
+    "k": "drive",
+    "t": "12:55",
+    "to": "San Marino via Urbania",
+    "km": 95,
+    "min": 120,
+    "roads": "SS73bis / SP / SS72",
+    "arr": "14:55",
+    "kind": "scenic",
+    "light": []
+   }
+  ],
+  "end": "14:55",
+  "drive": "4h15",
+  "km": 210,
+  "sunset": "16:38",
+  "sunrise": "07:48",
+  "dusk": "17:11",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h50",
+  "modes": {
+   "fast": {
+    "date": "2026-12-27",
+    "dow": "Sun",
+    "dlabel": "Sun 27 Dec",
+    "start": "08:00",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "08:00",
+      "to": "Arezzo",
+      "km": 50,
+      "min": 45,
+      "roads": "A1 (Valdarno to Arezzo)",
+      "arr": "08:45",
+      "kind": "mw",
+      "light": [
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "08:45",
+      "name": "Piazza Grande",
+      "min": 90,
+      "mo": "M",
+      "note": "Parcheggio Pietri + lift",
+      "end": "10:15"
+     },
+     {
+      "k": "drive",
+      "t": "10:15",
+      "to": "Anghiari",
+      "km": 30,
+      "min": 40,
+      "roads": "SR73",
+      "arr": "10:55",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "10:55",
+      "name": "Anghiari + quick lunch",
+      "min": 60,
+      "mo": "O",
+      "note": "",
+      "end": "11:55"
+     },
+     {
+      "k": "drive",
+      "t": "11:55",
+      "to": "San Marino",
+      "km": 165,
+      "min": 135,
+      "roads": "E45 via Sansepolcro and Cesena, A14, SS72",
+      "arr": "14:10",
+      "kind": "mw",
+      "light": []
+     }
+    ],
+    "end": "14:10",
+    "drive": "3h40",
+    "km": 245,
+    "sunset": "16:38",
+    "sunrise": "07:48",
+    "dusk": "17:11",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h50"
+   },
+   "safe": {
+    "date": "2026-12-27",
+    "dow": "Sun",
+    "dlabel": "Sun 27 Dec",
+    "start": "08:00",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "08:00",
+      "to": "Arezzo",
+      "km": 50,
+      "min": 45,
+      "roads": "A1 (Valdarno to Arezzo)",
+      "arr": "08:45",
+      "kind": "mw",
+      "light": [
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "08:45",
+      "name": "Piazza Grande",
+      "min": 90,
+      "mo": "M",
+      "note": "Parcheggio Pietri + lift",
+      "end": "10:15"
+     },
+     {
+      "k": "drive",
+      "t": "10:15",
+      "to": "Anghiari",
+      "km": 30,
+      "min": 40,
+      "roads": "SR73",
+      "arr": "10:55",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "10:55",
+      "name": "Anghiari + quick lunch",
+      "min": 60,
+      "mo": "O",
+      "note": "",
+      "end": "11:55"
+     },
+     {
+      "k": "drive",
+      "t": "11:55",
+      "to": "San Marino",
+      "km": 165,
+      "min": 135,
+      "roads": "E45 via Sansepolcro and Cesena, A14, SS72",
+      "arr": "14:10",
+      "kind": "mw",
+      "light": []
+     }
+    ],
+    "end": "14:10",
+    "drive": "3h40",
+    "km": 245,
+    "sunset": "16:38",
+    "sunrise": "07:48",
+    "dusk": "17:11",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h50"
+   }
+  }
+ },
+ "10": {
+  "date": "2026-12-28",
+  "dow": "Mon",
+  "dlabel": "Mon 28 Dec",
+  "start": "09:00",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "09:00",
+    "to": "Comacchio",
+    "km": 120,
+    "min": 120,
+    "roads": "A14 to Ravenna, then SS309 Romea (do not enter Ravenna)",
+    "arr": "11:00",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "11:00",
+    "name": "Comacchio canals",
+    "min": 60,
+    "mo": "O",
+    "note": "Under 30,000 people: not on the ban list",
+    "end": "12:00"
+   },
+   {
+    "k": "drive",
+    "t": "12:00",
+    "to": "Mogliano Veneto (hotel)",
+    "km": 125,
+    "min": 140,
+    "roads": "SS309 Romea past Chioggia, Passante A4",
+    "arr": "14:20",
+    "kind": "mw",
+    "light": []
+   }
+  ],
+  "end": "14:20",
+  "drive": "4h20",
+  "km": 245,
+  "sunset": "16:34",
+  "sunrise": "07:44",
+  "dusk": "17:08",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h50",
+  "modes": {
+   "fast": {
+    "date": "2026-12-28",
+    "dow": "Mon",
+    "dlabel": "Mon 28 Dec",
+    "start": "09:00",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "09:00",
+      "to": "Comacchio",
+      "km": 120,
+      "min": 120,
+      "roads": "A14 to Ravenna, then SS309 Romea (do not enter Ravenna)",
+      "arr": "11:00",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:00",
+      "name": "Comacchio canals",
+      "min": 60,
+      "mo": "O",
+      "note": "Under 30,000 people: not on the ban list",
+      "end": "12:00"
+     },
+     {
+      "k": "drive",
+      "t": "12:00",
+      "to": "Mogliano Veneto (hotel)",
+      "km": 160,
+      "min": 115,
+      "roads": "Ferrara–Mare expressway, A13, A4",
+      "arr": "13:55",
+      "kind": "mw",
+      "light": []
+     }
+    ],
+    "end": "13:55",
+    "drive": "3h55",
+    "km": 280,
+    "sunset": "16:34",
+    "sunrise": "07:44",
+    "dusk": "17:08",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h50"
+   },
+   "safe": {
+    "date": "2026-12-28",
+    "dow": "Mon",
+    "dlabel": "Mon 28 Dec",
+    "start": "09:00",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "09:00",
+      "to": "Comacchio",
+      "km": 120,
+      "min": 120,
+      "roads": "A14 to Ravenna, then SS309 Romea (do not enter Ravenna)",
+      "arr": "11:00",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:00",
+      "name": "Comacchio canals",
+      "min": 60,
+      "mo": "O",
+      "note": "Under 30,000 people: not on the ban list",
+      "end": "12:00"
+     },
+     {
+      "k": "drive",
+      "t": "12:00",
+      "to": "Mogliano Veneto (hotel)",
+      "km": 160,
+      "min": 115,
+      "roads": "Ferrara–Mare expressway, A13, A4",
+      "arr": "13:55",
+      "kind": "mw",
+      "light": []
+     }
+    ],
+    "end": "13:55",
+    "drive": "3h55",
+    "km": 280,
+    "sunset": "16:34",
+    "sunrise": "07:44",
+    "dusk": "17:08",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h50"
+   }
+  }
+ },
+ "11": {
+  "date": "2026-12-29",
+  "dow": "Tue",
+  "dlabel": "Tue 29 Dec",
+  "start": "09:30",
+  "rows": [
+   {
+    "k": "stop",
+    "t": "09:30",
+    "name": "Train Mogliano → Venezia S. Lucia",
+    "min": 20,
+    "mo": "M",
+    "note": "Car stays parked",
+    "end": "09:50"
+   },
+   {
+    "k": "stop",
+    "t": "09:50",
+    "name": "Venice: Grand Canal, Rialto, San Marco",
+    "min": 420,
+    "mo": "M",
+    "note": "Check the acqua alta forecast",
+    "end": "16:50"
+   }
+  ],
+  "end": "16:50",
+  "drive": "0h",
+  "km": 0,
+  "sunset": "16:34",
+  "sunrise": "07:51",
+  "dusk": "17:09",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h44",
+  "modes": {}
+ },
+ "12": {
+  "date": "2026-12-30",
+  "dow": "Wed",
+  "dlabel": "Wed 30 Dec",
+  "start": "08:30",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "08:30",
+    "to": "Aquileia",
+    "km": 100,
+    "min": 85,
+    "roads": "A4",
+    "arr": "09:55",
+    "kind": "mw",
+    "light": [
+     "glare_east"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "09:55",
+    "name": "Basilica mosaics",
+    "min": 60,
+    "mo": "O",
+    "note": "",
+    "end": "10:55"
+   },
+   {
+    "k": "drive",
+    "t": "10:55",
+    "to": "Miramare Castle",
+    "km": 45,
+    "min": 45,
+    "roads": "SS14 coast road",
+    "arr": "11:40",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "11:40",
+    "name": "Miramare gardens",
+    "min": 45,
+    "mo": "O",
+    "note": "",
+    "end": "12:25"
+   },
+   {
+    "k": "drive",
+    "t": "12:25",
+    "to": "Trieste",
+    "km": 8,
+    "min": 15,
+    "roads": "SS14",
+    "arr": "12:40",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "12:40",
+    "name": "Piazza Unità + lunch",
+    "min": 90,
+    "mo": "M",
+    "note": "Molo IV car park",
+    "end": "14:10"
+   },
+   {
+    "k": "drive",
+    "t": "14:10",
+    "to": "Ljubljana",
+    "km": 95,
+    "min": 90,
+    "roads": "A1 Slovenia (e-vignette)",
+    "arr": "15:40",
+    "kind": "mw",
+    "light": []
+   }
+  ],
+  "end": "15:40",
+  "drive": "3h55",
+  "km": 248,
+  "sunset": "16:24",
+  "sunrise": "07:50",
+  "dusk": "16:59",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h34",
+  "modes": {
+   "cine": {
+    "date": "2026-12-30",
+    "dow": "Wed",
+    "dlabel": "Wed 30 Dec",
+    "start": "08:30",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "08:30",
+      "to": "Aquileia",
+      "km": 100,
+      "min": 85,
+      "roads": "A4",
+      "arr": "09:55",
+      "kind": "mw",
+      "light": [
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "09:55",
+      "name": "Basilica mosaics",
+      "min": 60,
+      "mo": "O",
+      "note": "",
+      "end": "10:55"
+     },
+     {
+      "k": "drive",
+      "t": "10:55",
+      "to": "Miramare Castle",
+      "km": 45,
+      "min": 45,
+      "roads": "SS14 coast road",
+      "arr": "11:40",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:40",
+      "name": "Miramare gardens",
+      "min": 45,
+      "mo": "O",
+      "note": "",
+      "end": "12:25"
+     },
+     {
+      "k": "drive",
+      "t": "12:25",
+      "to": "Trieste",
+      "km": 8,
+      "min": 15,
+      "roads": "SS14",
+      "arr": "12:40",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "12:40",
+      "name": "Piazza Unità + lunch",
+      "min": 90,
+      "mo": "M",
+      "note": "Molo IV car park",
+      "end": "14:10"
+     },
+     {
+      "k": "drive",
+      "t": "14:10",
+      "to": "Strada Napoleonica, Opicina",
+      "km": 8,
+      "min": 20,
+      "roads": "Up to Opicina",
+      "arr": "14:30",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "14:30",
+      "name": "Strada Napoleonica viewpoint walk",
+      "min": 20,
+      "mo": "O",
+      "note": "Views over Trieste and the gulf",
+      "end": "14:50"
+     },
+     {
+      "k": "drive",
+      "t": "14:50",
+      "to": "Štanjel",
+      "km": 35,
+      "min": 45,
+      "roads": "Karst roads via Sežana",
+      "arr": "15:35",
+      "kind": "scenic",
+      "light": [
+       "golden"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "15:35",
+      "name": "Štanjel hilltop village",
+      "min": 30,
+      "mo": "O",
+      "note": "",
+      "end": "16:05"
+     },
+     {
+      "k": "drive",
+      "t": "16:05",
+      "to": "Ljubljana",
+      "km": 75,
+      "min": 65,
+      "roads": "H4 Vipava valley, then A1 (e-vignette)",
+      "arr": "17:10",
+      "kind": "mw",
+      "light": [
+       "afterdark"
+      ]
+     }
+    ],
+    "end": "17:10",
+    "drive": "4h35",
+    "km": 271,
+    "sunset": "16:24",
+    "sunrise": "07:50",
+    "dusk": "16:59",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h34"
+   },
+   "safe": {
+    "date": "2026-12-30",
+    "dow": "Wed",
+    "dlabel": "Wed 30 Dec",
+    "start": "08:30",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "08:30",
+      "to": "Aquileia",
+      "km": 100,
+      "min": 85,
+      "roads": "A4",
+      "arr": "09:55",
+      "kind": "mw",
+      "light": [
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "09:55",
+      "name": "Basilica mosaics",
+      "min": 60,
+      "mo": "O",
+      "note": "",
+      "end": "10:55"
+     },
+     {
+      "k": "drive",
+      "t": "10:55",
+      "to": "Trieste",
+      "km": 45,
+      "min": 45,
+      "roads": "A4 / RA13, avoiding the coast road",
+      "arr": "11:40",
+      "kind": "mw",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:40",
+      "name": "Piazza Unità + lunch",
+      "min": 90,
+      "mo": "M",
+      "note": "Molo IV car park",
+      "end": "13:10"
+     },
+     {
+      "k": "drive",
+      "t": "13:10",
+      "to": "Ljubljana",
+      "km": 95,
+      "min": 90,
+      "roads": "A1 Slovenia (e-vignette)",
+      "arr": "14:40",
+      "kind": "mw",
+      "light": []
+     }
+    ],
+    "end": "14:40",
+    "drive": "3h40",
+    "km": 240,
+    "sunset": "16:24",
+    "sunrise": "07:50",
+    "dusk": "16:59",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h34"
+   }
+  }
+ },
+ "13": {
+  "date": "2026-12-31",
+  "dow": "Thu",
+  "dlabel": "Thu 31 Dec",
+  "start": "10:30",
+  "rows": [
+   {
+    "k": "stop",
+    "t": "10:30",
+    "name": "Morning in Ljubljana old town",
+    "min": 0,
+    "mo": "O",
+    "note": "New Year's Eve: shops close early",
+    "end": "10:30"
+   },
+   {
+    "k": "drive",
+    "t": "10:30",
+    "to": "Zagreb",
+    "km": 140,
+    "min": 115,
+    "roads": "A2 / A3",
+    "arr": "12:25",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "12:25",
+    "name": "Upper Town, then the New Year's Eve party",
+    "min": 240,
+    "mo": "M",
+    "note": "Garage Tuškanac; book the hotel early",
+    "end": "16:25"
+   }
+  ],
+  "end": "16:25",
+  "drive": "1h55",
+  "km": 140,
+  "sunset": "16:20",
+  "sunrise": "07:44",
+  "dusk": "16:54",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h36",
+  "modes": {
+   "cine": {
+    "date": "2026-12-31",
+    "dow": "Thu",
+    "dlabel": "Thu 31 Dec",
+    "start": "10:30",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "10:30",
+      "to": "Kostanjevica na Krki",
+      "km": 105,
+      "min": 85,
+      "roads": "A2",
+      "arr": "11:55",
+      "kind": "mw",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:55",
+      "name": "Kostanjevica na Krki river island",
+      "min": 30,
+      "mo": "O",
+      "note": "",
+      "end": "12:25"
+     },
+     {
+      "k": "drive",
+      "t": "12:25",
+      "to": "Samobor",
+      "km": 40,
+      "min": 45,
+      "roads": "Krka valley via Brežice, Bregana",
+      "arr": "13:10",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "13:10",
+      "name": "Samobor: square and kremšnita",
+      "min": 45,
+      "mo": "O",
+      "note": "",
+      "end": "13:55"
+     },
+     {
+      "k": "drive",
+      "t": "13:55",
+      "to": "Zagreb",
+      "km": 25,
+      "min": 30,
+      "roads": "Samobor road",
+      "arr": "14:25",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "14:25",
+      "name": "Upper Town, then the New Year's Eve party",
+      "min": 240,
+      "mo": "M",
+      "note": "Garage Tuškanac; book the hotel early",
+      "end": "18:25"
+     }
+    ],
+    "end": "18:25",
+    "drive": "2h40",
+    "km": 170,
+    "sunset": "16:20",
+    "sunrise": "07:44",
+    "dusk": "16:54",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h36"
+   }
+  }
+ },
+ "14": {
+  "date": "2027-01-01",
+  "dow": "Fri",
+  "dlabel": "Fri 1 Jan",
+  "start": "08:30",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "08:30",
+    "to": "Bajakovo border",
+    "km": 300,
+    "min": 225,
+    "roads": "A3, empty on 1 Jan; motorway fuel stations open",
+    "arr": "12:15",
+    "kind": "mw",
+    "light": [
+     "glare_east"
+    ]
+   },
+   {
+    "k": "border",
+    "t": "12:15",
+    "name": "Croatia → Serbia (Bajakovo–Batrovci)",
+    "min": 45,
+    "end": "13:00"
+   },
+   {
+    "k": "drive",
+    "t": "13:00",
+    "to": "Belgrade",
+    "km": 120,
+    "min": 95,
+    "roads": "A3 Serbia",
+    "arr": "14:35",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "14:35",
+    "name": "Kalemegdan at dusk",
+    "min": 90,
+    "mo": "M",
+    "note": "Garage Obilićev venac",
+    "end": "16:05"
+   }
+  ],
+  "end": "16:05",
+  "drive": "5h20",
+  "km": 420,
+  "sunset": "16:07",
+  "sunrise": "07:37",
+  "dusk": "16:40",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "8h29",
+  "modes": {
+   "cine": {
+    "date": "2027-01-01",
+    "dow": "Fri",
+    "dlabel": "Fri 1 Jan",
+    "start": "08:30",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "08:30",
+      "to": "Vukovar",
+      "km": 285,
+      "min": 210,
+      "roads": "A3 to Županja, then D55 / D2",
+      "arr": "12:00",
+      "kind": "mw",
+      "light": [
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "12:00",
+      "name": "Vukovar water tower and the Danube",
+      "min": 30,
+      "mo": "O",
+      "note": "1 Jan: view from outside",
+      "end": "12:30"
+     },
+     {
+      "k": "drive",
+      "t": "12:30",
+      "to": "Ilok",
+      "km": 37,
+      "min": 40,
+      "roads": "D2 along the Danube",
+      "arr": "13:10",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "border",
+      "t": "13:10",
+      "name": "Croatia → Serbia (Ilok–Bačka Palanka)",
+      "min": 30,
+      "end": "13:40"
+     },
+     {
+      "k": "drive",
+      "t": "13:40",
+      "to": "Petrovaradin Fortress, Novi Sad",
+      "km": 45,
+      "min": 50,
+      "roads": "State road 12 along the Danube",
+      "arr": "14:30",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "14:30",
+      "name": "Petrovaradin Fortress",
+      "min": 30,
+      "mo": "O",
+      "note": "Danube view over Novi Sad",
+      "end": "15:00"
+     },
+     {
+      "k": "drive",
+      "t": "15:00",
+      "to": "Belgrade",
+      "km": 95,
+      "min": 70,
+      "roads": "A1",
+      "arr": "16:10",
+      "kind": "mw",
+      "light": [
+       "dusk"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "16:10",
+      "name": "Kalemegdan, floodlit",
+      "min": 60,
+      "mo": "O",
+      "note": "Garage Obilićev venac",
+      "end": "17:10"
+     }
+    ],
+    "end": "17:10",
+    "drive": "6h10",
+    "km": 462,
+    "sunset": "16:07",
+    "sunrise": "07:37",
+    "dusk": "16:40",
+    "tz": "CET",
+    "riseTz": "CET",
+    "setTz": "CET",
+    "warn": [],
+    "daylight": "8h29"
+   }
+  }
+ },
+ "15": {
+  "date": "2027-01-02",
+  "dow": "Sat",
+  "dlabel": "Sat 2 Jan",
+  "start": "08:00",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "08:00",
+    "to": "Golubac Fortress",
+    "km": 130,
+    "min": 120,
+    "roads": "Požarevac / Veliko Gradište",
+    "arr": "10:00",
+    "kind": "main",
+    "light": [
+     "glare_east"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "10:00",
+    "name": "Golubac Fortress",
+    "min": 45,
+    "mo": "O",
+    "note": "2 Jan is a holiday: may be closed, view from outside",
+    "end": "10:45"
+   },
+   {
+    "k": "drive",
+    "t": "10:45",
+    "to": "Lepenski Vir",
+    "km": 40,
+    "min": 55,
+    "roads": "Danube road",
+    "arr": "11:40",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "11:40",
+    "name": "Lepenski Vir",
+    "min": 40,
+    "mo": "O",
+    "note": "",
+    "end": "12:20"
+   },
+   {
+    "k": "drive",
+    "t": "12:20",
+    "to": "Iron Gates dam via the Kazan gorge",
+    "km": 60,
+    "min": 90,
+    "roads": "Danube road with lay-bys",
+    "arr": "13:50",
+    "kind": "scenic",
+    "light": []
+   },
+   {
+    "k": "border",
+    "t": "13:50",
+    "name": "Serbia → Romania (Iron Gates I dam)",
+    "min": 45,
+    "end": "14:35"
+   },
+   {
+    "k": "tz",
+    "t": "15:35",
+    "name": "Clocks forward 1 hour (Romanian time)"
+   },
+   {
+    "k": "drive",
+    "t": "15:35",
+    "to": "Drobeta-Turnu Severin",
+    "km": 12,
+    "min": 20,
+    "roads": "DN6",
+    "arr": "15:55",
+    "kind": "main",
+    "light": []
+   }
+  ],
+  "end": "15:55",
+  "drive": "4h45",
+  "km": 242,
+  "sunset": "16:59",
+  "sunrise": "07:16",
+  "dusk": "17:33",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "EET",
+  "warn": [],
+  "daylight": "8h44",
+  "modes": {}
+ },
+ "16": {
+  "date": "2027-01-03",
+  "dow": "Sun",
+  "dlabel": "Sun 3 Jan",
+  "start": "09:00",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "09:00",
+    "to": "Craiova",
+    "km": 110,
+    "min": 90,
+    "roads": "DN6",
+    "arr": "10:30",
+    "kind": "main",
+    "light": [
+     "glare_east"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "10:30",
+    "name": "Lunch and fuel",
+    "min": 45,
+    "mo": "O",
+    "note": "",
+    "end": "11:15"
+   },
+   {
+    "k": "drive",
+    "t": "11:15",
+    "to": "Bucharest",
+    "km": 240,
+    "min": 180,
+    "roads": "DEx12 / A1",
+    "arr": "14:15",
+    "kind": "mw",
+    "light": []
+   }
+  ],
+  "end": "14:15",
+  "drive": "4h30",
+  "km": 350,
+  "sunset": "16:47",
+  "sunrise": "08:06",
+  "dusk": "17:20",
+  "tz": "EET",
+  "riseTz": "EET",
+  "setTz": "EET",
+  "warn": [],
+  "daylight": "8h41",
+  "modes": {
+   "cine": {
+    "date": "2027-01-03",
+    "dow": "Sun",
+    "dlabel": "Sun 3 Jan",
+    "start": "08:30",
+    "rows": [
+     {
+      "k": "drive",
+      "t": "08:30",
+      "to": "Brâncuși ensemble, Târgu Jiu",
+      "km": 95,
+      "min": 100,
+      "roads": "DN67",
+      "arr": "10:10",
+      "kind": "main",
+      "light": [
+       "glare_east"
+      ]
+     },
+     {
+      "k": "stop",
+      "t": "10:10",
+      "name": "Brâncuși ensemble",
+      "min": 40,
+      "mo": "O",
+      "note": "Endless Column and Table of Silence",
+      "end": "10:50"
+     },
+     {
+      "k": "drive",
+      "t": "10:50",
+      "to": "Horezu Monastery",
+      "km": 55,
+      "min": 65,
+      "roads": "DN67 below the Căpățânii mountains",
+      "arr": "11:55",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "11:55",
+      "name": "Horezu Monastery",
+      "min": 30,
+      "mo": "O",
+      "note": "",
+      "end": "12:25"
+     },
+     {
+      "k": "drive",
+      "t": "12:25",
+      "to": "Râmnicu Vâlcea",
+      "km": 45,
+      "min": 50,
+      "roads": "DN67",
+      "arr": "13:15",
+      "kind": "scenic",
+      "light": []
+     },
+     {
+      "k": "drive",
+      "t": "13:15",
+      "to": "Pitești",
+      "km": 60,
+      "min": 70,
+      "roads": "DN7",
+      "arr": "14:25",
+      "kind": "main",
+      "light": []
+     },
+     {
+      "k": "stop",
+      "t": "14:25",
+      "name": "Lunch and fuel",
+      "min": 40,
+      "mo": "O",
+      "note": "",
+      "end": "15:05"
+     },
+     {
+      "k": "drive",
+      "t": "15:05",
+      "to": "Bucharest",
+      "km": 110,
+      "min": 75,
+      "roads": "A1",
+      "arr": "16:20",
+      "kind": "mw",
+      "light": []
+     }
+    ],
+    "end": "16:20",
+    "drive": "6h00",
+    "km": 365,
+    "sunset": "16:47",
+    "sunrise": "08:06",
+    "dusk": "17:20",
+    "tz": "EET",
+    "riseTz": "EET",
+    "setTz": "EET",
+    "warn": [],
+    "daylight": "8h41"
+   }
+  }
+ }
+}

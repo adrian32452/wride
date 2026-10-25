@@ -1,0 +1,589 @@
+0	Numerele drumurilor rămân ca pe indicatoare. Linkurile Wikipedia se deschid în engleză.
+1	kilometri
+2	zile
+3	țări
+4	zile de condus pe drumuri panoramice
+5	cea mai lungă etapă (ziua 4)
+6	Ziua {0}: {1}
+7	{0}, ziua {1}
+8	Toate zilele
+9	Ziua {0}: {1} → {2}
+10	Limită uzuală
+11	Taxă de drum
+12	Pe traseul tău: {0}
+13	Nu este pe traseul tău.
+14	Drumuri locale, care lipsesc din datele hărții · circa {0} km, {1}
+15	Drumuri planificate pentru această zi: {0}. Pentru traseul exact folosește Google Maps sau Waze din fișa zilei.
+16	≈{0} km · {1} în ritmul W123
+17	{0}% autostradă
+18	Taxe de autostradă: {0}.
+19	Variantă · {0}
+20	(linie albastră punctată): ≈{0} km, {1} ({2} km, {3}) pe {4}.
+21	Nu există o variantă cu adevărat diferită pe rețeaua principală pentru acest tronson.
+22	Drum panoramic
+23	Ziua {0}
+24	Mărește fotografia: {0}
+25	atinge pentru a mări
+26	Condus până la {0}
+27	sosire {0}
+28	Prevezi {0} min
+29	până la {0}
+30	Program orar, ziua {0}
+31	Program orar
+32	ore în CET, apoi EET
+33	ore în {0}
+34	apus {0}
+35	Sfârșitul zilei
+36	Galerie foto, ziua {0}
+37	Fotografii
+38	{0} fotografii · atinge pentru a mări
+39	{0}, fotografia {1} din {2}
+40	Parcare și opriri, ziua {0}
+41	Parcare și opriri pe drum
+42	Sursă
+43	De verificat la sosire
+44	Fotografie: Wikimedia Commons, {0}
+45	autor și licență
+46	Deschide în Google Maps
+47	Waze până la {0}
+48	Deschide aplicația Waze. Nu e instalată?
+49	Waze pe web
+50	Pe telefon se deschide aplicația Waze.
+51	Waze acceptă o singură destinație o dată; folosește linkul Waze de la fiecare oprire de mai sus.
+52	de condus
+53	apus
+54	Cazare
+55	Taxă (autopista AP-)
+56	În mare parte gratuită (autovía A-); tronsoanele AP- au taxă
+57	130 km/h, 110 pe ploaie
+58	80 km/h (90 pe unele drumuri)
+59	Taxă (péage) pe majoritatea autostrăzilor
+60	Fără taxe
+61	90 km/h (110 pe drumurile cu două benzi pe sens)
+62	Gratuită (superstrada)
+63	Taxă pe autostrade (drumurile A)
+65	E-vinietă obligatorie (16 € pentru 7 zile)
+66	Taxă, plătită la cabine
+67	Taxă, plătită la cabine (dinari, euro sau card)
+68	130 km/h (drumuri expres 100)
+69	Acoperit de rovinietă
+70	Bosnia și Herț.
+71	E-vinietă obligatorie
+72	Vinietă obligatorie
+73	Taxă pe autostradă
+74	Autostradă
+75	Drum principal
+76	Drum secundar
+77	Linie de feribot
+78	W123: banda din dreapta la 90–100 km/h; alimentare la fiecare 500–600 km.
+79	W123: prin localități și sensuri giratorii; socotește o medie de 60–65 km/h.
+80	W123: lent și cu multe curbe; socotește o medie de 45–50 km/h.
+81	Verifică orarul de iarnă.
+82	Plecare
+83	Oprire
+84	Pe drum
+85	Înnoptare
+86	Vizită, fără mașină
+87	Sosire
+88	Parcare
+89	Park & ride
+90	Priveliște
+91	Oprire pe drum
+92	Autostradă fără nume
+93	Drum principal fără nume
+94	Drum secundar fără nume
+95	Linie de feribot fără nume
+96	Drum fără nume
+97	O variantă de ocolire mai rapidă.
+98	Obligatoriu
+99	Opțional: primul care se taie dacă întârzii
+100	Obligatoriu
+101	Opțional
+102	Drum
+103	Bilet
+104	Fără taxă
+105	de verificat
+106	Ar putea fi o alternativă apropiată, mai lentă și fără taxă.
+107	O opțiune locală pentru ocoliri.
+108	Limbă
+109	Jurnal de drum · sâm. 19 dec. 2026 – dum. 3 ian. 2027 · 16 zile
+110	Madrid ⟦0⟧→⟦1⟧ București
+111	Un Mercedes-Benz W123 300D la 90–100 km/h, prin nouă țări, pe drumuri de coastă, pasuri din Apenini și prin Defileul Dunării.
+112	Ipoteze de planificare (dacă schimbi oricare dintre ele, orele se actualizează)
+113	Perioada: sâm. 19 dec. 2026 – dum. 3 ian. 2027. Sărbătorile cad în zile de condus: Crăciunul în Chianti, Anul Nou pe autostrada spre Belgrad.
+114	Mașina nu este înmatriculată în Madrid, așa că ziua 1 pornește de la marginea orașului.
+115	⟦0⟧Obligatoriu⟦1⟧ = orașele tale principale; ⟦2⟧Opțional⟦3⟧ = extra-urile propuse de mine, primele care se taie dacă întârzii.
+116	Timpi de condus în ritmul W123 (90–95 km/h pe autostradă, mai încet pe coastă și la munte), cu pauze scurte incluse.
+117	⤢ Hartă pe tot ecranul
+120	Tot traseul
+121	✕ Închide
+122	Trage pentru a muta, derulează sau apropie degetele pentru zoom. Atinge numărul unei zile pentru a mări pe ea, un drum pentru detalii sau un marcaj de înnoptare pentru a deschide ziua respectivă.
+123	⟦0⟧⟦1⟧Traseu (pe drumuri)
+124	⟦0⟧⟦1⟧Drumuri locale, aproximativ
+125	⟦0⟧⟦1⟧Variantă (la trecerea mouse-ului)
+126	⟦0⟧⟦1⟧Zi de condus panoramic
+127	⟦0⟧⟦1⟧Înnoptare (numărul zilei)
+128	⟦0⟧⟦1⟧Oprire
+129	⟦0⟧⟦1⟧Autostradă
+130	⟦0⟧⟦1⟧Drum principal
+131	⟦0⟧⟦1⟧Localitate
+132	Atinge o zi sau un marcaj de înnoptare pentru a sări la ea. Treci cu mouse-ul (sau atinge) peste orice drum sau tronson al traseului pentru nume, limite, taxe și variante. Traseul urmează rețeaua principală; tronsoanele punctate folosesc drumuri locale mici care lipsesc din datele hărții, de aceea sunt desenate în linie dreaptă. Această versiune include corniche-ul Estérel (D559) în ziua 4 și reorganizarea de Crăciun în jurul Florenței.
+133	Restricții urmărite · la 18 oct. 2026
+134	Ce are voie să facă W123
+135	Mașina nu are etichetă de emisii în niciun sistem, așa că limitele sunt zonele de acces din Madrid, Bilbao, San Sebastián, orașele franceze cu ZFE și toată Florența. Vinietă trebuie doar în Slovenia și România. Aceasta este o imagine de moment; ⟦0⟧evidența actualizată ↗⟦1⟧ e locul unde se fac modificările.
+136	Mașina
+137	Element
+138	Situație
+139	Înmatriculare
+140	Spania (municipiul încă neconfirmat)
+141	Eticheta DGT spaniolă
+142	Niciuna (diesel înmatriculat înainte de 2006)
+143	Crit'Air francez
+144	Neeligibilă, considerată neclasificată
+145	Clasa italiană
+146	Diesel Euro 0
+147	Statut de vehicul istoric
+148	Niciunul
+149	Emisii și zone de acces
+150	Florența este cea mai mare constrângere: toată zona construită e închisă pentru dieselurile Euro 0 non-stop. Statutul de vehicul istoric ar ridica interdicțiile din Madrid, Bilbao și Florența.
+151	Loc
+152	Regulă
+153	Afectează mașina?
+154	Plan
+156	Mașinile fără etichetă neînmatriculate în Madrid sunt interzise în tot municipiul din ian. 2025; cele înmatriculate în Madrid care plătesc acolo IVTM sunt acoperite de un moratoriu; vehiculele istorice sunt exceptate
+157	⟦0⟧Da⟦1⟧⟦2⟧⟦3⟧dacă nu e înmatriculată în Madrid⟦4⟧
+158	Dacă nu e înmatriculată în Madrid, pornește din afara limitelor municipiului
+161	Mașinile fără etichetă nu au acces în ZBE în orele restricționate din zilele lucrătoare
+162	⟦0⟧Da⟦1⟧
+163	Hotel în afara ZBE (Barakaldo, Getxo) sau sosire în weekend
+166	Mașinile fără etichetă interzise în ZBE centrală în fiecare zi, toată ziua
+167	Parchezi în afara ZBE și intri pe jos sau cu autobuzul
+169	ZFE în Franța
+170	Încă în vigoare după ce Consiliul Constituțional a anulat desființarea lor pe 21 mai 2026; Crit'Air 4, 5 și neclasificatele sunt interzise
+171	Treci de Toulouse, Montpellier și Marsilia pe autostradă; baza pe Riviera în afara Nisei
+173	Italia, centre istorice
+174	ZTL, cu camere
+175	Parchezi mereu în afara zidurilor
+176	Florența
+177	Toată zona construită închisă 24/7 pentru dieselurile Euro 0 și 1; vehiculele de colecție sunt exceptate
+178	⟦0⟧Da⟦1⟧⟦2⟧⟦3⟧tot orașul⟦4⟧
+179	Cazare în Figline Valdarno; intri cu trenul
+182	1 oct.–31 mar., orașe de peste 30.000 de locuitori, diesel până la Euro 4 interzis în zilele lucrătoare
+183	⟦0⟧Da⟦1⟧⟦2⟧⟦3⟧zile lucrătoare⟦4⟧
+184	Pe autostradă pe lângă Rimini; Ravenna în weekend sau într-o zi de sărbătoare
+187	Sezon de iarnă de la 1 oct., orașe de peste 30.000 de locuitori, diesel până la Euro 4 interzis în zilele lucrătoare
+188	Baza la Mogliano Veneto; tren spre Veneția
+189	Italia, interdicția Euro 5
+190	Amânată la 1 oct. 2027
+191	⟦0⟧Nu⟦1⟧
+192	Nimic de făcut
+194	Din Slovenia până în România
+195	Nicio interdicție urbană găsită pe acest traseu
+196	Parcare urbană obișnuită
+197	Viniete și taxe de drum
+198	Țară
+199	Sistem
+200	Cost pentru mașină
+201	Cum se plătește
+202	Spania
+203	A-1 gratuită; AP-8 pe coasta bască, cu taxă
+204	Pe tronson
+205	Card la cabine
+206	Franța
+207	Taxe de autostradă (A64, A61, A9, A8)
+211	Taxe de autostradă (A10, A12, A14, A4); FI-PI-LI gratuită
+213	⟦0⟧E-vinietă⟦1⟧, verificată cu camere
+214	16 € pentru 7 zile ⟦0⟧sursă ↗⟦1⟧
+215	Doar pe evinjeta.dars.si; numărul exact ca în talon; din ziua 12
+216	Croația
+217	Taxe de autostradă (A3)
+218	Cabine
+220	Taxe de autostradă
+221	Cabine (dinari, euro sau card)
+222	România
+223	⟦0⟧Rovinietă⟦1⟧ pe toate drumurile naționale, cu preț după clasa Euro din 1 oct. 2026
+224	29 lei pe zi pentru Euro 0–3 ⟦0⟧sursă ↗⟦1⟧
+225	Online înainte de graniță; acoperă zilele 15–16; amendă 500–1.000 lei
+226	Echipament de iarnă și lumini
+227	Patru anvelope M+S sau 3PMSF cu cel puțin 4 mm profil, plus lanțuri în portbagaj, respectă toate regulile de pe traseu, indiferent de vreme.
+228	Perioadă
+229	Lumini
+230	Fără dată fixă
+231	Doar unde este semnalizat (din memorie)
+232	1 nov.–31 mar.
+233	Comunele din legea muntelui: anvelope de iarnă sau lanțuri la bord (din memorie)
+234	15 nov.–15 apr.
+235	Drumuri semnalizate: anvelope M+S sau lanțuri la bord ⟦0⟧Pirelli ↗⟦1⟧
+236	15 nov.–15 mar.
+237	Anvelope de iarnă obligatorii ⟦0⟧SIBIZ ↗⟦1⟧
+238	Tronsoane de iarnă desemnate, indiferent de vreme; amendă 130 € ⟦0⟧Croatia Week ↗⟦1⟧
+239	Faruri aprinse ziua 1 nov.–31 mar.
+240	1 nov.–1 apr.
+241	Sursele diferă: după dată sau doar pe zăpadă și gheață; anvelopele cu ținte interzise ⟦0⟧Tyremap ↗⟦1⟧
+242	Iarna
+243	Sursele diferă: doar pe zăpadă și gheață, sau 1 nov.–31 mar.
+244	Documente
+245	Permis de conducere; permis internațional recomandat pentru Serbia
+246	Permiso de circulación și ficha técnica, ITV valabilă și după întoarcere
+247	Asigurare și Carte Verde cu Serbia (SRB) netăiată
+248	Pașapoarte pentru toți cei din mașină
+249	Confirmarea e-vinietei slovene (ziua 12)
+250	Confirmarea rovinietei românești (ziua 15)
+251	Echipament și mașină
+252	Triunghiuri reflectorizante, plus girofarul V-16 dacă e obligatoriu pentru mașină
+253	Vestă reflectorizantă pentru fiecare persoană, în habitaclu
+254	Trusă de prim ajutor (Croația, Slovenia, Serbia)
+255	Becuri cu halogen de rezervă (Croația)
+256	Patru anvelope de iarnă, de cel puțin 4 mm, și lanțuri
+257	Bujii incandescente, baterie și filtru de motorină verificate
+258	Motorină de iarnă din ziua 12
+259	Încă deschis
+260	Este mașina înmatriculată în municipiul Madrid?
+261	Data exactă de plecare (zi lucrătoare sau sărbătoare în zilele 10–11)
+262	Orele restricționate din Bilbao pentru mașinile fără etichetă
+263	Verificare ZBE Burgos
+264	Perimetrul ZFE din Nisa și localitatea hotelului de pe Riviera
+265	Reguli pentru diesel în Pisa, Lucca și Arezzo dincolo de ZTL
+266	Sfârșitul sezonului în Veneto și accesul la Tronchetto
+267	Înmatriculare de vehicul istoric: ar ridica interdicțiile din Madrid, Bilbao și Florența
+268	Bifele se salvează doar în acest browser.
+269	Timpii de condus sunt pentru W123 în ritmul lui, fără opriri. Fotografiile sunt de pe Wikimedia Commons; fiecare mențiune duce la fotograf și licență. Linkurile Wikipedia spun mai multe despre fiecare loc. Secțiunea de restricții de mai sus este o imagine de moment a evidenței actualizate.
+270	Harta traseului
+271	Arată o zi pe hartă
+272	Deschide harta pe tot ecranul
+273	Mărește
+274	Micșorează
+275	Arată tot traseul
+276	Închide harta pe tot ecranul
+277	Traseu de la Madrid la București cu înnoptările numerotate pe zile
+278	Zi cu zi
+279	Restricții urmărite
+280	Fotografia anterioară
+281	Fotografia următoare
+282	Închide
+283	De pe Meseta spre dealurile basce
+284	Bilbao (sâmbătă: se poate intra cu mașina în centru)
+285	ZBE Madrid: punctul de plecare depinde de înmatriculare
+286	ZBE din Bilbao se aplică doar în zilele lucrătoare: sosirea sâmbătă e în regulă
+287	Plecare la 08:30. Dacă mașina nu e înmatriculată în Madrid, pornește din afara limitelor municipiului.
+288	Catedrala din Burgos
+289	Catedrală gotică chiar lângă A-1. Cam 1,5 h.
+290	Guggenheim și Casco Viejo cu metroul.
+291	Drumul coastei basce
+293	Biarritz sau Anglet, pentru parcare mai ușoară
+294	ZBE San Sebastián: mașinile fără etichetă interzise 24/7
+295	Taxa AP-8
+297	Port pescăresc pe N-634, pe faleză, între Zumaia și Zarautz.
+298	Golful La Concha și un prânz cu pintxos. Parchezi în afara ZBE.
+299	Apus deasupra Rocher de la Vierge, pe la 17:20.
+300	De-a lungul Pirineilor
+302	Carcassonne, orașul nou de sub Cité
+303	Rămâi pe autostradă pe lângă Toulouse (ZFE)
+304	Taxe franceze
+306	Un balcon spre tot lanțul Pirineilor. Cam 1 h.
+307	După lăsarea întunericului urci pe jos la Cité-ul iluminat.
+308	Provence și corniche-ul roșu
+309	Menton
+310	Rămâi pe autostradă pe lângă Montpellier și Marsilia (ZFE)
+311	Cea mai lungă zi: plecare la 07:30
+313	Apeduct roman, la 30 de minute de A9.
+315	Ieși de pe A8 aici pe la 14:30 pentru D559.
+317	30 km de faleze din porfir roșu deasupra mării. Revii pe A8 la Mandelieu.
+318	Ultimul oraș francez înainte de Italia.
+319	Cele trei corniche-uri
+320	Nu intra în centrul Nisei (ZFE)
+322	Golf adânc și centru vechi.
+324	Sat cocoțat; întoarcere pe Grande Corniche.
+326	Portul și piața cazinoului.
+327	Din Liguria până la Turnul înclinat
+329	Lucca, chiar în afara zidurilor
+330	ZTL Pisa și Lucca: parchezi în afara zidurilor
+331	Taxe italiene
+332	24 dec.: program redus; rezervă cina din Ajunul Crăciunului
+333	Pisa, Piazza dei Miracoli
+334	Vizită după-amiaza, 1,5 h. Parchezi în afara zidurilor.
+335	Plimbare pe zidurile orașului la apus.
+336	Crăciun în Chianti
+338	Figline Valdarno, la sud de Florența (tren spre Florența)
+339	25 dec.: muzeele și majoritatea magazinelor închise; rezervă prânzul de Crăciun
+340	Mașina nu intră niciodată în Florența (interdicție pentru diesel Euro 0)
+341	Pleci după micul dejun.
+343	Sat cu ziduri pe creastă, unde începe cel mai frumos tronson al SR222.
+345	Prânz de Crăciun deasupra viilor (rezervă din timp).
+347	Piață triunghiulară, iluminată de Crăciun.
+348	Pe linia Florența–Arezzo; trenuri regionale spre Firenze SMN în circa 35 de minute.
+349	Florența de Sfântul Ștefan
+350	26 dec.: Uffizi, Accademia și Pitti deschise 08:15–18:30; Cupola 12:45–17:15; catedrala închisă
+351	Mers al trenurilor de sărbătoare: verifică ultimul tren de întoarcere
+352	Uffizi, Ponte Vecchio, Baptisteriul și urcarea în Cupolă. Mașina rămâne în Figline.
+353	Arezzo și Bocca Trabaria
+354	ZTL Arezzo: parchezi în afara zidurilor
+355	Indicatoare italiene pentru echipament de iarnă pe pas (15 nov.–15 apr.)
+356	Plecare la 08:00 ca să ajungi la San Marino înainte de întuneric
+358	Piazza Grande într-o duminică dimineața liniștită.
+360	Orășel cu ziduri pe deal, deasupra văii superioare a Tibrului; prânz rapid.
+362	Pas la 1.049 m între Toscana și Marche.
+364	Treci prin el la coborârea spre San Marino.
+365	Trei turnuri pe Muntele Titano.
+366	Din Delta Padului până în laguna Veneției
+368	Mogliano Veneto, în afara municipiului Veneția
+369	Lun. 28 dec.: interdicții pentru diesel în zilele lucrătoare 08:30–18:30 în Ravenna, Chioggia și Veneția: nu intra în aceste orașe
+370	Verifică SS309 Romea pe hărțile interdicțiilor; varianta de rezervă A14–A13–A4 prin Bologna (+1 h, întâi spre vest)
+372	Oraș din lagună, cu canale și poduri, sub 30.000 de locuitori.
+373	Trenuri spre Venezia Santa Lucia în circa 20 de minute. Verifică să nu fie pe lista interdicțiilor (circa 28.000 de locuitori).
+374	Veneția pe jos
+375	Mașina rămâne parcată
+376	Veneția
+377	Tren din Mogliano Veneto (circa 20 min). Verifică prognoza de acqua alta.
+378	Friuli roman și Carstul
+380	E-vinieta slovenă de la graniță (16 €, 7 zile)
+382	Mozaicul din pardoseala bazilicii și ruine romane.
+383	Castelul Miramare
+384	Castel alb pe malul mării, la marginea Triestului.
+386	Prânz în Piazza Unità.
+387	Luminițe de Crăciun de-a lungul râului Ljubljanica.
+388	Advent la Zagreb
+390	Echipament de iarnă în Croația (15 nov.–15 apr.)
+391	Faruri aprinse ziua
+392	31 dec.: rezervă hotelul din timp; magazinele închid devreme
+393	După-amiaza în Orașul de Sus, seara la târgul de Advent.
+394	Prin Câmpia Panonică
+395	Belgrad
+396	Belgrad, Novi Beograd pentru parcare ușoară
+397	Granița sârbă: Carte Verde și pașapoarte
+398	Taxe croate și sârbe
+399	1 ian.: aproape totul e închis; zi bună de condus
+400	Cetatea Kalemegdan, la confluența Savei cu Dunărea.
+401	Porțile de Fier ale Dunării
+403	Drobeta-Turnu Severin sau Orșova
+404	Rovinieta de la graniță
+405	România e cu o oră înainte
+406	2 ian. e zi liberă în Serbia și în România
+407	Cetatea Golubac
+408	Turnuri medievale acolo unde începe defileul.
+410	Așezare mezolitică pe malul fluviului.
+411	Barajul Porțile de Fier I
+412	Punct de trecere a frontierei pe coronamentul barajului.
+413	Ultima etapă spre est
+414	București
+415	Rovinieta încă valabilă
+417	Prânz și alimentare.
+418	Sosire la începutul după-amiezii.
+421	Catedrala din Burgos + prânz
+422	Parcarea Plaza Mayor
+424	Guggenheim și Casco Viejo cu metroul
+425	Seara
+427	Drumul de coastă N-634
+428	Falezele de fliș de la Itzurun
+429	Portul Getaria
+430	San Sebastián (P+R Illunbe)
+432	La Concha + prânz cu pintxos
+433	Autobuzul 28 până în centru
+435	Rocher de la Vierge la apus
+438	A64 / A61, pauză de prânz pe drum
+439	Plimbare prin Cité-ul iluminat
+440	Seara, P1/P2 gratuite după 20:00
+441	Parcare de 9 €
+442	A9 / A8, pauză de prânz pe drum
+443	Théoule-sur-Mer pe corniche-ul Estérel
+444	D559 cu opriri la belvedere
+445	Belvedere pe corniche (incluse în drum)
+448	Portul și citadela din Villefranche
+449	Parcare gratuită nov.–mar.
+451	Satul Èze + prânz
+452	Stânca și portul din Monaco
+454	Menton pe Grande Corniche
+455	M2564, belvedere
+456	Pisa (P+R Via Pietrasantina)
+457	A10 / A12, pauză de prânz pe drum
+459	Navetă de la P+R
+461	Seara pe zidurile orașului
+462	Drumul expres Florența–Siena până la Poggibonsi, apoi SR222
+463	Plimbare prin Castellina
+464	Ziua de Crăciun: în aer liber, sate iluminate
+466	Prânz de Crăciun deasupra viilor
+467	Rezervă din timp
+468	Piața din Greve
+469	Figline Valdarno (hotel)
+470	SP16 peste dealuri
+471	Tren Figline → Firenze SMN
+472	Mers de sărbătoare; mașina rămâne la hotel
+473	Florența: Uffizi, Ponte Vecchio, Baptisteriul, Cupola
+474	26 dec.: muzee deschise, catedrala închisă
+475	Tren înapoi la Figline
+476	A1 (din Valdarno la Arezzo)
+478	Parcheggio Pietri + lift
+480	Anghiari + prânz rapid
+481	Bocca Trabaria (1.049 m)
+483	Oprire pentru fotografii pe pas
+484	San Marino prin Urbania
+486	A14 spre Ravenna, apoi SS309 Romea (nu intra în Ravenna)
+487	Canalele din Comacchio
+488	Sub 30.000 de locuitori: nu e pe lista interdicțiilor
+489	Mogliano Veneto (hotel)
+490	SS309 Romea pe lângă Chioggia, Passante A4
+491	Tren Mogliano → Venezia S. Lucia
+492	Veneția: Canal Grande, Rialto, San Marco
+493	Verifică prognoza de acqua alta
+494	Mozaicurile bazilicii
+495	Drumul de coastă SS14
+496	Grădinile Miramare
+498	Piazza Unità + prânz
+499	Parcarea Molo IV
+500	A1 în Slovenia (e-vinietă)
+501	Dimineața în centrul vechi al Ljubljanei
+502	Revelion: magazinele închid devreme
+503	Orașul de Sus, apoi petrecerea de Revelion
+504	Garajul Tuškanac; rezervă hotelul din timp
+505	Vama Bajakovo
+506	A3, goală pe 1 ian.; benzinăriile de pe autostradă sunt deschise
+507	Croația → Serbia (Bajakovo–Batrovci)
+508	A3 în Serbia
+509	Kalemegdan la apus
+510	Garajul Obilićev venac
+512	2 ian. e zi liberă: poate fi închis, se vede din afară
+513	Drumul Dunării
+514	Barajul Porțile de Fier prin Cazanele Dunării
+515	Drumul Dunării, cu locuri de oprire
+516	Serbia → România (barajul Porțile de Fier I)
+517	Ceasul înainte cu 1 oră (ora României)
+519	Prânz și alimentare
+521	Parking Plaza Mayor (subteran)
+522	Parcare subterană centrală, la câțiva pași de catedrală. Regulile ZBE din Burgos pentru mașinile fără etichetă nu au fost încă verificate; vezi evidența.
+523	Garaj central sau al hotelului
+524	ZBE din Bilbao (Abando) interzice mașinile fără etichetă doar luni–vineri, 07:00–20:00. Ajungi sâmbătă și pleci duminică, deci un garaj central e în regulă.
+525	Plaja Itzurun și falezele de fliș
+526	Ocol scurt de pe N-634; parchezi în Zumaia și mergi 5 minute pe jos până la poteca de pe faleză.
+527	Parcarea plajei Gaztetape (gratuită)
+528	Parcare mare gratuită, zonă albă, lângă plajă și aproape de centru. Alternativă: parcarea cu plată din port, 1,20 €/h, gratuită duminica și de sărbători.
+529	Park & ride Illunbe (gratuit)
+530	494 de locuri gratuite lângă stadionul Anoeta, în afara centrului unde mașinile fără etichetă sunt interzise 24/7. Autobuzul 28 de la Begiristain 1 (10 minute pe jos). Alternativă: P+R Igara, gratuit până la 24 h, autobuzele 5 și 25.
+531	Parking Grande Plage (Indigo, subteran)
+532	5 boulevard du Général de Gaulle, la 10 minute de mers pe faleză până la Rocher de la Vierge.
+533	Parking Clemenceau (subteran)
+534	Sub place Clemenceau, la o stradă de Boulevard des Pyrénées.
+535	Parcările Cité P1 (Porte Narbonnaise) sau P2 (Porte d'Aude)
+536	Ziua 1 € la 15 min în primele 2 ore, apoi 0,50 € la 45 min. Gratuit 20:00–08:00, ideal pentru urcarea de seară la zidurile iluminate.
+537	Parcarea de pe malul stâng (rive gauche)
+538	D981, Vers-Pont-du-Gard. 9 € pe mașină indiferent de durată; deschis tot anul 08:00–miezul nopții. Plata la automate sau cu cardul la ieșire.
+540	Plimbare printre stejari de plută până la o priveliște spre Saint-Tropez la vest și de-a lungul Estérelului la est.
+542	Sit protejat cu vedere spre golful La Napoule.
+544	Urcare de 5 minute dintr-o curbă de lângă Miramar; insulele Lérins și Alpii. Trage complet în afara carosabilului; locurile de oprire sunt mici.
+545	Parking Hôtel de Ville (subteran)
+546	23 rue de la République, la poalele orașului vechi. Sau garajul hotelului tău.
+548	Gratuită de la 1 noiembrie până la sfârșitul lui martie (12 ore consecutive). La câțiva pași de citadelă și port.
+550	La poalele satului, pe Moyenne Corniche. 3,20 €/h 06:00–20:00, primele 15 min gratuite; card sau numerar.
+551	Cea mai bună pentru palat și orașul vechi de pe Stâncă. Prima oră gratuită, circa 7,30 € pentru 2 ore, 24 € pentru 24 de ore. Aceleași tarife în weekend.
+554	Belvedere spre Cap Ferrat și Èze pe drumul înapoi spre Menton.
+556	Park & ride Via Pietrasantina (gratuit)
+557	Parcare gratuită în afara zidurilor, cu navetă spre Piazza dei Miracoli (1 € dus-întors, circa 09:00–17:00 iarna). Mai aproape, dar cu plată: Via Cammeo, în spatele pieței, 2 €/h. Nu intra niciodată cu mașina în interiorul zidurilor (ZTL).
+558	Parcheggio Carducci sau Palatucci
+559	În afara zidurilor, supravegheate video, tarife orare mai mici și bilete pe zi; intri pe jos pe cea mai apropiată poartă.
+560	Parcări sub ziduri
+561	Parchezi în afara satului și intri pe jos. Verifică indicatoarele la sosire.
+562	Locuri de oprire printre vii, între Castellina și Greve
+563	Cel mai frumos tronson al drumului Chiantigiana; oprește complet în afara carosabilului, doar pe acostamentele pietruite.
+564	Parcări la marginea localității
+565	Parchezi înainte de piață și intri pe jos.
+566	Parcarea hotelului lângă gară
+567	Florența e interzisă pentru mașină; Figline e un municipiu separat, cu trenuri spre Firenze SMN.
+568	Tren spre Firenze Santa Maria Novella
+569	Trenuri regionale pe linia Florența–Arezzo; mers de sărbătoare pe 26 dec.
+571	Sub orașul vechi, în afara ZTL, cu lift gratuit până în centru.
+572	Parchezi în afara zidurilor vechi și urci pe jos.
+573	Vârful pasului Bocca Trabaria (1.049 m)
+574	Loc de oprire pe pas; bun pentru fotografii înainte de coborâre.
+575	Parcări publice numerotate (P1–P13)
+576	Semnalizate pe urcarea spre Muntele Titano; verifică parcarea hotelului.
+577	Parcări la marginea centrului
+578	Parchezi în afara centrului cu canale și intri pe jos. Verifică indicatoarele la sosire.
+579	În afara municipiului Veneția; confirmă că nu e pe lista interdicțiilor din Veneto înainte să rezervi.
+580	Tren din Mogliano Veneto
+581	Circa 20 de minute până la Venezia Santa Lucia; mașina rămâne la hotel.
+582	Parcare lângă bazilică
+583	Verifică indicatoarele la sosire.
+585	Parcare lângă castel / Grignano
+586	Locuri puține lângă poarta castelului. Verifică indicatoarele la sosire.
+587	Molo IV sau Silos
+588	Molo IV e pe faleză, cel mai rapid spre Piazza Unità. Silos, lângă gară, e la circa 10 minute de mers pe jos.
+589	Garajul hotelului sau P+R Dolgi most
+590	Centrul vechi e în mare parte fără mașini. Dacă vii dinspre coastă, P+R Dolgi most include două bilete de autobuz urban. Zonele de parcare pe stradă sunt doar de 30–120 de minute.
+591	Garaj public Tuškanac, Langov trg sau Petrinjska
+592	Plătești la ieșire. Plata prin SMS în zonele de pe stradă cere o cartelă SIM croată; automatele primesc monede. Zonele sunt gratuite duminica.
+593	Garaj public central lângă Knez Mihailova, la o plimbare de Kalemegdan. Zonele de pe stradă se plătesc prin SMS (9111/9112/9113) și pot cere o cartelă SIM sârbă.
+594	Parcarea pentru vizitatorii cetății
+595	La intrare, acolo unde începe defileul. Verifică programul de iarnă la sosire.
+596	Parcarea sitului
+597	Lângă muzeu, pe malul fluviului.
+598	Belvederele de la Cazanele Mici
+599	Locuri de oprire pe drumul sârbesc, în dreptul celei mai înguste porțiuni a defileului; chipul lui Decebal e pe malul celălalt.
+600	Parcarea hotelului
+601	Întreabă la hotel.
+602	Parcări în centru
+603	Oprire scurtă pentru prânz și alimentare. Verifică indicatoarele la sosire.
+604	Hotelul tău sau un garaj
+605	Sfârșitul călătoriei.
+606	SPANIA
+607	FRANȚA
+609	SLOVENIA
+610	CROAȚIA
+611	BOSNIA ȘI HERȚ.
+613	ROMÂNIA
+614	UNGARIA
+615	ELVEȚIA
+617	BULGARIA
+618	Golful Biscaya
+619	Marea Mediterană
+620	Marea Ligurică
+621	Marea Adriatică
+622	Marea Tireniană
+623	Vatican
+624	Ucraina
+625	Turcia
+626	Elveția
+627	Slovacia
+628	Portugalia
+629	Muntenegru
+630	Republica Moldova
+631	Macedonia de Nord
+633	Kosovo
+634	Ungaria
+635	Grecia
+636	Germania
+637	Cehia
+641	Albania
+642	Evitând autostrăzile
+643	Cea mai rapidă, pe autostradă
+644	Drum local
+645	Getaria, pe coasta bască
+648	Èze de pe Grande Corniche
+649	Piazza dei Miracoli, Pisa
+650	Vii în Chianti
+651	Florența de pe Piazzale Michelangelo
+652	Pasul Bocca Trabaria
+653	Podul Rialto, Veneția
+654	Castelul Miramare, Trieste
+655	Orașul de Sus, Zagreb
+656	Sava se varsă în Dunăre, Belgrad
+657	Cazanele Dunării
+658	Ateneul Român, București
+659	Corniche-ul Estérel (D559)
+661	Anghiari și Sansepolcro
+664	Defileul Dunării și Cazanele
+665	Barajul Porțile de Fier
+666	Roma
+667	Viena
+668	München
+669	Milano
+670	Napoli
+671	Torino
+672	Genova
+674	Sofia
+675	Chișinău
+676	Berna
+677	Zürich
+678	Geneva
+679	Marsilia
+680	Nisa
+683	Centru
+553	Col d'Èze și Fort de la Revère

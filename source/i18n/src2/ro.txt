@@ -1,0 +1,421 @@
+685	Lumina zilei {0}–{1}; condusul și opririle sunt desenate deasupra
+686	Lumina zilei
+687	Crepuscul
+688	Întuneric
+689	Drum panoramic
+690	răsărit {0} ({1}) · apus {2} ({3}) · întuneric de la {4}
+691	răsărit {0} · apus {1} · întuneric de la {2}
+692	În această zi traseul e același în toate modurile.
+693	Traseul acestei zile
+694	Traseul acestei zile:
+695	doar în această zi
+696	Față de varianta echilibrată: {0} de condus, ultima sosire la {1} în loc de {2}.
+697	răsărit
+698	Stilul traseului
+699	{0} de condus în 16 zile
+700	Localitățile de înnoptare rămân aceleași în toate modurile. Alegerea unui stil aici resetează alegerile pe zile; apoi fiecare zi se poate schimba din fișa ei. Drumurile panoramice se planifică doar pe lumină; înainte de răsărit și după lăsarea întunericului planul folosește autostrăzi.
+701	Alegerea ta se salvează împreună cu jurnalul de drum, așa că buletinul de știri o urmează.
+702	Alegerea ta se salvează în acest browser.
+703	emis {0}
+704	Deschide ziua
+705	Nu s-a găsit nimic care să afecteze această zi.
+706	Data
+707	Min. / max.
+708	Cer
+709	Ploaie / zăpadă
+710	Rafale de vânt
+711	Buletin de știri
+712	Încă nu există buletin. Cu o zi-două înainte va verifica:
+713	Din 17 decembrie, Claude verifică de două ori pe zi (pe la 06:40 și 17:40, ora Europei Centrale) știrile pentru următoarele 1–2 zile ale traseului tău: drumuri închise și lucrări, greve și proteste, restricții, cozi la frontiere și vremea de pe drum.
+714	Buletinele sunt scrise în engleză.
+715	Buletinele apar aici când jurnalul de drum e deschis în Claude.
+716	Se încarcă…
+717	Încă nu există buletin pentru zilele următoare.
+718	Cel mai rapid
+719	Echilibrat
+720	Cinematic
+721	Autostradă oriunde se poate. Aceeași oră de plecare și aceleași opriri; ajungi mai devreme.
+722	Drumuri panoramice acolo unde merită, autostradă pe porțiunile plictisitoare.
+723	Cele mai spectaculoase drumuri deschise iarna, potrivite cu lumina zilei. Până la 1,5 h în plus.
+724	Înainte de răsărit
+725	După apus
+726	Pe întuneric
+727	Ora de aur
+728	Soare jos în față
+729	Drum panoramic pe lumină slabă
+730	Nu e autostradă, pe întuneric
+731	Închidere
+732	Lucrări
+733	Grevă
+734	Protest
+735	Restricție
+736	Frontieră
+737	Vreme
+738	Eveniment
+739	Carburant
+740	Trafic
+741	În această zi e la fel ca varianta echilibrată.
+742	Pasul Orduña, circa 900 m: verifică zăpada cu 1–2 zile înainte
+743	Zăpadă sau închideri pe pasul Orduña (BU-556 / A-625)
+744	Regulile ZBE din Bilbao în weekend
+748	Târg medieval pe o stâncă deasupra văii Ebrului; treci prin el cu mașina.
+750	Belvedere spre cascada de 222 m, la câțiva pași de parcare; are cea mai multă apă în sezonul ploios.
+751	Pasul Orduña
+752	N-623 / N-629 prin Oña
+753	Belvederea de la Salto del Nervión
+754	BU-556 până la pasul Orduña
+755	Plimbare scurtă de la parcare
+756	A-625 la coborârea de pe pas, apoi AP-68
+757	ZBE Madrid
+758	Trafic pe A-1 și AP-68
+759	Lucrări pe AP-8 și A63
+760	ZBE San Sebastián
+763	Jaizkibel la ora de aur înlocuiește apusul din Biarritz
+764	Închideri pe drumurile de coastă BI-3438 / GI-638 și GI-3440
+769	Port pescăresc cu o biserică pe chei și o insulă la care ajungi pe jos la reflux.
+771	Drumul de creastă Jaizkibel
+772	GI-3440 pe creasta de deasupra mării, cu belvedere spre Franța; gândit pentru lumina de după-amiază târziu.
+774	Oraș vechi cu ziduri, pe râul de graniță.
+775	BI-635 / BI-2238 prin Gernika
+776	Portul Lekeitio
+777	Drumul falezelor prin Ondarroa și Mutriku (BI-3438 / GI-638)
+778	Getaria: prânz cu pește la grătar
+779	Plimbare pe La Concha
+780	Hondarribia pe creasta Jaizkibel
+781	Drumul Jaizkibel GI-3440, cu opriri la belvedere
+782	Orașul vechi Hondarribia
+783	Închideri pe drumul de coastă N-634
+784	Ocolește complet Toulouse și ZFE-ul lui
+785	Închideri pe D117 între Saint-Girons și Foix
+786	Greve sau lipsă de carburant în Franța
+789	Începutul drumului D117 prin dealurile din Ariège, cu Pirineii la sud.
+791	Castel cu trei turnuri pe o stâncă deasupra orașului; prânz la poalele lui.
+793	Piață medievală înconjurată de arcade din lemn.
+794	A64, apoi D117 prin dealurile din Ariège
+795	D117 pe la poalele munților
+796	Foix: prânz sub castel
+797	Piața cu arcade din Mirepoix
+798	Trafic pe A64 / A61
+799	Fără corniche-ul Estérel în acest mod
+800	Trafic și lucrări pe A9 / A8
+801	Varianta echilibrată include deja corniche-ul Estérel; nu mai rămâne lumină pentru altceva.
+802	Trafic pe A9 / A8
+803	Închideri pe corniche-ul Estérel D559 (căderi de pietre, risc de incendiu)
+804	Închideri pe corniche-uri
+805	Evenimente în Monaco
+806	Închideri din cauza căderilor de pietre pe drumul SP530 spre Portovenere
+807	Lucrări pe A10 / A12
+811	Port cu case colorate și biserica San Pietro pe stânci, în vârful golfului.
+812	A10 / A12, pauză pe drum
+813	Drumul de coastă SP530
+814	Portovenere: prânz și biserica San Pietro
+815	SP530, apoi A12
+816	Trafic și lucrări pe A10 / A12
+817	Programul din 24 dec. în Pisa
+818	Închideri pe SR222
+819	Închideri de Crăciun
+820	Greve la tren în Toscana
+821	Programul muzeelor pe 26 dec.
+822	Fără Bocca Trabaria în acest mod
+823	Lucrări pe E45 lângă Verghereto: verifică din timp
+824	Lucrări și benzi închise pe E45 între Sansepolcro și Cesena
+828	E45 prin Sansepolcro și Cesena, A14, SS72
+829	Varianta echilibrată trece deja peste pasul Bocca Trabaria.
+830	Zăpadă sau gheață pe SS73bis la Bocca Trabaria
+831	Ordonanțe italiene pentru echipamentul de iarnă
+832	Ocolește Chioggia și SS309 Romea la nord de Comacchio
+833	Zilele cu interdicții pentru diesel în Veneto și Emilia-Romagna
+834	Trafic pe A13 / A4
+837	Drumul expres Ferrara–Mare, A13, A4
+838	Varianta echilibrată urmează deja Delta Padului pe Romea.
+839	Închideri sau ceață pe SS309 Romea
+840	Prognoza de acqua alta
+841	Greve la tren în Veneto
+842	Închideri pe drumurile din Carst (vânt bora)
+843	E-vinieta slovenă
+845	Plimbare pe marginea falezei deasupra Triestului, cu tot golful la picioare.
+847	Sat de piatră pe un deal din Carst.
+848	Urcare spre Opicina
+849	Plimbare pe belvederea Strada Napoleonica
+850	Priveliște spre Trieste și golf
+851	Drumuri prin Carst, pe la Sežana
+852	Satul Štanjel de pe deal
+853	H4 pe valea Vipava, apoi A1 (e-vinietă)
+854	Trafic pe A4
+855	Închideri de Revelion în Samobor
+856	Echipament de iarnă în Croația
+857	Drumul spre Samobor
+859	Orășel pe o insulă a râului Krka.
+861	Piață în culori pastelate la poalele dealurilor; încearcă kremšnita.
+862	Kostanjevica na Krki, orășelul de pe insulă
+863	Valea Krka prin Brežice și Bregana
+864	Samobor: piața și kremšnita
+865	Trafic pe A2 / A3
+866	Închideri de Revelion în Zagreb
+867	Frontiera Ilok–Bačka Palanka: confirmă că e deschisă pe 1 ian.
+868	Programul și cozile la punctul de trecere Ilok–Bačka Palanka
+869	Ceață pe Dunăre pe D2 și drumul de stat 12
+870	Drumul de stat 12
+873	Turnul de apă marcat de război, păstrat ca memorial deasupra Dunării.
+875	Oraș al vinului pe un mal înalt al Dunării; pod de frontieră spre Serbia.
+876	Cetatea Petrovaradin
+877	Cetate deasupra Dunării, în fața orașului Novi Sad.
+878	A3 până la Županja, apoi D55 / D2
+879	Turnul de apă din Vukovar și Dunărea
+880	1 ian.: se vede din afară
+881	D2 de-a lungul Dunării
+882	Croația → Serbia (Ilok–Bačka Palanka)
+883	Cetatea Petrovaradin, Novi Sad
+884	Drumul de stat 12 de-a lungul Dunării
+885	Priveliște spre Dunăre și Novi Sad
+886	Kalemegdan iluminat
+887	Cozi la frontiera Bajakovo–Batrovci
+888	Ceață pe A3
+889	Închideri pe drumul Dunării
+890	Cozi la frontiera de la Porțile de Fier
+891	Programul de sărbătoare din 2 ian.
+892	Opririle sunt opționale: dacă preferi, mergi fără oprire
+893	Închideri din cauza alunecărilor de teren pe DN67
+894	Traficul de întoarcere de duminică pe DN7 / A1
+897	Ansamblul Brâncuși, Târgu Jiu
+898	Coloana Infinitului, Poarta Sărutului și Masa Tăcerii.
+899	Mănăstirea Horezu
+900	Mănăstire în stil brâncovenesc, în patrimoniul UNESCO, la poalele munților.
+903	Ansamblul Brâncuși
+904	Coloana Infinitului și Masa Tăcerii
+905	DN67 la poalele munților Căpățânii
+906	Trafic pe DN6 / A1
+907	Rovinieta
+908	Sosire spre seară, înainte de întuneric.
+909	Sosire seara, pe A63.
+910	În această zi nu se conduce.
+911	Cam {0} întârziere față de plan
+912	Cam {0} în avans față de plan
+913	Conform planului
+914	acum
+915	planificat aici
+916	până la {0}
+917	sosire estimată
+918	lumină rămasă
+919	Între {0} și {1}
+920	la circa {0} km de traseul planificat
+921	precizie de circa {0} m
+922	Ca să prinzi drumurile panoramice pe lumină, renunță la sau scurtează: {0}.
+923	Sau trece restul zilei pe „Cel mai rapid” din fișa zilei.
+924	Altfel ai ajunge la {0} după apus: ia autostrada pe porțiunea aceea.
+925	Ai termina pe întuneric ({0}). Folosește autostrada pe ultima parte și sari peste opririle opționale.
+926	Ai timp de rezervă: varianta cinematică a zilei de azi încape dacă schimbi acum.
+927	Ai timp de rezervă: zăbovește la o oprire opțională sau ajungi mai devreme.
+928	Ca să recuperezi, scurtează opririle opționale rămase: {0}.
+929	Restul zilei e pe autostradă, așa că o sosire mai târzie sau pe întuneric e sigură.
+930	Nimic de schimbat. Mergi mai departe.
+931	Ca să replanifici cu Claude, copiază asta în conversație:
+932	Ești aici
+933	Unde sunt?
+934	Compară poziția ta cu planul zilei: avans sau întârziere, lumina rămasă și ce să tai. Locația ta rămâne pe acest dispozitiv.
+935	În afara datelor călătoriei, alege o zi ca să încerci.
+936	Folosește locația mea
+937	Actualizare continuă
+938	Ziua
+939	Sau sunt la
+940	Locația nu este permisă aici. Permite-o pentru această pagină dacă telefonul întreabă sau alege din listă unde ești. Dacă deschizi jurnalul de drum în Chrome sau Safari, de obicei merge.
+941	Nu s-a putut obține locația acum. Încearcă din nou în aer liber sau alege din listă unde ești.
+942	Se caută poziția…
+943	Ore recalculate de la plecarea ta reală ({0} {1}).
+944	Cu această plecare, un drum panoramic sau secundar cade pe întuneric. Fă o verificare ca să vezi ce să tai.
+945	Locația nu este permisă aici. Permite-o pentru această pagină dacă telefonul întreabă sau alege mai jos unde ești. Dacă deschizi jurnalul de drum în Chrome sau Safari, de obicei merge.
+946	Nu s-a putut obține locația acum. Încearcă din nou în aer liber sau alege mai jos unde ești.
+947	Ai ajuns la {0}
+948	Azi nu se conduce; mașina rămâne parcată.
+949	Locația nu merge? Alege unde ești
+950	Alege unde ești
+951	Pornește ziua {0}
+952	Apasă când pleci. Citește locația și ora, recalculează ziua de la plecarea reală și o verifică față de răsărit și apus.
+953	cu {0} mai târziu decât în plan
+954	cu {0} mai devreme decât în plan
+955	la timp
+956	poziția ta
+957	Ziua {0} încheiată
+958	Ziua {0} în desfășurare
+959	Plecare la {0} din {1}, {2}.
+960	Sosire la {0}.
+961	Verificare
+962	Verificare la 30 min
+963	Resetează ziua
+964	un drum panoramic se termină acum după apus.
+965	ai termina pe întuneric.
+966	acum ai {0} întârziere.
+967	acum ești cu {0} în avans.
+968	Vezi ce să schimbi
+969	cu această plecare, un drum panoramic sau secundar cade pe întuneric.
+970	Ești la circa {0} km de {1}. Pleci din altă parte?
+971	Da, pornesc de aici
+972	Nu, sunt la {0}
+973	Locație
+974	Manual
+975	Automat, la fiecare {0} min
+976	drum panoramic după apus
+977	încape dacă sari peste opririle opționale
+978	se termină pe întuneric
+979	încape
+980	Variante de aici
+981	Traseu
+982	Condus rămas
+983	Sosire
+984	Fără opriri opționale
+985	față de varianta curentă
+986	curent
+987	se reîntâlnește cu traseul în circa {0} km
+988	Treci la {0}
+989	Această afișare a jurnalului de drum nu poate citi locația telefonului. Atinge mai jos unde ești sau lipește o locație.
+990	Nu s-a putut obține locația acum. Încearcă din nou în aer liber sau atinge mai jos unde ești.
+991	Sunt la
+992	sau lipește o locație
+993	Folosește
+994	Lipește coordonate (în Google Maps ține apăsat pe punctul albastru și copiază numerele) sau un link de locație din Waze.
+995	Atinge „Pornește ziua” ca să pleci acum din {0} sau alege mai jos unde ești ca să pornești de acolo.
+996	Verificare:
+997	atinge unde ești sau lipește o locație.
+998	Nu pare o locație de pe acest traseu. Lipește coordonate ca 43.2955, -2.2565 sau un link de locație din Waze.
+999	Apasă când pleci. Notează ora, recalculează ziua de la plecarea reală și o verifică față de răsărit și apus.
+1000	De obicei în aceste zile
+1001	ploaie în circa {0} zile din 10
+1002	Medii aproximative pe termen lung; prognoza reală le înlocuiește din 9 decembrie.
+1003	Prognoză de test
+1004	Prognoză
+1005	pentru {0}, nu data călătoriei
+1006	Pe fiecare drum
+1007	Cerul la apus:
+1008	Vremea recomandă: {0}
+1009	Brumă aproape în fiecare dimineață
+1010	Ceață frecventă
+1011	Posibil zăpadă sau polei
+1012	Posibile rafale de bora
+1013	Ploaie și vânt dinspre Atlantic
+1014	Posibil acqua alta
+1015	Posibil vânt puternic Cers
+1016	plecare
+1017	punct panoramic
+1018	înnoptare
+1019	Platoul A-1, Aranda–Burgos
+1020	A1 peste Karst (Razdrto)
+1021	A10 pe coasta Liguriei, Savona–Genova
+1022	A13 Ferrara–Padova
+1023	A2 pe valea Krka
+1024	A3 prin Slavonia
+1025	A4 / RA13, ocolind drumul de coastă
+1026	A61, Lauragais (Castelnaudary)
+1027	A9, Narbonne–Montpellier
+1028	AP-8 prin interior
+1029	Înapoi la Figline pe A1, nu pe SP16 peste dealuri
+1030	Înapoi la Menton pe lângă mare, nu pe Grande Corniche
+1031	Varianta echilibrată folosește deja cele mai sigure drumuri în această zi.
+1032	Viscolul poate închide drumurile din câmpie; CNAIR anunță închiderile.
+1033	Liber
+1034	Drum pe faleză, închis când cad pietre după ploi abundente.
+1035	Drum pe faleză; cad pietre și se închide la ploi abundente, stropi de valuri la furtună. Varianta sigură rămâne pe A8.
+1036	Faleze și tuneluri de-a lungul fluviului: cad pietre după ploaie sau dezgheț, gheață la umbră.
+1037	D117 la poalele munților din Ariège
+1038	DN67 sub munți
+1039	Drumul Dunării prin defileul Porțile de Fier
+1040	E45 peste Apenini (Verghereto)
+1041	Fiecare porțiune riscantă a zilei (pasuri, drumuri pe faleză, câmpii cu ceață, culoare de bora și mistral) este verificată pentru ora la care treci pe acolo.
+1042	Drum expus pe creastă; nu are rost pe ceață.
+1043	Viaducte expuse; Liguria emite alerte de ploi abundente (allerta rossa) care închid drumuri.
+1044	Ceață în toată Câmpia Padului, dar pe autostradă.
+1045	Ceață atât de deasă încât să mergi prin ea porțiuni lungi, sau rafale de peste circa 70 km/h pe un drum expus: ia ruta sigură.
+1046	Drum la poalele munților, cu gheață la umbră în diminețile reci.
+1047	Pentru vreme rea: drumuri joase și autostrăzi, fără pasuri, drumuri pe faleză sau drumuri mici cu ceață. Aceleași orașe de înnoptare.
+1048	Ceața înghețată e frecventă pe platoul înalt în diminețile de decembrie.
+1049	Drum regional tratat cu sare, dar cu gheață la umbră într-o dimineață rece de Crăciun.
+1050	Ploi abundente pe drumuri pe faleză cu căderi de pietre, sau o alertă meteo roșie oficială: ia ruta sigură, sau așteaptă dacă alerta acoperă toate drumurile.
+1051	Drum de cornișă înalt; adesea în nori. Varianta sigură se întoarce pe lângă mare.
+1052	Cel mai înalt punct al întregii călătorii. A-1 e deszăpezită prima, dar la ninsoare abundentă camioanele sunt oprite și pot fi cerute lanțuri.
+1053	Cum decide verificarea meteo când să iei ruta sigură
+1054	Dacă e rău pe toate drumurile, pleacă mai târziu sau așteaptă plugurile de zăpadă; o noapte în plus e ultima soluție.
+1055	Dacă A-1 e închisă: A-6 / AP-6 prin tunelurile Guadarrama și A-62 prin Valladolid până la Burgos, cu circa 1 h mai mult. Dacă ambele sunt închise, așteaptă în Madrid.
+1056	Dacă și ruta sigură e afectată: pleacă mai târziu, așteaptă plugurile sau să se ridice ceața, sau, ca ultimă soluție, adaugă o noapte. Orașele de înnoptare nu sunt schimbate niciodată fără tine.
+1057	Dacă drumul prin defileu e închis: A1 spre sud până la Paraćin, apoi prin Zaječar și Negotin până la vama Porțile de Fier: circa 335 km, cu 1–2 h mai mult. Verifică ruta înainte de plecare.
+1058	La bora puternică, așteaptă în Trieste până scad rafalele.
+1059	La ninsoare abundentă nu există un drum jos spre San Marino: așteaptă plugurile
+1060	Alunecări de teren și curbe cu gheață. Varianta sigură rămâne în câmpie.
+1061	Pleacă cu o oră mai târziu, ca soarele să topească gheața.
+1062	Pleacă mai târziu, după ce se ridică ceața (adesea spre prânz).
+1063	Pleacă mai târziu, după ce se ridică ceața.
+1064	Pleacă mai târziu; planul începe oricum la 10:30.
+1065	Autostradă lungă și plată, cu bancuri dese de ceață.
+1066	Mai jos decât Bocca Trabaria și tratat cu sare, dar tot o traversare a Apeninilor.
+1067	M6098 pe lângă mare
+1068	Menton pe Basse Corniche
+1069	Drum mic peste dealuri, pe întuneric dacă prânzul se prelungește. Varianta sigură se întoarce pe A1.
+1070	Drum mic de munte; ruta sigură rămâne pe autostrada AP-68, prin valea mai joasă a Ebrului.
+1071	Fără Miramare: drumul de coastă primește toată forța borei
+1072	Rafale de mistral în delta Ronului.
+1073	Autostrăzi în loc de SS309 Romea: ceață pe drum cu două benzi pe sens, fără trafic din față
+1074	Pas montan, des înzăpezit la sfârșitul lui decembrie; echipament de iarnă obligatoriu.
+1075	N-634, drumul pe faleză Zumaia–Getaria
+1076	Fără Bocca Trabaria: E45 e mai joasă și tratată cu sare, dar tot traversează Apeninii
+1077	Fără cornișa Estérel: D559 e expus la vânt și căderi de pietre la furtună
+1078	Niciunul pe această rută.
+1079	Renumit pentru ceață și coliziuni frontale. Varianta sigură ia autostrăzile.
+1080	La alertă roșie, pleacă mai târziu sau așteaptă ridicarea ei.
+1081	Opțiuni: pleacă mai târziu, așteaptă plugurile sau să se ridice ceața, sau, ca ultimă soluție, adaugă o noapte.
+1082	Traversarea Ronului lângă Arles
+1083	Ceață pe fluviu. Varianta sigură rămâne pe autostrada A3.
+1084	Rocher de la Vierge, de la distanță sigură
+1085	SP16 peste dealuri, Greve–Figline
+1086	SP530 spre Portovenere
+1087	SR222, creasta din Chianti
+1088	SR222 spre nord, apoi A1 Firenze Impruneta → Incisa
+1089	SS309 Romea, Comacchio–Chioggia
+1090	SS309 Romea, Ravenna–Comacchio
+1091	Cel mai sigur
+1092	Încetinește la 80 km/h; nu ai la ce să schimbi.
+1093	Încetinește; nu ai la ce să schimbi.
+1094	Ninsoare care cade sau se depune, ploaie înghețată sau gheață pe un pas sau drum mic: ia ruta sigură.
+1095	Prognozele de ninsoare sunt de încredere cu circa 2–3 zile înainte, iar ceața e greu de prognozat, așa că decizia finală se ia cu o seară înainte și chiar în dimineața respectivă.
+1096	Pasul Somosierra (A-1)
+1097	Câmpia din sud, Craiova–Pitești–București
+1098	Valurile de furtună și rafalele lovesc drumul de coastă; ruta sigură folosește AP-8 prin interior.
+1099	Vânturi laterale puternice (Cers, Autan) bat peste autostradă; încetinește.
+1100	Ia ruta sigură
+1101	Primește toată forța borei. Varianta sigură o ocolește.
+1102	Ruta sigură ocolește: {0}.
+1103	Bora poate închide porțiunea pentru vehicule ușoare; DARS anunță restricțiile de vânt.
+1104	Primul drum care se închide la bora puternică.
+1105	Rafale de tramontană pe autostrada de coastă.
+1106	Drumul de coastă din Trieste (SS14)
+1107	Drum cu o bandă pe sens și camioane; ceața e frecventă în deltă.
+1108	Ceață în vale și polei în diminețile reci.
+1109	Drumul expres din valea Vipava (H4)
+1110	Atenție
+1111	Verificarea meteo: totul liber pe ruta ta
+1112	Verificarea meteo: fii atent
+1113	Verificarea meteo: niciun drum sigur la ora planificată
+1114	Verificarea meteo: ia ruta sigură
+1115	Puncte de urmărit pe ruta ta ({0})
+1116	Fără stâncile din Zumaia și Getaria: valurile de furtună și rafalele lovesc drumul de coastă
+1117	ceață
+1118	ploaie abundentă
+1119	gheață
+1120	căderi de pietre
+1121	ninsoare
+1122	valuri de furtună
+1123	test
+1124	vânt
+1125	Verificarea meteo spune să iei azi ruta sigură; vezi opțiunea „Cel mai sigur” mai jos.
+1126	{0} folosește aceleași drumuri ca varianta Echilibrat în această zi.
+1127	Plecare la 11:30. Dacă mașina nu e înmatriculată în Madrid, pornește din afara limitelor orașului.
+1128	Sosire pe la 18:15, ultimele 40 de minute pe întuneric, pe autostradă. Guggenheim luminat, văzut din afară (ultima intrare la 18:30), apoi pintxos în Casco Viejo, cu metroul.
+1129	Guggenheim luminat și pintxos în Casco Viejo
+1130	Nu cu plecare la 11:30: Frías și cascada au nevoie de lumină de zi.
+1131	Ultima intrare în muzeu la 18:30
+1132	Înregistrează locația
+1133	Ziua nu a început încă: înregistrarea pornește și ziua de unde ești.
+1134	În desfășurare din {0}.
+1135	Locația e blocată în aplicația Claude. Deschide aplicația de pe ecranul principal pentru GPS real sau alege unde ești:
+1136	Înregistrează locația acum
+1137	Vezi detaliile în Ziua {0}
+1138	Locație înregistrată la {0}.
+1139	Permisiunea de locație e oprită pentru această aplicație. Pe telefon: ține apăsat pe pictograma W123 Run → Informații aplicație → Permisiuni → Locație → Permite (în Chrome: ⋮ → Setări → Setări site → Locație). Apoi apasă din nou butonul.
+1140	Deschide aplicația de pe ecranul principal

@@ -1,0 +1,2329 @@
+<title>W123 Madrid–Bucharest Run</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800&family=Overpass+Mono:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<style>
+/* Layout: a road atlas. Wide route map as the hero, then one postcard row per day, read top to bottom like a trip book. */
+:root {
+  --paper: #edf0f1;
+  --card: #f9fafa;
+  --ink: #1b2530;
+  --muted: #586672;
+  --line: #d2d9dc;
+  --land: #e1e5e3;
+  --land-on: #d6dcd8;
+  --land-edge: #b9c3c6;
+  --sea: #d3e1e8;
+  --route: #c4301c;
+  --scenic: #d88a12;
+  --chip: #e4e9eb;
+  --warn-bg: #fbeee0;
+  --warn-ink: #7a3d07;
+  --focus: #1f5fbf;
+  --rd-mw: #6f7d8a;
+  --rd-main: #98a3ab;
+  --rd-minor: #b5bdc1;
+  --river: #9cbccd;
+  --town: #2c3843;
+  /* postcard palette: low winter sun */
+  --sky-top: #a9c0d0;
+  --sky-bot: #f1d6bf;
+  --sun: #f5c28a;
+  --far: #9cafbc;
+  --mid: #7b8e98;
+  --near: #4c5c66;
+  --snow: #f4f6f8;
+  --water: #87a9bc;
+  --glint: #e9f0f3;
+  --porph: #a8432c;
+  --road: #39434b;
+  --road-mark: #e9e2c9;
+  --glyph: #2f3b45;
+  --house: #e7ddd0;
+  --car: #b22a18;
+  /* road-sign plates keep their real colours in both themes */
+  --sign-blue: #1d4f9c;
+  --sign-red: #c8102e;
+  --sign-green: #1c6b3c;
+  --sign-yellow: #f5cf1f;
+  --sign-white: #ffffff;
+  --sign-black: #141414;
+
+  --f-display: "Overpass", "Highway Gothic", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "Newsreader", Georgia, "Times New Roman", serif;
+  --f-data: "Overpass Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #10161d; --card: #17202a; --ink: #e5eaee; --muted: #93a1ac; --line: #283440;
+    --land: #1b242e; --land-on: #222d38; --land-edge: #33414e; --sea: #0c1219;
+    --route: #ff6b4f; --scenic: #f2b14c; --chip: #222d38; --warn-bg: #3a2614; --warn-ink: #f6c995; --focus: #7fb0ff;
+    --sky-top: #0e1828; --sky-bot: #3a4663; --sun: #e7dcb2; --far: #2b3a52; --mid: #1f2c3e; --near: #131c29;
+    --snow: #8796ab; --water: #22405a; --glint: #4a6a86; --porph: #5e2a20; --road: #0b1118; --road-mark: #6f6a58;
+    --glyph: #0a1018; --house: #4a5266; --car: #d8442c;
+  --rd-mw: #7a8895; --rd-main: #52606b; --rd-minor: #3a4651; --river: #2b536b; --town: #c6cfd6;
+    --rd-mw: #7a8895; --rd-main: #52606b; --rd-minor: #3a4651; --river: #2b536b; --town: #c6cfd6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #10161d; --card: #17202a; --ink: #e5eaee; --muted: #93a1ac; --line: #283440;
+  --land: #1b242e; --land-on: #222d38; --land-edge: #33414e; --sea: #0c1219;
+  --route: #ff6b4f; --scenic: #f2b14c; --chip: #222d38; --warn-bg: #3a2614; --warn-ink: #f6c995; --focus: #7fb0ff;
+  --sky-top: #0e1828; --sky-bot: #3a4663; --sun: #e7dcb2; --far: #2b3a52; --mid: #1f2c3e; --near: #131c29;
+  --snow: #8796ab; --water: #22405a; --glint: #4a6a86; --porph: #5e2a20; --road: #0b1118; --road-mark: #6f6a58;
+  --glyph: #0a1018; --house: #4a5266; --car: #d8442c;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 17px;
+  line-height: 1.5;
+}
+.wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 64px;
+  display: grid;
+  gap: 28px;
+}
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 3px; }
+
+/* header */
+.head { display: grid; gap: 12px; position: relative; }
+.langbar { display: flex; justify-content: flex-end; align-items: center; gap: 8px; font-family: var(--f-display); font-size: 13px; color: var(--muted); }
+.langbar select { font: 600 14px var(--f-display); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 6px 8px; min-height: 36px; }
+.langbar .lang-hint { flex-basis: 100%; text-align: right; font-size: 12px; }
+.langbar { flex-wrap: wrap; }
+.eyebrow {
+  font-family: var(--f-display); font-weight: 600; font-size: 13px;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+}
+h1 {
+  font-family: var(--f-display); font-weight: 800; margin: 0;
+  font-size: clamp(38px, 7vw, 78px); line-height: .95; letter-spacing: -.02em;
+  text-wrap: balance;
+}
+h1 .arrow { color: var(--route); font-weight: 600; }
+.sub { font-size: 19px; color: var(--muted); max-width: 62ch; margin: 0; }
+.stats {
+  display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 4px 0 0; padding: 0; list-style: none;
+  font-family: var(--f-display);
+}
+.stats li { display: grid; }
+.stats b { font-size: 26px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+
+/* map */
+.mapbox { display: grid; gap: 10px; }
+.daybar { display: flex; flex-wrap: wrap; gap: 6px; }
+.daybar button {
+  font-family: var(--f-display); font-weight: 600; font-size: 14px;
+  min-width: 36px; padding: 5px 9px; border-radius: 4px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.daybar button.scenic { border-color: var(--scenic); }
+.daybar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.mapscroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--sea); }
+.mapscroll svg { display: block; width: 100%; min-width: 760px; height: auto; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: var(--f-display); font-size: 13px; color: var(--muted); align-items: center; }
+.legend i { display: inline-block; vertical-align: middle; margin-right: 6px; }
+.lg-route { width: 26px; height: 3px; background: var(--route); }
+.lg-scenic { width: 26px; height: 5px; background: var(--scenic); }
+.lg-sleep { width: 13px; height: 13px; border-radius: 50%; background: var(--ink); }
+.lg-stop { width: 8px; height: 8px; border-radius: 50%; background: var(--card); border: 2px solid var(--route); }
+.note { font-size: 15px; color: var(--muted); margin: 0; max-width: 80ch; }
+
+/* map svg parts */
+.c-land { fill: var(--land); stroke: var(--land-edge); stroke-width: .7; }
+.c-land.on { fill: var(--land-on); }
+.m-label { font-family: var(--f-display); font-size: 12px; font-weight: 600; letter-spacing: .14em; fill: var(--muted); opacity: .75; text-anchor: middle; }
+.m-sea { font-family: var(--f-body); font-style: italic; font-size: 14px; fill: var(--muted); opacity: .8; text-anchor: middle; letter-spacing: .02em; }
+.r-base { fill: none; stroke: var(--route); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+.r-scenic { fill: none; stroke: var(--scenic); stroke-width: 7; stroke-linejoin: round; stroke-linecap: round; opacity: .85; }
+.r-day { transition: opacity .2s; cursor: pointer; }
+.r-local { stroke-dasharray: 3 3; }
+.mapbox.fs .r-local { stroke-dasharray: calc(7px * var(--k, 1)) calc(5px * var(--k, 1)); }
+.lg-local { width: 26px; height: 0; border-top: 3px dashed var(--route); }
+.dim .r-day { opacity: .18; }
+.dim .r-day.sel { opacity: 1; }
+.m-stop { fill: var(--card); stroke: var(--route); stroke-width: 2; }
+.m-sleep circle { fill: var(--ink); stroke: var(--paper); stroke-width: 2; cursor: pointer; }
+.m-sleep text { font-family: var(--f-data); font-size: 9px; font-weight: 600; fill: var(--paper); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.m-sleep:hover circle, .m-sleep:focus circle { fill: var(--route); }
+.m-sleep:focus { outline: none; }
+.m-name { font-family: var(--f-display); font-size: 12.5px; font-weight: 600; fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; }
+.m-names { display: none; }
+.dim .m-names.sel { display: inline; }
+.dim .m-stopgroup { opacity: .2; }
+.dim .m-stopgroup.sel { opacity: 1; }
+
+/* day cards */
+.days { display: grid; gap: 22px; }
+.day {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+  scroll-margin-top: 16px;
+}
+.day.flash { box-shadow: 0 0 0 3px var(--route); }
+.post { position: relative; background: var(--sky-bot); min-height: 100%; }
+.post svg { display: block; width: 100%; height: 100%; min-height: 220px; }
+.post .stamp {
+  position: absolute; top: 12px; left: 12px;
+  font-family: var(--f-display); font-weight: 800; font-size: 13px; letter-spacing: .1em; text-transform: uppercase;
+  background: var(--card); color: var(--ink); padding: 4px 8px 3px; border-radius: 3px;
+}
+.post .stamp.sc { background: var(--scenic); color: var(--sign-black); }
+.body { padding: 22px 24px 24px; display: grid; gap: 14px; align-content: start; min-width: 0; }
+.dnum { font-family: var(--f-display); font-weight: 600; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--route); }
+.day h2 { font-family: var(--f-display); font-weight: 800; font-size: 28px; line-height: 1.05; margin: 2px 0 0; text-wrap: balance; letter-spacing: -.01em; }
+.leg { font-size: 17px; color: var(--muted); margin: 0; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
+.meta .num { font-family: var(--f-data); font-size: 15px; font-variant-numeric: tabular-nums; }
+.meta .num small { color: var(--muted); font-size: 12px; margin-left: 3px; }
+.plates { display: flex; flex-wrap: wrap; gap: 6px; }
+.plate {
+  font-family: var(--f-display); font-weight: 800; font-size: 13px; line-height: 1;
+  padding: 5px 7px 3px; border-radius: 3px; border: 1.5px solid var(--sign-white);
+  box-shadow: 0 0 0 1px var(--line); white-space: nowrap;
+}
+.p-blue { background: var(--sign-blue); color: var(--sign-white); }
+.p-red { background: var(--sign-red); color: var(--sign-white); }
+.p-green { background: var(--sign-green); color: var(--sign-white); }
+.p-yellow { background: var(--sign-yellow); color: var(--sign-black); }
+.p-white { background: var(--sign-white); color: var(--sign-black); border-color: var(--sign-black); }
+.stops { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; border-left: 2px solid var(--line); }
+.stops li { position: relative; padding-left: 18px; display: grid; gap: 1px; }
+.stops li::before {
+  content: ""; position: absolute; left: -7px; top: 7px; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--card); border: 2px solid var(--route);
+}
+.stops li.t-sleep::before, .stops li.t-start::before, .stops li.t-end::before { background: var(--ink); border-color: var(--ink); }
+.stops li.t-road::before { width: 8px; height: 8px; left: -5px; top: 9px; background: var(--scenic); border-color: var(--scenic); }
+.stops li.t-visit::before { border-style: dashed; }
+.sname { font-family: var(--f-display); font-weight: 600; font-size: 16px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.sname .tag { font-family: var(--f-data); font-weight: 400; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.snote { font-size: 15.5px; color: var(--muted); }
+.photo { font-family: var(--f-display); font-size: 13px; font-weight: 600; color: var(--route); text-decoration: none; white-space: nowrap; }
+.photo:hover { text-decoration: underline; }
+.flags { display: flex; flex-wrap: wrap; gap: 6px; }
+.flag {
+  display: inline-flex; gap: 6px; align-items: center; font-family: var(--f-display); font-size: 13px; font-weight: 600;
+  background: var(--warn-bg); color: var(--warn-ink); padding: 4px 9px 3px; border-radius: 3px;
+}
+.flag svg { flex: none; }
+.foot { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--line); }
+.sleep { font-size: 15px; margin: 0; }
+.sleep b { font-family: var(--f-display); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-right: 6px; font-weight: 600; }
+.gmaps {
+  font-family: var(--f-display); font-weight: 600; font-size: 14px; text-decoration: none;
+  padding: 7px 12px 5px; border-radius: 4px; background: var(--ink); color: var(--paper); white-space: nowrap;
+}
+.gmaps:hover { background: var(--route); }
+.navbtns { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.waze { background: #33ccff; color: #0b2a3a; }
+.waze:hover { background: #0aa7e0; color: #fff; }
+.navnote { flex-basis: 100%; font-size: 12px; color: var(--muted); text-align: right; }
+.endnote { font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; max-width: 80ch; }
+
+
+
+.post.hero { margin: 0; background: var(--chip); }
+.post.hero img { display: block; width: 100%; height: 100%; min-height: 280px; object-fit: cover; }
+.post.hero figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 12px 8px;
+  font-family: var(--f-display); font-size: 12px; color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,.62), rgba(0,0,0,0));
+}
+.post.hero figcaption a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+.stops li.has-img { grid-template-columns: minmax(0, 1fr) 76px; column-gap: 12px; }
+.stops li.has-img > :not(.thumb) { grid-column: 1; }
+.stops li .thumb { grid-column: 2; grid-row: 1 / span 2; align-self: start; display: block; width: 76px; height: 76px; border-radius: 4px; overflow: hidden; background: var(--chip); }
+.stops li .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.stops li .thumb:hover img { opacity: .85; }
+
+
+/* gallery + parking */
+.extra { grid-column: 1 / -1; grid-template-columns: minmax(0, 1fr); border-top: 1px solid var(--line); padding: 18px 24px 22px; display: grid; gap: 22px; min-width: 0; }
+.xhead { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; margin-bottom: 10px; }
+.xhead h3 { font-family: var(--f-display); font-weight: 800; font-size: 17px; margin: 0; }
+.xhead .count { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.strip { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; padding-bottom: 8px; overscroll-behavior-x: contain; }
+.gthumb { flex: none; position: relative; width: 160px; height: 120px; padding: 0; border: 0; border-radius: 4px; overflow: hidden; cursor: zoom-in; background: var(--chip); scroll-snap-align: start; }
+.gthumb.first { margin-left: 10px; }
+.gthumb.first:first-child { margin-left: 0; }
+.gthumb .tile { position: absolute; inset: 0; background-repeat: no-repeat; transition: transform .25s; }
+.gthumb:hover .tile { transform: scale(1.04); }
+.glabel { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 7px 5px; text-align: left; font-family: var(--f-display); font-weight: 600; font-size: 12px; color: #fff; background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,0)); }
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 10px; }
+.pitem { display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); }
+.pbadge { width: 38px; height: 38px; border-radius: 6px; display: grid; place-items: center; font-family: var(--f-display); font-weight: 800; font-size: 14px; color: var(--sign-white); background: var(--sign-blue); }
+.k-ride .pbadge { background: var(--sign-green); font-size: 12px; }
+.k-pull .pbadge { background: var(--scenic); color: var(--sign-black); font-size: 11px; }
+.ptext { display: grid; gap: 3px; min-width: 0; align-content: start; }
+.pat { font-family: var(--f-data); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.pname { font-family: var(--f-display); font-weight: 700; font-size: 15.5px; }
+.pnote { font-size: 15px; color: var(--muted); }
+.plinks { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 3px; align-items: center; }
+.plinks a { font-family: var(--f-display); font-weight: 600; font-size: 13px; color: var(--route); text-decoration: none; }
+.plinks a:hover { text-decoration: underline; }
+.pcheck { font-family: var(--f-display); font-size: 12px; font-weight: 600; color: var(--warn-ink); background: var(--warn-bg); padding: 2px 7px 1px; border-radius: 3px; }
+#lb { border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh; width: 100vw; height: 100vh; margin: 0; }
+#lb::backdrop { background: rgba(6, 10, 14, .92); }
+#lb[open] { display: grid; grid-template-rows: minmax(0, 1fr) auto; place-items: center; }
+.lb-frame { position: relative; display: grid; place-items: center; width: 100%; height: 100%; padding: max(12px, env(safe-area-inset-top, 0px)) max(56px, env(safe-area-inset-right, 0px)) 0 max(56px, env(safe-area-inset-left, 0px)); }
+#lb-img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
+.lb-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 64px; border: 0; border-radius: 6px; font-size: 34px; line-height: 1; color: #fff; background: rgba(255,255,255,.12); cursor: pointer; }
+.lb-btn:hover { background: rgba(255,255,255,.24); }
+#lb-prev { left: max(6px, env(safe-area-inset-left, 0px)); }
+#lb-next { right: max(6px, env(safe-area-inset-right, 0px)); }
+#lb-close { top: max(10px, env(safe-area-inset-top, 0px)); right: max(6px, env(safe-area-inset-right, 0px)); transform: none; height: 44px; font-size: 28px; }
+#lb-cap { margin: 0; padding: 10px 16px max(14px, env(safe-area-inset-bottom, 0px)); font-family: var(--f-display); font-size: 14px; color: #e8edf0; text-align: center; }
+#lb-cap a { color: #ffb4a3; }
+@media (max-width: 820px) {
+  .extra { padding: 16px 16px 18px; }
+  .lb-frame { padding-left: 8px; padding-right: 8px; }
+  .lb-btn { background: rgba(0,0,0,.35); }
+}
+
+
+/* timed plan */
+.slist { list-style: none; margin: 0; padding: 0; display: grid; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--paper); }
+.slist li { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 12px; align-items: baseline; padding: 9px 12px; border-top: 1px solid var(--line); }
+.slist li:first-child { border-top: 0; }
+.slist .st { font-family: var(--f-data); font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.slist .sb { display: grid; gap: 1px; min-width: 0; }
+.slist .sb b { font-family: var(--f-display); font-weight: 700; font-size: 15px; }
+.slist .sm { font-size: 14px; color: var(--muted); }
+.slist .se { font-family: var(--f-data); font-size: 12.5px; color: var(--muted); white-space: nowrap; text-align: right; }
+.s-drive { background: var(--card); }
+.s-drive .st { color: var(--route); }
+.s-border, .s-tz { background: var(--warn-bg); }
+.s-border .sb b, .s-tz .sb b { color: var(--warn-ink); }
+.s-end .sb b { color: var(--muted); font-weight: 600; }
+.mo { display: inline-block; font-family: var(--f-display); font-weight: 800; font-size: 11px; letter-spacing: .05em; text-transform: uppercase; padding: 2px 6px 1px; border-radius: 3px; }
+.mo-M { background: var(--ink); color: var(--paper); }
+.mo-O { background: var(--chip); color: var(--muted); border: 1px solid var(--line); }
+.assume { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; font-size: 15.5px; display: grid; gap: 6px; max-width: 90ch; }
+.assume b { font-family: var(--f-display); }
+.assume ul { margin: 0; padding-left: 18px; display: grid; gap: 2px; }
+@media (max-width: 520px) {
+  .slist li { grid-template-columns: 48px minmax(0, 1fr); }
+  .slist .se { grid-column: 2; text-align: left; }
+}
+
+
+.hero-open { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.post.hero .hero-open img { display: block; width: 100%; height: 100%; min-height: 280px; object-fit: cover; }
+button.thumb { padding: 0; border: 0; cursor: zoom-in; }
+#lb-cap .credit { opacity: .75; }
+@media (max-width: 820px) { .post.hero .hero-open img { min-height: 0; aspect-ratio: 16 / 10; height: auto; } }
+
+
+/* full-screen map */
+.maptools { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; justify-content: space-between; }
+.fsctl { display: flex; flex-wrap: wrap; gap: 6px; }
+.tool { font-family: var(--f-display); font-weight: 700; font-size: 14px; padding: 6px 12px; min-height: 34px; border-radius: 4px; cursor: pointer; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); }
+.tool:hover { background: var(--route); border-color: var(--route); }
+#map-zin, #map-zout { min-width: 38px; font-size: 18px; line-height: 1; padding: 4px 10px; }
+.fs-only { display: none; }
+.mapbox.fs .fs-only { display: contents; }
+.mapbox.fs .open-fs { display: none; }
+.mapbox.fs .fs-hint { display: block; }
+.fs-lock, .fs-lock body { overflow: hidden; }
+.mapbox.fs {
+  position: fixed; inset: 0; z-index: 60; background: var(--paper);
+  display: grid; grid-template-rows: auto minmax(0, 1fr) auto auto; gap: 8px;
+  padding: max(10px, env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px)) max(10px, env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));
+}
+.mapbox.fs .mapscroll { overflow: hidden; touch-action: none; }
+.mapbox.fs .mapscroll svg { width: 100%; height: 100%; min-width: 0; cursor: grab; }
+.mapbox.fs .mapscroll svg:active { cursor: grabbing; }
+.mapbox.fs > .note { display: none; }
+.mapbox.fs .daybar button { min-width: 32px; padding: 5px 7px; }
+.fs-hint { margin: 0; font-size: 13px; color: var(--muted); font-family: var(--f-display); }
+.mapbox.fs .m-name { font-size: min(calc(14px * var(--k, 1)), 22px); stroke-width: min(calc(4px * var(--k, 1)), 6px); }
+.mapbox.fs .m-label { font-size: min(calc(13px * var(--k, 1)), 20px); }
+.mapbox.fs .m-sea { font-size: min(calc(15px * var(--k, 1)), 22px); }
+.mapbox.fs .r-base { stroke-width: min(calc(3.5px * var(--k, 1)), 5px); }
+.mapbox.fs .r-scenic { stroke-width: min(calc(8px * var(--k, 1)), 10px); }
+.mapbox.fs .c-land { stroke-width: min(calc(.8px * var(--k, 1)), 1.2px); }
+.mapbox.fs .m-stop { stroke-width: 2px; }
+.mapbox.fs .m-sleep, .mapbox.fs .m-stop { transform-box: fill-box; transform-origin: center; transform: scale(min(calc(1.2 * var(--k, 1)), 1.6)); }
+.m-names-all { display: none; }
+.mapbox.fs .dim .m-names.sel { display: none; }
+.mapbox.fs .dim .m-names-all.sel { display: inline; }
+
+
+/* context layers: roads, rivers, towns */
+.ctx-lake { fill: var(--sea); stroke: none; }
+.ctx-river { fill: none; stroke: var(--river); stroke-width: .6; }
+.rd { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.rd-mw { stroke: var(--rd-mw); stroke-width: .8; }
+.rd-main { stroke: var(--rd-main); stroke-width: .5; }
+.rd-minor { stroke: var(--rd-minor); stroke-width: .35; }
+.rd-ferry { stroke: var(--river); stroke-width: .5; stroke-dasharray: 2 2; }
+.town circle { fill: var(--town); }
+.town text { font-family: var(--f-display); font-size: 8px; fill: var(--town); paint-order: stroke; stroke: var(--land-on); stroke-width: 2px; stroke-linejoin: round; }
+.town.t1 text { font-weight: 700; }
+.mapbox:not(.fs) .town:not(.t1) { display: none !important; }
+.mapbox:not(.fs) .town.t1 text { display: none; }
+.mapbox:not(.fs) .rd-minor, .mapbox:not(.fs) .rd-ferry { display: none; }
+
+.mapbox.fs .ctx-river { stroke-width: min(calc(1.1px * var(--k, 1)), 1.4px); }
+.mapbox.fs .rd-mw { stroke-width: min(calc(2.2px * var(--k, 1)), 2.6px); }
+.mapbox.fs .rd-main { stroke-width: min(calc(1.4px * var(--k, 1)), 1.8px); }
+.mapbox.fs .rd-minor { stroke-width: min(calc(.9px * var(--k, 1)), 1.2px); }
+.mapbox.fs .rd-ferry { stroke-width: min(calc(1.2px * var(--k, 1)), 1.4px); stroke-dasharray: calc(5px * var(--k, 1)) calc(4px * var(--k, 1)); }
+.mapbox.fs .town circle { transform-box: fill-box; transform-origin: center; transform: scale(min(calc(1.3 * var(--k, 1)), 1.6)); }
+.town.t4 circle { opacity: .8; }
+.mapbox.fs .town text { font-size: min(calc(12px * var(--k, 1)), 14px); stroke-width: min(calc(3px * var(--k, 1)), 3.5px); }
+.mapbox.fs .town.t1 text { font-size: min(calc(13.5px * var(--k, 1)), 16px); }
+
+.mapbox.fs .dim .rd, .mapbox.fs .dim .town { opacity: .85; }
+.lg-mw { width: 26px; height: 3px; background: var(--rd-mw); }
+.lg-main { width: 26px; height: 2px; background: var(--rd-main); }
+.lg-town { width: 6px; height: 6px; border-radius: 50%; background: var(--town); }
+
+
+/* road and route details */
+.mapscroll { position: relative; }
+.rd-hit, .r-hit { fill: none; stroke: transparent; pointer-events: stroke; }
+.rd-hit { stroke-width: 5; }
+.r-hit { stroke-width: 7; cursor: pointer; }
+.mapbox:not(.fs) .hit-minor, .mapbox:not(.fs) .hit-ferry { display: none; }
+.mapbox.fs .rd-hit { stroke-width: calc(12px * var(--k, 1)); cursor: help; }
+.mapbox.fs .r-hit { stroke-width: calc(16px * var(--k, 1)); }
+.rd.hl { stroke: var(--focus); }
+.r-alt { fill: none; stroke: var(--focus); stroke-width: 2.4; stroke-dasharray: 4 3; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; }
+.mapbox.fs .r-alt { stroke-width: calc(4px * var(--k, 1)); stroke-dasharray: calc(9px * var(--k, 1)) calc(6px * var(--k, 1)); }
+.rtip { position: absolute; z-index: 5; max-width: min(340px, calc(100% - 12px)); display: grid; gap: 5px; padding: 10px 12px; border-radius: 6px;
+  background: var(--card); color: var(--ink); border: 1px solid var(--line); box-shadow: 0 6px 22px rgba(0,0,0,.18); font-size: 14px; line-height: 1.35; pointer-events: none; }
+.rtip .tt-t { font-family: var(--f-display); font-weight: 800; font-size: 15px; }
+.rtip .tt-s { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.rtip dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; font-size: 13px; }
+.rtip dt { font-family: var(--f-display); font-weight: 700; }
+.rtip dd { margin: 0; color: var(--muted); }
+.rtip .tt-n, .rtip .tt-u { font-size: 13px; color: var(--muted); }
+.rtip .tt-a { font-size: 13px; border-top: 1px solid var(--line); padding-top: 6px; }
+.rtip .tt-a b { color: var(--focus); font-family: var(--f-display); }
+.rtip[hidden] { display: none; }
+.lg-alt { width: 26px; height: 0; border-top: 3px dashed var(--focus); }
+
+
+/* route modes */
+[data-mode="bal"] [data-ms]:not([data-ms~="bal"]), [data-mode="fast"] [data-ms]:not([data-ms~="fast"]), [data-mode="cine"] [data-ms]:not([data-ms~="cine"]), [data-mode="safe"] [data-ms]:not([data-ms~="safe"]) { display: none; }
+.modes, .bulletin { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 12px; }
+.modes h2, .bulletin h2 { font-family: var(--f-display); font-weight: 800; font-size: 20px; margin: 0; }
+.mgrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 980px) { .mgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.mbtn { text-align: left; display: grid; gap: 4px; align-content: start; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--ink); font: inherit; cursor: pointer; min-height: 44px; }
+.mbtn b { font-family: var(--f-display); font-weight: 800; font-size: 16px; }
+.mbtn span { font-size: 14px; color: var(--muted); }
+.mbtn .mtot { font-family: var(--f-data); font-size: 12.5px; color: var(--ink); }
+.dsame { margin: 0; font-size: 14px; color: var(--muted); }
+.mbtn[aria-pressed="true"] { border-color: var(--route); box-shadow: inset 0 0 0 1px var(--route); background: var(--card); }
+.mbtn:focus-visible, .dmode button:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.mnote { font-size: 14px; color: var(--muted); margin: 0; }
+@media (max-width: 640px) { .mgrid { grid-template-columns: minmax(0, 1fr); } }
+.dmode { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-family: var(--f-display); font-size: 13px; color: var(--muted); margin: 0; }
+.dmode button { font: 600 13px var(--f-display); padding: 6px 10px 4px; border-radius: 4px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); cursor: pointer; min-height: 32px; }
+.dmode button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.dmode button:disabled { opacity: .45; cursor: not-allowed; }
+.dmode .ovr { color: var(--route); }
+.cmp { font-size: 14.5px; color: var(--muted); margin: 0; }
+.cmp b { color: var(--ink); font-family: var(--f-display); }
+/* daylight bar */
+.dbar { position: relative; height: 30px; border-radius: 4px; overflow: hidden; border: 1px solid var(--line); }
+.dbar i { position: absolute; top: 0; bottom: 0; }
+.dbar .n { background: #26323d; } .dbar .tw { background: #6c7f99; } .dbar .dy { background: #f3e2b6; }
+.dbar .seg { top: 9px; bottom: 9px; border-radius: 2px; }
+.dbar .k-mw { background: #4f5b66; } .dbar .k-main { background: #2f6fcf; } .dbar .k-scenic { background: #d88a12; } .dbar .k-stop { background: #ffffffcc; box-shadow: inset 0 0 0 1px #0004; }
+.dticks { position: relative; height: 16px; font-family: var(--f-data); font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+.dticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.dkey { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12.5px; color: var(--muted); margin: 0 0 10px; }
+.dkey i { display: inline-block; width: 14px; height: 8px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+.lt { display: inline-block; font-family: var(--f-display); font-weight: 700; font-size: 11px; letter-spacing: .03em; padding: 1px 6px; border-radius: 3px; margin: 3px 4px 0 0; background: var(--chip); color: var(--muted); }
+.lt.w { background: var(--warn-bg); color: var(--warn-ink); }
+.lt.g { background: #f6dfb0; color: #6a4300; }
+/* news bulletin */
+.bul-day { display: grid; gap: 8px; border-top: 1px solid var(--line); padding-top: 10px; }
+.bul-head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+.bul-head b { font-family: var(--f-display); font-size: 16px; }
+.bul-head span { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.bul-head a, .bul-items a { color: var(--route); font-family: var(--f-display); font-weight: 600; font-size: 13px; text-decoration: none; }
+.bul-day p { margin: 0; font-size: 15px; }
+.bul-items { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.bul-items li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px; align-items: start; font-size: 15px; }
+.bcat { font-family: var(--f-display); font-weight: 800; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; padding: 3px 6px 2px; border-radius: 3px; background: var(--chip); color: var(--ink); white-space: nowrap; }
+.sev-watch .bcat { background: #f6dfb0; color: #6a4300; }
+.sev-warn .bcat { background: var(--sign-red); color: #fff; }
+.bwx-wrap { overflow-x: auto; }
+.bwx { width: 100%; border-collapse: collapse; font-size: 14px; }
+.bwx td, .bwx th { padding: 4px 8px; border-top: 1px solid var(--line); text-align: left; white-space: nowrap; }
+.bwx th { font-family: var(--f-display); font-size: 12px; color: var(--muted); font-weight: 600; }
+.bul-empty { font-size: 15px; color: var(--muted); margin: 0; }
+.bul-slot:empty { display: none; }
+.bul-slot h3 { font-family: var(--f-display); font-weight: 800; font-size: 17px; margin: 0 0 6px; }
+
+
+/* start the day / check in */
+.live { display: grid; gap: 10px; border: 1.5px solid var(--line); border-radius: 8px; padding: 14px 16px; background: var(--paper); }
+.live.today { border-color: var(--route); }
+.live h3 { font-family: var(--f-display); font-weight: 800; font-size: 17px; margin: 0; }
+.lbtns { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.lbtns button { font: 700 15px var(--f-display); min-height: 44px; padding: 10px 16px 8px; border-radius: 5px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); cursor: pointer; }
+.lbtns button.sec { background: var(--paper); color: var(--ink); border-color: var(--line); }
+.lbtns label { font-family: var(--f-display); font-size: 14px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+
+.opts { display: grid; gap: 8px; }
+.opts h4 { font-family: var(--f-display); font-size: 15px; margin: 4px 0 0; }
+.opt { display: grid; gap: 6px; border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; background: var(--card); }
+.opt.cur { background: var(--chip); }
+.opt .oh { display: flex; gap: 10px; align-items: baseline; justify-content: space-between; }
+.opt .oh b { font-family: var(--f-display); font-weight: 800; font-size: 16px; }
+.opt .oh small, .opt .od { font-family: var(--f-data); font-size: 13px; color: var(--muted); }
+.opt .od { color: var(--ink); font-weight: 600; }
+.opt .ob { font-size: 14.5px; line-height: 1.5; }
+.opt .ob b { font-family: var(--f-data); }
+.opt .ok { color: #2a7a3d; font-weight: 700; } .opt .bad { color: var(--route); font-weight: 700; }
+.opt button { justify-self: start; font: 700 14px var(--f-display); min-height: 40px; padding: 8px 12px 6px; border-radius: 4px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); cursor: pointer; }
+.wx-slot { display: grid; gap: 10px; }
+.wx-slot h3 { font-family: var(--f-display); font-weight: 800; font-size: 17px; margin: 0; }
+.wx-slot h4 { font-family: var(--f-display); font-size: 14px; margin: 4px 0; color: var(--muted); font-weight: 700; }
+.wx-clim ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 14.5px; }
+.wx-clim b { font-family: var(--f-display); }
+.wx-num { font-family: var(--f-data); }
+.wx-fc { display: grid; gap: 8px; border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; background: var(--card); }
+.wx-fc.test { border-style: dashed; }
+.wx-fc p { margin: 0; font-size: 15px; }
+.wx-legs { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.wx-legs li { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 8px; font-size: 14.5px; border-left: 3px solid #2a7a3d; padding-left: 8px; }
+.wx-legs li.r-watch { border-left-color: #d88a12; } .wx-legs li.r-warn { border-left-color: var(--sign-red); }
+.wx-t { font-family: var(--f-data); font-weight: 600; white-space: nowrap; }
+.wx-adv { background: var(--chip); border-radius: 5px; padding: 8px 10px; }
+.wx-verdict { border-radius: 6px; padding: 10px 12px; display: grid; gap: 6px; font-size: 15px; border: 1.5px solid; }
+.wx-verdict p { margin: 0; }
+.wx-verdict.v-watch { border-color: #d88a12; background: color-mix(in srgb, #d88a12 10%, var(--card)); }
+.wx-verdict.v-switch, .wx-verdict.v-wait { border-color: var(--sign-red); background: color-mix(in srgb, var(--sign-red) 9%, var(--card)); }
+.wx-verdict.v-ok { border-color: #2a7a3d; }
+.wx-verdict button { justify-self: start; font: 700 14px var(--f-display); min-height: 40px; padding: 8px 12px 6px; border-radius: 4px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); cursor: pointer; }
+.wx-hot { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.wx-hot li { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 8px; font-size: 14.5px; border-left: 3px solid var(--line); padding-left: 8px; }
+.wx-hot li.h-watch { border-left-color: #d88a12; } .wx-hot li.h-switch, .wx-hot li.h-wait { border-left-color: var(--sign-red); } .wx-hot li.h-ok { border-left-color: #2a7a3d; }
+.wx-hot .hlev { font: 700 12px var(--f-data); text-transform: uppercase; letter-spacing: .04em; margin-left: 4px; }
+.wx-hot small, .wx-avoid { color: var(--muted); font-size: 13.5px; }
+.wx-avoid { margin: 0; }
+.mrules { font-size: 14.5px; }
+.mrules summary { cursor: pointer; font-family: var(--f-display); font-weight: 700; min-height: 32px; }
+.mrules ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+.wx-adv button { margin-left: 6px; font: 700 13px var(--f-display); min-height: 36px; padding: 6px 10px 4px; border-radius: 4px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); }
+.lpick { display: grid; gap: 8px; border-top: 1px solid var(--line); padding-top: 10px; }
+.lpick select, .live details select { font: 600 14px var(--f-display); min-height: 44px; padding: 8px 10px 6px; border-radius: 5px; border: 1px solid var(--line); background: var(--card); color: var(--ink); max-width: 100%; display: block; margin-top: 4px; }
+.lpaste { display: flex; gap: 8px; margin-top: 4px; }
+.lpaste input { flex: 1; min-width: 0; font: 15px var(--f-data); min-height: 44px; padding: 8px 10px; border-radius: 5px; border: 1px solid var(--line); background: var(--card); color: var(--ink); }
+.lpaste button { font: 700 14px var(--f-display); min-height: 44px; padding: 8px 14px 6px; border-radius: 5px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); }
+.lbtns select { font: 600 14px var(--f-display); min-height: 44px; padding: 8px 10px 6px; border-radius: 5px; border: 1px solid var(--line); background: var(--card); color: var(--ink); max-width: 100%; }
+.lbtns .lnk { background: none; border: 0; color: var(--muted); font: 600 13px var(--f-display); text-decoration: underline; min-height: 32px; padding: 4px; }
+.live details summary { cursor: pointer; font-family: var(--f-display); font-size: 13.5px; color: var(--muted); }
+.live details select { font: 600 14px var(--f-display); min-height: 40px; margin-top: 6px; max-width: 100%; }
+.alertbar { position: sticky; top: 0; z-index: 20; background: var(--route); color: #fff; font-family: var(--f-display); font-weight: 700; font-size: 15px; padding: 10px 16px; border-radius: 0 0 6px 6px; display: flex; gap: 12px; align-items: center; justify-content: space-between; }
+.alertbar[hidden] { display: none; }
+.fab { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 30; display: flex; align-items: center; gap: 8px; min-height: 56px; padding: 0 20px; border: 0; border-radius: 28px; background: var(--route); color: #fff; font: 800 16px var(--f-display); box-shadow: 0 4px 14px #0005; cursor: pointer; }
+.fab:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.fabsheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 31; background: var(--card); color: var(--ink); border-top: 1px solid var(--line); border-radius: 14px 14px 0 0; box-shadow: 0 -6px 24px #0004; padding: 16px 16px calc(20px + env(safe-area-inset-bottom)); display: grid; gap: 12px; max-height: 80vh; overflow: auto; }
+.fabsheet[hidden] { display: none; }
+.fabsheet h3 { margin: 0; font: 800 19px var(--f-display); display: flex; justify-content: space-between; align-items: center; }
+.fabsheet h3 button { background: none; border: 1px solid var(--line); border-radius: 6px; min-height: 40px; min-width: 40px; font-size: 18px; color: var(--ink); }
+.fabsheet select { font: inherit; font-size: 16px; min-height: 44px; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); width: 100%; }
+.fabsheet .fabgo { min-height: 60px; border: 0; border-radius: 10px; background: var(--route); color: #fff; font: 800 18px var(--f-display); cursor: pointer; }
+.fabsheet .fabgo:disabled { opacity: .6; }
+.fabsheet p { margin: 0; font-size: 15px; }
+.fabsheet .fabres { font-family: var(--f-display); font-weight: 700; }
+.fabsheet .fablink { background: none; border: 0; padding: 0; color: var(--route); font: 700 15px var(--f-display); text-decoration: underline; justify-self: start; min-height: 32px; cursor: pointer; }
+@media print { .fab, .fabsheet { display: none !important; } }
+.alertbar a { color: #fff; }
+.alertbar button { background: none; border: 1px solid #fff8; color: #fff; border-radius: 4px; font: 600 13px var(--f-display); padding: 4px 8px; min-height: 32px; }
+/* where am I */
+.where { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 12px; }
+.where h2 { font-family: var(--f-display); font-weight: 800; font-size: 20px; margin: 0; }
+.wctl { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
+.wctl button, .wctl select { font: 600 14px var(--f-display); min-height: 40px; padding: 8px 12px 6px; border-radius: 4px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+.wctl .go { background: var(--ink); color: var(--paper); border-color: var(--ink); cursor: pointer; }
+.wctl label { font-family: var(--f-display); font-size: 14px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+.wctl select { max-width: 100%; }
+.wout { display: grid; gap: 8px; }
+.wout:empty { display: none; }
+.wstat { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.wstat .num { font-family: var(--f-data); font-size: 15px; }
+.wstat .num small { color: var(--muted); font-size: 12px; margin-left: 3px; }
+.wbig { font-family: var(--f-display); font-weight: 800; font-size: 18px; margin: 0; }
+.wbig.late { color: var(--route); } .wbig.ok { color: #2a7a3d; }
+.wtips { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 15px; }
+.wmsg { font-size: 14.5px; color: var(--muted); margin: 0; }
+.wcopy { width: 100%; min-height: 64px; font: 14px var(--f-data); padding: 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); }
+#me .pulse { fill: var(--focus); opacity: .25; }
+#me .dot { fill: var(--focus); stroke: #fff; stroke-width: 2; }
+.mapbox.fs #me .dot { r: calc(7px * var(--k, 1)); stroke-width: calc(2.5px * var(--k, 1)); }
+.mapbox.fs #me .pulse { r: calc(18px * var(--k, 1)); }
+
+/* restrictions tracker */
+.tracker { display: grid; gap: 22px; border-top: 3px solid var(--ink); padding-top: 22px; }
+.tracker h2.sec { font-family: var(--f-display); font-weight: 800; font-size: clamp(28px, 4.5vw, 42px); line-height: 1; margin: 0; letter-spacing: -.01em; }
+.tracker .lead { font-size: 18px; max-width: 70ch; margin: 0; }
+.tracker .lead a { color: var(--route); font-family: var(--f-display); font-weight: 600; font-size: 15px; white-space: nowrap; }
+.tracker h3 { font-family: var(--f-display); font-weight: 800; font-size: 20px; margin: 0 0 4px; }
+.tracker .part { display: grid; gap: 8px; min-width: 0; }
+.tracker .part > p { margin: 0; color: var(--muted); font-size: 16px; max-width: 75ch; }
+.tscroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--card); }
+.tscroll table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 15px; }
+.tscroll th { text-align: left; font-family: var(--f-display); font-weight: 600; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding: 10px 12px 8px; border-bottom: 1px solid var(--line); vertical-align: bottom; }
+.tscroll td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tscroll tr:last-child td { border-bottom: 0; }
+.tscroll td:first-child { font-family: var(--f-display); font-weight: 600; white-space: nowrap; }
+.tscroll td a { color: var(--route); font-family: var(--f-display); font-size: 13px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.hit { display: inline-block; font-family: var(--f-display); font-weight: 800; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 3px 7px 2px; border-radius: 3px; white-space: nowrap; }
+.hit.y { background: var(--warn-bg); color: var(--warn-ink); }
+.hit.n { background: var(--chip); color: var(--muted); }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 22px; }
+.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.checks label { display: flex; gap: 10px; align-items: flex-start; font-size: 16px; cursor: pointer; }
+.checks input { margin-top: 5px; width: 16px; height: 16px; accent-color: var(--route); flex: none; }
+.checks input:checked + span { color: var(--muted); text-decoration: line-through; }
+.asof { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+
+@media (max-width: 820px) {
+  .day { grid-template-columns: minmax(0, 1fr); }
+  .post svg { min-height: 0; aspect-ratio: 16 / 9; height: auto; }
+  .post.hero img { min-height: 0; aspect-ratio: 16 / 10; height: auto; }
+  .body { padding: 18px 16px 20px; }
+  .day h2 { font-size: 24px; }
+}
+@media (prefers-reduced-motion: reduce) { .r-day { transition: none; } }
+</style>
+
+<div class="alertbar" id="alertbar" role="alert" hidden><span id="alerttext"></span><button type="button" id="alertclose" aria-label="Close">✕</button></div>
+<div class="wrap">
+  <div class="langbar"><label for="lang">Language</label><select id="lang"></select><span class="lang-hint" id="lang-hint"></span></div>
+  <header class="head">
+    <div class="eyebrow">Road book · Sat 19 Dec 2026 – Sun 3 Jan 2027 · 16 days</div>
+    <h1>Madrid <span class="arrow">→</span> Bucharest</h1>
+    <p class="sub">A Mercedes-Benz W123 300D at 90–100 km/h, across nine countries on coast roads, Apennine passes and the Danube gorge.</p>
+    <ul class="stats" id="stats"></ul>
+  </header>
+
+  <div class="assume"><b>Planning assumptions (change any of these and the times update)</b>
+    <ul>
+      <li>Dates Sat 19 Dec 2026 – Sun 3 Jan 2027. Holidays fall on driving days: Christmas Day in Chianti, New Year's Day on the motorway to Belgrade.</li>
+      <li>Car not registered in Madrid, so Day 1 starts from the edge of the city.</li>
+      <li><b>Must</b> = your anchor cities; <b>Optional</b> = the extras I suggested, cut first if you run late.</li>
+      <li>Drive times at W123 pace (90–95 km/h motorway, slower on coast and mountain roads), with short breaks included.</li>
+    </ul>
+  </div>
+
+  <section class="modes" id="modes" aria-label="Route style"></section>
+  <section class="bulletin" id="bulletin" aria-label="News bulletin"></section>
+
+  <section class="mapbox" aria-label="Route map">
+    <div class="maptools">
+      <div class="daybar" id="daybar" role="group" aria-label="Show a day on the map"></div>
+      <div class="fsctl">
+        <button type="button" id="map-fs" class="tool open-fs" aria-label="Open the map full screen">⤢ Full-screen map</button>
+        <span class="fs-only">
+          <button type="button" id="map-zin" class="tool" aria-label="Zoom in">+</button>
+          <button type="button" id="map-zout" class="tool" aria-label="Zoom out">−</button>
+          <button type="button" id="map-reset" class="tool" aria-label="Show the whole route">Whole route</button>
+          <button type="button" id="map-close" class="tool close-fs" aria-label="Close full-screen map">✕ Close</button>
+        </span>
+      </div>
+    </div>
+    <div class="mapscroll"><div id="rtip" class="rtip" role="status" hidden></div><svg id="map" role="img" aria-label="Route from Madrid to Bucharest with overnight stops numbered by day" preserveAspectRatio="xMidYMid meet"></svg></div>
+    <p class="fs-hint fs-only">Drag to move, scroll or pinch to zoom. Tap a day number to zoom to it; tap a road for details; tap an overnight marker to open that day.</p>
+    <div class="legend">
+      <span><i class="lg-route"></i>Route (along roads)</span>
+      <span><i class="lg-local"></i>Local roads, approximate</span>
+      <span><i class="lg-alt"></i>Alternative (on hover)</span>
+      <span><i class="lg-scenic"></i>Scenic driving day</span>
+      <span><i class="lg-sleep"></i>Overnight (day number)</span>
+      <span><i class="lg-stop"></i>Stop</span>
+      <span><i class="lg-mw"></i>Motorway</span>
+      <span><i class="lg-main"></i>Main road</span>
+      <span><i class="lg-town"></i>Town</span>
+    </div>
+    <p class="note">Tap a day or an overnight marker to jump to it. Hover over (or tap) any road or route section for its name, limits, tolls and alternatives. The route follows the main road network; dashed sections use small local roads that the map data does not include, so they are drawn as straight lines. This version includes the Estérel corniche (D559) on Day 4 and the Christmas reshuffle around Florence.</p>
+  </section>
+
+  <section class="days" id="days" aria-label="Day by day"></section>
+
+
+  <section class="tracker" id="restrictions" aria-label="Restrictions tracker">
+    <div><div class="eyebrow">Restrictions tracker · as of 18 Oct 2026</div></div>
+    <h2 class="sec">What the W123 is allowed to do</h2>
+    <p class="lead">The car has no emissions label in any system, so the limits are access zones in Madrid, Bilbao, San Sebastián, the French ZFE cities and the whole of Florence. Vignettes are needed only in Slovenia and Romania. This is a snapshot; the <a href="https://claude.ai/code/artifact/53c9f80c-8c19-4ca7-804a-3b7b1dc80009" target="_blank" rel="noopener">live tracker ↗</a> is where changes get made.</p>
+
+    <div class="part">
+      <h3>The car</h3>
+      <div class="tscroll"><table>
+        <thead><tr><th>Item</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Registration</td><td>Spain (municipality not yet confirmed)</td></tr>
+          <tr><td>Spanish DGT label</td><td>None (diesel registered before 2006)</td></tr>
+          <tr><td>French Crit'Air</td><td>Not eligible, counts as unclassified</td></tr>
+          <tr><td>Italian class</td><td>Euro 0 diesel</td></tr>
+          <tr><td>Historic status</td><td>None</td></tr>
+        </tbody></table></div>
+    </div>
+
+    <div class="part">
+      <h3>Emissions and access zones</h3>
+      <p>Florence is the biggest constraint: the whole built-up area is closed to Euro 0 diesels around the clock. Historic status would lift the Madrid, Bilbao and Florence bans.</p>
+      <div class="tscroll"><table>
+        <thead><tr><th>Place</th><th>Rule</th><th>Hits the car?</th><th>Plan</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Madrid</td><td>Unlabelled cars not registered in Madrid banned from the whole municipality since Jan 2025; Madrid-registered cars paying IVTM there covered by a moratorium; historic cars exempt</td><td><span class="hit y">Yes</span><br><span class="asof">unless Madrid-registered</span></td><td>If not Madrid-registered, start outside the city limits</td><td><a href="https://www.race.es/zonas-de-bajas-emisiones/mapa-zbe-madrid" target="_blank" rel="noopener">RACE ↗</a></td></tr>
+          <tr><td>Bilbao</td><td>Unlabelled cars barred from the ZBE in restricted hours on working days</td><td><span class="hit y">Yes</span></td><td>Hotel outside the ZBE (Barakaldo, Getxo) or arrive on a weekend</td><td><a href="https://www.race.es/etiqueta-b-bilbao" target="_blank" rel="noopener">RACE ↗</a></td></tr>
+          <tr><td>San Sebastián</td><td>Unlabelled cars banned in the central ZBE every day, all day</td><td><span class="hit y">Yes</span></td><td>Park outside the ZBE and walk or bus in</td><td><a href="https://orain.eus/es/actualidad/sociedad/2025/03/14/san-sebastian-sancionara-desde-hoy-a-vehiculos-sin-etiqueta-ambiental-que-circulen-por-zona-restringida/" target="_blank" rel="noopener">Orain ↗</a></td></tr>
+          <tr><td>France ZFEs</td><td>Still in force after the Constitutional Council annulled their abolition on 21 May 2026; Crit'Air 4, 5 and unclassified cars banned</td><td><span class="hit y">Yes</span></td><td>Pass Toulouse, Montpellier, Marseille on the motorway; Riviera base outside Nice</td><td><a href="https://www.athlon.com/fr/informations-du-secteur/zfe-le-conseil-constitutionnel-relance-le-debat-et-annule-leur-suppression/" target="_blank" rel="noopener">Athlon ↗</a></td></tr>
+          <tr><td>Italy, historic centres</td><td>ZTL, camera-enforced</td><td><span class="hit y">Yes</span></td><td>Always park outside the walls</td><td></td></tr>
+          <tr><td>Florence</td><td>Whole built-up area closed 24/7 to Euro 0 and 1 diesels; collector vehicles exempt</td><td><span class="hit y">Yes</span><br><span class="asof">whole city</span></td><td>Sleep in Figline Valdarno; train in</td><td><a href="https://www.insella.it/da-sapere/legge-burocrazia/come-difficile-circolare-firenze-blocchi-del-traffico-ztl-scudo-verde-58581" target="_blank" rel="noopener">inSella ↗</a></td></tr>
+          <tr><td>Emilia-Romagna</td><td>1 Oct–31 Mar, towns over 30,000, diesel up to Euro 4 banned on weekdays</td><td><span class="hit y">Yes</span><br><span class="asof">weekdays</span></td><td>Motorway past Rimini; Ravenna on a weekend or holiday</td><td><a href="https://www.fleetmagazine.com/calendario-blocco-diesel-euro-4-regioni/" target="_blank" rel="noopener">Fleet Magazine ↗</a></td></tr>
+          <tr><td>Veneto</td><td>Winter season from 1 Oct, towns over 30,000, diesel up to Euro 4 banned on weekdays</td><td><span class="hit y">Yes</span><br><span class="asof">weekdays</span></td><td>Base in Mogliano Veneto; train to Venice</td><td><a href="https://www.fleetmagazine.com/calendario-blocco-diesel-euro-4-regioni/" target="_blank" rel="noopener">Fleet Magazine ↗</a></td></tr>
+          <tr><td>Italy, Euro 5 ban</td><td>Postponed to 1 Oct 2027</td><td><span class="hit n">No</span></td><td>Nothing to do</td><td><a href="https://www.geopop.it/il-blocco-alle-auto-diesel-euro-5-rinviato-al-2027-in-lombardia-resta-lopzione-move-in/" target="_blank" rel="noopener">Geopop ↗</a></td></tr>
+          <tr><td>Slovenia to Romania</td><td>No city-wide bans found on this route</td><td><span class="hit n">No</span></td><td>Normal city parking</td><td></td></tr>
+        </tbody></table></div>
+    </div>
+
+    <div class="part">
+      <h3>Vignettes and tolls</h3>
+      <div class="tscroll"><table>
+        <thead><tr><th>Country</th><th>System</th><th>Cost for the car</th><th>How to pay</th></tr></thead>
+        <tbody>
+          <tr><td>Spain</td><td>A-1 free; AP-8 Basque coast tolled</td><td>Per section</td><td>Card at booths</td></tr>
+          <tr><td>France</td><td>Motorway tolls (A64, A61, A9, A8)</td><td>Per section</td><td>Card at booths</td></tr>
+          <tr><td>Monaco, San Marino</td><td>None</td><td>—</td><td>—</td></tr>
+          <tr><td>Italy</td><td>Motorway tolls (A10, A12, A14, A4); FI-PI-LI free</td><td>Per section</td><td>Card at booths</td></tr>
+          <tr><td>Slovenia</td><td><b>E-vignette</b>, camera-enforced</td><td>€16 for 7 days <a href="https://www.fuel-prices.eu/vignette/slovenia/2027/" target="_blank" rel="noopener">source ↗</a></td><td>evinjeta.dars.si only; plate exactly as registered; start Day 12</td></tr>
+          <tr><td>Croatia</td><td>Motorway tolls (A3)</td><td>Per section</td><td>Booths</td></tr>
+          <tr><td>Serbia</td><td>Motorway tolls</td><td>Per section</td><td>Booths (dinar, euro or card)</td></tr>
+          <tr><td>Romania</td><td><b>Rovinietă</b> on all national roads, priced by Euro class since 1 Oct 2026</td><td>29 lei per day for Euro 0–3 <a href="https://www.fuel-prices.eu/news/romania-vignette-tollro-october-2026/" target="_blank" rel="noopener">source ↗</a></td><td>Online before the border; covers Days 15–16; fine 500–1,000 lei</td></tr>
+        </tbody></table></div>
+    </div>
+
+    <div class="part">
+      <h3>Winter equipment and lights</h3>
+      <p>Four M+S or 3PMSF tyres with at least 4 mm tread, plus chains in the boot, meet every rule on the route whatever the weather.</p>
+      <div class="tscroll"><table>
+        <thead><tr><th>Country</th><th>Period</th><th>Rule</th><th>Lights</th></tr></thead>
+        <tbody>
+          <tr><td>Spain</td><td>None by date</td><td>Only where signed (from memory)</td><td>—</td></tr>
+          <tr><td>France</td><td>1 Nov–31 Mar</td><td>Mountain-law communes: winter tyres or chains on board (from memory)</td><td>—</td></tr>
+          <tr><td>Italy</td><td>15 Nov–15 Apr</td><td>Signposted roads: M+S tyres or chains on board <a href="https://pirelli.com/global/en-ww/road/winter-safety-changing-winter-tyres-what-the-law-states-country-by-country" target="_blank" rel="noopener">Pirelli ↗</a></td><td>—</td></tr>
+          <tr><td>Slovenia</td><td>15 Nov–15 Mar</td><td>Winter tyres required <a href="https://sibiz.eu/en/?p=5516" target="_blank" rel="noopener">SIBIZ ↗</a></td><td>—</td></tr>
+          <tr><td>Croatia</td><td>15 Nov–15 Apr</td><td>Designated winter sections, regardless of weather; fine €130 <a href="https://www.croatiaweek.com/?p=159652" target="_blank" rel="noopener">Croatia Week ↗</a></td><td>Daytime headlights 1 Nov–31 Mar</td></tr>
+          <tr><td>Serbia</td><td>1 Nov–1 Apr</td><td>Sources differ: by date or only in snow and ice; studs banned <a href="https://tyremap.com/tyre-laws/serbia/" target="_blank" rel="noopener">Tyremap ↗</a></td><td>—</td></tr>
+          <tr><td>Romania</td><td>Winter</td><td>Sources differ: snow and ice only, or 1 Nov–31 Mar</td><td>—</td></tr>
+        </tbody></table></div>
+    </div>
+
+    <div class="cols">
+      <div class="part">
+        <h3>Documents</h3>
+        <ul class="checks">
+          <li><label><input type="checkbox" id="chk-licence"><span>Driving licence; International Driving Permit recommended for Serbia</span></label></li>
+          <li><label><input type="checkbox" id="chk-itv"><span>Permiso de circulación and ficha técnica, ITV valid past the return</span></label></li>
+          <li><label><input type="checkbox" id="chk-green"><span>Insurance and Green Card with Serbia (SRB) not crossed out</span></label></li>
+          <li><label><input type="checkbox" id="chk-pass"><span>Passports for everyone in the car</span></label></li>
+          <li><label><input type="checkbox" id="chk-si"><span>Slovenian e-vignette confirmation (Day 12)</span></label></li>
+          <li><label><input type="checkbox" id="chk-ro"><span>Romanian rovinietă confirmation (Day 15)</span></label></li>
+        </ul>
+      </div>
+      <div class="part">
+        <h3>Kit and car</h3>
+        <ul class="checks">
+          <li><label><input type="checkbox" id="chk-tri"><span>Warning triangles, plus the V-16 beacon if required for the car</span></label></li>
+          <li><label><input type="checkbox" id="chk-vest"><span>Reflective vest for each person, inside the cabin</span></label></li>
+          <li><label><input type="checkbox" id="chk-aid"><span>First-aid kit (Croatia, Slovenia, Serbia)</span></label></li>
+          <li><label><input type="checkbox" id="chk-bulb"><span>Spare halogen bulbs (Croatia)</span></label></li>
+          <li><label><input type="checkbox" id="chk-tyre"><span>Four winter tyres, at least 4 mm, and chains</span></label></li>
+          <li><label><input type="checkbox" id="chk-glow"><span>Glow plugs, battery and fuel filter checked</span></label></li>
+          <li><label><input type="checkbox" id="chk-fuel"><span>Winter-grade diesel from Day 12</span></label></li>
+        </ul>
+      </div>
+      <div class="part">
+        <h3>Still open</h3>
+        <ul class="checks">
+          <li><label><input type="checkbox" id="chk-reg"><span>Is the car registered in Madrid municipality?</span></label></li>
+          <li><label><input type="checkbox" id="chk-date"><span>Exact start date (weekday or holiday on Days 10–11)</span></label></li>
+          <li><label><input type="checkbox" id="chk-bil"><span>Bilbao restricted hours for unlabelled cars</span></label></li>
+          <li><label><input type="checkbox" id="chk-bur"><span>Burgos ZBE check</span></label></li>
+          <li><label><input type="checkbox" id="chk-nice"><span>Nice ZFE perimeter and Riviera hotel town</span></label></li>
+          <li><label><input type="checkbox" id="chk-tus"><span>Pisa, Lucca, Arezzo diesel rules beyond the ZTL</span></label></li>
+          <li><label><input type="checkbox" id="chk-ven"><span>Veneto season end and Tronchetto access</span></label></li>
+          <li><label><input type="checkbox" id="chk-hist"><span>Historic registration: would lift Madrid, Bilbao and Florence bans</span></label></li>
+        </ul>
+      </div>
+    </div>
+    <p class="asof">Ticks are saved only in this browser.</p>
+  </section>
+
+  <p class="endnote">Drive times are for the W123 at its own pace, without stops. Photos are from Wikimedia Commons; each credit links to the photographer and licence. The Wikipedia links open more about each place. The restrictions section above is a snapshot of the live tracker.</p>
+</div>
+
+<dialog id="lb" aria-label="Photo viewer">
+  <div class="lb-frame">
+    <img id="lb-img" alt="">
+    <button type="button" id="lb-prev" class="lb-btn" aria-label="Previous photo">‹</button>
+    <button type="button" id="lb-next" class="lb-btn" aria-label="Next photo">›</button>
+    <button type="button" id="lb-close" class="lb-btn" aria-label="Close">×</button>
+  </div>
+  <p id="lb-cap"></p>
+</dialog>
+
+<script>
+const MAP = /*MAPDATA*/null;
+const DAYS = MAP.days;
+const TRIP = /*TRIPDATA*/null;
+const PHOTOS = /*PHOTODATA*/{};
+const GAL = /*GALDATA*/{};
+const PARK = /*PARKDATA*/{};
+const PLAN = /*PLANDATA*/{};
+const I18N = /*I18NDATA*/{};
+const LANGS = [['en', 'English'], ['es', 'Español'], ['fr', 'Français'], ['it', 'Italiano'], ['sl', 'Slovenščina'], ['hr', 'Hrvatski'], ['sr', 'Srpski'], ['ro', 'Română']];
+const LOCALE = { en: 'en-GB', es: 'es-ES', fr: 'fr-FR', it: 'it-IT', sl: 'sl-SI', hr: 'hr-HR', sr: 'sr-Latn-RS', ro: 'ro-RO' };
+let LANG = 'en';
+try { const h = (location.hash.match(/lang=([a-z]{2})/) || [])[1]; const st = localStorage.getItem('w123-lang'); LANG = h || st || 'en'; } catch (e) { const h = (location.hash.match(/lang=([a-z]{2})/) || [])[1]; if (h) LANG = h; }
+if (!LOCALE[LANG]) LANG = 'en';
+const DICT = I18N[LANG] || {};
+const T = (str, ...a) => { if (str == null) return str; let r = DICT[str]; if (r == null) r = str; return a.length ? r.replace(/\{(\d)\}/g, (_, i) => a[i]) : r; };
+const fmtDate = iso => { try { return new Intl.DateTimeFormat(LOCALE[LANG], { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }).format(new Date(iso + 'T12:00:00Z')); } catch (e) { return iso; } };
+document.documentElement.lang = LANG === 'sr' ? 'sr-Latn' : LANG;
+/* static text: each block is looked up by its English HTML */
+const normKey = h => h.replace(/\s+/g, ' ').trim();
+const STATIC_SEL = '.langbar label, .head .eyebrow, .head h1, .head .sub, .assume > b, .assume li, .fsctl button, .fs-hint, .legend span, .mapbox > .note, .tracker .eyebrow, .tracker h2, .tracker .lead, .tracker h3, .tracker .part > p, .tracker th, .tracker td, .checks span, .tracker > .asof, .endnote';
+function translateStatic(collect) {
+  const keys = [];
+  document.querySelectorAll(STATIC_SEL).forEach(el => {
+    if (!el.isConnected) return;
+    const k = normKey(el.innerHTML); if (!k) return;
+    if (collect) keys.push(k);
+    else if (DICT[k] != null) el.innerHTML = DICT[k];
+  });
+  document.querySelectorAll('.wrap [aria-label], .wrap [title], #lb [aria-label]').forEach(el => {
+    for (const at of ['aria-label', 'title']) { const v = el.getAttribute(at); if (!v) continue; if (collect) keys.push(v); else if (DICT[v] != null) el.setAttribute(at, DICT[v]); }
+  });
+  return keys;
+}
+window.__i18nStaticKeys = translateStatic(true);
+if (LANG !== 'en') translateStatic(false);
+(function langMenu() {
+  const sel = document.getElementById('lang');
+  sel.innerHTML = LANGS.map(([c, n]) => `<option value="${c}"${c === LANG ? ' selected' : ''}>${n}</option>`).join('');
+  sel.addEventListener('change', () => {
+    const v = sel.value;
+    try { localStorage.setItem('w123-lang', v); } catch (e) {}
+    try { history.replaceState(null, '', '#lang=' + v); } catch (e) { location.hash = 'lang=' + v; }
+    location.reload();
+  });
+  if (LANG !== 'en') document.getElementById('lang-hint').textContent = T('Road numbers stay as on the signs. Wikipedia links open in English.');
+})();
+const commons = f => 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(f);
+
+const NS = 'http://www.w3.org/2000/svg';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+
+/* ---------- route modes: fastest / balanced / cinematic ---------- */
+const MODESD = /*MODEDATA*/{};
+const MK = ['fast', 'bal', 'cine', 'safe'];
+const MODE_NAME = { fast: 'Fastest', bal: 'Balanced', cine: 'Cinematic', safe: 'Safe' };
+const variant = (d, m) => m === 'bal' ? null : (MODESD[d] && MODESD[d][m] && !MODESD[d][m].same ? MODESD[d][m] : null);
+const hasMode = (d, m) => m === 'bal' || !!variant(d, m);
+const balModes = d => MK.filter(m => !variant(d, m));
+const groupsOf = d => [{ m: 'bal', ms: balModes(d).join(' ') }].concat(['fast', 'cine', 'safe'].filter(m => variant(d, m)).map(m => ({ m, ms: m })));
+let MODE = { global: 'bal', days: {} };
+try { const sv = JSON.parse(localStorage.getItem('w123-mode') || 'null'); if (sv && MK.includes(sv.global)) MODE = { global: sv.global, days: sv.days || {} }; } catch (e) {}
+const modeOf = d => { const m = MODE.days[d] || MODE.global; return MK.includes(m) ? m : 'bal'; };
+const planFor = (d, m) => { const P = PLAN[d]; if (!P) return null; return m !== 'bal' && P.modes && P.modes[m] ? P.modes[m] : P; };
+const legsFor = (d, m) => { const D = DAYS.find(x => x.d === d); if (!D) return []; return m !== 'bal' && D.modes && D.modes[m] ? D.modes[m] : D.legs; };
+const pm = s => { const [h, mi] = String(s).split(':').map(Number); return h * 60 + mi; };
+const durMin = P => P ? P.rows.filter(r => r.k === 'drive').reduce((a, r) => a + r.min, 0) : 0;
+const fmtDur = m => `${Math.floor(m / 60)}h${String(m % 60).padStart(2, '0')}`;
+const lastArr = P => { const r = P ? P.rows.filter(x => x.k === 'drive') : []; return r.length ? r[r.length - 1].arr : (P ? P.end : ''); };
+function stopsFor(day, m) {
+  const v = variant(day.d, m); if (!v) return day.stops;
+  const here = Object.fromEntries(day.stops.map(s => [s.n, s]));
+  const out = [];
+  for (const it of v.stops) {
+    if (typeof it === 'string') { const n = it.split('|')[0]; if (here[n]) out.push(v.notes && v.notes[n] ? { ...here[n], note: v.notes[n] } : here[n]); }
+    else out.push(it);
+  }
+  return out;
+}
+const stopModes = (dnum, name) => MK.filter(m => { const v = variant(dnum, m); return !v || v.stops.some(it => typeof it === 'string' && it.split('|')[0] === name); }).join(' ');
+
+/* ---------- stats ---------- */
+(function stats() {
+  const km = TRIP.days.reduce((a, d) => a + d.km, 0);
+  const scenic = TRIP.days.filter(d => d.scenic).length;
+  const items = [
+    ['≈' + km.toLocaleString(LOCALE[LANG]), T('kilometres')],
+    ['16', T('days')],
+    ['9', T('countries')],
+    [String(scenic), T('scenic driving days')],
+    ['6.5h', T('longest drive (Day 4)')]
+  ];
+  document.getElementById('stats').innerHTML = items.map(([b, s]) => `<li><b>${b}</b><span>${s}</span></li>`).join('');
+})();
+
+/* ---------- map ---------- */
+const svg = document.getElementById('map');
+svg.setAttribute('viewBox', `0 0 ${MAP.W} ${MAP.H}`);
+let html = '';
+for (const s of MAP.shapes) html += `<path class="c-land${s.on ? ' on' : ''}" d="${s.d}"><title>${esc(T(s.n))}</title></path>`;
+html += `<g id="ctx" aria-hidden="true"></g>`;
+for (const l of MAP.labels) html += `<text class="${l.k === 's' ? 'm-sea' : 'm-label'}" x="${l.xy[0]}" y="${l.xy[1]}">${esc(T(l.t))}</text>`;
+
+const pts = line => line.map(p => p.join(',')).join(' ');
+for (const d of DAYS) {
+  if (d.line.length < 2) continue;
+  const t = TRIP.days[d.d - 1];
+  html += `<g class="r-day" data-day="${d.d}" data-mode="bal">`;
+  for (const g of groupsOf(d.d)) {
+    const ls = legsFor(d.d, g.m), legs = ls && ls.length ? ls : [{ r: 1, pts: d.line }];
+    const scenic = g.m === 'cine' || (g.m === 'bal' && t.scenic);
+    html += `<g data-ms="${g.ms}">` +
+      (scenic ? legs.map(l => `<polyline class="r-scenic" points="${pts(l.pts)}"/>`).join('') : '') +
+      legs.map(l => `<polyline class="r-base${l.r ? '' : ' r-local'}" points="${pts(l.pts)}"/>`).join('') +
+      legs.map((l, j) => `<polyline class="r-hit" data-leg="${d.d}:${j}:${g.m}" points="${pts(l.pts)}"/>`).join('') + `</g>`;
+  }
+  html += `</g>`;
+}
+html += `<g id="alt" aria-hidden="true"></g>`;
+// intermediate stops
+for (const d of DAYS) {
+  html += `<g class="m-stopgroup" data-day="${d.d}" data-mode="bal">`;
+  for (const s of d.stops) {
+    if (s.t === 'stop' || s.t === 'road' || s.t === 'visit') {
+      const r = s.t === 'road' ? 3 : 4.5;
+      html += `<circle class="m-stop" data-ms="${stopModes(d.d, s.n)}" cx="${s.xy[0]}" cy="${s.xy[1]}" r="${r}"><title>${esc(T('Day {0}: {1}', d.d, T(s.n)))}</title></circle>`;
+    }
+  }
+  for (const [mk, list] of Object.entries(d.mstops || {})) for (const s of list) {
+    html += `<circle class="m-stop" data-ms="${mk}" cx="${s.xy[0]}" cy="${s.xy[1]}" r="${s.t === 'road' ? 3 : 4.5}"><title>${esc(T('Day {0}: {1}', d.d, T(s.n)))}</title></circle>`;
+  }
+  html += `</g>`;
+}
+// overnights, grouped by position
+const sleeps = new Map();
+for (const d of DAYS) for (const s of d.stops) {
+  if (s.t === 'sleep' || s.t === 'start' || s.t === 'end') {
+    const k = s.xy.join(',');
+    if (!sleeps.has(k)) sleeps.set(k, { xy: s.xy, n: s.n, days: [] });
+    const g = sleeps.get(k);
+    if (s.t === 'start' && d.d === 1) g.start = true;
+    if (s.t === 'start' && d.d !== 1) continue;
+    if (!g.days.includes(d.d)) g.days.push(d.d);
+  }
+}
+for (const g of sleeps.values()) {
+  const label = g.start ? 'S' : (g.days.length > 1 ? `${g.days[0]}·${g.days[g.days.length - 1]}` : String(g.days[0]));
+  const r = label.length > 2 ? 11 : 8.5;
+  const first = g.start ? 1 : g.days[0];
+  html += `<g class="m-sleep" tabindex="0" role="button" data-go="${first}" aria-label="${esc(T('{0}, day {1}', T(g.n), g.days.join(', ')))}">` +
+    `<circle cx="${g.xy[0]}" cy="${g.xy[1]}" r="${r}"/><text x="${g.xy[0]}" y="${g.xy[1] + .5}">${label}</text><title>${esc(T(g.n))}</title></g>`;
+}
+// per-day name labels, shown when a day is selected
+for (const d of DAYS) {
+  html += `<g class="m-names" data-day="${d.d}" data-mode="bal">`;
+  const placed = [];
+  const rank = t => (t === 'sleep' || t === 'end') ? 0 : t === 'start' ? 1 : 2;
+  const order = [...d.stops].sort((a, b) => rank(a.t) - rank(b.t));
+  for (const s of order) {
+    if (placed.some(q => Math.abs(q[0] - s.xy[0]) < 70 && Math.abs(q[1] - s.xy[1]) < 16)) continue;
+    placed.push(s.xy);
+    const below = s.xy[1] < 60;
+    html += `<text class="m-name" data-ms="${stopModes(d.d, s.n)}" x="${s.xy[0]}" y="${s.xy[1]}" dx="0.95em" dy="${below ? '1.3em' : '-0.8em'}">${esc(T(s.n))}</text>`;
+  }
+  for (const [mk, list] of Object.entries(d.mstops || {})) for (const s of list) {
+    html += `<text class="m-name" data-ms="${mk}" x="${s.xy[0]}" y="${s.xy[1]}" dx="0.95em" dy="${s.xy[1] < 60 ? '1.3em' : '-0.8em'}">${esc(T(s.n))}</text>`;
+  }
+  html += `</g>`;
+  html += `<g class="m-names-all" data-day="${d.d}" data-mode="bal">` + d.stops.map(s => `<text class="m-name" data-ms="${stopModes(d.d, s.n)}" x="${s.xy[0]}" y="${s.xy[1]}" dx="0.95em" dy="-0.8em">${esc(T(s.n))}</text>`).join('') +
+    Object.entries(d.mstops || {}).map(([mk, list]) => list.map(s => `<text class="m-name" data-ms="${mk}" x="${s.xy[0]}" y="${s.xy[1]}" dx="0.95em" dy="-0.8em">${esc(T(s.n))}</text>`).join('')).join('') + `</g>`;
+}
+svg.innerHTML = html;
+fetch('map-extra.json').then(r => r.ok ? r.json() : null).then(X => {
+  if (!X) return;
+  ROADS = X.roadGroups || [];
+  const ORDER = { ferry: 0, minor: 1, main: 2, motorway: 3 }, CLS = { motorway: 'mw', main: 'main', minor: 'minor', ferry: 'ferry' };
+  const idx = ROADS.map((r, i) => i).sort((a, b) => ORDER[ROADS[a].c] - ORDER[ROADS[b].c]);
+  let g = `<path class="ctx-lake" d="${X.lakes}"/><path class="ctx-river" d="${X.rivers}"/>`;
+  g += idx.map(i => `<path class="rd rd-${CLS[ROADS[i].c]}" data-rdv="${i}" d="${ROADS[i].d}"/>`).join('');
+  g += idx.map(i => `<path class="rd-hit hit-${CLS[ROADS[i].c]}" data-rd="${i}" d="${ROADS[i].d}"/>`).join('');
+  g += X.towns.map((t, i) => `<g class="town t${t.t}" data-i="${i}"><circle cx="${t.xy[0]}" cy="${t.xy[1]}" r="1.6"/><text x="${t.xy[0]}" y="${t.xy[1]}" dx="0.5em" dy="0.35em">${esc(T(t.n))}</text></g>`).join('');
+  document.getElementById('ctx').innerHTML = g;
+  TOWNS = X.towns.map((t, i) => ({ ...t, el: document.querySelector(`#ctx .town[data-i="${i}"]`) }));
+  layoutTowns();
+}).catch(() => {});
+
+/* ---------- day bar ---------- */
+const bar = document.getElementById('daybar');
+bar.innerHTML = `<button type="button" id="day-all" aria-pressed="true" data-d="0">${T('All days')}</button>` +
+  TRIP.days.map(d => `<button type="button" id="day-${d.d}" aria-pressed="false" data-d="${d.d}" class="${d.scenic ? 'scenic' : ''}" title="${esc(T(d.from))} → ${esc(T(d.to))}">${d.d}</button>`).join('');
+function select(n) {
+  bar.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.d === n)));
+  svg.classList.toggle('dim', n > 0);
+  svg.querySelectorAll('[data-day]').forEach(el => el.classList.toggle('sel', +el.dataset.day === n));
+}
+bar.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  const n = +b.dataset.d;
+  select(n);
+  if (isFs()) { n ? zoomToDay(n) : fitAll(); return; }
+  if (n) go(n, false);
+});
+function go(n, highlight = true) {
+  if (isFs()) closeFs();
+  const el = document.getElementById('d' + n);
+  if (!el) return;
+  el.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  if (highlight) select(n);
+  el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1400);
+}
+svg.addEventListener('click', e => {
+  if (dragMoved) { dragMoved = false; return; }
+  const s = e.target.closest('[data-go]'); if (s) return go(+s.dataset.go);
+  const info = targetInfo(e.target);
+  if (info && (isFs() || info.kind === 'road' || matchMedia('(hover: none)').matches)) { present(info, e.clientX, e.clientY); tipPinned = true; return; }
+  if (!info) { hideTip(); }
+  const r = e.target.closest('.r-day'); if (r) return go(+r.dataset.day);
+});
+svg.addEventListener('keydown', e => {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  const s = e.target.closest('[data-go]'); if (s) { e.preventDefault(); go(+s.dataset.go); }
+});
+
+
+
+/* ---------- road and route details on hover / tap ---------- */
+let ROADS = [];
+const RULES = {
+  Spain: { mw: '120 km/h', rural: '90 km/h', toll: n => /\bAP-?\d/.test(n || '') ? 'Toll (AP- autopista)' : 'Mostly free (A- autovía); AP- sections are tolled' },
+  France: { mw: '130 km/h, 110 in rain', rural: '80 km/h (90 on some roads)', toll: () => 'Toll (péage) on most autoroutes' },
+  Monaco: { mw: '—', rural: '50 km/h', toll: () => 'No tolls' },
+  Italy: { mw: '130 km/h, 110 in rain', rural: '90 km/h (110 on dual carriageways)', toll: n => /Fi-Pi-Li/.test(n || '') ? 'Free (superstrada)' : 'Toll on autostrade (A- roads)' },
+  'San Marino': { mw: '—', rural: '70 km/h', toll: () => 'No tolls' },
+  Slovenia: { mw: '130 km/h', rural: '90 km/h', toll: () => 'E-vignette required (€16 for 7 days)' },
+  Croatia: { mw: '130 km/h', rural: '90 km/h', toll: () => 'Toll, paid at booths' },
+  Serbia: { mw: '130 km/h', rural: '80 km/h', toll: () => 'Toll, paid at booths (dinar, euro or card)' },
+  Romania: { mw: '130 km/h (expressways 100)', rural: '90 km/h', toll: () => 'Covered by the rovinietă' },
+  'Bosnia and Herz.': { mw: '130 km/h', rural: '80 km/h', toll: () => 'Toll' },
+  Hungary: { mw: '130 km/h', rural: '90 km/h', toll: () => 'E-vignette required' },
+  Austria: { mw: '130 km/h', rural: '100 km/h', toll: () => 'Vignette required' },
+  Switzerland: { mw: '120 km/h', rural: '80 km/h', toll: () => 'Vignette required' },
+  Bulgaria: { mw: '140 km/h', rural: '90 km/h', toll: () => 'E-vignette required' },
+  Andorra: { mw: '—', rural: '90 km/h', toll: () => 'No tolls' },
+  Montenegro: { mw: '130 km/h', rural: '80 km/h', toll: () => 'Toll on the motorway' },
+};
+const KIND_NAME = { motorway: 'Motorway', mw: 'Motorway', main: 'Main road', minor: 'Secondary road', ferry: 'Ferry route' };
+const W123 = {
+  motorway: 'W123: right lane at 90–100 km/h; refuel every 500–600 km.',
+  main: 'W123: through towns and roundabouts; plan on 60–65 km/h average.',
+  minor: 'W123: slow and twisty; plan on 45–50 km/h average.',
+  ferry: 'Check timetables in winter.',
+};
+const KN = c => T(KIND_NAME[c] || 'Road');
+const fmtMin = m => `${Math.floor(m / 60)}h${String(Math.round(m % 60)).padStart(2, '0')}`;
+function usedOn(name) {
+  if (!name) return [];
+  const out = [];
+  for (const d of DAYS) (legsFor(d.d, modeOf(d.d)) || []).forEach(l => { if (l.meta && l.meta.roads.some(r => r.n === name)) out.push(T('Day {0}: {1} → {2}', d.d, T(l.meta.from), T(l.meta.to))); });
+  return [...new Set(out)];
+}
+function roadHtml(i) {
+  const r = ROADS[i]; if (!r) return '';
+  const rule = RULES[r.cc] || null, kind = KN(r.c);
+  const lim = rule ? T(r.c === 'motorway' ? rule.mw : rule.rural) : null;
+  const toll = T(r.c === 'motorway' && rule ? rule.toll(r.n) : r.c === 'ferry' ? 'Ticket' : 'No toll');
+  const used = usedOn(r.n);
+  const unnamed = { motorway: 'Unnamed motorway', main: 'Unnamed main road', minor: 'Unnamed secondary road', ferry: 'Unnamed ferry route' }[r.c] || 'Unnamed road';
+  return `<b class="tt-t">${esc(r.n || T(unnamed))}</b>` +
+    `<span class="tt-s">${kind}${r.cc ? ' · ' + esc(T(r.cc)) : ''}</span>` +
+    `<dl>${lim ? `<dt>${T('Typical limit')}</dt><dd>${lim}</dd>` : ''}<dt>${T('Toll')}</dt><dd>${toll}</dd></dl>` +
+    `<span class="tt-n">${T(W123[r.c] || '')}</span>` +
+    (used.length ? `<span class="tt-u">${T('On your route: {0}', used.slice(0, 3).map(esc).join('; '))}</span>` :
+      `<span class="tt-u">${T('Not on your route.')} ${T(r.c === 'motorway' ? 'A faster bypass option.' : r.c === 'main' ? 'Could be a slower, toll-free alternative nearby.' : 'A local option for detours.')}</span>`);
+}
+function legHtml(key) {
+  const [dd, j] = key.split(':').map(Number), mk = key.split(':')[2] || 'bal';
+  const l = (legsFor(dd, mk) || [])[j], t = TRIP.days[dd - 1], v = variant(dd, mk);
+  if (!l) return '';
+  const m = l.meta || {};
+  let h = `<b class="tt-t">${esc(T('Day {0}: {1} → {2}', dd, T(m.from || t.from), T(m.to || t.to)))}${mk !== 'bal' ? ' · ' + T(MODE_NAME[mk]) : ''}</b>`;
+  if (!l.r) {
+    h += `<span class="tt-s">${T('Local roads, not in the map data · about {0} km, {1}', m.km, fmtMin(m.mins))}</span>`;
+    h += `<span class="tt-n">${T('Planned roads for this day: {0}. Use Google Maps or Waze on the day card for the exact line.', (v ? v.roads : t.roads).map(r => esc(T(r[1]))).join(', ') || '—')}</span>`;
+    return h;
+  }
+  h += `<span class="tt-s">${T('≈{0} km · {1} at W123 pace', m.km, fmtMin(m.mins))}${m.mw != null ? ' · ' + T('{0}% motorway', Math.round(m.mw * 100)) : ''}</span>`;
+  if (m.roads && m.roads.length) h += `<dl>${m.roads.slice(0, 6).map(r => `<dt>${esc(T(r.n))}</dt><dd>${r.km} km · ${KN(r.c)}${r.cc ? ', ' + esc(T(r.cc)) : ''}</dd>`).join('')}</dl>`;
+  const ccs = [...new Set((m.roads || []).filter(r => r.c === 'mw').map(r => r.cc).filter(Boolean))];
+  if (ccs.length) h += `<span class="tt-n">${T('Motorway charges: {0}.', ccs.map(c => `${esc(T(c))}: ${T(RULES[c] ? RULES[c].toll('') : 'check')}`).join('; '))}</span>`;
+  if (m.alt) {
+    const dk = m.alt.km - m.km, dm = m.alt.mins - m.mins;
+    h += `<span class="tt-a"><b>${T('Alternative · {0}', esc(T(m.alt.label)))}</b> ${T('(dashed blue): ≈{0} km, {1} ({2} km, {3}) via {4}.', m.alt.km, fmtMin(m.alt.mins), (dk >= 0 ? '+' : '') + dk, (dm >= 0 ? '+' : '−') + fmtMin(Math.abs(dm)), m.alt.roads.slice(0, 4).map(r => esc(T(r.n))).join(', '))}</span>`;
+  } else {
+    h += `<span class="tt-a">${T('No meaningfully different alternative on the main road network for this leg.')}</span>`;
+  }
+  return h;
+}
+const tip = document.getElementById('rtip');
+const altG = () => document.getElementById('alt');
+let tipPinned = false;
+function showTip(html, clientX, clientY) {
+  if (!html) return hideTip();
+  tip.innerHTML = html; tip.hidden = false;
+  const box = tip.parentElement.getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight;
+  let x = clientX - box.left + 14, y = clientY - box.top + 14;
+  if (x + tw > box.width - 6) x = Math.max(6, clientX - box.left - tw - 14);
+  if (y + th > box.height - 6) y = Math.max(6, clientY - box.top - th - 14);
+  tip.style.left = x + 'px'; tip.style.top = y + 'px';
+}
+function hideTip() { tip.hidden = true; tipPinned = false; altG().innerHTML = ''; svg.querySelectorAll('.rd.hl').forEach(e => e.classList.remove('hl')); }
+function drawAlt(key) {
+  const [dd, j] = key.split(':').map(Number), l = (legsFor(dd, key.split(':')[2] || 'bal') || [])[j];
+  altG().innerHTML = l && l.meta && l.meta.alt ? `<polyline class="r-alt" points="${pts(l.meta.alt.pts)}"/>` : '';
+}
+function targetInfo(el) {
+  const leg = el.closest && el.closest('[data-leg]'); if (leg) return { kind: 'leg', key: leg.dataset.leg };
+  const rd = el.closest && el.closest('[data-rd]'); if (rd) return { kind: 'road', key: rd.dataset.rd };
+  return null;
+}
+function present(info, x, y) {
+  svg.querySelectorAll('.rd.hl').forEach(e => e.classList.remove('hl'));
+  if (info.kind === 'leg') { drawAlt(info.key); showTip(legHtml(info.key), x, y); }
+  else { altG().innerHTML = ''; const v = svg.querySelector(`[data-rdv="${info.key}"]`); if (v) v.classList.add('hl'); showTip(roadHtml(+info.key), x, y); }
+}
+svg.addEventListener('pointermove', e => {
+  if (e.pointerType === 'touch' || tipPinned || (typeof drag0 !== 'undefined' && drag0 && dragMoved)) return;
+  const info = targetInfo(e.target);
+  if (info) present(info, e.clientX, e.clientY); else hideTip();
+});
+svg.addEventListener('pointerleave', () => { if (!tipPinned) hideTip(); });
+
+/* ---------- town label layout (bigger towns first, no overlaps) ---------- */
+let TOWNS = [], layoutPending = false;
+const STOPXY = DAYS.flatMap(d => d.stops.map(s => ({ xy: s.xy, n: s.n })));
+function layoutTowns() {
+  if (!TOWNS.length) return;
+  const fsOn = isFs();
+  if (!fsOn) { for (const t of TOWNS) t.el.style.display = ''; return; }
+  const r = svg.getBoundingClientRect(), ppu = r.width / vb[2];
+  const toScr = xy => [(xy[0] - vb[0]) * ppu, (xy[1] - vb[1]) * ppu];
+  const boxes = [];
+  const hit = b => boxes.some(q => b[0] < q[2] && b[2] > q[0] && b[1] < q[3] && b[3] > q[1]);
+  for (const s of STOPXY) { const [x, y] = toScr(s.xy); boxes.push([x - 13, y - 13, x + 13, y + 13]); }
+  const stopNames = new Set(STOPXY.map(s => s.n.split(',')[0].trim()));
+  const tName = t => T(t.n);
+  let shown = 0;
+  const budget = Math.round(r.width * r.height / 9000);
+  for (const t of TOWNS) {
+    const [x, y] = toScr(t.xy);
+    let ok = x > -40 && y > -10 && x < r.width + 10 && y < r.height + 10 && shown < budget && !(t.t > 1 && ppu < 1.2) ;
+    if (ok && stopNames.has(t.n)) ok = false;
+    if (ok) {
+      const fsz = t.t === 1 ? 13.5 : 12, wpx = tName(t).length * fsz * 0.56 + 10;
+      const b = [x - 4, y - fsz * 0.7, x + wpx, y + fsz * 0.7];
+      if (hit(b)) ok = false; else { boxes.push(b); shown++; }
+    }
+    t.el.style.display = ok ? 'inline' : 'none';
+  }
+}
+function scheduleLayout() { if (layoutPending) return; layoutPending = true; requestAnimationFrame(() => { layoutPending = false; layoutTowns(); }); }
+
+/* ---------- full-screen map, zoom and pan ---------- */
+const mapbox = document.querySelector('.mapbox');
+const VB0 = [0, 0, MAP.W, MAP.H];
+let vb = VB0.slice(), dragMoved = false;
+const isFs = () => mapbox.classList.contains('fs');
+function setVB(v) {
+  if (!isFs()) { vb = VB0.slice(); svg.setAttribute('viewBox', VB0.join(' ')); svg.style.removeProperty('--k'); delete svg.dataset.zl; scheduleLayout(); return; }
+  const r = svg.getBoundingClientRect(), asp = r.height / Math.max(1, r.width);
+  const maxW = Math.min(MAP.W, MAP.H / Math.min(asp, MAP.H / MAP.W) );
+  const w = Math.min(Math.max(40, v[2]), Math.max(maxW, MAP.W)), h = w * asp;
+  const cx = v[0] + (v[3] !== undefined ? v[2] : w) / 2, cy = v[1] + (v[3] !== undefined ? v[3] : h) / 2;
+  let x = cx - w / 2, y = cy - h / 2;
+  x = w >= MAP.W ? (MAP.W - w) / 2 : Math.min(MAP.W - w, Math.max(0, x));
+  y = h >= MAP.H ? (MAP.H - h) / 2 : Math.min(MAP.H - h, Math.max(0, y));
+  vb = [x, y, w, h];
+  svg.setAttribute('viewBox', vb.map(n => n.toFixed(1)).join(' '));
+  svg.style.setProperty('--k', (w / Math.max(1, r.width)).toFixed(4));
+  const ppu = r.width / w;
+  svg.dataset.zl = ppu >= 9 ? 4 : ppu >= 4.5 ? 3 : ppu >= 2 ? 2 : 1;
+  scheduleLayout();
+}
+const fitAll = () => setVB([0, 0, MAP.W, MAP.H]);
+function zoomAt(f, cx, cy) {
+  if (cx === undefined) { cx = vb[0] + vb[2] / 2; cy = vb[1] + vb[3] / 2; }
+  setVB([cx - (cx - vb[0]) / f, cy - (cy - vb[1]) / f, vb[2] / f, vb[3] / f]);
+}
+function zoomToDay(n) {
+  const d = DAYS.find(x => x.d === n); if (!d) return;
+  const pts = d.line.length ? d.line : d.stops.map(s => s.xy);
+  const xs = pts.map(p => p[0]).concat(d.stops.map(s => s.xy[0])), ys = pts.map(p => p[1]).concat(d.stops.map(s => s.xy[1]));
+  let x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const r = svg.getBoundingClientRect(), wh = r.width / Math.max(1, r.height);
+  const w = Math.max(x1 - x0, (y1 - y0) * wh, 45) * 1.45, h = w / wh;
+  setVB([(x0 + x1) / 2 - w / 2 + w * 0.07, (y0 + y1) / 2 - h / 2, w, h]);
+}
+function svgPoint(clientX, clientY) {
+  const r = svg.getBoundingClientRect();
+  const scale = Math.min(r.width / vb[2], r.height / vb[3]);
+  const ox = (r.width - vb[2] * scale) / 2, oy = (r.height - vb[3] * scale) / 2;
+  return [vb[0] + (clientX - r.left - ox) / scale, vb[1] + (clientY - r.top - oy) / scale, scale];
+}
+function openFs() {
+  mapbox.classList.add('fs');
+  document.documentElement.classList.add('fs-lock');
+  try { const p = mapbox.requestFullscreen && mapbox.requestFullscreen(); if (p && p.catch) p.catch(() => {}); } catch (e) {}
+  const cur = +(bar.querySelector('[aria-pressed="true"]') || {}).dataset?.d || 0;
+  requestAnimationFrame(() => cur ? zoomToDay(cur) : fitAll());
+  document.getElementById('map-close').focus();
+}
+function closeFs() {
+  mapbox.classList.remove('fs');
+  document.documentElement.classList.remove('fs-lock');
+  setVB(VB0);
+  try { if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(() => {}); } catch (e) {}
+  setVB(VB0);
+  document.getElementById('map-fs').focus();
+}
+document.getElementById('map-fs').addEventListener('click', openFs);
+document.getElementById('map-close').addEventListener('click', closeFs);
+document.getElementById('map-zin').addEventListener('click', () => zoomAt(1.6));
+document.getElementById('map-zout').addEventListener('click', () => zoomAt(1 / 1.6));
+document.getElementById('map-reset').addEventListener('click', () => { select(0); fitAll(); });
+document.addEventListener('keydown', e => {
+  if (!isFs() || document.getElementById('lb').open) return;
+  if (e.key === 'Escape') closeFs();
+  if (e.key === '+' || e.key === '=') zoomAt(1.6);
+  if (e.key === '-') zoomAt(1 / 1.6);
+});
+window.addEventListener('resize', () => { if (isFs()) setVB(vb); });
+document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && isFs()) closeFs(); });
+svg.addEventListener('wheel', e => {
+  if (!isFs()) return;
+  e.preventDefault();
+  const [x, y] = svgPoint(e.clientX, e.clientY);
+  zoomAt(e.deltaY < 0 ? 1.25 : 1 / 1.25, x, y);
+}, { passive: false });
+const pointers = new Map(); let pinch0 = null, drag0 = null;
+svg.addEventListener('pointerdown', e => {
+  if (!isFs()) return;
+  pointers.set(e.pointerId, [e.clientX, e.clientY]);
+  if (pointers.size === 1) { drag0 = { x: e.clientX, y: e.clientY, vb: vb.slice() }; dragMoved = false; }
+  if (pointers.size === 2) { const [a, b] = [...pointers.values()]; pinch0 = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), vb: vb.slice() }; }
+});
+svg.addEventListener('pointermove', e => {
+  if (!isFs() || !pointers.has(e.pointerId)) return;
+  pointers.set(e.pointerId, [e.clientX, e.clientY]);
+  if (pointers.size === 2 && pinch0) {
+    const [a, b] = [...pointers.values()];
+    const d = Math.hypot(a[0] - b[0], a[1] - b[1]);
+    const [cx, cy] = svgPoint((a[0] + b[0]) / 2, (a[1] + b[1]) / 2);
+    const f = d / pinch0.d; vb = pinch0.vb.slice(); zoomAt(f, cx, cy); dragMoved = true;
+  } else if (drag0) {
+    const dx = e.clientX - drag0.x, dy = e.clientY - drag0.y;
+    if (Math.abs(dx) + Math.abs(dy) > 4) {
+      if (!dragMoved) { try { svg.setPointerCapture(e.pointerId); } catch (err) {} }
+      dragMoved = true;
+    }
+    if (!dragMoved) return;
+    const scale = svgPoint(0, 0)[2];
+    setVB([drag0.vb[0] - dx / scale, drag0.vb[1] - dy / scale, drag0.vb[2], drag0.vb[3]]);
+  }
+});
+const endPointer = e => { pointers.delete(e.pointerId); if (pointers.size < 2) pinch0 = null; if (!pointers.size) drag0 = null; };
+svg.addEventListener('pointerup', endPointer);
+svg.addEventListener('pointercancel', endPointer);
+
+/* ---------- postcards ---------- */
+function rng(seed) { let a = seed * 9973 + 17; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const W = 400, H = 225;
+function ridge(R, base, amp, rough, fill, step = 8) {
+  const f1 = .008 + R() * .01, f2 = .025 + R() * .02, p1 = R() * 6, p2 = R() * 6;
+  let d = `M0 ${H}`;
+  for (let x = 0; x <= W; x += step) {
+    const y = base - amp * (0.55 * (0.5 + 0.5 * Math.sin(x * f1 + p1)) + 0.45 * (0.5 + 0.5 * Math.sin(x * f2 + p2))) - (R() - .5) * rough;
+    d += ` L${x} ${y.toFixed(1)}`;
+  }
+  return `<path d="${d} L${W} ${H} Z" fill="var(${fill})"/>`;
+}
+function peaks(R, base, n, hmin, hmax, fill, snow) {
+  let d = `M0 ${base}`, caps = '';
+  let x = -20;
+  while (x < W + 20) {
+    const w = 40 + R() * 50, h = hmin + R() * (hmax - hmin), px = x + w / 2, py = base - h;
+    d += ` L${px.toFixed(1)} ${py.toFixed(1)} L${(x + w).toFixed(1)} ${base - R() * 14}`;
+    if (snow) caps += `<path d="M${px - w * .16} ${py + h * .22} L${px} ${py} L${px + w * .16} ${py + h * .22} L${px + w * .05} ${py + h * .17} L${px - w * .04} ${py + h * .25} Z" fill="var(--snow)"/>`;
+    x += w * (0.7 + R() * 0.3);
+  }
+  return `<path d="${d} L${W + 20} ${H} L-20 ${H} Z" fill="var(${fill})"/>` + caps;
+}
+const sea = (y) => `<rect x="0" y="${y}" width="${W}" height="${H - y}" fill="var(--water)"/>` +
+  [0, 1, 2, 3].map(i => `<line x1="${40 + i * 90}" x2="${80 + i * 90}" y1="${y + 8 + i * 5}" y2="${y + 8 + i * 5}" stroke="var(--glint)" stroke-width="1.5" opacity=".7"/>`).join('');
+function car(x, y, s = 1) {
+  return `<g transform="translate(${x} ${y}) scale(${s})">` +
+    `<path d="M0 15 L1 10 L13 8.5 L19 2 L41 2 L47 8.5 L59 9.5 L61 15 Z" fill="var(--car)"/>` +
+    `<path d="M21 3.8 L29.2 3.8 L29.2 8.2 L16.8 8.2 Z M31 3.8 L40 3.8 L44 8.2 L31 8.2 Z" fill="var(--sky-bot)" opacity=".85"/>` +
+    `<rect x="58" y="10.5" width="3" height="2" fill="var(--sun)"/>` +
+    `<circle cx="13" cy="15.5" r="4.6" fill="var(--glyph)"/><circle cx="48" cy="15.5" r="4.6" fill="var(--glyph)"/>` +
+    `<circle cx="13" cy="15.5" r="1.8" fill="var(--mid)"/><circle cx="48" cy="15.5" r="1.8" fill="var(--mid)"/></g>`;
+}
+function road(R, y, withCar = true) {
+  let dash = '';
+  for (let x = 6; x < W; x += 34) dash += `<rect x="${x}" y="${y + 10}" width="16" height="2" fill="var(--road-mark)"/>`;
+  return `<rect x="0" y="${y}" width="${W}" height="${H - y}" fill="var(--road)"/>${dash}` + (withCar ? car(150 + R() * 120, y - 12.5, 1) : '');
+}
+function spires(x, base, h) {
+  return `<g fill="var(--glyph)"><rect x="${x}" y="${base - h * .45}" width="${h * .7}" height="${h * .45}"/>` +
+    `<path d="M${x - 2} ${base - h * .45} L${x + 5} ${base - h} L${x + 12} ${base - h * .45} Z"/>` +
+    `<path d="M${x + h * .7 - 12} ${base - h * .45} L${x + h * .7 - 5} ${base - h} L${x + h * .7 + 2} ${base - h * .45} Z"/>` +
+    `<path d="M${x + h * .2} ${base - h * .45} L${x + h * .35} ${base - h * .7} L${x + h * .5} ${base - h * .45} Z"/></g>`;
+}
+function walls(x, base, w) {
+  let d = `M${x} ${base} L${x} ${base - 22}`;
+  for (let i = x; i < x + w; i += 8) d += ` L${i + 4} ${base - 22} L${i + 4} ${base - 26} L${i + 8} ${base - 26} L${i + 8} ${base - 22}`;
+  d += ` L${x + w} ${base} Z`;
+  let towers = '';
+  for (let i = 0; i <= 3; i++) {
+    const tx = x + i * w / 3 - 6;
+    towers += `<rect x="${tx}" y="${base - 38}" width="12" height="38"/><path d="M${tx - 2} ${base - 38} L${tx + 6} ${base - 52} L${tx + 14} ${base - 38} Z"/>`;
+  }
+  return `<g fill="var(--glyph)"><path d="${d}"/>${towers}</g>`;
+}
+function village(R, cx, top, n) {
+  let s = '';
+  for (let i = 0; i < n; i++) {
+    const w = 8 + R() * 8, h = 7 + R() * 9, x = cx - n * 4.5 + i * 9 + (R() - .5) * 4, y = top + Math.abs(i - n / 2) * 3.2;
+    s += `<rect x="${x.toFixed(1)}" y="${(y - h).toFixed(1)}" width="${w.toFixed(1)}" height="${(h + 14).toFixed(1)}" fill="var(--house)"/>` +
+      `<path d="M${x - 1} ${y - h} L${x + w / 2} ${y - h - 4} L${x + w + 1} ${y - h} Z" fill="var(--porph)" opacity=".75"/>`;
+  }
+  s += `<rect x="${cx + 2}" y="${top - 30}" width="7" height="30" fill="var(--house)"/><path d="M${cx + 1} ${top - 30} L${cx + 5.5} ${top - 38} L${cx + 10} ${top - 30} Z" fill="var(--glyph)"/>`;
+  return s;
+}
+function cypress(x, base, h) { return `<ellipse cx="${x}" cy="${base - h / 2}" rx="${h * .12}" ry="${h / 2}" fill="var(--glyph)"/>`; }
+function dome(x, base, w) {
+  return `<g fill="var(--glyph)"><rect x="${x - w * .7}" y="${base - w * .55}" width="${w * 1.4}" height="${w * .55}"/>` +
+    `<rect x="${x - w * .38}" y="${base - w * .8}" width="${w * .76}" height="${w * .28}"/>` +
+    `<path d="M${x - w * .42} ${base - w * .8} Q${x - w * .38} ${base - w * 1.45} ${x} ${base - w * 1.5} Q${x + w * .38} ${base - w * 1.45} ${x + w * .42} ${base - w * .8} Z"/>` +
+    `<rect x="${x - 2.5}" y="${base - w * 1.72}" width="5" height="${w * .24}"/></g>`;
+}
+function campanile(x, base, h, w = 9) {
+  return `<g fill="var(--glyph)"><rect x="${x}" y="${base - h}" width="${w}" height="${h}"/><path d="M${x - 1} ${base - h} L${x + w / 2} ${base - h - w * 1.3} L${x + w + 1} ${base - h} Z"/></g>`;
+}
+function pisaTower(x, base) {
+  let bands = '';
+  for (let i = 1; i < 7; i++) bands += `<line x1="0" x2="18" y1="${-i * 9}" y2="${-i * 9}" stroke="var(--glyph)" stroke-width="1"/>`;
+  return `<g transform="translate(${x} ${base}) rotate(5)"><rect x="0" y="-62" width="18" height="62" fill="var(--house)"/>${bands}<rect x="2" y="-70" width="14" height="8" fill="var(--house)"/></g>`;
+}
+function poles(y) { let s = ''; for (let i = 0; i < 9; i++) s += `<rect x="${30 + i * 40 + (i % 2) * 8}" y="${y - 14}" width="3" height="22" fill="var(--glyph)" opacity=".8"/>`; return s; }
+
+const SCENES = {
+  meseta(R) {
+    return ridge(R, 130, 14, 2, '--far') + ridge(R, 160, 8, 1, '--mid') + spires(250, 160, 56) + ridge(R, 182, 4, 1, '--near') + road(R, 190);
+  },
+  coast(R) {
+    return ridge(R, 110, 18, 3, '--far') + sea(132) +
+      `<path d="M0 82 L40 86 L70 98 L95 120 L112 150 L118 190 L0 190 Z" fill="var(--near)"/>` +
+      `<path d="M300 132 L330 118 L372 112 L400 116 L400 132 Z" fill="var(--mid)"/>` + village(R, 52, 92, 4) + road(R, 190);
+  },
+  pyrenees(R) {
+    return peaks(R, 120, 8, 40, 75, '--far', true) + ridge(R, 150, 16, 2, '--mid') + walls(205, 156, 120) + ridge(R, 182, 5, 1, '--near') + road(R, 190);
+  },
+  esterel(R) {
+    return sea(120) + `<path d="M0 60 L30 66 L52 58 L80 74 L104 70 L130 96 L150 104 L168 124 L186 140 L200 172 L0 172 Z" fill="var(--porph)"/>` +
+      `<path d="M262 120 L272 108 L284 114 L292 102 L304 120 Z M330 120 L338 112 L348 120 Z" fill="var(--porph)" opacity=".85"/>` +
+      `<path d="M0 172 L200 172 Q260 172 300 160 L400 152 L400 ${H} L0 ${H} Z" fill="var(--road)"/>` +
+      Array.from({ length: 8 }, (_, i) => `<rect x="${20 + i * 46}" y="${180 - i * 2.6}" width="16" height="2" fill="var(--road-mark)" transform="rotate(-3 ${20 + i * 46} 180)"/>`).join('') +
+      car(230, 152, 1);
+  },
+  riviera(R) {
+    return sea(140) + `<path d="M120 140 C140 120 160 72 210 58 C250 50 280 86 300 110 C320 128 360 136 400 138 L400 140 Z" fill="var(--mid)"/>` +
+      village(R, 212, 64, 6) + `<path d="M0 140 C40 132 70 126 110 140 Z" fill="var(--far)"/>` + road(R, 190);
+  },
+  pisa(R) {
+    return ridge(R, 126, 26, 3, '--far') + ridge(R, 168, 6, 1, '--mid') +
+      `<path d="M150 168 a26 22 0 0 1 52 0 Z" fill="var(--house)"/><rect x="146" y="164" width="60" height="8" fill="var(--house)"/>` +
+      pisaTower(232, 172) + `<rect x="0" y="172" width="${W}" height="18" fill="var(--near)"/>` + road(R, 190);
+  },
+  florence(R) {
+    return ridge(R, 118, 24, 3, '--far') + ridge(R, 150, 12, 2, '--mid') + dome(200, 168, 46) + campanile(250, 168, 72, 10) +
+      `<rect x="0" y="166" width="${W}" height="24" fill="var(--near)"/>` +
+      Array.from({ length: 14 }, (_, i) => `<rect x="${i * 30 + 4}" y="${154 + (i % 3) * 4}" width="22" height="16" fill="var(--glyph)" opacity=".85"/>`).join('') +
+      road(R, 190, false) + `<path d="M0 198 L${W} 198" stroke="var(--road-mark)" stroke-width="2" stroke-dasharray="14 8"/>` +
+      `<g fill="var(--glyph)"><rect x="40" y="176" width="300" height="9" rx="4"/></g>` +
+      `<text x="200" y="215" text-anchor="middle" font-family="Overpass, sans-serif" font-size="11" font-weight="600" letter-spacing="2" fill="var(--road-mark)">CAR STAYS IN SESTO</text>`;
+  },
+  chianti(R) {
+    let s = ridge(R, 112, 22, 2, '--far') + ridge(R, 140, 20, 2, '--mid');
+    s += `<path d="M0 190 C80 150 160 150 240 166 C300 178 350 160 400 150 L400 190 Z" fill="var(--near)"/>`;
+    for (let i = 0; i < 9; i++) s += `<path d="M${120 + i * 26} 190 C${150 + i * 26} 172 ${170 + i * 26} 168 ${200 + i * 26} 170" stroke="var(--mid)" stroke-width="2" fill="none"/>`;
+    for (let i = 0; i < 7; i++) s += cypress(60 + i * 16, 160 - i * 1.4, 34 + R() * 10);
+    s += village(R, 330, 132, 3);
+    return s + road(R, 190);
+  },
+  pass(R) {
+    return peaks(R, 132, 6, 60, 95, '--far', true) +
+      `<path d="M0 ${H} L0 150 L120 90 L210 70 L300 100 L400 140 L400 ${H} Z" fill="var(--mid)"/>` +
+      `<path d="M130 182 L250 150 L170 128 L270 104 L210 84" stroke="var(--road-mark)" stroke-width="3" fill="none" stroke-linejoin="round" opacity=".9"/>` +
+      `<g transform="translate(212 73)"><rect x="-1" y="0" width="2" height="12" fill="var(--glyph)"/><rect x="-14" y="-10" width="28" height="10" fill="var(--sign-blue)"/><text x="0" y="-2.5" text-anchor="middle" font-family="Overpass, sans-serif" font-size="6.5" font-weight="800" fill="var(--sign-white)">1049 m</text></g>` +
+      road(R, 190);
+  },
+  delta(R) {
+    let trees = ''; for (let i = 0; i < 16; i++) trees += `<ellipse cx="${8 + i * 26}" cy="${124 - (i % 3) * 2}" rx="6" ry="${9 + (i % 4) * 2}" fill="var(--far)"/>`;
+    return trees + `<rect x="0" y="130" width="${W}" height="60" fill="var(--water)"/>` + ridge(R, 132, 4, 1, '--mid') + campanile(300, 132, 40, 7) +
+      poles(160) + `<path d="M0 176 C120 170 260 172 400 168 L400 190 L0 190 Z" fill="var(--near)"/>` + road(R, 190);
+  },
+  venice(R) {
+    let s = sea(150) + `<rect x="0" y="134" width="${W}" height="18" fill="var(--glyph)" opacity=".9"/>`;
+    s += campanile(170, 150, 92, 12) + dome(232, 150, 34) + dome(268, 150, 22) + dome(110, 150, 26);
+    for (let i = 0; i < 12; i++) s += `<rect x="${i * 34}" y="${120 + (i % 3) * 5}" width="26" height="30" fill="var(--glyph)" opacity=".75"/>`;
+    s += `<path d="M120 196 Q160 204 214 192 L218 188 L214 194 Q160 200 124 194 Z" fill="var(--glyph)"/><line x1="200" y1="174" x2="206" y2="196" stroke="var(--glyph)" stroke-width="1.5"/>`;
+    return s + poles(186);
+  },
+  karst(R) {
+    return ridge(R, 100, 30, 3, '--far') + sea(140) +
+      `<path d="M220 140 L232 128 L300 126 L318 140 Z" fill="var(--mid)"/>` +
+      `<g fill="var(--snow)"><rect x="244" y="102" width="44" height="26"/><rect x="278" y="88" width="12" height="40"/>` +
+      `<path d="M244 102 L250 96 L256 102 L262 96 L268 102 L274 96 L280 102 Z"/></g>` + road(R, 190);
+  },
+  zagreb(R) {
+    return ridge(R, 120, 26, 3, '--far') + ridge(R, 156, 10, 1, '--mid') +
+      `<g fill="var(--glyph)"><rect x="180" y="128" width="40" height="40"/><path d="M180 128 L186 70 L192 128 Z"/><path d="M208 128 L214 70 L220 128 Z"/></g>` +
+      Array.from({ length: 12 }, (_, i) => `<rect x="${i * 34 + 2}" y="${158 + (i % 2) * 4}" width="26" height="20" fill="var(--glyph)" opacity=".85"/>`).join('') +
+      `<g>${Array.from({ length: 7 }, (_, i) => `<circle cx="${40 + i * 50}" cy="${150 + (i % 2) * 6}" r="2" fill="var(--sun)"/>`).join('')}</g>` + road(R, 190);
+  },
+  plain(R) {
+    let s = `<rect x="0" y="150" width="${W}" height="40" fill="var(--mid)"/>` + ridge(R, 150, 3, 1, '--far');
+    for (let i = 0; i < 10; i++) s += `<ellipse cx="${20 + i * 40}" cy="140" rx="5" ry="16" fill="var(--near)"/>`;
+    return s + `<path d="M190 150 L210 150 L260 190 L140 190 Z" fill="var(--road)"/>` + road(R, 190);
+  },
+  gorge(R) {
+    return `<rect x="0" y="0" width="${W}" height="${H}" fill="var(--sky-bot)" opacity="0"/>` +
+      `<path d="M0 30 L60 40 L120 90 L150 160 L160 ${H} L0 ${H} Z" fill="var(--near)"/>` +
+      `<path d="M400 20 L340 50 L290 110 L262 160 L255 ${H} L400 ${H} Z" fill="var(--mid)"/>` +
+      `<path d="M150 160 C190 150 230 150 262 160 L270 ${H} L140 ${H} Z" fill="var(--water)"/>` +
+      `<line x1="170" x2="210" y1="176" y2="176" stroke="var(--glint)" stroke-width="1.5"/><line x1="200" x2="240" y1="192" y2="192" stroke="var(--glint)" stroke-width="1.5"/>` +
+      `<g fill="var(--glyph)"><rect x="70" y="58" width="12" height="30"/><rect x="92" y="72" width="11" height="26"/><rect x="112" y="94" width="10" height="22"/>` +
+      `<path d="M68 58 L76 46 L84 58 Z M90 72 L97.5 61 L105 72 Z M110 94 L117 84 L124 94 Z"/></g>` +
+      `<path d="M0 206 L150 196 L160 ${H} L0 ${H} Z" fill="var(--road)"/>` + car(40, 189, .9);
+  },
+  finish(R) {
+    return ridge(R, 150, 4, 1, '--far') +
+      `<g fill="var(--glyph)"><rect x="150" y="122" width="110" height="46"/><rect x="164" y="108" width="82" height="14"/><rect x="180" y="96" width="50" height="12"/><rect x="200" y="84" width="10" height="12"/></g>` +
+      Array.from({ length: 11 }, (_, i) => `<rect x="${i * 38}" y="${150 + (i % 3) * 4}" width="30" height="22" fill="var(--glyph)" opacity=".8"/>`).join('') +
+      `<rect x="0" y="168" width="${W}" height="22" fill="var(--near)"/>` + road(R, 190);
+  }
+};
+function postcard(day) {
+  const R = rng(day.d);
+  const id = 'sky' + day.d;
+  const sun = day.scene === 'gorge' ? '' : `<circle cx="${70 + R() * 260}" cy="${46 + R() * 30}" r="${13 + R() * 6}" fill="var(--sun)" opacity=".95"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" aria-hidden="true">` +
+    `<defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--sky-top)"/><stop offset="1" style="stop-color:var(--sky-bot)"/></linearGradient></defs>` +
+    `<rect width="${W}" height="${H}" fill="url(#${id})"/>${sun}${(SCENES[day.scene] || SCENES.plain)(R)}</svg>`;
+}
+
+/* ---------- hero photos ---------- */
+function heroHtml(day) {
+  const stamp = `<span class="stamp${day.scenic ? ' sc' : ''}">${day.scenic ? T('Scenic drive') : T('Day {0}', day.d)}</span>`;
+  const alt = T(day.heroAlt || day.title);
+  const k = day.hero, ph = k && PHOTOS[k];
+  if (ph && ph.h) {
+    return `<figure class="post hero"><button type="button" class="hero-open" data-open-day="${day.d}" data-open-key="${k}" data-open-src="img/${k}-h.jpg" data-open-label="${esc(alt)}" data-open-f="${esc(ph.f)}" aria-label="${esc(T('Enlarge photo: {0}', alt))}"><img src="img/${k}-h.jpg" alt="${esc(alt)}" loading="${day.d <= 2 ? 'eager' : 'lazy'}"></button>${stamp}` +
+      `<figcaption>${esc(alt)} · ${T('tap to enlarge')}</figcaption></figure>`;
+  }
+  return `<div class="post">${postcard(day)}${stamp}</div>`;
+}
+
+/* ---------- gallery + parking ---------- */
+const KIND = { park: ['P', 'Parking'], ride: ['P+R', 'Park and ride'], pull: ['★', 'Stop on the road'] };
+const durTxt = min => min >= 60 ? Math.floor(min / 60) + 'h' + String(min % 60).padStart(2, '0') : min + ' min';
+const mapsQ = q => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
+/* Waze: open the installed app directly on phones and tablets; the web link stays as the fallback */
+const UA = navigator.userAgent || '';
+const IS_ANDROID = /Android/i.test(UA);
+const IS_IOS = /iPhone|iPad|iPod/i.test(UA) || (/Macintosh/.test(UA) && navigator.maxTouchPoints > 1);
+function wazeLink(params) {
+  const web = 'https://waze.com/ul?' + params + '&navigate=yes';
+  if (IS_ANDROID) return `intent://?${params}&navigate=yes#Intent;scheme=waze;package=com.waze;S.browser_fallback_url=${encodeURIComponent(web)};end`;
+  if (IS_IOS) return 'waze://?' + params + '&navigate=yes';
+  return web;
+}
+const wazeQ = q => wazeLink('q=' + encodeURIComponent(q));
+const wazeLL = (lat, lon) => wazeLink(`ll=${lat},${lon}`);
+const wazeWeb = (lat, lon) => `https://waze.com/ul?ll=${lat},${lon}&navigate=yes`;
+const LT = { predawn: ['Before sunrise', ''], dusk: ['After sunset', ''], afterdark: ['In the dark', ''], golden: ['Golden hour', 'g'],
+  glare_east: ['Low sun ahead', ''], glare_west: ['Low sun ahead', ''], scenic_dark: ['Scenic road in poor light', 'w'], minor_dark: ['Not a motorway, after dark', 'w'] };
+const KINDT = { mw: 'Motorway', main: 'Main road', scenic: 'Scenic road' };
+const lightTags = r => `<span class="lt">${T(KINDT[r.kind] || 'Road')}</span>` + (r.light || []).filter((c, i, a) => a.indexOf(c) === i && LT[c]).map(c => `<span class="lt ${LT[c][1]}">${T(LT[c][0])}</span>`).join('');
+function dayBar(P) {
+  const tzs = P.riseTz !== P.setTz ? -60 : 0;            // day 15: show everything on the starting clock
+  const rise = pm(P.sunrise), set = pm(P.sunset) + tzs, dusk = pm(P.dusk) + tzs;
+  let off = 0; const segs = [];
+  for (const r of P.rows) {
+    if (r.k === 'tz') { off = -60; continue; }
+    if (!r.min) continue;
+    const a = pm(r.t) + off; segs.push([a, a + r.min, r.k === 'drive' ? r.kind : 'stop']);
+  }
+  const first = segs.length ? segs[0][0] : rise, last = segs.length ? segs[segs.length - 1][1] : dusk;
+  const lo = Math.floor(Math.min(rise - 45, first) / 60) * 60, hi = Math.ceil(Math.max(dusk + 20, last) / 60) * 60;
+  const X = v => Math.max(0, Math.min(100, (v - lo) / (hi - lo) * 100));
+  const box = (a, b, c) => `<i class="${c}" style="left:${X(a).toFixed(2)}%;width:${Math.max(0, X(b) - X(a)).toFixed(2)}%"></i>`;
+  let h = box(lo, rise - 35, 'n') + box(rise - 35, rise, 'tw') + box(rise, set, 'dy') + box(set, dusk, 'tw') + box(dusk, hi, 'n');
+  h += segs.map(([a, b, k]) => box(a, b, 'seg k-' + k)).join('');
+  let ticks = '';
+  for (let t = Math.ceil((lo + 1) / 120) * 120; t < hi; t += 120) ticks += `<span style="left:${X(t).toFixed(2)}%">${String(t / 60).padStart(2, '0')}:00</span>`;
+  const label = T('Daylight {0}–{1}; driving and stops drawn on top', P.sunrise, P.sunset);
+  return `<div class="dbar" role="img" aria-label="${esc(label)}">${h}</div><div class="dticks" aria-hidden="true">${ticks}</div>` +
+    `<p class="dkey" aria-hidden="true"><span><i style="background:#f3e2b6"></i>${T('Daylight')}</span><span><i style="background:#6c7f99"></i>${T('Twilight')}</span><span><i style="background:#26323d"></i>${T('Dark')}</span>` +
+    `<span><i style="background:#4f5b66"></i>${T('Motorway')}</span><span><i style="background:#2f6fcf"></i>${T('Main road')}</span><span><i style="background:#d88a12"></i>${T('Scenic road')}</span><span><i style="background:#fff;box-shadow:inset 0 0 0 1px #0004"></i>${T('Stop')}</span></p>`;
+}
+function shiftPlan(P, off) {
+  if (!P || !off) return P;
+  const tzs = P.riseTz !== P.setTz ? -60 : 0, rise = pm(P.sunrise), set = pm(P.sunset), dusk = pm(P.dusk);
+  let after = false;
+  const S = t => t ? hhmm(pm(t) + off) : t;
+  const rows = P.rows.map(r => {
+    if (r.k === 'tz') { after = true; return { ...r, t: S(r.t) }; }
+    const x = { ...r, t: S(r.t), arr: S(r.arr), end: S(r.end) };
+    if (r.k === 'drive') {
+      // compare on the end-of-day clock (day 15: rows before the border are one hour behind)
+      const a = pm(x.t) + (after ? 0 : -tzs), b = pm(x.arr) + (after ? 0 : -tzs), rr = rise - tzs;
+      const keep = (r.light || []).filter(c => c === 'glare_east' || c === 'glare_west');
+      if (a < rr) keep.push('predawn');
+      if (b > set) keep.push(b > dusk ? 'afterdark' : 'dusk');
+      if (r.kind === 'scenic' && (a < rr + 15 || b > set - 15)) keep.push('scenic_dark');
+      if (r.kind !== 'mw' && (a < rr - 5 || b > dusk)) keep.push('minor_dark');
+      if (r.kind === 'scenic' && b > set - 75 && a < set && !keep.includes('scenic_dark')) keep.push('golden');
+      x.light = keep;
+    }
+    return x;
+  });
+  const warn = [...new Set(rows.flatMap(r => (r.light || []).filter(c => c === 'scenic_dark' || c === 'minor_dark')))];
+  return { ...P, rows, start: S(P.start), end: S(P.end), warn, shifted: off };
+}
+function schedHtml(day, m = 'bal', off = 0) {
+  const P = shiftPlan(planFor(day.d, m), off); if (!P) return '';
+  const rows = P.rows.map(r => {
+    if (r.k === 'drive') return `<li class="s-drive"><span class="st">${r.t}</span><span class="sb"><b>${esc(T('Drive to {0}', T(r.to)))}</b><span class="sm">${r.km} km · ${durTxt(r.min)} · ${esc(T(r.roads))}</span><span>${lightTags(r)}</span></span><span class="se">${T('arr. {0}', r.arr)}</span></li>`;
+    if (r.k === 'stop') return `<li class="s-stop"><span class="st">${r.t}</span><span class="sb"><b>${esc(T(r.name))}</b>${r.note ? `<span class="sm">${esc(T(r.note))}</span>` : ''}</span><span class="se"><span class="mo mo-${r.mo}" title="${T(r.mo === 'M' ? 'Mandatory' : 'Optional: cut first if late')}">${T(r.mo === 'M' ? 'Must' : 'Optional')}</span>${r.min ? ' ' + durTxt(r.min) : ''}</span></li>`;
+    if (r.k === 'border') return `<li class="s-border"><span class="st">${r.t}</span><span class="sb"><b>${esc(T(r.name))}</b><span class="sm">${T('Allow {0} min', r.min)}</span></span><span class="se">${T('until {0}', r.end)}</span></li>`;
+    if (r.k === 'tz') return `<li class="s-tz"><span class="st">${r.t}</span><span class="sb"><b>${esc(T(r.name))}</b></span><span class="se"></span></li>`;
+    return '';
+  }).join('');
+  const sun = P.riseTz !== P.setTz ? T('sunrise {0} ({1}) · sunset {2} ({3}) · dark from {4}', P.sunrise, P.riseTz, P.sunset, P.setTz, P.dusk)
+    : T('sunrise {0} · sunset {1} · dark from {2}', P.sunrise, P.sunset, P.dusk);
+  return `<section class="sched" aria-label="${esc(T('Timed plan, day {0}', day.d))}"><div class="xhead"><h3>${T('Timed plan')}${m !== 'bal' ? ' · ' + T(MODE_NAME[m]) : ''}</h3><span class="count">${fmtDate(P.date)} · ${day.d === 15 ? T('times in CET then EET') : T('times in {0}', P.tz)} · ${sun}</span></div>` +
+    (off ? `<p class="cmp">${T('Re-timed from your real start ({0} {1}).', off > 0 ? '+' : '−', fmtDur(Math.abs(off)))}</p>` : '') +
+    (P.warn && P.warn.length ? `<p class="flag">${warnIcon}${T('With this start, a scenic or minor road falls after dark. Check in for what to cut.')}</p>` : '') +
+    dayBar(P) +
+    `<ol class="slist">${rows}<li class="s-end"><span class="st">${P.end}</span><span class="sb"><b>${T('Day ends')}</b></span><span class="se"></span></li></ol></section>`;
+}
+function extraHtml(day, gs) {
+  const g = GAL[day.d], pk = PARK[day.d] || [];
+  let h = `<div class="live" id="live-d${day.d}"></div>` + gs.map(x => `<div data-ms="${x.ms}" class="schedwrap" data-sd="${day.d}" data-sm="${x.m}">${schedHtml(day, x.m)}</div>`).join('') + `<div class="wx-slot" id="wx-d${day.d}"></div><div class="bul-slot" id="bul-d${day.d}"></div>`;
+  if (g && g.items.length) {
+    h += `<section class="gal" aria-label="${esc(T('Photo gallery, day {0}', day.d))}"><div class="xhead"><h3>${T('Photos')}</h3><span class="count">${T('{0} photos · tap to enlarge', g.items.length)}</span></div><div class="strip">`;
+    let last = '';
+    g.items.forEach((it, i) => {
+      const lab = it.label !== last ? `<span class="glabel">${esc(T(it.label))}</span>` : '';
+      last = it.label;
+      h += `<button type="button" class="gthumb${lab ? ' first' : ''}" data-day="${day.d}" data-i="${i}" aria-label="${esc(T('{0}, photo {1} of {2}', T(it.label), i + 1, g.items.length))}">` +
+        `<span class="tile" style="background-image:url('${g.sprite}');background-position:${-i * 160}px 0;background-size:${g.items.length * 160}px 120px"></span>${lab}</button>`;
+    });
+    h += `</div></section>`;
+  }
+  if (pk.length) {
+    h += `<section class="park" aria-label="${esc(T('Parking and stops, day {0}', day.d))}"><div class="xhead"><h3>${T('Parking and stops on the road')}</h3></div><div class="pgrid">`;
+    for (const p of pk) {
+      const [badge0, kind0] = KIND[p.k] || KIND.park, badge = T(badge0), kind = T(kind0);
+      h += `<div class="pitem k-${p.k}"><span class="pbadge" title="${kind}">${badge}</span><div class="ptext">` +
+        `<span class="pat">${esc(T(p.at))} · ${kind}</span><b class="pname">${esc(T(p.n))}</b><span class="pnote">${esc(T(p.note))}</span>` +
+        `<span class="plinks"><a href="${mapsQ(p.q)}" target="_blank" rel="noopener">Google Maps ↗</a><a href="${wazeQ(p.q)}" target="_blank" rel="noopener">Waze ↗</a>` +
+        (p.src ? `<a href="${p.src}" target="_blank" rel="noopener">${T('Source')} ↗</a>` : '') +
+        (p.v ? '' : `<span class="pcheck">${T('Check on arrival')}</span>`) + `</span></div></div>`;
+    }
+    h += `</div></section>`;
+  }
+  return h ? `<div class="extra">${h}</div>` : '';
+}
+
+/* ---------- lightbox ---------- */
+let lbItems = [], lbI = 0, lbDay = 0;
+function lbShow() {
+  const it = lbItems[lbI];
+  const img = document.getElementById('lb-img');
+  img.src = it.src;
+  img.alt = T(it.label);
+  const multi = lbItems.length > 1;
+  document.getElementById('lb-prev').hidden = !multi;
+  document.getElementById('lb-next').hidden = !multi;
+  document.getElementById('lb-cap').innerHTML = `<b>${esc(T(it.label))}</b> · ${T('Day {0}', lbDay)}${multi ? ` · ${lbI + 1} / ${lbItems.length}` : ''} · <span class="credit">${T('Photo: Wikimedia Commons, {0}', `<a href="${commons(it.f)}" target="_blank" rel="noopener">${T('author and licence')}</a>`)}</span>`;
+}
+function lbOpenList(day, items, i) {
+  lbDay = day; lbItems = items; lbI = i; lbShow();
+  const dlg = document.getElementById('lb');
+  if (typeof dlg.showModal === 'function') { if (!dlg.open) dlg.showModal(); } else dlg.setAttribute('open', '');
+}
+const galItems = d => (GAL[d] ? GAL[d].items : []).map(it => ({ src: 'g/' + it.base + '.jpg', label: it.label, f: it.f, base: it.base }));
+function lbOpen(d, i) { lbOpenList(d, galItems(d), i); }
+function lbOpenKey(el) {
+  const d = +el.dataset.openDay, key = el.dataset.openKey;
+  const items = galItems(d);
+  let i = items.findIndex(it => it.base.startsWith(key + '-'));
+  if (i < 0) { const k2 = key.replace(/\d+$/, ''); i = items.findIndex(it => it.base.startsWith(k2 + '-')); }
+  if (i >= 0) lbOpenList(d, items, i);
+  else lbOpenList(d, [{ src: el.dataset.openSrc, label: el.dataset.openLabel, f: el.dataset.openF }], 0);
+}
+function lbStep(n) { const len = lbItems.length; if (len < 2) return; lbI = (lbI + n + len) % len; lbShow(); }
+function lbClose() { const dlg = document.getElementById('lb'); if (dlg.open && dlg.close) dlg.close(); else dlg.removeAttribute('open'); }
+document.addEventListener('click', e => {
+  const b = e.target.closest('.gthumb'); if (b) { lbOpen(+b.dataset.day, +b.dataset.i); return; }
+  const o = e.target.closest('[data-open-key]'); if (o) { lbOpenKey(o); return; }
+  if (e.target.closest('#lb-prev')) lbStep(-1);
+  else if (e.target.closest('#lb-next')) lbStep(1);
+  else if (e.target.closest('#lb-close') || e.target.id === 'lb') lbClose();
+});
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lb').open) return;
+  if (e.key === 'ArrowLeft') lbStep(-1);
+  if (e.key === 'ArrowRight') lbStep(1);
+});
+(function swipe() {
+  let x0 = null;
+  const el = document.getElementById('lb');
+  el.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+  el.addEventListener('touchend', e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) lbStep(dx < 0 ? 1 : -1); x0 = null; });
+})();
+
+/* ---------- cards ---------- */
+const PLATE = { 'ES-A': 'blue', 'ES-AP': 'blue', 'ES-N': 'red', 'FR-A': 'red', 'FR-D': 'yellow', 'FR-M': 'yellow',
+  'IT-A': 'green', 'IT-E': 'green', 'IT-SS': 'blue', 'IT-SR': 'blue', 'IT-SP': 'blue',
+  'SI-A': 'green', 'HR-A': 'green', 'RS-A': 'green', 'RS-M': 'white', 'RO-DN': 'red', 'RO-A': 'green' };
+const TAG = { start: 'Start', stop: 'Stop', road: 'On the road', sleep: 'Overnight', visit: 'Visit, no car', end: 'Finish' };
+const warnIcon = `<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1 L11.5 11 L.5 11 Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><rect x="5.3" y="4.4" width="1.4" height="3.6" fill="currentColor"/><rect x="5.3" y="8.8" width="1.4" height="1.3" fill="currentColor"/></svg>`;
+const prevEndOf = {};
+{ let pe = null; for (const day of TRIP.days) { prevEndOf[day.d] = pe; const v = day.stops.filter(s => s.t !== 'visit'); if (v.length) pe = v[v.length - 1]; } }
+function modeCtl(d) {
+  if (!['fast', 'cine', 'safe'].some(m => variant(d, m))) return `<p class="dmode">${T('Same route in every mode on this day.')}</p>`;
+  return `<div class="dmode" role="group" aria-label="${esc(T('Route for this day'))}"><span>${T('Route for this day:')}</span>` +
+    MK.map(m => `<button type="button" data-dm="${d}:${m}" aria-pressed="false">${T(MODE_NAME[m])}</button>`).join('') +
+    `<span class="ovr" hidden>${T('this day only')}</span></div><p class="dsame" data-dsame="${d}" hidden></p>`;
+}
+function cmpLine(d, m) {
+  const B = PLAN[d], X = planFor(d, m); if (!B || !X || m === 'bal') return '';
+  const dm = durMin(X) - durMin(B);
+  return `<p class="cmp">${T('Compared with balanced: {0} driving, last arrival {1} instead of {2}.', `<b>${dm >= 0 ? '+' : '−'}${fmtDur(Math.abs(dm))}</b>`, `<b>${lastArr(X)}</b>`, lastArr(B))}</p>`;
+}
+function bodyHtml(day, m) {
+  const v = variant(day.d, m), P = planFor(day.d, m);
+  const seq = stopsFor(day, m), vertices = seq.filter(s => s.t !== 'visit'), shown = seq.filter(s => s.t !== 'via');
+  const pe = prevEndOf[day.d];
+  const chain = (pe ? [`${pe.lat},${pe.lon}`] : []).concat(vertices.map(s => `${s.lat},${s.lon}`));
+  const uniq = chain.filter((x, i) => i === 0 || x !== chain[i - 1]);
+  let gm = '';
+  if (day.km > 0 && uniq.length >= 2) {
+    const q = new URLSearchParams({ api: '1', origin: uniq[0], destination: uniq[uniq.length - 1], travelmode: 'driving' });
+    if (uniq.length > 2) q.set('waypoints', uniq.slice(1, -1).join('|'));
+    q.set('hl', LANG);
+    const lastv = vertices.filter(s => s.t !== 'via'), last = lastv[lastv.length - 1];
+    gm = `<span class="navbtns"><a class="gmaps" href="https://www.google.com/maps/dir/?${q.toString()}" target="_blank" rel="noopener">${T('Open in Google Maps')} ↗</a>` +
+      `<a class="gmaps waze" href="${wazeLL(last.lat, last.lon)}" target="_blank" rel="noopener">${esc(T('Waze to {0}', T(last.n)))} ↗</a>` +
+      `<span class="navnote">${IS_ANDROID || IS_IOS ? `${T('Opens the Waze app. Not installed?')} <a href="${wazeWeb(last.lat, last.lon)}" target="_blank" rel="noopener">${T('Waze on the web')}</a>. ` : T('On a phone this opens the Waze app.') + ' '}${uniq.length > 2 ? T('Waze takes one destination at a time; use the Waze link on each stop above.') : ''}</span>` + `</span>`;
+  }
+  const plates = (v ? v.roads : day.roads).map(([k, t]) => `<span class="plate p-${PLATE[k] || 'white'}">${esc(T(t))}</span>`).join('');
+  const stops = shown.map(s => { const ph = s.p && PHOTOS[s.p] && PHOTOS[s.p].t; return `<li class="t-${s.t}${ph ? ' has-img' : ''}">` +
+    (ph ? `<button type="button" class="thumb" data-open-day="${day.d}" data-open-key="${s.p}" data-open-src="img/${s.p}-t.jpg" data-open-label="${esc(T(s.n))}" data-open-f="${esc(PHOTOS[s.p].f)}" aria-label="${esc(T('Enlarge photo: {0}', T(s.n)))}"><img src="img/${s.p}-t.jpg" alt="${esc(T(s.n))}" loading="lazy" width="76" height="76"></button>` : '') +
+    `<span class="sname">${esc(T(s.n))} <span class="tag">${T(TAG[s.t])}</span>` +
+    (s.w ? `<a class="photo" href="https://en.wikipedia.org/wiki/${encodeURIComponent(s.w).replace(/%2C/g, ',')}" target="_blank" rel="noopener">Wikipedia ↗</a>` : '') +
+    (s.t !== 'visit' && s.t !== 'start' ? ` <a class="photo" href="${wazeLL(s.lat, s.lon)}" target="_blank" rel="noopener">Waze ↗</a>` : '') + `</span>` +
+    (s.note ? `<span class="snote">${esc(T(s.note))}</span>` : '') + `</li>`; }).join('');
+  const flags = (v ? v.flags : day.flags).map(f => `<span class="flag">${warnIcon}${esc(T(f))}</span>`).join('');
+  const km = v && P ? P.km : day.km;
+  return `<div><div class="dnum">${T('Day {0}', day.d)}${PLAN[day.d] ? ' · ' + fmtDate(PLAN[day.d].date) : ''}</div><h2>${esc(T(day.title))}</h2></div>
+      <p class="leg">${esc(T(day.from))} → ${esc(T(day.to))}</p>
+      ${modeCtl(day.d)}
+      ${cmpLine(day.d, m)}
+      <div class="meta">
+        <span class="num">${km ? '≈' + km : '0'}<small>km</small></span>
+        <span class="num">${esc(P ? P.drive : day.drive)}<small>${T('driving')}</small></span>
+        ${P ? `<span class="num">${P.sunrise}<small>${T('sunrise')}</small></span><span class="num">${P.sunset}<small>${T('sunset')}</small></span>` : ''}
+        ${plates ? `<span class="plates">${plates}</span>` : ''}
+      </div>
+      <ul class="stops">${stops}</ul>
+      ${flags ? `<div class="flags">${flags}</div>` : ''}
+      <div class="foot"><p class="sleep"><b>${T('Sleep')}</b>${esc(T(day.sleep))}</p>${gm}</div>`;
+}
+const out = TRIP.days.map(day => {
+  const gs = groupsOf(day.d);
+  return `<article class="day" id="d${day.d}" data-mode="bal">
+    ${heroHtml(day)}
+    ${gs.map(g => `<div class="body" data-ms="${g.ms}">${bodyHtml(day, g.m)}</div>`).join('')}
+    ${extraHtml(day, gs)}
+  </article>`;
+});
+document.getElementById('days').innerHTML = out.join('');
+
+
+/* ---------- route style switch ---------- */
+const MODE_DESC = { fast: 'Motorways wherever possible. Same start time and stops; you arrive earlier.',
+  bal: 'Scenic roads where they are worth it, motorway on the dull stretches.',
+  cine: 'The most scenic roads open in winter, fitted to daylight. Up to 1.5 h longer.',
+  safe: 'For bad weather: low roads and motorways, no passes, cliff roads or fog-prone minor roads. Same overnight towns.' };
+const totalFor = m => TRIP.days.reduce((a, d) => a + durMin(planFor(d.d, hasMode(d.d, m) ? m : 'bal')), 0);
+let canSaveShared = false, dbRef = null, BUL = {}, BUL_STATE = 'loading';
+document.getElementById('modes').innerHTML = `<h2>${T('Route style')}</h2><div class="mgrid">` +
+  MK.map(m => `<button type="button" class="mbtn" data-gm="${m}" aria-pressed="false"><b>${T(MODE_NAME[m])}</b><span>${T(MODE_DESC[m])}</span><span class="mtot">${T('{0} driving over 16 days', fmtDur(totalFor(m)))}</span></button>`).join('') +
+  `</div><p class="mnote">${T('Overnight towns stay the same in every mode. Choosing a style here resets the per-day choices; each day can then be changed on its card. Scenic roads are only planned in daylight; before sunrise and after dark the plan uses motorways.')} <span id="mode-save"></span></p>` +
+  `<details class="mrules"><summary>${T('How the weather check decides when to take the Safe route')}</summary><ul>` +
+  ['Every risky stretch of the day (passes, cliff roads, fog plains, bora and mistral corridors) is checked for the time you would pass it.',
+   'Snow falling or settling, freezing rain, or ice on a pass or minor road: take the Safe route.',
+   'Fog thick enough to drive in it for long stretches, or gusts above about 70 km/h on an exposed road: take the Safe route.',
+   'Heavy rain on cliff roads with rockfall, or an official red weather alert: take the Safe route, or wait if the alert covers every road.',
+   'If the Safe route is affected too: leave later, wait for the snowploughs or the fog to lift, or as a last resort add a night. Overnight towns are never changed for you.',
+   'Snow forecasts are reliable about 2–3 days ahead and fog is hard to forecast, so the final call is the evening before and the morning itself.']
+    .map(x => `<li>${T(x)}</li>`).join('') + `</ul></details>`;
+function applyModes() {
+  for (const d of TRIP.days) {
+    const m = modeOf(d.d);
+    document.querySelectorAll(`[data-day="${d.d}"][data-mode]`).forEach(el => { el.dataset.mode = m; });
+    const art = document.getElementById('d' + d.d); if (art) art.dataset.mode = m;
+    document.querySelectorAll(`[data-dm^="${d.d}:"]`).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.dm === `${d.d}:${m}`)));
+    document.querySelectorAll(`#d${d.d} .ovr`).forEach(o => { o.hidden = !MODE.days[d.d]; });
+    const same = m !== 'bal' && !hasMode(d.d, m) && ['fast', 'cine', 'safe'].some(x => variant(d.d, x));
+    const why = same ? ((MODESD[d.d] && MODESD[d.d][m] && MODESD[d.d][m].why) || '') : '';
+    document.querySelectorAll(`[data-dsame="${d.d}"]`).forEach(o => { o.hidden = !same; o.textContent = same ? (why ? T(why) : T('{0} uses the same roads as Balanced on this day.', T(MODE_NAME[m]))) : ''; });
+  }
+  document.querySelectorAll('[data-gm]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.gm === MODE.global)));
+  const sv = document.getElementById('mode-save');
+  if (sv) sv.textContent = canSaveShared ? T('Your choice is saved with the road book, so the news bulletin follows it.') : T('Your choice is saved in this browser.');
+  hideTip();
+  renderBulletin();
+  if (window.__wxReady) renderWeather();
+  if (window.__whereReady) {
+    for (const d of TRIP.days) {
+      const g = PROG[d.d]; if (!g || !g.started) continue;
+      rerenderSched(d.d);
+      if (g.last && !g.arrived) { const a = assess(d.d, g.last.ll, null); if (a) { g.lastHtml = a.html; g.mode = modeOf(d.d); } }
+    }
+    renderAllLive();
+  }
+}
+async function saveModes() {
+  try { localStorage.setItem('w123-mode', JSON.stringify(MODE)); } catch (e) {}
+  if (!dbRef || !canSaveShared) return;
+  try { await dbRef.doc('prefs/route').set({ global: MODE.global, days: { ...MODE.days }, updated: new Date().toISOString() }); }
+  catch (e) { if (e && (e.code === 'invalid_argument' || e.code === 'not_granted')) { canSaveShared = false; applyModes(); } }
+}
+document.addEventListener('click', e => {
+  const g = e.target.closest('[data-gm]');
+  if (g) { MODE = { global: g.dataset.gm, days: {} }; applyModes(); saveModes(); return; }
+  const b = e.target.closest('[data-dm]');
+  if (b && !b.disabled) { const [d, m] = b.dataset.dm.split(':'); if (m === MODE.global) delete MODE.days[d]; else MODE.days[d] = m; applyModes(); saveModes(); }
+});
+
+/* ---------- news bulletin (written by a scheduled Claude check, read from the page's database) ---------- */
+const BCAT = { road: 'Road', closure: 'Closure', works: 'Roadworks', strike: 'Strike', protest: 'Protest', restriction: 'Restriction', border: 'Border', weather: 'Weather', event: 'Event', fuel: 'Fuel', traffic: 'Traffic' };
+const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? esc(u) : '';
+const fmtIssued = iso => { try { return new Intl.DateTimeFormat(LOCALE[LANG], { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(iso)); } catch (e) { return esc(iso || ''); } };
+const tripDayNow = () => Math.floor((Date.now() - new Date('2026-12-19T00:00:00').getTime()) / 864e5) + 1;
+function bulDayHtml(d, withLink) {
+  const b = BUL[d], day = TRIP.days[d - 1];
+  const items = Array.isArray(b.items) ? b.items : [], wx = Array.isArray(b.weather) ? b.weather : [];
+  return `<div class="bul-day"><div class="bul-head"><b>${T('Day {0}', d)} · ${fmtDate(PLAN[d].date)} · ${esc(T(day.from))} → ${esc(T(day.to))}</b>` +
+    `<span>${T('issued {0}', fmtIssued(b.issued))}${b.mode && MODE_NAME[b.mode] ? ' · ' + T(MODE_NAME[b.mode]) : ''}</span>${withLink ? `<a href="#d${d}">${T('Open the day')}</a>` : ''}</div>` +
+    (b.summary ? `<p>${esc(b.summary)}</p>` : '') +
+    (items.length ? `<ul class="bul-items">${items.map(it => `<li class="sev-${['info', 'watch', 'warn'].includes(it.sev) ? it.sev : 'info'}"><span class="bcat">${T(BCAT[it.cat] || 'News')}</span><span><b>${esc(it.title || '')}</b>${it.where ? ` · ${esc(it.where)}` : ''}${it.detail ? `<br>${esc(it.detail)}` : ''}${safeUrl(it.url) ? ` <a href="${safeUrl(it.url)}" target="_blank" rel="noopener">${esc(it.src || T('Source'))} ↗</a>` : ''}</span></li>`).join('')}</ul>`
+      : `<p class="bul-empty">${T('Nothing found that affects this day.')}</p>`) +
+    (wx.length ? `<div class="bwx-wrap"><table class="bwx"><thead><tr><th>${T('Place')}</th><th>${T('Date')}</th><th>${T('Min / max')}</th><th>${T('Sky')}</th><th>${T('Rain / snow')}</th><th>${T('Wind gusts')}</th></tr></thead><tbody>` +
+      wx.map(w => `<tr><td>${esc(w.place || '')}</td><td>${esc(w.date || '')}</td><td>${w.tmin != null ? esc(w.tmin) + '° / ' + esc(w.tmax) + '°' : ''}</td><td>${esc(w.sky || '')}</td><td>${esc(w.precip || '')}</td><td>${esc(w.wind || '')}</td></tr>`).join('') + `</tbody></table></div>` : '') +
+    `</div>`;
+}
+function watchHtml(d) {
+  const m = modeOf(d), v = variant(d, m);
+  const list = (v && v.check) || (MODESD[d] && MODESD[d].bal && MODESD[d].bal.check) || [];
+  return `<h3>${T('News bulletin')}</h3><p class="bul-empty">${T('No bulletin yet. One or two days before, it will check:')} ${list.map(x => esc(T(x))).join(' · ')}.</p>`;
+}
+function renderBulletin(state) {
+  if (state) BUL_STATE = state;
+  const el = document.getElementById('bulletin'); if (!el) return;
+  let h = `<h2>${T('News bulletin')}</h2><p class="bul-empty">${T('From 17 December, Claude checks the news for the next 1–2 days of your route twice a day (about 06:40 and 17:40 Central European time): road closures and works, strikes and protests, restrictions, border queues and the weather along the way.')}${LANG !== 'en' ? ' ' + T('Bulletins are written in English.') : ''}</p>`;
+  if (BUL_STATE === 'nodb') h += `<p class="bul-empty">${T('Bulletins show here when the road book is opened in Claude.')}</p>`;
+  else {
+    const from = Math.max(1, Math.min(16, tripDayNow()));
+    const ds = Object.keys(BUL).map(Number).filter(d => d >= from).sort((a, b) => a - b).slice(0, 2);
+    if (!ds.length) h += `<p class="bul-empty">${BUL_STATE === 'loading' ? T('Loading…') : T('No bulletin yet for the days ahead.')}</p>`;
+    for (const d of ds) h += bulDayHtml(d, true);
+  }
+  el.innerHTML = h;
+  for (const d of TRIP.days) {
+    const slot = document.getElementById('bul-d' + d.d);
+    if (slot) slot.innerHTML = BUL[d.d] ? `<h3>${T('News bulletin')}</h3>` + bulDayHtml(d.d, false) : watchHtml(d.d);
+  }
+}
+applyModes();
+/* outside Claude (the home-screen app on GitHub Pages) the checks publish JSON files next to the page */
+const SITE = !window.claude && /^https?:$/.test(location.protocol);
+async function siteLoad(kind) {
+  const out = {};
+  await Promise.all(TRIP.days.map(async d => {
+    try { const r = await fetch(`data/${kind}/d${String(d.d).padStart(2, '0')}.json`, { cache: 'no-cache' });
+      if (r.ok) { const x = await r.json(); if (x && Number(x.d) === d.d) out[d.d] = x; } } catch (e) {}
+  }));
+  return out;
+}
+function siteLoop(fn) { fn(); setInterval(fn, 15 * 60e3); document.addEventListener('visibilitychange', () => { if (!document.hidden) fn(); }); window.addEventListener('online', fn); }
+(async () => {
+  const C = window.claude;
+  const db = C && C.use ? await C.use('db') : null;
+  if (!db) { if (SITE) siteLoop(async () => { const b = await siteLoad('bulletins'); if (Object.keys(b).length || !Object.keys(BUL).length) BUL = b; renderBulletin('ok'); }); else renderBulletin('nodb'); return; }
+  dbRef = db;
+  try { const u = await C.use('user'); canSaveShared = !!(u && await u.canEdit()); } catch (e) { canSaveShared = false; }
+  db.collection('bulletins').onSnapshot(snap => {
+    const next = {};
+    for (const doc of snap.docs) { const x = doc.data(); if (x && Number(x.d) >= 1 && Number(x.d) <= 16) next[Number(x.d)] = x; }
+    BUL = next; renderBulletin('ok');
+  }, () => renderBulletin('nodb'));
+  db.doc('prefs/route').onSnapshot(snap => {
+    if (!snap.exists) return;
+    const x = snap.data() || {};
+    if (!MK.includes(x.global)) return;
+    const next = { global: x.global, days: { ...(x.days || {}) } };
+    if (JSON.stringify(next) === JSON.stringify(MODE)) return;
+    MODE = next;
+    try { localStorage.setItem('w123-mode', JSON.stringify(MODE)); } catch (e) {}
+    applyModes();
+  }, () => {});
+  applyModes();
+})();
+
+
+/* ---------- where am I: live position against today's plan (stays on this device) ---------- */
+const havLL = (a, b) => { const r = Math.PI / 180, dp = (b[1] - a[1]) * r, dl = (b[0] - a[0]) * r; const h = Math.sin(dp / 2) ** 2 + Math.cos(a[1] * r) * Math.cos(b[1] * r) * Math.sin(dl / 2) ** 2; return 12742 * Math.asin(Math.sqrt(h)); };
+const FIT = DAYS.flatMap(d => d.stops.map(s => ({ ll: [s.lon, s.lat], xy: s.xy })));
+function toXY(ll) {
+  const near = FIT.map(p => [havLL(p.ll, ll), p]).sort((a, b) => a[0] - b[0]).slice(0, 6).map(x => x[1]);
+  // least-squares affine fit lon/lat -> map x/y from the nearest stops
+  const A = [[0, 0, 0], [0, 0, 0], [0, 0, 0]], bx = [0, 0, 0], by = [0, 0, 0];
+  for (const p of near) { const v = [p.ll[0], p.ll[1], 1]; for (let i = 0; i < 3; i++) { for (let j = 0; j < 3; j++) A[i][j] += v[i] * v[j]; bx[i] += v[i] * p.xy[0]; by[i] += v[i] * p.xy[1]; } }
+  const solve = (M, b) => { const m = M.map((r, i) => [...r, b[i]]); for (let c = 0; c < 3; c++) { let piv = c; for (let r = c + 1; r < 3; r++) if (Math.abs(m[r][c]) > Math.abs(m[piv][c])) piv = r; [m[c], m[piv]] = [m[piv], m[c]]; if (Math.abs(m[c][c]) < 1e-12) return null; for (let r = 0; r < 3; r++) if (r !== c) { const f = m[r][c] / m[c][c]; for (let k = c; k < 4; k++) m[r][k] -= f * m[c][k]; } } return m.map((r, i) => r[3] / r[i]); };
+  const cx = solve(A, bx), cy = solve(A, by);
+  if (!cx || !cy) return near[0].xy;
+  return [cx[0] * ll[0] + cx[1] * ll[1] + cx[2], cy[0] * ll[0] + cy[1] * ll[1] + cy[2]];
+}
+function chainFor(d, m) {
+  const day = TRIP.days[d - 1], pe = prevEndOf[d];
+  const seq = stopsFor(day, m).filter(s => s.t !== 'visit');
+  return (pe ? [pe] : []).concat(seq).map(s => ({ n: s.n, ll: [s.lon, s.lat] }));
+}
+function locate(d, m, ll) {
+  const ch = chainFor(d, m); if (ch.length < 2) return null;
+  const cum = [0]; for (let i = 1; i < ch.length; i++) cum.push(cum[i - 1] + havLL(ch[i - 1].ll, ch[i].ll));
+  let best = null;
+  for (let i = 1; i < ch.length; i++) {
+    const a = ch[i - 1].ll, b = ch[i].ll, kx = Math.cos(ll[1] * Math.PI / 180);
+    const ax = a[0] * kx, ay = a[1], bxx = b[0] * kx, byy = b[1], px = ll[0] * kx, py = ll[1];
+    const dx = bxx - ax, dy = byy - ay, L = dx * dx + dy * dy;
+    const t = L ? Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / L)) : 0;
+    const q = [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t], off = havLL(q, ll);
+    if (!best || off < best.off) best = { i, t, off, km: cum[i - 1] + (cum[i] - cum[i - 1]) * t };
+  }
+  const total = cum[cum.length - 1];
+  return { ...best, f: total ? best.km / total : 0, total, next: ch[best.i].n, prev: ch[best.i - 1].n };
+}
+function plannedAt(P, f) {
+  const drives = P.rows.filter(r => r.k === 'drive'), tot = drives.reduce((a, r) => a + r.min, 0);
+  let target = f * tot, acc = 0;
+  for (const r of P.rows) {
+    if (r.k !== 'drive') continue;
+    if (acc + r.min >= target) return { clock: pm(r.t) + (target - acc), driveLeft: tot - target, row: r };
+    acc += r.min;
+  }
+  return { clock: pm(lastArr(P)), driveLeft: 0, row: null };
+}
+const nowMin = () => { const n = new Date(); return n.getHours() * 60 + n.getMinutes(); };
+const hhmm = m => { m = Math.round(((m % 1440) + 1440) % 1440); return `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`; };
+let WHERE = { ll: null };
+function drawMe() {
+  let g = document.getElementById('me');
+  if (!WHERE.ll) { if (g) g.remove(); return; }
+  if (!g) { g = document.createElementNS(NS, 'g'); g.id = 'me'; svg.appendChild(g); }
+  const [x, y] = toXY(WHERE.ll);
+  g.innerHTML = `<circle class="pulse" cx="${x}" cy="${y}" r="12"/><circle class="dot" cx="${x}" cy="${y}" r="5"><title>${esc(T('You are here'))}</title></circle>`;
+}
+/* ---------- Start the day / Check in (per day card) ----------
+   PROG[d] = { started, startMin, startLL, startName, delay, mode, auto, last: {at, ll, rel}, lastHtml, arrived } */
+let PROG = {};
+try { PROG = JSON.parse(localStorage.getItem('w123-progress') || '{}') || {}; } catch (e) { PROG = {}; }
+const LIVE = { timer: null, lastAlert: {}, pending: null, lastAuto: {} };
+let INTV = {};   // per-day location updates: 0 = manual, else minutes
+try { INTV = JSON.parse(localStorage.getItem('w123-interval') || '{}') || {}; } catch (e) { INTV = {}; }
+const intervalOf = d => (INTV[d] != null ? +INTV[d] : 0);
+const INTERVALS = [5, 10, 15, 30, 60];
+function intervalCtl(d) {
+  const v = intervalOf(d);
+  return `<label>${T('Location updates')} <select data-lint="${d}"><option value="0"${v === 0 ? ' selected' : ''}>${T('Manual')}</option>` +
+    INTERVALS.map(n => `<option value="${n}"${v === n ? ' selected' : ''}>${T('Automatic, every {0} min', n)}</option>`).join('') + `</select></label>`;
+}
+function saveIntv() { try { localStorage.setItem('w123-interval', JSON.stringify(INTV)); } catch (e) {} }
+function saveProg(d) {
+  try { localStorage.setItem('w123-progress', JSON.stringify(PROG)); } catch (e) {}
+  if (dbRef && canSaveShared) {
+    const g = PROG[d];
+    const body = g ? { d, started: g.started, startMin: g.startMin, startLL: g.startLL, startName: g.startName, delay: g.delay, mode: g.mode,
+      last: g.last || null, arrived: g.arrived || null, cleared: false } : { d, cleared: true };
+    dbRef.doc('progress/d' + String(d).padStart(2, '0')).set(body).catch(() => {});
+  }
+}
+const getPos = (light, ageMin) => new Promise((res, rej) => {
+  if (!navigator.geolocation) return rej({ code: 1 });
+  // a button press asks for a fresh GPS fix; automatic updates accept a recent or rough position to save battery
+  const o = light ? { enableHighAccuracy: false, timeout: 30000, maximumAge: Math.max(1, ageMin || 2) * 60000 } : { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 };
+  navigator.geolocation.getCurrentPosition(p => res({ ll: [p.coords.longitude, p.coords.latitude], acc: p.coords.accuracy }), rej, o);
+});
+/* The Claude app shows the road book in a protected frame that may not pass location through, even when Android allows it.
+   Detect that once, remember it, and switch to tap-or-paste positions so everything keeps working in the app. */
+let GEO_BLOCKED = false;
+try { GEO_BLOCKED = !SITE && localStorage.getItem('w123-geo') === 'blocked'; } catch (e) {}
+try { const fp = document.permissionsPolicy || document.featurePolicy; if (fp && fp.allowsFeature && !fp.allowsFeature('geolocation')) GEO_BLOCKED = true; } catch (e) {}
+if (!navigator.geolocation) GEO_BLOCKED = true;
+function markBlocked() { if (SITE) { renderAllLive(); return; } GEO_BLOCKED = true; try { localStorage.setItem('w123-geo', 'blocked'); } catch (e) {} renderAllLive(); }
+const APP_URL = 'https://adrian32452.github.io/wride/';
+const posErr = e => e && e.code === 1 && SITE
+  ? T('Location permission is off for this app. On the phone: press and hold the W123 Run icon → App info → Permissions → Location → Allow (in Chrome: ⋮ → Settings → Site settings → Location). Then tap the button again.')
+  : e && e.code === 1
+  ? T('This view of the road book cannot read the phone\'s location. Tap where you are below, or paste a location.')
+  : T('Could not get your location right now. Try again outdoors, or tap where you are below.');
+/* positions typed or pasted: "43.2955, -2.2565", Google Maps links with @lat,lon or q=lat,lon, Waze links with ll= or /ul/h<geohash> */
+function geohashDecode(h) {
+  const B = '0123456789bcdefghjkmnpqrstuvwxyz'; let even = true, lat = [-90, 90], lon = [-180, 180];
+  for (const ch of h.toLowerCase()) { const v = B.indexOf(ch); if (v < 0) return null;
+    for (let k = 4; k >= 0; k--) { const bit = (v >> k) & 1, r = even ? lon : lat, mid = (r[0] + r[1]) / 2; if (bit) r[0] = mid; else r[1] = mid; even = !even; } }
+  return [(lon[0] + lon[1]) / 2, (lat[0] + lat[1]) / 2];
+}
+function parseLoc(text) {
+  const t = String(text || '').trim(); if (!t) return null;
+  let m = t.match(/\/ul\/h([0-9b-hjkmnp-z]{5,12})/i); if (m) return geohashDecode(m[1]);
+  m = t.match(/(?:ll|q|query|daddr|destination|center)=(-?\d{1,2}\.\d+)(?:%2C|,)\s*(-?\d{1,3}\.\d+)/i) || t.match(/@(-?\d{1,2}\.\d+),(-?\d{1,3}\.\d+)/) || t.match(/(-?\d{1,2}\.\d{2,})\s*[,; ]\s*(-?\d{1,3}\.\d{2,})/);
+  if (!m) return null;
+  const lat = +m[1], lon = +m[2];
+  if (!(lat >= 30 && lat <= 55 && lon >= -12 && lon <= 32)) return null;   // somewhere on this trip's map
+  return [lon, lat];
+}
+function placesFor(d) {   // each stop and the halfway point between consecutive stops
+  const ch = chainFor(d, modeOf(d)), out = [];
+  ch.forEach((c, i) => {
+    out.push({ label: T(c.n), ll: c.ll });
+    if (i < ch.length - 1) { const n = ch[i + 1]; out.push({ label: T('Between {0} and {1}', T(c.n), T(n.n)), ll: [(c.ll[0] + n.ll[0]) / 2, (c.ll[1] + n.ll[1]) / 2] }); }
+  });
+  return out;
+}
+function assess(d, ll, acc) {
+  const m = modeOf(d), P = planFor(d, m); const loc = P && locate(d, m, ll); if (!loc) return null;
+  const pl = plannedAt(P, loc.f), now = nowMin(), delta = Math.round(now - pl.clock);
+  const g = PROG[d] || {}, base = g.started ? Math.round(g.startMin - pm(P.start)) : 0, rel = delta - base;
+  const factor = loc.total ? P.km / loc.total : 1.25, kmLeft = Math.max(0, Math.round((loc.total - loc.km) * factor));
+  const afterIdx = pl.row ? P.rows.indexOf(pl.row) : P.rows.length, ahead = P.rows.slice(afterIdx + 1);
+  const lastDrive = ahead.map(r => r.k).lastIndexOf('drive');
+  const stopsLeft = ahead.slice(0, Math.max(0, lastDrive)).filter(r => r.k === 'stop' || r.k === 'border').reduce((a, r) => a + (r.min || 0), 0);
+  const eta = now + pl.driveLeft + stopsLeft, set = pm(P.sunset), dusk = pm(P.dusk), sleep = TRIP.days[d - 1].to;
+  const endLL = chainFor(d, m).slice(-1)[0].ll, arrived = havLL(endLL, ll) < 3 && loc.f > 0.9;
+  const late = rel > 10, early = rel < -10;
+  const tips = [];
+  const scenicLate = ahead.filter(r => r.k === 'drive' && r.kind === 'scenic' && pm(r.arr) + Math.max(0, delta) > set - 15);
+  if (delta > 10 && scenicLate.length) {
+    const need = Math.max(...scenicLate.map(r => pm(r.arr) + delta - (set - 15)));
+    const opt = ahead.filter(r => r.k === 'stop' && r.mo === 'O' && r.min).sort((a, b) => b.min - a.min);
+    let got = 0; const cut = []; for (const r of opt) { if (got >= need) break; cut.push(r); got += r.min; }
+    if (cut.length) tips.push(T('To keep the scenic roads in daylight, cut or shorten: {0}.', cut.map(r => `${esc(T(r.name))} (${durTxt(r.min)})`).join(', ')));
+    if (got < need && m !== 'fast' && hasMode(d, 'fast')) tips.push(T('Or switch the rest of today to Fastest on the day card.'));
+    if (got < need) tips.push(T('Otherwise you would reach {0} after sunset: take the motorway for that part.', scenicLate.map(r => esc(T(r.to))).join(', ')));
+  }
+  const darkRisk = ahead.some(r => r.k === 'drive' && r.kind !== 'mw' && pm(r.arr) + delta > dusk);
+  if (darkRisk) tips.push(T('You would finish after dark ({0}). Use motorways for the last part and skip optional stops.', hhmm(dusk)));
+  if (late && !tips.length) {
+    const opt = ahead.filter(r => r.k === 'stop' && r.mo === 'O' && r.min);
+    if (opt.length) tips.push(T('To catch up, shorten the optional stops still ahead: {0}.', opt.map(r => `${esc(T(r.name))} (${durTxt(r.min)})`).join(', ')));
+    if (!ahead.some(r => r.k === 'drive' && r.kind !== 'mw')) tips.push(T('The rest of today is on motorways, so a later or darker arrival is safe.'));
+  }
+  if (early && m !== 'cine' && hasMode(d, 'cine')) tips.push(T('You have time to spare: the Cinematic version of today fits if you switch now.'));
+  else if (early) tips.push(T('You have time to spare: take an optional stop slowly, or arrive early.'));
+  if (window.__wxReady && WX[d] && wxVerdict(d) && wxVerdict(d).level === 'switch' && m !== 'safe' && hasMode(d, 'safe')) tips.unshift(T('The weather check says take the Safe route today; see the Safe option below.'));
+  if (!tips.length && !late) tips.push(T('Nothing to change. Keep going.'));
+  const head = arrived ? T('Arrived in {0}', T(sleep)) : late ? T('About {0} behind the plan', fmtDur(rel)) : early ? T('About {0} ahead of the plan', fmtDur(-rel)) : T('On schedule');
+  const copy = `Day ${d}, ${hhmm(now)}: I'm between ${loc.prev} and ${loc.next} (${ll[1].toFixed(4)}, ${ll[0].toFixed(4)}), ${late ? fmtDur(rel) + ' behind' : early ? fmtDur(-rel) + ' ahead of' : 'on'} plan, ${MODE_NAME[m].toLowerCase()} route${g.started ? ', started ' + hhmm(g.startMin) : ''}.`;
+  const html = `<p class="wbig ${late && !arrived ? 'late' : 'ok'}">${head}</p>` +
+    `<div class="wstat"><span class="num">${hhmm(now)}<small>${T('now')}</small></span><span class="num">${hhmm(pl.clock + base)}<small>${T('planned here')}</small></span>` +
+    `<span class="num">≈${kmLeft} km<small>${esc(T('to {0}', T(sleep)))}</small></span><span class="num">${hhmm(eta)}<small>${T('estimated arrival')}</small></span>` +
+    `<span class="num">${set - now > 0 ? fmtDur(set - now) : '0h00'}<small>${T('daylight left')}</small></span></div>` +
+    `<p class="wmsg">${esc(T('Between {0} and {1}', T(loc.prev), T(loc.next)))}${loc.off > 15 ? ' · ' + esc(T('about {0} km from the planned route', Math.round(loc.off))) : ''}${acc ? ' · ' + esc(T('accuracy about {0} m', Math.round(acc))) : ''}</p>` +
+    (arrived ? '' : `<ul class="wtips">${tips.map(t => `<li>${t}</li>`).join('')}</ul>` + optionsHtml(d, ll)) +
+    `<p class="wmsg">${T('To re-plan with Claude, copy this into the chat:')}</p><textarea class="wcopy" readonly>${esc(copy)}</textarea>`;
+  return { html, rel, delta, arrived, scenicRisk: delta > 10 && scenicLate.length > 0, darkRisk };
+}
+function alertMe(text) {
+  const bar = document.getElementById('alertbar'); if (!bar) return;
+  document.getElementById('alerttext').innerHTML = text; bar.hidden = false;
+  try { if (navigator.vibrate) navigator.vibrate([150, 80, 150]); } catch (e) {}
+}
+document.getElementById('alertclose').addEventListener('click', () => { document.getElementById('alertbar').hidden = true; });
+function rerenderSched(d) {
+  const day = TRIP.days[d - 1], g = PROG[d];
+  document.querySelectorAll(`.schedwrap[data-sd="${d}"]`).forEach(w => {
+    const P = planFor(d, w.dataset.sm), off = g && g.started && P ? Math.round(g.startMin - pm(P.start)) : 0;
+    w.innerHTML = schedHtml(day, w.dataset.sm, off);
+  });
+}
+/* remaining route from where you are, for every route style of the day */
+function optionsFrom(d, ll) {
+  const now = nowMin(), cur0 = modeOf(d), cur = hasMode(d, cur0) ? cur0 : 'bal', out = [];
+  for (const m of MK) {
+    if (!hasMode(d, m)) continue;
+    const P = planFor(d, m), loc = locate(d, m, ll); if (!loc) continue;
+    const pl = plannedAt(P, loc.f);
+    const join = loc.off > 2 ? Math.round(loc.off * 1.3) : 0, joinMin = Math.round(join / 50 * 60);
+    const idx = pl.row ? P.rows.indexOf(pl.row) : P.rows.length, ahead = P.rows.slice(idx + 1);
+    const lastDrive = ahead.map(r => r.k).lastIndexOf('drive'), mid = ahead.slice(0, Math.max(0, lastDrive));
+    const stopsAll = mid.filter(r => r.k === 'stop' || r.k === 'border').reduce((a, r) => a + (r.min || 0), 0);
+    const stopsOpt = mid.filter(r => r.k === 'stop' && r.mo === 'O').reduce((a, r) => a + (r.min || 0), 0);
+    const drive = Math.round(pl.driveLeft + joinMin), eta = now + drive + stopsAll, etaFast = eta - stopsOpt;
+    const shift = now + joinMin - pl.clock, set = pm(P.sunset), dusk = pm(P.dusk);
+    const curRow = pl.row && pl.row.kind === 'scenic' ? [pl.row] : [];
+    const scenicDark = curRow.concat(ahead).filter(r => r.k === 'drive' && r.kind === 'scenic' && pm(r.arr) + shift > set - 15).length;
+    const scenicDarkLean = curRow.concat(ahead).filter(r => r.k === 'drive' && r.kind === 'scenic' && pm(r.arr) + shift - stopsOpt > set - 15).length;
+    const minorDark = ahead.some(r => r.k === 'drive' && r.kind !== 'mw' && pm(r.arr) + shift > dusk);
+    const kmLeft = Math.max(0, Math.round((loc.total - loc.km) * (loc.total ? P.km / loc.total : 1.25)) + join);
+    out.push({ m, cur: m === cur, drive, eta, etaFast, stopsOpt, join, kmLeft, scenicDark, scenicDarkLean, minorDark });
+  }
+  const base = out.find(o => o.cur);
+  for (const o of out) o.diff = base ? o.eta - base.eta : 0;
+  return out;
+}
+function optionsHtml(d, ll) {
+  const os = optionsFrom(d, ll); if (os.length < 2) return '';
+  const light = o => o.scenicDark ? (o.scenicDarkLean ? `<span class="bad">${T('scenic road after sunset')}</span>` : `<span class="ok">${T('fits if you skip optional stops')}</span>`) : o.minorDark ? `<span class="bad">${T('ends after dark')}</span>` : `<span class="ok">${T('fits')}</span>`;
+  return `<div class="opts"><h4>${T('Options from here')}</h4>` + os.map(o => `<div class="opt${o.cur ? ' cur' : ''}">` +
+    `<div class="oh"><b>${T(MODE_NAME[o.m])}</b>${o.cur ? `<small>${T('current')}</small>` : `<span class="od">${(o.diff >= 0 ? '+' : '−') + fmtDur(Math.abs(o.diff))} ${T('vs now')}</span>`}</div>` +
+    `<div class="ob">${T('Arrival')} <b>${hhmm(o.eta)}</b>${o.stopsOpt ? ` · ${T('Without optional stops')} <b>${hhmm(o.etaFast)}</b>` : ''}<br>${T('Driving left')} ${fmtDur(o.drive)} · ≈${o.kmLeft} km${o.join ? ' · ' + esc(T('joins the route in about {0} km', o.join)) : ''}<br>${T('Daylight')}: ${light(o)}</div>` +
+    (o.cur ? '' : `<button type="button" data-lswitch="${d}:${o.m}">${esc(T('Switch to {0}', T(MODE_NAME[o.m])))}</button>`) + `</div>`).join('') + `</div>`;
+}
+function renderLive(d) {
+  const el = document.getElementById('live-d' + d); if (!el) return;
+  const day = TRIP.days[d - 1], P = PLAN[d], g = PROG[d], today = tripDayNow() === d;
+  el.classList.toggle('today', today);
+  if (!(P && P.rows.some(r => r.k === 'drive'))) { el.innerHTML = `<p class="wmsg">${T('No driving today; the car stays parked.')}</p>`; return; }
+  const pl = placesFor(d);
+  const pickInner = `<label class="wmsg">${T('I am at')} <select data-lpick="${d}" aria-label="${esc(T('Pick where you are'))}"><option value="">—</option>${pl.map((c, i) => `<option value="${i}">${esc(c.label)}</option>`).join('')}</select></label>` +
+    `<label class="wmsg">${T('or paste a location')} <span class="lpaste"><input type="text" inputmode="text" data-lpaste="${d}" placeholder="43.2955, -2.2565"><button type="button" class="sec" data-lpastego="${d}">${T('Use')}</button></span></label>` +
+    `<p class="wmsg">${T('Paste coordinates (in Google Maps, press and hold your blue dot and copy the numbers) or a Waze location link.')}</p>`;
+  const pick = GEO_BLOCKED ? `<div class="lpick">${pickInner}</div>` : `<details><summary>${T('Location not working? Pick where you are')}</summary>${pickInner}</details>`;
+  if (!g || !g.started) {
+    el.innerHTML = `<h3>${T('Start Day {0}', d)}</h3><p class="wmsg">${GEO_BLOCKED ? T('Press when you drive off. It records the time, re-times the day from your real start and checks it against sunrise and sunset.') : T('Press when you drive off. It reads your location and the time, re-times the day from your real start and checks it against sunrise and sunset.')}</p>` +
+      `<div class="lbtns"><button type="button" data-lstart="${d}">${T('Start Day {0}', d)}</button>${GEO_BLOCKED ? '' : intervalCtl(d)}</div>` +
+      (GEO_BLOCKED ? `<p class="wmsg">${T('Tap Start Day to leave from {0} now, or choose where you are below to start from there.', esc(T(chainFor(d, modeOf(d))[0].n)))}</p>` : '') +
+      `<p class="wmsg" data-lmsg="${d}" aria-live="polite"></p>` + pick;
+    return;
+  }
+  const delayTxt = g.delay > 5 ? T('{0} later than planned', fmtDur(g.delay)) : g.delay < -5 ? T('{0} earlier than planned', fmtDur(-g.delay)) : T('on time');
+  const from = g.startName === '@here' ? T('your position') : T(g.startName || day.from);
+  el.innerHTML = `<h3>${g.arrived ? T('Day {0} done', d) : T('Day {0} under way', d)}</h3>` +
+    `<p class="wmsg">${esc(T('Started {0} from {1}, {2}.', hhmm(g.startMin), from, delayTxt))}${g.arrived ? ' ' + esc(T('Arrived {0}.', new Date(g.arrived).toTimeString().slice(0, 5))) : ''}</p>` +
+    (g.arrived ? '' : `<div class="lbtns">${GEO_BLOCKED ? '' : `<button type="button" data-lcheck="${d}">📍 ${T('Record location')}</button>${intervalCtl(d)}`}<button type="button" class="lnk" data-lreset="${d}">${T('Reset this day')}</button></div>`) +
+    (GEO_BLOCKED && !g.arrived ? `<p class="wmsg"><b>${T('Check in:')}</b> ${T('tap where you are or paste a location.')}</p>` + pick : '') +
+    `<p class="wmsg" data-lmsg="${d}" aria-live="polite"></p><div class="wout">${g.lastHtml || ''}</div>` +
+    (g.arrived ? `<div class="lbtns"><button type="button" class="lnk" data-lreset="${d}">${T('Reset this day')}</button></div>` : (GEO_BLOCKED ? '' : pick));
+}
+function lmsg(d, t) { const e = document.querySelector(`[data-lmsg="${d}"]`); if (e) e.textContent = t; }
+function doCheck(d, pos, quiet) {
+  const g = PROG[d]; if (!g) return;
+  WHERE.ll = pos.ll; drawMe();
+  const a = assess(d, pos.ll, pos.acc); if (!a) return;
+  g.last = { at: new Date().toISOString(), ll: pos.ll, rel: a.rel };
+  g.lastHtml = a.html;
+  if (a.arrived) g.arrived = new Date().toISOString();
+  const prev = LIVE.lastAlert[d] || { rel: g.delay ? 0 : 0, scenic: false, dark: false };
+  if (quiet && !a.arrived && (Math.abs(a.rel - prev.rel) >= 20 || (a.scenicRisk && !prev.scenic) || (a.darkRisk && !prev.dark)))
+    alertMe(`${T('Day {0}', d)}: ${a.scenicRisk ? T('a scenic road now ends after sunset.') : a.darkRisk ? T('you would finish after dark.') : a.rel > 0 ? T('now {0} behind.', fmtDur(a.rel)) : T('now {0} ahead.', fmtDur(-a.rel))} <a href="#d${d}">${T('See what to change')}</a>`);
+  LIVE.lastAlert[d] = { rel: a.rel, scenic: a.scenicRisk, dark: a.darkRisk };
+  saveProg(d); renderLive(d); armAuto();
+}
+function startDay(d, pos, fromHere) {
+  const m = modeOf(d), P = planFor(d, m), now = nowMin(), sp = chainFor(d, m)[0];
+  PROG[d] = { started: new Date().toISOString(), startMin: now, startLL: pos ? pos.ll : sp.ll, startName: fromHere ? '@here' : sp.n,
+    delay: Math.round(now - pm(P.start)), mode: m };
+  LIVE.lastAlert[d] = { rel: 0, scenic: false, dark: false };
+  saveProg(d); rerenderSched(d); renderLive(d);
+  const SP = shiftPlan(P, PROG[d].delay);
+  if (SP && SP.warn && SP.warn.length) alertMe(`${T('Day {0}', d)}: ${T('with this start, a scenic or minor road falls after dark.')} <a href="#d${d}">${T('See what to change')}</a>`);
+  if (pos) doCheck(d, pos, false);
+  armAuto();
+}
+function armAuto() {
+  if (LIVE.timer) { clearInterval(LIVE.timer); LIVE.timer = null; }
+  const active = () => Object.keys(PROG).map(Number).filter(d => PROG[d] && PROG[d].started && !PROG[d].arrived && intervalOf(d) > 0);
+  if (!active().length) return;
+  LIVE.timer = setInterval(() => {
+    if (document.hidden) return;
+    const now = Date.now();
+    for (const d of active()) {
+      const every = intervalOf(d) * 60000, last = LIVE.lastAuto[d] || Date.parse((PROG[d].last && PROG[d].last.at) || PROG[d].started) || 0;
+      if (now - last < every) continue;
+      LIVE.lastAuto[d] = now;
+      getPos(true, Math.min(intervalOf(d), 10) / 2).then(p => doCheck(d, p, true)).catch(() => {});
+    }
+  }, 60 * 1000);
+}
+document.addEventListener('click', e => {
+  const st = e.target.closest('[data-lstart]');
+  if (st) {
+    const d = +st.dataset.lstart;
+    if (GEO_BLOCKED) { const sp = chainFor(d, modeOf(d))[0]; startDay(d, LIVE.prepick && LIVE.prepick.d === d ? LIVE.prepick.pos : { ll: sp.ll, acc: null }, !!(LIVE.prepick && LIVE.prepick.d === d && LIVE.prepick.idx !== 0)); LIVE.prepick = null; return; }
+    lmsg(d, T('Finding your position…'));
+    const t0 = Date.now();
+    getPos().then(pos => {
+      const sp = chainFor(d, modeOf(d))[0], km = havLL(sp.ll, pos.ll);
+      if (km > 15) {
+        lmsg(d, '');
+        LIVE.pending = { d, pos };
+        document.querySelector(`#live-d${d} .lbtns`).innerHTML = `<p class="wmsg">${esc(T('You are about {0} km from {1}. Starting from somewhere else?', Math.round(km), T(sp.n)))}</p><button type="button" data-lhere="${d}">${T('Yes, start from here')}</button><button type="button" class="sec" data-lthere="${d}">${esc(T('No, I am at {0}', T(sp.n)))}</button>`;
+      } else startDay(d, pos, false);
+    }).catch(err => { if (err && err.code === 1) { markBlocked(); lmsg(d, posErr(err)); const sp = chainFor(d, modeOf(d))[0]; if (Date.now() - t0 < 4000) {} } else lmsg(d, posErr(err)); });
+    return;
+  }
+  const hr = e.target.closest('[data-lhere]'); if (hr && LIVE.pending) { const p = LIVE.pending.pos; LIVE.pending = null; startDay(+hr.dataset.lhere, p, true); return; }
+  const th = e.target.closest('[data-lthere]'); if (th) { const d = +th.dataset.lthere; LIVE.pending = null; const sp = chainFor(d, modeOf(d))[0]; startDay(d, { ll: sp.ll, acc: null }, false); return; }
+  const sw = e.target.closest('[data-lswitch]');
+  if (sw) {
+    const [d, m] = sw.dataset.lswitch.split(':'), dn = +d;
+    if (m === MODE.global) delete MODE.days[dn]; else MODE.days[dn] = m;
+    applyModes(); saveModes();
+    if (PROG[dn]) { PROG[dn].mode = m; saveProg(dn); }
+    const lv = document.getElementById('live-d' + dn); if (lv && PROG[dn] && PROG[dn].started) lv.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    if (typeof renderWeather === 'function') renderWeather();
+    return;
+  }
+  const ck = e.target.closest('[data-lcheck]');
+  if (ck) { const d = +ck.dataset.lcheck; lmsg(d, T('Finding your position…')); getPos().then(p => { lmsg(d, ''); doCheck(d, p, false); }).catch(err => { if (err && err.code === 1) markBlocked(); lmsg(d, posErr(err)); }); return; }
+  const pg = e.target.closest('[data-lpastego]');
+  if (pg) {
+    const d = +pg.dataset.lpastego, inp = document.querySelector(`[data-lpaste="${d}"]`), ll = parseLoc(inp && inp.value);
+    if (!ll) { lmsg(d, T('That does not look like a location on this route. Paste coordinates such as 43.2955, -2.2565 or a Waze location link.')); return; }
+    const pos = { ll, acc: null };
+    if (!PROG[d] || !PROG[d].started) startDay(d, pos, true); else doCheck(d, pos, false);
+    return;
+  }
+  const rs = e.target.closest('[data-lreset]');
+  if (rs) { const d = +rs.dataset.lreset; delete PROG[d]; delete LIVE.lastAlert[d]; saveProg(d); rerenderSched(d); renderLive(d); WHERE.ll = null; drawMe(); armAuto(); }
+});
+document.addEventListener('change', e => {
+  const li = e.target.closest('[data-lint]'); if (li) { const d = +li.dataset.lint; INTV[d] = +li.value; saveIntv(); LIVE.lastAuto[d] = Date.now(); armAuto(); return; }
+  const pk = e.target.closest('[data-lpick]');
+  if (pk && pk.value !== '') {
+    const d = +pk.dataset.lpick, idx = +pk.value, c = placesFor(d)[idx]; if (!c) return;
+    const pos = { ll: c.ll.slice(), acc: null };
+    if (!PROG[d] || !PROG[d].started) startDay(d, pos, idx !== 0);
+    else doCheck(d, pos, false);
+  }
+});
+function renderAllLive() { for (const d of TRIP.days) renderLive(d.d); if (typeof renderFab === 'function') renderFab(); }
+/* ---------- always-visible "Record location" button ---------- */
+const drives = d => { const P = PLAN[d]; return !!(P && P.rows.some(r => r.k === 'drive')); };
+function fabDay() {
+  const t = tripDayNow();
+  if (t >= 1 && t <= 16) { for (let d = t; d <= 16; d++) if (drives(d)) return d; }
+  const open = Object.keys(PROG).map(Number).filter(d => PROG[d] && PROG[d].started && !PROG[d].arrived).sort((a, b) => b - a)[0];
+  return open || 1;
+}
+const FAB = { d: null, msg: '' };
+document.body.insertAdjacentHTML('beforeend', `<button type="button" class="fab" id="fab" aria-haspopup="dialog">📍 <span>${T('Record location')}</span></button>` +
+  `<div class="fabsheet" id="fabsheet" role="dialog" aria-modal="false" aria-labelledby="fabtitle" hidden></div>`);
+function renderFab() {
+  const sh = document.getElementById('fabsheet'); if (!sh || sh.hidden) return;
+  const d = FAB.d || fabDay(), g = PROG[d], day = TRIP.days[d - 1];
+  const opts = TRIP.days.filter(x => drives(x.d)).map(x => `<option value="${x.d}"${x.d === d ? ' selected' : ''}>${esc(T('Day {0}', x.d) + ' · ' + (PLAN[x.d] ? fmtDate(PLAN[x.d].date) + ' · ' : '') + T(x.from) + ' → ' + T(x.to))}</option>`).join('');
+  const state = !g || !g.started ? T('Not started yet: recording also starts the day from where you are.')
+    : g.arrived ? T('Day {0} done', d) : T('Under way since {0}.', hhmm(g.startMin));
+  sh.innerHTML = `<h3 id="fabtitle">📍 ${T('Record location')}<button type="button" data-fabclose aria-label="${esc(T('Close'))}">✕</button></h3>` +
+    `<label><span class="wmsg">${T('Day')}</span><select data-fabday>${opts}</select></label>` +
+    `<p class="wmsg">${state}</p>` +
+    (GEO_BLOCKED ? `<p class="wmsg">${T('Location is blocked inside the Claude app. Open the home-screen app for real GPS, or pick where you are:')}</p><a class="fabgo" style="display:grid;place-items:center;text-decoration:none" href="${APP_URL}" target="_blank" rel="noopener">${T('Open the home-screen app')} ↗</a><label class="wmsg"><select data-lpick="${d}"><option value="">—</option>${placesFor(d).map((c, i) => `<option value="${i}">${esc(c.label)}</option>`).join('')}</select></label>`
+      : `<button type="button" class="fabgo" data-fabgo="${d}"${g && g.arrived ? ' disabled' : ''}>${T('Record my location now')}</button>`) +
+    `<p class="fabres" aria-live="polite">${FAB.msg}</p>` +
+    `<button type="button" class="fablink" data-fabopen="${d}">${esc(T('See details on Day {0}', d))}</button>`;
+}
+function fabResult(d) {
+  const g = PROG[d]; if (!g || !g.last) return '';
+  const t = new Date(g.last.at).toTimeString().slice(0, 5), rel = g.last.rel || 0;
+  const st = g.arrived ? T('Arrived {0}.', t) : rel > 5 ? T('now {0} behind.', fmtDur(rel)) : rel < -5 ? T('now {0} ahead.', fmtDur(-rel)) : T('on time');
+  return esc(T('Location recorded at {0}.', t) + ' ' + st.charAt(0).toUpperCase() + st.slice(1));
+}
+document.addEventListener('click', e => {
+  if (e.target.closest('#fab')) { const sh = document.getElementById('fabsheet'); sh.hidden = !sh.hidden; FAB.msg = ''; FAB.d = null; renderFab(); return; }
+  if (e.target.closest('[data-fabclose]')) { document.getElementById('fabsheet').hidden = true; return; }
+  const op = e.target.closest('[data-fabopen]');
+  if (op) { document.getElementById('fabsheet').hidden = true; const el = document.getElementById('live-d' + op.dataset.fabopen) || document.getElementById('d' + op.dataset.fabopen); if (el) el.scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
+  const go = e.target.closest('[data-fabgo]');
+  if (go) {
+    const d = +go.dataset.fabgo; go.disabled = true; FAB.d = d; FAB.msg = esc(T('Finding your position…'));
+    document.querySelector('#fabsheet .fabres').innerHTML = FAB.msg;
+    getPos().then(pos => {
+      if (!PROG[d] || !PROG[d].started) { const sp = chainFor(d, modeOf(d))[0]; startDay(d, pos, havLL(sp.ll, pos.ll) > 15); }
+      else doCheck(d, pos, false);
+      FAB.msg = fabResult(d); renderFab();
+      try { if (navigator.vibrate) navigator.vibrate(60); } catch (e2) {}
+    }).catch(err => { if (err && err.code === 1) markBlocked(); FAB.msg = esc(posErr(err)); renderFab(); });
+  }
+});
+document.addEventListener('change', e => { const s2 = e.target.closest('[data-fabday]'); if (s2) { FAB.d = +s2.value; FAB.msg = ''; renderFab(); } });
+for (const d of Object.keys(PROG)) if (PROG[d] && PROG[d].started) rerenderSched(+d);
+renderAllLive(); armAuto();
+{ const lastD = Object.keys(PROG).map(Number).filter(d => PROG[d] && PROG[d].last).sort((a, b) => b - a)[0]; if (lastD) { WHERE.ll = PROG[lastD].last.ll; drawMe(); } }
+window.__whereReady = true;
+
+/* ---------- weather: typical late-December values + forecast written by the daily weather check (from yr.no) ---------- */
+/* approximate long-term averages for 19 Dec – 3 Jan: [place, high °C, low °C, rainy days in 10, notes] */
+const CLIMATE = {
+  1: [['Burgos', 8, 0, 3, ['frost']], ['Bilbao', 13, 6, 5, ['atl']]],
+  2: [['San Sebastián', 13, 6, 5, ['atl']], ['Biarritz', 13, 6, 5, ['atl']]],
+  3: [['Pau', 11, 2, 4, ['frost']], ['Carcassonne', 11, 3, 3, ['wind']]],
+  4: [['Pont du Gard', 12, 3, 2, []], ['Menton', 14, 7, 2, []]],
+  5: [['Menton', 14, 7, 2, []]],
+  6: [['La Spezia', 13, 6, 3, []], ['Lucca', 11, 3, 3, ['fog']]],
+  7: [['Castellina in Chianti', 9, 1, 3, ['frost']], ['Figline Valdarno', 10, 2, 3, ['fog']]],
+  8: [['Florence', 11, 3, 3, []]],
+  9: [['Arezzo', 10, 1, 3, ['frost']], ['Bocca Trabaria', 4, -3, 3, ['snow']], ['San Marino', 7, 1, 3, ['snow']]],
+  10: [['Comacchio', 8, 1, 3, ['fog']], ['Mogliano Veneto', 7, 0, 3, ['fog']]],
+  11: [['Venice', 8, 2, 3, ['fog', 'acqua']]],
+  12: [['Trieste', 10, 5, 3, ['bora']], ['Ljubljana', 4, -3, 3, ['fog', 'frost']]],
+  13: [['Zagreb', 5, -2, 3, ['frost']]],
+  14: [['Županja', 4, -2, 3, ['fog']], ['Belgrade', 5, -1, 3, ['fog']]],
+  15: [['Golubac Fortress', 5, -1, 3, ['fog']], ['Drobeta-Turnu Severin', 5, -2, 3, ['fog', 'frost']]],
+  16: [['Craiova', 4, -4, 3, ['frost', 'snow']], ['Bucharest', 3, -4, 3, ['snow']]],
+};
+const CLIM_NOTE = { frost: 'Frost most mornings', fog: 'Fog is common', snow: 'Snow or ice possible', bora: 'Bora wind gusts possible',
+  atl: 'Atlantic rain and wind', acqua: 'Acqua alta possible', wind: 'Strong Cers wind possible' };
+const RISK_CLS = { ok: 'ok', watch: 'watch', warn: 'warn' };
+let WX = {};
+function climateHtml(d) {
+  const c = CLIMATE[d]; if (!c) return '';
+  return `<div class="wx-clim"><h4>${T('Typical for these dates')}</h4><ul>` + c.map(([p, hi, lo, wet, notes]) =>
+    `<li><b>${esc(T(p))}</b> <span class="wx-num">${hi}° / ${lo}°</span> · ${T('rain on about {0} days in 10', wet)}${notes.length ? ' · ' + notes.map(n => esc(T(CLIM_NOTE[n]))).join(' · ') : ''}</li>`).join('') +
+    `</ul><p class="wmsg">${T('Approximate long-term averages; the real forecast replaces this from 9 December.')}</p></div>`;
+}
+function forecastHtml(d) {
+  const w = WX[d]; if (!w) return '';
+  const test = w.mode === 'test';
+  const pts = Array.isArray(w.points) ? w.points : [], legs = Array.isArray(w.legs) ? w.legs : [];
+  let h = `<div class="wx-fc${test ? ' test' : ''}"><div class="bul-head"><b>${test ? T('Test forecast') : T('Forecast')}</b>` +
+    `<span>${test ? esc(T('for {0}, not your trip date', w.forDate || '')) + ' · ' : ''}${T('issued {0}', fmtIssued(w.issued))} · yr.no</span></div>`;
+  if (w.summary) h += `<p>${esc(w.summary)}</p>`;
+  if (pts.length) h += `<div class="bwx-wrap"><table class="bwx"><thead><tr><th>${T('Place')}</th><th>${T('Min / max')}</th><th>${T('Sky')}</th><th>${T('Rain / snow')}</th><th>${T('Wind gusts')}</th></tr></thead><tbody>` +
+    pts.map(p => `<tr><td>${esc(p.name || '')}${p.role ? ` <small>${esc(T({ start: 'start', scenic: 'scenic point', overnight: 'overnight', stop: 'Stop' }[p.role] || ''))}</small>` : ''}</td><td>${p.tmin != null ? esc(p.tmin) + '° / ' + esc(p.tmax) + '°' : ''}</td><td>${esc(p.sky || '')}</td><td>${esc(p.precip || '')}</td><td>${esc(p.wind || '')}</td></tr>`).join('') + `</tbody></table></div>`;
+  if (legs.length) h += `<h4>${T('On each drive')}</h4><ul class="wx-legs">` + legs.map(l =>
+    `<li class="r-${RISK_CLS[l.risk] || 'ok'}"><span class="wx-t">${esc(l.t || '')}</span><span><b>${esc(T('Drive to {0}', T(l.to || '')))}</b><br>${esc([l.sky, l.temp != null && l.temp !== '' ? l.temp + '°' : '', l.precip, l.wind, l.vis].filter(Boolean).join(' · '))}${l.note ? `<br><i>${esc(l.note)}</i>` : ''}</span></li>`).join('') + `</ul>`;
+  if (w.sunset) h += `<p class="wmsg">${T('Sunset sky:')} ${esc(w.sunset)}</p>`;
+  if (w.advice && w.advice.mode && MODE_NAME[w.advice.mode]) {
+    const m = w.advice.mode, cur = modeOf(d);
+    h += `<p class="wx-adv"><b>${T('Weather suggests: {0}', T(MODE_NAME[m]))}</b>${w.advice.why ? ' · ' + esc(w.advice.why) : ''}` +
+      (m !== cur && hasMode(d, m) ? ` <button type="button" data-lswitch="${d}:${m}">${esc(T('Switch to {0}', T(MODE_NAME[m])))}</button>` : '') + `</p>`;
+  }
+  return h + `</div>`;
+}
+const HAZ = { snow: 'snow', ice: 'ice', fog: 'fog', wind: 'wind', rain: 'heavy rain', rock: 'rockfall', waves: 'storm waves' };
+const HLEV = { ok: 'Clear', watch: 'Watch', switch: 'Take Safe', wait: 'Wait' };
+const routeOf = (d, m) => variant(d, m) ? m : 'bal';
+function hotTime(d, m, h) {
+  const r = routeOf(d, m), key = h.leg[r] || h.leg.fast || h.leg.bal || '', P = planFor(d, m);
+  const row = P && key ? P.rows.find(x => x.k === 'drive' && x.to.startsWith(key)) : null;
+  return row ? `${row.t}–${row.arr}` : '';
+}
+const wxVerdict = d => { const w = WX[d]; if (!w) return null; const vs = w.verdicts; return (vs && (vs[modeOf(d)] || vs.bal)) || w.verdict || null; };
+function verdictHtml(d) {
+  const w = WX[d], v = wxVerdict(d); if (!v || !HLEV[v.level]) return '';
+  const cur = modeOf(d), test = w.mode === 'test';
+  const head = { ok: T('Weather check: all clear on your route'), watch: T('Weather check: keep an eye on it'),
+    switch: T('Weather check: take the Safe route'), wait: T('Weather check: no safe road at the planned time') }[v.level];
+  let h = `<div class="wx-verdict v-${v.level}"><p><b>${head}</b>${test ? ' · ' + T('test') : ''}</p>${v.text ? `<p>${esc(v.text)}</p>` : ''}`;
+  if (v.level === 'switch' && cur !== 'safe' && hasMode(d, 'safe')) h += `<button type="button" data-lswitch="${d}:safe">${esc(T('Switch to {0}', T('Safe')))}</button>`;
+  if (v.level === 'switch' && !hasMode(d, 'safe')) h += `<p>${T('Balanced already uses the safest roads on this day.')}</p>`;
+  if (v.level === 'wait') h += `<p>${T('Options: leave later, wait for the snowploughs or the fog to lift, or as a last resort add a night.')}</p>`;
+  return h + `</div>`;
+}
+function hotHtml(d) {
+  const hs = (MODESD[d] && MODESD[d].hot) || []; if (!hs.length) return '';
+  const m = modeOf(d), r = routeOf(d, m), rs = routeOf(d, 'safe');
+  const fc = {}; for (const x of ((WX[d] && Array.isArray(WX[d].hot)) ? WX[d].hot : [])) if (x && x.id) fc[x.id] = x;
+  const on = hs.filter(h => h.on.includes(r));
+  let h = `<h4>${T('Weather watch points on your route ({0})', T(MODE_NAME[m]))}</h4>`;
+  if (!on.length) h += `<p class="wx-avoid">${T('None on this route.')}</p>`;
+  else h += `<ul class="wx-hot">` + on.map(x => { const f = fc[x.id], lev = f && HLEV[f.level] ? f.level : '';
+    return `<li class="${lev ? 'h-' + lev : ''}"><span class="wx-t">${hotTime(d, m, x)}</span><span><b>${esc(T(x.n))}</b>${x.elev ? ` <span class="wx-num">${x.elev.toLocaleString(LOCALE[LANG])} m</span>` : ''}${lev ? `<span class="hlev">${T(HLEV[lev])}</span>` : ''}` +
+      `<br><small>${x.risks.map(k => T(HAZ[k])).join(' · ')}</small>` +
+      (f && (f.what || f.note) ? `<br>${esc([f.when, f.what, f.note].filter(Boolean).join(' · '))}` : `<br><small>${esc(T(x.note))}</small>`) +
+      (x.alt ? `<br><small>${esc(T(x.alt))}</small>` : '') + `</span></li>`; }).join('') + `</ul>`;
+  if (r !== rs) {
+    const avoided = on.filter(x => !x.on.includes(rs));
+    if (avoided.length) h += `<p class="wx-avoid">${T('The Safe route avoids: {0}.', avoided.map(x => esc(T(x.n))).join(', '))}</p>`;
+  }
+  return h;
+}
+function renderWeather() {
+  for (const day of TRIP.days) {
+    const el = document.getElementById('wx-d' + day.d); if (!el) continue;
+    el.innerHTML = `<h3>${T('Weather')}</h3>` + verdictHtml(day.d) + forecastHtml(day.d) + hotHtml(day.d) + climateHtml(day.d);
+  }
+}
+let wxAlerted = false;
+function wxAlert() {
+  if (wxAlerted) return;
+  const today = new Date(); const iso = x => x.toISOString().slice(0, 10);
+  const tom = new Date(today.getTime() + 864e5), days = [iso(today), iso(tom)];
+  for (const day of TRIP.days) {
+    const w = WX[day.d], v = wxVerdict(day.d), P = PLAN[day.d];
+    if (!v || w.mode !== 'forecast' || !P || !days.includes(P.date)) continue;
+    if ((v.level === 'switch' && modeOf(day.d) !== 'safe' && hasMode(day.d, 'safe')) || v.level === 'wait') {
+      wxAlerted = true;
+      alertMe(`${T('Day {0}', day.d)}: ${v.level === 'wait' ? T('Weather check: no safe road at the planned time') : T('Weather check: take the Safe route')} <a href="#wx-d${day.d}">${T('Open the day')}</a>`);
+      return;
+    }
+  }
+}
+renderWeather();
+window.__wxReady = true;
+(async () => {
+  const C = window.claude; const db = C && C.use ? await C.use('db') : null;
+  if (!db) { if (SITE) siteLoop(async () => { const w = await siteLoad('weather'); if (Object.keys(w).length || !Object.keys(WX).length) WX = w; renderWeather(); wxAlert(); }); return; }
+  db.collection('weather').onSnapshot(snap => {
+    const next = {};
+    for (const doc of snap.docs) { const x = doc.data(); if (x && Number(x.d) >= 1 && Number(x.d) <= 16) next[Number(x.d)] = x; }
+    WX = next; renderWeather(); wxAlert();
+  }, () => {});
+})();
+
+/* checklist ticks, kept per viewer */
+document.querySelectorAll('.checks input').forEach(cb => {
+  try { cb.checked = localStorage.getItem('w123-' + cb.id) === '1'; } catch (e) {}
+  cb.addEventListener('change', () => { try { localStorage.setItem('w123-' + cb.id, cb.checked ? '1' : '0'); } catch (e) {} });
+});
+</script>

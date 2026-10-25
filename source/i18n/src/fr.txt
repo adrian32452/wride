@@ -1,0 +1,600 @@
+0	Les numéros de route restent tels qu'ils figurent sur les panneaux. Les liens Wikipédia s'ouvrent en anglais.
+1	kilomètres
+2	jours
+3	pays
+4	jours de route panoramique
+5	plus longue étape (jour 4)
+6	Jour {0} : {1}
+7	{0}, jour {1}
+8	Tous les jours
+9	Jour {0} : {1} → {2}
+10	Limite habituelle
+11	Péage
+12	Sur votre itinéraire : {0}
+13	Hors de votre itinéraire.
+14	Routes locales, absentes des données de la carte · environ {0} km, {1}
+15	Routes prévues ce jour-là : {0}. Utilisez Google Maps ou Waze sur la fiche du jour pour le tracé exact.
+16	≈{0} km · {1} au rythme de la W123
+17	{0} % d'autoroute
+18	Péages autoroutiers : {0}.
+19	Variante · {0}
+20	(tirets bleus) : ≈{0} km, {1} ({2} km, {3}) par {4}.
+21	Pas de variante vraiment différente sur le réseau principal pour ce tronçon.
+22	Route panoramique
+23	Jour {0}
+24	Agrandir la photo : {0}
+25	touchez pour agrandir
+26	Rouler jusqu'à {0}
+27	arr. {0}
+28	Prévoir {0} min
+29	jusqu'à {0}
+30	Horaire, jour {0}
+31	Horaire
+32	heures en CET puis EET
+33	heures en {0}
+34	coucher du soleil {0}
+35	Fin de journée
+36	Galerie photo, jour {0}
+37	Photos
+38	{0} photos · touchez pour agrandir
+39	{0}, photo {1} sur {2}
+40	Stationnement et arrêts, jour {0}
+41	Stationnement et arrêts en route
+42	Source
+43	À vérifier sur place
+44	Photo : Wikimedia Commons, {0}
+45	auteur et licence
+46	Ouvrir dans Google Maps
+47	Waze vers {0}
+48	Ouvre l'application Waze. Pas installée ?
+49	Waze sur le web
+50	Sur un téléphone, ce lien ouvre l'application Waze.
+51	Waze n'accepte qu'une destination à la fois ; utilisez le lien Waze de chaque arrêt ci-dessus.
+52	de route
+53	coucher du soleil
+54	Nuit
+55	Péage (autopista AP-)
+56	Surtout gratuite (autovía A-) ; les tronçons AP- sont payants
+57	130 km/h, 110 par temps de pluie
+58	80 km/h (90 sur certaines routes)
+59	Péage sur la plupart des autoroutes
+60	Pas de péage
+61	90 km/h (110 sur les voies express)
+62	Gratuite (superstrada)
+63	Péage sur les autostrade (routes A-)
+64	Saint-Marin
+65	Vignette électronique obligatoire (16 € pour 7 jours)
+66	Péage, à régler aux barrières
+67	Péage, à régler aux barrières (dinars, euros ou carte)
+68	130 km/h (voies express 100)
+69	Couvert par la rovinietă
+70	Bosnie-Herz.
+71	Vignette électronique obligatoire
+72	Vignette obligatoire
+73	Péage sur l'autoroute
+74	Autoroute
+75	Route principale
+76	Route secondaire
+77	Liaison en ferry
+78	W123 : voie de droite à 90–100 km/h ; faire le plein tous les 500–600 km.
+79	W123 : traversées de villages et ronds-points ; comptez 60–65 km/h de moyenne.
+80	W123 : lente et sinueuse ; comptez 45–50 km/h de moyenne.
+81	Vérifiez les horaires d'hiver.
+82	Départ
+83	Arrêt
+84	En route
+85	Nuit
+86	Visite, sans voiture
+87	Arrivée
+88	Parking
+89	Parking relais
+90	Vue
+91	Arrêt en route
+92	Autoroute sans nom
+93	Route principale sans nom
+94	Route secondaire sans nom
+95	Liaison en ferry sans nom
+96	Route sans nom
+97	Un contournement plus rapide.
+98	Incontournable
+99	Facultatif : à supprimer en premier en cas de retard
+100	Incontournable
+101	Facultatif
+102	Route
+103	Billet
+104	Pas de péage
+105	à vérifier
+106	Peut-être une alternative proche, plus lente et sans péage.
+107	Une option locale pour un détour.
+108	Langue
+109	Carnet de route · sam. 19 déc. 2026 – dim. 3 janv. 2027 · 16 jours
+110	Madrid ⟦0⟧→⟦1⟧ Bucarest
+111	Une Mercedes-Benz W123 300D à 90–100 km/h, à travers neuf pays, par les routes côtières, les cols des Apennins et les gorges du Danube.
+112	Hypothèses de planification (changez-en une et les horaires se mettent à jour)
+113	Dates : sam. 19 déc. 2026 – dim. 3 janv. 2027. Les jours fériés tombent sur des jours de route : Noël dans le Chianti, le Nouvel An sur l'autoroute de Belgrade.
+114	La voiture n'est pas immatriculée à Madrid, donc le jour 1 part de la périphérie.
+115	⟦0⟧Incontournable⟦1⟧ = vos villes étapes ; ⟦2⟧Facultatif⟦3⟧ = les extras que j'ai proposés, à supprimer en premier en cas de retard.
+116	Temps de route au rythme de la W123 (90–95 km/h sur autoroute, plus lent sur la côte et en montagne), courtes pauses comprises.
+117	⤢ Carte plein écran
+120	Tout l'itinéraire
+121	✕ Fermer
+122	Faites glisser pour déplacer, molette ou pincement pour zoomer. Touchez un numéro de jour pour zoomer dessus, une route pour ses détails, un repère de nuit pour ouvrir ce jour.
+123	⟦0⟧⟦1⟧Itinéraire (par la route)
+124	⟦0⟧⟦1⟧Routes locales, approximatives
+125	⟦0⟧⟦1⟧Variante (au survol)
+126	⟦0⟧⟦1⟧Jour de route panoramique
+127	⟦0⟧⟦1⟧Nuit (numéro du jour)
+128	⟦0⟧⟦1⟧Arrêt
+129	⟦0⟧⟦1⟧Autoroute
+130	⟦0⟧⟦1⟧Route principale
+131	⟦0⟧⟦1⟧Ville
+132	Touchez un jour ou un repère de nuit pour y aller. Survolez (ou touchez) une route ou un tronçon de l'itinéraire pour voir son nom, ses limites, ses péages et ses variantes. L'itinéraire suit le réseau principal ; les tronçons en tirets empruntent de petites routes locales absentes des données de la carte, d'où le tracé en ligne droite. Cette version inclut la corniche de l'Estérel (D559) le jour 4 et le réaménagement de Noël autour de Florence.
+133	Suivi des restrictions · au 18 oct. 2026
+134	Ce que la W123 a le droit de faire
+135	La voiture n'a de vignette environnementale dans aucun système : les limites sont donc les zones d'accès de Madrid, Bilbao, Saint-Sébastien, des villes françaises en ZFE et de tout Florence. Une vignette routière n'est nécessaire qu'en Slovénie et en Roumanie. Ceci est un instantané ; le ⟦0⟧suivi en direct ↗⟦1⟧ est mis à jour en premier.
+136	La voiture
+137	Élément
+138	Statut
+139	Immatriculation
+140	Espagne (commune pas encore confirmée)
+141	Vignette DGT espagnole
+142	Aucune (diesel immatriculé avant 2006)
+143	Crit'Air
+144	Non éligible, considérée comme non classée
+145	Classe italienne
+146	Diesel Euro 0
+147	Statut de véhicule de collection
+148	Aucun
+149	Émissions et zones d'accès
+150	Florence est la plus grosse contrainte : toute l'agglomération est fermée aux diesels Euro 0 jour et nuit. Le statut de collection lèverait les interdictions de Madrid, Bilbao et Florence.
+151	Lieu
+152	Règle
+153	La voiture est-elle concernée ?
+154	Plan
+156	Voitures sans vignette non immatriculées à Madrid interdites dans toute la commune depuis janv. 2025 ; celles immatriculées à Madrid qui y paient l'IVTM bénéficient d'un moratoire ; véhicules de collection exemptés
+157	⟦0⟧Oui⟦1⟧⟦2⟧⟦3⟧sauf immatriculation à Madrid⟦4⟧
+158	Sans immatriculation madrilène, partir de l'extérieur de la commune
+161	Voitures sans vignette interdites dans la ZBE aux heures restreintes les jours ouvrables
+162	⟦0⟧Oui⟦1⟧
+163	Hôtel hors ZBE (Barakaldo, Getxo) ou arrivée le week-end
+165	Saint-Sébastien
+166	Voitures sans vignette interdites dans la ZBE centrale tous les jours, toute la journée
+167	Se garer hors ZBE et entrer à pied ou en bus
+169	ZFE françaises
+170	Toujours en vigueur après l'annulation de leur suppression par le Conseil constitutionnel le 21 mai 2026 ; Crit'Air 4, 5 et non classées interdites
+171	Passer Toulouse, Montpellier et Marseille par l'autoroute ; base sur la Riviera hors de Nice
+173	Italie, centres historiques
+174	ZTL, contrôle par caméras
+175	Toujours se garer hors des remparts
+177	Toute l'agglomération fermée 24 h/24 aux diesels Euro 0 et 1 ; véhicules de collection exemptés
+178	⟦0⟧Oui⟦1⟧⟦2⟧⟦3⟧toute la ville⟦4⟧
+179	Dormir à Figline Valdarno ; y aller en train
+181	Émilie-Romagne
+182	1er oct.–31 mars, villes de plus de 30 000 hab., diesels jusqu'à Euro 4 interdits en semaine
+183	⟦0⟧Oui⟦1⟧⟦2⟧⟦3⟧en semaine⟦4⟧
+184	Autoroute après Rimini ; Ravenne un week-end ou un jour férié
+186	Vénétie
+187	Saison d'hiver dès le 1er oct., villes de plus de 30 000 hab., diesels jusqu'à Euro 4 interdits en semaine
+188	Base à Mogliano Veneto ; train pour Venise
+189	Italie, interdiction Euro 5
+190	Reportée au 1er oct. 2027
+191	⟦0⟧Non⟦1⟧
+192	Rien à faire
+194	De la Slovénie à la Roumanie
+195	Aucune interdiction urbaine trouvée sur cet itinéraire
+196	Stationnement urbain normal
+197	Vignettes et péages
+198	Pays
+199	Système
+200	Coût pour la voiture
+201	Paiement
+202	Espagne
+203	A-1 gratuite ; AP-8 sur la côte basque payante
+204	Par tronçon
+205	Carte aux barrières
+206	France
+207	Péages autoroutiers (A64, A61, A9, A8)
+208	Monaco, Saint-Marin
+210	Italie
+211	Péages autoroutiers (A10, A12, A14, A4) ; FI-PI-LI gratuite
+212	Slovénie
+213	⟦0⟧Vignette électronique⟦1⟧, contrôle par caméras
+214	16 € pour 7 jours ⟦0⟧source ↗⟦1⟧
+215	Uniquement sur evinjeta.dars.si ; plaque exactement comme sur la carte grise ; à partir du jour 12
+216	Croatie
+217	Péages autoroutiers (A3)
+218	Barrières
+219	Serbie
+220	Péages autoroutiers
+221	Barrières (dinars, euros ou carte)
+222	Roumanie
+223	⟦0⟧Rovinietă⟦1⟧ sur toutes les routes nationales, tarif selon la classe Euro depuis le 1er oct. 2026
+224	29 lei par jour pour Euro 0–3 ⟦0⟧source ↗⟦1⟧
+225	En ligne avant la frontière ; couvre les jours 15–16 ; amende de 500–1 000 lei
+226	Équipement d'hiver et éclairage
+227	Quatre pneus M+S ou 3PMSF avec au moins 4 mm de gomme, plus des chaînes dans le coffre, respectent toutes les règles de l'itinéraire, quelle que soit la météo.
+228	Période
+229	Feux
+230	Pas de date fixe
+231	Seulement là où c'est signalé (de mémoire)
+232	1er nov.–31 mars
+233	Communes de la loi Montagne : pneus hiver ou chaînes à bord (de mémoire)
+234	15 nov.–15 avr.
+235	Routes signalées : pneus M+S ou chaînes à bord ⟦0⟧Pirelli ↗⟦1⟧
+236	15 nov.–15 mars
+237	Pneus hiver obligatoires ⟦0⟧SIBIZ ↗⟦1⟧
+238	Tronçons hivernaux désignés, quelle que soit la météo ; amende de 130 € ⟦0⟧Croatia Week ↗⟦1⟧
+239	Feux de jour du 1er nov. au 31 mars
+240	1er nov.–1er avr.
+241	Les sources divergent : selon la date ou seulement par neige et verglas ; pneus à clous interdits ⟦0⟧Tyremap ↗⟦1⟧
+242	Hiver
+243	Les sources divergent : neige et verglas seulement, ou 1er nov.–31 mars
+244	Documents
+245	Permis de conduire ; permis international recommandé pour la Serbie
+246	Permiso de circulación et ficha técnica, contrôle technique (ITV) valable au-delà du retour
+247	Assurance et carte verte avec la Serbie (SRB) non barrée
+248	Passeports pour tous les passagers
+249	Confirmation de la vignette électronique slovène (jour 12)
+250	Confirmation de la rovinietă roumaine (jour 15)
+251	Équipement et voiture
+252	Triangles de signalisation, plus la balise V-16 si elle est exigée pour la voiture
+253	Gilet réfléchissant pour chaque personne, dans l'habitacle
+254	Trousse de secours (Croatie, Slovénie, Serbie)
+255	Ampoules halogènes de rechange (Croatie)
+256	Quatre pneus hiver, au moins 4 mm, et des chaînes
+257	Bougies de préchauffage, batterie et filtre à gazole vérifiés
+258	Gazole hiver à partir du jour 12
+259	Encore ouvert
+260	La voiture est-elle immatriculée dans la commune de Madrid ?
+261	Date de départ exacte (jour ouvrable ou férié les jours 10–11)
+262	Heures restreintes à Bilbao pour les voitures sans vignette
+263	Vérifier la ZBE de Burgos
+264	Périmètre de la ZFE de Nice et ville de l'hôtel sur la Riviera
+265	Règles diesel à Pise, Lucques et Arezzo au-delà de la ZTL
+266	Fin de saison en Vénétie et accès au Tronchetto
+267	Immatriculation de collection : lèverait les interdictions de Madrid, Bilbao et Florence
+268	Les coches ne sont enregistrées que dans ce navigateur.
+269	Les temps de route sont ceux de la W123 à son rythme, sans arrêts. Les photos viennent de Wikimedia Commons ; chaque crédit renvoie au photographe et à la licence. Les liens Wikipédia en disent plus sur chaque lieu. La section des restrictions ci-dessus est un instantané du suivi en direct.
+270	Carte de l'itinéraire
+271	Afficher un jour sur la carte
+272	Ouvrir la carte en plein écran
+273	Zoom avant
+274	Zoom arrière
+275	Afficher tout l'itinéraire
+276	Fermer la carte plein écran
+277	Itinéraire de Madrid à Bucarest avec les nuits numérotées par jour
+278	Jour par jour
+279	Suivi des restrictions
+280	Photo précédente
+281	Photo suivante
+282	Fermer
+283	De la Meseta aux collines basques
+284	Bilbao (samedi : le centre est accessible en voiture)
+285	ZBE de Madrid : le point de départ dépend de l'immatriculation
+286	La ZBE de Bilbao ne s'applique qu'en semaine : arriver le samedi ne pose pas de problème
+287	Départ 08 h 30. Si la voiture n'est pas immatriculée à Madrid, partir de l'extérieur de la commune.
+288	Cathédrale de Burgos
+289	Cathédrale gothique juste à côté de l'A-1. Environ 1 h 30.
+290	Guggenheim et Casco Viejo en métro.
+291	La route de la côte basque
+293	Biarritz, ou Anglet pour se garer plus facilement
+294	ZBE de Saint-Sébastien : voitures sans vignette interdites 24 h/24
+295	Péage de l'AP-8
+297	Port de pêche sur la N-634 en corniche, entre Zumaia et Zarautz.
+298	La baie de La Concha et un déjeuner de pintxos. Se garer hors ZBE.
+299	Coucher de soleil sur le Rocher de la Vierge, vers 17 h 20.
+300	Le long des Pyrénées
+302	Carcassonne, ville basse sous la Cité
+303	Rester sur l'autoroute pour passer Toulouse (ZFE)
+304	Péages français
+306	Un balcon sur toute la chaîne des Pyrénées. Environ 1 h.
+307	Monter à pied à la Cité illuminée à la nuit tombée.
+308	La Provence et la corniche rouge
+310	Rester sur l'autoroute pour passer Montpellier et Marseille (ZFE)
+311	Plus longue journée : départ 07 h 30
+313	Aqueduc romain, à 30 minutes de l'A9.
+315	Quitter l'A8 ici vers 14 h 30 pour la D559.
+317	30 km de falaises de porphyre rouge au-dessus de la mer. Retour sur l'A8 à Mandelieu.
+318	Dernière ville française avant l'Italie.
+319	Les trois corniches
+320	Ne pas entrer dans le centre de Nice (ZFE)
+322	Rade profonde et vieille ville.
+324	Village perché ; retour par la Grande Corniche.
+326	Le port et la place du Casino.
+327	De la Ligurie à la tour penchée
+328	Lucques
+329	Lucques, juste à l'extérieur des remparts
+330	ZTL de Pise et Lucques : se garer hors des remparts
+331	Péages italiens
+332	24 déc. : fermetures anticipées ; réserver le dîner du réveillon
+333	Pise, Piazza dei Miracoli
+334	Visite l'après-midi, 1 h 30. Se garer hors des remparts.
+335	Tour des remparts au crépuscule.
+336	Noël dans le Chianti
+338	Figline Valdarno, au sud de Florence (train pour Florence)
+339	25 déc. : musées et la plupart des commerces fermés ; réserver le déjeuner de Noël
+340	La voiture n'entre jamais dans Florence (interdiction des diesels Euro 0)
+341	Départ après le petit-déjeuner.
+343	Village fortifié sur une crête où commence le plus beau tronçon de la SR222.
+345	Déjeuner de Noël au-dessus des vignes (réserver).
+347	Place triangulaire, illuminée pour Noël.
+348	Sur la ligne Florence–Arezzo ; trains régionaux pour Firenze SMN en 35 minutes environ.
+349	Florence le jour de la Saint-Étienne
+350	26 déc. : Offices, Accademia et Pitti ouverts 08 h 15–18 h 30 ; coupole 12 h 45–17 h 15 ; cathédrale fermée
+351	Horaires de train de jour férié : vérifier le dernier train de retour
+352	Offices, Ponte Vecchio, baptistère et montée à la coupole. La voiture reste à Figline.
+353	Arezzo et la Bocca Trabaria
+354	ZTL d'Arezzo : se garer hors des remparts
+355	Panneaux italiens d'équipement hivernal sur le col (15 nov.–15 avr.)
+356	Départ 08 h 00 pour arriver à Saint-Marin avant la nuit
+358	La Piazza Grande un dimanche matin tranquille.
+360	Bourg fortifié au-dessus de la haute vallée du Tibre ; déjeuner rapide.
+362	Col à 1 049 m entre la Toscane et les Marches.
+364	Traversée en descendant vers Saint-Marin.
+365	Trois tours sur le mont Titano.
+366	Du delta du Pô à la lagune de Venise
+368	Mogliano Veneto, hors de la commune de Venise
+369	Lun. 28 déc. : interdictions diesel en semaine 08 h 30–18 h 30 à Ravenne, Chioggia et Venise : ne pas entrer dans ces villes
+370	Vérifier la SS309 Romea sur les cartes d'interdiction ; repli A14–A13–A4 par Bologne (+1 h, d'abord vers l'ouest)
+372	Ville lagunaire de canaux et de ponts, moins de 30 000 habitants.
+373	Trains pour Venezia Santa Lucia en 20 minutes environ. Vérifier qu'elle n'est pas sur la liste d'interdiction (environ 28 000 habitants).
+374	Venise à pied
+375	La voiture reste garée
+376	Venise
+377	Train depuis Mogliano Veneto (environ 20 min). Consulter la prévision d'acqua alta.
+378	Le Frioul romain et le Karst
+380	Vignette électronique slovène dès la frontière (16 €, 7 jours)
+381	Aquilée
+382	Mosaïque du sol de la basilique et ruines romaines.
+383	Château de Miramare
+384	Château blanc au bord de la mer, aux portes de Trieste.
+386	Déjeuner sur la Piazza Unità.
+387	Illuminations de Noël le long de la Ljubljanica.
+388	L'Avent à Zagreb
+390	Équipement hivernal croate (15 nov.–15 avr.)
+391	Feux de croisement allumés le jour
+392	31 déc. : réserver l'hôtel tôt ; les commerces ferment tôt
+393	Après-midi dans la ville haute, marché de l'Avent le soir.
+394	À travers la plaine pannonienne
+396	Belgrade, Novi Beograd pour se garer facilement
+397	Frontière serbe : carte verte et passeports
+398	Péages croates et serbes
+399	1er janv. : presque tout est fermé ; bonne journée pour rouler
+400	Forteresse de Kalemegdan, au confluent de la Save et du Danube.
+401	Les Portes de Fer du Danube
+403	Drobeta-Turnu Severin ou Orșova
+404	Rovinietă roumaine dès la frontière
+405	La Roumanie a une heure d'avance
+406	Le 2 janv. est férié en Serbie et en Roumanie
+407	Forteresse de Golubac
+408	Tours médiévales à l'entrée des gorges.
+410	Site mésolithique au bord du fleuve.
+411	Barrage des Portes de Fer I
+412	Passage de frontière au sommet du barrage.
+413	La dernière étape vers l'est
+414	Bucarest
+415	Rovinietă toujours valable
+417	Déjeuner et carburant.
+418	Arrivée en début d'après-midi.
+421	Cathédrale de Burgos + déjeuner
+422	Parking de la Plaza Mayor
+424	Guggenheim et Casco Viejo en métro
+425	Soirée
+427	Route côtière N-634
+428	Falaises de flysch d'Itzurun
+429	Port de Getaria
+430	Saint-Sébastien (P+R d'Illunbe)
+432	La Concha + déjeuner de pintxos
+433	Bus 28 jusqu'au centre
+435	Rocher de la Vierge au coucher du soleil
+438	A64 / A61, pause déjeuner en route
+439	Promenade dans la Cité illuminée
+440	Soirée, P1/P2 gratuits après 20 h
+441	Parking à 9 €
+442	A9 / A8, pause déjeuner en route
+443	Théoule-sur-Mer par la corniche de l'Estérel
+444	D559 avec arrêts aux points de vue
+445	Points de vue de la corniche (compris dans le trajet)
+448	Rade et citadelle de Villefranche
+449	Parking gratuit de nov. à mars
+451	Village d'Èze + déjeuner
+452	Le Rocher et le port de Monaco
+454	Menton par la Grande Corniche
+455	M2564, points de vue
+456	Pise (P+R Via Pietrasantina)
+457	A10 / A12, pause déjeuner en route
+459	Navette depuis le P+R
+461	Soirée sur les remparts
+462	Voie rapide Florence–Sienne jusqu'à Poggibonsi, puis SR222
+463	Promenade dans Castellina
+464	Jour de Noël : en plein air, villages illuminés
+466	Déjeuner de Noël au-dessus des vignes
+467	Réserver à l'avance
+468	Place de Greve
+469	Figline Valdarno (hôtel)
+470	SP16 par les collines
+471	Train Figline → Firenze SMN
+472	Horaires de jour férié ; la voiture reste à l'hôtel
+473	Florence : Offices, Ponte Vecchio, baptistère, coupole
+474	26 déc. : musées ouverts, cathédrale fermée
+475	Train de retour à Figline
+476	A1 (du Valdarno à Arezzo)
+478	Parcheggio Pietri + ascenseur
+480	Anghiari + déjeuner rapide
+481	Bocca Trabaria (1 049 m)
+483	Arrêt photo au col
+484	Saint-Marin par Urbania
+486	A14 vers Ravenne, puis SS309 Romea (ne pas entrer dans Ravenne)
+487	Canaux de Comacchio
+488	Moins de 30 000 habitants : pas sur la liste d'interdiction
+489	Mogliano Veneto (hôtel)
+490	SS309 Romea en passant Chioggia, Passante A4
+491	Train Mogliano → Venezia S. Lucia
+492	Venise : Grand Canal, Rialto, Saint-Marc
+493	Consulter la prévision d'acqua alta
+494	Mosaïques de la basilique
+495	Route côtière SS14
+496	Jardins de Miramare
+498	Piazza Unità + déjeuner
+499	Parking Molo IV
+500	A1 slovène (vignette électronique)
+501	Matinée dans la vieille ville de Ljubljana
+502	Saint-Sylvestre : les commerces ferment tôt
+503	Ville haute, puis la fête du Nouvel An
+504	Garage Tuškanac ; réserver l'hôtel tôt
+505	Frontière de Bajakovo
+506	A3, vide le 1er janv. ; stations-service d'autoroute ouvertes
+507	Croatie → Serbie (Bajakovo–Batrovci)
+508	A3 serbe
+509	Kalemegdan au crépuscule
+510	Garage Obilićev venac
+512	Le 2 janv. est férié : peut être fermé, vue de l'extérieur
+513	Route du Danube
+514	Barrage des Portes de Fer par les gorges de Kazan
+515	Route du Danube avec aires d'arrêt
+516	Serbie → Roumanie (barrage des Portes de Fer I)
+517	Avancer l'heure d'1 h (heure roumaine)
+519	Déjeuner et carburant
+521	Parking Plaza Mayor (souterrain)
+522	Parking souterrain central à quelques pas de la cathédrale. Règles de la ZBE de Burgos pour les voitures sans vignette pas encore vérifiées ; voir le suivi.
+523	Garage du centre ou de l'hôtel
+524	La ZBE de Bilbao (Abando) n'interdit les voitures sans vignette que du lundi au vendredi, 07 h–20 h. Vous arrivez samedi et repartez dimanche : un garage central convient.
+525	Plage d'Itzurun et falaises de flysch
+526	Petit détour par la N-634 ; se garer à Zumaia et marcher 5 minutes jusqu'au sentier des falaises.
+527	Parking de la plage de Gaztetape (gratuit)
+528	Grand parking gratuit en zone blanche près de la plage, proche du centre. Autre option : parking payant du port, 1,20 €/h, gratuit les dimanches et jours fériés.
+529	Parking relais d'Illunbe (gratuit)
+530	494 places gratuites près du stade d'Anoeta, hors du centre où les voitures sans vignette sont interdites 24 h/24. Bus 28 depuis Begiristain 1 (10 minutes à pied). Autre option : P+R d'Igara, gratuit jusqu'à 24 h, bus 5 et 25.
+531	Parking Grande Plage (Indigo, souterrain)
+532	5 boulevard du Général de Gaulle, à 10 minutes à pied par le front de mer jusqu'au Rocher de la Vierge.
+533	Parking Clemenceau (souterrain)
+534	Sous la place Clemenceau, à une rue du boulevard des Pyrénées.
+535	Parkings de la Cité P1 (Porte Narbonnaise) ou P2 (Porte d'Aude)
+536	En journée, 1 € les 15 min pendant les 2 premières heures, puis 0,50 € les 45 min. Gratuit de 20 h à 8 h, idéal pour monter le soir aux remparts illuminés.
+537	Parking rive gauche
+538	D981, Vers-Pont-du-Gard. 9 € par voiture quelle que soit la durée ; ouvert toute l'année de 8 h à minuit. Paiement aux bornes ou par carte à la sortie.
+540	Marche parmi les chênes-lièges jusqu'à une vue vers Saint-Tropez à l'ouest et l'Estérel à l'est.
+542	Site classé avec vue sur le golfe de La Napoule.
+544	Montée de 5 minutes depuis un virage près de Miramar ; îles de Lérins et Alpes. Se garer entièrement hors de la chaussée ; les aires sont petites.
+545	Parking Hôtel de Ville (souterrain)
+546	23 rue de la République, au pied de la vieille ville. Ou le garage de votre hôtel.
+548	Gratuit du 1er novembre à fin mars (12 heures d'affilée). À deux pas de la citadelle et du port.
+550	Au pied du village, sur la Moyenne Corniche. 3,20 €/h de 6 h à 20 h, 15 premières minutes gratuites ; carte ou espèces.
+551	Le mieux placé pour le palais et la vieille ville du Rocher. Première heure gratuite, environ 7,30 € pour 2 heures, 24 € pour 24 heures. Mêmes tarifs le week-end.
+554	Points de vue sur le cap Ferrat et Èze sur le retour vers Menton.
+555	Pise
+556	Parking relais de Via Pietrasantina (gratuit)
+557	Parking gratuit hors des remparts avec navette vers la Piazza dei Miracoli (1 € aller-retour, environ 9 h–17 h en hiver). Plus près mais payant : Via Cammeo, derrière la place, 2 €/h. Ne jamais rouler à l'intérieur des remparts (ZTL).
+558	Parcheggio Carducci ou Palatucci
+559	Hors des remparts, sous vidéosurveillance, tarifs horaires plus bas et tickets à la journée ; entrer à pied par la porte la plus proche.
+560	Parkings au pied des remparts
+561	Se garer hors du village et entrer à pied. Vérifier les panneaux sur place.
+562	Aires au milieu des vignes entre Castellina et Greve
+563	Le plus beau tronçon de la Chiantigiana ; se garer entièrement sur les accotements gravillonnés uniquement.
+564	Parkings à l'entrée du bourg
+565	Se garer avant la place et entrer à pied.
+566	Parking de l'hôtel près de la gare
+567	Florence est interdite à la voiture ; Figline est une commune distincte avec des trains pour Firenze SMN.
+568	Train pour Firenze Santa Maria Novella
+569	Trains régionaux sur la ligne Florence–Arezzo ; horaires de jour férié le 26 déc.
+571	Sous la vieille ville, hors ZTL, avec un ascenseur gratuit jusqu'au centre.
+572	Se garer hors des vieux remparts et monter à pied.
+573	Sommet de la Bocca Trabaria (1 049 m)
+574	Aire au col ; bon arrêt photo avant la descente.
+575	Parkings publics numérotés (P1–P13)
+576	Fléchés en montant au mont Titano ; vérifier le parking de votre hôtel.
+577	Parkings en bordure du centre
+578	Se garer hors du centre aux canaux et entrer à pied. Vérifier les panneaux sur place.
+579	Hors de la commune de Venise ; vérifier qu'elle n'est pas sur la liste d'interdiction de la Vénétie avant de réserver.
+580	Train depuis Mogliano Veneto
+581	Environ 20 minutes jusqu'à Venezia Santa Lucia ; la voiture reste à l'hôtel.
+582	Parking près de la basilique
+583	Vérifier les panneaux sur place.
+585	Parking près du château / Grignano
+586	Places limitées près de l'entrée du château. Vérifier les panneaux sur place.
+587	Molo IV ou Silos
+588	Molo IV est sur le front de mer, le plus rapide pour la Piazza Unità. Silos, à côté de la gare, est à environ 10 minutes à pied.
+589	Garage de l'hôtel ou P+R Dolgi most
+590	La vieille ville est en grande partie piétonne. En arrivant de la côte, le P+R Dolgi most inclut deux tickets de bus urbain. Les zones de stationnement sur rue sont limitées à 30–120 minutes.
+591	Garage public Tuškanac, Langov trg ou Petrinjska
+592	Paiement à la sortie. Le paiement par SMS dans la rue exige une carte SIM croate ; les horodateurs acceptent les pièces. Les zones sont gratuites le dimanche.
+593	Garage public central près de Knez Mihailova, à pied jusqu'à Kalemegdan. Les zones de rue se paient par SMS (9111/9112/9113) et peuvent exiger une carte SIM serbe.
+594	Parking visiteurs de la forteresse
+595	À l'entrée des gorges. Vérifier les horaires d'hiver sur place.
+596	Parking du site
+597	Près du musée, au bord du fleuve.
+598	Points de vue du Mali Kazan
+599	Aires sur la route serbe face au passage le plus étroit des gorges ; le visage de Décébale est sculpté sur l'autre rive.
+600	Parking de l'hôtel
+601	Voir avec votre hôtel.
+602	Parkings du centre
+603	Courte pause déjeuner et carburant. Vérifier les panneaux sur place.
+604	Votre hôtel ou un garage
+605	Fin du voyage.
+606	ESPAGNE
+608	ITALIE
+609	SLOVÉNIE
+610	CROATIE
+611	BOSNIE-HERZ.
+612	SERBIE
+613	ROUMANIE
+614	HONGRIE
+615	SUISSE
+616	AUTRICHE
+617	BULGARIE
+618	Golfe de Gascogne
+619	Mer Méditerranée
+620	Mer Ligure
+621	Mer Adriatique
+622	Mer Tyrrhénienne
+623	Vatican
+624	Ukraine
+625	Turquie
+626	Suisse
+627	Slovaquie
+629	Monténégro
+630	Moldavie
+631	Macédoine
+633	Kosovo
+634	Hongrie
+635	Grèce
+636	Allemagne
+637	Tchéquie
+638	Bulgarie
+639	Autriche
+640	Andorre
+641	Albanie
+642	En évitant les autoroutes
+643	Le plus rapide, par l'autoroute
+644	Route locale
+645	Getaria, sur la côte basque
+648	Èze depuis la Grande Corniche
+649	Piazza dei Miracoli, Pise
+650	Vignes du Chianti
+651	Florence depuis le Piazzale Michelangelo
+652	Col de la Bocca Trabaria
+653	Pont du Rialto, Venise
+654	Château de Miramare, Trieste
+655	Ville haute, Zagreb
+656	La Save rejoint le Danube, Belgrade
+657	Gorges de Kazan, Danube
+658	Athénée roumain, Bucarest
+659	Corniche de l'Estérel (D559)
+661	Anghiari et Sansepolcro
+662	Ravenne, San Vitale
+664	Gorges du Danube et Kazan
+665	Barrage des Portes de Fer
+666	Rome
+667	Vienne
+668	Munich
+669	Milan
+670	Naples
+671	Turin
+672	Gênes
+673	Padoue
+675	Chișinău
+676	Berne
+677	Zurich
+678	Genève
+683	Centre-ville
+553	Col d'Èze et fort de la Revère

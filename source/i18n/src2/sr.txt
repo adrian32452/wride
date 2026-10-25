@@ -1,0 +1,425 @@
+685	Dan {0}–{1}; vožnja i zaustavljanja nacrtani su preko
+686	Dan
+687	Sumrak
+688	Mrak
+689	Panoramski put
+690	izlazak sunca {0} ({1}) · zalazak {2} ({3}) · mrak od {4}
+691	izlazak sunca {0} · zalazak {1} · mrak od {2}
+692	Ovog dana ruta je ista u svim režimima.
+693	Ruta za ovaj dan
+694	Ruta za ovaj dan:
+695	samo ovaj dan
+696	U poređenju sa uravnoteženim: {0} vožnje, poslednji dolazak u {1} umesto u {2}.
+697	izlazak sunca
+698	Stil rute
+699	{0} vožnje za 16 dana
+700	Mesta noćenja su ista u svim režimima. Izbor stila ovde poništava izbore po danima; svaki dan zatim možete promeniti na njegovoj kartici. Panoramski putevi planiraju se samo po dnevnom svetlu; pre izlaska sunca i posle mraka plan koristi autoputeve.
+701	Vaš izbor se čuva uz putnu knjigu, pa ga bilten vesti prati.
+702	Vaš izbor se čuva u ovom pregledaču.
+703	objavljeno {0}
+704	Otvori dan
+705	Nije pronađeno ništa što utiče na ovaj dan.
+706	Datum
+707	Min. / maks.
+708	Nebo
+709	Kiša / sneg
+710	Udari vetra
+711	Bilten vesti
+712	Biltena još nema. Dan ili dva ranije proveriće:
+713	Od 17. decembra Claude dva puta dnevno (oko 6.40 i 17.40 po srednjoevropskom vremenu) proverava vesti za narednih 1–2 dana vaše rute: zatvorene puteve i radove, štrajkove i proteste, ograničenja, gužve na granicama i vreme na putu.
+714	Bilteni su napisani na engleskom.
+715	Bilteni se prikazuju ovde kada se putna knjiga otvori u Claude-u.
+716	Učitavanje…
+717	Za naredne dane biltena još nema.
+718	Najbrži
+719	Uravnotežen
+720	Filmski
+721	Autoputevi gde god je moguće. Isto vreme polaska i ista zaustavljanja; stižete ranije.
+722	Panoramski putevi gde se isplate, autoput na dosadnim deonicama.
+723	Najlepši putevi otvoreni zimi, prilagođeni dnevnom svetlu. Do 1,5 h duže.
+724	Pre izlaska sunca
+725	Posle zalaska sunca
+726	U mraku
+727	Zlatni sat
+728	Nisko sunce spreda
+729	Panoramski put uz slabo svetlo
+730	Nije autoput, u mraku
+731	Zatvaranje
+732	Radovi
+733	Štrajk
+734	Protest
+735	Ograničenje
+736	Granica
+737	Vreme
+738	Događaj
+739	Gorivo
+740	Saobraćaj
+741	Ovog dana isto kao uravnoteženi režim.
+742	Prevoj Orduña, oko 900 m: dan ili dva ranije proverite sneg
+743	Sneg ili zatvaranja na prevoju Orduña (BU-556 / A-625)
+744	Vikend-pravila ZBE u Bilbau
+748	Srednjovekovni gradić na steni iznad doline Ebra; prolaz kolima.
+750	Vidikovac iznad vodopada od 222 m, kratka šetnja od parkinga; najviše vode ima u kišnoj sezoni.
+751	Prevoj Orduña
+752	N-623 / N-629 preko Onje
+753	Vidikovac Salto del Nervión
+754	BU-556 do prevoja Orduña
+755	Kratka šetnja od parkinga
+756	A-625 niz prevoj, zatim AP-68
+757	ZBE u Madridu
+758	Saobraćaj na A-1 i AP-68
+759	Radovi na AP-8 i A63
+760	ZBE u San Sebastijanu
+763	Jaizkibel u zlatni sat umesto zalaska sunca u Bijaricu
+764	Zatvaranja primorskih puteva BI-3438 / GI-638 i GI-3440
+769	Ribarska luka sa crkvom na molu i ostrvom do kog se za vreme oseke stiže peške.
+771	Grebenski put Jaizkibel
+772	GI-3440 grebenom iznad mora, sa vidikovcima prema Francuskoj; tempirano za kasnopopodnevno svetlo.
+774	Stari grad sa zidinama uz graničnu reku.
+775	BI-635 / BI-2238 preko Gernike
+776	Luka Lekeitio
+777	Put uz litice preko Ondarroe i Mutrikua (BI-3438 / GI-638)
+778	Getarija: ručak od ribe sa roštilja
+779	Šetnja uz La Konču
+780	Hondarribia preko grebena Jaizkibel
+781	Put Jaizkibel GI-3440, zaustavljanja na vidikovcima
+782	Stari grad Hondarribia
+783	Zatvaranja primorskog puta N-634
+784	Potpuno zaobilazi Tuluz i njegovu ZFE
+785	Zatvaranja D117 između Saint-Gironsa i Foa
+786	Štrajkovi ili nestašica goriva u Francuskoj
+789	Početak puta D117 kroz podnožje Ariježa, sa Pirinejima na jugu.
+790	Foa
+791	Zamak sa tri kule na steni iznad grada; ručak ispod njega.
+792	Mirpoa
+793	Srednjovekovni trg okružen drvenim arkadama.
+794	A64, zatim D117 u podnožje Ariježa
+795	D117 duž podnožja
+796	Foa: ručak ispod zamka
+797	Trg sa arkadama u Mirpoau
+798	Saobraćaj na A64 / A61
+799	U ovom režimu nema primorskog puta Estérel
+800	Saobraćaj i radovi na A9 / A8
+801	Uravnoteženi režim već uključuje primorski put Estérel; za više nema dnevnog svetla.
+802	Saobraćaj na A9 / A8
+803	Zatvaranja primorskog puta Estérel D559 (odroni, opasnost od požara)
+804	Zatvaranja primorskih puteva (Corniches)
+805	Događaji u Monaku
+806	Zatvaranja zbog odrona na putu SP530 do Portovenerea
+807	Radovi na A10 / A12
+811	Luka sa obojenim kućama i crkva San Pjetro na stenama na vrhu zaliva.
+812	A10 / A12, pauza usput
+813	Primorski put SP530
+814	Portovenere: ručak i crkva San Pjetro
+815	SP530, zatim A12
+816	Saobraćaj i radovi na A10 / A12
+817	Radno vreme 24. dec u Pizi
+818	Zatvaranja SR222
+819	Zatvoreno na katolički Božić
+820	Štrajkovi železnice u Toskani
+821	Radno vreme muzeja 26. dec
+822	U ovom režimu nema Boke Trabarije
+823	Radovi na E45 kod Verghereta: proverite unapred
+824	Radovi i zatvorene trake na E45 između Sansepolkra i Čezene
+828	E45 preko Sansepolkra i Čezene, A14, SS72
+829	Uravnoteženi režim već ide preko prevoja Bocca Trabaria.
+830	Sneg ili poledica na SS73bis Bocca Trabaria
+831	Italijanske naredbe o zimskoj opremi
+832	Zaobilazi Kjođu i SS309 Romea severno od Komakja
+833	Dani zabrane za dizele u Venetu i Emiliji-Romanji
+834	Saobraćaj na A13 / A4
+837	Brzi put Ferara–Mare, A13, A4
+838	Uravnoteženi režim već prati deltu Poa putem Romea.
+839	Zatvaranja ili magla na SS309 Romea
+840	Prognoza za acqua alta
+841	Štrajkovi železnice u Venetu
+842	Zatvaranja kraških puteva (bura)
+843	Slovenačka e-vinjeta
+845	Šetnja ivicom litice iznad Trsta, sa celim zalivom ispod vas.
+847	Kameno selo na kraškom brdu.
+848	Uspon do Opićine
+849	Šetnja vidikovcem Strada Napoleonica
+850	Pogled na Trst i zaliv
+851	Kraški putevi preko Sežane
+852	Selo Štanjel na brdu
+853	H4 kroz dolinu Vipave, zatim A1 (e-vinjeta)
+854	Saobraćaj na A4
+855	Zatvaranja za doček Nove godine u Samoboru
+856	Hrvatska zimska oprema
+857	Put do Samobora
+859	Gradić na ostrvu reke Krke.
+861	Trg u pastelnim bojama u podnožju brda; probajte kremšnitu.
+862	Kostanjevica na Krki, gradić na ostrvu
+863	Dolina Krke preko Brežica i Bregane
+864	Samobor: trg i kremšnita
+865	Saobraćaj na A2 / A3
+866	Zatvaranja za doček Nove godine u Zagrebu
+867	Granica Ilok–Bačka Palanka: proverite da li radi 1. jan
+868	Radno vreme i gužve na graničnom prelazu Ilok–Bačka Palanka
+869	Dunavska magla na D2 i državnom putu 12
+870	Državni put 12
+873	Ratom oštećen vodotoranj, sačuvan kao spomenik iznad Dunava.
+875	Vinski grad na uzvišenju iznad Dunava; granični most prema Srbiji.
+876	Petrovaradinska tvrđava
+877	Tvrđava iznad Dunava preko puta Novog Sada.
+878	A3 do Županje, zatim D55 / D2
+879	Vukovarski vodotoranj i Dunav
+880	1. jan: pogled spolja
+881	D2 duž Dunava
+882	Hrvatska → Srbija (Ilok–Bačka Palanka)
+883	Petrovaradinska tvrđava, Novi Sad
+884	Državni put 12 duž Dunava
+885	Pogled na Dunav i Novi Sad
+886	Osvetljeni Kalemegdan
+887	Gužve na granici Bajakovo–Batrovci
+888	Magla na A3
+889	Zatvaranja dunavskog puta
+890	Gužve na granici kod Đerdapa
+891	Praznično radno vreme 2. jan
+892	Zaustavljanja su neobavezna: ako želite, vozite bez stajanja
+893	Zatvaranja zbog klizišta na DN67
+894	Nedeljni povratni saobraćaj na DN7 / A1
+897	Brankušijev ansambl, Targu Žiu
+898	Beskrajni stub, Kapija poljupca i Sto tišine.
+899	Manastir Horezu
+900	Manastir u brankovenskom stilu sa liste UNESKO-a, u podnožju planina.
+901	Ramniku Valča
+902	Pitešti
+903	Brankušijev ansambl
+904	Beskrajni stub i Sto tišine
+905	DN67 ispod planina Căpățânii
+906	Saobraćaj na DN6 / A1
+907	Rumunska rovinietă
+908	Dolazak kasno posle podne, pre mraka.
+909	Dolazak uveče autoputem A63.
+910	Ovog dana nema vožnje.
+911	Oko {0} kašnjenja u odnosu na plan
+912	Oko {0} prednosti u odnosu na plan
+913	Prema planu
+914	sada
+915	planirano ovde
+916	do {0}
+917	procenjeni dolazak
+918	preostalo dnevnog svetla
+919	Između {0} i {1}
+920	oko {0} km od planirane rute
+921	tačnost oko {0} m
+922	Da biste panoramske puteve vozili po dnevnom svetlu, izbacite ili skratite: {0}.
+923	Ili na kartici dana prebacite ostatak dana na „Najbrži”.
+924	Inače biste u {0} stigli posle zalaska sunca: za taj deo uzmite autoput.
+925	Završili biste u mraku ({0}). Za poslednji deo koristite autoput i preskočite neobavezna zaustavljanja.
+926	Imate vremena na pretek: filmska verzija današnjeg dana staje ako sada prebacite.
+927	Imate vremena na pretek: polako uživajte u neobaveznom zaustavljanju ili stignite ranije.
+928	Da nadoknadite kašnjenje, skratite preostala neobavezna zaustavljanja: {0}.
+929	Ostatak dana je autoputem, pa je kasniji dolazak ili dolazak po mraku bezbedan.
+930	Ništa ne treba menjati. Samo nastavite.
+931	Za ponovno planiranje sa Claude-om kopirajte ovo u razgovor:
+932	Ovde ste
+933	Gde sam?
+934	Upoređuje vaš položaj sa planom dana: prednost ili kašnjenje, preostalo dnevno svetlo i šta izbaciti. Vaša lokacija ostaje na ovom uređaju.
+935	Van datuma putovanja izaberite dan da isprobate.
+936	Koristi moju lokaciju
+937	Stalno ažuriraj
+938	Dan
+939	Ili sam u
+940	Lokacija ovde nije dozvoljena. Dozvolite je za ovu stranicu ako telefon pita ili izaberite gde ste sa liste. Otvaranje putne knjige u Chrome-u ili Safariju obično to omogućava.
+941	Trenutno nije moguće dobiti vašu lokaciju. Pokušajte ponovo napolju ili izaberite gde ste sa liste.
+942	Traženje vašeg položaja…
+943	Vremena su preračunata od vašeg stvarnog polaska ({0} {1}).
+944	Sa ovim polaskom panoramski ili sporedni put pada u mrak. Proverite stanje da vidite šta izbaciti.
+945	Lokacija ovde nije dozvoljena. Dozvolite je za ovu stranicu ako telefon pita ili ispod izaberite gde ste. Otvaranje putne knjige u Chrome-u ili Safariju obično to omogućava.
+946	Trenutno nije moguće dobiti vašu lokaciju. Pokušajte ponovo napolju ili ispod izaberite gde ste.
+947	Stigli ste u {0}
+948	Danas nema vožnje; auto ostaje parkiran.
+949	Lokacija ne radi? Izaberite gde ste
+950	Izaberite gde ste
+951	Počni {0}. dan
+952	Pritisnite kada krenete. Očitava vašu lokaciju i vreme, preračunava dan od stvarnog polaska i upoređuje ga sa izlaskom i zalaskom sunca.
+953	{0} kasnije od plana
+954	{0} ranije od plana
+955	na vreme
+956	vaš položaj
+957	{0}. dan završen
+958	{0}. dan u toku
+959	Polazak u {0} iz mesta {1}, {2}.
+960	Dolazak u {0}.
+961	Proveri stanje
+962	Proveri na svakih 30 min
+963	Poništi ovaj dan
+964	panoramski put se sada završava posle zalaska sunca.
+965	završili biste u mraku.
+966	sada {0} kašnjenja.
+967	sada {0} prednosti.
+968	Pogledajte šta promeniti
+969	sa ovim polaskom panoramski ili sporedni put pada u mrak.
+970	Oko {0} km ste od mesta {1}. Polazite odnekud drugde?
+971	Da, kreni odavde
+972	Ne, u mestu sam {0}
+973	Lokacija
+974	Ručno
+975	Automatski, na svakih {0} min
+976	panoramski put posle zalaska sunca
+977	staje ako preskočite neobavezna zaustavljanja
+978	završava se u mraku
+979	staje
+980	Mogućnosti odavde
+981	Ruta
+982	Preostala vožnja
+983	Dolazak
+984	Bez neobaveznih zaustavljanja
+985	u odnosu na trenutnu
+986	trenutna
+987	priključuje se ruti za oko {0} km
+988	Prebaci na {0}
+989	Ovaj prikaz putne knjige ne može da očita lokaciju telefona. Ispod dodirnite gde ste ili nalepite lokaciju.
+990	Trenutno nije moguće dobiti vašu lokaciju. Pokušajte ponovo napolju ili ispod dodirnite gde ste.
+991	U mestu sam
+992	ili nalepite lokaciju
+993	Koristi
+994	Nalepite koordinate (u Google Maps pritisnite i držite svoju plavu tačku i kopirajte brojeve) ili link lokacije iz Waze-a.
+995	Dodirnite „Počni” za polazak sada iz mesta {0} ili ispod izaberite gde ste da krenete odatle.
+996	Provera:
+997	dodirnite gde ste ili nalepite lokaciju.
+998	To ne liči na lokaciju na ovoj ruti. Nalepite koordinate poput 43.2955, -2.2565 ili link lokacije iz Waze-a.
+999	Pritisnite kada krenete. Beleži vreme, preračunava dan od stvarnog polaska i upoređuje ga sa izlaskom i zalaskom sunca.
+1000	Uobičajeno za ove datume
+1001	kiša oko {0} od 10 dana
+1002	Približni višegodišnji proseci; od 9. decembra zamenjuje ih prava prognoza.
+1003	Probna prognoza
+1004	Prognoza
+1005	za {0}, ne za datum putovanja
+1006	Na svakoj vožnji
+1007	Nebo pri zalasku sunca:
+1008	Vreme savetuje: {0}
+1009	Mraz gotovo svakog jutra
+1010	Česta magla
+1011	Mogući sneg ili poledica
+1012	Mogući udari bure
+1013	Atlantska kiša i vetar
+1014	Moguća acqua alta
+1015	Moguć jak vetar Cers
+1016	polazak
+1017	vidikovac
+1018	noćenje
+1019	Visoravan uz A-1, Aranda–Burgos
+1020	A1 preko Krasa (Razdrto)
+1021	A10 uz ligursku obalu, Savona–Đenova
+1022	A13 Ferara–Padova
+1023	A2 dolinom Krke
+1024	A3 kroz Slavoniju
+1025	A4 / RA13, zaobilazeći obalni put
+1026	A61, Lauragais (Castelnaudary)
+1027	A9, Narbon–Monpelje
+1028	AP-8 kroz unutrašnjost
+1029	Nazad u Figline autoputem A1 umesto SP16 preko brda
+1030	Nazad u Menton uz more umesto Grande Corniche
+1031	Uravnotežena ruta tog dana već koristi najbezbednije puteve.
+1032	Mećave (viscol) mogu zatvoriti puteve u ravnici; CNAIR objavljuje zatvaranja.
+1033	Čisto
+1034	Put iznad litica, zatvoren zbog odrona posle jake kiše.
+1035	Put iznad litica; odroni i zatvaranja pri jakoj kiši, prskanje talasa u nevremenu. Bezbedna ruta ostaje na A8.
+1036	Litice i tuneli uz reku: odroni posle kiše ili otopljavanja, led u senci.
+1037	D117 u podnožju Pirineja u Arježu
+1038	DN67 ispod planina
+1039	Dunavski put kroz Đerdapsku klisuru
+1040	E45 preko Apenina (Verghereto)
+1041	Svaka rizična deonica dana (prevoji, putevi iznad litica, maglovite ravnice, koridori bure i mistrala) proverava se za vreme kada biste tuda prolazili.
+1042	Izložen grebenski put; po magli nema smisla.
+1043	Izloženi vijadukti; Ligurija izdaje upozorenja na jaku kišu (allerta rossa) koja zatvaraju puteve.
+1044	Magla u celoj Padskoj niziji, ali na autoputu.
+1045	Magla toliko gusta da se kroz nju vozi dugim deonicama, ili udari jači od oko 70 km/h na izloženom putu: izaberite bezbednu rutu.
+1046	Put u podnožju, zaleđen u senci u hladnim jutrima.
+1047	Za loše vreme: niski putevi i autoputevi, bez prevoja, puteva iznad litica ili maglovitih sporednih puteva. Isti gradovi za noćenje.
+1048	Ledena magla je česta na visoravni u decembarskim jutrima.
+1049	Posoljen regionalni put, ali zaleđen u senci u hladno božićno jutro.
+1050	Jaka kiša na putevima iznad litica sa odronima ili zvanično crveno upozorenje: izaberite bezbednu rutu ili sačekajte ako upozorenje važi za sve puteve.
+1051	Visok obalni put, često u oblacima. Bezbedna ruta se vraća uz more.
+1052	Najviša tačka celog putovanja. A-1 se čisti prvi, ali pri jakom snegu kamioni se zadržavaju i mogu se tražiti lanci.
+1053	Kako vremenska provera odlučuje kada uzeti bezbednu rutu
+1054	Ako je loše na svim putevima, krenite kasnije ili sačekajte ralice; dodatna noć je poslednja mogućnost.
+1055	Ako je A-1 zatvoren: A-6 / AP-6 kroz tunele Guadarrama i A-62 preko Valjadolida do Burgosa, oko 1 h duže. Ako su zatvorena oba, sačekajte u Madridu.
+1056	Ako je pogođena i bezbedna ruta: krenite kasnije, sačekajte ralice ili da se magla digne, ili kao poslednju mogućnost dodajte noć. Gradovi za noćenje nikada se ne menjaju bez vas.
+1057	Ako je put kroz klisuru zatvoren: A1 na jug do Paraćina, zatim preko Zaječara i Negotina do prelaza Đerdap: oko 335 km, 1–2 h duže. Proverite tu rutu pre polaska.
+1058	Pri jakoj buri sačekajte u Trstu da udari oslabe.
+1059	Pri jakom snegu nema niskog puta do San Marina: sačekajte ralice
+1060	Klizišta i zaleđene krivine. Bezbedna ruta ostaje u ravnici.
+1061	Krenite sat kasnije da sunce otopi led.
+1062	Krenite kasnije, kad se magla digne (često kasno pre podne).
+1063	Krenite kasnije, kad se magla digne.
+1064	Krenite kasnije; plan ionako počinje u 10:30.
+1065	Dug ravan autoput sa gustim pojasevima magle.
+1066	Niži od Bocca Trabarije i posoljen, ali i dalje prelaz preko Apenina.
+1067	M6098 uz more
+1068	Menton preko Basse Corniche
+1069	Sporedni put preko brda, po mraku ako se ručak oduži. Bezbedna ruta se vraća na A1.
+1070	Sporedni planinski put; bezbedna ruta ostaje na autoputu AP-68 kroz nižu dolinu Ebra.
+1071	Bez Miramarea: obalni put prima punu snagu bure
+1072	Udari mistrala u delti Rone.
+1073	Autoputevi umesto SS309 Romea: magla na putu sa razdvojenim kolovozima, bez vozila iz suprotnog smera
+1074	Planinski prevoj, krajem decembra često pod snegom; zimska oprema obavezna.
+1075	N-634, put iznad litica Zumaia–Getaria
+1076	Bez Bocca Trabarije: E45 je niži i posoljen, ali ipak prelazi Apenine
+1077	Bez obalnog puta Estérel: D559 je u nevremenu izložen vetru i odronima
+1078	Nijedna na ovoj ruti.
+1079	Poznat po magli i čeonim sudarima. Bezbedna ruta ide autoputevima.
+1080	Pri crvenom upozorenju krenite kasnije ili sačekajte da se ukine.
+1081	Mogućnosti: krenuti kasnije, sačekati ralice ili da se magla digne, ili kao poslednju mogućnost dodati noć.
+1082	Prelaz preko Rone kod Arla
+1083	Rečna magla. Bezbedna ruta ostaje na autoputu A3.
+1084	Rocher de la Vierge, sa bezbedne udaljenosti
+1085	SP16 preko brda, Greve–Figline
+1086	SP530 do Portovenerea
+1087	SR222, greben Kjantija
+1088	SR222 na sever, zatim A1 Firenze Impruneta → Incisa
+1089	SS309 Romea, Comacchio–Chioggia
+1090	SS309 Romea, Ravena–Comacchio
+1091	Najbezbedniji
+1092	Usporite na 80 km/h; nema druge mogućnosti.
+1093	Usporite; nema druge mogućnosti.
+1094	Sneg koji pada ili se zadržava, ledena kiša ili led na prevoju ili sporednom putu: izaberite bezbednu rutu.
+1095	Prognoze snega su pouzdane oko 2–3 dana unapred, a maglu je teško prognozirati, pa se konačna odluka donosi veče pre i istog jutra.
+1096	Prevoj Somosierra (A-1)
+1097	Južna ravnica, Krajova–Pitešti–Bukurešt
+1098	Olujni talasi i udari vetra udaraju obalni put; bezbedna ruta koristi AP-8 kroz unutrašnjost.
+1099	Jak bočni vetar (Cers, Autan) duva preko autoputa; usporite.
+1100	Uzmite bezbednu
+1101	Prima punu snagu bure. Bezbedna ruta ga zaobilazi.
+1102	Bezbedna ruta zaobilazi: {0}.
+1103	Bura može zatvoriti ovu deonicu za laka vozila; DARS objavljuje ograničenja zbog vetra.
+1104	Prvi put koji se zatvara pri jakoj buri.
+1105	Udari tramontane na obalnom autoputu.
+1106	Obalni put kod Trsta (SS14)
+1107	Dvotračni put sa kamionima; u delti je magla česta.
+1108	Magla u dolini i poledica u hladnim jutrima.
+1109	Brzi put kroz dolinu Vipave (H4)
+1110	Oprez
+1111	Vremenska provera: na vašoj ruti sve je čisto
+1112	Vremenska provera: budite oprezni
+1113	Vremenska provera: u planirano vreme nema bezbednog puta
+1114	Vremenska provera: uzmite bezbednu rutu
+1115	Tačke za praćenje na vašoj ruti ({0})
+1116	Bez litica Zumaje i Getarije: olujni talasi i udari vetra udaraju obalni put
+1117	magla
+1118	jaka kiša
+1119	led
+1120	odroni
+1121	sneg
+1122	olujni talasi
+1123	test
+1124	vetar
+1125	Vremenska provera danas savetuje bezbednu rutu; pogledajte opciju „Najbezbedniji” ispod.
+1126	{0} tog dana koristi iste puteve kao Uravnotežen.
+1127	Polazak u 11:30. Ako automobil nije registrovan u Madridu, krenite izvan granica grada.
+1128	Dolazak oko 18:15, poslednjih 40 minuta po mraku autoputem. Osvetljeni Guggenheim spolja (poslednji ulaz 18:30), zatim pintxos u Casco Viejo metroom.
+1129	Osvetljeni Guggenheim i pintxos u Casco Viejo
+1130	Ne uz polazak u 11:30: za Frías i vodopad potrebna je dnevna svetlost.
+1131	Poslednji ulaz u muzej u 18:30
+1132	Zabeleži lokaciju
+1133	Još nije počelo: beleženje ujedno započinje dan od mesta gde ste.
+1134	Na putu od {0}.
+1135	Lokacija je blokirana u aplikaciji Claude. Za pravi GPS otvorite aplikaciju sa početnog ekrana ili izaberite gde ste:
+1136	Zabeleži moju lokaciju sada
+1137	Pogledaj detalje za dan {0}
+1138	Lokacija zabeležena u {0}.
+1139	Dozvola za lokaciju je isključena za ovu aplikaciju. Na telefonu: dugo pritisnite ikonu W123 Run → Informacije o aplikaciji → Dozvole → Lokacija → Dozvoli (u Chrome-u: ⋮ → Podešavanja → Podešavanja sajta → Lokacija). Zatim ponovo dodirnite dugme.
+1140	Otvori aplikaciju sa početnog ekrana

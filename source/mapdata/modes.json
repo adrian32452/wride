@@ -1,0 +1,2589 @@
+{
+ "1": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "same": true,
+   "why": "Not with an 11:30 start: Frías and the waterfall need daylight."
+  },
+  "safe": {
+   "same": true,
+   "why": "Balanced already uses the safest roads on this day."
+  },
+  "hot": [
+   {
+    "id": "somosierra",
+    "n": "Somosierra pass (A-1)",
+    "lat": 41.135,
+    "lon": -3.58,
+    "risks": [
+     "snow",
+     "ice",
+     "fog",
+     "wind"
+    ],
+    "on": [
+     "bal",
+     "cine"
+    ],
+    "leg": {
+     "bal": "Burgos",
+     "cine": "Burgos"
+    },
+    "yr": "Somosierra",
+    "note": "Highest point of the whole trip. The A-1 is ploughed first, but in heavy snow lorries are held and chains can be required.",
+    "alt": "If the A-1 is closed: A-6 / AP-6 through the Guadarrama tunnels and the A-62 via Valladolid to Burgos, about 1 h longer. If both are closed, wait in Madrid.",
+    "elev": 1444
+   },
+   {
+    "id": "a1-plateau",
+    "n": "A-1 plateau, Aranda–Burgos",
+    "lat": 41.85,
+    "lon": -3.7,
+    "risks": [
+     "fog",
+     "ice"
+    ],
+    "on": [
+     "bal",
+     "cine",
+     "safe"
+    ],
+    "leg": {
+     "bal": "Burgos",
+     "cine": "Burgos"
+    },
+    "yr": "Lerma",
+    "note": "Freezing fog is common on the high plateau on December mornings.",
+    "alt": "Leave later, once the fog lifts.",
+    "elev": null
+   },
+   {
+    "id": "orduna",
+    "n": "Orduña pass",
+    "lat": 42.994,
+    "lon": -3.009,
+    "risks": [
+     "snow",
+     "ice",
+     "fog"
+    ],
+    "on": [
+     "cine"
+    ],
+    "leg": {
+     "cine": "Salto del Nervión"
+    },
+    "yr": "Orduña",
+    "note": "Minor mountain road; the Safe route stays on the AP-68 motorway through the lower Ebro valley.",
+    "alt": "",
+    "elev": 900
+   }
+  ],
+  "bal": {
+   "check": [
+    "Madrid ZBE",
+    "A-1 and AP-68 traffic",
+    "Bilbao ZBE weekend rules"
+   ]
+  }
+ },
+ "2": {
+  "fast": {
+   "stops": [
+    "Bilbao",
+    "Getaria",
+    "San Sebastián",
+    "Biarritz"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Zumaia",
+     70,
+     60,
+     "AP-8",
+     "mw"
+    ],
+    [
+     "stop",
+     "Itzurun flysch cliffs",
+     45,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Getaria",
+     12,
+     20,
+     "N-634",
+     "main"
+    ],
+    [
+     "stop",
+     "Getaria harbour",
+     60,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "San Sebastián (Illunbe P+R)",
+     30,
+     35,
+     "N-634 / AP-8",
+     "mw"
+    ],
+    [
+     "stop",
+     "La Concha + pintxos lunch",
+     150,
+     "O",
+     "Bus 28 into town"
+    ],
+    [
+     "drive",
+     "Biarritz",
+     50,
+     50,
+     "AP-8 / A63",
+     "mw"
+    ],
+    [
+     "stop",
+     "Rocher de la Vierge at sunset",
+     60,
+     "M",
+     ""
+    ]
+   ],
+   "roads": [
+    [
+     "ES-AP",
+     "AP-8"
+    ],
+    [
+     "ES-N",
+     "N-634"
+    ],
+    [
+     "FR-A",
+     "A63"
+    ]
+   ],
+   "flags": [
+    "AP-8 toll"
+   ],
+   "check": [
+    "AP-8 and A63 roadworks",
+    "San Sebastián ZBE"
+   ]
+  },
+  "cine": {
+   "stops": [
+    "Bilbao",
+    {
+     "n": "Lekeitio",
+     "lat": 43.3633,
+     "lon": -2.505,
+     "t": "stop",
+     "note": "Fishing harbour with a church on the quay and an island you can walk to at low tide.",
+     "w": "Lekeitio",
+     "m": "sc"
+    },
+    {
+     "n": "Mutriku",
+     "lat": 43.3076,
+     "lon": -2.3848,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "sc"
+    },
+    "Getaria|sc",
+    "San Sebastián|sc",
+    {
+     "n": "Jaizkibel ridge road",
+     "lat": 43.348,
+     "lon": -1.858,
+     "t": "road",
+     "note": "GI-3440 along the ridge above the sea, with viewpoints towards France; timed for the late-afternoon light.",
+     "w": "Jaizkibel",
+     "m": "sc"
+    },
+    {
+     "n": "Hondarribia",
+     "lat": 43.3684,
+     "lon": -1.7958,
+     "t": "stop",
+     "note": "Walled old town on the border river.",
+     "w": "Hondarribia",
+     "m": "sc"
+    },
+    "Biarritz"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Lekeitio",
+     60,
+     70,
+     "BI-635 / BI-2238 via Gernika",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Lekeitio harbour",
+     20,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Zumaia",
+     45,
+     65,
+     "Cliff road via Ondarroa and Mutriku (BI-3438 / GI-638)",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Itzurun flysch cliffs",
+     30,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Getaria",
+     12,
+     20,
+     "N-634",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Getaria: grilled-fish lunch",
+     90,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "San Sebastián (Illunbe P+R)",
+     30,
+     40,
+     "N-634 / GI-20",
+     "main"
+    ],
+    [
+     "stop",
+     "La Concha walk",
+     60,
+     "O",
+     "Bus 28 into town"
+    ],
+    [
+     "drive",
+     "Hondarribia via the Jaizkibel ridge",
+     30,
+     55,
+     "GI-3440 Jaizkibel road, viewpoint stops",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Hondarribia old town",
+     30,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Biarritz",
+     35,
+     40,
+     "A63",
+     "mw"
+    ]
+   ],
+   "notes": {
+    "Biarritz": "Evening arrival on the A63."
+   },
+   "roads": [
+    [
+     "ES-N",
+     "BI-2238"
+    ],
+    [
+     "ES-N",
+     "GI-638"
+    ],
+    [
+     "ES-N",
+     "N-634"
+    ],
+    [
+     "ES-N",
+     "GI-3440"
+    ],
+    [
+     "FR-A",
+     "A63"
+    ]
+   ],
+   "flags": [
+    "San Sebastián ZBE: unlabelled cars banned 24/7",
+    "Jaizkibel at golden hour replaces the Biarritz sunset"
+   ],
+   "check": [
+    "Coast roads BI-3438 / GI-638 and GI-3440 closures",
+    "San Sebastián ZBE"
+   ]
+  },
+  "safe": {
+   "stops": [
+    "Bilbao",
+    "San Sebastián",
+    "Biarritz"
+   ],
+   "steps": [
+    [
+     "drive",
+     "San Sebastián (Illunbe P+R)",
+     100,
+     80,
+     "AP-8 inland",
+     "mw"
+    ],
+    [
+     "stop",
+     "La Concha + pintxos lunch",
+     150,
+     "O",
+     "Bus 28 into town"
+    ],
+    [
+     "drive",
+     "Biarritz",
+     50,
+     50,
+     "AP-8 / A63",
+     "mw"
+    ],
+    [
+     "stop",
+     "Rocher de la Vierge, from a safe distance",
+     45,
+     "M",
+     ""
+    ]
+   ],
+   "roads": [
+    [
+     "ES-AP",
+     "AP-8"
+    ],
+    [
+     "FR-A",
+     "A63"
+    ]
+   ],
+   "flags": [
+    "Zumaia cliffs and Getaria skipped: storm waves and gusts hit the coast road",
+    "San Sebastián ZBE: unlabelled cars banned 24/7"
+   ]
+  },
+  "hot": [
+   {
+    "id": "n634",
+    "n": "N-634 cliff road, Zumaia–Getaria",
+    "lat": 43.3,
+    "lon": -2.22,
+    "risks": [
+     "wind",
+     "rain",
+     "waves"
+    ],
+    "on": [
+     "bal",
+     "cine",
+     "fast"
+    ],
+    "leg": {
+     "bal": "Zumaia",
+     "cine": "Zumaia",
+     "fast": "Getaria"
+    },
+    "yr": "Zumaia",
+    "note": "Storm waves and gusts hit the coast road; the Safe route uses the AP-8 inland.",
+    "alt": "",
+    "elev": null
+   },
+   {
+    "id": "jaizkibel",
+    "n": "Jaizkibel ridge road",
+    "lat": 43.348,
+    "lon": -1.858,
+    "risks": [
+     "wind",
+     "fog"
+    ],
+    "on": [
+     "cine"
+    ],
+    "leg": {
+     "cine": "Hondarribia"
+    },
+    "yr": "Hondarribia",
+    "note": "Exposed ridge road; pointless in fog.",
+    "alt": "",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "N-634 coast road closures",
+    "San Sebastián ZBE"
+   ]
+  }
+ },
+ "3": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "stops": [
+    "Biarritz",
+    "Pau, Boulevard des Pyrénées",
+    {
+     "n": "Saint-Gaudens",
+     "lat": 43.108,
+     "lon": 0.723,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    {
+     "n": "Saint-Girons",
+     "lat": 42.985,
+     "lon": 1.146,
+     "t": "road",
+     "note": "Start of the D117 through the Ariège foothills, with the Pyrenees to the south.",
+     "w": "Saint-Girons,_Ariège",
+     "m": "sc"
+    },
+    {
+     "n": "Foix",
+     "lat": 42.9653,
+     "lon": 1.607,
+     "t": "stop",
+     "note": "Three-towered castle on a rock above the town; lunch below it.",
+     "w": "Foix",
+     "m": "sc"
+    },
+    {
+     "n": "Mirepoix",
+     "lat": 43.0878,
+     "lon": 1.8747,
+     "t": "stop",
+     "note": "Medieval square ringed by timber arcades.",
+     "w": "Mirepoix,_Ariège",
+     "m": "sc"
+    },
+    "Carcassonne"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Pau",
+     115,
+     90,
+     "A63 / A64",
+     "mw"
+    ],
+    [
+     "stop",
+     "Boulevard des Pyrénées",
+     60,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Saint-Girons",
+     155,
+     130,
+     "A64, then D117 into the Ariège foothills",
+     "main"
+    ],
+    [
+     "drive",
+     "Foix",
+     45,
+     50,
+     "D117 along the foothills",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Foix: lunch below the castle",
+     60,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Mirepoix",
+     35,
+     40,
+     "D119",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Mirepoix arcaded square",
+     20,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Carcassonne",
+     55,
+     55,
+     "D119 / D6113",
+     "main"
+    ],
+    [
+     "stop",
+     "Floodlit Cité walk",
+     120,
+     "M",
+     "Evening, P1/P2 free after 20:00"
+    ]
+   ],
+   "roads": [
+    [
+     "FR-A",
+     "A64"
+    ],
+    [
+     "FR-D",
+     "D117"
+    ],
+    [
+     "FR-D",
+     "D119"
+    ]
+   ],
+   "flags": [
+    "Avoids Toulouse and its ZFE entirely"
+   ],
+   "check": [
+    "D117 Saint-Girons–Foix closures",
+    "French strikes or fuel shortages"
+   ]
+  },
+  "safe": {
+   "same": true,
+   "why": "Balanced already uses the safest roads on this day."
+  },
+  "hot": [
+   {
+    "id": "lauragais",
+    "n": "A61, Lauragais (Castelnaudary)",
+    "lat": 43.32,
+    "lon": 1.95,
+    "risks": [
+     "wind"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Carcassonne"
+    },
+    "yr": "Castelnaudary",
+    "note": "Strong cross-winds (Cers, Autan) blow across the motorway; slow down.",
+    "alt": "Slow down to 80 km/h; nothing to switch to.",
+    "elev": null
+   },
+   {
+    "id": "d117",
+    "n": "D117 Ariège foothills",
+    "lat": 42.98,
+    "lon": 1.4,
+    "risks": [
+     "snow",
+     "ice"
+    ],
+    "on": [
+     "cine"
+    ],
+    "leg": {
+     "cine": "Foix"
+    },
+    "yr": "Saint-Girons",
+    "note": "Foothill road, icy in the shade on cold mornings.",
+    "alt": "",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "A64 / A61 traffic",
+    "French strikes or fuel shortages"
+   ]
+  }
+ },
+ "4": {
+  "fast": {
+   "stops": [
+    "Carcassonne",
+    "Pont du Gard",
+    "Menton"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Pont du Gard",
+     225,
+     165,
+     "A61 / A9",
+     "mw"
+    ],
+    [
+     "stop",
+     "Pont du Gard",
+     45,
+     "O",
+     "€9 car park"
+    ],
+    [
+     "drive",
+     "Menton",
+     305,
+     250,
+     "A9 / A8, lunch break on the way",
+     "mw"
+    ]
+   ],
+   "roads": [
+    [
+     "FR-A",
+     "A61"
+    ],
+    [
+     "FR-A",
+     "A9"
+    ],
+    [
+     "FR-A",
+     "A8"
+    ]
+   ],
+   "flags": [
+    "No Estérel corniche in this mode",
+    "Stay on the motorway past Montpellier and Marseille (ZFE)"
+   ],
+   "check": [
+    "A9 / A8 traffic and roadworks",
+    "French strikes or fuel shortages"
+   ]
+  },
+  "cine": {
+   "same": true,
+   "why": "Balanced already includes the Estérel corniche; there is no daylight left for more."
+  },
+  "safe": {
+   "stops": [
+    "Carcassonne",
+    "Pont du Gard",
+    "Menton"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Pont du Gard",
+     225,
+     165,
+     "A61 / A9",
+     "mw"
+    ],
+    [
+     "stop",
+     "Pont du Gard",
+     45,
+     "O",
+     "€9 car park"
+    ],
+    [
+     "drive",
+     "Menton",
+     305,
+     250,
+     "A9 / A8, lunch break on the way",
+     "mw"
+    ]
+   ],
+   "roads": [
+    [
+     "FR-A",
+     "A61"
+    ],
+    [
+     "FR-A",
+     "A9"
+    ],
+    [
+     "FR-A",
+     "A8"
+    ]
+   ],
+   "flags": [
+    "No Estérel corniche: the D559 is exposed to wind and rockfall in storms",
+    "Stay on the motorway past Montpellier and Marseille (ZFE)"
+   ],
+   "check": [
+    "A9 / A8 traffic and roadworks",
+    "French strikes or fuel shortages"
+   ]
+  },
+  "hot": [
+   {
+    "id": "a9",
+    "n": "A9, Narbonne–Montpellier",
+    "lat": 43.25,
+    "lon": 3.2,
+    "risks": [
+     "wind"
+    ],
+    "on": [
+     "bal",
+     "fast",
+     "safe"
+    ],
+    "leg": {
+     "bal": "Pont du Gard",
+     "fast": "Pont du Gard"
+    },
+    "yr": "Narbonne",
+    "note": "Tramontane gusts along the coast motorway.",
+    "alt": "Slow down; nothing to switch to.",
+    "elev": null
+   },
+   {
+    "id": "rhone",
+    "n": "Rhône crossing near Arles",
+    "lat": 43.68,
+    "lon": 4.63,
+    "risks": [
+     "wind"
+    ],
+    "on": [
+     "bal",
+     "fast",
+     "safe"
+    ],
+    "leg": {
+     "bal": "Saint-Raphaël",
+     "fast": "Menton"
+    },
+    "yr": "Arles",
+    "note": "Mistral gusts on the Rhône delta.",
+    "alt": "Slow down; nothing to switch to.",
+    "elev": null
+   },
+   {
+    "id": "esterel",
+    "n": "Estérel corniche (D559)",
+    "lat": 43.47,
+    "lon": 6.9,
+    "risks": [
+     "wind",
+     "rain",
+     "rock"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Théoule-sur-Mer"
+    },
+    "yr": "Théoule-sur-Mer",
+    "note": "Cliff road; rockfall and closures in heavy rain, spray in storms. Safe stays on the A8.",
+    "alt": "",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "A9 / A8 traffic",
+    "D559 Estérel corniche closures (rockfall, fire risk)"
+   ]
+  }
+ },
+ "5": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "same": true
+  },
+  "safe": {
+   "stops": [
+    "Villefranche-sur-Mer",
+    "Èze",
+    "Monaco",
+    "Menton"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Villefranche-sur-Mer",
+     25,
+     40,
+     "Basse Corniche",
+     "main"
+    ],
+    [
+     "stop",
+     "Villefranche harbour and citadel",
+     75,
+     "O",
+     "Free parking Nov–Mar"
+    ],
+    [
+     "drive",
+     "Èze",
+     10,
+     20,
+     "Moyenne Corniche",
+     "main"
+    ],
+    [
+     "stop",
+     "Èze village + lunch",
+     90,
+     "M",
+     ""
+    ],
+    [
+     "drive",
+     "Monaco",
+     10,
+     25,
+     "M6007",
+     "main"
+    ],
+    [
+     "stop",
+     "Monaco Rock and harbour",
+     120,
+     "M",
+     "Parking des Pêcheurs"
+    ],
+    [
+     "drive",
+     "Menton along the Basse Corniche",
+     12,
+     30,
+     "M6098 by the sea",
+     "main"
+    ]
+   ],
+   "roads": [
+    [
+     "FR-M",
+     "Basse Corniche"
+    ],
+    [
+     "FR-M",
+     "M6007"
+    ],
+    [
+     "FR-M",
+     "M6098"
+    ]
+   ],
+   "flags": [
+    "Back to Menton along the sea instead of the Grande Corniche"
+   ]
+  },
+  "hot": [
+   {
+    "id": "gcorniche",
+    "n": "Grande Corniche",
+    "lat": 43.73,
+    "lon": 7.4,
+    "risks": [
+     "fog",
+     "ice",
+     "wind"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Menton via the Grande Corniche"
+    },
+    "yr": "La Turbie",
+    "note": "High corniche road; often in cloud. Safe returns along the sea.",
+    "alt": "",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "Corniche road closures",
+    "Events in Monaco"
+   ]
+  }
+ },
+ "6": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "stops": [
+    "Menton",
+    {
+     "n": "La Spezia",
+     "lat": 44.11,
+     "lon": 9.83,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    {
+     "n": "Portovenere",
+     "lat": 44.0505,
+     "lon": 9.8357,
+     "t": "stop",
+     "note": "Painted harbour and the San Pietro church on the rocks at the tip of the gulf.",
+     "w": "Porto_Venere",
+     "m": "sc"
+    },
+    "Pisa, Piazza dei Miracoli",
+    "Lucca"
+   ],
+   "steps": [
+    [
+     "drive",
+     "La Spezia",
+     225,
+     200,
+     "A10 / A12, break on the way",
+     "mw"
+    ],
+    [
+     "drive",
+     "Portovenere",
+     13,
+     30,
+     "SP530 coast road",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Portovenere: lunch and San Pietro church",
+     60,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Pisa (Via Pietrasantina P+R)",
+     90,
+     90,
+     "SP530, then A12",
+     "main"
+    ],
+    [
+     "stop",
+     "Piazza dei Miracoli",
+     90,
+     "M",
+     "Shuttle from the P+R"
+    ],
+    [
+     "drive",
+     "Lucca",
+     25,
+     30,
+     "A11",
+     "mw"
+    ],
+    [
+     "stop",
+     "Evening on the city walls",
+     60,
+     "O",
+     ""
+    ]
+   ],
+   "roads": [
+    [
+     "IT-A",
+     "A10"
+    ],
+    [
+     "IT-A",
+     "A12"
+    ],
+    [
+     "IT-SP",
+     "SP530"
+    ],
+    [
+     "IT-A",
+     "A11"
+    ]
+   ],
+   "flags": [
+    "24 Dec: early closing; book Christmas Eve dinner",
+    "Pisa and Lucca ZTL: park outside the walls"
+   ],
+   "check": [
+    "SP530 Portovenere road rockfall closures",
+    "A10 / A12 roadworks"
+   ]
+  },
+  "safe": {
+   "same": true,
+   "why": "Balanced already uses the safest roads on this day."
+  },
+  "hot": [
+   {
+    "id": "liguria",
+    "n": "A10 Ligurian coast, Savona–Genoa",
+    "lat": 44.31,
+    "lon": 8.48,
+    "risks": [
+     "rain",
+     "wind"
+    ],
+    "on": [
+     "bal",
+     "cine"
+    ],
+    "leg": {
+     "bal": "Pisa",
+     "cine": "La Spezia"
+    },
+    "yr": "Savona",
+    "note": "Exposed viaducts; Liguria issues heavy-rain alerts (allerta rossa) that close roads.",
+    "alt": "On a red alert, leave later or wait until it is lifted.",
+    "elev": null
+   },
+   {
+    "id": "sp530",
+    "n": "SP530 to Portovenere",
+    "lat": 44.06,
+    "lon": 9.84,
+    "risks": [
+     "rain",
+     "rock"
+    ],
+    "on": [
+     "cine"
+    ],
+    "leg": {
+     "cine": "Portovenere"
+    },
+    "yr": "Portovenere",
+    "note": "Cliff road with rockfall closures after heavy rain.",
+    "alt": "",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "A10 / A12 traffic and roadworks",
+    "24 Dec opening hours in Pisa"
+   ]
+  }
+ },
+ "7": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "same": true
+  },
+  "safe": {
+   "stops": [
+    "Lucca",
+    "Castellina in Chianti",
+    "Panzano in Chianti",
+    "Greve in Chianti",
+    {
+     "n": "A1 Firenze Impruneta",
+     "lat": 43.716,
+     "lon": 11.237,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    "Figline Valdarno"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Castellina in Chianti",
+     110,
+     105,
+     "Firenze–Siena dual carriageway to Poggibonsi, then SR222",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Castellina village walk",
+     45,
+     "O",
+     "Christmas Day: outdoors, villages lit up"
+    ],
+    [
+     "drive",
+     "Panzano in Chianti",
+     12,
+     20,
+     "SR222",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Christmas lunch above the vineyards",
+     120,
+     "M",
+     "Book ahead"
+    ],
+    [
+     "drive",
+     "Greve in Chianti",
+     7,
+     15,
+     "SR222",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Greve piazza",
+     45,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Figline Valdarno (hotel)",
+     50,
+     50,
+     "SR222 north, then A1 Firenze Impruneta → Incisa",
+     "mw"
+    ]
+   ],
+   "roads": [
+    [
+     "IT-SR",
+     "SR222"
+    ],
+    [
+     "IT-A",
+     "A1"
+    ]
+   ],
+   "flags": [
+    "Back to Figline on the A1 instead of the SP16 over the hills"
+   ]
+  },
+  "hot": [
+   {
+    "id": "sr222",
+    "n": "SR222 Chianti ridge",
+    "lat": 43.47,
+    "lon": 11.29,
+    "risks": [
+     "ice",
+     "fog",
+     "snow"
+    ],
+    "on": [
+     "bal",
+     "safe"
+    ],
+    "leg": {
+     "bal": "Castellina in Chianti"
+    },
+    "yr": "Castellina in Chianti",
+    "note": "Gritted regional road, but icy in the shade on a cold Christmas morning.",
+    "alt": "Leave an hour later so the sun has worked on the ice.",
+    "elev": null
+   },
+   {
+    "id": "sp16",
+    "n": "SP16 over the hills, Greve–Figline",
+    "lat": 43.6,
+    "lon": 11.38,
+    "risks": [
+     "ice",
+     "fog",
+     "snow"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Figline Valdarno"
+    },
+    "yr": "Greve in Chianti",
+    "note": "Minor hill road, in the dark if lunch runs late. Safe goes back on the A1.",
+    "alt": "",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "SR222 closures",
+    "Christmas Day closures"
+   ]
+  }
+ },
+ "8": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "same": true
+  },
+  "safe": {
+   "same": true,
+   "why": "Balanced already uses the safest roads on this day."
+  },
+  "bal": {
+   "check": [
+    "Train strikes in Tuscany",
+    "26 Dec museum hours"
+   ]
+  }
+ },
+ "9": {
+  "fast": {
+   "stops": [
+    "Figline Valdarno",
+    "Arezzo",
+    "Anghiari",
+    {
+     "n": "Sansepolcro",
+     "lat": 43.57,
+     "lon": 12.14,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    {
+     "n": "Cesena",
+     "lat": 44.137,
+     "lon": 12.243,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    "San Marino"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Arezzo",
+     50,
+     45,
+     "A1 (Valdarno to Arezzo)",
+     "mw"
+    ],
+    [
+     "stop",
+     "Piazza Grande",
+     90,
+     "M",
+     "Parcheggio Pietri + lift"
+    ],
+    [
+     "drive",
+     "Anghiari",
+     30,
+     40,
+     "SR73",
+     "main"
+    ],
+    [
+     "stop",
+     "Anghiari + quick lunch",
+     60,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "San Marino",
+     165,
+     135,
+     "E45 via Sansepolcro and Cesena, A14, SS72",
+     "mw"
+    ]
+   ],
+   "roads": [
+    [
+     "IT-A",
+     "A1"
+    ],
+    [
+     "IT-E",
+     "E45"
+    ],
+    [
+     "IT-A",
+     "A14"
+    ],
+    [
+     "IT-SS",
+     "SS72"
+    ]
+   ],
+   "flags": [
+    "No Bocca Trabaria in this mode",
+    "E45 roadworks near Verghereto: check ahead"
+   ],
+   "check": [
+    "E45 Sansepolcro–Cesena roadworks and lane closures"
+   ]
+  },
+  "cine": {
+   "same": true,
+   "why": "Balanced already takes the Bocca Trabaria pass."
+  },
+  "safe": {
+   "stops": [
+    "Figline Valdarno",
+    "Arezzo",
+    "Anghiari",
+    {
+     "n": "Sansepolcro",
+     "lat": 43.57,
+     "lon": 12.14,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    {
+     "n": "Cesena",
+     "lat": 44.137,
+     "lon": 12.243,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    "San Marino"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Arezzo",
+     50,
+     45,
+     "A1 (Valdarno to Arezzo)",
+     "mw"
+    ],
+    [
+     "stop",
+     "Piazza Grande",
+     90,
+     "M",
+     "Parcheggio Pietri + lift"
+    ],
+    [
+     "drive",
+     "Anghiari",
+     30,
+     40,
+     "SR73",
+     "main"
+    ],
+    [
+     "stop",
+     "Anghiari + quick lunch",
+     60,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "San Marino",
+     165,
+     135,
+     "E45 via Sansepolcro and Cesena, A14, SS72",
+     "mw"
+    ]
+   ],
+   "roads": [
+    [
+     "IT-A",
+     "A1"
+    ],
+    [
+     "IT-E",
+     "E45"
+    ],
+    [
+     "IT-A",
+     "A14"
+    ],
+    [
+     "IT-SS",
+     "SS72"
+    ]
+   ],
+   "flags": [
+    "No Bocca Trabaria: the E45 is lower and gritted, but it still crosses the Apennines",
+    "In heavy snow there is no low road to San Marino: wait for the ploughs"
+   ],
+   "check": [
+    "E45 Sansepolcro–Cesena roadworks and lane closures"
+   ]
+  },
+  "hot": [
+   {
+    "id": "trabaria",
+    "n": "Bocca Trabaria pass",
+    "lat": 43.597,
+    "lon": 12.212,
+    "risks": [
+     "snow",
+     "ice",
+     "fog"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Bocca Trabaria"
+    },
+    "yr": "Borgo Pace",
+    "note": "Mountain pass, often snowy in late December; winter equipment required.",
+    "alt": "",
+    "elev": 1049
+   },
+   {
+    "id": "e45",
+    "n": "E45 Apennine crossing (Verghereto)",
+    "lat": 43.8,
+    "lon": 12.05,
+    "risks": [
+     "snow",
+     "ice",
+     "fog"
+    ],
+    "on": [
+     "fast",
+     "safe"
+    ],
+    "leg": {
+     "fast": "San Marino"
+    },
+    "yr": "Verghereto",
+    "note": "Lower than the Bocca Trabaria and gritted, but still an Apennine crossing.",
+    "alt": "If it is bad on every road, leave later or wait for the snowploughs; adding a night is the last resort.",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "SS73bis Bocca Trabaria snow or ice",
+    "Italian winter-equipment orders"
+   ]
+  }
+ },
+ "10": {
+  "fast": {
+   "stops": [
+    "San Marino",
+    "Comacchio",
+    {
+     "n": "Ferrara",
+     "lat": 44.835,
+     "lon": 11.62,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    {
+     "n": "Padova",
+     "lat": 45.4,
+     "lon": 11.88,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    "Mogliano Veneto"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Comacchio",
+     120,
+     120,
+     "A14 to Ravenna, then SS309 Romea (do not enter Ravenna)",
+     "main"
+    ],
+    [
+     "stop",
+     "Comacchio canals",
+     60,
+     "O",
+     "Under 30,000 people: not on the ban list"
+    ],
+    [
+     "drive",
+     "Mogliano Veneto (hotel)",
+     160,
+     115,
+     "Ferrara–Mare expressway, A13, A4",
+     "mw"
+    ]
+   ],
+   "roads": [
+    [
+     "IT-A",
+     "A14"
+    ],
+    [
+     "IT-SS",
+     "SS309"
+    ],
+    [
+     "IT-A",
+     "A13"
+    ],
+    [
+     "IT-A",
+     "A4"
+    ]
+   ],
+   "flags": [
+    "Avoids Chioggia and the SS309 Romea north of Comacchio",
+    "Mon 28 Dec: weekday diesel bans 08:30–18:30 in Ravenna, Chioggia and Venice: do not enter those towns"
+   ],
+   "check": [
+    "Veneto and Emilia-Romagna diesel ban days",
+    "A13 / A4 traffic"
+   ]
+  },
+  "cine": {
+   "same": true,
+   "why": "Balanced already follows the Po delta on the Romea."
+  },
+  "safe": {
+   "stops": [
+    "San Marino",
+    "Comacchio",
+    {
+     "n": "Ferrara",
+     "lat": 44.835,
+     "lon": 11.62,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    {
+     "n": "Padova",
+     "lat": 45.4,
+     "lon": 11.88,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    "Mogliano Veneto"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Comacchio",
+     120,
+     120,
+     "A14 to Ravenna, then SS309 Romea (do not enter Ravenna)",
+     "main"
+    ],
+    [
+     "stop",
+     "Comacchio canals",
+     60,
+     "O",
+     "Under 30,000 people: not on the ban list"
+    ],
+    [
+     "drive",
+     "Mogliano Veneto (hotel)",
+     160,
+     115,
+     "Ferrara–Mare expressway, A13, A4",
+     "mw"
+    ]
+   ],
+   "roads": [
+    [
+     "IT-A",
+     "A14"
+    ],
+    [
+     "IT-SS",
+     "SS309"
+    ],
+    [
+     "IT-A",
+     "A13"
+    ],
+    [
+     "IT-A",
+     "A4"
+    ]
+   ],
+   "flags": [
+    "Motorways instead of the SS309 Romea: fog on a dual carriageway, no oncoming traffic",
+    "Mon 28 Dec: weekday diesel bans 08:30–18:30 in Ravenna, Chioggia and Venice: do not enter those towns"
+   ],
+   "check": [
+    "Veneto and Emilia-Romagna diesel ban days",
+    "A13 / A4 traffic"
+   ]
+  },
+  "hot": [
+   {
+    "id": "romea-s",
+    "n": "SS309 Romea, Ravenna–Comacchio",
+    "lat": 44.6,
+    "lon": 12.22,
+    "risks": [
+     "fog"
+    ],
+    "on": [
+     "bal",
+     "fast",
+     "safe"
+    ],
+    "leg": {
+     "bal": "Comacchio",
+     "fast": "Comacchio"
+    },
+    "yr": "Comacchio",
+    "note": "Two-lane road with lorries; fog is frequent in the delta.",
+    "alt": "Leave later, once the fog lifts (often late morning).",
+    "elev": null
+   },
+   {
+    "id": "romea-n",
+    "n": "SS309 Romea, Comacchio–Chioggia",
+    "lat": 45.0,
+    "lon": 12.27,
+    "risks": [
+     "fog"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Mogliano Veneto"
+    },
+    "yr": "Chioggia",
+    "note": "Notorious for fog and head-on crashes. Safe takes the motorways instead.",
+    "alt": "",
+    "elev": null
+   },
+   {
+    "id": "a13",
+    "n": "A13 Ferrara–Padova",
+    "lat": 45.05,
+    "lon": 11.8,
+    "risks": [
+     "fog"
+    ],
+    "on": [
+     "fast",
+     "safe"
+    ],
+    "leg": {
+     "fast": "Mogliano Veneto"
+    },
+    "yr": "Rovigo",
+    "note": "Fog across the Po valley, but on a motorway.",
+    "alt": "Leave later, once the fog lifts (often late morning).",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "Veneto and Emilia-Romagna diesel ban days",
+    "SS309 Romea closures or fog"
+   ]
+  }
+ },
+ "11": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "same": true
+  },
+  "safe": {
+   "same": true,
+   "why": "Balanced already uses the safest roads on this day."
+  },
+  "bal": {
+   "check": [
+    "Acqua alta forecast",
+    "Train strikes in the Veneto"
+   ]
+  }
+ },
+ "12": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "stops": [
+    "Mogliano Veneto",
+    "Aquileia",
+    "Miramare Castle|sc",
+    "Trieste|sc",
+    {
+     "n": "Strada Napoleonica, Opicina",
+     "lat": 45.6873,
+     "lon": 13.7869,
+     "t": "stop",
+     "note": "Cliff-edge walk above Trieste with the whole gulf below.",
+     "w": "Opicina",
+     "m": "sc"
+    },
+    {
+     "n": "Štanjel",
+     "lat": 45.8235,
+     "lon": 13.8443,
+     "t": "stop",
+     "note": "Stone hilltop village in the Karst.",
+     "w": "Štanjel",
+     "m": "sc"
+    },
+    "Ljubljana"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Aquileia",
+     100,
+     85,
+     "A4",
+     "mw"
+    ],
+    [
+     "stop",
+     "Basilica mosaics",
+     60,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Miramare Castle",
+     45,
+     45,
+     "SS14 coast road",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Miramare gardens",
+     45,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Trieste",
+     8,
+     15,
+     "SS14",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Piazza Unità + lunch",
+     90,
+     "M",
+     "Molo IV car park"
+    ],
+    [
+     "drive",
+     "Strada Napoleonica, Opicina",
+     8,
+     20,
+     "Up to Opicina",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Strada Napoleonica viewpoint walk",
+     20,
+     "O",
+     "Views over Trieste and the gulf"
+    ],
+    [
+     "drive",
+     "Štanjel",
+     35,
+     45,
+     "Karst roads via Sežana",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Štanjel hilltop village",
+     30,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Ljubljana",
+     75,
+     65,
+     "H4 Vipava valley, then A1 (e-vignette)",
+     "mw"
+    ]
+   ],
+   "roads": [
+    [
+     "IT-A",
+     "A4"
+    ],
+    [
+     "IT-SS",
+     "SS14"
+    ],
+    [
+     "SI-A",
+     "H4"
+    ],
+    [
+     "SI-A",
+     "A1"
+    ]
+   ],
+   "flags": [
+    "Slovenian e-vignette from the border (€16, 7 days)"
+   ],
+   "check": [
+    "Karst road closures (bora wind)",
+    "Slovenian e-vignette"
+   ]
+  },
+  "safe": {
+   "stops": [
+    "Mogliano Veneto",
+    "Aquileia",
+    "Trieste",
+    "Ljubljana"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Aquileia",
+     100,
+     85,
+     "A4",
+     "mw"
+    ],
+    [
+     "stop",
+     "Basilica mosaics",
+     60,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Trieste",
+     45,
+     45,
+     "A4 / RA13, avoiding the coast road",
+     "mw"
+    ],
+    [
+     "stop",
+     "Piazza Unità + lunch",
+     90,
+     "M",
+     "Molo IV car park"
+    ],
+    [
+     "drive",
+     "Ljubljana",
+     95,
+     90,
+     "A1 Slovenia (e-vignette)",
+     "mw"
+    ]
+   ],
+   "roads": [
+    [
+     "IT-A",
+     "A4"
+    ],
+    [
+     "IT-A",
+     "RA13"
+    ],
+    [
+     "SI-A",
+     "A1"
+    ]
+   ],
+   "flags": [
+    "Miramare skipped: the coast road takes the full force of the bora",
+    "Slovenian e-vignette from the border (€16, 7 days)"
+   ]
+  },
+  "hot": [
+   {
+    "id": "costiera",
+    "n": "Trieste coast road (SS14)",
+    "lat": 45.72,
+    "lon": 13.68,
+    "risks": [
+     "wind",
+     "rock"
+    ],
+    "on": [
+     "bal",
+     "cine"
+    ],
+    "leg": {
+     "bal": "Miramare Castle",
+     "cine": "Miramare Castle"
+    },
+    "yr": "Trieste",
+    "note": "Takes the full force of the bora. Safe skips it.",
+    "alt": "",
+    "elev": null
+   },
+   {
+    "id": "karst",
+    "n": "A1 across the Karst (Razdrto)",
+    "lat": 45.76,
+    "lon": 14.05,
+    "risks": [
+     "wind",
+     "snow",
+     "ice"
+    ],
+    "on": [
+     "bal",
+     "safe"
+    ],
+    "leg": {
+     "bal": "Ljubljana"
+    },
+    "yr": "Razdrto",
+    "note": "The bora can close this stretch to light vehicles; DARS posts wind restrictions.",
+    "alt": "In a strong bora, wait in Trieste until the gusts drop.",
+    "elev": null
+   },
+   {
+    "id": "vipava",
+    "n": "Vipava valley expressway (H4)",
+    "lat": 45.85,
+    "lon": 13.95,
+    "risks": [
+     "wind"
+    ],
+    "on": [
+     "cine"
+    ],
+    "leg": {
+     "cine": "Ljubljana"
+    },
+    "yr": "Ajdovščina",
+    "note": "The first road to close in a strong bora.",
+    "alt": "",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "A4 traffic",
+    "Karst road closures (bora wind)",
+    "Slovenian e-vignette"
+   ]
+  }
+ },
+ "13": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "stops": [
+    "Ljubljana",
+    {
+     "n": "Kostanjevica na Krki",
+     "lat": 45.8463,
+     "lon": 15.4247,
+     "t": "stop",
+     "note": "Tiny town on an island in the Krka river.",
+     "w": "Kostanjevica_na_Krki",
+     "m": "mw"
+    },
+    {
+     "n": "Samobor",
+     "lat": 45.8011,
+     "lon": 15.711,
+     "t": "stop",
+     "note": "Pastel square at the foot of the hills; try the kremšnita.",
+     "w": "Samobor",
+     "m": "sc"
+    },
+    "Zagreb"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Kostanjevica na Krki",
+     105,
+     85,
+     "A2",
+     "mw"
+    ],
+    [
+     "stop",
+     "Kostanjevica na Krki river island",
+     30,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Samobor",
+     40,
+     45,
+     "Krka valley via Brežice, Bregana",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Samobor: square and kremšnita",
+     45,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Zagreb",
+     25,
+     30,
+     "Samobor road",
+     "main"
+    ],
+    [
+     "stop",
+     "Upper Town, then the New Year's Eve party",
+     240,
+     "M",
+     "Garage Tuškanac; book the hotel early"
+    ]
+   ],
+   "roads": [
+    [
+     "SI-A",
+     "A2"
+    ],
+    [
+     "HR-D",
+     "Samobor road"
+    ]
+   ],
+   "flags": [
+    "31 Dec: book the hotel early; shops close early",
+    "Croatian winter equipment (15 Nov–15 Apr)"
+   ],
+   "check": [
+    "New Year's Eve closures in Samobor",
+    "Croatian winter equipment"
+   ]
+  },
+  "safe": {
+   "same": true,
+   "why": "Balanced already uses the safest roads on this day."
+  },
+  "hot": [
+   {
+    "id": "a2",
+    "n": "A2 Krka valley",
+    "lat": 45.85,
+    "lon": 15.1,
+    "risks": [
+     "fog",
+     "ice"
+    ],
+    "on": [
+     "bal",
+     "cine"
+    ],
+    "leg": {
+     "bal": "Zagreb",
+     "cine": "Kostanjevica na Krki"
+    },
+    "yr": "Novo mesto",
+    "note": "Valley fog and black ice on cold mornings.",
+    "alt": "Leave later; the plan starts at 10:30 anyway.",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "A2 / A3 traffic",
+    "New Year's Eve closures in Zagreb"
+   ]
+  }
+ },
+ "14": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "stops": [
+    "Zagreb",
+    {
+     "n": "Županja",
+     "lat": 45.07,
+     "lon": 18.7,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    {
+     "n": "Vukovar",
+     "lat": 45.351,
+     "lon": 19.001,
+     "t": "stop",
+     "note": "War-scarred water tower kept as a memorial above the Danube.",
+     "w": "Vukovar_water_tower",
+     "m": "sc"
+    },
+    {
+     "n": "Ilok",
+     "lat": 45.2225,
+     "lon": 19.378,
+     "t": "road",
+     "note": "Wine town on a bluff over the Danube; border bridge to Serbia.",
+     "w": "Ilok",
+     "m": "sc"
+    },
+    {
+     "n": "Petrovaradin Fortress",
+     "lat": 45.2522,
+     "lon": 19.8622,
+     "t": "stop",
+     "note": "Fortress above the Danube facing Novi Sad.",
+     "w": "Petrovaradin_Fortress",
+     "m": "sc"
+    },
+    "Belgrade"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Vukovar",
+     285,
+     210,
+     "A3 to Županja, then D55 / D2",
+     "mw"
+    ],
+    [
+     "stop",
+     "Vukovar water tower and the Danube",
+     30,
+     "O",
+     "1 Jan: view from outside"
+    ],
+    [
+     "drive",
+     "Ilok",
+     37,
+     40,
+     "D2 along the Danube",
+     "scenic"
+    ],
+    [
+     "border",
+     "Croatia → Serbia (Ilok–Bačka Palanka)",
+     30
+    ],
+    [
+     "drive",
+     "Petrovaradin Fortress, Novi Sad",
+     45,
+     50,
+     "State road 12 along the Danube",
+     "main"
+    ],
+    [
+     "stop",
+     "Petrovaradin Fortress",
+     30,
+     "O",
+     "Danube view over Novi Sad"
+    ],
+    [
+     "drive",
+     "Belgrade",
+     95,
+     70,
+     "A1",
+     "mw"
+    ],
+    [
+     "stop",
+     "Kalemegdan, floodlit",
+     60,
+     "O",
+     "Garage Obilićev venac"
+    ]
+   ],
+   "roads": [
+    [
+     "HR-A",
+     "A3"
+    ],
+    [
+     "HR-D",
+     "D2"
+    ],
+    [
+     "RS-M",
+     "State road 12"
+    ],
+    [
+     "RS-A",
+     "A1"
+    ]
+   ],
+   "flags": [
+    "Ilok–Bačka Palanka border: confirm it is open on 1 Jan",
+    "Serbian border: Green Card and passports",
+    "1 Jan: almost everything closed; a good day to drive"
+   ],
+   "check": [
+    "Ilok–Bačka Palanka border crossing hours and queues",
+    "Danube fog on D2 and state road 12"
+   ]
+  },
+  "safe": {
+   "same": true,
+   "why": "Balanced already uses the safest roads on this day."
+  },
+  "hot": [
+   {
+    "id": "slavonia",
+    "n": "A3 across Slavonia",
+    "lat": 45.15,
+    "lon": 18.0,
+    "risks": [
+     "fog",
+     "ice"
+    ],
+    "on": [
+     "bal",
+     "cine"
+    ],
+    "leg": {
+     "bal": "Bajakovo border",
+     "cine": "Vukovar"
+    },
+    "yr": "Slavonski Brod",
+    "note": "Long flat motorway with dense fog banks.",
+    "alt": "Leave later, once the fog lifts.",
+    "elev": null
+   },
+   {
+    "id": "d2",
+    "n": "D2 along the Danube",
+    "lat": 45.3,
+    "lon": 19.1,
+    "risks": [
+     "fog"
+    ],
+    "on": [
+     "cine"
+    ],
+    "leg": {
+     "cine": "Ilok"
+    },
+    "yr": "Vukovar",
+    "note": "River fog. Safe stays on the A3 motorway.",
+    "alt": "",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "Bajakovo–Batrovci border queues",
+    "Fog on the A3"
+   ]
+  }
+ },
+ "15": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "same": true
+  },
+  "safe": {
+   "same": true,
+   "why": "Balanced already uses the safest roads on this day."
+  },
+  "hot": [
+   {
+    "id": "djerdap",
+    "n": "Danube road through the Iron Gates gorge",
+    "lat": 44.55,
+    "lon": 22.05,
+    "risks": [
+     "rock",
+     "ice",
+     "fog",
+     "snow"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Iron Gates dam via the Kazan gorge"
+    },
+    "yr": "Donji Milanovac",
+    "note": "Cliffs and tunnels along the river: rockfall after rain or thaw, ice in the shade.",
+    "alt": "If the gorge road is closed: A1 south to Paraćin, then via Zaječar and Negotin to the Iron Gates crossing: about 335 km, 1–2 h longer. Check that route before leaving.",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "Danube road closures",
+    "Iron Gates border queues",
+    "2 Jan holiday opening hours"
+   ]
+  }
+ },
+ "16": {
+  "fast": {
+   "same": true
+  },
+  "cine": {
+   "stops": [
+    "Drobeta-Turnu Severin",
+    {
+     "n": "Brâncuși ensemble, Târgu Jiu",
+     "lat": 45.0336,
+     "lon": 23.2763,
+     "t": "stop",
+     "note": "The Endless Column, the Gate of the Kiss and the Table of Silence.",
+     "w": "Sculptural_Ensemble_of_Constantin_Brâncuși_at_Târgu_Jiu",
+     "m": "mw"
+    },
+    {
+     "n": "Horezu Monastery",
+     "lat": 45.1617,
+     "lon": 24.0103,
+     "t": "stop",
+     "note": "UNESCO-listed Brâncovenesc monastery below the mountains.",
+     "w": "Horezu_Monastery",
+     "m": "sc"
+    },
+    {
+     "n": "Râmnicu Vâlcea",
+     "lat": 45.1,
+     "lon": 24.3693,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "sc"
+    },
+    {
+     "n": "Pitești",
+     "lat": 44.8565,
+     "lon": 24.8692,
+     "t": "via",
+     "note": "",
+     "w": "",
+     "m": "mw"
+    },
+    "Bucharest"
+   ],
+   "steps": [
+    [
+     "drive",
+     "Brâncuși ensemble, Târgu Jiu",
+     95,
+     100,
+     "DN67",
+     "main"
+    ],
+    [
+     "stop",
+     "Brâncuși ensemble",
+     40,
+     "O",
+     "Endless Column and Table of Silence"
+    ],
+    [
+     "drive",
+     "Horezu Monastery",
+     55,
+     65,
+     "DN67 below the Căpățânii mountains",
+     "scenic"
+    ],
+    [
+     "stop",
+     "Horezu Monastery",
+     30,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Râmnicu Vâlcea",
+     45,
+     50,
+     "DN67",
+     "scenic"
+    ],
+    [
+     "drive",
+     "Pitești",
+     60,
+     70,
+     "DN7",
+     "main"
+    ],
+    [
+     "stop",
+     "Lunch and fuel",
+     40,
+     "O",
+     ""
+    ],
+    [
+     "drive",
+     "Bucharest",
+     110,
+     75,
+     "A1",
+     "mw"
+    ]
+   ],
+   "start": "08:30",
+   "notes": {
+    "Bucharest": "Arrive late afternoon, before dark."
+   },
+   "roads": [
+    [
+     "RO-DN",
+     "DN67"
+    ],
+    [
+     "RO-DN",
+     "DN7"
+    ],
+    [
+     "RO-A",
+     "A1"
+    ]
+   ],
+   "flags": [
+    "Rovinietă still valid",
+    "Stops are optional: drive straight through if you prefer"
+   ],
+   "check": [
+    "DN67 landslide closures",
+    "DN7 / A1 traffic on the Sunday return"
+   ]
+  },
+  "safe": {
+   "same": true,
+   "why": "Balanced already uses the safest roads on this day."
+  },
+  "hot": [
+   {
+    "id": "oltenia",
+    "n": "Southern plain, Craiova–Pitești–Bucharest",
+    "lat": 44.43,
+    "lon": 24.37,
+    "risks": [
+     "snow",
+     "wind",
+     "fog"
+    ],
+    "on": [
+     "bal",
+     "cine"
+    ],
+    "leg": {
+     "bal": "Bucharest",
+     "cine": "Bucharest"
+    },
+    "yr": "Slatina",
+    "note": "Blizzards (viscol) can close roads across the plain; CNAIR posts closures.",
+    "alt": "If it is bad on every road, leave later or wait for the snowploughs; adding a night is the last resort.",
+    "elev": null
+   },
+   {
+    "id": "dn67",
+    "n": "DN67 below the mountains",
+    "lat": 45.1,
+    "lon": 23.7,
+    "risks": [
+     "rock",
+     "snow",
+     "ice"
+    ],
+    "on": [
+     "cine"
+    ],
+    "leg": {
+     "cine": "Horezu Monastery"
+    },
+    "yr": "Horezu",
+    "note": "Landslides and icy bends. Safe stays on the plain.",
+    "alt": "",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "DN6 / A1 traffic",
+    "Romanian rovinietă"
+   ]
+  }
+ }
+}

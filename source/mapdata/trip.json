@@ -1,0 +1,803 @@
+{
+ "days": [
+  {
+   "d": 1,
+   "title": "Meseta to the Basque hills",
+   "from": "Madrid",
+   "to": "Bilbao",
+   "km": 400,
+   "drive": "5h",
+   "scene": "meseta",
+   "scenic": false,
+   "roads": [
+    [
+     "ES-A",
+     "A-1"
+    ],
+    [
+     "ES-AP",
+     "AP-1"
+    ],
+    [
+     "ES-AP",
+     "AP-68"
+    ]
+   ],
+   "sleep": "Bilbao (Saturday: driving into the centre is allowed)",
+   "flags": [
+    "Madrid ZBE: start point depends on registration",
+    "Bilbao ZBE is enforced on weekdays only: Saturday arrival is fine"
+   ],
+   "stops": [
+    {
+     "n": "Madrid",
+     "lat": 40.4168,
+     "lon": -3.7038,
+     "t": "start",
+     "note": "Leave 11:30. If the car isn't Madrid-registered, start outside the city limits.",
+     "w": "Madrid"
+    },
+    {
+     "n": "Burgos Cathedral",
+     "lat": 42.3405,
+     "lon": -3.7044,
+     "t": "stop",
+     "note": "Gothic cathedral right off the A-1. About 1.5h.",
+     "w": "Burgos_Cathedral"
+    },
+    {
+     "n": "Bilbao",
+     "lat": 43.263,
+     "lon": -2.935,
+     "t": "sleep",
+     "note": "Arrive about 18:15, the last 40 minutes after dark on the motorway. Floodlit Guggenheim from outside (last entry 18:30), then pintxos in the Casco Viejo by metro.",
+     "w": "Bilbao"
+    }
+   ]
+  },
+  {
+   "d": 2,
+   "title": "The Basque coast road",
+   "from": "Bilbao",
+   "to": "Biarritz",
+   "km": 160,
+   "drive": "3.5h",
+   "scene": "coast",
+   "scenic": true,
+   "roads": [
+    [
+     "ES-N",
+     "N-634"
+    ],
+    [
+     "ES-AP",
+     "AP-8"
+    ],
+    [
+     "FR-A",
+     "A63"
+    ]
+   ],
+   "sleep": "Biarritz, or Anglet for easier parking",
+   "flags": [
+    "San Sebastián ZBE: unlabelled cars banned 24/7",
+    "AP-8 toll"
+   ],
+   "stops": [
+    {
+     "n": "Getaria",
+     "lat": 43.3036,
+     "lon": -2.2043,
+     "t": "stop",
+     "note": "Fishing port on the cliffside N-634 between Zumaia and Zarautz.",
+     "w": "Getaria"
+    },
+    {
+     "n": "San Sebastián",
+     "lat": 43.3183,
+     "lon": -1.9812,
+     "t": "stop",
+     "note": "La Concha bay and a pintxos lunch. Park outside the ZBE.",
+     "w": "San_Sebastián"
+    },
+    {
+     "n": "Biarritz",
+     "lat": 43.4832,
+     "lon": -1.5586,
+     "t": "sleep",
+     "note": "Sunset over the Rocher de la Vierge, around 17:20.",
+     "w": "Biarritz"
+    }
+   ]
+  },
+  {
+   "d": 3,
+   "title": "Along the Pyrenees",
+   "from": "Biarritz",
+   "to": "Carcassonne",
+   "km": 400,
+   "drive": "5h",
+   "scene": "pyrenees",
+   "scenic": false,
+   "roads": [
+    [
+     "FR-A",
+     "A64"
+    ],
+    [
+     "FR-A",
+     "A61"
+    ]
+   ],
+   "sleep": "Carcassonne, new town below the Cité",
+   "flags": [
+    "Stay on the motorway past Toulouse (ZFE)",
+    "French tolls"
+   ],
+   "stops": [
+    {
+     "n": "Pau, Boulevard des Pyrénées",
+     "lat": 43.2947,
+     "lon": -0.37,
+     "t": "stop",
+     "note": "A balcony view of the whole Pyrenean chain. About 1h.",
+     "w": "Pau,_Pyrénées-Atlantiques"
+    },
+    {
+     "n": "Carcassonne",
+     "lat": 43.2063,
+     "lon": 2.3637,
+     "t": "sleep",
+     "note": "Walk up to the floodlit Cité after dark.",
+     "w": "Cité_de_Carcassonne"
+    }
+   ]
+  },
+  {
+   "d": 4,
+   "title": "Provence and the red corniche",
+   "from": "Carcassonne",
+   "to": "Menton",
+   "km": 570,
+   "drive": "6.5h",
+   "scene": "esterel",
+   "scenic": true,
+   "roads": [
+    [
+     "FR-A",
+     "A9"
+    ],
+    [
+     "FR-A",
+     "A8"
+    ],
+    [
+     "FR-D",
+     "D559"
+    ]
+   ],
+   "sleep": "Menton",
+   "flags": [
+    "Stay on the motorway past Montpellier and Marseille (ZFE)",
+    "Longest day: leave 07:30"
+   ],
+   "stops": [
+    {
+     "n": "Pont du Gard",
+     "lat": 43.9475,
+     "lon": 4.5354,
+     "t": "stop",
+     "note": "Roman aqueduct, 30 minutes off the A9.",
+     "w": "Pont_du_Gard"
+    },
+    {
+     "n": "Saint-Raphaël",
+     "lat": 43.4253,
+     "lon": 6.7684,
+     "t": "road",
+     "note": "Leave the A8 here around 14:30 for the D559.",
+     "w": "Saint-Raphaël,_Var"
+    },
+    {
+     "n": "Théoule-sur-Mer",
+     "lat": 43.5078,
+     "lon": 6.9406,
+     "t": "road",
+     "note": "30 km of red porphyry cliffs over the sea. Rejoin the A8 at Mandelieu.",
+     "w": "Esterel_Massif"
+    },
+    {
+     "n": "Menton",
+     "lat": 43.7747,
+     "lon": 7.4975,
+     "t": "sleep",
+     "note": "Last French town before Italy.",
+     "w": "Menton"
+    }
+   ]
+  },
+  {
+   "d": 5,
+   "title": "The three Corniches",
+   "from": "Menton",
+   "to": "Menton",
+   "km": 60,
+   "drive": "1.5h",
+   "scene": "riviera",
+   "scenic": true,
+   "roads": [
+    [
+     "FR-M",
+     "M6007"
+    ],
+    [
+     "FR-M",
+     "M2564"
+    ]
+   ],
+   "sleep": "Menton",
+   "flags": [
+    "Do not drive into central Nice (ZFE)"
+   ],
+   "stops": [
+    {
+     "n": "Villefranche-sur-Mer",
+     "lat": 43.7044,
+     "lon": 7.3112,
+     "t": "stop",
+     "note": "Deep harbour and old town.",
+     "w": "Villefranche-sur-Mer"
+    },
+    {
+     "n": "Èze",
+     "lat": 43.7277,
+     "lon": 7.3615,
+     "t": "stop",
+     "note": "Perched village; drive back on the Grande Corniche.",
+     "w": "Èze"
+    },
+    {
+     "n": "Monaco",
+     "lat": 43.7384,
+     "lon": 7.4246,
+     "t": "stop",
+     "note": "Harbour and casino square.",
+     "w": "Monaco"
+    },
+    {
+     "n": "Menton",
+     "lat": 43.7747,
+     "lon": 7.4975,
+     "t": "sleep",
+     "note": "",
+     "w": "Menton"
+    }
+   ]
+  },
+  {
+   "d": 6,
+   "title": "Liguria to the Leaning Tower",
+   "from": "Menton",
+   "to": "Lucca",
+   "km": 360,
+   "drive": "5h",
+   "scene": "pisa",
+   "scenic": false,
+   "roads": [
+    [
+     "IT-A",
+     "A10"
+    ],
+    [
+     "IT-A",
+     "A12"
+    ],
+    [
+     "IT-A",
+     "A11"
+    ]
+   ],
+   "sleep": "Lucca, just outside the walls",
+   "flags": [
+    "Pisa and Lucca ZTL: park outside the walls",
+    "Italian tolls",
+    "24 Dec: early closing; book Christmas Eve dinner"
+   ],
+   "stops": [
+    {
+     "n": "Pisa, Piazza dei Miracoli",
+     "lat": 43.723,
+     "lon": 10.3966,
+     "t": "stop",
+     "note": "Afternoon visit, 1.5h. Park outside the walls.",
+     "w": "Piazza_dei_Miracoli"
+    },
+    {
+     "n": "Lucca",
+     "lat": 43.843,
+     "lon": 10.5027,
+     "t": "sleep",
+     "note": "Walk the city walls at dusk.",
+     "w": "Lucca"
+    }
+   ]
+  },
+  {
+   "d": 7,
+   "title": "Christmas in Chianti",
+   "from": "Lucca",
+   "to": "Figline Valdarno",
+   "km": 150,
+   "drive": "2h50",
+   "scene": "chianti",
+   "scenic": true,
+   "roads": [
+    [
+     "IT-SR",
+     "SR222"
+    ],
+    [
+     "IT-SS",
+     "SS2"
+    ]
+   ],
+   "sleep": "Figline Valdarno, south of Florence (train to Florence)",
+   "flags": [
+    "25 Dec: museums and most shops closed; book Christmas lunch",
+    "The car never enters Florence (Euro 0 diesel ban)"
+   ],
+   "stops": [
+    {
+     "n": "Lucca",
+     "lat": 43.843,
+     "lon": 10.5027,
+     "t": "start",
+     "note": "Leave after breakfast.",
+     "w": "Lucca"
+    },
+    {
+     "n": "Castellina in Chianti",
+     "lat": 43.4703,
+     "lon": 11.2867,
+     "t": "stop",
+     "note": "Walled ridge village where the best stretch of the SR222 begins.",
+     "w": "Castellina_in_Chianti"
+    },
+    {
+     "n": "Panzano in Chianti",
+     "lat": 43.5452,
+     "lon": 11.3125,
+     "t": "stop",
+     "note": "Christmas lunch above the vineyards (book ahead).",
+     "w": "Chianti"
+    },
+    {
+     "n": "Greve in Chianti",
+     "lat": 43.5847,
+     "lon": 11.3165,
+     "t": "stop",
+     "note": "Triangular piazza, lit up for Christmas.",
+     "w": "Greve_in_Chianti"
+    },
+    {
+     "n": "Figline Valdarno",
+     "lat": 43.6203,
+     "lon": 11.4697,
+     "t": "sleep",
+     "note": "On the Florence–Arezzo railway; regional trains to Firenze SMN in about 35 minutes.",
+     "w": "Figline_e_Incisa_Valdarno"
+    }
+   ]
+  },
+  {
+   "d": 8,
+   "title": "Florence on St Stephen's Day",
+   "from": "Figline Valdarno",
+   "to": "Figline Valdarno",
+   "km": 0,
+   "drive": "0h",
+   "scene": "florence",
+   "scenic": false,
+   "roads": [],
+   "sleep": "Figline Valdarno",
+   "flags": [
+    "26 Dec: Uffizi, Accademia, Pitti open 08:15–18:30; Cupola 12:45–17:15; Cathedral closed",
+    "Holiday train timetable: check the last train back"
+   ],
+   "stops": [
+    {
+     "n": "Florence",
+     "lat": 43.7696,
+     "lon": 11.2558,
+     "t": "visit",
+     "note": "Uffizi, Ponte Vecchio, the Baptistery and the Cupola climb. The car stays in Figline.",
+     "w": "Florence"
+    }
+   ]
+  },
+  {
+   "d": 9,
+   "title": "Arezzo and Bocca Trabaria",
+   "from": "Figline Valdarno",
+   "to": "San Marino",
+   "km": 210,
+   "drive": "4h15",
+   "scene": "pass",
+   "scenic": true,
+   "roads": [
+    [
+     "IT-A",
+     "A1"
+    ],
+    [
+     "IT-SR",
+     "SR73"
+    ],
+    [
+     "IT-SS",
+     "SS73bis"
+    ]
+   ],
+   "sleep": "San Marino",
+   "flags": [
+    "Arezzo ZTL: park outside the walls",
+    "Italian winter-equipment signs on the pass (15 Nov–15 Apr)",
+    "Leave at 08:00 to reach San Marino before dark"
+   ],
+   "stops": [
+    {
+     "n": "Arezzo",
+     "lat": 43.4633,
+     "lon": 11.8796,
+     "t": "stop",
+     "note": "Piazza Grande on a quiet Sunday morning.",
+     "w": "Arezzo"
+    },
+    {
+     "n": "Anghiari",
+     "lat": 43.5413,
+     "lon": 12.056,
+     "t": "stop",
+     "note": "Walled hill town over the upper Tiber valley; quick lunch.",
+     "w": "Anghiari"
+    },
+    {
+     "n": "Bocca Trabaria",
+     "lat": 43.59,
+     "lon": 12.238,
+     "t": "road",
+     "note": "1,049 m pass between Tuscany and the Marche.",
+     "w": "Bocca_Trabaria"
+    },
+    {
+     "n": "Urbania",
+     "lat": 43.668,
+     "lon": 12.522,
+     "t": "road",
+     "note": "Drive through on the way down to San Marino.",
+     "w": "Urbania"
+    },
+    {
+     "n": "San Marino",
+     "lat": 43.9356,
+     "lon": 12.4473,
+     "t": "sleep",
+     "note": "Three towers on Monte Titano.",
+     "w": "San_Marino"
+    }
+   ]
+  },
+  {
+   "d": 10,
+   "title": "Po Delta to the Venice lagoon",
+   "from": "San Marino",
+   "to": "Mogliano Veneto",
+   "km": 245,
+   "drive": "4h20",
+   "scene": "delta",
+   "scenic": false,
+   "roads": [
+    [
+     "IT-A",
+     "A14"
+    ],
+    [
+     "IT-SS",
+     "SS309"
+    ],
+    [
+     "IT-A",
+     "A4"
+    ]
+   ],
+   "sleep": "Mogliano Veneto, outside Venice municipality",
+   "flags": [
+    "Mon 28 Dec: weekday diesel bans 08:30–18:30 in Ravenna, Chioggia and Venice: do not enter those towns",
+    "Check the SS309 Romea against the ban maps; fallback A14–A13–A4 via Bologna (+1h, heads west first)"
+   ],
+   "stops": [
+    {
+     "n": "Comacchio",
+     "lat": 44.6946,
+     "lon": 12.183,
+     "t": "stop",
+     "note": "Lagoon town of canals and bridges, under 30,000 people.",
+     "w": "Comacchio"
+    },
+    {
+     "n": "Mogliano Veneto",
+     "lat": 45.5617,
+     "lon": 12.2361,
+     "t": "sleep",
+     "note": "Trains to Venezia Santa Lucia in about 20 minutes. Check it is outside the ban list (about 28,000 people).",
+     "w": "Mogliano_Veneto"
+    }
+   ]
+  },
+  {
+   "d": 11,
+   "title": "Venice on foot",
+   "from": "Mogliano Veneto",
+   "to": "Mogliano Veneto",
+   "km": 0,
+   "drive": "0h",
+   "scene": "venice",
+   "scenic": false,
+   "roads": [],
+   "sleep": "Mogliano Veneto",
+   "flags": [
+    "Car stays parked"
+   ],
+   "stops": [
+    {
+     "n": "Venice",
+     "lat": 45.438,
+     "lon": 12.3358,
+     "t": "visit",
+     "note": "Train from Mogliano Veneto (about 20 min). Check the acqua alta forecast.",
+     "w": "Venice"
+    }
+   ]
+  },
+  {
+   "d": 12,
+   "title": "Roman Friuli and the Karst",
+   "from": "Mogliano Veneto",
+   "to": "Ljubljana",
+   "km": 230,
+   "drive": "3.5h",
+   "scene": "karst",
+   "scenic": false,
+   "roads": [
+    [
+     "IT-A",
+     "A4"
+    ],
+    [
+     "IT-SS",
+     "SS14"
+    ],
+    [
+     "SI-A",
+     "A1"
+    ]
+   ],
+   "sleep": "Ljubljana",
+   "flags": [
+    "Slovenian e-vignette from the border (€16, 7 days)"
+   ],
+   "stops": [
+    {
+     "n": "Aquileia",
+     "lat": 45.7695,
+     "lon": 13.37,
+     "t": "stop",
+     "note": "Basilica floor mosaic and Roman ruins.",
+     "w": "Aquileia"
+    },
+    {
+     "n": "Miramare Castle",
+     "lat": 45.7025,
+     "lon": 13.712,
+     "t": "stop",
+     "note": "White castle on the sea at the edge of Trieste.",
+     "w": "Miramare_Castle"
+    },
+    {
+     "n": "Trieste",
+     "lat": 45.6495,
+     "lon": 13.7768,
+     "t": "stop",
+     "note": "Lunch on Piazza Unità.",
+     "w": "Trieste"
+    },
+    {
+     "n": "Ljubljana",
+     "lat": 46.0569,
+     "lon": 14.5058,
+     "t": "sleep",
+     "note": "Christmas lights along the Ljubljanica.",
+     "w": "Ljubljana"
+    }
+   ]
+  },
+  {
+   "d": 13,
+   "title": "Zagreb Advent",
+   "from": "Ljubljana",
+   "to": "Zagreb",
+   "km": 140,
+   "drive": "1.75h",
+   "scene": "zagreb",
+   "scenic": false,
+   "roads": [
+    [
+     "SI-A",
+     "A2"
+    ],
+    [
+     "HR-A",
+     "A3"
+    ]
+   ],
+   "sleep": "Zagreb",
+   "flags": [
+    "Croatian winter equipment (15 Nov–15 Apr)",
+    "Daytime headlights on",
+    "31 Dec: book the hotel early; shops close early"
+   ],
+   "stops": [
+    {
+     "n": "Zagreb",
+     "lat": 45.815,
+     "lon": 15.9819,
+     "t": "sleep",
+     "note": "Afternoon in the Upper Town, Advent market in the evening.",
+     "w": "Zagreb"
+    }
+   ]
+  },
+  {
+   "d": 14,
+   "title": "Across the Pannonian plain",
+   "from": "Zagreb",
+   "to": "Belgrade",
+   "km": 390,
+   "drive": "4.5h + border",
+   "scene": "plain",
+   "scenic": false,
+   "roads": [
+    [
+     "HR-A",
+     "A3"
+    ],
+    [
+     "RS-A",
+     "A3"
+    ]
+   ],
+   "sleep": "Belgrade, Novi Beograd for easy parking",
+   "flags": [
+    "Serbian border: Green Card and passports",
+    "Croatian and Serbian tolls",
+    "1 Jan: almost everything closed; a good day to drive"
+   ],
+   "stops": [
+    {
+     "n": "Belgrade",
+     "lat": 44.8125,
+     "lon": 20.4612,
+     "t": "sleep",
+     "note": "Kalemegdan fortress at the meeting of the Sava and Danube.",
+     "w": "Belgrade"
+    }
+   ]
+  },
+  {
+   "d": 15,
+   "title": "The Danube Iron Gates",
+   "from": "Belgrade",
+   "to": "Drobeta-Turnu Severin",
+   "km": 280,
+   "drive": "5h + border",
+   "scene": "gorge",
+   "scenic": true,
+   "roads": [
+    [
+     "RS-M",
+     "Danube road"
+    ],
+    [
+     "RO-DN",
+     "DN6"
+    ]
+   ],
+   "sleep": "Drobeta-Turnu Severin or Orșova",
+   "flags": [
+    "Romanian rovinietă from the border",
+    "Romania is one hour ahead",
+    "2 Jan is a public holiday in Serbia and Romania"
+   ],
+   "stops": [
+    {
+     "n": "Golubac Fortress",
+     "lat": 44.6625,
+     "lon": 21.68,
+     "t": "stop",
+     "note": "Medieval towers where the gorge begins.",
+     "w": "Golubac_Fortress"
+    },
+    {
+     "n": "Lepenski Vir",
+     "lat": 44.5571,
+     "lon": 22.0267,
+     "t": "stop",
+     "note": "Mesolithic settlement on the riverbank.",
+     "w": "Lepenski_Vir"
+    },
+    {
+     "n": "Iron Gates I dam",
+     "lat": 44.671,
+     "lon": 22.529,
+     "t": "road",
+     "note": "Border crossing on top of the dam.",
+     "w": "Iron_Gate_I_Hydroelectric_Power_Station"
+    },
+    {
+     "n": "Drobeta-Turnu Severin",
+     "lat": 44.6369,
+     "lon": 22.6597,
+     "t": "sleep",
+     "note": "",
+     "w": "Drobeta-Turnu_Severin"
+    }
+   ]
+  },
+  {
+   "d": 16,
+   "title": "The last run east",
+   "from": "Drobeta-Turnu Severin",
+   "to": "Bucharest",
+   "km": 350,
+   "drive": "4.5h",
+   "scene": "finish",
+   "scenic": false,
+   "roads": [
+    [
+     "RO-DN",
+     "DN6"
+    ],
+    [
+     "RO-A",
+     "DEx12"
+    ],
+    [
+     "RO-A",
+     "A1"
+    ]
+   ],
+   "sleep": "Bucharest",
+   "flags": [
+    "Rovinietă still valid"
+   ],
+   "stops": [
+    {
+     "n": "Craiova",
+     "lat": 44.3302,
+     "lon": 23.7949,
+     "t": "stop",
+     "note": "Lunch and fuel.",
+     "w": "Craiova"
+    },
+    {
+     "n": "Bucharest",
+     "lat": 44.4268,
+     "lon": 26.1025,
+     "t": "end",
+     "note": "Arrive early afternoon.",
+     "w": "Bucharest"
+    }
+   ]
+  }
+ ]
+}

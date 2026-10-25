@@ -1,0 +1,423 @@
+685	Jour {0}–{1} ; trajets et arrêts dessinés par-dessus
+686	Jour
+687	Crépuscule
+688	Nuit
+689	Route panoramique
+690	lever {0} ({1}) · coucher {2} ({3}) · nuit dès {4}
+691	lever {0} · coucher {1} · nuit dès {2}
+692	Même itinéraire dans tous les modes ce jour-là.
+693	Itinéraire de ce jour
+694	Itinéraire de ce jour :
+695	ce jour seulement
+696	Par rapport à l'équilibré : {0} de route, dernière arrivée {1} au lieu de {2}.
+697	lever du soleil
+698	Style d'itinéraire
+699	{0} de route sur 16 jours
+700	Les villes étapes restent les mêmes dans tous les modes. Choisir un style ici efface les choix par jour ; chaque jour peut ensuite être modifié sur sa fiche. Les routes panoramiques ne sont prévues qu'en plein jour ; avant le lever et après la tombée de la nuit, le plan prend l'autoroute.
+701	Votre choix est enregistré avec le carnet de route : le bulletin d'infos le suit.
+702	Votre choix est enregistré dans ce navigateur.
+703	publié {0}
+704	Ouvrir le jour
+705	Rien de signalé qui concerne ce jour.
+706	Date
+707	Min / max
+708	Ciel
+709	Pluie / neige
+710	Rafales
+711	Bulletin d'infos
+712	Pas encore de bulletin. Un ou deux jours avant, il vérifiera :
+713	À partir du 17 décembre, Claude vérifie l'actualité des 1–2 prochains jours de votre itinéraire deux fois par jour (vers 06 h 40 et 17 h 40, heure d'Europe centrale) : routes fermées et travaux, grèves et manifestations, restrictions, attente aux frontières et météo en chemin.
+714	Les bulletins sont rédigés en anglais.
+715	Les bulletins s'affichent ici quand le carnet de route est ouvert dans Claude.
+716	Chargement…
+717	Pas encore de bulletin pour les jours à venir.
+718	Le plus rapide
+719	Équilibré
+720	Cinématographique
+721	L'autoroute partout où c'est possible. Même heure de départ et mêmes arrêts ; vous arrivez plus tôt.
+722	Routes panoramiques là où elles en valent la peine, autoroute sur les tronçons monotones.
+723	Les routes les plus panoramiques ouvertes en hiver, calées sur la lumière du jour. Jusqu'à 1 h 30 de plus.
+724	Avant le lever du soleil
+725	Après le coucher du soleil
+726	De nuit
+727	Heure dorée
+728	Soleil bas en face
+729	Route panoramique avec peu de lumière
+730	Pas d'autoroute, de nuit
+731	Fermeture
+732	Travaux
+733	Grève
+734	Manifestation
+735	Restriction
+736	Frontière
+737	Météo
+738	Événement
+739	Carburant
+740	Trafic
+741	Identique à l'équilibré ce jour-là.
+742	Col d'Orduña, environ 900 m : vérifier la neige 1–2 jours avant
+743	Neige ou fermetures au col d'Orduña (BU-556 / A-625)
+744	Règles de la ZBE de Bilbao le week-end
+748	Bourg médiéval sur un piton au-dessus de la vallée de l'Èbre ; on le traverse en voiture.
+750	Point de vue sur la cascade de 222 m, à quelques minutes à pied du parking ; elle coule le mieux à la saison des pluies.
+751	Col d'Orduña
+752	N-623 / N-629 par Oña
+753	Point de vue du Salto del Nervión
+754	BU-556 jusqu'au col d'Orduña
+755	Courte marche depuis le parking
+756	A-625 en descendant le col, puis AP-68
+757	ZBE de Madrid
+758	Trafic sur l'A-1 et l'AP-68
+759	Travaux sur l'AP-8 et l'A63
+760	ZBE de Saint-Sébastien
+763	Le Jaizkibel à l'heure dorée remplace le coucher de soleil de Biarritz
+764	Fermetures des routes côtières BI-3438 / GI-638 et GI-3440
+769	Port de pêche avec une église sur le quai et une île accessible à pied à marée basse.
+771	Route de crête du Jaizkibel
+772	GI-3440 sur la crête au-dessus de la mer, avec des points de vue vers la France ; prévue pour la lumière de fin d'après-midi.
+773	Fontarrabie
+774	Vieille ville fortifiée au bord du fleuve frontière.
+775	BI-635 / BI-2238 par Guernica
+776	Port de Lekeitio
+777	Route des falaises par Ondarroa et Mutriku (BI-3438 / GI-638)
+778	Getaria : déjeuner de poisson grillé
+779	Promenade de La Concha
+780	Fontarrabie par la crête du Jaizkibel
+781	Route du Jaizkibel GI-3440, arrêts aux points de vue
+782	Vieille ville de Fontarrabie
+783	Fermetures de la route côtière N-634
+784	Évite complètement Toulouse et sa ZFE
+785	Fermetures de la D117 entre Saint-Girons et Foix
+786	Grèves ou pénurie de carburant en France
+789	Début de la D117 dans les contreforts de l'Ariège, avec les Pyrénées au sud.
+791	Château aux trois tours sur un rocher au-dessus de la ville ; déjeuner à ses pieds.
+793	Place médiévale entourée de couverts en bois.
+794	A64, puis D117 dans les contreforts de l'Ariège
+795	D117 le long des contreforts
+796	Foix : déjeuner au pied du château
+797	Place à couverts de Mirepoix
+798	Trafic sur l'A64 / A61
+799	Pas de corniche de l'Estérel dans ce mode
+800	Trafic et travaux sur l'A9 / A8
+801	L'équilibré inclut déjà la corniche de l'Estérel ; il ne reste pas de lumière pour plus.
+802	Trafic sur l'A9 / A8
+803	Fermetures de la corniche de l'Estérel D559 (chutes de pierres, risque d'incendie)
+804	Fermetures des corniches
+805	Événements à Monaco
+806	Fermetures pour chutes de pierres sur la SP530 de Portovenere
+807	Travaux sur l'A10 / A12
+811	Port aux maisons peintes et église San Pietro sur les rochers, à la pointe du golfe.
+812	A10 / A12, pause en route
+813	Route côtière SP530
+814	Portovenere : déjeuner et église San Pietro
+815	SP530, puis A12
+816	Trafic et travaux sur l'A10 / A12
+817	Horaires du 24 déc. à Pise
+818	Fermetures de la SR222
+819	Fermetures du jour de Noël
+820	Grèves de trains en Toscane
+821	Horaires des musées le 26 déc.
+822	Pas de Bocca Trabaria dans ce mode
+823	Travaux sur l'E45 près de Verghereto : vérifier avant
+824	Travaux et voies fermées sur l'E45 entre Sansepolcro et Cesena
+828	E45 par Sansepolcro et Cesena, A14, SS72
+829	L'équilibré passe déjà par le col de la Bocca Trabaria.
+830	Neige ou verglas sur la SS73bis de la Bocca Trabaria
+831	Obligations italiennes d'équipement hivernal
+832	Évite Chioggia et la SS309 Romea au nord de Comacchio
+833	Jours d'interdiction diesel en Vénétie et Émilie-Romagne
+834	Trafic sur l'A13 / A4
+837	Voie rapide Ferrare–Mer, A13, A4
+836	Ferrare
+838	L'équilibré suit déjà le delta du Pô par la Romea.
+839	Fermetures ou brouillard sur la SS309 Romea
+840	Prévision d'acqua alta
+841	Grèves de trains en Vénétie
+842	Fermetures des routes du Karst (vent de bora)
+843	Vignette électronique slovène
+845	Promenade en bord de falaise au-dessus de Trieste, tout le golfe à vos pieds.
+847	Village de pierre perché dans le Karst.
+848	Montée à Opicina
+849	Promenade au belvédère de la Strada Napoleonica
+850	Vue sur Trieste et le golfe
+851	Routes du Karst par Sežana
+852	Village perché de Štanjel
+853	H4 par la vallée de la Vipava, puis A1 (vignette électronique)
+854	Trafic sur l'A4
+855	Fermetures du réveillon à Samobor
+856	Équipement d'hiver croate
+857	Route de Samobor
+859	Petite ville sur une île de la Krka.
+861	Place aux couleurs pastel au pied des collines ; goûtez la kremšnita.
+862	Île fluviale de Kostanjevica na Krki
+863	Vallée de la Krka par Brežice et Bregana
+864	Samobor : place et kremšnita
+865	Trafic sur l'A2 / A3
+866	Fermetures du réveillon à Zagreb
+867	Frontière Ilok–Bačka Palanka : vérifier qu'elle est ouverte le 1er janv.
+868	Horaires et attente au poste frontière Ilok–Bačka Palanka
+869	Brouillard du Danube sur la D2 et la route nationale 12
+870	Route nationale 12
+873	Château d'eau marqué par la guerre, conservé comme mémorial au-dessus du Danube.
+875	Ville viticole sur un promontoire au-dessus du Danube ; pont frontière vers la Serbie.
+876	Forteresse de Petrovaradin
+877	Forteresse au-dessus du Danube, face à Novi Sad.
+878	A3 jusqu'à Županja, puis D55 / D2
+879	Château d'eau de Vukovar et le Danube
+880	1er janv. : vue de l'extérieur
+881	D2 le long du Danube
+882	Croatie → Serbie (Ilok–Bačka Palanka)
+883	Forteresse de Petrovaradin, Novi Sad
+884	Route nationale 12 le long du Danube
+885	Vue du Danube sur Novi Sad
+886	Kalemegdan illuminé
+887	Attente à la frontière Bajakovo–Batrovci
+888	Brouillard sur l'A3
+889	Fermetures de la route du Danube
+890	Attente à la frontière des Portes de Fer
+891	Horaires du jour férié du 2 janv.
+892	Les arrêts sont facultatifs : vous pouvez rouler sans vous arrêter
+893	Fermetures pour glissements de terrain sur la DN67
+894	Trafic du dimanche retour sur la DN7 / A1
+897	Ensemble de Brâncuși, Târgu Jiu
+898	La Colonne sans fin, la Porte du Baiser et la Table du Silence.
+899	Monastère de Horezu
+900	Monastère de style brâncovenesc, classé à l'UNESCO, au pied des montagnes.
+903	Ensemble de Brâncuși
+904	Colonne sans fin et Table du Silence
+905	DN67 au pied des monts Căpățânii
+906	Trafic sur la DN6 / A1
+907	Rovinietă roumaine
+908	Arrivée en fin d'après-midi, avant la nuit.
+909	Arrivée en soirée par l'A63.
+910	Pas de route ce jour-là.
+911	Environ {0} de retard sur le plan
+912	Environ {0} d'avance sur le plan
+913	Dans les temps
+914	maintenant
+915	prévu ici
+916	jusqu'à {0}
+917	arrivée estimée
+918	jour restant
+919	Entre {0} et {1}
+920	à environ {0} km de l'itinéraire prévu
+921	précision d'environ {0} m
+922	Pour garder les routes panoramiques de jour, supprimez ou raccourcissez : {0}.
+923	Ou passez le reste de la journée en « Le plus rapide » sur la fiche du jour.
+924	Sinon vous atteindriez {0} après le coucher du soleil : prenez l'autoroute pour cette partie.
+925	Vous finiriez de nuit ({0}). Prenez l'autoroute pour la fin et sautez les arrêts facultatifs.
+926	Vous avez du temps : la version cinématographique d'aujourd'hui passe si vous changez maintenant.
+927	Vous avez du temps : prenez votre temps à un arrêt facultatif, ou arrivez plus tôt.
+928	Pour rattraper le retard, raccourcissez les arrêts facultatifs restants : {0}.
+929	La fin de la journée est sur autoroute : arriver plus tard ou de nuit ne pose pas de problème.
+930	Rien à changer. Continuez.
+931	Pour replanifier avec Claude, copiez ceci dans la conversation :
+932	Vous êtes ici
+933	Où suis-je ?
+934	Compare votre position au plan du jour : avance ou retard, jour restant et ce qu'il faut supprimer. Votre position reste sur cet appareil.
+935	En dehors des dates du voyage, choisissez un jour pour essayer.
+936	Utiliser ma position
+937	Mise à jour continue
+938	Jour
+939	Ou je suis à
+940	La localisation n'est pas autorisée ici. Autorisez-la pour cette page si le téléphone le demande, ou choisissez où vous êtes dans la liste. Ouvrir le carnet de route dans Chrome ou Safari l'autorise généralement.
+941	Impossible d'obtenir votre position pour l'instant. Réessayez en plein air, ou choisissez où vous êtes dans la liste.
+942	Recherche de votre position…
+943	Horaires recalculés depuis votre départ réel ({0} {1}).
+944	Avec ce départ, une route panoramique ou secondaire tombe de nuit. Faites un point pour savoir quoi supprimer.
+945	La localisation n'est pas autorisée ici. Autorisez-la pour cette page si le téléphone le demande, ou choisissez ci-dessous où vous êtes. Ouvrir le carnet de route dans Chrome ou Safari l'autorise généralement.
+946	Impossible d'obtenir votre position pour l'instant. Réessayez en plein air, ou choisissez ci-dessous où vous êtes.
+947	Arrivé à {0}
+948	Pas de route aujourd'hui ; la voiture reste garée.
+949	La localisation ne marche pas ? Choisissez où vous êtes
+950	Choisissez où vous êtes
+951	Démarrer le jour {0}
+952	Appuyez au moment de partir. Il lit votre position et l'heure, recalcule la journée depuis votre départ réel et la compare au lever et au coucher du soleil.
+953	{0} plus tard que prévu
+954	{0} plus tôt que prévu
+955	à l'heure
+956	votre position
+957	Jour {0} terminé
+958	Jour {0} en cours
+959	Départ à {0} de {1}, {2}.
+960	Arrivée à {0}.
+961	Faire le point
+962	Point toutes les 30 min
+963	Réinitialiser ce jour
+964	une route panoramique finit maintenant après le coucher du soleil.
+965	vous finiriez de nuit.
+966	maintenant {0} de retard.
+967	maintenant {0} d'avance.
+968	Voir quoi changer
+969	avec ce départ, une route panoramique ou secondaire tombe de nuit.
+970	Vous êtes à environ {0} km de {1}. Vous partez d'ailleurs ?
+971	Oui, partir d'ici
+972	Non, je suis à {0}
+973	Position
+974	Manuelle
+975	Automatique, toutes les {0} min
+976	route panoramique après le coucher du soleil
+977	passe si vous sautez les arrêts facultatifs
+978	finit de nuit
+979	passe
+980	Options depuis ici
+981	Itinéraire
+982	Route restante
+983	Arrivée
+984	Sans arrêts facultatifs
+985	par rapport à l'actuel
+986	actuel
+987	rejoint l'itinéraire dans environ {0} km
+988	Passer en {0}
+989	Cet affichage du carnet de route ne peut pas lire la position du téléphone. Touchez ci-dessous où vous êtes, ou collez une position.
+990	Impossible d'obtenir votre position pour l'instant. Réessayez en plein air, ou touchez ci-dessous où vous êtes.
+991	Je suis à
+992	ou collez une position
+993	Utiliser
+994	Collez des coordonnées (dans Google Maps, appuyez longuement sur votre point bleu et copiez les chiffres) ou un lien de position Waze.
+995	Touchez « Démarrer » pour partir maintenant de {0}, ou choisissez ci-dessous où vous êtes pour partir de là.
+996	Point :
+997	touchez où vous êtes ou collez une position.
+998	Cela ne ressemble pas à une position sur cet itinéraire. Collez des coordonnées comme 43.2955, -2.2565 ou un lien de position Waze.
+999	Appuyez au moment de partir. Il enregistre l'heure, recalcule la journée depuis votre départ réel et la compare au lever et au coucher du soleil.
+1000	Habituel à ces dates
+1001	pluie environ {0} jours sur 10
+1002	Moyennes approximatives sur le long terme ; la vraie prévision les remplace à partir du 9 décembre.
+1003	Prévision de test
+1004	Prévision
+1005	pour le {0}, pas la date de votre voyage
+1006	Sur chaque trajet
+1007	Ciel au coucher du soleil :
+1008	La météo conseille : {0}
+1009	Gel presque tous les matins
+1010	Brouillard fréquent
+1011	Neige ou verglas possibles
+1012	Rafales de bora possibles
+1013	Pluie et vent de l'Atlantique
+1014	Acqua alta possible
+1015	Fort vent de Cers possible
+1016	départ
+1017	point panoramique
+1018	nuit
+1019	Plateau de l'A-1, Aranda–Burgos
+1020	A1 à travers le Karst (Razdrto)
+1021	A10 sur la côte ligure, Savone–Gênes
+1022	A13 Ferrare–Padoue
+1023	A2 dans la vallée de la Krka
+1024	A3 à travers la Slavonie
+1025	A4 / RA13, en évitant la route côtière
+1026	A61, Lauragais (Castelnaudary)
+1027	A9, Narbonne–Montpellier
+1028	AP-8 par l'intérieur
+1029	Retour à Figline par l'A1 au lieu de la SP16 par les collines
+1030	Retour à Menton le long de la mer au lieu de la Grande Corniche
+1031	L'itinéraire équilibré utilise déjà les routes les plus sûres ce jour-là.
+1032	Les blizzards (viscol) peuvent fermer les routes de la plaine ; la CNAIR publie les fermetures.
+1033	Dégagé
+1034	Route de falaise fermée par les chutes de pierres après de fortes pluies.
+1035	Route de falaise ; chutes de pierres et fermetures par fortes pluies, embruns par tempête. L'itinéraire sûr reste sur l'A8.
+1036	Falaises et tunnels le long du fleuve : chutes de pierres après la pluie ou le dégel, verglas à l'ombre.
+1037	D117 au pied des Pyrénées ariégeoises
+1038	DN67 au pied des montagnes
+1039	Route du Danube par les gorges des Portes de Fer
+1040	E45 à travers les Apennins (Verghereto)
+1041	Chaque passage à risque de la journée (cols, routes de falaise, plaines à brouillard, couloirs de bora et de mistral) est vérifié pour l'heure à laquelle vous y passeriez.
+1042	Route de crête exposée ; sans intérêt dans le brouillard.
+1043	Viaducs exposés ; la Ligurie émet des alertes aux fortes pluies (allerta rossa) qui ferment des routes.
+1044	Brouillard dans toute la plaine du Pô, mais sur autoroute.
+1045	Brouillard assez épais pour rouler dedans sur de longues portions, ou rafales de plus de 70 km/h environ sur une route exposée : prenez l'itinéraire sûr.
+1046	Route de piémont, verglacée à l'ombre les matins froids.
+1047	Pour le mauvais temps : routes basses et autoroutes, ni cols, ni routes de falaise, ni petites routes à brouillard. Mêmes villes étapes.
+1048	Le brouillard givrant est fréquent sur le haut plateau les matins de décembre.
+1049	Route régionale salée, mais verglacée à l'ombre un matin froid de Noël.
+1050	Fortes pluies sur des routes de falaise exposées aux chutes de pierres, ou alerte météo rouge officielle : prenez l'itinéraire sûr, ou attendez si l'alerte couvre toutes les routes.
+1051	Haute corniche, souvent dans les nuages. L'itinéraire sûr revient par le bord de mer.
+1052	Point le plus haut de tout le voyage. L'A-1 est déneigée en priorité, mais par fortes chutes de neige les poids lourds sont bloqués et les chaînes peuvent être exigées.
+1053	Comment la vérification météo décide de prendre l'itinéraire sûr
+1054	S'il fait mauvais sur toutes les routes, partez plus tard ou attendez les chasse-neige ; ajouter une nuit est le dernier recours.
+1055	Si l'A-1 est fermée : A-6 / AP-6 par les tunnels de Guadarrama et A-62 par Valladolid jusqu'à Burgos, environ 1 h de plus. Si les deux sont fermées, attendez à Madrid.
+1056	Si l'itinéraire sûr est touché aussi : partez plus tard, attendez les chasse-neige ou la levée du brouillard, ou en dernier recours ajoutez une nuit. Les villes étapes ne sont jamais changées sans vous.
+1057	Si la route des gorges est fermée : A1 vers le sud jusqu'à Paraćin, puis par Zaječar et Negotin jusqu'au passage des Portes de Fer : environ 335 km, 1 à 2 h de plus. Vérifiez cet itinéraire avant de partir.
+1058	Par forte bora, attendez à Trieste que les rafales faiblissent.
+1059	Par fortes chutes de neige, il n'y a pas de route basse vers Saint-Marin : attendez les chasse-neige
+1060	Glissements de terrain et virages verglacés. L'itinéraire sûr reste dans la plaine.
+1061	Partez une heure plus tard, le temps que le soleil fasse fondre le verglas.
+1062	Partez plus tard, une fois le brouillard levé (souvent en fin de matinée).
+1063	Partez plus tard, une fois le brouillard levé.
+1064	Partez plus tard ; le programme commence de toute façon à 10 h 30.
+1065	Longue autoroute plate avec des bancs de brouillard denses.
+1066	Plus basse que la Bocca Trabaria et salée, mais c'est toujours une traversée des Apennins.
+1067	M6098 au bord de la mer
+1068	Menton par la Basse Corniche
+1069	Petite route de collines, de nuit si le déjeuner se prolonge. L'itinéraire sûr revient par l'A1.
+1070	Petite route de montagne ; l'itinéraire sûr reste sur l'autoroute AP-68 par la vallée plus basse de l'Èbre.
+1071	Sans Miramare : la route côtière reçoit toute la force de la bora
+1072	Rafales de mistral sur le delta du Rhône.
+1073	Autoroutes au lieu de la SS309 Romea : brouillard sur une 2×2 voies, sans circulation en face
+1074	Col de montagne, souvent enneigé fin décembre ; équipements d'hiver obligatoires.
+1075	N-634, route de falaise Zumaia–Getaria
+1076	Sans la Bocca Trabaria : l'E45 est plus basse et salée, mais traverse quand même les Apennins
+1077	Sans la corniche de l'Estérel : la D559 est exposée au vent et aux chutes de pierres par tempête
+1078	Aucun sur cet itinéraire.
+1079	Réputée pour le brouillard et les collisions frontales. L'itinéraire sûr prend les autoroutes.
+1080	En alerte rouge, partez plus tard ou attendez sa levée.
+1081	Options : partir plus tard, attendre les chasse-neige ou la levée du brouillard, ou en dernier recours ajouter une nuit.
+1082	Traversée du Rhône près d'Arles
+1083	Brouillard du fleuve. L'itinéraire sûr reste sur l'autoroute A3.
+1084	Rocher de la Vierge, à bonne distance
+1085	SP16 par les collines, Greve–Figline
+1086	SP530 vers Portovenere
+1087	SR222, crête du Chianti
+1088	SR222 vers le nord, puis A1 Firenze Impruneta → Incisa
+1089	SS309 Romea, Comacchio–Chioggia
+1090	SS309 Romea, Ravenne–Comacchio
+1091	Le plus sûr
+1092	Ralentissez à 80 km/h ; pas d'alternative.
+1093	Ralentissez ; pas d'alternative.
+1094	Neige qui tombe ou tient, pluie verglaçante ou verglas sur un col ou une petite route : prenez l'itinéraire sûr.
+1095	Les prévisions de neige sont fiables environ 2 à 3 jours à l'avance et le brouillard est difficile à prévoir : la décision finale se prend la veille au soir et le matin même.
+1096	Col de Somosierra (A-1)
+1097	Plaine du sud, Craiova–Pitești–Bucarest
+1098	Les vagues et rafales de tempête frappent la route côtière ; l'itinéraire sûr prend l'AP-8 par l'intérieur.
+1099	Forts vents de travers (Cers, Autan) sur l'autoroute ; ralentissez.
+1100	Prendre le sûr
+1101	Reçoit toute la force de la bora. L'itinéraire sûr l'évite.
+1102	L'itinéraire sûr évite : {0}.
+1103	La bora peut fermer ce tronçon aux véhicules légers ; DARS publie les restrictions liées au vent.
+1104	La première route fermée par forte bora.
+1105	Rafales de tramontane sur l'autoroute côtière.
+1106	Route côtière de Trieste (SS14)
+1107	Route à deux voies avec des poids lourds ; le brouillard est fréquent dans le delta.
+1108	Brouillard de vallée et verglas les matins froids.
+1109	Voie rapide de la vallée de la Vipava (H4)
+1110	Vigilance
+1111	Vérification météo : rien à signaler sur votre itinéraire
+1112	Vérification météo : restez attentif
+1113	Vérification météo : aucune route sûre à l'heure prévue
+1114	Vérification météo : prenez l'itinéraire sûr
+1115	Points à surveiller sur votre itinéraire ({0})
+1116	Sans les falaises de Zumaia ni Getaria : les vagues et rafales de tempête frappent la route côtière
+1117	brouillard
+1118	fortes pluies
+1119	verglas
+1120	chutes de pierres
+1121	neige
+1122	vagues de tempête
+1123	test
+1124	vent
+1125	La vérification météo conseille l'itinéraire sûr aujourd'hui ; voyez l'option « Le plus sûr » ci-dessous.
+1126	{0} emprunte les mêmes routes qu'Équilibré ce jour-là.
+1127	Départ à 11 h 30. Si la voiture n'est pas immatriculée à Madrid, partez de l'extérieur de la ville.
+1128	Arrivée vers 18 h 15, les 40 dernières minutes de nuit sur l'autoroute. Le Guggenheim illuminé vu de l'extérieur (dernière entrée 18 h 30), puis pintxos dans le Casco Viejo en métro.
+1129	Guggenheim illuminé et pintxos dans le Casco Viejo
+1130	Pas avec un départ à 11 h 30 : Frías et la cascade demandent la lumière du jour.
+1131	Dernière entrée au musée 18 h 30
+1132	Enregistrer la position
+1133	Pas encore commencé : l'enregistrement démarre aussi la journée depuis votre position.
+1134	En route depuis {0}.
+1135	La position est bloquée dans l'app Claude. Ouvrez l'app de l'écran d'accueil pour un vrai GPS, ou choisissez où vous êtes :
+1136	Enregistrer ma position maintenant
+1137	Voir les détails du jour {0}
+1138	Position enregistrée à {0}.
+1139	L'autorisation de localisation est désactivée pour cette app. Sur le téléphone : appui long sur l'icône W123 Run → Infos sur l'appli → Autorisations → Position → Autoriser (dans Chrome : ⋮ → Paramètres → Paramètres des sites → Position). Puis touchez à nouveau le bouton.
+1140	Ouvrir l'app de l'écran d'accueil

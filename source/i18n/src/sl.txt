@@ -1,0 +1,600 @@
+0	Oznake cest ostanejo takšne kot na tablah. Povezave do Wikipedije se odprejo v angleščini.
+1	kilometrov
+2	dni
+3	držav
+4	dni panoramske vožnje
+5	najdaljša vožnja (4. dan)
+6	{0}. dan: {1}
+7	{0}, dan {1}
+8	Vsi dnevi
+9	{0}. dan: {1} → {2}
+10	Običajna omejitev
+11	Cestnina
+12	Na vaši poti: {0}
+13	Ni na vaši poti.
+14	Lokalne ceste, ki jih ni v podatkih zemljevida · približno {0} km, {1}
+15	Načrtovane ceste za ta dan: {0}. Za natančen potek uporabite Google Maps ali Waze na kartici dneva.
+16	≈{0} km · {1} v tempu W123
+17	{0} % avtoceste
+18	Avtocestne pristojbine: {0}.
+19	Alternativa · {0}
+20	(modra črtkana črta): ≈{0} km, {1} ({2} km, {3}) prek {4}.
+21	Za ta odsek na glavnem cestnem omrežju ni bistveno drugačne alternative.
+22	Panoramska vožnja
+23	{0}. dan
+24	Povečaj fotografijo: {0}
+25	tapnite za povečavo
+26	Vožnja do {0}
+27	prih. {0}
+28	Predvidite {0} min
+29	do {0}
+30	Časovni načrt, {0}. dan
+31	Časovni načrt
+32	časi v CET, nato EET
+33	časi v {0}
+34	sončni zahod {0}
+35	Konec dneva
+36	Fotogalerija, {0}. dan
+37	Fotografije
+38	{0} fotografij · tapnite za povečavo
+39	{0}, fotografija {1} od {2}
+40	Parkiranje in postanki, {0}. dan
+41	Parkiranje in postanki na poti
+42	Vir
+43	Preverite ob prihodu
+44	Fotografija: Wikimedia Commons, {0}
+45	avtor in licenca
+46	Odpri v Google Maps
+47	Waze do {0}
+48	Odpre aplikacijo Waze. Ni nameščena?
+49	Waze na spletu
+50	Na telefonu se odpre aplikacija Waze.
+51	Waze sprejme le en cilj naenkrat; uporabite povezavo Waze pri vsakem postanku zgoraj.
+52	vožnje
+53	sončni zahod
+54	Prenočišče
+55	Cestnina (autopista AP-)
+56	Večinoma brezplačno (autovía A-); odseki AP- so cestninski
+57	130 km/h, 110 v dežju
+58	80 km/h (ponekod 90)
+59	Cestnina (péage) na večini avtocest
+60	Brez cestnine
+61	90 km/h (110 na štiripasovnicah)
+62	Brezplačno (superstrada)
+63	Cestnina na avtocestah (ceste A)
+64	San Marino
+65	Obvezna e-vinjeta (16 € za 7 dni)
+66	Cestnina, plačilo na cestninskih postajah
+67	Cestnina, plačilo na postajah (dinarji, evri ali kartica)
+68	130 km/h (hitre ceste 100)
+69	Pokrito z rovinieto
+70	Bosna in Herc.
+71	Obvezna e-vinjeta
+72	Obvezna vinjeta
+73	Cestnina na avtocesti
+74	Avtocesta
+75	Glavna cesta
+76	Regionalna cesta
+77	Trajektna povezava
+78	W123: desni pas pri 90–100 km/h; tankanje vsakih 500–600 km.
+79	W123: skozi naselja in krožišča; računajte na povprečje 60–65 km/h.
+80	W123: počasna in ovinkasta; računajte na povprečje 45–50 km/h.
+81	Preverite zimski vozni red.
+82	Začetek
+83	Postanek
+84	Na poti
+85	Prenočitev
+86	Ogled, brez avta
+87	Cilj
+88	Parkirišče
+89	P+R
+90	Razgled
+91	Postanek na poti
+92	Neimenovana avtocesta
+93	Neimenovana glavna cesta
+94	Neimenovana regionalna cesta
+95	Neimenovana trajektna povezava
+96	Neimenovana cesta
+97	Hitrejša obvozna možnost.
+98	Obvezno
+99	Neobvezno: najprej izpustite, če zamujate
+100	Obvezno
+101	Neobvezno
+102	Cesta
+103	Vozovnica
+104	Brez cestnine
+105	preverite
+106	Morda počasnejša alternativa v bližini brez cestnine.
+107	Lokalna možnost za obvoze.
+108	Jezik
+109	Potopis · sob., 19. dec. 2026 – ned., 3. jan. 2027 · 16 dni
+110	Madrid ⟦0⟧→⟦1⟧ Bukarešta
+111	Mercedes-Benz W123 300D pri 90–100 km/h, skozi devet držav po obalnih cestah, apeninskih prelazih in soteski Donave.
+112	Izhodišča načrta (če spremenite katero koli, se časi posodobijo)
+113	Datumi: sob., 19. dec. 2026 – ned., 3. jan. 2027. Prazniki padejo na dneve vožnje: božič v Chiantiju, novo leto na avtocesti proti Beogradu.
+114	Avto ni registriran v Madridu, zato se 1. dan začne na robu mesta.
+115	⟦0⟧Obvezno⟦1⟧ = vaša ključna mesta; ⟦2⟧Neobvezno⟦3⟧ = dodatki, ki sem jih predlagal, najprej izpustite, če zamujate.
+116	Časi vožnje v tempu W123 (90–95 km/h na avtocesti, počasneje ob obali in v hribih), s kratkimi postanki.
+117	⤢ Zemljevid na celem zaslonu
+120	Celotna pot
+121	✕ Zapri
+122	Povlecite za premik, za povečavo drsite ali razprite prste. Tapnite številko dneva za povečavo, cesto za podrobnosti ali oznako prenočitve, da odprete ta dan.
+123	⟦0⟧⟦1⟧Pot (po cestah)
+124	⟦0⟧⟦1⟧Lokalne ceste, približno
+125	⟦0⟧⟦1⟧Alternativa (ob premiku miške)
+126	⟦0⟧⟦1⟧Dan panoramske vožnje
+127	⟦0⟧⟦1⟧Prenočitev (številka dneva)
+128	⟦0⟧⟦1⟧Postanek
+129	⟦0⟧⟦1⟧Avtocesta
+130	⟦0⟧⟦1⟧Glavna cesta
+131	⟦0⟧⟦1⟧Kraj
+132	Tapnite dan ali oznako prenočitve, da skočite nanj. Premaknite miško (ali tapnite) na katero koli cesto ali odsek poti za ime, omejitve, cestnine in alternative. Pot sledi glavnemu cestnemu omrežju; črtkani odseki uporabljajo majhne lokalne ceste, ki jih v podatkih zemljevida ni, zato so narisani kot ravne črte. Ta različica vključuje obalno cesto Estérel (D559) 4. dan in božično prerazporeditev okoli Firenc.
+133	Pregled omejitev · stanje 18. okt. 2026
+134	Kaj W123 sme
+135	Avto nima emisijske nalepke v nobenem sistemu, zato so omejitve dostopne cone v Madridu, Bilbau, San Sebastiánu, francoskih mestih z ZFE in v vseh Firencah. Vinjeta je potrebna le v Sloveniji in Romuniji. To je posnetek stanja; ⟦0⟧živi pregled ↗⟦1⟧ je kraj, kjer se vnašajo spremembe.
+136	Avto
+137	Postavka
+138	Stanje
+139	Registracija
+140	Španija (občina še ni potrjena)
+141	Španska nalepka DGT
+142	Nobena (dizel, registriran pred 2006)
+143	Francoski Crit'Air
+144	Ni upravičen, šteje kot nerazvrščen
+145	Italijanski razred
+146	Dizel Euro 0
+147	Status starodobnika
+148	Nobeden
+149	Emisije in dostopne cone
+150	Največja omejitev so Firence: celotno pozidano območje je za dizle Euro 0 zaprto ves dan in vso noč. Status starodobnika bi odpravil prepovedi v Madridu, Bilbau in Firencah.
+151	Kraj
+152	Pravilo
+153	Velja za avto?
+154	Načrt
+156	Avtomobili brez nalepke, ki niso registrirani v Madridu, so od jan. 2025 prepovedani v vsej občini; za avte, registrirane v Madridu, ki tam plačujejo IVTM, velja moratorij; starodobniki so izvzeti
+157	⟦0⟧Da⟦1⟧⟦2⟧⟦3⟧razen z madridsko registracijo⟦4⟧
+158	Če avto ni registriran v Madridu, začnite zunaj meja občine
+161	Avtomobili brez nalepke ob delavnikih v času omejitev ne smejo v ZBE
+162	⟦0⟧Da⟦1⟧
+163	Hotel zunaj ZBE (Barakaldo, Getxo) ali prihod ob koncu tedna
+166	Avtomobili brez nalepke so v osrednji ZBE prepovedani vsak dan, ves dan
+167	Parkirajte zunaj ZBE in pojdite peš ali z avtobusom
+169	Francoske ZFE
+170	Še vedno veljajo, potem ko je ustavni svet 21. maja 2026 razveljavil njihovo odpravo; prepovedani Crit'Air 4, 5 in nerazvrščeni
+171	Toulouse, Montpellier in Marseille obvozite po avtocesti; bivanje na Rivieri zunaj Nice
+173	Italija, zgodovinska središča
+174	ZTL, nadzor s kamerami
+175	Vedno parkirajte zunaj obzidja
+176	Firence
+177	Celotno pozidano območje zaprto 24/7 za dizle Euro 0 in 1; zbirateljska vozila izvzeta
+178	⟦0⟧Da⟦1⟧⟦2⟧⟦3⟧celo mesto⟦4⟧
+179	Spanje v Figline Valdarno; v mesto z vlakom
+181	Emilija - Romanja
+182	1. okt.–31. mar., kraji z več kot 30.000 prebivalci, dizli do Euro 4 prepovedani ob delavnikih
+183	⟦0⟧Da⟦1⟧⟦2⟧⟦3⟧ob delavnikih⟦4⟧
+184	Mimo Riminija po avtocesti; Ravena ob koncu tedna ali prazniku
+186	Benečija
+187	Zimska sezona od 1. okt., kraji z več kot 30.000 prebivalci, dizli do Euro 4 prepovedani ob delavnikih
+188	Bivanje v Mogliano Veneto; vlak do Benetk
+189	Italija, prepoved Euro 5
+190	Prestavljeno na 1. okt. 2027
+191	⟦0⟧Ne⟦1⟧
+192	Ni kaj storiti
+194	Od Slovenije do Romunije
+195	Na tej poti ni najdenih mestnih prepovedi
+196	Običajno parkiranje v mestu
+197	Vinjete in cestnine
+198	Država
+199	Sistem
+200	Strošek za avto
+201	Plačilo
+202	Španija
+203	A-1 brezplačna; AP-8 ob baskovski obali cestninska
+204	Po odseku
+205	Kartica na postajah
+206	Francija
+207	Avtocestne cestnine (A64, A61, A9, A8)
+210	Italija
+211	Avtocestne cestnine (A10, A12, A14, A4); FI-PI-LI brezplačna
+212	Slovenija
+213	⟦0⟧E-vinjeta⟦1⟧, nadzor s kamerami
+214	16 € za 7 dni ⟦0⟧vir ↗⟦1⟧
+215	Samo na evinjeta.dars.si; tablica natanko kot v prometnem dovoljenju; od 12. dne
+216	Hrvaška
+217	Avtocestne cestnine (A3)
+218	Cestninske postaje
+219	Srbija
+220	Avtocestne cestnine
+221	Cestninske postaje (dinarji, evri ali kartica)
+222	Romunija
+223	⟦0⟧Rovinietă⟦1⟧ na vseh državnih cestah, od 1. okt. 2026 cena po razredu Euro
+224	29 lejev na dan za Euro 0–3 ⟦0⟧vir ↗⟦1⟧
+225	Prek spleta pred mejo; velja za 15.–16. dan; kazen 500–1.000 lejev
+226	Zimska oprema in luči
+227	Štiri pnevmatike M+S ali 3PMSF z vsaj 4 mm profila ter verige v prtljažniku izpolnjujejo vsa pravila na poti, ne glede na vreme.
+228	Obdobje
+229	Luči
+230	Ni datuma
+231	Le kjer je označeno (po spominu)
+232	1. nov.–31. mar.
+233	Občine po gorskem zakonu: zimske pnevmatike ali verige v avtu (po spominu)
+234	15. nov.–15. apr.
+235	Označene ceste: pnevmatike M+S ali verige v avtu ⟦0⟧Pirelli ↗⟦1⟧
+236	15. nov.–15. mar.
+237	Zimske pnevmatike obvezne ⟦0⟧SIBIZ ↗⟦1⟧
+238	Določeni zimski odseki, ne glede na vreme; kazen 130 € ⟦0⟧Croatia Week ↗⟦1⟧
+239	Dnevne luči 1. nov.–31. mar.
+240	1. nov.–1. apr.
+241	Viri se razlikujejo: po datumu ali le ob snegu in ledu; ježevke prepovedane ⟦0⟧Tyremap ↗⟦1⟧
+242	Zima
+243	Viri se razlikujejo: le ob snegu in ledu ali 1. nov.–31. mar.
+244	Dokumenti
+245	Vozniško dovoljenje; za Srbijo priporočeno mednarodno vozniško dovoljenje
+246	Permiso de circulación in ficha técnica, tehnični pregled ITV veljaven do po vrnitvi
+247	Zavarovanje in zelena karta, na kateri Srbija (SRB) ni prečrtana
+248	Potni listi za vse v avtu
+249	Potrdilo o slovenski e-vinjeti (12. dan)
+250	Potrdilo o romunski rovinieti (15. dan)
+251	Oprema in avto
+252	Varnostna trikotnika in svetilnik V-16, če ga avto potrebuje
+253	Odsevni jopič za vsako osebo, v potniškem prostoru
+254	Prva pomoč (Hrvaška, Slovenija, Srbija)
+255	Rezervne halogenske žarnice (Hrvaška)
+256	Štiri zimske pnevmatike, vsaj 4 mm, in verige
+257	Pregledani grelne svečke, akumulator in filter goriva
+258	Zimski dizel od 12. dne
+259	Še odprto
+260	Ali je avto registriran v občini Madrid?
+261	Natančen datum odhoda (delavnik ali praznik na 10.–11. dan)
+262	Omejene ure v Bilbau za avte brez nalepke
+263	Preverite ZBE v Burgosu
+264	Meja ZFE v Nici in kraj hotela na Rivieri
+265	Pravila za dizle v Pisi, Lucci in Arezzu zunaj ZTL
+266	Konec sezone v Benečiji in dostop do Tronchetta
+267	Registracija starodobnika: odpravila bi prepovedi v Madridu, Bilbau in Firencah
+268	Kljukice se shranijo le v tem brskalniku.
+269	Časi vožnje veljajo za W123 v njegovem tempu, brez postankov. Fotografije so z Wikimedia Commons; vsak navedek vodi do fotografa in licence. Povezave do Wikipedije povedo več o vsakem kraju. Zgornji razdelek o omejitvah je posnetek živega pregleda.
+270	Zemljevid poti
+271	Prikaži dan na zemljevidu
+272	Odpri zemljevid na celem zaslonu
+273	Povečaj
+274	Pomanjšaj
+275	Prikaži celotno pot
+276	Zapri zemljevid na celem zaslonu
+277	Pot od Madrida do Bukarešte s prenočitvami, oštevilčenimi po dnevih
+278	Dan za dnem
+279	Pregled omejitev
+280	Prejšnja fotografija
+281	Naslednja fotografija
+282	Zapri
+283	Od Mesete do baskovskih gričev
+284	Bilbao (sobota: vožnja v središče je dovoljena)
+285	ZBE v Madridu: izhodišče je odvisno od registracije
+286	ZBE v Bilbau velja le ob delavnikih: prihod v soboto je v redu
+287	Odhod ob 8.30. Če avto ni registriran v Madridu, začnite zunaj meja občine.
+288	Katedrala v Burgosu
+289	Gotska katedrala tik ob A-1. Približno 1,5 h.
+290	Guggenheim in Casco Viejo z metrojem.
+291	Baskovska obalna cesta
+293	Biarritz ali Anglet za lažje parkiranje
+294	ZBE v San Sebastiánu: avti brez nalepke prepovedani 24/7
+295	Cestnina AP-8
+297	Ribiško pristanišče ob N-634 nad pečinami, med Zumaio in Zarautzem.
+298	Zaliv La Concha in kosilo s pintxosi. Parkirajte zunaj ZBE.
+299	Sončni zahod nad Rocher de la Vierge, okoli 17.20.
+300	Ob Pirenejih
+302	Carcassonne, novi del mesta pod Cité
+303	Mimo Toulousa ostanite na avtocesti (ZFE)
+304	Francoske cestnine
+306	Razgled na celotno pirenejsko verigo. Približno 1 h.
+307	Po temi se povzpnite do osvetljene Cité.
+308	Provansa in rdeča obalna cesta
+310	Mimo Montpelliera in Marseilla ostanite na avtocesti (ZFE)
+311	Najdaljši dan: odhod ob 7.30
+313	Rimski akvadukt, 30 minut od A9.
+315	Tu okoli 14.30 zapustite A8 in zavijte na D559.
+317	30 km rdečih porfirnih pečin nad morjem. Nazaj na A8 v Mandelieuju.
+318	Zadnje francosko mesto pred Italijo.
+319	Tri obalne ceste (Corniches)
+320	Ne vozite v središče Nice (ZFE)
+322	Globoko pristanišče in staro mestno jedro.
+324	Vas na vzpetini; nazaj po Grande Corniche.
+326	Pristanišče in trg pred igralnico.
+327	Od Ligurije do poševnega stolpa
+329	Lucca, tik zunaj obzidja
+330	ZTL v Pisi in Lucci: parkirajte zunaj obzidja
+331	Italijanske cestnine
+332	24. dec.: zgodnje zapiranje; rezervirajte božično večerjo
+333	Pisa, Piazza dei Miracoli
+334	Popoldanski ogled, 1,5 h. Parkirajte zunaj obzidja.
+335	Ob mraku se sprehodite po mestnem obzidju.
+336	Božič v Chiantiju
+338	Figline Valdarno, južno od Firenc (vlak do Firenc)
+339	25. dec.: muzeji in večina trgovin zaprti; rezervirajte božično kosilo
+340	Avto nikoli ne zapelje v Firence (prepoved za dizle Euro 0)
+341	Odhod po zajtrku.
+343	Obzidana vas na grebenu, kjer se začne najlepši del SR222.
+345	Božično kosilo nad vinogradi (rezervirajte vnaprej).
+347	Trikotni trg, okrašen za božič.
+348	Na progi Firence–Arezzo; regionalni vlaki do Firenze SMN v približno 35 minutah.
+349	Firence na štefanovo
+350	26. dec.: Uffizi, Accademia in Pitti odprti 8.15–18.30; kupola 12.45–17.15; stolnica zaprta
+351	Praznični vozni red vlakov: preverite zadnji vlak nazaj
+352	Uffizi, Ponte Vecchio, krstilnica in vzpon na kupolo. Avto ostane v Figlinu.
+353	Arezzo in Bocca Trabaria
+354	ZTL v Arezzu: parkirajte zunaj obzidja
+355	Italijanski znaki za zimsko opremo na prelazu (15. nov.–15. apr.)
+356	Odhod ob 8.00, da pridete v San Marino pred temo
+358	Piazza Grande v mirnem nedeljskem jutru.
+360	Obzidano gričevnato mesto nad zgornjo dolino Tibere; hitro kosilo.
+362	Prelaz na 1.049 m med Toskano in Markami.
+364	Skozi med spustom proti San Marinu.
+365	Trije stolpi na gori Titano.
+366	Od delte Pada do beneške lagune
+368	Mogliano Veneto, zunaj občine Benetke
+369	Pon., 28. dec.: prepovedi za dizle ob delavnikih 8.30–18.30 v Raveni, Chioggii in Benetkah: v ta mesta ne vozite
+370	Preverite SS309 Romea na zemljevidih prepovedi; rezerva A14–A13–A4 prek Bologne (+1 h, najprej proti zahodu)
+372	Lagunsko mesto s kanali in mostovi, manj kot 30.000 prebivalcev.
+373	Vlaki do Venezia Santa Lucia v približno 20 minutah. Preverite, da ni na seznamu prepovedi (približno 28.000 prebivalcev).
+374	Benetke peš
+375	Avto ostane parkiran
+376	Benetke
+377	Vlak iz Mogliano Veneto (približno 20 min). Preverite napoved acqua alta.
+378	Rimska Furlanija in Kras
+380	Slovenska e-vinjeta od meje (16 €, 7 dni)
+381	Oglej
+382	Talni mozaik bazilike in rimske ruševine.
+383	Grad Miramar
+384	Bel grad ob morju na robu Trsta.
+385	Trst
+386	Kosilo na Piazza Unità.
+387	Božične lučke ob Ljubljanici.
+388	Advent v Zagrebu
+390	Hrvaška zimska oprema (15. nov.–15. apr.)
+391	Prižgane luči podnevi
+392	31. dec.: hotel rezervirajte zgodaj; trgovine zaprejo zgodaj
+393	Popoldne v Gornjem mestu, zvečer adventni sejem.
+394	Čez Panonsko nižino
+395	Beograd
+396	Beograd, Novi Beograd za lažje parkiranje
+397	Srbska meja: zelena karta in potni listi
+398	Hrvaške in srbske cestnine
+399	1. jan.: skoraj vse zaprto; dober dan za vožnjo
+400	Trdnjava Kalemegdan ob sotočju Save in Donave.
+401	Železna vrata na Donavi
+403	Drobeta-Turnu Severin ali Orșova
+404	Romunska rovinietă od meje
+405	Romunija je eno uro pred nami
+406	2. jan. je praznik v Srbiji in Romuniji
+407	Trdnjava Golubac
+408	Srednjeveški stolpi na začetku soteske.
+410	Mezolitsko naselje na rečnem bregu.
+411	Jez Železna vrata I
+412	Mejni prehod na vrhu jezu.
+413	Zadnja etapa proti vzhodu
+414	Bukarešta
+415	Rovinietă še velja
+417	Kosilo in gorivo.
+418	Prihod zgodaj popoldne.
+421	Katedrala v Burgosu + kosilo
+422	Parkirišče Plaza Mayor
+424	Guggenheim in Casco Viejo z metrojem
+425	Večer
+427	Obalna cesta N-634
+428	Flišne pečine Itzurun
+429	Pristanišče Getaria
+430	San Sebastián (P+R Illunbe)
+432	La Concha + kosilo s pintxosi
+433	Avtobus 28 v mesto
+435	Rocher de la Vierge ob sončnem zahodu
+438	A64 / A61, postanek za kosilo na poti
+439	Sprehod po osvetljeni Cité
+440	Zvečer, P1/P2 brezplačno po 20.00
+441	Parkirišče za 9 €
+442	A9 / A8, postanek za kosilo na poti
+443	Théoule-sur-Mer po obalni cesti Estérel
+444	D559 s postanki na razglediščih
+445	Razgledišča ob obalni cesti (med vožnjo)
+448	Pristanišče in citadela v Villefranchu
+449	Brezplačno parkiranje nov.–mar.
+451	Vas Èze + kosilo
+452	Skala in pristanišče Monaka
+454	Menton po Grande Corniche
+455	M2564, razgledišča
+456	Pisa (P+R Via Pietrasantina)
+457	A10 / A12, postanek za kosilo na poti
+459	Prevoz iz P+R
+461	Večer na mestnem obzidju
+462	Hitra cesta Firence–Siena do Poggibonsija, nato SR222
+463	Sprehod po Castellini
+464	Božič: na prostem, osvetljene vasi
+466	Božično kosilo nad vinogradi
+467	Rezervirajte vnaprej
+468	Trg v Grevu
+469	Figline Valdarno (hotel)
+470	SP16 čez griče
+471	Vlak Figline → Firenze SMN
+472	Praznični vozni red; avto ostane pri hotelu
+473	Firence: Uffizi, Ponte Vecchio, krstilnica, kupola
+474	26. dec.: muzeji odprti, stolnica zaprta
+475	Vlak nazaj v Figline
+476	A1 (od Valdarna do Arezza)
+478	Parcheggio Pietri + dvigalo
+480	Anghiari + hitro kosilo
+481	Bocca Trabaria (1.049 m)
+483	Postanek za fotografijo na prelazu
+484	San Marino prek Urbanie
+486	A14 proti Raveni, nato SS309 Romea (ne vozite v Raveno)
+487	Kanali Comacchia
+488	Manj kot 30.000 prebivalcev: ni na seznamu prepovedi
+489	Mogliano Veneto (hotel)
+490	SS309 Romea mimo Chioggie, Passante A4
+491	Vlak Mogliano → Venezia S. Lucia
+492	Benetke: Veliki kanal, Rialto, San Marco
+493	Preverite napoved acqua alta
+494	Mozaiki bazilike
+495	Obalna cesta SS14
+496	Vrtovi Miramarja
+498	Piazza Unità + kosilo
+499	Parkirišče Molo IV
+500	Slovenska A1 (e-vinjeta)
+501	Dopoldne v starem mestnem jedru Ljubljane
+502	Silvestrovo: trgovine zaprejo zgodaj
+503	Gornje mesto, nato silvestrovanje
+504	Garaža Tuškanac; hotel rezervirajte zgodaj
+505	Mejni prehod Bajakovo
+506	A3, prazna 1. jan.; avtocestne bencinske črpalke odprte
+507	Hrvaška → Srbija (Bajakovo–Batrovci)
+508	Srbska A3
+509	Kalemegdan ob mraku
+510	Garaža Obilićev venac
+512	2. jan. je praznik: morda zaprto, ogled od zunaj
+513	Donavska cesta
+514	Jez Železna vrata skozi sotesko Kazan
+515	Donavska cesta s postajališči
+516	Srbija → Romunija (jez Železna vrata I)
+517	Ura naprej za 1 uro (romunski čas)
+519	Kosilo in gorivo
+521	Parking Plaza Mayor (podzemno)
+522	Osrednje podzemno parkirišče blizu katedrale. Pravila ZBE v Burgosu za avte brez nalepke še niso preverjena; glejte pregled.
+523	Garaža v središču ali hotelska garaža
+524	ZBE v Bilbau (Abando) prepoveduje avte brez nalepke le pon.–pet. 7.00–20.00. Prispete v soboto in odidete v nedeljo, zato je garaža v središču v redu.
+525	Plaža Itzurun in flišne pečine
+526	Kratek ovinek z N-634; parkirajte v Zumaii in pojdite 5 minut peš do poti ob pečinah.
+527	Parkirišče ob plaži Gaztetape (brezplačno)
+528	Veliko brezplačno parkirišče v beli coni ob plaži, blizu središča. Druga možnost: plačljivo parkirišče v pristanišču, 1,20 €/h, ob nedeljah in praznikih brezplačno.
+529	P+R Illunbe (brezplačno)
+530	494 brezplačnih mest blizu stadiona Anoeta, zunaj središča, kjer so avti brez nalepke prepovedani 24/7. Avtobus 28 s postaje Begiristain 1 (10 minut peš). Druga možnost: P+R Igara, brezplačno do 24 h, avtobusa 5 in 25.
+531	Parking Grande Plage (Indigo, podzemno)
+532	5 boulevard du Général de Gaulle, 10 minut peš ob obali do Rocher de la Vierge.
+533	Parking Clemenceau (podzemno)
+534	Pod trgom place Clemenceau, en blok od Boulevard des Pyrénées.
+535	Parkirišči Cité P1 (Porte Narbonnaise) ali P2 (Porte d'Aude)
+536	Podnevi 1 € za 15 min prvi 2 uri, nato 0,50 € za 45 min. Brezplačno od 20.00 do 8.00, kar je idealno za večerni vzpon do osvetljenega obzidja.
+537	Parkirišče na levem bregu (rive gauche)
+538	D981, Vers-Pont-du-Gard. 9 € na avto ne glede na čas; odprto vse leto od 8.00 do polnoči. Plačilo na avtomatih ali s kartico ob izhodu.
+540	Sprehod med plutovci do razgleda proti Saint-Tropezu na zahodu in vzdolž Estérela na vzhodu.
+542	Zavarovano območje z razgledom na zaliv La Napoule.
+544	5-minutni vzpon z ovinka blizu Miramarja; Lérinski otoki in Alpe. Zapeljite povsem s ceste; postajališča so majhna.
+545	Parking Hôtel de Ville (podzemno)
+546	23 rue de la République, ob vznožju starega mesta. Ali garaža vašega hotela.
+548	Brezplačno od 1. novembra do konca marca (12 ur zapored). Nekaj korakov od citadele in pristanišča.
+550	Ob vznožju vasi na Moyenne Corniche. 3,20 €/h od 6.00 do 20.00, prvih 15 min brezplačno; kartica ali gotovina.
+551	Najboljše za palačo in staro mesto na Skali. Prva ura brezplačna, približno 7,30 € za 2 uri, 24 € za 24 ur. Enake cene ob koncu tedna.
+554	Razgledišča nad Cap Ferratom in Èzom na poti nazaj v Menton.
+556	P+R Via Pietrasantina (brezplačno)
+557	Brezplačno parkirišče zunaj obzidja s prevozom do Piazza dei Miracoli (1 € v obe smeri, pozimi približno 9.00–17.00). Bliže, a plačljivo: Via Cammeo za trgom, 2 €/h. Nikoli ne vozite znotraj obzidja (ZTL).
+558	Parcheggio Carducci ali Palatucci
+559	Zunaj obzidja, z videonadzorom, cenejše urne in dnevne vozovnice; v mesto peš skozi najbližja vrata.
+560	Parkirišča pod obzidjem
+561	Parkirajte zunaj vasi in pojdite peš. Ob prihodu preverite znake.
+562	Postajališča med vinogradi med Castellino in Grevom
+563	Najlepši del ceste Chiantigiana; ustavite le na makadamskih bankinah, povsem s ceste.
+564	Parkirišča na robu kraja
+565	Parkirajte pred trgom in pojdite peš.
+566	Hotelsko parkirišče blizu postaje
+567	V Firence avto ne sme; Figline je samostojna občina z vlaki do Firenze SMN.
+568	Vlak do Firenze Santa Maria Novella
+569	Regionalni vlaki na progi Firence–Arezzo; 26. dec. praznični vozni red.
+571	Pod starim mestom, zunaj ZTL, z brezplačnim dvigalom do središča.
+572	Parkirajte zunaj starega obzidja in se povzpnite peš.
+573	Vrh prelaza Bocca Trabaria (1.049 m)
+574	Postajališče na prelazu; dober postanek za fotografije pred spustom.
+575	Oštevilčena javna parkirišča (P1–P13)
+576	Označena na poti na goro Titano; preverite parkiranje pri hotelu.
+577	Parkirišča na robu središča
+578	Parkirajte zunaj središča s kanali in pojdite peš. Ob prihodu preverite znake.
+579	Zunaj občine Benetke; pred rezervacijo preverite, da ni na beneškem seznamu prepovedi.
+580	Vlak iz Mogliano Veneto
+581	Približno 20 minut do Venezia Santa Lucia; avto ostane pri hotelu.
+582	Parkirišče ob baziliki
+583	Ob prihodu preverite znake.
+584	Miramar
+585	Parkirišče blizu gradu / Grignano
+586	Malo mest blizu vhoda v grad. Ob prihodu preverite znake.
+587	Molo IV ali Silos
+588	Molo IV je ob obali, najhitreje do Piazza Unità. Silos ob postaji je približno 10 minut peš.
+589	Hotelska garaža ali P+R Dolgi most
+590	Staro mestno jedro je večinoma brez avtomobilov. Če prihajate z obale, P+R Dolgi most vključuje dve vozovnici za mestni avtobus. Ulične cone so le za 30–120 minut.
+591	Javna garaža Tuškanac, Langov trg ali Petrinjska
+592	Plačilo ob izhodu. Plačilo ulične cone s SMS zahteva hrvaško kartico SIM; parkomati sprejemajo kovance. Ob nedeljah so cone brezplačne.
+593	Osrednja javna garaža blizu Knez Mihailove, peš do Kalemegdana. Ulične cone se plačujejo s SMS (9111/9112/9113) in morda zahtevajo srbsko kartico SIM.
+594	Parkirišče za obiskovalce trdnjave
+595	Ob vhodu na začetku soteske. Ob prihodu preverite zimski urnik.
+596	Parkirišče najdišča
+597	Ob muzeju na rečnem bregu.
+598	Razgledišča Mali Kazan
+599	Postajališča na srbski cesti nasproti najožjega dela soteske; Decebalov obraz je na drugi strani reke.
+600	Hotelsko parkirišče
+601	Preverite pri hotelu.
+602	Parkirišča v središču
+603	Kratek postanek za kosilo in gorivo. Ob prihodu preverite znake.
+604	Vaš hotel ali garaža
+605	Konec potovanja.
+606	ŠPANIJA
+607	FRANCIJA
+608	ITALIJA
+609	SLOVENIJA
+610	HRVAŠKA
+611	BOSNA IN HERC.
+612	SRBIJA
+613	ROMUNIJA
+614	MADŽARSKA
+615	ŠVICA
+616	AVSTRIJA
+617	BOLGARIJA
+618	Biskajski zaliv
+619	Sredozemsko morje
+620	Ligurijsko morje
+621	Jadransko morje
+622	Tirensko morje
+623	Vatikan
+624	Ukrajina
+625	Turčija
+626	Švica
+627	Slovaška
+628	Portugalska
+629	Črna gora
+630	Moldavija
+631	Severna Makedonija
+632	Lihtenštajn
+633	Kosovo
+634	Madžarska
+635	Grčija
+636	Nemčija
+637	Češka
+638	Bolgarija
+639	Avstrija
+640	Andora
+641	Albanija
+642	Brez avtocest
+643	Najhitreje, po avtocestah
+644	Lokalna cesta
+645	Getaria ob baskovski obali
+648	Èze z Grande Corniche
+649	Piazza dei Miracoli, Pisa
+650	Vinogradi v Chiantiju
+651	Firence s Piazzale Michelangelo
+652	Prelaz Bocca Trabaria
+653	Most Rialto, Benetke
+654	Grad Miramar, Trst
+655	Gornje mesto, Zagreb
+656	Sava se izliva v Donavo, Beograd
+657	Soteska Kazan, Donava
+658	Romunski atenej, Bukarešta
+659	Obalna cesta Estérel (D559)
+661	Anghiari in Sansepolcro
+662	Ravena, San Vitale
+664	Donavska soteska in Kazan
+665	Jez Železna vrata
+666	Rim
+667	Dunaj
+668	München
+669	Milano
+670	Neapelj
+671	Torino
+672	Genova
+676	Bern
+678	Ženeva
+683	Središče
+553	Col d'Èze in Fort de la Revère

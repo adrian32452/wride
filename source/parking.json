@@ -1,0 +1,399 @@
+{
+ "1": [
+  {
+   "k": "park",
+   "at": "Burgos",
+   "n": "Parking Plaza Mayor (underground)",
+   "note": "Central underground car park a short walk from the cathedral. Burgos ZBE rules for unlabelled cars not yet checked; see tracker.",
+   "q": "Parking Plaza Mayor Burgos",
+   "src": "https://parclick.es/parking-burgos/apk2-plaza-mayor-de-burgos",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Bilbao",
+   "n": "City-centre garage or hotel",
+   "note": "Bilbao's ZBE (Abando) bars unlabelled cars only Mon–Fri 07:00–20:00. You arrive on Saturday and leave on Sunday, so a central garage is fine.",
+   "q": "parking Bilbao Abando",
+   "src": "https://www.motor16.com/las-ultimas-noticias/zbe-bilbao-mapa-horarios-multas/",
+   "v": true
+  }
+ ],
+ "2": [
+  {
+   "k": "pull",
+   "at": "Zumaia",
+   "n": "Itzurun beach and the flysch cliffs",
+   "note": "Short detour off the N-634; park in Zumaia and walk 5 minutes to the cliff path.",
+   "q": "Itzurun beach Zumaia parking",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Getaria",
+   "n": "Gaztetape beach car park (free)",
+   "note": "Large free white-zone car park by the beach, close to the centre. Alternative: paid port car park, €1.20/h, free on Sundays and holidays.",
+   "q": "Gaztetape Getaria parking",
+   "src": "https://gurutravel.es/aparcamientos-parkings/donde-aparcar-guipuzkoa/donde-aparcar-getaria/",
+   "v": true
+  },
+  {
+   "k": "ride",
+   "at": "San Sebastián",
+   "n": "Illunbe park and ride (free)",
+   "note": "494 free spaces near Anoeta stadium, outside the centre where unlabelled cars are banned 24/7. Bus 28 from Begiristain 1 (10-minute walk). Alternative: Igara P+R, free up to 24h, buses 5 and 25.",
+   "q": "Illunbe aparcamiento disuasorio Donostia",
+   "src": "https://sansebastianturismoa.eus/venir/donde-aparcar/parking-disuasorio/",
+   "v": true
+  },
+  {
+   "k": "park",
+   "at": "Biarritz",
+   "n": "Parking Grande Plage (Indigo, underground)",
+   "note": "5 boulevard du Général de Gaulle, a 10-minute walk along the front to the Rocher de la Vierge.",
+   "q": "Parking Indigo Grande Plage Biarritz",
+   "src": "https://www.parkopedia.fr/parking/parc_de_stationnement/grande_plage/64200/biarritz/",
+   "v": true
+  }
+ ],
+ "3": [
+  {
+   "k": "park",
+   "at": "Pau",
+   "n": "Parking Clemenceau (underground)",
+   "note": "Under place Clemenceau, a block from the Boulevard des Pyrénées.",
+   "q": "Parking Clemenceau Pau",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Carcassonne",
+   "n": "Cité car parks P1 (Porte Narbonnaise) or P2 (Porte d'Aude)",
+   "note": "Daytime €1 per 15 min for the first 2 hours, then €0.50 per 45 min. Free 20:00–08:00, so ideal for an evening walk up to the floodlit walls.",
+   "q": "Parking P1 Cité de Carcassonne",
+   "src": "https://www.tourisme-carcassonne.fr/en/useful/parking/",
+   "v": true
+  }
+ ],
+ "4": [
+  {
+   "k": "park",
+   "at": "Pont du Gard",
+   "n": "Left-bank car park (rive gauche)",
+   "note": "D981, Vers-Pont-du-Gard. €9 per car whatever the stay; open all year 08:00–midnight. Pay at the machines or by card at the exit.",
+   "q": "Parking Pont du Gard rive gauche",
+   "src": "https://www.tourismegard.com/fr/fiche/commerce-et-service/parking-site-du-pont-du-gard-rive-gauche-vers-pont-du-gard_TFO5887864/",
+   "v": true
+  },
+  {
+   "k": "pull",
+   "at": "D559",
+   "n": "Cap Dramont (Agay)",
+   "note": "Walk through cork oaks to a view west to Saint-Tropez and east along the Estérel.",
+   "q": "Cap Dramont Agay",
+   "src": "https://www.routard.com/idees-week-end/cid139634-l-esterel-sur-la-corniche-d-or.html",
+   "v": true
+  },
+  {
+   "k": "pull",
+   "at": "D559",
+   "n": "Pointe du Cap Roux",
+   "note": "Listed site with a view over the golfe de La Napoule.",
+   "q": "Pointe du Cap Roux Saint-Raphaël",
+   "src": "https://www.routard.com/idees-week-end/cid139634-l-esterel-sur-la-corniche-d-or.html",
+   "v": true
+  },
+  {
+   "k": "pull",
+   "at": "D559",
+   "n": "Point de vue de l'Esquillon",
+   "note": "5-minute climb from a bend near Miramar; Lérins islands and the Alps. Pull fully off the road; lay-bys are small.",
+   "q": "Pointe de l'Esquillon Théoule",
+   "src": "https://www.routard.com/idees-week-end/cid139634-l-esterel-sur-la-corniche-d-or.html",
+   "v": true
+  },
+  {
+   "k": "park",
+   "at": "Menton",
+   "n": "Parking Hôtel de Ville (underground)",
+   "note": "23 rue de la République, at the foot of the old town. Or use your hotel's garage.",
+   "q": "Parking Hôtel de Ville Menton",
+   "src": "https://coparking.ch/en/France/parkings/12479",
+   "v": true
+  }
+ ],
+ "5": [
+  {
+   "k": "park",
+   "at": "Villefranche-sur-Mer",
+   "n": "Parking Fossés de la Citadelle",
+   "note": "Free from 1 November to the end of March (12 hours continuous). Steps from the citadel and the harbour.",
+   "q": "Parking Fossés de la Citadelle Villefranche-sur-Mer",
+   "src": "https://www.explorenicecotedazur.com/app/uploads/2026/03/brochure-parkings-en.pdf.pdf",
+   "v": true
+  },
+  {
+   "k": "park",
+   "at": "Èze",
+   "n": "Place Fighiera / place de la Colette",
+   "note": "At the foot of the village on the Moyenne Corniche. €3.20/h 06:00–20:00, first 15 min free; card or cash.",
+   "q": "Parking Place Fighiera Èze",
+   "src": "https://cotedazurfrance.fr/offres/parking-place-figuiera-et-place-de-la-colette-eze-fr-3810357/",
+   "v": true
+  },
+  {
+   "k": "park",
+   "at": "Monaco",
+   "n": "Parking des Pêcheurs",
+   "note": "Best for the palace and old town on the Rock. First hour free, about €7.30 for 2 hours, €24 for 24 hours. Same rates at weekends.",
+   "q": "Parking des Pêcheurs Monaco",
+   "src": "https://www.monaco-tribune.com/en/2024/12/parking-in-monaco-all-you-need-to-know/",
+   "v": true
+  },
+  {
+   "k": "pull",
+   "at": "Grande Corniche",
+   "n": "Col d'Èze and Fort de la Revère",
+   "note": "Viewpoints over Cap Ferrat and Èze on the drive back to Menton.",
+   "q": "Fort de la Revère Èze",
+   "v": false
+  }
+ ],
+ "6": [
+  {
+   "k": "ride",
+   "at": "Pisa",
+   "n": "Via Pietrasantina park and ride (free)",
+   "note": "Free car park outside the walls with a shuttle to Piazza dei Miracoli (€1 return, about 09:00–17:00 in winter). Closer but paid: Via Cammeo, behind the square, €2/h. Never drive inside the walls (ZTL).",
+   "q": "Parcheggio Via Pietrasantina Pisa",
+   "src": "https://discovertuscany.com/it/pisa/dove-parcheggiare-a-pisa.html",
+   "v": true
+  },
+  {
+   "k": "park",
+   "at": "Lucca",
+   "n": "Parcheggio Carducci or Palatucci",
+   "note": "Outside the walls, video-monitored, cheaper hourly rates and day tickets; walk in through the nearest gate.",
+   "q": "Parcheggio Carducci Lucca",
+   "src": "https://www.fleetmagazine.com/dove-parcheggiare-a-lucca-parcheggi-prezzi-consigli/",
+   "v": true
+  }
+ ],
+ "7": [
+  {
+   "k": "park",
+   "at": "Castellina in Chianti",
+   "n": "Car parks below the walls",
+   "note": "Park outside the village and walk in. Check signs on arrival.",
+   "q": "parcheggio Castellina in Chianti",
+   "v": false
+  },
+  {
+   "k": "pull",
+   "at": "SR222",
+   "n": "Vineyard lay-bys between Castellina and Greve",
+   "note": "The prettiest stretch of the Chiantigiana; pull fully off on gravel shoulders only.",
+   "q": "Panzano in Chianti",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Greve in Chianti",
+   "n": "Car parks at the edge of town",
+   "note": "Park before the piazza and walk in.",
+   "q": "parcheggio Greve in Chianti",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Figline Valdarno",
+   "n": "Hotel parking near the station",
+   "note": "Florence is off-limits to the car; Figline is a separate municipality with trains to Firenze SMN.",
+   "q": "stazione Figline Valdarno",
+   "v": false
+  }
+ ],
+ "8": [
+  {
+   "k": "ride",
+   "at": "Figline Valdarno",
+   "n": "Train to Firenze Santa Maria Novella",
+   "note": "Regional trains on the Florence–Arezzo line; holiday timetable on 26 Dec.",
+   "q": "stazione Figline Valdarno",
+   "v": false
+  }
+ ],
+ "9": [
+  {
+   "k": "park",
+   "at": "Arezzo",
+   "n": "Parcheggio Pietri",
+   "note": "Below the old town, outside the ZTL, with a free lift up to the centre.",
+   "q": "Parcheggio Pietri Arezzo",
+   "src": "https://discovertuscany.com/it/arezzo/come-arrivare-e-come-muoversi-in-citta.html",
+   "v": true
+  },
+  {
+   "k": "park",
+   "at": "Anghiari",
+   "n": "Car parks below the walls",
+   "note": "Park outside the old walls and walk up.",
+   "q": "parcheggio Anghiari",
+   "v": false
+  },
+  {
+   "k": "pull",
+   "at": "SS73bis",
+   "n": "Bocca Trabaria summit (1,049 m)",
+   "note": "Lay-by at the pass; good photo stop before the descent.",
+   "q": "Bocca Trabaria",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "San Marino",
+   "n": "Numbered public car parks (P1–P13)",
+   "note": "Signposted up Monte Titano; check your hotel's parking.",
+   "q": "parcheggio P1 San Marino città",
+   "v": false
+  }
+ ],
+ "10": [
+  {
+   "k": "park",
+   "at": "Comacchio",
+   "n": "Car parks at the edge of the centre",
+   "note": "Park outside the canal centre and walk in. Check signs on arrival.",
+   "q": "parcheggio Comacchio centro",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Mogliano Veneto",
+   "n": "Hotel parking near the station",
+   "note": "Outside Venice municipality; confirm it is not on the Veneto ban list before booking.",
+   "q": "stazione Mogliano Veneto",
+   "v": false
+  }
+ ],
+ "11": [
+  {
+   "k": "ride",
+   "at": "Venice",
+   "n": "Train from Mogliano Veneto",
+   "note": "About 20 minutes to Venezia Santa Lucia; the car stays at the hotel.",
+   "q": "stazione Mogliano Veneto",
+   "v": false
+  }
+ ],
+ "12": [
+  {
+   "k": "park",
+   "at": "Aquileia",
+   "n": "Car park by the basilica",
+   "note": "Check signs on arrival.",
+   "q": "parcheggio Basilica Aquileia",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Miramare",
+   "n": "Parking near the castle / Grignano",
+   "note": "Limited spaces near the castle gate. Check signs on arrival.",
+   "q": "parcheggio Castello di Miramare",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Trieste",
+   "n": "Molo IV or Silos",
+   "note": "Molo IV is on the seafront, quickest to Piazza Unità. Silos, next to the station, is about 10 minutes' walk.",
+   "q": "Parcheggio Molo IV Trieste",
+   "src": "https://www.telepass.com/en/consumer/services/parkings/parcheggi-trieste",
+   "v": true
+  },
+  {
+   "k": "ride",
+   "at": "Ljubljana",
+   "n": "Hotel garage or P+R Dolgi most",
+   "note": "The old town is largely car-free. Arriving from the coast, P+R Dolgi most includes two city bus tickets. Street zones are 30–120 minutes only.",
+   "q": "P+R Dolgi most Ljubljana",
+   "src": "https://www.visitljubljana.com/it/visitatori/informazioni-di-viaggio/traffico-e-trasporti/parcheggio",
+   "v": true
+  }
+ ],
+ "13": [
+  {
+   "k": "park",
+   "at": "Zagreb",
+   "n": "Public garage Tuškanac, Langov trg or Petrinjska",
+   "note": "Pay on exit. Street-zone SMS payment needs a Croatian SIM; meters take coins. Zones are free on Sundays.",
+   "q": "Garaža Tuškanac Zagreb",
+   "src": "https://www.visitzagreb.hr/zagreb/zagreb-parking/",
+   "v": true
+  }
+ ],
+ "14": [
+  {
+   "k": "park",
+   "at": "Belgrade",
+   "n": "Garage Obilićev venac",
+   "note": "Central public garage near Knez Mihailova and a walk to Kalemegdan. Street zones are paid by SMS (9111/9112/9113) and may need a Serbian SIM.",
+   "q": "Garaža Obilićev venac Beograd",
+   "src": "https://belgrademyway.com/parking-and-garages-in-belgrade/",
+   "v": true
+  }
+ ],
+ "15": [
+  {
+   "k": "park",
+   "at": "Golubac Fortress",
+   "n": "Fortress visitor car park",
+   "note": "At the entrance where the gorge begins. Check winter opening hours on arrival.",
+   "q": "Golubac Fortress parking",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Lepenski Vir",
+   "n": "Site car park",
+   "note": "By the museum on the riverbank.",
+   "q": "Lepenski Vir",
+   "v": false
+  },
+  {
+   "k": "pull",
+   "at": "Danube road",
+   "n": "Mali Kazan viewpoints",
+   "note": "Lay-bys on the Serbian road facing the narrowest part of the gorge; the Decebalus rock face is across the river.",
+   "q": "Mali Kazan Serbia viewpoint",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Drobeta-Turnu Severin",
+   "n": "Hotel parking",
+   "note": "Check with your hotel.",
+   "q": "hotel Drobeta-Turnu Severin parking",
+   "v": false
+  }
+ ],
+ "16": [
+  {
+   "k": "park",
+   "at": "Craiova",
+   "n": "Centre car parks",
+   "note": "Short lunch and fuel stop. Check signs on arrival.",
+   "q": "parcare centru Craiova",
+   "v": false
+  },
+  {
+   "k": "park",
+   "at": "Bucharest",
+   "n": "Your hotel or garage",
+   "note": "End of the trip.",
+   "q": "Bucharest parking",
+   "v": false
+  }
+ ]
+}
