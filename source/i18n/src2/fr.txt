@@ -457,3 +457,95 @@
 1174	Affichage jour ou nuit
 1175	Sections
 1176	Essayer le nouveau design (V2)
+1177	Montez quatre pneus hiver marqués 3PMSF (flocon sur une montagne) avec au moins 4 mm de gomme, et emportez des chaînes pour les roues arrière. Vous respectez ainsi les règles d'hiver de tous les pays du trajet.
+1178	Les voitures espagnoles doivent avoir depuis le 1er janvier 2026 une balise V-16 connectée homologuée par la DGT ; les triangles ne suffisent plus en Espagne. Gardez aussi deux triangles pour les autres pays.
+1179	Emportez un gilet réfléchissant par personne, une trousse de secours, un extincteur (obligatoire en Roumanie) et une roue de secours.
+1180	Documents : passeports ou cartes d'identité, permis de conduire, certificat d'immatriculation original, contrôle technique ITV et attestation d'assurance. Demandez à votre assureur une confirmation écrite de la couverture en Serbie.
+1181	Achetez en ligne, avant les frontières, la vignette électronique slovène (7 jours) et la rovinietă roumaine : evinjeta.dars.si et erovinieta.ro.
+1182	Zone à faibles émissions de Madrid : sauf si la voiture appartient à un résident de Madrid ou est un véhicule historique enregistré, partez de l'extérieur de la commune (par exemple Alcobendas, sur l'A-1).
+1183	Col de Somosierra : chaînes si les panneaux l'exigent.
+1184	Bilbao : la zone ne s'applique pas le samedi.
+1185	Saint-Sébastien : aucune voiture dans la zone centrale, quel que soit le jour. Garez-vous à Illunbe et prenez le bus 28.
+1186	Péages de l'AP-8 dans le Guipuscoa ; la France à partir d'Hendaye.
+1187	Pyrénées-Atlantiques : loi montagne ; vos pneus hiver la respectent.
+1188	Pas de zone à faibles émissions à Pau ni à Carcassonne ; l'itinéraire évite Toulouse.
+1189	Loi montagne dans les départements pyrénéens.
+1190	Zone de Montpellier : restez sur l'A9 en passant la ville.
+1191	Loi montagne dans le Var et les Alpes-Maritimes.
+1192	Monaco et les villages de la Riviera : pas de zone ; utilisez les parkings.
+1193	Pise et Lucques : centres à accès limité ; garez-vous hors des remparts.
+1194	Début des routes italiennes avec équipements d'hiver obligatoires.
+1195	Routes des collines du Chianti : pneus hiver obligatoires sur les tronçons signalés.
+1196	Les centres des villages peuvent être à accès limité ; garez-vous à l'entrée.
+1197	Florence : laissez la voiture à l'hôtel ; le centre est à accès limité.
+1198	Arezzo : garez-vous au Parcheggio Pietri, hors de la zone à accès limité.
+1199	Bocca Trabaria (SS73bis) et l'E45 : pneus hiver ou chaînes obligatoires.
+1200	Saint-Marin : utilisez les parkings signalés.
+1201	Lundi : les vieux diesels sont interdits dans l'agglomération de Comacchio de 08:30 à 18:30. Garez-vous avant le panneau d'entrée et entrez à pied, ou visitez Comacchio avant 08:30 ou après 18:30.
+1202	Vénétie : le niveau anti-pollution normal est suspendu jusqu'au 6 janvier, mais une alerte orange ou rouge s'appliquerait quand même.
+1203	Venise : la voiture reste garée ; allez-y en train.
+1204	Slovénie : achetez la vignette électronique avant la première autoroute.
+1205	Slovénie : équipements d'hiver obligatoires depuis le 15 novembre.
+1206	Ljubljana : le vieux centre est fermé aux voitures.
+1207	Croatie : équipements d'hiver obligatoires sur les grands axes.
+1208	Péages de l'A3 par carte ou en espèces.
+1209	Serbie : pneus hiver obligatoires ; chaînes dans la voiture.
+1210	Frontière : passeports ou cartes d'identité et assurance valable en Serbie.
+1211	Péages serbes en dinars, en euros ou par carte.
+1212	Roumanie : rovinietă dès la frontière des Portes de Fer.
+1213	Roumanie : pneus hiver en cas de neige ou de verglas.
+1214	Bucarest : pas encore de zone à faibles émissions.
+1215	La rovinietă achetée le jour 15 est toujours valable.
+1216	Madrid : les voitures sans vignette environnementale ne peuvent circuler nulle part dans la ville, M-30 comprise. Exemptées : les voitures des résidents de Madrid (jusqu'au 31 déc. 2026) et les véhicules historiques enregistrés. Amende de 200 €.
+1217	Saint-Sébastien : la zone centrale est fermée aux voitures sans vignette tous les jours, 24 h sur 24. Garez-vous au parking relais d'Illunbe et prenez le bus 28. Amende de 200 €.
+1218	Bilbao : la zone d'Abando s'applique du lundi au vendredi, de 07:00 à 20:00. Le week-end est libre : l'arrivée du samedi et le départ du dimanche ne posent pas de problème.
+1219	Péages sur l'AP-68 et l'AP-8 dans le Guipuscoa : payez par carte aux barrières. L'AP-1 Burgos–Armiñón est gratuite.
+1220	Chaînes ou pneus hiver seulement là où les panneaux l'exigent, par exemple au col de Somosierra (A-1) sous la neige.
+1221	Autoroutes 120, autres routes 90, agglomération 50 (30 dans les rues à une voie par sens).
+1222	Balise V-16 connectée obligatoire depuis le 1er janvier 2026 ; gilet réfléchissant.
+1223	Une voiture aussi ancienne ne peut pas obtenir de vignette Crit'Air : elle est donc interdite dans les zones à faibles émissions actives (Toulouse et Montpellier sur ce trajet). Restez sur les autoroutes qui les contournent ; le plan évite déjà Toulouse.
+1224	Loi montagne, du 1er novembre au 31 mars, dans les zones signalées des Pyrénées-Atlantiques, de l'Ariège, de l'Aude, du Var et des Alpes-Maritimes : quatre pneus 3PMSF ou des chaînes dans la voiture. Les pneus seulement M+S ne comptent plus.
+1225	Péages d'autoroute aux barrières : la carte est acceptée partout.
+1226	Autoroutes 130 (110 sous la pluie), routes à chaussées séparées 110 (100), autres routes 80 ou 90 selon les panneaux, agglomération 50.
+1227	Gilet réfléchissant et triangle.
+1228	Pas de zone à faibles émissions ni de péage. Utilisez les parkings publics ; agglomération 50.
+1229	Les centres historiques sont des zones à trafic limité (ZTL) surveillées par caméras : Pise, Lucques, Florence, Arezzo, Sienne et d'autres. Garez-vous hors des remparts ; les amendes arrivent par courrier des mois plus tard.
+1230	Émilie-Romagne, du 1er octobre au 31 mars : les diesels jusqu'à Euro 4 sont interdits dans les agglomérations des communes de la plaine, même petites, du lundi au vendredi de 08:30 à 18:30, et certains dimanches. Les autoroutes ne sont pas concernées.
+1231	Vénétie (Venise continentale et autres grandes villes) : les diesels jusqu'à Euro 4 sont interdits en semaine de 08:30 à 19:30, mais le niveau normal est suspendu du 19 décembre au 6 janvier. Les alertes pollution orange ou rouges s'appliquent quand même tous les jours.
+1232	Du 15 novembre au 15 avril sur les routes signalées, dont les cols des Apennins et l'E45 : pneus hiver ou chaînes à bord. Amende de 87 à 344 €.
+1233	Péages d'autoroute : prenez un ticket et payez à la sortie dans les voies carte ou espèces ; jamais dans la voie jaune Telepass.
+1234	Autoroutes 130 (110 sous la pluie), routes principales 110 (90), autres routes 90, agglomération 50. Feux de croisement allumés hors agglomération.
+1235	Pas de contrôle à la frontière ni de vignette. La vieille ville du Monte Titano est fermée aux voitures : utilisez les parkings signalés.
+1236	Vignette électronique obligatoire sur toutes les autoroutes et voies rapides dès la frontière : 7 jours environ 16,40 €, liée à la plaque. En vente sur evinjeta.dars.si ou dans les stations-service. Amende de 300 €.
+1237	Du 15 novembre au 15 mars, les équipements d'hiver sont obligatoires même sans neige : pneus hiver avec au moins 3 mm de gomme, ou pneus été plus chaînes. Amende à partir de 40 €.
+1238	Le vieux centre de Ljubljana est fermé aux voitures ; garez-vous dans un parking en périphérie.
+1239	Autoroutes 130, voies rapides 110, autres routes 90, agglomération 50. Feux de croisement allumés en permanence.
+1240	Du 15 novembre au 15 avril sur les grands axes, quel que soit le temps : pneus hiver sur toutes les roues, ou pneus été avec au moins 4 mm de gomme plus des chaînes dans la voiture.
+1241	Péages sur l'autoroute A3 : payez à la sortie par carte ou en espèces.
+1242	Autoroutes 130, autres routes 90, agglomération 50. Feux de croisement allumés en hiver.
+1243	Trousse de secours, triangle, gilet réfléchissant et ampoules de rechange.
+1244	Du 1er novembre au 1er avril, les pneus hiver avec au moins 4 mm de gomme sont obligatoires, avec des chaînes pour les roues motrices. Amendes d'environ 50 à 170 €.
+1245	Pas de carte verte nécessaire pour les voitures immatriculées en Espagne ; votre permis est valable. Passeports ou cartes d'identité à la frontière ; demandez à votre assureur de confirmer la couverture en Serbie.
+1246	Péages d'autoroute aux barrières : dinars, euros ou carte.
+1247	Roue de secours, triangle, trousse de secours, gilet réfléchissant, corde de remorquage et constat amiable européen.
+1248	Autoroutes 130, voies rapides 100, autres routes 80, agglomération 50. Feux de croisement allumés en permanence.
+1249	Rovinietă obligatoire sur toutes les routes nationales dès la frontière : 10 jours 39 lei pour une voiture Euro 0. En vente sur erovinieta.ro (jusqu'à 30 jours à l'avance) ou à la frontière. Amende de 250 à 500 lei.
+1250	Les pneus hiver sont obligatoires dès que la route est enneigée ou verglacée.
+1251	La zone à faibles émissions prévue à Bucarest commence au plus tôt en 2027 : aucune restriction le 3 janvier.
+1252	Trousse de secours, extincteur et deux triangles.
+1253	Autoroutes 130, voies rapides 120, routes européennes 100, autres routes 90, agglomération 50. Feux de croisement allumés hors agglomération.
+1254	Restrictions en ville
+1255	Péages et vignettes
+1256	Équipements d'hiver
+1257	Limitations de vitesse et feux
+1258	Équipement
+1259	Règles
+1260	Toutes les règles de ce jour
+1261	Règles sur la route
+1262	Vérifié le {0} auprès de sources officielles et fiables. Les règles changent : le bulletin d'actualités les vérifie à nouveau un ou deux jours avant chaque étape.
+1263	Avant de partir
+1264	Pays par pays
+1265	Sources
+1266	Numéro d'urgence dans tous les pays du trajet : 112.
+1267	Vieux diesels interdits dans l'agglomération de 08:30 à 18:30 en semaine : garez-vous avant le panneau d'entrée
+1268	Lun. 28 déc. : les vieux diesels sont interdits de 08:30 à 18:30 dans les communes de la plaine du Pô, Comacchio compris : voir Règles

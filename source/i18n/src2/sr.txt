@@ -459,3 +459,95 @@
 1174	Dnevni ili noćni prikaz
 1175	Odeljci
 1176	Isprobaj novi dizajn (V2)
+1177	Stavite četiri zimske gume sa oznakom 3PMSF (pahulja na planini) sa najmanje 4 mm dubine šare i ponesite lance za zadnje točkove. Tako ispunjavate zimska pravila svih zemalja na ruti.
+1178	Španski automobili od 1. januara 2026. moraju imati povezano svetlo upozorenja V-16 koje je odobrio DGT; trouglovi u Španiji više nisu dovoljni. Imajte i dva trougla za druge zemlje.
+1179	Ponesite reflektujući prsluk za svakoga, prvu pomoć, aparat za gašenje požara (obavezan u Rumuniji) i rezervni točak.
+1180	Dokumenti: pasoši ili lične karte, vozačke dozvole, originalna saobraćajna dozvola, tehnički pregled ITV i polisa osiguranja. Tražite od osiguravača pisanu potvrdu pokrića u Srbiji.
+1181	Pre granica kupite onlajn slovenačku e-vinjetu (7 dana) i rumunsku rovinijetu: evinjeta.dars.si i erovinieta.ro.
+1182	Niskoemisiona zona Madrida: osim ako je automobil vlasništvo stanovnika Madrida ili registrovano oldtajmer vozilo, krenite van granica grada (na primer iz Alkobendasa na A-1).
+1183	Prevoj Somosijera: lanci ako to traže znakovi.
+1184	Bilbao: zona subotom ne važi.
+1185	San Sebastijan: nijedan automobil u centralnoj zoni, nijednog dana. Parkirajte u Ilunbeu i uzmite autobus 28.
+1186	Putarine na AP-8 u Gipuskoi; Francuska od Andaja.
+1187	Atlantski Pirineji: planinski zakon; vaše zimske gume ga ispunjavaju.
+1188	Nema niskoemisione zone u Pou ni u Karkasonu; ruta zaobilazi Tuluz.
+1189	Planinski zakon u pirinejskim departmanima.
+1190	Zona Monpeljea: pored grada ostanite na A9.
+1191	Planinski zakon u Varu i Primorskim Alpima.
+1192	Monako i sela na Rivijeri: bez zone; koristite parkirališta.
+1193	Piza i Luka: centri sa ograničenim saobraćajem; parkirajte van zidina.
+1194	Počinju italijanski putevi sa obaveznom zimskom opremom.
+1195	Putevi po brdima Kjantija: zimske gume obavezne na označenim deonicama.
+1196	Centri sela mogu biti ograničeni; parkirajte na ivici.
+1197	Firenca: ostavite automobil kod hotela; centar je ograničen.
+1198	Areco: parkirajte na Parcheggio Pietri, van ograničene zone.
+1199	Boka Trabarija (SS73bis) i E45: zimske gume ili lanci obavezni.
+1200	San Marino: koristite označena parkirališta.
+1201	Ponedeljak: stari dizelaši su zabranjeni u naselju Komakjo od 08:30 do 18:30. Parkirajte pre table naselja i uđite peške, ili posetite Komakjo pre 08:30 ili posle 18:30.
+1202	Veneto: uobičajeni nivo protiv smoga obustavljen je do 6. januara, ali bi narandžasto ili crveno upozorenje ipak važilo.
+1203	Venecija: automobil ostaje parkiran; idite vozom.
+1204	Slovenija: kupite e-vinjetu pre prvog autoputa.
+1205	Slovenija: zimska oprema obavezna od 15. novembra.
+1206	Ljubljana: stari centar je zatvoren za automobile.
+1207	Hrvatska: zimska oprema obavezna na glavnim putevima.
+1208	Putarine na A3 karticom ili gotovinom.
+1209	Srbija: zimske gume obavezne; lanci u automobilu.
+1210	Granica: pasoši ili lične karte i osiguranje sa pokrićem u Srbiji.
+1211	Srpske putarine u dinarima, evrima ili karticom.
+1212	Rumunija: rovinijeta od granice kod Đerdapa.
+1213	Rumunija: zimske gume ako ima snega ili leda.
+1214	Bukurešt: još nema niskoemisione zone.
+1215	Rovinijeta kupljena 15. dana i dalje važi.
+1216	Madrid: automobili bez ekološke nalepnice ne smeju da voze nigde u gradu, uključujući M-30. Izuzeti: automobili stanovnika Madrida (do 31. dec. 2026) i registrovana oldtajmer vozila. Kazna 200 €.
+1217	San Sebastijan: centralna zona je zatvorena za automobile bez nalepnice svakog dana, 24 sata. Parkirajte na park and ride parkingu Ilunbe i uzmite autobus 28. Kazna 200 €.
+1218	Bilbao: zona Abando važi od ponedeljka do petka, 07:00–20:00. Vikend je slobodan, pa su dolazak u subotu i polazak u nedelju u redu.
+1219	Putarine na AP-68 i AP-8 u Gipuskoi: plaćanje karticom na naplatnim rampama. AP-1 Burgos–Arminjon je besplatan.
+1220	Lanci ili zimske gume samo gde to traže znakovi, na primer na prevoju Somosijera (A-1) po snegu.
+1221	Autoputevi 120, ostali putevi 90, naselja 50 (30 u ulicama sa jednom trakom po smeru).
+1222	Povezano svetlo upozorenja V-16 obavezno od 1. januara 2026; reflektujući prsluk.
+1223	Tako star automobil ne može da dobije nalepnicu Crit'Air, pa ne sme u aktivne niskoemisione zone (Tuluz i Monpelje na ovoj ruti). Ostanite na autoputevima oko njih; plan već zaobilazi Tuluz.
+1224	Planinski zakon, od 1. novembra do 31. marta, u označenim oblastima Atlantskih Pirineja, Arježa, Ode, Vara i Primorskih Alpa: četiri gume 3PMSF ili lanci u automobilu. Gume samo sa oznakom M+S više ne važe.
+1225	Putarine na autoputevima na naplatnim rampama: kartica radi svuda.
+1226	Autoputevi 130 (110 po kiši), putevi sa razdvojenim kolovozima 110 (100), ostali putevi 80 ili 90 prema znakovima, naselja 50.
+1227	Reflektujući prsluk i trougao.
+1228	Nema niskoemisione zone ni putarina. Koristite javna parkirališta; naselja 50.
+1229	Istorijski centri su zone ograničenog saobraćaja (ZTL) pod nadzorom kamera: Piza, Luka, Firenca, Areco, Sijena i drugi. Parkirajte van zidina; kazne stižu poštom mesecima kasnije.
+1230	Emilija-Romanja, 1. oktobar–31. mart: dizelaši do Euro 4 su zabranjeni u naseljima ravničarskih opština, i malih, od ponedeljka do petka 08:30–18:30, i nekim nedeljama. Autoputevi nisu obuhvaćeni.
+1231	Veneto (kopneni deo Venecije i drugi veći gradovi): dizelaši do Euro 4 su zabranjeni radnim danima 08:30–19:30, ali je uobičajeni nivo obustavljen od 19. decembra do 6. januara. Narandžasta ili crvena upozorenja zbog smoga ipak važe svakog dana.
+1232	15. novembar–15. april na označenim putevima, uključujući apeninske prevoje i E45: zimske gume ili lanci u vozilu. Kazna 87–344 €.
+1233	Putarine na autoputevima: uzmite kartu i platite na izlazu u trakama za kartice ili gotovinu; nikada u žutoj traci Telepass.
+1234	Autoputevi 130 (110 po kiši), glavni putevi 110 (90), ostali putevi 90, naselja 50. Van naselja upaljena oborena svetla.
+1235	Nema granične kontrole ni vinjete. Stari grad na Monte Titanu je zatvoren za automobile: koristite označena parkirališta.
+1236	E-vinjeta je obavezna na svim autoputevima i brzim putevima od granice: 7 dana oko 16,40 €, vezana za registarsku oznaku. Kupuje se na evinjeta.dars.si ili na benzinskim pumpama. Kazna 300 €.
+1237	Od 15. novembra do 15. marta zimska oprema je obavezna i bez snega: zimske gume sa najmanje 3 mm šare ili letnje gume i lanci. Kazna od 40 €.
+1238	Stari centar Ljubljane je zatvoren za automobile; koristite parking na ivici.
+1239	Autoputevi 130, brzi putevi 110, ostali putevi 90, naselja 50. Oborena svetla uvek upaljena.
+1240	15. novembar–15. april na glavnim putevima, bez obzira na vreme: zimske gume na svim točkovima ili letnje gume sa najmanje 4 mm šare i lanci u automobilu.
+1241	Putarine na autoputu A3: plaćanje na izlazu karticom ili gotovinom.
+1242	Autoputevi 130, ostali putevi 90, naselja 50. Zimi upaljena oborena svetla.
+1243	Prva pomoć, trougao, reflektujući prsluk i rezervne sijalice.
+1244	Od 1. novembra do 1. aprila obavezne su zimske gume sa najmanje 4 mm šare, uz lance za pogonske točkove. Kazne oko 50–170 €.
+1245	Za automobile sa španskim tablicama nije potreban zeleni karton; vaša vozačka dozvola važi. Na granici pasoši ili lične karte; tražite od osiguravača potvrdu pokrića u Srbiji.
+1246	Putarine na autoputevima na naplatnim rampama: dinari, evri ili kartica.
+1247	Rezervni točak, trougao, prva pomoć, reflektujući prsluk, sajla za vuču i evropski izveštaj o nezgodi.
+1248	Autoputevi 130, brzi putevi 100, ostali putevi 80, naselja 50. Oborena svetla uvek upaljena.
+1249	Rovinijeta je obavezna na svim državnim putevima od granice: 10 dana 39 leja za automobil Euro 0. Kupuje se na erovinieta.ro (do 30 dana unapred) ili na granici. Kazna 250–500 leja.
+1250	Zimske gume su obavezne kad god je na putu sneg, led ili poledica.
+1251	Planirana niskoemisiona zona u Bukureštu počinje najranije 2027: 3. januara nema ograničenja.
+1252	Prva pomoć, aparat za gašenje požara i dva trougla.
+1253	Autoputevi 130, brzi putevi 120, evropski putevi 100, ostali putevi 90, naselja 50. Van naselja upaljena oborena svetla.
+1254	Ograničenja u gradovima
+1255	Putarine i vinjete
+1256	Zimska oprema
+1257	Ograničenja brzine i svetla
+1258	Oprema
+1259	Pravila
+1260	Sva pravila za ovaj dan
+1261	Pravila na putu
+1262	Provereno {0} u zvaničnim i pouzdanim izvorima. Pravila se menjaju: vesti ih ponovo proveravaju dan ili dva pre svake vožnje.
+1263	Pre polaska
+1264	Zemlja po zemlja
+1265	Izvori
+1266	Broj za hitne slučajeve u svim zemljama na ruti: 112.
+1267	Stari dizelaši su zabranjeni u naselju radnim danima 08:30–18:30: parkirajte pre table naselja
+1268	Pon. 28. dec.: stari dizelaši su zabranjeni 08:30–18:30 u naseljima Padske nizije, uključujući Komakjo: vidi Pravila

@@ -8,6 +8,7 @@ const ICON = {
   today: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 16a8 8 0 1 1 16 0"/><path d="M12 16 7.5 10.5"/><circle cx="12" cy="16" r="1.6" fill="currentColor"/></svg>',
   days: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M5 8h14M9 13h6M9 17h4"/></svg>',
   map: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>',
+  rules: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 21 19H3z"/><path d="M12 10v4M12 16.5v.5" stroke-linecap="round"/></svg>',
   pin: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2z"/></svg>'
 };
 const VIEW = { name: 'today', d: null, tab: 'plan', mapDay: 0 };
@@ -138,6 +139,9 @@ function renderToday() {
       (wv.level === 'switch' && m !== 'safe' && hasMode(d, 'safe') ? ` <button type="button" class="link" data-setmode="${d}:safe">${esc(T('Switch to {0}', T('Safe')))}</button>` : '')
     : esc(T('No forecast yet. From 9 December the weather check fills this in.'))}</span></div>`);
   lamps.push(`<div class="lrow"><span class="lamp${bl ? ' on ' + bl : ''}"></span><span>${BUL[d] ? `<b>${T('News bulletin')}:</b> ${esc(BUL[d].summary || '')}` : esc(T('No news bulletin yet. It starts on 17 December.'))} <button type="button" class="link" data-open="${d}" data-tab="news">${esc(T('Open the day'))}</button></span></div>`);
+  const dr = DAYRULES[d] || [];
+  if (dr.length) { const top = dr.find(x => x[0] === 'act') || dr.find(x => x[0] === 'watch') || dr[0];
+    lamps.push(`<div class="lrow"><span class="lamp on ${top[0] === 'info' ? 'ok' : top[0]}"></span><span><b>${T('Rules')}:</b> ${esc(T(top[1]))} <button type="button" class="link" data-go="#/rules/${d}">${esc(T('All rules for this day'))}</button></span></div>`); }
   h += `<div class="block lamps">${lamps.join('')}</div>`;
   // record
   let rl = '';
@@ -254,6 +258,30 @@ function renderDay() {
   h += `<div role="tabpanel" class="view" style="padding-top:0">${tab === 'plan' ? (drives(d) ? planTab(d) : `<div class="block"><p>${T('No driving today; the car stays parked.')}</p></div>`) : tab === 'stops' ? stopsTab(d) : tab === 'weather' ? weatherTab(d) : newsTab(d)}</div>`;
   main.innerHTML = h;
 }
+
+/* ---------- Rules ---------- */
+const LVL = { act: 'act', watch: 'watch', info: 'ok' };
+const ruleRow = ([lv, txt]) => `<div class="lrow"><span class="lamp on ${LVL[lv]}"></span><span>${esc(T(txt))}</span></div>`;
+function renderRules() {
+  const sel = VIEW.rulesDay || (tripDayNow() >= 1 && tripDayNow() <= 16 ? tripDayNow() : 0);
+  let h = `<h1>${T('Rules on the road')}</h1><p class="note">${esc(T('Checked on {0} against official and reliable sources. Rules change: the news bulletin checks them again one or two days before each drive.', fmtDate(RULES_CHECKED)))}</p>`;
+  h += `<div class="block"><h2>${T('Before you leave')}</h2><div class="lamps">${PREP.map(ruleRow).join('')}</div></div>`;
+  h += `<div class="block"><h2>${T('Day by day')}</h2>` + TRIP.days.map(day => {
+    const d = day.d, items = DAYRULES[d] || [], worst = items.some(x => x[0] === 'act') ? 'act' : items.some(x => x[0] === 'watch') ? 'watch' : 'ok';
+    return `<details class="rday" id="rd${d}"${d === sel ? ' open' : ''}><summary>${stone(d)}<span><b>${day.from === day.to ? esc(T(day.title)) : `${esc(T(day.from))} → ${esc(T(day.to))}`}</b><br><small class="muted">${fmtDate(PLAN[d].date)}</small></span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(ruleRow).join('')}</div></details>`;
+  }).join('') + `</div>`;
+  h += `<div class="block"><h2>${T('Country by country')}</h2>` + COUNTRIES.map(c => {
+    const kinds = [...new Set(c.items.map(i => i[0]))];
+    return `<details class="rcountry"><summary><span class="cc">${c.cc}</span><b>${esc(T(c.n))}</b></summary>` +
+      kinds.map(k => `<h3>${esc(T(RKIND[k]))}</h3><div class="lamps">${c.items.filter(i => i[0] === k).map(i => ruleRow([i[1], i[2]])).join('')}</div>`).join('') +
+      (c.src.length ? `<p class="small muted">${T('Sources')}: ${c.src.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(', ')}</p>` : '') + `</details>`;
+  }).join('') + `</div>` +
+    `<p class="note">${T('Emergency number in every country on the route: 112.')}</p>`;
+  main.innerHTML = h;
+  RULES_JUMP = (sel && VIEW.scrollRules) ? 'rd' + sel : '';
+  VIEW.scrollRules = false;
+}
+let RULES_JUMP = '';
 
 /* ---------- Map ---------- */
 let mapBuilt = null, mapVB = [0, 0, MAP.W, MAP.H];
@@ -420,23 +448,34 @@ function parseHash() {
   if (h[0] === 'day' && +h[1] >= 1 && +h[1] <= 16) Object.assign(VIEW, { name: 'day', d: +h[1], tab: ['plan', 'stops', 'weather', 'news'].includes(h[2]) ? h[2] : 'plan' });
   else if (h[0] === 'days') VIEW.name = 'days';
   else if (h[0] === 'map') { VIEW.name = 'map'; VIEW.mapDay = +h[1] || 0; }
+  else if (h[0] === 'rules') { VIEW.name = 'rules'; const rd = +h[1] || 0; if (rd !== VIEW.rulesDay) VIEW.scrollRules = !!rd; VIEW.rulesDay = rd; }
   else { VIEW.name = 'today'; if (+h[1] >= 1 && +h[1] <= 16) VIEW.d = +h[1]; }
 }
 function go(hash) { if (location.hash !== hash) location.hash = hash; else render(); }
 function openDay(d, tab) { closeSheet(); VIEW.d = d; go(`#/day/${d}/${tab || 'plan'}`); }
 function renderTabs() {
   const cur = VIEW.name === 'day' ? 'days' : VIEW.name;
-  tabsEl.innerHTML = [['today', T('Today'), ICON.today, '#/today'], ['days', T('Days'), ICON.days, '#/days'], ['map', T('Map'), ICON.map, '#/map']]
+  tabsEl.innerHTML = [['today', T('Today'), ICON.today, '#/today'], ['days', T('Days'), ICON.days, '#/days'], ['map', T('Map'), ICON.map, '#/map'], ['rules', T('Rules'), ICON.rules, '#/rules']]
     .map(([k, l, ic, href]) => `<button type="button" class="tab" data-go="${href}"${cur === k ? ' aria-current="page"' : ''}>${ic}<span>${esc(l)}</span></button>`).join('') +
-    `<button type="button" class="tab rec" data-recsheet>${ICON.pin}<span>${esc(T('Record'))}</span></button>`;
+    `<button type="button" class="tab rec" data-recsheet>${ICON.pin}<span>${esc(({ fr: 'Noter', ro: 'Notează' })[LANG] || T('Record'))}</span></button>`;
+  fitTabs();
 }
 let lastName = '';
 function render() {
   parseHash();
-  if (VIEW.name === 'today') renderToday(); else if (VIEW.name === 'days') renderDays(); else if (VIEW.name === 'day') renderDay(); else renderMap();
+  if (VIEW.name === 'today') renderToday(); else if (VIEW.name === 'days') renderDays(); else if (VIEW.name === 'day') renderDay(); else if (VIEW.name === 'rules') renderRules(); else renderMap();
   renderTabs();
   if (lastName !== VIEW.name + VIEW.d) { window.scrollTo(0, 0); lastName = VIEW.name + VIEW.d; }
+  if (RULES_JUMP) { const el = document.getElementById(RULES_JUMP); RULES_JUMP = ''; if (el) el.scrollIntoView({ block: 'start' }); }
 }
+function fitTabs() {
+  tabsEl.querySelectorAll('.tab span').forEach(sp => {
+    sp.style.fontSize = '';
+    let f = 14;
+    while (sp.scrollWidth > sp.clientWidth + 1 && f > 10) { f -= 0.5; sp.style.fontSize = f + 'px'; }
+  });
+}
+addEventListener('resize', () => fitTabs());
 function refresh() {
   const y = window.scrollY;
   if (VIEW.name === 'map') { drawMe(); } else render();

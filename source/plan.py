@@ -85,7 +85,7 @@ D = {
     ("drive", "San Marino via Urbania", 95, 120, "SS73bis / SP / SS72")]),
 10: ("09:00", 45.562, 12.236, 1, [
     ("drive", "Comacchio", 120, 120, "A14 to Ravenna, then SS309 Romea (do not enter Ravenna)"),
-    ("stop", "Comacchio canals", 60, "O", "Under 30,000 people: not on the ban list"),
+    ("stop", "Comacchio canals", 60, "O", "Old diesels banned in the town 08:30–18:30 on weekdays: park outside the town sign"),
     ("drive", "Mogliano Veneto (hotel)", 125, 140, "SS309 Romea past Chioggia, Passante A4")]),
 11: ("09:30", 45.438, 12.336, 1, [
     ("stop", "Train Mogliano → Venezia S. Lucia", 20, "M", "Car stays parked"),

@@ -7,7 +7,7 @@ def grab(name):
     return m.group(1)
 shell = open(f"{S}/v2/shell.html", encoding="utf-8").read()
 lib = open(f"{S}/v2/lib.js", encoding="utf-8").read()
-app = open(f"{S}/v2/app.js", encoding="utf-8").read()
+app = open(f"{S}/v2/rules.js", encoding="utf-8").read() + "\n" + open(f"{S}/v2/app.js", encoding="utf-8").read()
 # data from the V1 build (already enriched by build.py)
 for name, ph in [("MAP", "/*MAPDATA*/null"), ("TRIP", "/*TRIPDATA*/null"), ("PHOTOS", "/*PHOTODATA*/{}"), ("GAL", "/*GALDATA*/{}"),
                  ("PARK", "/*PARKDATA*/{}"), ("PLAN", "/*PLANDATA*/{}"), ("I18N", "/*I18NDATA*/{}"), ("MODESD", "/*MODEDATA*/{}")]:

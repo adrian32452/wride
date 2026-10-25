@@ -455,3 +455,95 @@
 1174	Schermo giorno o notte
 1175	Sezioni
 1176	Prova il nuovo design (V2)
+1177	Monta quattro pneumatici invernali marcati 3PMSF (fiocco di neve su una montagna) con almeno 4 mm di battistrada e porta le catene per le ruote posteriori. Così rispetti le regole invernali di tutti i paesi del percorso.
+1178	Le auto spagnole devono avere dal 1° gennaio 2026 un segnalatore V-16 connesso omologato DGT; in Spagna i triangoli non bastano più. Tieni anche due triangoli per gli altri paesi.
+1179	Porta un giubbotto catarifrangente per tutti, una cassetta di pronto soccorso, un estintore (obbligatorio in Romania) e una ruota di scorta.
+1180	Documenti: passaporti o carte d'identità, patenti, carta di circolazione originale, revisione ITV e certificato di assicurazione. Chiedi all'assicurazione una conferma scritta della copertura in Serbia.
+1181	Compra online, prima dei confini, la vignetta elettronica slovena (7 giorni) e la rovinietă romena: evinjeta.dars.si e erovinieta.ro.
+1182	Zona a basse emissioni di Madrid: a meno che l'auto sia di un residente a Madrid o sia un veicolo storico registrato, parti da fuori del comune (per esempio Alcobendas, sulla A-1).
+1183	Passo di Somosierra: catene se i cartelli lo richiedono.
+1184	Bilbao: la zona non vale il sabato.
+1185	San Sebastián: nessuna auto nella zona centrale, in nessun giorno. Parcheggia a Illunbe e prendi l'autobus 28.
+1186	Pedaggi della AP-8 in Gipuzkoa; Francia da Hendaye.
+1187	Pirenei Atlantici: legge della montagna; le tue gomme invernali la rispettano.
+1188	Nessuna zona a basse emissioni a Pau o a Carcassonne; il percorso evita Tolosa.
+1189	Legge della montagna nei dipartimenti dei Pirenei.
+1190	Zona di Montpellier: resta sulla A9 passando la città.
+1191	Legge della montagna nel Var e nelle Alpi Marittime.
+1192	Monaco e i paesi della Riviera: nessuna zona; usa i parcheggi.
+1193	Pisa e Lucca: centri a traffico limitato; parcheggia fuori dalle mura.
+1194	Iniziano le strade italiane con dotazioni invernali obbligatorie.
+1195	Strade delle colline del Chianti: gomme invernali obbligatorie sui tratti segnalati.
+1196	I centri dei paesi possono essere ZTL; parcheggia all'ingresso.
+1197	Firenze: lascia l'auto in hotel; il centro è ZTL.
+1198	Arezzo: parcheggia al Parcheggio Pietri, fuori dalla ZTL.
+1199	Bocca Trabaria (SS73bis) ed E45: gomme invernali o catene obbligatorie.
+1200	San Marino: usa i parcheggi segnalati.
+1201	Lunedì: i vecchi diesel sono vietati nel centro abitato di Comacchio dalle 08:30 alle 18:30. Parcheggia prima del cartello di inizio centro abitato ed entra a piedi, oppure visita Comacchio prima delle 08:30 o dopo le 18:30.
+1202	Veneto: il livello antismog normale è sospeso fino al 6 gennaio, ma un'allerta arancione o rossa varrebbe comunque.
+1203	Venezia: l'auto resta parcheggiata; vai in treno.
+1204	Slovenia: compra la vignetta elettronica prima della prima autostrada.
+1205	Slovenia: dotazioni invernali obbligatorie dal 15 novembre.
+1206	Lubiana: il centro storico è chiuso alle auto.
+1207	Croazia: dotazioni invernali obbligatorie sulle strade principali.
+1208	Pedaggi della A3 con carta o in contanti.
+1209	Serbia: gomme invernali obbligatorie; catene in auto.
+1210	Confine: passaporti o carte d'identità e assicurazione valida in Serbia.
+1211	Pedaggi serbi in dinari, euro o con carta.
+1212	Romania: rovinietă dal confine delle Porte di Ferro.
+1213	Romania: gomme invernali se c'è neve o ghiaccio.
+1214	Bucarest: ancora nessuna zona a basse emissioni.
+1215	La rovinietă comprata il giorno 15 è ancora valida.
+1216	Madrid: le auto senza bollino ambientale non possono circolare in nessuna parte della città, M-30 compresa. Esenti: le auto dei residenti a Madrid (fino al 31 dic. 2026) e i veicoli storici registrati. Multa di 200 €.
+1217	San Sebastián: la zona centrale è chiusa alle auto senza bollino tutti i giorni, 24 ore su 24. Parcheggia al park and ride di Illunbe e prendi l'autobus 28. Multa di 200 €.
+1218	Bilbao: la zona di Abando vale dal lunedì al venerdì, 07:00–20:00. Il fine settimana è libero, quindi l'arrivo di sabato e la partenza di domenica vanno bene.
+1219	Pedaggi sulla AP-68 e sulla AP-8 in Gipuzkoa: paga con carta ai caselli. La AP-1 Burgos–Armiñón è gratuita.
+1220	Catene o gomme invernali solo dove i cartelli lo richiedono, per esempio sul passo di Somosierra (A-1) con la neve.
+1221	Autostrade 120, altre strade 90, centri abitati 50 (30 nelle strade a una corsia per senso).
+1222	Segnalatore V-16 connesso obbligatorio dal 1° gennaio 2026; giubbotto catarifrangente.
+1223	Un'auto così vecchia non può avere il bollino Crit'Air, quindi non può entrare nelle zone a basse emissioni attive (Tolosa e Montpellier su questo percorso). Resta sulle autostrade che le aggirano; il piano evita già Tolosa.
+1224	Legge della montagna, dal 1° novembre al 31 marzo, nelle zone segnalate dei Pirenei Atlantici, Ariège, Aude, Var e Alpi Marittime: quattro gomme 3PMSF o catene in auto. Le gomme solo M+S non valgono più.
+1225	Pedaggi autostradali ai caselli: la carta va bene ovunque.
+1226	Autostrade 130 (110 con la pioggia), strade a carreggiate separate 110 (100), altre strade 80 o 90 come da cartelli, centri abitati 50.
+1227	Giubbotto catarifrangente e triangolo.
+1228	Nessuna zona a basse emissioni e nessun pedaggio. Usa i parcheggi pubblici; centri abitati 50.
+1229	I centri storici sono zone a traffico limitato (ZTL) controllate da telecamere: Pisa, Lucca, Firenze, Arezzo, Siena e altre. Parcheggia fuori dalle mura; le multe arrivano per posta mesi dopo.
+1230	Emilia-Romagna, 1° ottobre–31 marzo: i diesel fino a Euro 4 sono vietati nei centri abitati dei comuni di pianura, anche piccoli, dal lunedì al venerdì 08:30–18:30, e in alcune domeniche. Le autostrade non sono interessate.
+1231	Veneto (Venezia terraferma e altre città grandi): i diesel fino a Euro 4 sono vietati nei giorni feriali 08:30–19:30, ma il livello normale si sospende dal 19 dicembre al 6 gennaio. Le allerte smog arancioni o rosse valgono comunque tutti i giorni.
+1232	15 novembre–15 aprile sulle strade segnalate, compresi i passi appenninici e la E45: gomme invernali o catene a bordo. Multa 87–344 €.
+1233	Pedaggi autostradali: prendi il biglietto e paga all'uscita nelle corsie per carte o contanti; mai nella corsia gialla Telepass.
+1234	Autostrade 130 (110 con la pioggia), strade extraurbane principali 110 (90), altre strade 90, centri abitati 50. Anabbaglianti accesi fuori dai centri abitati.
+1235	Nessun controllo al confine e nessuna vignetta. Il centro storico sul Monte Titano è chiuso alle auto: usa i parcheggi segnalati.
+1236	Vignetta elettronica necessaria su tutte le autostrade e superstrade dal confine: 7 giorni circa 16,40 €, legata alla targa. Si compra su evinjeta.dars.si o ai distributori. Multa di 300 €.
+1237	15 novembre–15 marzo le dotazioni invernali sono obbligatorie anche senza neve: gomme invernali con almeno 3 mm di battistrada, oppure gomme estive più catene. Multa da 40 €.
+1238	Il centro storico di Lubiana è chiuso alle auto; usa un parcheggio in periferia.
+1239	Autostrade 130, superstrade 110, altre strade 90, centri abitati 50. Anabbaglianti sempre accesi.
+1240	15 novembre–15 aprile sulle strade principali, con qualsiasi tempo: gomme invernali su tutte le ruote, oppure gomme estive con almeno 4 mm di battistrada più catene in auto.
+1241	Pedaggi sull'autostrada A3: paga all'uscita con carta o in contanti.
+1242	Autostrade 130, altre strade 90, centri abitati 50. Anabbaglianti accesi d'inverno.
+1243	Cassetta di pronto soccorso, triangolo, giubbotto catarifrangente e lampadine di ricambio.
+1244	1° novembre–1° aprile sono obbligatorie le gomme invernali con almeno 4 mm di battistrada, con catene per le ruote motrici. Multe di circa 50–170 €.
+1245	Nessuna carta verde necessaria per le auto con targa spagnola; la tua patente è valida. Passaporti o carte d'identità al confine; chiedi all'assicurazione di confermare la copertura in Serbia.
+1246	Pedaggi autostradali ai caselli: dinari, euro o carta.
+1247	Ruota di scorta, triangolo, cassetta di pronto soccorso, giubbotto catarifrangente, cavo di traino e modulo di constatazione amichevole europea.
+1248	Autostrade 130, superstrade 100, altre strade 80, centri abitati 50. Anabbaglianti sempre accesi.
+1249	Rovinietă necessaria su tutte le strade nazionali dal confine: 10 giorni 39 lei per un'auto Euro 0. Si compra su erovinieta.ro (fino a 30 giorni prima) o al confine. Multa di 250–500 lei.
+1250	Le gomme invernali sono obbligatorie ogni volta che la strada ha neve, ghiaccio o ghiaccio vivo.
+1251	La zona a basse emissioni prevista a Bucarest parte al più presto nel 2027: nessuna restrizione il 3 gennaio.
+1252	Cassetta di pronto soccorso, estintore e due triangoli.
+1253	Autostrade 130, superstrade 120, strade europee 100, altre strade 90, centri abitati 50. Anabbaglianti accesi fuori dai centri abitati.
+1254	Restrizioni nelle città
+1255	Pedaggi e vignette
+1256	Dotazioni invernali
+1257	Limiti di velocità e luci
+1258	Dotazioni
+1259	Regole
+1260	Tutte le regole di questo giorno
+1261	Regole per la strada
+1262	Verificato il {0} su fonti ufficiali e affidabili. Le regole cambiano: il notiziario le ricontrolla uno o due giorni prima di ogni tappa.
+1263	Prima di partire
+1264	Paese per paese
+1265	Fonti
+1266	Numero di emergenza in tutti i paesi del percorso: 112.
+1267	Vecchi diesel vietati nel centro abitato 08:30–18:30 nei giorni feriali: parcheggia prima del cartello di inizio centro abitato
+1268	Lun. 28 dic.: i vecchi diesel sono vietati 08:30–18:30 nei comuni della pianura padana, Comacchio compreso: vedi Regole

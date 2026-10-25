@@ -77,12 +77,14 @@ p { margin: 0; }
 
 /* tab bar */
 .tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--panel); border-top: 1px solid var(--line);
-  padding: 6px 10px calc(6px + env(safe-area-inset-bottom)); display: grid; grid-template-columns: 1fr 1fr 1fr 1.5fr; gap: 6px; }
+  padding: 6px 10px calc(6px + env(safe-area-inset-bottom)); display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
 .tabbar > * { max-width: 100%; }
 .tab { min-height: 52px; border: 0; background: none; border-radius: 10px; display: grid; justify-items: center; align-content: center; gap: 2px; font: 600 14px/1 var(--f-text); color: var(--ink-2); cursor: pointer; }
 .tab svg { width: 22px; height: 22px; }
+.tab span { max-width: 100%; padding: 0 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: -0.01em; }
+.rday { scroll-margin-top: 12px; }
 .tab[aria-current="page"] { color: var(--ink); background: var(--panel-2); }
-.tab.rec { background: var(--needle); color: var(--needle-ink); font: 700 18px/1 var(--f-num); display: flex; justify-content: center; align-items: center; gap: 8px; letter-spacing: .02em; }
+.tab.rec { background: var(--needle); color: var(--needle-ink); }
 @media (min-width: 760px) { .tabbar { left: 50%; transform: translateX(-50%); max-width: 720px; border: 1px solid var(--line); border-bottom: 0; border-radius: 14px 14px 0 0; } }
 
 /* kilometre stone (day number) */
@@ -319,6 +321,15 @@ dialog.lb::backdrop { background: #000; }
 .lb .bar span { flex: 1; font-size: 15px; }
 .lb .bar a { color: #ccc; font-size: 13px; }
 .lb button { min-width: 48px; min-height: 48px; border-radius: 10px; border: 1px solid #fff5; background: #0008; color: #fff; font-size: 20px; }
+.rday, .rcountry { border-top: 1px solid var(--line); }
+.rday > summary, .rcountry > summary { list-style: none; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 0; min-height: 60px; }
+.rday > summary::-webkit-details-marker, .rcountry > summary::-webkit-details-marker { display: none; }
+.rday > summary b, .rcountry > summary b { font: 600 18px/1.15 var(--f-num); }
+.rcountry > summary { grid-template-columns: auto minmax(0, 1fr); }
+.rcountry .cc { width: 40px; height: 28px; border-radius: 4px; background: var(--k-main); color: #fff; display: grid; place-items: center; font: 700 15px var(--f-num); }
+.rday .lamps, .rcountry .lamps { padding: 0 0 8px; }
+.rcountry h3 { margin: 6px 0 0; font-size: 17px; }
+.rcountry p { margin: 4px 0 12px; }
 .v1link { text-align: center; font-size: 14.5px; color: var(--ink-2); padding: 8px 0; }
 @media (prefers-reduced-motion: no-preference) { .sheet { animation: up .18s ease-out; } @keyframes up { from { transform: translateY(24px); opacity: .6; } } }
 </style>

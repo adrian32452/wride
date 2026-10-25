@@ -41,7 +41,7 @@ SAFE = {
  9: safe_from_fast(9, ["No Bocca Trabaria: the E45 is lower and gritted, but it still crosses the Apennines",
                        "In heavy snow there is no low road to San Marino: wait for the ploughs"]),
  10: safe_from_fast(10, ["Motorways instead of the SS309 Romea: fog on a dual carriageway, no oncoming traffic",
-                         "Mon 28 Dec: weekday diesel bans 08:30–18:30 in Ravenna, Chioggia and Venice: do not enter those towns"]),
+                         "Mon 28 Dec: old diesels are banned 08:30–18:30 in the towns of the Po plain, Comacchio included: see Rules"]),
  12: {"stops": ["Mogliano Veneto", "Aquileia", "Trieste", "Ljubljana"],
       "steps": [("drive", "Aquileia", 100, 85, "A4", "mw"),
                 ("stop", "Basilica mosaics", 60, "O", ""),

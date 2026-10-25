@@ -455,3 +455,95 @@
 1174	Afișaj de zi sau de noapte
 1175	Secțiuni
 1176	Încearcă noul design (V2)
+1177	Montează patru anvelope de iarnă marcate 3PMSF (fulg de zăpadă pe munte) cu profil de cel puțin 4 mm și ia lanțuri pentru roțile din spate. Așa respecți regulile de iarnă din toate țările de pe traseu.
+1178	Mașinile spaniole trebuie să aibă din 1 ianuarie 2026 o baliză V-16 conectată, omologată DGT; triunghiurile nu mai sunt acceptate în Spania. Păstrează totuși două triunghiuri pentru celelalte țări.
+1179	Ia veste reflectorizante pentru toți, trusă de prim ajutor, stingător (obligatoriu în România) și roată de rezervă.
+1180	Acte: pașapoarte sau cărți de identitate, permise de conducere, certificatul de înmatriculare original, ITV-ul și asigurarea. Cere asigurătorului confirmarea scrisă a acoperirii în Serbia.
+1181	Cumpără online, înainte de granițe, vinieta electronică slovenă (7 zile) și rovinieta: evinjeta.dars.si și erovinieta.ro.
+1182	Zona cu emisii reduse din Madrid: dacă mașina nu aparține unui rezident din Madrid și nu e vehicul istoric înregistrat, pornește din afara limitelor orașului (de exemplu Alcobendas, pe A-1).
+1183	Pasul Somosierra: lanțuri dacă indicatoarele le cer.
+1184	Bilbao: zona nu se aplică sâmbăta.
+1185	San Sebastián: nicio mașină în zona centrală, în nicio zi. Parchează la Illunbe și ia autobuzul 28.
+1186	Taxă pe AP-8 în Gipuzkoa; Franța de la Hendaye.
+1187	Pyrénées-Atlantiques: legea muntelui; anvelopele tale de iarnă o respectă.
+1188	Nicio zonă cu emisii reduse în Pau sau Carcassonne; traseul ocolește Toulouse.
+1189	Legea muntelui în departamentele pirineene.
+1190	Zona Montpellier: rămâi pe A9 pe lângă oraș.
+1191	Legea muntelui în Var și Alpes-Maritimes.
+1192	Monaco și satele de pe Riviera: nicio zonă; folosește parcările.
+1193	Pisa și Lucca: centre cu acces restricționat; parchează în afara zidurilor.
+1194	Încep drumurile italiene cu echipament de iarnă obligatoriu.
+1195	Drumurile din dealurile Chianti: anvelope de iarnă obligatorii pe porțiunile semnalizate.
+1196	Centrele satelor pot fi restricționate; parchează la margine.
+1197	Florența: lasă mașina la hotel; centrul e restricționat.
+1198	Arezzo: parchează la Parcheggio Pietri, în afara zonei restricționate.
+1199	Bocca Trabaria (SS73bis) și E45: anvelope de iarnă sau lanțuri obligatorii.
+1200	San Marino: folosește parcările semnalizate.
+1201	Luni: dieselurile vechi sunt interzise în localitatea Comacchio între 08:30 și 18:30. Parchează în afara indicatorului de localitate și intră pe jos, sau vizitează Comacchio înainte de 08:30 ori după 18:30.
+1202	Veneto: nivelul normal anti-smog e suspendat până pe 6 ianuarie, dar o alertă portocalie sau roșie s-ar aplica totuși.
+1203	Veneția: mașina rămâne parcată; mergi cu trenul.
+1204	Slovenia: cumpără vinieta electronică înainte de prima autostradă.
+1205	Slovenia: echipament de iarnă obligatoriu din 15 noiembrie.
+1206	Ljubljana: centrul vechi e închis mașinilor.
+1207	Croația: echipament de iarnă obligatoriu pe drumurile principale.
+1208	Taxă pe A3 cu cardul sau numerar.
+1209	Serbia: anvelope de iarnă obligatorii; lanțuri în mașină.
+1210	Granița: pașapoarte sau cărți de identitate și asigurare valabilă în Serbia.
+1211	Taxe sârbești în dinari, euro sau cu cardul.
+1212	România: rovinietă de la granița de la Porțile de Fier.
+1213	România: anvelope de iarnă dacă e zăpadă sau gheață.
+1214	București: încă nu există zonă cu emisii reduse.
+1215	Rovinieta cumpărată în Ziua 15 e încă valabilă.
+1216	Madrid: mașinile fără etichetă ecologică nu pot circula nicăieri în oraș, inclusiv pe M-30. Excepții: mașinile rezidenților din Madrid (până la 31 dec. 2026) și vehiculele istorice înregistrate. Amendă 200 €.
+1217	San Sebastián: zona centrală e închisă mașinilor fără etichetă în fiecare zi, 24 de ore. Parchează la Illunbe (park and ride) și ia autobuzul 28. Amendă 200 €.
+1218	Bilbao: zona Abando se aplică de luni până vineri, 07:00–20:00. Weekendul e liber, deci sosirea de sâmbătă și plecarea de duminică sunt în regulă.
+1219	Taxe pe AP-68 și pe AP-8 în Gipuzkoa: plătești cu cardul la barieră. AP-1 Burgos–Armiñón e gratuită.
+1220	Lanțuri sau anvelope de iarnă doar unde indicatoarele le cer, de exemplu pe pasul Somosierra (A-1) când ninge.
+1221	Autostrăzi 120, alte drumuri 90, localități 50 (30 pe străzile cu o singură bandă pe sens).
+1222	Baliză V-16 conectată obligatorie din 1 ianuarie 2026; vestă reflectorizantă.
+1223	O mașină atât de veche nu poate primi vinieta Crit'Air, deci nu are voie în zonele cu emisii reduse active (Toulouse și Montpellier pe acest traseu). Rămâi pe autostrăzile din jurul lor; planul ocolește deja Toulouse.
+1224	Legea muntelui, 1 noiembrie–31 martie, în zonele semnalizate din Pyrénées-Atlantiques, Ariège, Aude, Var și Alpes-Maritimes: patru anvelope 3PMSF sau lanțuri în mașină. Anvelopele doar M+S nu mai sunt acceptate.
+1225	Taxe de autostradă la barieră: cardul merge peste tot.
+1226	Autostrăzi 130 (110 pe ploaie), drumuri expres 110 (100), alte drumuri 80 sau 90 după indicatoare, localități 50.
+1227	Vestă reflectorizantă și triunghi.
+1228	Nicio zonă cu emisii reduse și nicio taxă. Folosește parcările publice; localități 50.
+1229	Centrele istorice sunt zone cu trafic limitat (ZTL) supravegheate cu camere: Pisa, Lucca, Florența, Arezzo, Siena și altele. Parchează în afara zidurilor; amenzile vin prin poștă după luni de zile.
+1230	Emilia-Romagna, 1 octombrie–31 martie: dieselurile până la Euro 4 sunt interzise în localitățile din câmpie, inclusiv cele mici, de luni până vineri 08:30–18:30, și în unele duminici. Autostrăzile nu sunt afectate.
+1231	Veneto (Veneția continentală și alte orașe mari): dieselurile până la Euro 4 sunt interzise în zilele lucrătoare 08:30–19:30, dar nivelul normal e suspendat între 19 decembrie și 6 ianuarie. Alertele de smog portocalii sau roșii se aplică totuși în orice zi.
+1232	15 noiembrie–15 aprilie pe drumurile semnalizate, inclusiv pasurile din Apenini și E45: anvelope de iarnă sau lanțuri la bord. Amendă 87–344 €.
+1233	Taxe de autostradă: iei un bilet și plătești la ieșire pe benzile pentru card sau numerar; niciodată pe banda galbenă Telepass.
+1234	Autostrăzi 130 (110 pe ploaie), drumuri principale 110 (90), alte drumuri 90, localități 50. Faza scurtă aprinsă în afara localităților.
+1235	Fără control la graniță și fără vinietă. Orașul vechi de pe Monte Titano e închis mașinilor: folosește parcările semnalizate.
+1236	Vinieta electronică e necesară pe toate autostrăzile și drumurile expres de la graniță: 7 zile circa 16,40 €, legată de numărul de înmatriculare. Se cumpără pe evinjeta.dars.si sau la benzinării. Amendă 300 €.
+1237	15 noiembrie–15 martie echipamentul de iarnă e obligatoriu chiar și fără zăpadă: anvelope de iarnă cu profil de cel puțin 3 mm sau anvelope de vară plus lanțuri. Amendă de la 40 €.
+1238	Centrul vechi al Ljubljanei e închis mașinilor; folosește o parcare de la margine.
+1239	Autostrăzi 130, drumuri expres 110, alte drumuri 90, localități 50. Faza scurtă aprinsă permanent.
+1240	15 noiembrie–15 aprilie pe drumurile principale, indiferent de vreme: anvelope de iarnă pe toate roțile sau anvelope de vară cu profil de cel puțin 4 mm plus lanțuri în mașină.
+1241	Taxe pe autostrada A3: plătești la ieșire cu cardul sau numerar.
+1242	Autostrăzi 130, alte drumuri 90, localități 50. Faza scurtă aprinsă iarna.
+1243	Trusă de prim ajutor, triunghi, vestă reflectorizantă și becuri de rezervă.
+1244	1 noiembrie–1 aprilie anvelopele de iarnă cu profil de cel puțin 4 mm sunt obligatorii, cu lanțuri pentru roțile motoare. Amenzi de circa 50–170 €.
+1245	Nu e nevoie de carte verde pentru mașinile înmatriculate în Spania; permisul tău e valabil. Pașapoarte sau cărți de identitate la graniță; cere asigurătorului confirmarea acoperirii în Serbia.
+1246	Taxe de autostradă la barieră: dinari, euro sau card.
+1247	Roată de rezervă, triunghi, trusă de prim ajutor, vestă reflectorizantă, cablu de remorcare și formular european de constatare amiabilă.
+1248	Autostrăzi 130, drumuri expres 100, alte drumuri 80, localități 50. Faza scurtă aprinsă permanent.
+1249	Rovinieta e necesară pe toate drumurile naționale de la graniță: 10 zile 39 lei pentru o mașină Euro 0. Se cumpără pe erovinieta.ro (cu până la 30 de zile înainte) sau la graniță. Amendă 250–500 lei.
+1250	Anvelopele de iarnă sunt obligatorii ori de câte ori drumul are zăpadă, gheață sau polei.
+1251	Zona cu emisii reduse plănuită în București începe cel mai devreme în 2027: nicio restricție pe 3 ianuarie.
+1252	Trusă de prim ajutor, stingător și două triunghiuri.
+1253	Autostrăzi 130, drumuri expres 120, drumuri europene 100, alte drumuri 90, localități 50. Faza scurtă aprinsă în afara localităților.
+1254	Restricții în orașe
+1255	Taxe și viniete
+1256	Echipament de iarnă
+1257	Limite de viteză și lumini
+1258	Echipament
+1259	Reguli
+1260	Toate regulile pentru această zi
+1261	Reguli pe drum
+1262	Verificat pe {0} din surse oficiale și de încredere. Regulile se schimbă: buletinul de știri le verifică din nou cu una sau două zile înainte de fiecare drum.
+1263	Înainte de plecare
+1264	Țară cu țară
+1265	Surse
+1266	Numărul de urgență în toate țările de pe traseu: 112.
+1267	Dieselurile vechi sunt interzise în localitate 08:30–18:30 în zilele lucrătoare: parchează în afara indicatorului de localitate
+1268	Luni 28 dec.: dieselurile vechi sunt interzise 08:30–18:30 în localitățile din Câmpia Padului, inclusiv Comacchio: vezi Reguli

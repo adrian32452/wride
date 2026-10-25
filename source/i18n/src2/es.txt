@@ -455,3 +455,95 @@
 1174	Pantalla de día o de noche
 1175	Secciones
 1176	Prueba el nuevo diseño (V2)
+1177	Monta cuatro neumáticos de invierno marcados 3PMSF (copo de nieve sobre una montaña) con al menos 4 mm de dibujo y lleva cadenas para las ruedas traseras. Así cumples las normas de invierno de todos los países de la ruta.
+1178	Los coches españoles deben llevar desde el 1 de enero de 2026 una baliza V-16 conectada homologada por la DGT; en España ya no valen los triángulos. Lleva también dos triángulos para los demás países.
+1179	Lleva chalecos reflectantes para todos, botiquín, extintor (obligatorio en Rumanía) y rueda de repuesto.
+1180	Documentos: pasaportes o DNI, permisos de conducir, permiso de circulación original, ITV y certificado del seguro. Pide a tu aseguradora que confirme por escrito la cobertura en Serbia.
+1181	Compra en línea, antes de las fronteras, la viñeta electrónica eslovena (7 días) y la rovinietă rumana: evinjeta.dars.si y erovinieta.ro.
+1182	ZBE de Madrid: salvo que el coche sea de un residente en Madrid o un vehículo histórico registrado, sal desde fuera del término municipal (por ejemplo Alcobendas, por la A-1).
+1183	Puerto de Somosierra: cadenas si las señales lo exigen.
+1184	Bilbao: la zona no se aplica los sábados.
+1185	San Sebastián: ningún coche en la zona central, ningún día. Aparca en Illunbe y toma el autobús 28.
+1186	Peajes de la AP-8 en Gipuzkoa; Francia desde Hendaya.
+1187	Pirineos Atlánticos: ley de montaña; tus neumáticos de invierno la cumplen.
+1188	No hay zona de bajas emisiones en Pau ni en Carcasona; la ruta evita Toulouse.
+1189	Ley de montaña en los departamentos pirenaicos.
+1190	Zona de Montpellier: sigue por la A9 al pasar la ciudad.
+1191	Ley de montaña en el Var y los Alpes Marítimos.
+1192	Mónaco y los pueblos de la Riviera: sin zona; usa los aparcamientos.
+1193	Pisa y Lucca: centros restringidos; aparca fuera de las murallas.
+1194	Empiezan las carreteras italianas con equipamiento de invierno obligatorio.
+1195	Carreteras de las colinas del Chianti: neumáticos de invierno obligatorios en los tramos señalizados.
+1196	Los centros de los pueblos pueden estar restringidos; aparca en las afueras.
+1197	Florencia: deja el coche en el hotel; el centro está restringido.
+1198	Arezzo: aparca en el Parcheggio Pietri, fuera de la zona restringida.
+1199	Bocca Trabaria (SS73bis) y la E45: neumáticos de invierno o cadenas obligatorios.
+1200	San Marino: usa los aparcamientos señalizados.
+1201	Lunes: los diésel antiguos tienen prohibido el casco urbano de Comacchio de 08:30 a 18:30. Aparca fuera del cartel de la localidad y entra a pie, o visita Comacchio antes de las 08:30 o después de las 18:30.
+1202	Véneto: el nivel antismog normal está suspendido hasta el 6 de enero, pero una alerta naranja o roja también se aplicaría.
+1203	Venecia: el coche se queda aparcado; ve en tren.
+1204	Eslovenia: compra la viñeta electrónica antes de la primera autopista.
+1205	Eslovenia: equipamiento de invierno obligatorio desde el 15 de noviembre.
+1206	Liubliana: el centro histórico está cerrado a los coches.
+1207	Croacia: equipamiento de invierno obligatorio en las carreteras principales.
+1208	Peajes de la A3 con tarjeta o en efectivo.
+1209	Serbia: neumáticos de invierno obligatorios; cadenas en el coche.
+1210	Frontera: pasaportes o DNI y seguro con cobertura en Serbia.
+1211	Peajes serbios en dinares, euros o con tarjeta.
+1212	Rumanía: rovinietă desde la frontera de las Puertas de Hierro.
+1213	Rumanía: neumáticos de invierno si hay nieve o hielo.
+1214	Bucarest: todavía no hay zona de bajas emisiones.
+1215	La rovinietă comprada el día 15 sigue siendo válida.
+1216	Madrid: los coches sin etiqueta ambiental no pueden circular por ningún punto de la ciudad, M-30 incluida. Exentos: los coches de residentes en Madrid (hasta el 31 dic. 2026) y los vehículos históricos registrados. Multa de 200 €.
+1217	San Sebastián: la zona central está cerrada a los coches sin etiqueta todos los días, las 24 horas. Aparca en el park and ride de Illunbe y toma el autobús 28. Multa de 200 €.
+1218	Bilbao: la zona de Abando se aplica de lunes a viernes, de 07:00 a 20:00. El fin de semana es libre, así que la llegada del sábado y la salida del domingo no tienen problema.
+1219	Peajes en la AP-68 y en la AP-8 de Gipuzkoa: paga con tarjeta en las cabinas. La AP-1 Burgos–Armiñón es gratuita.
+1220	Cadenas o neumáticos de invierno solo donde lo exijan las señales, por ejemplo en el puerto de Somosierra (A-1) con nieve.
+1221	Autopistas 120, otras carreteras 90, poblado 50 (30 en calles de un carril por sentido).
+1222	Baliza V-16 conectada obligatoria desde el 1 de enero de 2026; chaleco reflectante.
+1223	Un coche tan antiguo no puede obtener la pegatina Crit'Air, así que no puede entrar en las zonas de bajas emisiones activas (Toulouse y Montpellier en esta ruta). Sigue por las autopistas que las rodean; el plan ya evita Toulouse.
+1224	Ley de montaña, del 1 de noviembre al 31 de marzo, en las zonas señalizadas de Pirineos Atlánticos, Ariège, Aude, Var y Alpes Marítimos: cuatro neumáticos 3PMSF o cadenas en el coche. Los neumáticos solo M+S ya no valen.
+1225	Peajes de autopista en cabinas: la tarjeta funciona en todas.
+1226	Autopistas 130 (110 con lluvia), autovías 110 (100), otras carreteras 80 o 90 según señales, poblado 50.
+1227	Chaleco reflectante y triángulo.
+1228	Sin zona de bajas emisiones y sin peajes. Usa los aparcamientos públicos; poblado 50.
+1229	Los cascos históricos son zonas de tráfico limitado (ZTL) vigiladas por cámaras: Pisa, Lucca, Florencia, Arezzo, Siena y otras. Aparca fuera de las murallas; las multas llegan por correo meses después.
+1230	Emilia-Romaña, del 1 de octubre al 31 de marzo: los diésel hasta Euro 4 tienen prohibidos los cascos urbanos de los municipios de la llanura, también los pequeños, de lunes a viernes de 08:30 a 18:30, y algunos domingos. Las autopistas no están afectadas.
+1231	Véneto (Venecia continental y otras ciudades grandes): los diésel hasta Euro 4 están prohibidos los días laborables de 08:30 a 19:30, pero el nivel normal se suspende del 19 de diciembre al 6 de enero. Las alertas de smog naranjas o rojas se aplican igualmente cualquier día.
+1232	Del 15 de noviembre al 15 de abril en las carreteras señalizadas, incluidos los puertos de los Apeninos y la E45: neumáticos de invierno o cadenas a bordo. Multa de 87 a 344 €.
+1233	Peajes de autopista: coge un tique y paga a la salida en los carriles para tarjeta o efectivo; nunca en el carril amarillo de Telepass.
+1234	Autopistas 130 (110 con lluvia), vías principales 110 (90), otras carreteras 90, poblado 50. Luces de cruce encendidas fuera de poblado.
+1235	Sin controles fronterizos ni viñeta. El casco antiguo del Monte Titano está cerrado a los coches: usa los aparcamientos señalizados.
+1236	Viñeta electrónica necesaria en todas las autopistas y autovías desde la frontera: 7 días unos 16,40 €, ligada a la matrícula. Se compra en evinjeta.dars.si o en gasolineras. Multa de 300 €.
+1237	Del 15 de noviembre al 15 de marzo el equipamiento de invierno es obligatorio aunque no haya nieve: neumáticos de invierno con al menos 3 mm de dibujo, o neumáticos de verano más cadenas. Multa desde 40 €.
+1238	El centro histórico de Liubliana está cerrado a los coches; usa un aparcamiento de las afueras.
+1239	Autopistas 130, autovías 110, otras carreteras 90, poblado 50. Luces de cruce encendidas siempre.
+1240	Del 15 de noviembre al 15 de abril en las carreteras principales, haga el tiempo que haga: neumáticos de invierno en todas las ruedas, o de verano con al menos 4 mm de dibujo más cadenas en el coche.
+1241	Peajes en la autopista A3: paga a la salida con tarjeta o en efectivo.
+1242	Autopistas 130, otras carreteras 90, poblado 50. Luces de cruce encendidas en invierno.
+1243	Botiquín, triángulo, chaleco reflectante y bombillas de repuesto.
+1244	Del 1 de noviembre al 1 de abril son obligatorios los neumáticos de invierno con al menos 4 mm de dibujo, con cadenas para las ruedas motrices. Multas de unos 50–170 €.
+1245	Los coches con matrícula española no necesitan carta verde; tu permiso es válido. Pasaportes o DNI en la frontera; pide a tu aseguradora que confirme la cobertura en Serbia.
+1246	Peajes de autopista en cabinas: dinares, euros o tarjeta.
+1247	Rueda de repuesto, triángulo, botiquín, chaleco reflectante, cuerda de remolque y un parte europeo de accidente.
+1248	Autopistas 130, autovías 100, otras carreteras 80, poblado 50. Luces de cruce encendidas siempre.
+1249	Rovinietă necesaria en todas las carreteras nacionales desde la frontera: 10 días 39 lei para un coche Euro 0. Se compra en erovinieta.ro (hasta 30 días antes) o en la frontera. Multa de 250–500 lei.
+1250	Los neumáticos de invierno son obligatorios siempre que la carretera tenga nieve, hielo o placas de hielo.
+1251	La zona de bajas emisiones prevista en Bucarest empieza como pronto en 2027: ninguna restricción el 3 de enero.
+1252	Botiquín, extintor y dos triángulos.
+1253	Autopistas 130, vías rápidas 120, carreteras europeas 100, otras carreteras 90, poblado 50. Luces de cruce encendidas fuera de poblado.
+1254	Restricciones en ciudades
+1255	Peajes y viñetas
+1256	Equipamiento de invierno
+1257	Límites de velocidad y luces
+1258	Equipamiento
+1259	Normas
+1260	Todas las normas de este día
+1261	Normas en la carretera
+1262	Comprobado el {0} con fuentes oficiales y fiables. Las normas cambian: el boletín de noticias las vuelve a comprobar uno o dos días antes de cada etapa.
+1263	Antes de salir
+1264	País por país
+1265	Fuentes
+1266	Número de emergencias en todos los países de la ruta: 112.
+1267	Diésel antiguos prohibidos en el casco urbano de 08:30 a 18:30 los días laborables: aparca fuera del cartel de la localidad
+1268	Lun. 28 dic.: los diésel antiguos están prohibidos de 08:30 a 18:30 en los municipios de la llanura del Po, Comacchio incluido: ver Normas

@@ -125,10 +125,10 @@ V[10] = {"fast": {
               st("Padova", 45.400, 11.880, "via", m="mw"),
               "Mogliano Veneto"],
     "steps": [("drive", "Comacchio", 120, 120, "A14 to Ravenna, then SS309 Romea (do not enter Ravenna)", "main"),
-              ("stop", "Comacchio canals", 60, "O", "Under 30,000 people: not on the ban list"),
+              ("stop", "Comacchio canals", 60, "O", "Old diesels banned in the town 08:30–18:30 on weekdays: park outside the town sign"),
               ("drive", "Mogliano Veneto (hotel)", 160, 115, "Ferrara–Mare expressway, A13, A4", "mw")],
     "roads": [["IT-A", "A14"], ["IT-SS", "SS309"], ["IT-A", "A13"], ["IT-A", "A4"]],
-    "flags": ["Avoids Chioggia and the SS309 Romea north of Comacchio", "Mon 28 Dec: weekday diesel bans 08:30–18:30 in Ravenna, Chioggia and Venice: do not enter those towns"],
+    "flags": ["Avoids Chioggia and the SS309 Romea north of Comacchio", "Mon 28 Dec: old diesels are banned 08:30–18:30 in the towns of the Po plain, Comacchio included: see Rules"],
     "check": ["Veneto and Emilia-Romagna diesel ban days", "A13 / A4 traffic"]},
   "cine": {"same": True, "why": "Balanced already follows the Po delta on the Romea."}}
 
