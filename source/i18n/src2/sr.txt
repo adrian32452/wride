@@ -565,3 +565,34 @@
 1280	Kako platiti na autoputevima.
 1281	Ovaj automobil je dizelaš Euro 0 bez ekološke nalepnice u Španiji i bez Crit'Air u Francuskoj, pa ga svaka niskoemisiona zona svrstava u najstariju kategoriju.
 1282	Sve
+1283	Noću koristite hotelski parking ili natkrivenu garažu sa osobljem: stari Mercedes privlači kradljivce delova. Ništa ne ostavljajte na vidnom mestu i stavite bravu volana.
+1284	Imajte plavi parking sat: besplatne kratkotrajne zone u Francuskoj, Italiji i Sloveniji traže da pokažete vreme dolaska.
+1285	Plaćanje parkiranja na ulici SMS-om u Hrvatskoj, Srbiji i Rumuniji traži lokalni broj telefona. Koristite parking automate, karte sa kioska, aplikacije ili garaže.
+1286	Plave zone se za posetioce plaćaju, a zelene su uglavnom za stanare. U Bilbau se centralna zona plaća samo radnim danima i subotom ujutru; nedelja je besplatna.
+1287	Parkiranje na ulici plaća se na automatu ili aplikacijom (PayByPhone, Flowbird). Zone sa plavim diskom besplatne su za kratko zadržavanje uz parking sat.
+1288	Javne garaže su besplatne do jednog sata, oko 7,30 € za 2 sata i 24 € za 24 sata. Mesta na ulici nedeljom su besplatna.
+1289	Plave linije se plaćaju, obično 08:00–20:00 i često ne praznikom (pročitajte znak); bele su besplatne; žute su samo za stanare ili osobe sa invaliditetom.
+1290	Centar Ljubljane ima kratkotrajne zone od 30 do 120 minuta, plaćaju se na automatima ili SMS-om. Karta P+R pokriva 24 sata parkiranja i dve vožnje gradskim autobusom.
+1291	Ulične zone u Zagrebu plaćaju se radnim danima i subotom ujutru, centralna zona i uveče. Garaže su jednostavan izbor.
+1292	Crvena, žuta i zelena zona u Beogradu dozvoljavaju 1–3 sata. Platite kartom sa kioska ili SMS-om na 9111–9113 sa registarskim brojem, ili koristite javnu garažu.
+1293	Mesta Gradske uprave Bukurešta označena plavo koštaju 5 leja na sat, od ponedeljka do petka 08:00–20:00, a noću i vikendom su besplatna. Platite aplikacijom (Parking București ili AmParcat) pre nego što odete: neplaćeno parkiranje kažnjava se sa 200 leja.
+1294	Bilbao: parkiranje na ulici u centru besplatno je od subote popodne do ponedeljka ujutru, ali za noć koristite hotelsku garažu ili javni parking (parking pijace Ribera za Casco Viejo).
+1295	San Sebastijan: parkirajte u Ilunbeu i uzmite autobus 28.
+1296	Bijaric: crvena i narandžasta zona plaćaju se cele godine uz prvi sat besplatno; zelena i žuta zona zimi su besplatne. P+R Halle d'Iraty je besplatan, autobusom 7 do centra za 10 minuta.
+1297	Karkason: parkinzi P1 i P2 kod Citea koštaju 1 € za 15 minuta prva 2 sata i besplatni su 20:00–08:00. U novom gradu P3, P4 i P5 daju 30 minuta besplatno, zatim 1 € na sat.
+1298	Pont di Gar: 9 € po automobilu bez obzira na trajanje; parking otvoren od 08:00 do ponoći.
+1299	Ez: parking Place Figuiera, danju 3,20 € na sat, prvih 15 minuta besplatno.
+1300	Monako: parking Pêcheurs najbliži je Palati i Steni; manje od sat vremena je besplatno.
+1301	Piza: parking u Via Pietrasantina je besplatan, sa prevozom za oko 1 € u oba smera do Piazza dei Miracoli (zimi 09:00–17:00).
+1302	Luka: parkinzi Carducci i Palatucci van zidina koštaju oko 5–6 € dnevno i noću su pod video nadzorom.
+1303	25. decembar: parkiranje na plavim linijama praznikom je često besplatno, ali pročitajte svaki znak. Parkirajte na ivici sela u Kjantiju.
+1304	Firenca: ostavite automobil u Figlineu i idite regionalnim vozom do Santa Maria Novella.
+1305	San Marino: koristite hotelski parking ili jedan od numerisanih javnih parkinga oko starog grada, pa se popnite peške.
+1306	Moljano Veneto: koristite hotelski parking; sledeći dan ide se vozom.
+1307	Venecija: uzmite voz iz Moljana do Venezia Santa Lucia. Automobilom do Piazzale Roma ili Tronketa dobijate samo skup parking.
+1308	Ljubljana: rezervišite hotelski parking ili koristite P+R Dolgi most na ulazu iz Trsta i uzmite autobus.
+1309	Zagreb: rezervišite parking u hotelu ili koristite centralnu javnu garažu, poput Langovog trga, Tuškanca ili Petrinjske.
+1310	Beograd: odsednite na Novom Beogradu u hotelu sa parkingom. U centru koristite javnu garažu (Zeleni venac, Obilićev venac, Masarikova). 1. januar je praznik: proverite šta piše na znakovima zona.
+1311	Drobeta-Turnu Severin ili Oršova: izaberite hotel sa zatvorenim dvorištem ili čuvanim parkingom.
+1312	Bukurešt: nedeljom je besplatno na gradskim mestima označenim plavo. Za noć koristite čuvani ili hotelski parking.
+1313	Gde ostaviti automobil svaki dan, koliko košta i kako platiti.

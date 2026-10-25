@@ -561,3 +561,34 @@
 1280	Come pagare in autostrada.
 1281	Questa auto è un diesel Euro 0 senza bollino ambientale in Spagna né Crit'Air in Francia, quindi ogni zona a basse emissioni la tratta come la categoria più vecchia.
 1282	Tutti
+1283	Di notte usa il parcheggio dell'hotel o un garage coperto e custodito: una vecchia Mercedes attira i ladri di ricambi. Non lasciare nulla in vista e monta un bloccasterzo.
+1284	Porta un disco orario blu: le zone gratuite a breve sosta in Francia, Italia e Slovenia chiedono di esporre l'ora di arrivo.
+1285	Pagare la sosta in strada via SMS in Croazia, Serbia e Romania richiede un numero locale. Usa parcometri, biglietti dal chiosco, app o garage.
+1286	Le zone blu sono a pagamento per i visitatori e quelle verdi sono soprattutto per i residenti. A Bilbao la zona centrale si paga solo nei giorni feriali e il sabato mattina; la domenica è gratis.
+1287	La sosta in strada si paga al parcometro o con app (PayByPhone, Flowbird). Le zone a disco blu sono gratuite per una sosta breve con il disco orario.
+1288	I parcheggi pubblici sono gratis sotto l'ora, circa 7,30 € per 2 ore e 24 € per 24 ore. I posti in strada sono gratis la domenica.
+1289	Le strisce blu sono a pagamento, di solito 08:00–20:00 e spesso non nei festivi (leggi il cartello); le bianche sono gratuite; le gialle sono solo per residenti o disabili.
+1290	Il centro di Lubiana ha zone a breve sosta da 30 a 120 minuti, a pagamento alle macchinette o via SMS. Un biglietto P+R copre 24 ore di sosta e due corse in autobus urbano.
+1291	A Zagabria le zone in strada si pagano nei giorni feriali e il sabato mattina, la zona centrale anche la sera. I garage sono la scelta semplice.
+1292	A Belgrado le zone rossa, gialla e verde consentono 1–3 ore. Paga con un biglietto dal chiosco o via SMS al 9111–9113 con la targa, oppure usa un garage pubblico.
+1293	I posti del Comune di Bucarest con strisce blu costano 5 lei l'ora, lunedì–venerdì 08:00–20:00, e sono gratis di notte e nel fine settimana. Paga con l'app (Parking București o AmParcat) prima di allontanarti: la sosta non pagata costa 200 lei di multa.
+1294	Bilbao: la sosta in strada in centro è gratis dal sabato pomeriggio al lunedì mattina, ma per la notte usa il garage dell'hotel o un parcheggio pubblico (quello del mercato della Ribera per il Casco Viejo).
+1295	San Sebastián: parcheggia a Illunbe e prendi l'autobus 28.
+1296	Biarritz: le zone rossa e arancione si pagano tutto l'anno con la prima ora gratis; le zone verde e gialla sono gratuite d'inverno. Il P+R della Halle d'Iraty è gratis, con l'autobus 7 per il centro in 10 minuti.
+1297	Carcassonne: i parcheggi P1 e P2 della Cité costano 1 € ogni 15 minuti per le prime 2 ore e sono gratis 20:00–08:00. Nella città nuova, P3, P4 e P5 danno 30 minuti gratis, poi 1 € l'ora.
+1298	Pont du Gard: 9 € per auto qualunque sia la durata; parcheggio aperto dalle 08:00 a mezzanotte.
+1299	Èze: parcheggio di Place Figuiera, 3,20 € l'ora di giorno, primi 15 minuti gratis.
+1300	Monaco: il parcheggio des Pêcheurs è il più vicino al Palazzo e alla Rocca; sotto l'ora è gratis.
+1301	Pisa: il parcheggio di Via Pietrasantina è gratuito, con una navetta da circa 1 € andata e ritorno per Piazza dei Miracoli (09:00–17:00 d'inverno).
+1302	Lucca: i parcheggi Carducci e Palatucci fuori dalle mura costano circa 5–6 € al giorno e sono videosorvegliati di notte.
+1303	25 dicembre: le strisce blu sono spesso gratuite nei festivi, ma leggi ogni cartello. Parcheggia all'ingresso dei paesi del Chianti.
+1304	Firenze: lascia l'auto a Figline e prendi il treno regionale per Santa Maria Novella.
+1305	San Marino: usa il parcheggio dell'hotel o uno dei parcheggi pubblici numerati intorno al centro storico, poi sali a piedi.
+1306	Mogliano Veneto: usa il parcheggio dell'hotel; il giorno dopo si va in treno.
+1307	Venezia: prendi il treno da Mogliano a Venezia Santa Lucia. In auto fino a Piazzale Roma o al Tronchetto ottieni solo un parcheggio caro.
+1308	Lubiana: prenota il parcheggio dell'hotel, oppure usa il P+R Dolgi Most arrivando da Trieste e prendi l'autobus.
+1309	Zagabria: prenota il parcheggio in hotel o usa un garage pubblico centrale come Langov trg, Tuškanac o Petrinjska.
+1310	Belgrado: dormi a Novi Beograd in un hotel con parcheggio. In centro usa un garage pubblico (Zeleni venac, Obilićev venac, Masarikova). Il 1° gennaio è festivo: controlla cosa dicono i cartelli di zona.
+1311	Drobeta-Turnu Severin o Orșova: scegli un hotel con cortile chiuso o parcheggio custodito.
+1312	Bucarest: la domenica è gratis sui posti del Comune con strisce blu. Per la notte usa un parcheggio custodito o quello dell'hotel.
+1313	Dove lasciare l'auto ogni giorno, quanto costa e come pagare.

@@ -271,15 +271,15 @@ function renderRules() {
     const g = rulesByCat();
     h += `<div class="block carfact"><div class="lrow"><span class="lamp on watch"></span><span>${esc(T("This car is a Euro 0 diesel with no environmental sticker in Spain and no Crit'Air in France, so every low-emission zone treats it as the oldest category."))}</span></div></div>`;
     h += RCATS.map(([k, name, desc]) => {
-      const items = g[k].slice().sort((x, y) => LVORD[x.lv] - LVORD[y.lv]);
-      const worst = LVL[items[0] ? items[0].lv : 'info'];
-      return `<details class="block rcat"><summary><span><b>${esc(T(name))}</b><br><small class="muted">${esc(T(desc))}</small></span><span class="rcount">${items.length}</span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(it => `<div class="lrow"><span class="lamp on ${LVL[it.lv]}"></span><span>${it.cc ? `<span class="cc">${it.cc}</span> ` : `<span class="cc all">${esc(T('All'))}</span> `}${esc(T(it.t))}</span></div>`).join('')}</div></details>`;
+      const items = g[k].filter(x => !x.day).sort((x, y) => LVORD[x.lv] - LVORD[y.lv]).concat(g[k].filter(x => x.day));
+      const worst = LVL[items.reduce((w, x) => LVORD[x.lv] < LVORD[w] ? x.lv : w, 'info')];
+      return `<details class="block rcat"><summary><span><b>${esc(T(name))}</b><br><small class="muted">${esc(T(desc))}</small></span><span class="rcount">${items.length}</span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(it => `<div class="lrow"><span class="lamp on ${LVL[it.lv]}"></span><span>${it.day ? `<button type="button" class="cc day" data-go="#/rules/${it.day}">${esc(T('Day {0}', it.day))}</button> ` : it.cc ? `<span class="cc">${it.cc}</span> ` : `<span class="cc all">${esc(T('All'))}</span> `}${esc(T(it.t))}</span></div>`).join('')}</div></details>`;
     }).join('');
-    h += `<p class="small muted">${T('Sources')}: ${COUNTRIES.flatMap(c => c.src).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(', ')}</p>`;
+    h += `<p class="small muted">${T('Sources')}: ${COUNTRIES.flatMap(c => c.src).concat(PARK_SRC).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(', ')}</p>`;
   } else if (by === 'day') {
     h += `<div class="block">` + TRIP.days.map(day => {
-      const d = day.d, items = DAYRULES[d] || [], worst = items.some(x => x[0] === 'act') ? 'act' : items.some(x => x[0] === 'watch') ? 'watch' : 'ok';
-      return `<details class="rday" id="rd${d}"${d === sel ? ' open' : ''}><summary>${stone(d)}<span><b>${day.from === day.to ? esc(T(day.title)) : `${esc(T(day.from))} → ${esc(T(day.to))}`}</b><br><small class="muted">${fmtDate(PLAN[d].date)}</small></span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(ruleRow).join('')}</div></details>`;
+      const d = day.d, items = DAYRULES[d] || [], park = DAYPARK[d] || [], worst = items.some(x => x[0] === 'act') ? 'act' : items.some(x => x[0] === 'watch') ? 'watch' : 'ok';
+      return `<details class="rday" id="rd${d}"${d === sel ? ' open' : ''}><summary>${stone(d)}<span><b>${day.from === day.to ? esc(T(day.title)) : `${esc(T(day.from))} → ${esc(T(day.to))}`}</b><br><small class="muted">${fmtDate(PLAN[d].date)}</small></span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(ruleRow).join('')}</div>${park.length ? `<h3 class="rpark">${esc(T('Parking'))}</h3><div class="lamps">${park.map(ruleRow).join('')}</div>` : ''}</details>`;
     }).join('') + `</div>`;
   } else {
     h += `<div class="block">` + COUNTRIES.map(c => {

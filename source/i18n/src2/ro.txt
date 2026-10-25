@@ -561,3 +561,34 @@
 1280	Cum plătești pe autostrăzi.
 1281	Mașina e un diesel Euro 0, fără etichetă de mediu în Spania și fără Crit'Air în Franța, deci orice zonă cu emisii reduse o tratează ca pe cea mai veche categorie.
 1282	Toate
+1283	Noaptea, folosește parcarea hotelului sau un garaj acoperit, cu personal: un Mercedes vechi atrage hoții de piese. Nu lăsa nimic la vedere și pune o blocare de volan.
+1284	Ia un disc de parcare albastru: zonele gratuite de scurtă durată din Franța, Italia și Slovenia îți cer să arăți ora sosirii.
+1285	Plata parcării pe stradă prin SMS în Croația, Serbia și România cere un număr de telefon local. Folosește parcometre, tichete de la chioșc, aplicații sau garaje.
+1286	Zonele albastre sunt cu plată pentru vizitatori, iar cele verzi sunt mai ales pentru rezidenți. În Bilbao, zona centrală se plătește doar în zilele lucrătoare și sâmbătă dimineața; duminica e gratuit.
+1287	Parcarea pe stradă se plătește la parcometru sau prin aplicație (PayByPhone, Flowbird). Zonele cu disc albastru sunt gratuite pentru o oprire scurtă, cu discul de parcare.
+1288	Parcările publice sunt gratuite sub o oră, circa 7,30 € pentru 2 ore și 24 € pentru 24 de ore. Locurile de pe stradă sunt gratuite duminica.
+1289	Liniile albastre sunt cu plată, de obicei 08:00–20:00 și adesea nu în zilele de sărbătoare (citește indicatorul); liniile albe sunt gratuite; cele galbene sunt doar pentru rezidenți sau persoane cu dizabilități.
+1290	Centrul Ljubljanei are zone de scurtă durată de 30–120 de minute, plătite la automate sau prin SMS. Un tichet P+R acoperă 24 de ore de parcare și două călătorii cu autobuzul orașului.
+1291	Zonele de pe stradă din Zagreb se plătesc în zilele lucrătoare și sâmbătă dimineața, zona centrală și seara. Garajele sunt varianta simplă.
+1292	Zonele roșie, galbenă și verde din Belgrad permit 1–3 ore. Plătește cu tichet de la chioșc sau prin SMS la 9111–9113 cu numărul de înmatriculare, ori folosește un garaj public.
+1293	Locurile Primăriei București marcate cu albastru costă 5 lei pe oră, luni–vineri 08:00–20:00, și sunt gratuite noaptea și în weekend. Plătește din aplicație (Parking București sau AmParcat) înainte să pleci de lângă mașină: parcarea neplătită se amendează cu 200 de lei.
+1294	Bilbao: parcarea pe stradă în centru e gratuită de sâmbătă după-amiază până luni dimineață, dar pentru noapte folosește garajul hotelului sau o parcare publică (parcarea pieței Ribera pentru Casco Viejo).
+1295	San Sebastián: parchează la Illunbe și ia autobuzul 28.
+1296	Biarritz: zonele roșie și portocalie se plătesc tot anul, cu prima oră gratuită; zonele verde și galbenă sunt gratuite iarna. P+R Halle d'Iraty e gratuit, cu autobuzul 7 până în centru în 10 minute.
+1297	Carcassonne: parcările P1 și P2 de la Cité costă 1 € pe 15 minute în primele 2 ore și sunt gratuite 20:00–08:00. În orașul nou, P3, P4 și P5 dau 30 de minute gratuite, apoi 1 € pe oră.
+1298	Pont du Gard: 9 € pe mașină indiferent cât stai; parcarea e deschisă 08:00–miezul nopții.
+1299	Èze: parcarea Place Figuiera, 3,20 € pe oră ziua, primele 15 minute gratuite.
+1300	Monaco: parcarea Pêcheurs e cea mai apropiată de Palat și de Stâncă; sub o oră e gratuit.
+1301	Pisa: parcarea din Via Pietrasantina e gratuită, cu o navetă de circa 1 € dus-întors până la Piazza dei Miracoli (09:00–17:00 iarna).
+1302	Lucca: parcările Carducci și Palatucci din afara zidurilor costă circa 5–6 € pe zi și sunt supravegheate video noaptea.
+1303	25 decembrie: parcarea pe linii albastre e adesea gratuită de sărbători, dar citește fiecare indicator. Parchează la marginea satelor din Chianti.
+1304	Florența: lasă mașina în Figline și ia trenul regional până la Santa Maria Novella.
+1305	San Marino: folosește parcarea hotelului sau una dintre parcările publice numerotate din jurul orașului vechi, apoi urcă pe jos.
+1306	Mogliano Veneto: folosește parcarea hotelului; a doua zi mergi cu trenul.
+1307	Veneția: ia trenul din Mogliano până la Venezia Santa Lucia. Cu mașina până la Piazzale Roma sau Tronchetto câștigi doar o parcare scumpă.
+1308	Ljubljana: rezervă parcarea hotelului sau folosește P+R Dolgi Most la intrarea dinspre Trieste și ia autobuzul.
+1309	Zagreb: rezervă parcare la hotel sau folosește un garaj public central, precum Langov trg, Tuškanac sau Petrinjska.
+1310	Belgrad: stai în Novi Beograd, la un hotel cu parcare. În centru folosește un garaj public (Zeleni venac, Obilićev venac, Masarikova). 1 ianuarie e zi liberă: verifică ce scrie pe indicatoarele zonelor.
+1311	Drobeta-Turnu Severin sau Orșova: alege un hotel cu curte închisă sau parcare păzită.
+1312	București: duminica e gratuit pe locurile Primăriei marcate cu albastru. Pentru noapte, folosește o parcare păzită sau a hotelului.
+1313	Unde lași mașina în fiecare zi, cât costă și cum plătești.

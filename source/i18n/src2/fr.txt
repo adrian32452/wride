@@ -563,3 +563,34 @@
 1280	Comment payer sur les autoroutes.
 1281	Cette voiture est un diesel Euro 0 sans vignette environnementale en Espagne ni Crit'Air en France : toute zone à faibles émissions la classe dans la catégorie la plus ancienne.
 1282	Tous
+1283	La nuit, utilisez le parking de l'hôtel ou un garage couvert et gardé : une vieille Mercedes attire les voleurs de pièces. Ne laissez rien en vue et posez un antivol de volant.
+1284	Ayez un disque de stationnement bleu : les zones gratuites de courte durée en France, en Italie et en Slovénie demandent d'afficher l'heure d'arrivée.
+1285	Payer le stationnement dans la rue par SMS en Croatie, en Serbie et en Roumanie exige un numéro local. Utilisez les horodateurs, les tickets en kiosque, les applis ou les parkings.
+1286	Les zones bleues sont payantes pour les visiteurs et les vertes surtout réservées aux résidents. À Bilbao, la zone centrale est payante seulement en semaine et le samedi matin ; le dimanche est gratuit.
+1287	Le stationnement dans la rue se paie à l'horodateur ou par appli (PayByPhone, Flowbird). Les zones bleues sont gratuites pour un arrêt court avec un disque.
+1288	Les parkings publics sont gratuits moins d'une heure, environ 7,30 € pour 2 heures et 24 € pour 24 heures. Les places dans la rue sont gratuites le dimanche.
+1289	Les lignes bleues sont payantes, en général 08:00–20:00 et souvent pas les jours fériés (lisez le panneau) ; les blanches sont gratuites ; les jaunes sont réservées aux résidents ou aux personnes handicapées.
+1290	Le centre de Ljubljana a des zones de courte durée de 30 à 120 minutes, payantes aux bornes ou par SMS. Un ticket P+R couvre 24 heures de stationnement et deux trajets en bus urbain.
+1291	À Zagreb, les zones dans la rue sont payantes en semaine et le samedi matin, la zone centrale aussi le soir. Les parkings couverts sont la solution simple.
+1292	À Belgrade, les zones rouge, jaune et verte autorisent 1 à 3 heures. Payez avec un ticket de kiosque ou par SMS au 9111–9113 avec la plaque, ou utilisez un parking public.
+1293	Les places de la mairie de Bucarest marquées en bleu coûtent 5 lei l'heure, du lundi au vendredi 08:00–20:00, et sont gratuites la nuit et le week-end. Payez par appli (Parking București ou AmParcat) avant de vous éloigner : le stationnement impayé coûte 200 lei d'amende.
+1294	Bilbao : le stationnement dans la rue au centre est gratuit du samedi après-midi au lundi matin, mais pour la nuit, utilisez le garage de l'hôtel ou un parking public (celui du marché de la Ribera pour le Casco Viejo).
+1295	Saint-Sébastien : garez-vous à Illunbe et prenez le bus 28.
+1296	Biarritz : les zones rouge et orange sont payantes toute l'année avec la première heure gratuite ; les zones verte et jaune sont gratuites en hiver. Le P+R de la Halle d'Iraty est gratuit, avec le bus 7 jusqu'au centre en 10 minutes.
+1297	Carcassonne : les parkings P1 et P2 de la Cité coûtent 1 € les 15 minutes pendant 2 heures et sont gratuits de 20:00 à 08:00. Dans la ville basse, P3, P4 et P5 offrent 30 minutes gratuites, puis 1 € l'heure.
+1298	Pont du Gard : 9 € par voiture quelle que soit la durée ; parking ouvert de 08:00 à minuit.
+1299	Èze : parking de la Place Figuiera, 3,20 € l'heure en journée, 15 premières minutes gratuites.
+1300	Monaco : le parking des Pêcheurs est le plus proche du Palais et du Rocher ; moins d'une heure, c'est gratuit.
+1301	Pise : le parking de la Via Pietrasantina est gratuit, avec une navette d'environ 1 € aller-retour vers la Piazza dei Miracoli (09:00–17:00 en hiver).
+1302	Lucques : les parkings Carducci et Palatucci, hors des remparts, coûtent environ 5–6 € par jour et sont sous vidéosurveillance la nuit.
+1303	25 décembre : les lignes bleues sont souvent gratuites les jours fériés, mais lisez chaque panneau. Garez-vous à l'entrée des villages du Chianti.
+1304	Florence : laissez la voiture à Figline et prenez le train régional jusqu'à Santa Maria Novella.
+1305	Saint-Marin : utilisez le parking de l'hôtel ou l'un des parkings publics numérotés autour de la vieille ville, puis montez à pied.
+1306	Mogliano Veneto : utilisez le parking de l'hôtel ; le lendemain se fait en train.
+1307	Venise : prenez le train de Mogliano à Venezia Santa Lucia. Aller en voiture à Piazzale Roma ou au Tronchetto ne vous offre qu'un parking cher.
+1308	Ljubljana : réservez le parking de l'hôtel, ou utilisez le P+R Dolgi Most en arrivant de Trieste et prenez le bus.
+1309	Zagreb : réservez un parking à l'hôtel ou utilisez un parking public central comme Langov trg, Tuškanac ou Petrinjska.
+1310	Belgrade : logez à Novi Beograd avec parking à l'hôtel. Au centre, utilisez un parking public (Zeleni venac, Obilićev venac, Masarikova). Le 1er janvier est férié : vérifiez ce qu'indiquent les panneaux de zone.
+1311	Drobeta-Turnu Severin ou Orșova : choisissez un hôtel avec cour fermée ou parking gardé.
+1312	Bucarest : le dimanche est gratuit sur les places de la mairie marquées en bleu. Pour la nuit, utilisez un parking gardé ou celui de l'hôtel.
+1313	Où laisser la voiture chaque jour, combien ça coûte et comment payer.
