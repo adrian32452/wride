@@ -423,3 +423,38 @@
 1138	Lokacija zabeležena u {0}.
 1139	Dozvola za lokaciju je isključena za ovu aplikaciju. Na telefonu: dugo pritisnite ikonu W123 Run → Informacije o aplikaciji → Dozvole → Lokacija → Dozvoli (u Chrome-u: ⋮ → Podešavanja → Podešavanja sajta → Lokacija). Zatim ponovo dodirnite dugme.
 1140	Otvori aplikaciju sa početnog ekrana
+1141	16 dana
+1142	Dolazak u {0} u {1}, posle zalaska sunca ({2}); poslednji deo je autoputem.
+1143	Dolazak u {0} u {1}, pre zalaska sunca ({2}).
+1144	Dolazak u {0} u {1}: panoramski ili sporedni put pada u mrak ({2}).
+1145	Dan {0} od 16
+1146	Dani
+1147	Detalji i mogućnosti
+1148	Dobro je znati
+1149	Polazak iz {0}
+1150	Mapa
+1151	Vesti
+1152	Sledeće
+1153	Sledeći dan
+1154	Bez vožnje
+1155	Još nema prognoze. Od 9. decembra ovde je upisuje vremenska provera.
+1156	Još nema vesti. Počinju 17. decembra.
+1157	Na putu
+1158	Autor fotografije
+1159	Prethodni dan
+1160	Zabeleži
+1161	Stajališta
+1162	Dodirnite broj dana ili noćenje na mapi.
+1163	Putovanje počinje {0}: još {1} dana. Već sada možete pogledati svaki dan.
+1164	Danas
+1165	Ceo dan u Google mapama
+1166	dolazak
+1167	mrak od {0}
+1168	iz {0}
+1169	polazak
+1170	{0} vožnje, poslednji dolazak {1}.
+1171	Noćni prikaz
+1172	Dnevni prikaz
+1173	Automatski: noćni prikaz posle mraka
+1174	Dnevni ili noćni prikaz
+1175	Odeljci

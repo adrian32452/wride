@@ -35,6 +35,17 @@ if ('serviceWorker' in navigator) {
 os.makedirs(SITE, exist_ok=True)
 open(f"{SITE}/index.html", "w", encoding="utf-8").write(head + page + tail)
 
+# V2 (redesign) next to V1, sharing images, data and the service worker
+os.makedirs(f"{SITE}/v2", exist_ok=True)
+v2 = open(f"{OUT}/v2/index.html", encoding="utf-8").read()
+head2 = head.replace('href="manifest.webmanifest"', 'href="manifest.webmanifest"').replace('href="icon-192.png"', 'href="../icon-192.png"').replace('content="W123 Run"', 'content="W123 Run 2"')
+tail2 = tail.replace("register('sw.js')", "register('../sw.js', { scope: '../' })")
+open(f"{SITE}/v2/index.html", "w", encoding="utf-8").write(head2 + v2 + tail2)
+json.dump({"name": "W123 Run (V2)", "short_name": "W123 Run 2", "start_url": "./", "scope": "./", "display": "standalone",
+           "background_color": "#dfe2e1", "theme_color": "#22272b",
+           "icons": [{"src": "../icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "../icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}]},
+          open(f"{SITE}/v2/manifest.webmanifest", "w"), ensure_ascii=False, indent=1)
+
 # static files
 shutil.copy(f"{OUT}/map-extra.json", f"{SITE}/map-extra.json")
 for d in ("img", "g"):
@@ -67,7 +78,7 @@ json.dump({"name": "W123 Madrid–Bucharest Run", "short_name": "W123 Run", "sta
           open(f"{SITE}/manifest.webmanifest", "w"), ensure_ascii=False, indent=1)
 
 # offline: core files precached on install; gallery photos cached the first time they are viewed
-core = ["./", "index.html", "map-extra.json", "manifest.webmanifest", "icon-192.png", "icon-512.png"] + \
+core = ["./", "index.html", "v2/", "v2/index.html", "v2/manifest.webmanifest", "map-extra.json", "manifest.webmanifest", "icon-192.png", "icon-512.png"] + \
        sorted("img/" + f for f in os.listdir(f"{SITE}/img")) + sorted(f for f in gfiles if "/sprite-" in f)
 sw = f"""/* W123 road book service worker — version {VER} */
 const V = 'w123-{VER}', CORE = {json.dumps(core)};

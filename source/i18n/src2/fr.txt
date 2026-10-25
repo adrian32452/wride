@@ -421,3 +421,38 @@
 1138	Position enregistrée à {0}.
 1139	L'autorisation de localisation est désactivée pour cette app. Sur le téléphone : appui long sur l'icône W123 Run → Infos sur l'appli → Autorisations → Position → Autoriser (dans Chrome : ⋮ → Paramètres → Paramètres des sites → Position). Puis touchez à nouveau le bouton.
 1140	Ouvrir l'app de l'écran d'accueil
+1141	16 jours
+1142	Arrivée à {0} à {1}, après le coucher du soleil ({2}) ; la fin se fait sur autoroute.
+1143	Arrivée à {0} à {1}, avant le coucher du soleil ({2}).
+1144	Arrivée à {0} à {1} : une route panoramique ou secondaire tombe de nuit ({2}).
+1145	Jour {0} sur 16
+1146	Jours
+1147	Détails et options
+1148	Bon à savoir
+1149	Départ de {0}
+1150	Carte
+1151	Actualités
+1152	Ensuite
+1153	Jour suivant
+1154	Sans voiture
+1155	Pas encore de prévision. À partir du 9 décembre, la vérification météo remplit cette partie.
+1156	Pas encore de bulletin. Il commence le 17 décembre.
+1157	En route
+1158	Crédit photo
+1159	Jour précédent
+1160	Enregistrer
+1161	Arrêts
+1162	Touchez un numéro de jour ou une étape de nuit sur la carte.
+1163	Le voyage commence le {0} : encore {1} jours. Vous pouvez déjà consulter chaque jour.
+1164	Aujourd'hui
+1165	Toute la journée dans Google Maps
+1166	arrivée
+1167	nuit dès {0}
+1168	depuis {0}
+1169	départ
+1170	{0} de conduite, dernière arrivée {1}.
+1171	Affichage de nuit
+1172	Affichage de jour
+1173	Automatique : affichage de nuit après la tombée de la nuit
+1174	Affichage jour ou nuit
+1175	Sections

@@ -14,3 +14,5 @@ Work in a copy of this folder (the scripts expect this layout: `mapdata/`, `i18n
 
 `seed/` holds the route summaries written to the artifact database (`route/dNN`); `prompts/` the scheduled weather check and news bulletin.
 Claude artifact: https://claude.ai/artifact/7mouWSdAzZUVw8G9ofJH8J
+
+9. `python3 build_v2.py` — builds V2 (`v2/shell.html` + `v2/lib.js` + `v2/app.js`) into `out/v2/index.html`; `site.py` then also writes the site's `v2/`.

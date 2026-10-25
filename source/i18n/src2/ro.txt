@@ -419,3 +419,38 @@
 1138	Locație înregistrată la {0}.
 1139	Permisiunea de locație e oprită pentru această aplicație. Pe telefon: ține apăsat pe pictograma W123 Run → Informații aplicație → Permisiuni → Locație → Permite (în Chrome: ⋮ → Setări → Setări site → Locație). Apoi apasă din nou butonul.
 1140	Deschide aplicația de pe ecranul principal
+1141	16 zile
+1142	Sosire în {0} la {1}, după apus ({2}); ultima parte e pe autostradă.
+1143	Sosire în {0} la {1}, înainte de apus ({2}).
+1144	Sosire în {0} la {1}: un drum panoramic sau secundar cade după lăsarea întunericului ({2}).
+1145	Ziua {0} din 16
+1146	Zile
+1147	Detalii și opțiuni
+1148	Bine de știut
+1149	Pleci din {0}
+1150	Hartă
+1151	Știri
+1152	Urmează
+1153	Ziua următoare
+1154	Fără condus
+1155	Încă nu există prognoză. Din 9 decembrie verificarea meteo completează aici.
+1156	Încă nu există buletin de știri. Începe pe 17 decembrie.
+1157	Pe drum
+1158	Credit foto
+1159	Ziua precedentă
+1160	Înregistrează
+1161	Opriri
+1162	Atinge un număr de zi sau o oprire de noapte pe hartă.
+1163	Călătoria începe {0}: mai sunt {1} zile. Poți vedea orice zi de acum.
+1164	Azi
+1165	Toată ziua în Google Maps
+1166	sosire
+1167	întuneric de la {0}
+1168	din {0}
+1169	plecare
+1170	{0} de condus, ultima sosire {1}.
+1171	Afișaj de noapte
+1172	Afișaj de zi
+1173	Automat: afișaj de noapte după lăsarea întunericului
+1174	Afișaj de zi sau de noapte
+1175	Secțiuni

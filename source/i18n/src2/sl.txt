@@ -419,3 +419,38 @@
 1138	Lokacija zabeležena ob {0}.
 1139	Dovoljenje za lokacijo je za to aplikacijo izklopljeno. Na telefonu: pridržite ikono W123 Run → Podatki o aplikaciji → Dovoljenja → Lokacija → Dovoli (v Chromu: ⋮ → Nastavitve → Nastavitve spletnega mesta → Lokacija). Nato znova tapnite gumb.
 1140	Odpri aplikacijo z začetnega zaslona
+1141	16 dni
+1142	Prihod v {0} ob {1}, po sončnem zahodu ({2}); zadnji del je po avtocesti.
+1143	Prihod v {0} ob {1}, pred sončnim zahodom ({2}).
+1144	Prihod v {0} ob {1}: panoramska ali stranska cesta pade v temo ({2}).
+1145	Dan {0} od 16
+1146	Dnevi
+1147	Podrobnosti in možnosti
+1148	Dobro je vedeti
+1149	Odhod iz {0}
+1150	Zemljevid
+1151	Novice
+1152	Naslednje
+1153	Naslednji dan
+1154	Brez vožnje
+1155	Napovedi še ni. Od 9. decembra jo tu dopolni vremensko preverjanje.
+1156	Novic še ni. Začnejo se 17. decembra.
+1157	Na poti
+1158	Avtor fotografije
+1159	Prejšnji dan
+1160	Zabeleži
+1161	Postanki
+1162	Tapnite številko dneva ali nočni postanek na zemljevidu.
+1163	Potovanje se začne {0}: še {1} dni. Že zdaj si lahko ogledate vsak dan.
+1164	Danes
+1165	Ves dan v Google Zemljevidih
+1166	prihod
+1167	tema od {0}
+1168	iz {0}
+1169	odhod
+1170	{0} vožnje, zadnji prihod {1}.
+1171	Nočni prikaz
+1172	Dnevni prikaz
+1173	Samodejno: nočni prikaz po mraku
+1174	Dnevni ali nočni prikaz
+1175	Razdelki
