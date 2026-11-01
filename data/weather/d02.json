@@ -1,1 +1,161 @@
-{"d": 2, "mode": "test", "forDate": "2026-10-26", "issued": "2026-10-25T09:23:41+00:00", "source": "yr.no", "route": "bal", "summary": "Dry with light winds along the Basque coast. Fresh forecasts for Zumaia and Biarritz weren't available, so San Sebastián stands in for the coast.", "points": [{"name": "Bilbao", "role": "start", "tmin": 10, "tmax": 24, "sky": "fog until 09:00, then fair", "precip": "0 mm", "wind": "up to 10 km/h in the morning"}, {"name": "San Sebastián", "role": "scenic", "tmin": 13, "tmax": 21, "sky": "partly cloudy", "precip": "0 mm", "wind": "up to 22 km/h"}], "legs": [{"t": "09:00", "to": "Zumaia", "kind": "scenic", "sky": "partly cloudy", "temp": "12–15", "precip": "dry", "wind": "light wind", "vis": "fog patches near Bilbao until 09:00", "risk": "watch", "note": "Fog early: leave after 09:00 or take it slowly on the first stretch."}, {"t": "11:15", "to": "Getaria", "kind": "scenic", "sky": "partly cloudy", "temp": "17–20", "precip": "dry", "wind": "light wind", "vis": "", "risk": "ok", "note": ""}, {"t": "12:35", "to": "San Sebastián (Illunbe P+R)", "kind": "main", "sky": "partly cloudy", "temp": "20", "precip": "dry", "wind": "light wind", "vis": "", "risk": "ok", "note": ""}, {"t": "15:45", "to": "Biarritz", "kind": "mw", "sky": "partly cloudy", "temp": "20", "precip": "dry", "wind": "up to 22 km/h", "vis": "", "risk": "ok", "note": ""}], "sunset": "partly cloudy on the coast: some colour likely.", "advice": {"mode": "cine", "why": "Dry with light winds: good for the cliff road via Mutriku and the Jaizkibel ridge at golden hour."}}
+{
+ "d": 2,
+ "mode": "test",
+ "forDate": "2026-11-02",
+ "issued": "2026-11-01T05:42:55Z",
+ "source": "AEMET + yr.no",
+ "route": "cine",
+ "summary": "Simulated Day 2 on tomorrow's real forecast (Mon 2 Nov): fog in Bilbao until about 10:00, then a cloudy coast with a chance of a shower near Zumaia and clear skies with light winds from San Sebastián to Hondarribia. yr.no for Zumaia and the Biarritz pages were stale and were discarded; AEMET was used, and Hondarribia stands in for Biarritz.",
+ "verdicts": {
+  "bal": {
+   "level": "watch",
+   "text": "Fog in Bilbao until about 10:00, so the 09:00 start on the N-634 coast road is in poor visibility; the cliff road itself is dry to showery with light wind. Take it slowly at first or leave around 10:00."
+  },
+  "fast": {
+   "level": "watch",
+   "text": "Fog in Bilbao until about 10:00 on the AP-8; after that cloudy, mostly dry and light winds. Dipped lights and extra distance at first."
+  },
+  "cine": {
+   "level": "watch",
+   "text": "Mostly dry; fog in Bilbao until about 10:00 means a slow, low-visibility start, then cloudy with a 50% chance of a shower on the Mutriku cliff road and clear, light winds on the Jaizkibel ridge (gusts under 20 km/h). Leave as planned with dipped lights, or start 30–60 minutes later to miss the fog."
+  },
+  "safe": {
+   "level": "watch",
+   "text": "Fog in Bilbao until about 10:00 on the AP-8 inland; then dry and calm to Biarritz. Take it slowly at first."
+  }
+ },
+ "verdict": {
+  "level": "watch",
+  "text": "Mostly dry; fog in Bilbao until about 10:00 means a slow, low-visibility start, then cloudy with a 50% chance of a shower on the Mutriku cliff road and clear, light winds on the Jaizkibel ridge (gusts under 20 km/h). Leave as planned with dipped lights, or start 30–60 minutes later to miss the fog."
+ },
+ "hot": [
+  {
+   "id": "n634",
+   "level": "ok",
+   "when": "10:30",
+   "what": "very cloudy, 10–15 °C, 50% chance of a shower, N 10 km/h",
+   "note": ""
+  },
+  {
+   "id": "jaizkibel",
+   "level": "ok",
+   "when": "15:35",
+   "what": "clear, 13 °C, dry, gusts 16–18 km/h",
+   "note": ""
+  }
+ ],
+ "points": [
+  {
+   "name": "Bilbao",
+   "role": "start",
+   "tmin": 8,
+   "tmax": 15,
+   "sky": "fog 04:00–09:00, then fair",
+   "precip": "0 mm",
+   "wind": "light, N 7–11 km/h later"
+  },
+  {
+   "name": "Zumaia",
+   "role": "scenic",
+   "tmin": 10,
+   "tmax": 15,
+   "sky": "very cloudy",
+   "precip": "50% chance of rain",
+   "wind": "N 10 km/h"
+  },
+  {
+   "name": "Hondarribia",
+   "role": "scenic",
+   "tmin": 8,
+   "tmax": 13,
+   "sky": "fog early, clear from 11:00",
+   "precip": "0 mm",
+   "wind": "N 6–10 km/h, gusts to 20 km/h"
+  },
+  {
+   "name": "Biarritz",
+   "role": "overnight",
+   "tmin": null,
+   "tmax": null,
+   "sky": "no fresh forecast (pages stale); see Hondarribia",
+   "precip": "",
+   "wind": ""
+  }
+ ],
+ "legs": [
+  {
+   "t": "09:00",
+   "to": "Lekeitio",
+   "kind": "main",
+   "sky": "fog, lifting around 10:00",
+   "temp": "11–13",
+   "precip": "dry",
+   "wind": "light",
+   "vis": "fog patches until about 10:00",
+   "risk": "watch",
+   "note": "Dipped lights and extra distance; or leave 30–60 min later."
+  },
+  {
+   "t": "10:30",
+   "to": "Zumaia",
+   "kind": "scenic",
+   "sky": "very cloudy",
+   "temp": "10–15",
+   "precip": "50% chance of a shower",
+   "wind": "N 10 km/h",
+   "vis": "good",
+   "risk": "ok",
+   "note": ""
+  },
+  {
+   "t": "12:05",
+   "to": "Getaria",
+   "kind": "main",
+   "sky": "very cloudy",
+   "temp": "13–15",
+   "precip": "possible shower",
+   "wind": "N 10 km/h",
+   "vis": "good",
+   "risk": "ok",
+   "note": ""
+  },
+  {
+   "t": "13:55",
+   "to": "San Sebastián (Illunbe P+R)",
+   "kind": "main",
+   "sky": "clear",
+   "temp": "12–13",
+   "precip": "dry",
+   "wind": "N 9 km/h, gusts 20 km/h",
+   "vis": "good",
+   "risk": "ok",
+   "note": ""
+  },
+  {
+   "t": "15:35",
+   "to": "Hondarribia",
+   "kind": "scenic",
+   "sky": "clear",
+   "temp": "13",
+   "precip": "dry",
+   "wind": "N 8–9 km/h, gusts 16–18 km/h",
+   "vis": "good",
+   "risk": "ok",
+   "note": ""
+  },
+  {
+   "t": "17:00",
+   "to": "Biarritz",
+   "kind": "mw",
+   "sky": "clear",
+   "temp": "11–13",
+   "precip": "dry",
+   "wind": "N 6 km/h",
+   "vis": "good",
+   "risk": "ok",
+   "note": ""
+  }
+ ],
+ "sunset": "Clear on the Basque coast around sunset (Hondarribia data): good light at the Jaizkibel viewpoints.",
+ "advice": null
+}
