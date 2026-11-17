@@ -592,3 +592,76 @@
 1311	Drobeta-Turnu Severin o Orșova: scegli un hotel con cortile chiuso o parcheggio custodito.
 1312	Bucarest: la domenica è gratis sui posti del Comune con strisce blu. Per la notte usa un parcheggio custodito o quello dell'hotel.
 1313	Dove lasciare l'auto ogni giorno, quanto costa e come pagare.
+1314	Prova: Daroca e Alcalá
+1315	Aeroporto di Madrid
+1316	Nessun pernottamento: l'auto si riconsegna al banco del noleggio
+1317	Giorno di prova con auto a noleggio: le regole per i vecchi diesel del viaggio non valgono
+1318	Partenza col buio: l'alba è verso le 08:20
+1319	Calatayud
+1320	Daroca
+1321	Alcalá de Henares
+1322	Partenza alle 07:00, circa 80 minuti prima dell'alba. Un'auto a noleggio con bollino ambientale non è toccata dalle regole sulle emissioni di Madrid.
+1323	Città medievale murata: entra dalla Puerta Baja, sali alla Basílica de Santa María e percorri le mura per il panorama. Circa 2 ore con un caffè.
+1324	Av. de Don Juan Tenorio s/n, la zona commerciale al margine nord-est della città, accanto alla A-2. Il centro storico e l'università sono a 3 km.
+1325	Di nuovo in aeroporto prima del tramonto (verso le 17:50). Fai il pieno prima di riconsegnare l'auto a noleggio.
+1326	Prova: Antequera e Cordova
+1327	Aeroporto di Malaga
+1328	Domenica: la Mezquita di Cordova è aperta ai visitatori 15:00–18:00
+1329	Fuengirola
+1330	Antequera
+1331	Cordova
+1332	Partenza alle 08:00, poco prima dell'alba. Il percorso resta fuori dalla zona a basse emissioni di Malaga.
+1333	Lungomare all'alba e il Castello Sohail sopra la foce del fiume: a quest'ora si vede da fuori.
+1334	Dolmen di Menga e Viera (UNESCO): la domenica 09:00–15:00, gratis per i cittadini UE, parcheggio gratuito all'ingresso.
+1335	Pranzo, poi la Mezquita-Catedral (visite la domenica 15:00–18:00) e il ponte romano al crepuscolo. Parcheggia al Paseo de la Victoria, al margine del centro storico.
+1336	Ultima ora sull'autostrada A-45 / A-7 col buio. Fai il pieno prima di riconsegnare l'auto a noleggio.
+1337	Daroca: Puerta Baja, le mura e la Basílica
+1338	Parcheggia fuori dalle mura
+1339	Alcalá de Henares: Av. de Don Juan Tenorio, e pranzo
+1340	Giorno di prova: un solo percorso, uguale in tutte le modalità.
+1341	Traffico e lavori sulla A-2 Madrid–Calatayud
+1342	Neve o ghiaccio sulla A-2 a Medinaceli
+1343	Nebbia sulla N-234 vicino a Daroca
+1344	A-2 a Medinaceli
+1345	Il tratto più alto della A-2 (circa 1.200 m): il primo posto con neve e ghiaccio, sia all'andata sia al ritorno.
+1346	Se la A-2 è chiusa o servono le catene, salta Daroca: vai solo ad Alcalá e torna in aeroporto.
+1347	N-234 Calatayud–Daroca
+1348	Strada a due corsie nella valle del Jiloca: nebbia gelata nelle mattine fredde.
+1349	Lungomare di Fuengirola e Castello Sohail
+1350	Dolmen di Antequera
+1351	Dolmen di Menga e Viera
+1352	Parcheggio gratuito all'ingresso
+1353	Pranzo nella Judería
+1354	Parcheggia al Paseo de la Victoria
+1355	Mezquita-Catedral
+1356	Visite la domenica dalle 15:00
+1357	Ponte romano al tramonto
+1358	Passo di Las Pedrizas sulla A-45: nebbia, pioggia o ghiaccio
+1359	Orari della domenica dei dolmen di Antequera e della Mezquita di Cordova
+1360	Zone a basse emissioni di Cordova e Malaga
+1361	Passo di Las Pedrizas (A-45)
+1362	Salita ripida da Malaga fino a circa 800 m: nebbia fitta e piogge forti sono frequenti, e si percorre due volte.
+1363	Con pioggia forte o nebbia rallenta molto; se è chiuso, segui la deviazione segnalata o aspetta la riapertura.
+1364	A-45 Antequera–Cordova
+1365	Campagna aperta di ulivi: banchi di nebbia al mattino, vento laterale e forti rovesci.
+1366	Auto a noleggio con bollino ambientale: la zona a basse emissioni di Madrid e le regole per i vecchi diesel del viaggio non valgono oggi.
+1367	A-2 a Medinaceli (circa 1.200 m): con la neve i cartelli possono imporre catene o gomme invernali, e le auto a noleggio raramente hanno le catene.
+1368	Controlla che l'auto a noleggio abbia il segnalatore V-16 e il giubbotto catarifrangente prima di lasciare l'aeroporto.
+1369	Auto a noleggio con bollino ambientale: le zone a basse emissioni di Malaga e Cordova la ammettono, e il percorso resta fuori da quella di Malaga.
+1370	Cordova: le strade intorno alla Mezquita sono una zona ad accesso limitato con telecamere. Non entrarci in auto: parcheggia al Paseo de la Victoria e cammina 10 minuti.
+1371	Passo di Las Pedrizas sulla A-45: piogge forti e nebbia sono frequenti; lo passi due volte, la seconda col buio.
+1372	Daroca: parcheggia fuori dalle mura ed entra a piedi dalla Puerta Baja.
+1373	Alcalá de Henares: i negozi di Av. de Don Juan Tenorio hanno parcheggi propri.
+1374	Fuengirola: usa un parcheggio pubblico vicino al lungomare.
+1375	Dolmen di Antequera: parcheggio gratuito all'ingresso.
+1376	Cordova: parcheggio del Paseo de la Victoria (Parkia), al margine del centro storico, da circa 2,50 € l'ora.
+1377	Malaga
+1378	Ponte romano e Mezquita, Cordova
+1379	Dolmen di Antequera
+1380	Prova {0}
+1381	Giorni di prova
+1382	Due giorni di prova con un'auto a noleggio, per provare l'app su strada prima del viaggio.
+1383	La prova {0} è il {1}: mancano {2} giorni. Puoi già guardarla.
+1384	Medie approssimative di lungo periodo; la previsione vera le sostituisce circa 10 giorni prima.
+1385	Ancora nessuna previsione. Il controllo meteo la compila circa 10 giorni prima.
+1386	Ancora nessun notiziario. Comincia due giorni prima.

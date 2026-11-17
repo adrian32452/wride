@@ -7,6 +7,21 @@ const GAL = /*GALDATA*/{};
 const PARK = /*PARKDATA*/{};
 const PLAN = /*PLANDATA*/{};
 const I18N = /*I18NDATA*/{};
+/* test days (T1, T2) have ids 17 and 18; everything is matched by calendar date */
+const DAYOF = d => TRIP.days.find(x => x.d === d);
+const isTest = d => !!(DAYOF(d) || {}).test;
+const DL = d => { const x = DAYOF(d); return x && x.label ? x.label : String(d); };
+const ORDER = TRIP.days.map(x => x.d).sort((a, b) => (PLAN[a] && PLAN[b] && PLAN[a].date !== PLAN[b].date) ? (PLAN[a].date < PLAN[b].date ? -1 : 1) : a - b);
+const DAYS_BY_DATE = ORDER.map(DAYOF);
+const isoToday = () => { const n = new Date(); return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`; };
+const tripDayNow = () => {
+  const iso = isoToday(), hit = ORDER.find(d => PLAN[d] && PLAN[d].date === iso);
+  if (hit) return hit;
+  const t = Math.floor((Date.now() - new Date('2026-12-19T00:00:00').getTime()) / 864e5) + 1;
+  return t > 16 ? 100 + t : t;   // before the trip: 0 or less; after it: never a day id
+};
+const daysUntil = d => PLAN[d] ? Math.round((new Date(PLAN[d].date + 'T12:00:00') - new Date(isoToday() + 'T12:00:00')) / 864e5) : null;
+const nextDay = () => ORDER.find(d => PLAN[d] && PLAN[d].date >= isoToday()) || 1;
 const LANGS = [['en', 'English'], ['es', 'Español'], ['fr', 'Français'], ['it', 'Italiano'], ['sl', 'Slovenščina'], ['hr', 'Hrvatski'], ['sr', 'Srpski'], ['ro', 'Română']];
 const LOCALE = { en: 'en-GB', es: 'es-ES', fr: 'fr-FR', it: 'it-IT', sl: 'sl-SI', hr: 'hr-HR', sr: 'sr-Latn-RS', ro: 'ro-RO' };
 let LANG = 'en';
@@ -105,7 +120,7 @@ const PLATE = { 'ES-A': 'blue', 'ES-AP': 'blue', 'ES-N': 'red', 'FR-A': 'red', '
 const TAG = { start: 'Start', stop: 'Stop', road: 'On the road', sleep: 'Overnight', visit: 'Visit, no car', end: 'Finish' };
 const warnIcon = `<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1 L11.5 11 L.5 11 Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><rect x="5.3" y="4.4" width="1.4" height="3.6" fill="currentColor"/><rect x="5.3" y="8.8" width="1.4" height="1.3" fill="currentColor"/></svg>`;
 const prevEndOf = {};
-{ let pe = null; for (const day of TRIP.days) { prevEndOf[day.d] = pe; const v = day.stops.filter(s => s.t !== 'visit'); if (v.length) pe = v[v.length - 1]; } }
+{ let pe = null; for (const day of TRIP.days) { prevEndOf[day.d] = day.test ? null : pe; const v = day.stops.filter(s => s.t !== 'visit'); if (v.length) pe = v[v.length - 1]; } }
 /* ---- from V1 lines 1690-1695 ---- */
 const MODE_DESC = { fast: 'Motorways wherever possible. Same start time and stops; you arrive earlier.',
   bal: 'Scenic roads where they are worth it, motorway on the dull stretches.',
@@ -117,11 +132,10 @@ let canSaveShared = false, dbRef = null, BUL = {}, BUL_STATE = 'loading';
 const BCAT = { road: 'Road', closure: 'Closure', works: 'Roadworks', strike: 'Strike', protest: 'Protest', restriction: 'Restriction', border: 'Border', weather: 'Weather', event: 'Event', fuel: 'Fuel', traffic: 'Traffic' };
 const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? esc(u) : '';
 const fmtIssued = iso => { try { return new Intl.DateTimeFormat(LOCALE[LANG], { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(iso)); } catch (e) { return esc(iso || ''); } };
-const tripDayNow = () => Math.floor((Date.now() - new Date('2026-12-19T00:00:00').getTime()) / 864e5) + 1;
 function bulDayHtml(d, withLink) {
   const b = BUL[d], day = TRIP.days[d - 1];
   const items = Array.isArray(b.items) ? b.items : [], wx = Array.isArray(b.weather) ? b.weather : [];
-  return `<div class="bul-day"><div class="bul-head"><b>${T('Day {0}', d)} · ${fmtDate(PLAN[d].date)} · ${esc(T(day.from))} → ${esc(T(day.to))}</b>` +
+  return `<div class="bul-day"><div class="bul-head"><b>${T('Day {0}', DL(d))} · ${fmtDate(PLAN[d].date)} · ${esc(T(day.from))} → ${esc(T(day.to))}</b>` +
     `<span>${T('issued {0}', fmtIssued(b.issued))}${b.mode && MODE_NAME[b.mode] ? ' · ' + T(MODE_NAME[b.mode]) : ''}</span>${withLink ? `<a href="#d${d}">${T('Open the day')}</a>` : ''}</div>` +
     (b.summary ? `<p>${esc(b.summary)}</p>` : '') +
     (items.length ? `<ul class="bul-items">${items.map(it => `<li class="sev-${['info', 'watch', 'warn'].includes(it.sev) ? it.sev : 'info'}"><span class="bcat">${T(BCAT[it.cat] || 'News')}</span><span><b>${esc(it.title || '')}</b>${it.where ? ` · ${esc(it.where)}` : ''}${it.detail ? `<br>${esc(it.detail)}` : ''}${safeUrl(it.url) ? ` <a href="${safeUrl(it.url)}" target="_blank" rel="noopener">${esc(it.src || T('Source'))} ↗</a>` : ''}</span></li>`).join('')}</ul>`
@@ -343,7 +357,7 @@ function doCheck(d, pos, quiet) {
   if (a.arrived) g.arrived = new Date().toISOString();
   const prev = LIVE.lastAlert[d] || { rel: g.delay ? 0 : 0, scenic: false, dark: false };
   if (quiet && !a.arrived && (Math.abs(a.rel - prev.rel) >= 20 || (a.scenicRisk && !prev.scenic) || (a.darkRisk && !prev.dark)))
-    alertMe(`${T('Day {0}', d)}: ${a.scenicRisk ? T('a scenic road now ends after sunset.') : a.darkRisk ? T('you would finish after dark.') : a.rel > 0 ? T('now {0} behind.', fmtDur(a.rel)) : T('now {0} ahead.', fmtDur(-a.rel))} <a href="#d${d}">${T('See what to change')}</a>`);
+    alertMe(`${T('Day {0}', DL(d))}: ${a.scenicRisk ? T('a scenic road now ends after sunset.') : a.darkRisk ? T('you would finish after dark.') : a.rel > 0 ? T('now {0} behind.', fmtDur(a.rel)) : T('now {0} ahead.', fmtDur(-a.rel))} <a href="#d${d}">${T('See what to change')}</a>`);
   LIVE.lastAlert[d] = { rel: a.rel, scenic: a.scenicRisk, dark: a.darkRisk };
   saveProg(d); renderLive(d); armAuto();
 }
@@ -354,7 +368,7 @@ function startDay(d, pos, fromHere) {
   LIVE.lastAlert[d] = { rel: 0, scenic: false, dark: false };
   saveProg(d); rerenderSched(d); renderLive(d);
   const SP = shiftPlan(P, PROG[d].delay);
-  if (SP && SP.warn && SP.warn.length) alertMe(`${T('Day {0}', d)}: ${T('with this start, a scenic or minor road falls after dark.')} <a href="#d${d}">${T('See what to change')}</a>`);
+  if (SP && SP.warn && SP.warn.length) alertMe(`${T('Day {0}', DL(d))}: ${T('with this start, a scenic or minor road falls after dark.')} <a href="#d${d}">${T('See what to change')}</a>`);
   if (pos) doCheck(d, pos, false);
   armAuto();
 }
@@ -391,6 +405,8 @@ const CLIMATE = {
   14: [['Županja', 4, -2, 3, ['fog']], ['Belgrade', 5, -1, 3, ['fog']]],
   15: [['Golubac Fortress', 5, -1, 3, ['fog']], ['Drobeta-Turnu Severin', 5, -2, 3, ['fog', 'frost']]],
   16: [['Craiova', 4, -4, 3, ['frost', 'snow']], ['Bucharest', 3, -4, 3, ['snow']]],
+  17: [['Madrid', 13, 4, 2, []], ['Daroca', 11, 1, 2, ['frost', 'fog']]],
+  18: [['Málaga', 19, 9, 3, []], ['Antequera', 15, 5, 3, ['fog']], ['Córdoba', 17, 6, 3, ['fog']]],
 };
 const CLIM_NOTE = { frost: 'Frost most mornings', fog: 'Fog is common', snow: 'Snow or ice possible', bora: 'Bora wind gusts possible',
   atl: 'Atlantic rain and wind', acqua: 'Acqua alta possible', wind: 'Strong Cers wind possible' };
@@ -400,7 +416,7 @@ function climateHtml(d) {
   const c = CLIMATE[d]; if (!c) return '';
   return `<div class="wx-clim"><h4>${T('Typical for these dates')}</h4><ul>` + c.map(([p, hi, lo, wet, notes]) =>
     `<li><b>${esc(T(p))}</b> <span class="wx-num">${hi}° / ${lo}°</span> · ${T('rain on about {0} days in 10', wet)}${notes.length ? ' · ' + notes.map(n => esc(T(CLIM_NOTE[n]))).join(' · ') : ''}</li>`).join('') +
-    `</ul><p class="wmsg">${T('Approximate long-term averages; the real forecast replaces this from 9 December.')}</p></div>`;
+    `</ul><p class="wmsg">${isTest(d) ? T('Approximate long-term averages; the real forecast replaces this about 10 days before.') : T('Approximate long-term averages; the real forecast replaces this from 9 December.')}</p></div>`;
 }
 function forecastHtml(d) {
   const w = WX[d]; if (!w) return '';

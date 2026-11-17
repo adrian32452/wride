@@ -123,3 +123,26 @@ const PARK_SRC = [['Bilbao OTA (Onda Vasca)', 'https://www.ondavasca.com/la-ota-
 COUNTRIES.forEach(c => { if (PARK_CTY[c.cc]) c.items.push(['park', PARK_CTY[c.cc][0], PARK_CTY[c.cc][1]]); });
 RKIND.park = 'Parking';
 RCATS.push(['parking', 'Parking', 'Where to leave the car each day, what it costs and how to pay.']);
+
+/* ---------- test drives T1 (17) and T2 (18): rental car, Spain ---------- */
+DAYRULES[17] = [
+  ['info', "Rental car with an environmental label: Madrid's low-emission zone and the old-diesel rules of the main trip don't apply on this day."],
+  ['watch', 'A-2 at Medinaceli (about 1,200 m): in snow, signs can require chains or winter tyres, and rental cars rarely carry chains.'],
+  ['info', 'Check the rental car has its V-16 beacon and reflective vest before leaving the airport.']
+];
+DAYRULES[18] = [
+  ['info', "Rental car with an environmental label: Málaga's and Córdoba's low-emission zones allow it, and the route stays outside Málaga's zone."],
+  ['act', "Córdoba: the streets around the Mezquita are a camera-controlled restricted zone. Don't drive in: park at Paseo de la Victoria and walk 10 minutes."],
+  ['watch', 'A-45 Las Pedrizas pass: heavy rain and fog are common; you drive it twice, the second time after dark.']
+];
+DAYPARK[17] = [
+  ['info', 'Daroca: park outside the walls and walk in through the Puerta Baja.'],
+  ['info', 'Alcalá de Henares: the shops on Av. de Don Juan Tenorio have their own car parks.']
+];
+DAYPARK[18] = [
+  ['info', 'Fuengirola: use a public car park near the seafront.'],
+  ['info', 'Antequera dolmens: free car park at the entrance.'],
+  ['watch', 'Córdoba: Paseo de la Victoria car park (Parkia), at the edge of the old town, from about €2.50 an hour.']
+];
+PARK_SRC.push(['Parking near the Mezquita (Parclick)', 'https://parclick.es/parking/mezquita-de-cordoba'], ['Dolmens of Antequera (La Garganta)', 'https://lagarganta.com/en/dolmens-antequera/']);
+COUNTRIES.find(c => c.cc === 'ES').src.push(['Córdoba low-emission zone (Andalucia.com)', 'https://andalucia.com/cities/cordoba/low-emission-zone'], ['Málaga low-emission zone 2026 (Motor16)', 'https://www.motor16.com/noticias/coches-con-etiqueta-c-malaga-2026/']);

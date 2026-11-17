@@ -51,9 +51,9 @@ SAFE = {
       "roads": [["IT-A", "A4"], ["IT-A", "RA13"], ["SI-A", "A1"]],
       "flags": ["Miramare skipped: the coast road takes the full force of the bora", "Slovenian e-vignette from the border (€16, 7 days)"]},
 }
-for d in range(1, 17):
+for d in DAY_IDS:
     V.setdefault(d, {})
-    V[d]["safe"] = SAFE.get(d, {"same": True, "why": SAME_SAFE})
+    V[d]["safe"] = SAFE.get(d, {"same": True, "why": TEST_WHY if d > 16 else SAME_SAFE})
 
 # ---------------- weather watch points ----------------
 # on: route variants that pass it ('bal' also covers modes that are the same as balanced).
@@ -119,6 +119,16 @@ HOT = {
  15: [hp("djerdap", "Danube road through the Iron Gates gorge", 44.55, 22.05, ["rock", "ice", "fog", "snow"], ["bal"], {"bal": "Iron Gates dam via the Kazan gorge"}, "Donji Milanovac",
         "Cliffs and tunnels along the river: rockfall after rain or thaw, ice in the shade.",
         "If the gorge road is closed: A1 south to Paraćin, then via Zaječar and Negotin to the Iron Gates crossing: about 335 km, 1–2 h longer. Check that route before leaving.")],
+ 17: [hp("medinaceli", "A-2 at Medinaceli", 41.17, -2.42, ["snow", "ice", "fog", "wind"], ["bal"], {"bal": "Daroca"}, "Medinaceli",
+        "Highest stretch of the A-2 (about 1,200 m): the first place to see snow and ice, both on the way out and on the way back.",
+        "If the A-2 is closed or chains are required, skip Daroca: drive to Alcalá and back to the airport only.", 1200),
+      hp("n234", "N-234 Calatayud–Daroca", 41.23, -1.52, ["fog", "ice"], ["bal"], {"bal": "Daroca"}, "Daroca",
+        "Two-lane road in the Jiloca valley: freezing fog on cold mornings.", "Leave later, once the fog lifts.")],
+ 18: [hp("pedrizas", "A-45 Las Pedrizas pass", 36.93, -4.48, ["fog", "rain", "ice", "wind"], ["bal"], {"bal": "Antequera"}, "Villanueva del Rosario",
+        "Steep climb out of Málaga to about 800 m: thick fog and heavy rain are common, and it is driven twice.",
+        "In heavy rain or fog, slow right down; if it is closed, follow the signed diversion or wait for it to reopen.", 800),
+      hp("a45-north", "A-45 Antequera–Córdoba", 37.40, -4.62, ["fog", "rain"], ["bal"], {"bal": "Córdoba"}, "Lucena",
+        "Open olive country: fog banks in the morning, crosswinds and heavy showers.", "Leave later, once the fog lifts.")],
  16: [hp("oltenia", "Southern plain, Craiova–Pitești–Bucharest", 44.43, 24.37, ["snow", "wind", "fog"], ["bal", "cine"], {"bal": "Bucharest", "cine": "Bucharest"}, "Slatina",
         "Blizzards (viscol) can close roads across the plain; CNAIR posts closures.", WAIT),
       hp("dn67", "DN67 below the mountains", 45.10, 23.70, ["rock", "snow", "ice"], ["cine"], {"cine": "Horezu Monastery"}, "Horezu",

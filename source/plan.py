@@ -116,6 +116,22 @@ D = {
     ("border", "Serbia → Romania (Iron Gates I dam)", 45),
     ("tz", 60),
     ("drive", "Drobeta-Turnu Severin", 12, 20, "DN6")]),
+17: ("07:00", 40.4722, -3.5609, 1, [
+    ("drive", "Daroca", 265, 170, "A-2 / N-234"),
+    ("stop", "Daroca: Puerta Baja, the walls and the Basílica", 120, "O", "Park outside the walls"),
+    ("drive", "Alcalá de Henares", 240, 150, "N-234 / A-2"),
+    ("stop", "Alcalá de Henares: Av. de Don Juan Tenorio, and lunch", 120, "O", ""),
+    ("drive", "Madrid Airport", 25, 25, "A-2 / M-14")]),
+18: ("08:00", 36.6749, -4.4991, 1, [
+    ("drive", "Fuengirola", 25, 25, "A-7 / AP-7"),
+    ("stop", "Fuengirola seafront and Sohail Castle", 60, "O", ""),
+    ("drive", "Antequera dolmens", 95, 70, "A-7 / A-45"),
+    ("stop", "Dolmens of Menga and Viera", 75, "O", "Free car park at the entrance"),
+    ("drive", "Córdoba", 120, 85, "A-45"),
+    ("stop", "Lunch in the Judería", 105, "M", "Park at Paseo de la Victoria"),
+    ("stop", "Mezquita-Catedral", 75, "O", "Sunday visits from 15:00"),
+    ("stop", "Roman bridge at sunset", 30, "O", ""),
+    ("drive", "Málaga Airport", 170, 115, "A-45 / A-7")]),
 16: ("09:00", 44.427, 26.103, 2, [
     ("drive", "Craiova", 110, 90, "DN6"),
     ("stop", "Lunch and fuel", 45, "O", ""),
@@ -147,8 +163,9 @@ def bearing(a, b):
     x = math.cos(math.radians(a[0])) * math.sin(math.radians(b[0])) - math.sin(math.radians(a[0])) * math.cos(math.radians(b[0])) * math.cos(math.radians(b[1] - a[1]))
     return (math.degrees(math.atan2(y, x)) + 360) % 360
 
+DATES = {17: dt.date(2026, 11, 28), 18: dt.date(2026, 11, 29)}   # test days
 def build(d, start, lat, lon, tz, steps, prev):
-    date = START + dt.timedelta(days=d - 1)
+    date = DATES.get(d) or START + dt.timedelta(days=d - 1)
     plat, plon, ptz = prev
     rise = sun(plat, plon, date, ptz, True)
     sset = sun(lat, lon, date, tz, False); dusk = sun(lat, lon, date, tz, False, 96)
@@ -196,6 +213,8 @@ def build(d, start, lat, lon, tz, steps, prev):
 out = {}
 prev = (40.4168, -3.7038, 1)
 for d, (start, lat, lon, tz, steps) in D.items():
+    if d in DATES: prev = (lat, lon, tz)            # test days start and end at the airport
+    elif d == 1: prev = (40.4168, -3.7038, 1)
     out[d] = build(d, start, lat, lon, tz, steps, prev)
     out[d]["modes"] = {}
     for mk in ("fast", "cine", "safe"):

@@ -1550,7 +1550,7 @@
      "Comacchio canals",
      60,
      "O",
-     "Under 30,000 people: not on the ban list"
+     "Old diesels banned in the town 08:30–18:30 on weekdays: park outside the town sign"
     ],
     [
      "drive",
@@ -1581,7 +1581,7 @@
    ],
    "flags": [
     "Avoids Chioggia and the SS309 Romea north of Comacchio",
-    "Mon 28 Dec: weekday diesel bans 08:30–18:30 in Ravenna, Chioggia and Venice: do not enter those towns"
+    "Mon 28 Dec: old diesels are banned 08:30–18:30 in the towns of the Po plain, Comacchio included: see Rules"
    ],
    "check": [
     "Veneto and Emilia-Romagna diesel ban days",
@@ -1630,7 +1630,7 @@
      "Comacchio canals",
      60,
      "O",
-     "Under 30,000 people: not on the ban list"
+     "Old diesels banned in the town 08:30–18:30 on weekdays: park outside the town sign"
     ],
     [
      "drive",
@@ -1661,7 +1661,7 @@
    ],
    "flags": [
     "Motorways instead of the SS309 Romea: fog on a dual carriageway, no oncoming traffic",
-    "Mon 28 Dec: weekday diesel bans 08:30–18:30 in Ravenna, Chioggia and Venice: do not enter those towns"
+    "Mon 28 Dec: old diesels are banned 08:30–18:30 in the towns of the Po plain, Comacchio included: see Rules"
    ],
    "check": [
     "Veneto and Emilia-Romagna diesel ban days",
@@ -2583,6 +2583,136 @@
    "check": [
     "DN6 / A1 traffic",
     "Romanian rovinietă"
+   ]
+  }
+ },
+ "17": {
+  "fast": {
+   "same": true,
+   "why": "Test day: one route, the same in every mode."
+  },
+  "cine": {
+   "same": true,
+   "why": "Test day: one route, the same in every mode."
+  },
+  "safe": {
+   "same": true,
+   "why": "Test day: one route, the same in every mode."
+  },
+  "hot": [
+   {
+    "id": "medinaceli",
+    "n": "A-2 at Medinaceli",
+    "lat": 41.17,
+    "lon": -2.42,
+    "risks": [
+     "snow",
+     "ice",
+     "fog",
+     "wind"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Daroca"
+    },
+    "yr": "Medinaceli",
+    "note": "Highest stretch of the A-2 (about 1,200 m): the first place to see snow and ice, both on the way out and on the way back.",
+    "alt": "If the A-2 is closed or chains are required, skip Daroca: drive to Alcalá and back to the airport only.",
+    "elev": 1200
+   },
+   {
+    "id": "n234",
+    "n": "N-234 Calatayud–Daroca",
+    "lat": 41.23,
+    "lon": -1.52,
+    "risks": [
+     "fog",
+     "ice"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Daroca"
+    },
+    "yr": "Daroca",
+    "note": "Two-lane road in the Jiloca valley: freezing fog on cold mornings.",
+    "alt": "Leave later, once the fog lifts.",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "A-2 traffic and roadworks Madrid–Calatayud",
+    "Snow or ice on the A-2 at Medinaceli",
+    "Fog on the N-234 near Daroca"
+   ]
+  }
+ },
+ "18": {
+  "fast": {
+   "same": true,
+   "why": "Test day: one route, the same in every mode."
+  },
+  "cine": {
+   "same": true,
+   "why": "Test day: one route, the same in every mode."
+  },
+  "safe": {
+   "same": true,
+   "why": "Test day: one route, the same in every mode."
+  },
+  "hot": [
+   {
+    "id": "pedrizas",
+    "n": "A-45 Las Pedrizas pass",
+    "lat": 36.93,
+    "lon": -4.48,
+    "risks": [
+     "fog",
+     "rain",
+     "ice",
+     "wind"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Antequera"
+    },
+    "yr": "Villanueva del Rosario",
+    "note": "Steep climb out of Málaga to about 800 m: thick fog and heavy rain are common, and it is driven twice.",
+    "alt": "In heavy rain or fog, slow right down; if it is closed, follow the signed diversion or wait for it to reopen.",
+    "elev": 800
+   },
+   {
+    "id": "a45-north",
+    "n": "A-45 Antequera–Córdoba",
+    "lat": 37.4,
+    "lon": -4.62,
+    "risks": [
+     "fog",
+     "rain"
+    ],
+    "on": [
+     "bal"
+    ],
+    "leg": {
+     "bal": "Córdoba"
+    },
+    "yr": "Lucena",
+    "note": "Open olive country: fog banks in the morning, crosswinds and heavy showers.",
+    "alt": "Leave later, once the fog lifts.",
+    "elev": null
+   }
+  ],
+  "bal": {
+   "check": [
+    "A-45 Las Pedrizas pass: fog, rain or ice",
+    "Sunday hours of the Antequera dolmens and Córdoba's Mezquita",
+    "Córdoba and Málaga low-emission zones"
    ]
   }
  }

@@ -1658,7 +1658,7 @@
     "name": "Comacchio canals",
     "min": 60,
     "mo": "O",
-    "note": "Under 30,000 people: not on the ban list",
+    "note": "Old diesels banned in the town 08:30–18:30 on weekdays: park outside the town sign",
     "end": "12:00"
    },
    {
@@ -1708,7 +1708,7 @@
       "name": "Comacchio canals",
       "min": 60,
       "mo": "O",
-      "note": "Under 30,000 people: not on the ban list",
+      "note": "Old diesels banned in the town 08:30–18:30 on weekdays: park outside the town sign",
       "end": "12:00"
      },
      {
@@ -1758,7 +1758,7 @@
       "name": "Comacchio canals",
       "min": 60,
       "mo": "O",
-      "note": "Under 30,000 people: not on the ban list",
+      "note": "Old diesels banned in the town 08:30–18:30 on weekdays: park outside the town sign",
       "end": "12:00"
      },
      {
@@ -2514,6 +2514,192 @@
   "daylight": "8h44",
   "modes": {}
  },
+ "17": {
+  "date": "2026-11-28",
+  "dow": "Sat",
+  "dlabel": "Sat 28 Nov",
+  "start": "07:00",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "07:00",
+    "to": "Daroca",
+    "km": 265,
+    "min": 170,
+    "roads": "A-2 / N-234",
+    "arr": "09:50",
+    "kind": "mw",
+    "light": [
+     "predawn"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "09:50",
+    "name": "Daroca: Puerta Baja, the walls and the Basílica",
+    "min": 120,
+    "mo": "O",
+    "note": "Park outside the walls",
+    "end": "11:50"
+   },
+   {
+    "k": "drive",
+    "t": "11:50",
+    "to": "Alcalá de Henares",
+    "km": 240,
+    "min": 150,
+    "roads": "N-234 / A-2",
+    "arr": "14:20",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "14:20",
+    "name": "Alcalá de Henares: Av. de Don Juan Tenorio, and lunch",
+    "min": 120,
+    "mo": "O",
+    "note": "",
+    "end": "16:20"
+   },
+   {
+    "k": "drive",
+    "t": "16:20",
+    "to": "Madrid Airport",
+    "km": 25,
+    "min": 25,
+    "roads": "A-2 / M-14",
+    "arr": "16:45",
+    "kind": "mw",
+    "light": []
+   }
+  ],
+  "end": "16:45",
+  "drive": "5h45",
+  "km": 530,
+  "sunset": "17:50",
+  "sunrise": "08:15",
+  "dusk": "18:20",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "9h35",
+  "modes": {}
+ },
+ "18": {
+  "date": "2026-11-29",
+  "dow": "Sun",
+  "dlabel": "Sun 29 Nov",
+  "start": "08:00",
+  "rows": [
+   {
+    "k": "drive",
+    "t": "08:00",
+    "to": "Fuengirola",
+    "km": 25,
+    "min": 25,
+    "roads": "A-7 / AP-7",
+    "arr": "08:25",
+    "kind": "mw",
+    "light": [
+     "predawn"
+    ]
+   },
+   {
+    "k": "stop",
+    "t": "08:25",
+    "name": "Fuengirola seafront and Sohail Castle",
+    "min": 60,
+    "mo": "O",
+    "note": "",
+    "end": "09:25"
+   },
+   {
+    "k": "drive",
+    "t": "09:25",
+    "to": "Antequera dolmens",
+    "km": 95,
+    "min": 70,
+    "roads": "A-7 / A-45",
+    "arr": "10:35",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "10:35",
+    "name": "Dolmens of Menga and Viera",
+    "min": 75,
+    "mo": "O",
+    "note": "Free car park at the entrance",
+    "end": "11:50"
+   },
+   {
+    "k": "drive",
+    "t": "11:50",
+    "to": "Córdoba",
+    "km": 120,
+    "min": 85,
+    "roads": "A-45",
+    "arr": "13:15",
+    "kind": "mw",
+    "light": []
+   },
+   {
+    "k": "stop",
+    "t": "13:15",
+    "name": "Lunch in the Judería",
+    "min": 105,
+    "mo": "M",
+    "note": "Park at Paseo de la Victoria",
+    "end": "15:00"
+   },
+   {
+    "k": "stop",
+    "t": "15:00",
+    "name": "Mezquita-Catedral",
+    "min": 75,
+    "mo": "O",
+    "note": "Sunday visits from 15:00",
+    "end": "16:15"
+   },
+   {
+    "k": "stop",
+    "t": "16:15",
+    "name": "Roman bridge at sunset",
+    "min": 30,
+    "mo": "O",
+    "note": "",
+    "end": "16:45"
+   },
+   {
+    "k": "drive",
+    "t": "16:45",
+    "to": "Málaga Airport",
+    "km": 170,
+    "min": 115,
+    "roads": "A-45 / A-7",
+    "arr": "18:40",
+    "kind": "mw",
+    "light": [
+     "afterdark"
+    ]
+   }
+  ],
+  "end": "18:40",
+  "drive": "4h55",
+  "km": 410,
+  "sunset": "18:04",
+  "sunrise": "08:10",
+  "dusk": "18:32",
+  "tz": "CET",
+  "riseTz": "CET",
+  "setTz": "CET",
+  "warn": [],
+  "daylight": "9h54",
+  "modes": {}
+ },
  "16": {
   "date": "2027-01-03",
   "dow": "Sun",
@@ -2558,13 +2744,13 @@
   "drive": "4h30",
   "km": 350,
   "sunset": "16:47",
-  "sunrise": "08:06",
+  "sunrise": "08:30",
   "dusk": "17:20",
-  "tz": "EET",
-  "riseTz": "EET",
+  "tz": "CET",
+  "riseTz": "CET",
   "setTz": "EET",
   "warn": [],
-  "daylight": "8h41",
+  "daylight": "7h17",
   "modes": {
    "cine": {
     "date": "2027-01-03",
@@ -2582,6 +2768,7 @@
       "arr": "10:10",
       "kind": "main",
       "light": [
+       "predawn",
        "glare_east"
       ]
      },
@@ -2654,20 +2841,22 @@
       "roads": "A1",
       "arr": "16:20",
       "kind": "mw",
-      "light": []
+      "light": [
+       "dusk"
+      ]
      }
     ],
     "end": "16:20",
     "drive": "6h00",
     "km": 365,
     "sunset": "16:47",
-    "sunrise": "08:06",
+    "sunrise": "08:30",
     "dusk": "17:20",
-    "tz": "EET",
-    "riseTz": "EET",
+    "tz": "CET",
+    "riseTz": "CET",
     "setTz": "EET",
     "warn": [],
-    "daylight": "8h41"
+    "daylight": "7h17"
    }
   }
  }

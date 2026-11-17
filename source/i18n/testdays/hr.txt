@@ -1,0 +1,73 @@
+Probna vožnja: Daroca i Alcalá
+Zračna luka Madrid
+Bez noćenja: automobil se vraća na šalter najma
+Probni dan s unajmljenim automobilom: pravila za stare dizelaše s putovanja ne vrijede
+Polazak po mraku: izlazak sunca oko 08:20
+Calatayud
+Daroca
+Alcalá de Henares
+Polazak u 07:00, oko 80 minuta prije izlaska sunca. Na unajmljeni automobil s ekološkom naljepnicom ne odnose se madridska pravila o emisijama.
+Srednjovjekovni grad sa zidinama: uđite kroz Puerta Baja, popnite se do Basílice de Santa María i prošećite zidinama zbog pogleda. Oko 2 sata uz kavu.
+Av. de Don Juan Tenorio s/n, trgovačka zona na sjeveroistočnom rubu grada, uz A-2. Staro središte i sveučilište su 3 km dalje.
+Natrag u zračnoj luci prije zalaska sunca (oko 17:50). Natočite gorivo prije povrata unajmljenog automobila.
+Probna vožnja: Antequera i Córdoba
+Zračna luka Málaga
+Nedjelja: Mezquita u Córdobi otvorena je za posjetitelje 15:00–18:00
+Fuengirola
+Antequera
+Córdoba
+Polazak u 08:00, neposredno prije izlaska sunca. Ruta ostaje izvan niskoemisijske zone Málage.
+Šetnica uz more pri izlasku sunca i dvorac Sohail iznad ušća rijeke: u ovo doba pogledajte ga izvana.
+Dolmeni Menga i Viera (UNESCO): nedjeljom 09:00–15:00, besplatno za građane EU-a, besplatno parkiralište na ulazu.
+Ručak, zatim Mezquita-Catedral (nedjeljni posjeti 15:00–18:00) i rimski most u sumrak. Parkirajte na Paseo de la Victoria, na rubu starog grada.
+Zadnji sat autocestom A-45 / A-7 po mraku. Natočite gorivo prije povrata unajmljenog automobila.
+Daroca: Puerta Baja, zidine i Basílica
+Parkirajte izvan zidina
+Alcalá de Henares: Av. de Don Juan Tenorio i ručak
+Probni dan: jedna ruta, ista u svim načinima.
+Promet i radovi na A-2 Madrid–Calatayud
+Snijeg ili led na A-2 kod Medinacelija
+Magla na N-234 kod Daroce
+A-2 kod Medinacelija
+Najviša dionica A-2 (oko 1.200 m): prvo mjesto sa snijegom i ledom, i u odlasku i u povratku.
+Ako je A-2 zatvorena ili su obvezni lanci, preskočite Darocu: idite samo u Alcalá i natrag u zračnu luku.
+N-234 Calatayud–Daroca
+Cesta s dva traka u dolini Jiloce: ledena magla u hladnim jutrima.
+Šetnica u Fuengiroli i dvorac Sohail
+Dolmeni u Antequeri
+Dolmeni Menga i Viera
+Besplatno parkiralište na ulazu
+Ručak u Juderíji
+Parkirajte na Paseo de la Victoria
+Mezquita-Catedral
+Nedjeljni posjeti od 15:00
+Rimski most u zalazak sunca
+Prijevoj Las Pedrizas na A-45: magla, kiša ili led
+Nedjeljno radno vrijeme dolmena u Antequeri i Mezquite u Córdobi
+Niskoemisijske zone Córdobe i Málage
+Prijevoj Las Pedrizas (A-45)
+Strm uspon iz Málage do oko 800 m: gusta magla i jaka kiša su česte, a prolazi se dvaput.
+Po jakoj kiši ili magli znatno usporite; ako je zatvoren, slijedite označenu obilaznicu ili pričekajte da se otvori.
+A-45 Antequera–Córdoba
+Otvoreni krajolik maslinika: magla ujutro, bočni vjetar i jaki pljuskovi.
+Unajmljeni automobil s ekološkom naljepnicom: niskoemisijska zona Madrida i pravila za stare dizelaše s putovanja danas ne vrijede.
+A-2 kod Medinacelija (oko 1.200 m): po snijegu znakovi mogu tražiti lance ili zimske gume, a unajmljeni automobili rijetko imaju lance.
+Prije odlaska iz zračne luke provjerite ima li unajmljeni automobil svjetlo V-16 i reflektirajući prsluk.
+Unajmljeni automobil s ekološkom naljepnicom: niskoemisijske zone Málage i Córdobe ga dopuštaju, a ruta ostaje izvan zone Málage.
+Córdoba: ulice oko Mezquite su zona ograničenog pristupa s kamerama. Ne ulazite automobilom: parkirajte na Paseo de la Victoria i hodajte 10 minuta.
+Prijevoj Las Pedrizas na A-45: jaka kiša i magla su česte; prolazite ga dvaput, drugi put po mraku.
+Daroca: parkirajte izvan zidina i uđite pješice kroz Puerta Baja.
+Alcalá de Henares: trgovine na Av. de Don Juan Tenorio imaju vlastita parkirališta.
+Fuengirola: koristite javno parkiralište blizu šetnice.
+Dolmeni u Antequeri: besplatno parkiralište na ulazu.
+Córdoba: parkiralište Paseo de la Victoria (Parkia), na rubu starog grada, od oko 2,50 € na sat.
+Málaga
+Rimski most i Mezquita, Córdoba
+Dolmeni u Antequeri
+Probna vožnja {0}
+Probne vožnje
+Dva dana vježbe s unajmljenim automobilom, da isprobate aplikaciju na cesti prije putovanja.
+Probna vožnja {0} je {1}: još {2} dana. Već je možete pogledati.
+Približni dugogodišnji prosjeci; prava prognoza ih zamjenjuje oko 10 dana prije.
+Prognoze još nema. Provjera vremena popunit će je oko 10 dana prije.
+Vijesti još nema. Počinju dva dana prije.

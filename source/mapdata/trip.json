@@ -798,6 +798,158 @@
      "w": "Bucharest"
     }
    ]
+  },
+  {
+   "d": 17,
+   "label": "T1",
+   "test": true,
+   "date": "2026-11-28",
+   "title": "Test drive: Daroca and Alcalá",
+   "from": "Madrid Airport",
+   "to": "Madrid Airport",
+   "km": 540,
+   "drive": "5h30",
+   "scene": "meseta",
+   "scenic": false,
+   "roads": [
+    [
+     "ES-A",
+     "A-2"
+    ],
+    [
+     "ES-N",
+     "N-234"
+    ]
+   ],
+   "sleep": "No overnight: the car goes back to the rental desk",
+   "flags": [
+    "Test day in a rental car: the old-diesel rules of the main trip don't apply",
+    "Leaves in the dark: sunrise is about 08:20"
+   ],
+   "stops": [
+    {
+     "n": "Madrid Airport",
+     "lat": 40.4722,
+     "lon": -3.5609,
+     "t": "start",
+     "note": "Leave 07:00, about 80 minutes before sunrise. A rental car with an environmental label is not affected by Madrid's low-emission rules.",
+     "w": "Adolfo_Suárez_Madrid–Barajas_Airport"
+    },
+    {
+     "n": "Calatayud",
+     "lat": 41.3536,
+     "lon": -1.6432,
+     "t": "via",
+     "note": "",
+     "w": ""
+    },
+    {
+     "n": "Daroca",
+     "lat": 41.1143,
+     "lon": -1.4142,
+     "t": "stop",
+     "note": "Walled medieval town: in through the Puerta Baja, up to the Basílica de Santa María and along the walls for the view. About 2 hours with a coffee.",
+     "w": "Daroca"
+    },
+    {
+     "n": "Calatayud",
+     "lat": 41.3536,
+     "lon": -1.6432,
+     "t": "via",
+     "note": "",
+     "w": ""
+    },
+    {
+     "n": "Alcalá de Henares",
+     "lat": 40.5058,
+     "lon": -3.3324,
+     "t": "stop",
+     "note": "Av. de Don Juan Tenorio s/n, the retail area on the north-east edge of town, just off the A-2. The old town and the university are 3 km away.",
+     "w": "Alcalá_de_Henares"
+    },
+    {
+     "n": "Madrid Airport",
+     "lat": 40.4722,
+     "lon": -3.5609,
+     "t": "end",
+     "note": "Back at the airport before sunset (about 17:50). Refuel before returning the rental car.",
+     "w": ""
+    }
+   ]
+  },
+  {
+   "d": 18,
+   "label": "T2",
+   "test": true,
+   "date": "2026-11-29",
+   "title": "Test drive: Antequera and Córdoba",
+   "from": "Málaga Airport",
+   "to": "Málaga Airport",
+   "km": 410,
+   "drive": "4h30",
+   "scene": "chianti",
+   "scenic": false,
+   "roads": [
+    [
+     "ES-AP",
+     "AP-7"
+    ],
+    [
+     "ES-A",
+     "A-7"
+    ],
+    [
+     "ES-A",
+     "A-45"
+    ]
+   ],
+   "sleep": "No overnight: the car goes back to the rental desk",
+   "flags": [
+    "Test day in a rental car: the old-diesel rules of the main trip don't apply",
+    "Sunday: Córdoba's Mezquita is open to visitors 15:00–18:00"
+   ],
+   "stops": [
+    {
+     "n": "Málaga Airport",
+     "lat": 36.6749,
+     "lon": -4.4991,
+     "t": "start",
+     "note": "Leave 08:00, just before sunrise. The route stays outside Málaga's low-emission zone.",
+     "w": "Málaga_Airport"
+    },
+    {
+     "n": "Fuengirola",
+     "lat": 36.53,
+     "lon": -4.628,
+     "t": "stop",
+     "note": "Seafront promenade at sunrise, and Sohail Castle above the river mouth: at this hour see it from outside.",
+     "w": "Fuengirola"
+    },
+    {
+     "n": "Antequera",
+     "lat": 37.024,
+     "lon": -4.548,
+     "t": "stop",
+     "note": "Dolmens of Menga and Viera (UNESCO): Sundays 09:00–15:00, free for EU citizens, free car park at the entrance.",
+     "w": "Antequera_Dolmens_Site"
+    },
+    {
+     "n": "Córdoba",
+     "lat": 37.8789,
+     "lon": -4.7794,
+     "t": "stop",
+     "note": "Lunch, then the Mezquita-Catedral (Sunday visits 15:00–18:00) and the Roman bridge at dusk. Park at Paseo de la Victoria, at the edge of the old town.",
+     "w": "Mosque–Cathedral_of_Córdoba"
+    },
+    {
+     "n": "Málaga Airport",
+     "lat": 36.6749,
+     "lon": -4.4991,
+     "t": "end",
+     "note": "Last hour on the A-45 / A-7 motorway after dark. Refuel before returning the rental car.",
+     "w": ""
+    }
+   ]
   }
  ]
 }

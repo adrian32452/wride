@@ -592,3 +592,76 @@
 1311	Drobeta-Turnu Severin ili Orșova: odaberite hotel sa zatvorenim dvorištem ili čuvanim parkiralištem.
 1312	Bukurešt: nedjeljom je besplatno na gradskim mjestima označenima plavo. Za noć koristite čuvano ili hotelsko parkiralište.
 1313	Gdje ostaviti automobil svaki dan, koliko stoji i kako platiti.
+1314	Probna vožnja: Daroca i Alcalá
+1315	Zračna luka Madrid
+1316	Bez noćenja: automobil se vraća na šalter najma
+1317	Probni dan s unajmljenim automobilom: pravila za stare dizelaše s putovanja ne vrijede
+1318	Polazak po mraku: izlazak sunca oko 08:20
+1319	Calatayud
+1320	Daroca
+1321	Alcalá de Henares
+1322	Polazak u 07:00, oko 80 minuta prije izlaska sunca. Na unajmljeni automobil s ekološkom naljepnicom ne odnose se madridska pravila o emisijama.
+1323	Srednjovjekovni grad sa zidinama: uđite kroz Puerta Baja, popnite se do Basílice de Santa María i prošećite zidinama zbog pogleda. Oko 2 sata uz kavu.
+1324	Av. de Don Juan Tenorio s/n, trgovačka zona na sjeveroistočnom rubu grada, uz A-2. Staro središte i sveučilište su 3 km dalje.
+1325	Natrag u zračnoj luci prije zalaska sunca (oko 17:50). Natočite gorivo prije povrata unajmljenog automobila.
+1326	Probna vožnja: Antequera i Córdoba
+1327	Zračna luka Málaga
+1328	Nedjelja: Mezquita u Córdobi otvorena je za posjetitelje 15:00–18:00
+1329	Fuengirola
+1330	Antequera
+1331	Córdoba
+1332	Polazak u 08:00, neposredno prije izlaska sunca. Ruta ostaje izvan niskoemisijske zone Málage.
+1333	Šetnica uz more pri izlasku sunca i dvorac Sohail iznad ušća rijeke: u ovo doba pogledajte ga izvana.
+1334	Dolmeni Menga i Viera (UNESCO): nedjeljom 09:00–15:00, besplatno za građane EU-a, besplatno parkiralište na ulazu.
+1335	Ručak, zatim Mezquita-Catedral (nedjeljni posjeti 15:00–18:00) i rimski most u sumrak. Parkirajte na Paseo de la Victoria, na rubu starog grada.
+1336	Zadnji sat autocestom A-45 / A-7 po mraku. Natočite gorivo prije povrata unajmljenog automobila.
+1337	Daroca: Puerta Baja, zidine i Basílica
+1338	Parkirajte izvan zidina
+1339	Alcalá de Henares: Av. de Don Juan Tenorio i ručak
+1340	Probni dan: jedna ruta, ista u svim načinima.
+1341	Promet i radovi na A-2 Madrid–Calatayud
+1342	Snijeg ili led na A-2 kod Medinacelija
+1343	Magla na N-234 kod Daroce
+1344	A-2 kod Medinacelija
+1345	Najviša dionica A-2 (oko 1.200 m): prvo mjesto sa snijegom i ledom, i u odlasku i u povratku.
+1346	Ako je A-2 zatvorena ili su obvezni lanci, preskočite Darocu: idite samo u Alcalá i natrag u zračnu luku.
+1347	N-234 Calatayud–Daroca
+1348	Cesta s dva traka u dolini Jiloce: ledena magla u hladnim jutrima.
+1349	Šetnica u Fuengiroli i dvorac Sohail
+1350	Dolmeni u Antequeri
+1351	Dolmeni Menga i Viera
+1352	Besplatno parkiralište na ulazu
+1353	Ručak u Juderíji
+1354	Parkirajte na Paseo de la Victoria
+1355	Mezquita-Catedral
+1356	Nedjeljni posjeti od 15:00
+1357	Rimski most u zalazak sunca
+1358	Prijevoj Las Pedrizas na A-45: magla, kiša ili led
+1359	Nedjeljno radno vrijeme dolmena u Antequeri i Mezquite u Córdobi
+1360	Niskoemisijske zone Córdobe i Málage
+1361	Prijevoj Las Pedrizas (A-45)
+1362	Strm uspon iz Málage do oko 800 m: gusta magla i jaka kiša su česte, a prolazi se dvaput.
+1363	Po jakoj kiši ili magli znatno usporite; ako je zatvoren, slijedite označenu obilaznicu ili pričekajte da se otvori.
+1364	A-45 Antequera–Córdoba
+1365	Otvoreni krajolik maslinika: magla ujutro, bočni vjetar i jaki pljuskovi.
+1366	Unajmljeni automobil s ekološkom naljepnicom: niskoemisijska zona Madrida i pravila za stare dizelaše s putovanja danas ne vrijede.
+1367	A-2 kod Medinacelija (oko 1.200 m): po snijegu znakovi mogu tražiti lance ili zimske gume, a unajmljeni automobili rijetko imaju lance.
+1368	Prije odlaska iz zračne luke provjerite ima li unajmljeni automobil svjetlo V-16 i reflektirajući prsluk.
+1369	Unajmljeni automobil s ekološkom naljepnicom: niskoemisijske zone Málage i Córdobe ga dopuštaju, a ruta ostaje izvan zone Málage.
+1370	Córdoba: ulice oko Mezquite su zona ograničenog pristupa s kamerama. Ne ulazite automobilom: parkirajte na Paseo de la Victoria i hodajte 10 minuta.
+1371	Prijevoj Las Pedrizas na A-45: jaka kiša i magla su česte; prolazite ga dvaput, drugi put po mraku.
+1372	Daroca: parkirajte izvan zidina i uđite pješice kroz Puerta Baja.
+1373	Alcalá de Henares: trgovine na Av. de Don Juan Tenorio imaju vlastita parkirališta.
+1374	Fuengirola: koristite javno parkiralište blizu šetnice.
+1375	Dolmeni u Antequeri: besplatno parkiralište na ulazu.
+1376	Córdoba: parkiralište Paseo de la Victoria (Parkia), na rubu starog grada, od oko 2,50 € na sat.
+1377	Málaga
+1378	Rimski most i Mezquita, Córdoba
+1379	Dolmeni u Antequeri
+1380	Probna vožnja {0}
+1381	Probne vožnje
+1382	Dva dana vježbe s unajmljenim automobilom, da isprobate aplikaciju na cesti prije putovanja.
+1383	Probna vožnja {0} je {1}: još {2} dana. Već je možete pogledati.
+1384	Približni dugogodišnji prosjeci; prava prognoza ih zamjenjuje oko 10 dana prije.
+1385	Prognoze još nema. Provjera vremena popunit će je oko 10 dana prije.
+1386	Vijesti još nema. Počinju dva dana prije.

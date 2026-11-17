@@ -1,7 +1,7 @@
 import json, hashlib, urllib.parse, subprocess, os, time
 from PIL import Image
 G = json.load(open('gallery.json'))
-UA = "W123RoadBook/1.0 (personal trip page; contact ad.buturache via claude.ai)"
+UA = "W123RoadBook/1.0 (personal trip page built with Claude)"
 def url(name, w=960):
     h = hashlib.md5(name.encode('utf-8')).hexdigest(); q = urllib.parse.quote(name)
     return f"https://upload.wikimedia.org/wikipedia/commons/thumb/{h[0]}/{h[:2]}/{q}/{w}px-{q}"

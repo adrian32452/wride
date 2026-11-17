@@ -1,0 +1,111 @@
+{
+ "d": 18,
+ "label": "T2",
+ "test": true,
+ "car": "rental car with an environmental label (not the W123)",
+ "date": "2026-11-29",
+ "from": "Málaga Airport",
+ "to": "Málaga Airport",
+ "sleep": "No overnight: the car goes back to the rental desk",
+ "sunrise": "08:10",
+ "sunset": "18:04",
+ "modes": {
+  "bal": {
+   "roads": [
+    "AP-7",
+    "A-7",
+    "A-45"
+   ],
+   "points": [
+    {
+     "n": "Málaga Airport",
+     "lat": 36.6749,
+     "lon": -4.4991
+    },
+    {
+     "n": "Fuengirola",
+     "lat": 36.53,
+     "lon": -4.628
+    },
+    {
+     "n": "Antequera",
+     "lat": 37.024,
+     "lon": -4.548
+    },
+    {
+     "n": "Córdoba",
+     "lat": 37.8789,
+     "lon": -4.7794
+    },
+    {
+     "n": "Málaga Airport",
+     "lat": 36.6749,
+     "lon": -4.4991
+    }
+   ],
+   "check": [
+    "A-45 Las Pedrizas pass: fog, rain or ice",
+    "Sunday hours of the Antequera dolmens and Córdoba's Mezquita",
+    "Córdoba and Málaga low-emission zones"
+   ],
+   "drives": [
+    "08:00–08:25 Fuengirola via A-7 / AP-7",
+    "09:25–10:35 Antequera dolmens via A-7 / A-45",
+    "11:50–13:15 Córdoba via A-45",
+    "16:45–18:40 Málaga Airport via A-45 / A-7"
+   ]
+  },
+  "fast": {
+   "same_as": "bal"
+  },
+  "cine": {
+   "same_as": "bal"
+  },
+  "safe": {
+   "same_as": "bal"
+  }
+ },
+ "hot": [
+  {
+   "id": "pedrizas",
+   "n": "A-45 Las Pedrizas pass",
+   "lat": 36.93,
+   "lon": -4.48,
+   "elev": 800,
+   "risks": [
+    "fog",
+    "rain",
+    "ice",
+    "wind"
+   ],
+   "yr": "Villanueva del Rosario",
+   "passes": {
+    "bal": "09:25–10:35 and 16:45–18:40",
+    "fast": "09:25–10:35 and 16:45–18:40",
+    "cine": "09:25–10:35 and 16:45–18:40",
+    "safe": "09:25–10:35 and 16:45–18:40"
+   },
+   "alt": "In heavy rain or fog, slow right down; if it is closed, follow the signed diversion or wait for it to reopen."
+  },
+  {
+   "id": "a45-north",
+   "n": "A-45 Antequera–Córdoba",
+   "lat": 37.4,
+   "lon": -4.62,
+   "elev": null,
+   "risks": [
+    "fog",
+    "rain"
+   ],
+   "yr": "Lucena",
+   "passes": {
+    "bal": "11:50–13:15",
+    "fast": "11:50–13:15",
+    "cine": "11:50–13:15",
+    "safe": "11:50–13:15"
+   },
+   "alt": "Leave later, once the fog lifts."
+  }
+ ],
+ "start": "08:00"
+}

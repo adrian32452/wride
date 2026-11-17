@@ -1,0 +1,73 @@
+Probna vožnja: Daroka i Alkala
+Aerodrom Madrid
+Bez noćenja: automobil se vraća na šalter rent-a-cara
+Probni dan sa iznajmljenim automobilom: pravila za stare dizelaše sa putovanja ne važe
+Polazak po mraku: izlazak sunca oko 08:20
+Kalatajud
+Daroka
+Alkala de Enares
+Polazak u 07:00, oko 80 minuta pre izlaska sunca. Na iznajmljeni automobil sa ekološkom nalepnicom ne odnose se madridska pravila o emisijama.
+Srednjovekovni grad sa zidinama: uđite kroz Puerta Baja, popnite se do Basílice de Santa María i prošetajte zidinama zbog pogleda. Oko 2 sata uz kafu.
+Av. de Don Juan Tenorio s/n, trgovinska zona na severoistočnoj ivici grada, uz A-2. Stari grad i univerzitet su 3 km dalje.
+Nazad na aerodromu pre zalaska sunca (oko 17:50). Natočite gorivo pre vraćanja iznajmljenog automobila.
+Probna vožnja: Antekera i Kordoba
+Aerodrom Malaga
+Nedelja: Mezquita u Kordobi otvorena je za posetioce 15:00–18:00
+Fuenhirola
+Antekera
+Kordoba
+Polazak u 08:00, neposredno pre izlaska sunca. Ruta ostaje van niskoemisione zone Malage.
+Šetalište uz more pri izlasku sunca i zamak Sohail iznad ušća reke: u ovo doba pogledajte ga spolja.
+Dolmeni Menga i Viera (UNESCO): nedeljom 09:00–15:00, besplatno za građane EU, besplatan parking na ulazu.
+Ručak, zatim Mezquita-Catedral (nedeljne posete 15:00–18:00) i rimski most u sumrak. Parkirajte na Paseo de la Victoria, na ivici starog grada.
+Poslednji sat autoputem A-45 / A-7 po mraku. Natočite gorivo pre vraćanja iznajmljenog automobila.
+Daroka: Puerta Baja, zidine i Basílica
+Parkirajte van zidina
+Alkala de Enares: Av. de Don Juan Tenorio i ručak
+Probni dan: jedna ruta, ista u svim režimima.
+Saobraćaj i radovi na A-2 Madrid–Kalatajud
+Sneg ili led na A-2 kod Medinačelija
+Magla na N-234 kod Daroke
+A-2 kod Medinačelija
+Najviša deonica A-2 (oko 1.200 m): prvo mesto sa snegom i ledom, i u odlasku i u povratku.
+Ako je A-2 zatvoren ili su obavezni lanci, preskočite Daroku: idite samo u Alkalu i nazad na aerodrom.
+N-234 Kalatajud–Daroka
+Put sa dve trake u dolini Hiloke: ledena magla u hladnim jutrima.
+Šetalište u Fuenhiroli i zamak Sohail
+Dolmeni u Antekeri
+Dolmeni Menga i Viera
+Besplatan parking na ulazu
+Ručak u Huderiji
+Parkirajte na Paseo de la Victoria
+Mezquita-Catedral
+Nedeljne posete od 15:00
+Rimski most u zalazak sunca
+Prevoj Las Pedrizas na A-45: magla, kiša ili led
+Nedeljno radno vreme dolmena u Antekeri i Mezquite u Kordobi
+Niskoemisione zone Kordobe i Malage
+Prevoj Las Pedrizas (A-45)
+Strm uspon iz Malage do oko 800 m: gusta magla i jaka kiša su česte, a prelazi se dvaput.
+Po jakoj kiši ili magli znatno usporite; ako je zatvoren, pratite obeleženu obilaznicu ili sačekajte da se otvori.
+A-45 Antekera–Kordoba
+Otvoren predeo maslinjaka: magla ujutru, bočni vetar i jaki pljuskovi.
+Iznajmljeni automobil sa ekološkom nalepnicom: niskoemisiona zona Madrida i pravila za stare dizelaše sa putovanja danas ne važe.
+A-2 kod Medinačelija (oko 1.200 m): po snegu znakovi mogu tražiti lance ili zimske gume, a iznajmljeni automobili retko imaju lance.
+Pre polaska sa aerodroma proverite da li iznajmljeni automobil ima svetlo V-16 i reflektujući prsluk.
+Iznajmljeni automobil sa ekološkom nalepnicom: niskoemisione zone Malage i Kordobe ga dozvoljavaju, a ruta ostaje van zone Malage.
+Kordoba: ulice oko Mezquite su zona ograničenog pristupa sa kamerama. Ne ulazite automobilom: parkirajte na Paseo de la Victoria i hodajte 10 minuta.
+Prevoj Las Pedrizas na A-45: jaka kiša i magla su česte; prelazite ga dvaput, drugi put po mraku.
+Daroka: parkirajte van zidina i uđite peške kroz Puerta Baja.
+Alkala de Enares: prodavnice na Av. de Don Juan Tenorio imaju sopstvene parkinge.
+Fuenhirola: koristite javni parking blizu šetališta.
+Dolmeni u Antekeri: besplatan parking na ulazu.
+Kordoba: parking Paseo de la Victoria (Parkia), na ivici starog grada, od oko 2,50 € na sat.
+Malaga
+Rimski most i Mezquita, Kordoba
+Dolmeni u Antekeri
+Probna vožnja {0}
+Probne vožnje
+Dva dana vežbe sa iznajmljenim automobilom, da isprobate aplikaciju na putu pre putovanja.
+Probna vožnja {0} je {1}: još {2} dana. Već je možete pogledati.
+Približni dugogodišnji proseci; prava prognoza ih zamenjuje oko 10 dana pre.
+Prognoze još nema. Provera vremena popuniće je oko 10 dana pre.
+Vesti još nema. Počinju dva dana pre.

@@ -1,7 +1,7 @@
 import json, hashlib, urllib.parse, subprocess, os, sys, time
 from PIL import Image
 photos = json.load(open('photos.json'))
-heroes = {"burgos","getaria","carcassonne","esterel1","eze","pisa","florence","chianti","trabaria","ravenna","venice","miramare","zagreb","belgrade","kazan","bucharest"}
+heroes = {"daroca","cordobabridge","burgos","getaria","carcassonne","esterel1","eze","pisa","florence","chianti","trabaria","ravenna","venice","miramare","zagreb","belgrade","kazan","bucharest"}
 UA = "W123RoadBook/1.0 (personal trip page built with Claude; ad.hoc)"
 def url(name, w):
     h = hashlib.md5(name.encode('utf-8')).hexdigest()

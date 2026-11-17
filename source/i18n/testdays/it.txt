@@ -1,0 +1,73 @@
+Prova: Daroca e Alcalá
+Aeroporto di Madrid
+Nessun pernottamento: l'auto si riconsegna al banco del noleggio
+Giorno di prova con auto a noleggio: le regole per i vecchi diesel del viaggio non valgono
+Partenza col buio: l'alba è verso le 08:20
+Calatayud
+Daroca
+Alcalá de Henares
+Partenza alle 07:00, circa 80 minuti prima dell'alba. Un'auto a noleggio con bollino ambientale non è toccata dalle regole sulle emissioni di Madrid.
+Città medievale murata: entra dalla Puerta Baja, sali alla Basílica de Santa María e percorri le mura per il panorama. Circa 2 ore con un caffè.
+Av. de Don Juan Tenorio s/n, la zona commerciale al margine nord-est della città, accanto alla A-2. Il centro storico e l'università sono a 3 km.
+Di nuovo in aeroporto prima del tramonto (verso le 17:50). Fai il pieno prima di riconsegnare l'auto a noleggio.
+Prova: Antequera e Cordova
+Aeroporto di Malaga
+Domenica: la Mezquita di Cordova è aperta ai visitatori 15:00–18:00
+Fuengirola
+Antequera
+Cordova
+Partenza alle 08:00, poco prima dell'alba. Il percorso resta fuori dalla zona a basse emissioni di Malaga.
+Lungomare all'alba e il Castello Sohail sopra la foce del fiume: a quest'ora si vede da fuori.
+Dolmen di Menga e Viera (UNESCO): la domenica 09:00–15:00, gratis per i cittadini UE, parcheggio gratuito all'ingresso.
+Pranzo, poi la Mezquita-Catedral (visite la domenica 15:00–18:00) e il ponte romano al crepuscolo. Parcheggia al Paseo de la Victoria, al margine del centro storico.
+Ultima ora sull'autostrada A-45 / A-7 col buio. Fai il pieno prima di riconsegnare l'auto a noleggio.
+Daroca: Puerta Baja, le mura e la Basílica
+Parcheggia fuori dalle mura
+Alcalá de Henares: Av. de Don Juan Tenorio, e pranzo
+Giorno di prova: un solo percorso, uguale in tutte le modalità.
+Traffico e lavori sulla A-2 Madrid–Calatayud
+Neve o ghiaccio sulla A-2 a Medinaceli
+Nebbia sulla N-234 vicino a Daroca
+A-2 a Medinaceli
+Il tratto più alto della A-2 (circa 1.200 m): il primo posto con neve e ghiaccio, sia all'andata sia al ritorno.
+Se la A-2 è chiusa o servono le catene, salta Daroca: vai solo ad Alcalá e torna in aeroporto.
+N-234 Calatayud–Daroca
+Strada a due corsie nella valle del Jiloca: nebbia gelata nelle mattine fredde.
+Lungomare di Fuengirola e Castello Sohail
+Dolmen di Antequera
+Dolmen di Menga e Viera
+Parcheggio gratuito all'ingresso
+Pranzo nella Judería
+Parcheggia al Paseo de la Victoria
+Mezquita-Catedral
+Visite la domenica dalle 15:00
+Ponte romano al tramonto
+Passo di Las Pedrizas sulla A-45: nebbia, pioggia o ghiaccio
+Orari della domenica dei dolmen di Antequera e della Mezquita di Cordova
+Zone a basse emissioni di Cordova e Malaga
+Passo di Las Pedrizas (A-45)
+Salita ripida da Malaga fino a circa 800 m: nebbia fitta e piogge forti sono frequenti, e si percorre due volte.
+Con pioggia forte o nebbia rallenta molto; se è chiuso, segui la deviazione segnalata o aspetta la riapertura.
+A-45 Antequera–Cordova
+Campagna aperta di ulivi: banchi di nebbia al mattino, vento laterale e forti rovesci.
+Auto a noleggio con bollino ambientale: la zona a basse emissioni di Madrid e le regole per i vecchi diesel del viaggio non valgono oggi.
+A-2 a Medinaceli (circa 1.200 m): con la neve i cartelli possono imporre catene o gomme invernali, e le auto a noleggio raramente hanno le catene.
+Controlla che l'auto a noleggio abbia il segnalatore V-16 e il giubbotto catarifrangente prima di lasciare l'aeroporto.
+Auto a noleggio con bollino ambientale: le zone a basse emissioni di Malaga e Cordova la ammettono, e il percorso resta fuori da quella di Malaga.
+Cordova: le strade intorno alla Mezquita sono una zona ad accesso limitato con telecamere. Non entrarci in auto: parcheggia al Paseo de la Victoria e cammina 10 minuti.
+Passo di Las Pedrizas sulla A-45: piogge forti e nebbia sono frequenti; lo passi due volte, la seconda col buio.
+Daroca: parcheggia fuori dalle mura ed entra a piedi dalla Puerta Baja.
+Alcalá de Henares: i negozi di Av. de Don Juan Tenorio hanno parcheggi propri.
+Fuengirola: usa un parcheggio pubblico vicino al lungomare.
+Dolmen di Antequera: parcheggio gratuito all'ingresso.
+Cordova: parcheggio del Paseo de la Victoria (Parkia), al margine del centro storico, da circa 2,50 € l'ora.
+Malaga
+Ponte romano e Mezquita, Cordova
+Dolmen di Antequera
+Prova {0}
+Giorni di prova
+Due giorni di prova con un'auto a noleggio, per provare l'app su strada prima del viaggio.
+La prova {0} è il {1}: mancano {2} giorni. Puoi già guardarla.
+Medie approssimative di lungo periodo; la previsione vera le sostituisce circa 10 giorni prima.
+Ancora nessuna previsione. Il controllo meteo la compila circa 10 giorni prima.
+Ancora nessun notiziario. Comincia due giorni prima.

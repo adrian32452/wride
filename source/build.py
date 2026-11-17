@@ -2,14 +2,14 @@ import json, os
 S = os.path.dirname(os.path.abspath(__file__))
 photos = json.load(open(f"{S}/photos.json"))
 trip = json.load(open(f"{S}/mapdata/trip.json"))
-stopkey = {"Madrid":"madrid","Burgos Cathedral":"burgos","Bilbao":"bilbao","Getaria":"getaria","San Sebastián":"sansebastian","Biarritz":"biarritz",
+stopkey = {"Daroca":"daroca","Alcalá de Henares":"alcala","Fuengirola":"fuengirola","Antequera":"antequera","Córdoba":"cordoba","Madrid":"madrid","Burgos Cathedral":"burgos","Bilbao":"bilbao","Getaria":"getaria","San Sebastián":"sansebastian","Biarritz":"biarritz",
  "Pau, Boulevard des Pyrénées":"pau","Carcassonne":"carcassonne","Pont du Gard":"pontdugard","Saint-Raphaël":"esterel1","Théoule-sur-Mer":"esterel2",
  "Menton":"menton","Villefranche-sur-Mer":"villefranche","Èze":"eze","Monaco":"monaco","Pisa, Piazza dei Miracoli":"pisa","Lucca":"lucca",
  "Florence":"florence","Greve in Chianti":"greve","Panzano in Chianti":"chianti","Castellina in Chianti":"chianti","Arezzo":"arezzo","Anghiari":"anghiari","Bocca Trabaria":"trabaria",
  "Urbania":"urbania","San Marino":"sanmarino","Ravenna, San Vitale":"ravenna","Chioggia":"chioggia","Venice":"venice","Aquileia":"aquileia",
  "Miramare Castle":"miramare","Trieste":"trieste","Ljubljana":"ljubljana","Zagreb":"zagreb","Belgrade":"belgrade","Golubac Fortress":"golubac",
  "Lepenski Vir":"lepenski","Iron Gates I dam":"irongates","Drobeta-Turnu Severin":"drobeta","Craiova":"craiova","Bucharest":"bucharest"}
-heroes = {1:("burgos","Burgos Cathedral"),2:("getaria","Getaria on the Basque coast"),3:("carcassonne","La Cité, Carcassonne"),
+heroes = {17:("daroca","Daroca"),18:("cordobabridge","Roman bridge and Mezquita, Córdoba"),1:("burgos","Burgos Cathedral"),2:("getaria","Getaria on the Basque coast"),3:("carcassonne","La Cité, Carcassonne"),
  4:("esterel1","Corniche de l'Estérel, D559"),5:("eze","Èze from the Grande Corniche"),6:("pisa","Piazza dei Miracoli, Pisa"),
  7:("chianti","Vineyards in Chianti"),8:("florence","Florence from Piazzale Michelangelo"),9:("trabaria","Bocca Trabaria pass"),
  10:("comacchio","Comacchio"),11:("venice","Rialto Bridge, Venice"),12:("miramare","Miramare Castle, Trieste"),
@@ -33,14 +33,14 @@ from PIL import Image as _I
 GALLERY = json.load(open(f"{S}/gallery.json"))
 manp = f"{S}/out/g/manifest.json"
 MAN = json.load(open(manp)) if os.path.exists(manp) else {}
-LABEL = {"madrid":"Madrid","burgos":"Burgos Cathedral","bilbao":"Bilbao","road2":"N-634 coast road","getaria":"Getaria","sansebastian":"San Sebastián",
+LABEL = {"daroca":"Daroca","alcala":"Alcalá de Henares","fuengirola":"Fuengirola","antequera":"Dolmens of Antequera","cordoba":"Córdoba","madrid":"Madrid","burgos":"Burgos Cathedral","bilbao":"Bilbao","road2":"N-634 coast road","getaria":"Getaria","sansebastian":"San Sebastián",
  "biarritz":"Biarritz","pau":"Pau","carcassonne":"Carcassonne","pontdugard":"Pont du Gard","esterel":"Estérel corniche (D559)","menton":"Menton",
  "villefranche":"Villefranche-sur-Mer","eze":"Èze","monaco":"Monaco","pisa":"Pisa","lucca":"Lucca","florence":"Florence","greve":"Greve in Chianti",
  "chianti":"Chianti","arezzo":"Arezzo","anghiari":"Anghiari & Sansepolcro","trabaria":"Bocca Trabaria","urbania":"Urbania","sanmarino":"San Marino",
  "ravenna":"Ravenna, San Vitale","chioggia":"Chioggia","venice":"Venice","aquileia":"Aquileia","miramare":"Miramare Castle","trieste":"Trieste",
  "ljubljana":"Ljubljana","zagreb":"Zagreb","belgrade":"Belgrade","golubac":"Golubac Fortress","lepenski":"Lepenski Vir","road15":"Danube gorge & Kazan",
  "irongates":"Iron Gates dam","drobeta":"Drobeta-Turnu Severin","craiova":"Craiova","bucharest":"Bucharest"}
-DAYKEYS = {1:["madrid","burgos","bilbao"],2:["road2","getaria","sansebastian","biarritz"],3:["pau","carcassonne"],4:["pontdugard","esterel","menton"],
+DAYKEYS = {17:["daroca","alcala"],18:["fuengirola","antequera","cordoba"],1:["madrid","burgos","bilbao"],2:["road2","getaria","sansebastian","biarritz"],3:["pau","carcassonne"],4:["pontdugard","esterel","menton"],
  5:["villefranche","eze","monaco"],6:["pisa","lucca"],7:["chianti","greve"],8:["florence"],9:["arezzo","anghiari","trabaria","urbania","sanmarino"],
  10:[],11:["venice"],12:["aquileia","miramare","trieste","ljubljana"],13:["zagreb"],14:["belgrade"],
  15:["golubac","lepenski","road15","irongates","drobeta"],16:["craiova","bucharest"]}

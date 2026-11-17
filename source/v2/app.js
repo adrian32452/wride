@@ -17,9 +17,9 @@ const fmtLong = iso => { try { return new Intl.DateTimeFormat(LOCALE[LANG], { we
 const drives = d => { const P = PLAN[d]; return !!(P && P.rows.some(r => r.k === 'drive')); };
 function fabDay() {
   const t = tripDayNow();
-  if (t >= 1 && t <= 16) { for (let d = t; d <= 16; d++) if (drives(d)) return d; }
+  if (PLAN[t]) { for (let i = ORDER.indexOf(t); i < ORDER.length; i++) if (drives(ORDER[i])) return ORDER[i]; }
   const open = Object.keys(PROG).map(Number).filter(d => PROG[d] && PROG[d].started && !PROG[d].arrived).sort((a, b) => b - a)[0];
-  return open || 1;
+  return open || nextDay();
 }
 const offOf = d => { const g = PROG[d], P = planFor(d, modeOf(d)); return g && g.started && P ? Math.round(g.startMin - pm(P.start)) : 0; };
 const curPlan = d => shiftPlan(planFor(d, modeOf(d)), offOf(d));
@@ -51,7 +51,10 @@ function gaugeHtml(P, needle) {
 }
 
 /* ---------- small pieces ---------- */
-const stone = (d, lg) => `<span class="stone${lg ? ' lg' : ''}${drives(d) ? '' : ' rest'}" aria-hidden="true">${d}</span>`;
+const stone = (d, lg) => `<span class="stone${lg ? ' lg' : ''}${drives(d) ? '' : ' rest'}${isTest(d) ? ' test' : ''}" aria-hidden="true">${DL(d)}</span>`;
+const stepDay = (d, k) => ORDER[Math.max(0, Math.min(ORDER.length - 1, ORDER.indexOf(d) + k))];
+const isFirst = d => ORDER.indexOf(d) <= 0, isLast = d => ORDER.indexOf(d) >= ORDER.length - 1;
+const dayOfN = d => isTest(d) ? T('Test drive {0}', DL(d)) : T('Day {0} of 16', d);
 function dayChain(d) {
   const day = TRIP.days[d - 1], m = modeOf(d), seq = stopsFor(day, m), vertices = seq.filter(s => s.t !== 'visit'), pe = prevEndOf[d];
   const chain = (pe ? [`${pe.lat},${pe.lon}`] : []).concat(vertices.map(s => `${s.lat},${s.lon}`));
@@ -103,10 +106,12 @@ function renderToday() {
   const d = VIEW.d || fabDay(); VIEW.d = d;
   const day = TRIP.days[d - 1], P = curPlan(d), m = modeOf(d), g = PROG[d], tn = tripDayNow();
   let h = '';
-  if (tn < 1) h += `<p class="note">${esc(T('The trip starts on {0}: {1} days to go. You can look at any day now.', fmtLong(PLAN[1].date), 1 - tn))}</p>`;
-  h += `<div class="stepper"><button type="button" data-step="-1" aria-label="${esc(T('Previous day'))}"${d <= 1 ? ' disabled' : ''}>‹</button>` +
-    `<span class="label">${esc(T('Day {0} of 16', d))} · ${fmtDate(PLAN[d].date)}</span>` +
-    `<button type="button" data-step="1" aria-label="${esc(T('Next day'))}"${d >= 16 ? ' disabled' : ''}>›</button></div>`;
+  const dn = daysUntil(d);
+  if (isTest(d) && dn > 0) h += `<p class="note">${esc(T('Test drive {0} is on {1}: {2} days to go. You can look at it now.', DL(d), fmtLong(PLAN[d].date), dn))}</p>`;
+  else if (tn < 1 && !isTest(d)) h += `<p class="note">${esc(T('The trip starts on {0}: {1} days to go. You can look at any day now.', fmtLong(PLAN[1].date), 1 - tn))}</p>`;
+  h += `<div class="stepper"><button type="button" data-step="-1" aria-label="${esc(T('Previous day'))}"${isFirst(d) ? ' disabled' : ''}>‹</button>` +
+    `<span class="label">${esc(dayOfN(d))} · ${fmtDate(PLAN[d].date)}</span>` +
+    `<button type="button" data-step="1" aria-label="${esc(T('Next day'))}"${isLast(d) ? ' disabled' : ''}>›</button></div>`;
   h += `<div class="dhead">${stone(d, true)}<div><p class="when">${esc(T('from {0}', T(day.from)))}</p><h1>${esc(T(day.to))}</h1><p class="when">${esc(T(day.title))}</p></div></div>`;
   if (!P || !drives(d)) {
     h += `<div class="block"><p>${T('No driving today; the car stays parked.')}</p><button type="button" class="btn" data-open="${d}">${esc(T('Open the day'))}</button></div>`;
@@ -118,7 +123,7 @@ function renderToday() {
   // next step
   const ns = nextStep(d, P);
   let nx = '';
-  if (ns.kind === 'done') nx = `<p class="kicker">${esc(T('Day {0} done', d))}</p><p class="what">${esc(T('Arrived {0}.', new Date(g.arrived).toTimeString().slice(0, 5)))}</p>`;
+  if (ns.kind === 'done') nx = `<p class="kicker">${esc(T('Day {0} done', DL(d)))}</p><p class="what">${esc(T('Arrived {0}.', new Date(g.arrived).toTimeString().slice(0, 5)))}</p>`;
   else if (ns.row) {
     const r = ns.row, dest = r.k === 'drive' ? stopByName(d, r.to) : null;
     const kick = ns.kind === 'start' ? T('Leave {0}', T(chainFor(d, m)[0].n)) : ns.kind === 'driving' ? T('On the way') : T('Next');
@@ -137,8 +142,8 @@ function renderToday() {
   lamps.push(`<div class="lrow"><span class="lamp${wv ? ' on ' + LAMP[wv.level] : ''}"></span><span>${wv
     ? `<b>${esc({ ok: T('Weather check: all clear on your route'), watch: T('Weather check: keep an eye on it'), switch: T('Weather check: take the Safe route'), wait: T('Weather check: no safe road at the planned time') }[wv.level] || '')}</b>${wv.text ? ' ' + esc(wv.text) : ''}` +
       (wv.level === 'switch' && m !== 'safe' && hasMode(d, 'safe') ? ` <button type="button" class="link" data-setmode="${d}:safe">${esc(T('Switch to {0}', T('Safe')))}</button>` : '')
-    : esc(T('No forecast yet. From 9 December the weather check fills this in.'))}</span></div>`);
-  lamps.push(`<div class="lrow"><span class="lamp${bl ? ' on ' + bl : ''}"></span><span>${BUL[d] ? `<b>${T('News bulletin')}:</b> ${esc(BUL[d].summary || '')}` : esc(T('No news bulletin yet. It starts on 17 December.'))} <button type="button" class="link" data-open="${d}" data-tab="news">${esc(T('Open the day'))}</button></span></div>`);
+    : esc(isTest(d) ? T('No forecast yet. The weather check fills this in about 10 days before.') : T('No forecast yet. From 9 December the weather check fills this in.'))}</span></div>`);
+  lamps.push(`<div class="lrow"><span class="lamp${bl ? ' on ' + bl : ''}"></span><span>${BUL[d] ? `<b>${T('News bulletin')}:</b> ${esc(BUL[d].summary || '')}` : esc(isTest(d) ? T('No news bulletin yet. It starts two days before.') : T('No news bulletin yet. It starts on 17 December.'))} <button type="button" class="link" data-open="${d}" data-tab="news">${esc(T('Open the day'))}</button></span></div>`);
   const dr = DAYRULES[d] || [];
   if (dr.length) { const top = dr.find(x => x[0] === 'act') || dr.find(x => x[0] === 'watch') || dr[0];
     lamps.push(`<div class="lrow"><span class="lamp on ${top[0] === 'info' ? 'ok' : top[0]}"></span><span><b>${T('Rules')}:</b> ${esc(T(top[1]))} <button type="button" class="link" data-go="#/rules/${d}">${esc(T('All rules for this day'))}</button></span></div>`); }
@@ -161,12 +166,15 @@ function renderToday() {
 /* ---------- Days ---------- */
 function renderDays() {
   const tn = tripDayNow();
-  main.innerHTML = `<h1>${T('16 days')}</h1><ul class="dlist">` + TRIP.days.map(day => {
+  const row = day => {
     const d = day.d, P = curPlan(d), lv = verdictLevel(d);
     const right = drives(d) ? `<b>${P.km} km</b><span class="s">${esc(P.drive)}</span>` : `<span class="s">${T('No driving')}</span>`;
     return `<li><button type="button" class="drow${tn === d ? ' today' : ''}" data-open="${d}">${stone(d)}<span><span class="t">${day.from === day.to ? esc(T(day.title)) : `${esc(T(day.from))} → ${esc(T(day.to))}`}</span><br>` +
       `<span class="s">${fmtDate(PLAN[d].date)} · ${esc(T(MODE_NAME[modeOf(d)]))}</span></span><span class="r">${right}${lv ? `<span class="lamp on ${LAMP[lv]}" title="${esc(T(HLEV[lv] || ''))}"></span>` : ''}</span></button></li>`;
-  }).join('') + `</ul>`;
+  };
+  const tests = DAYS_BY_DATE.filter(x => x.test), main_ = DAYS_BY_DATE.filter(x => !x.test);
+  main.innerHTML = (tests.length ? `<h1>${T('Test drives')}</h1><p class="note">${esc(T('Two practice days in a rental car, to try the app on the road before the trip.'))}</p><ul class="dlist">` + tests.map(row).join('') + `</ul>` : '') +
+    `<h1>${T('16 days')}</h1><ul class="dlist">` + main_.map(row).join('') + `</ul>`;
 }
 
 /* ---------- Day ---------- */
@@ -245,8 +253,8 @@ function newsTab(d) {
 function renderDay() {
   const d = VIEW.d || 1, day = TRIP.days[d - 1], P = curPlan(d), tab = VIEW.tab || 'plan';
   const hero = day.hero && PHOTOS[day.hero] && PHOTOS[day.hero].h;
-  let h = `<div class="stepper"><button type="button" data-openstep="-1" aria-label="${esc(T('Previous day'))}"${d <= 1 ? ' disabled' : ''}>‹</button><span class="label">${esc(T('Day {0} of 16', d))} · ${fmtDate(PLAN[d].date)}</span>` +
-    `<button type="button" data-openstep="1" aria-label="${esc(T('Next day'))}"${d >= 16 ? ' disabled' : ''}>›</button></div>`;
+  let h = `<div class="stepper"><button type="button" data-openstep="-1" aria-label="${esc(T('Previous day'))}"${isFirst(d) ? ' disabled' : ''}>‹</button><span class="label">${esc(dayOfN(d))} · ${fmtDate(PLAN[d].date)}</span>` +
+    `<button type="button" data-openstep="1" aria-label="${esc(T('Next day'))}"${isLast(d) ? ' disabled' : ''}>›</button></div>`;
   if (hero) h += `<div class="hero" style="background-image:url('${IMG(day.hero + '-h.jpg')}')"><button type="button" data-lbkey="${day.hero}" data-lbcap="${esc(T(day.heroAlt || day.title))}" aria-label="${esc(T('Enlarge photo: {0}', T(day.heroAlt || day.title)))}"></button></div>`;
   h += `<div class="dhead">${stone(d, true)}<div><h1>${esc(T(day.title))}</h1><p class="when">${esc(T(day.from))} → ${esc(T(day.to))} · ${T('Sleep')}: ${esc(T(day.sleep))}</p></div></div>`;
   if (drives(d)) {
@@ -263,7 +271,7 @@ function renderDay() {
 const LVL = { act: 'act', watch: 'watch', info: 'ok' };
 const ruleRow = ([lv, txt]) => `<div class="lrow"><span class="lamp on ${LVL[lv]}"></span><span>${esc(T(txt))}</span></div>`;
 function renderRules() {
-  const sel = VIEW.rulesDay || (tripDayNow() >= 1 && tripDayNow() <= 16 ? tripDayNow() : 0);
+  const sel = VIEW.rulesDay || (PLAN[tripDayNow()] ? tripDayNow() : 0);
   const by = VIEW.rulesBy || 'cat';
   let h = `<h1>${T('Rules on the road')}</h1><p class="note">${esc(T('Checked on {0} against official and reliable sources. Rules change: the news bulletin checks them again one or two days before each drive.', fmtDate(RULES_CHECKED)))}</p>`;
   h += `<div class="seg3" role="group">${[['cat', 'By category'], ['day', 'By day'], ['country', 'By country']].map(([k, l]) => `<button type="button" data-go="#/rules/${k}" aria-pressed="${by === k}">${esc(T(l))}</button>`).join('')}</div>`;
@@ -273,11 +281,11 @@ function renderRules() {
     h += RCATS.map(([k, name, desc]) => {
       const items = g[k].filter(x => !x.day).sort((x, y) => LVORD[x.lv] - LVORD[y.lv]).concat(g[k].filter(x => x.day));
       const worst = LVL[items.reduce((w, x) => LVORD[x.lv] < LVORD[w] ? x.lv : w, 'info')];
-      return `<details class="block rcat"><summary><span><b>${esc(T(name))}</b><br><small class="muted">${esc(T(desc))}</small></span><span class="rcount">${items.length}</span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(it => `<div class="lrow"><span class="lamp on ${LVL[it.lv]}"></span><span>${it.day ? `<button type="button" class="cc day" data-go="#/rules/${it.day}">${esc(T('Day {0}', it.day))}</button> ` : it.cc ? `<span class="cc">${it.cc}</span> ` : `<span class="cc all">${esc(T('All'))}</span> `}${esc(T(it.t))}</span></div>`).join('')}</div></details>`;
+      return `<details class="block rcat"><summary><span><b>${esc(T(name))}</b><br><small class="muted">${esc(T(desc))}</small></span><span class="rcount">${items.length}</span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(it => `<div class="lrow"><span class="lamp on ${LVL[it.lv]}"></span><span>${it.day ? `<button type="button" class="cc day" data-go="#/rules/${it.day}">${esc(T('Day {0}', DL(it.day)))}</button> ` : it.cc ? `<span class="cc">${it.cc}</span> ` : `<span class="cc all">${esc(T('All'))}</span> `}${esc(T(it.t))}</span></div>`).join('')}</div></details>`;
     }).join('');
     h += `<p class="small muted">${T('Sources')}: ${COUNTRIES.flatMap(c => c.src).concat(PARK_SRC).map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(', ')}</p>`;
   } else if (by === 'day') {
-    h += `<div class="block">` + TRIP.days.map(day => {
+    h += `<div class="block">` + DAYS_BY_DATE.map(day => {
       const d = day.d, items = DAYRULES[d] || [], park = DAYPARK[d] || [], worst = items.some(x => x[0] === 'act') ? 'act' : items.some(x => x[0] === 'watch') ? 'watch' : 'ok';
       return `<details class="rday" id="rd${d}"${d === sel ? ' open' : ''}><summary>${stone(d)}<span><b>${day.from === day.to ? esc(T(day.title)) : `${esc(T(day.from))} → ${esc(T(day.to))}`}</b><br><small class="muted">${fmtDate(PLAN[d].date)}</small></span><span class="lamp on ${worst}"></span></summary><div class="lamps">${items.map(ruleRow).join('')}</div>${park.length ? `<h3 class="rpark">${esc(T('Parking'))}</h3><div class="lamps">${park.map(ruleRow).join('')}</div>` : ''}</details>`;
     }).join('') + `</div>`;
@@ -320,7 +328,7 @@ function buildMap() {
     if (st.t !== 'start') sleeps.get(k).days.push(D.d);
   }
   for (const g of sleeps.values()) {
-    const lab = g.start ? 'S' : g.days.length > 1 ? `${g.days[0]}–${g.days[g.days.length - 1]}` : String(g.days[0]);
+    const lab = g.start ? 'S' : g.days.length > 1 ? `${DL(g.days[0])}–${DL(g.days[g.days.length - 1])}` : DL(g.days[0]);
     s += `<g class="m-sleep" data-open="${g.start ? 1 : g.days[0]}" role="button" tabindex="0"><circle cx="${g.xy[0]}" cy="${g.xy[1]}" r="${lab.length > 2 ? 11 : 8.5}"/><text x="${g.xy[0]}" y="${g.xy[1]}">${lab}</text></g>`;
   }
   s += `<g class="me" id="me"></g>`;
@@ -331,7 +339,7 @@ function dayVB(d) {
   const D = DAYS.find(x => x.d === d); if (!D) return [0, 0, MAP.W, MAP.H];
   const ps = (legsFor(d, modeOf(d)) || []).flatMap(l => l.pts).concat(D.stops.map(s => s.xy));
   let x0 = Math.min(...ps.map(p => p[0])), x1 = Math.max(...ps.map(p => p[0])), y0 = Math.min(...ps.map(p => p[1])), y1 = Math.max(...ps.map(p => p[1]));
-  const pad = 40, w = Math.max(160, x1 - x0 + pad * 2), hgt = Math.max(160, y1 - y0 + pad * 2), cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+  const pad = 30, w = Math.max(90, x1 - x0 + pad * 2), hgt = Math.max(90, y1 - y0 + pad * 2), cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
   const box = document.getElementById('map'), ar = box ? box.clientWidth / box.clientHeight : 1;
   let W2 = w, H2 = hgt; if (W2 / H2 < ar) W2 = H2 * ar; else H2 = W2 / ar;
   return [cx - W2 / 2, cy - H2 / 2, W2, H2];
@@ -339,7 +347,7 @@ function dayVB(d) {
 function renderMap() {
   const sel = VIEW.mapDay || 0;
   main.innerHTML = `<div class="mapdays" role="group" aria-label="${esc(T('Day'))}"><button type="button" data-mapday="0" aria-pressed="${sel === 0}">${T('All days')}</button>` +
-    TRIP.days.map(d => `<button type="button" data-mapday="${d.d}" aria-pressed="${sel === d.d}">${d.d}</button>`).join('') + `</div>` +
+    DAYS_BY_DATE.map(d => `<button type="button" data-mapday="${d.d}" aria-pressed="${sel === d.d}">${DL(d.d)}</button>`).join('') + `</div>` +
     `<div class="mapwrap"><svg id="map" class="${sel ? 'dim' : ''}" viewBox="0 0 ${MAP.W} ${MAP.H}" role="img" aria-label="${esc(T('Route map'))}">${buildMap()}</svg>` +
     `<div class="mapctl"><button type="button" data-zoom="0.7" aria-label="Zoom in">+</button><button type="button" data-zoom="1.4" aria-label="Zoom out">−</button></div></div>` +
     (sel ? `<button type="button" class="btn" data-open="${sel}">${esc(T('Open the day'))}: ${esc(T(TRIP.days[sel - 1].from))} → ${esc(T(TRIP.days[sel - 1].to))}</button>` : `<p class="note">${T('Tap a day number, or an overnight stop on the map.')}</p>`);
@@ -391,14 +399,14 @@ function fabResult(d) {
 }
 function recordSheet() {
   const d = FAB.d || VIEW.d || fabDay(), g = PROG[d];
-  const opts = TRIP.days.filter(x => drives(x.d)).map(x => `<option value="${x.d}"${x.d === d ? ' selected' : ''}>${esc(T('Day {0}', x.d) + ' · ' + fmtDate(PLAN[x.d].date) + ' · ' + T(x.from) + ' → ' + T(x.to))}</option>`).join('');
-  const state = !g || !g.started ? T('Not started yet: recording also starts the day from where you are.') : g.arrived ? T('Day {0} done', d) : T('Under way since {0}.', hhmm(g.startMin));
+  const opts = DAYS_BY_DATE.filter(x => drives(x.d)).map(x => `<option value="${x.d}"${x.d === d ? ' selected' : ''}>${esc(T('Day {0}', DL(x.d)) + ' · ' + fmtDate(PLAN[x.d].date) + ' · ' + T(x.from) + ' → ' + T(x.to))}</option>`).join('');
+  const state = !g || !g.started ? T('Not started yet: recording also starts the day from where you are.') : g.arrived ? T('Day {0} done', DL(d)) : T('Under way since {0}.', hhmm(g.startMin));
   sheet(`<h2>${T('Record location')}<button type="button" class="iconbtn" data-close aria-label="${esc(T('Close'))}">✕</button></h2>` +
     `<select data-fabday aria-label="${esc(T('Day'))}">${opts}</select><p class="muted">${state}</p>` +
     (GEO_BLOCKED ? `<p>${T('Location is blocked inside the Claude app. Open the home-screen app for real GPS, or pick where you are:')}</p><a class="btn primary" href="${APP_URL}v2/" target="_blank" rel="noopener">${T('Open the home-screen app')}</a>` +
       `<select data-lpick="${d}" aria-label="${esc(T('Pick where you are'))}"><option value="">—</option>${placesFor(d).map((c, i) => `<option value="${i}">${esc(c.label)}</option>`).join('')}</select>`
       : `<button type="button" class="btn rec" data-rec="${d}"${g && g.arrived ? ' disabled' : ''}>${ICON.pin} ${T('Record my location now')}</button>`) +
-    `<p class="recline" id="recmsg" aria-live="polite">${FAB.msg}</p><button type="button" class="btn" data-open="${d}" data-close>${esc(T('See details on Day {0}', d))}</button>`);
+    `<p class="recline" id="recmsg" aria-live="polite">${FAB.msg}</p><button type="button" class="btn" data-open="${d}" data-close>${esc(T('See details on Day {0}', DL(d)))}</button>`);
 }
 function styleSheet(d) {
   const m = modeOf(d);
@@ -434,7 +442,7 @@ function wxAlert() {
     if (!v || !w || w.mode !== 'forecast' || !P || !days.includes(P.date)) continue;
     if ((v.level === 'switch' && modeOf(day.d) !== 'safe' && hasMode(day.d, 'safe')) || v.level === 'wait') {
       wxAlerted = true;
-      alertMe(`${T('Day {0}', day.d)}: ${v.level === 'wait' ? T('Weather check: no safe road at the planned time') : T('Weather check: take the Safe route')} <a href="#/day/${day.d}/weather">${T('Open the day')}</a>`);
+      alertMe(`${T('Day {0}', DL(day.d))}: ${v.level === 'wait' ? T('Weather check: no safe road at the planned time') : T('Weather check: take the Safe route')} <a href="#/day/${day.d}/weather">${T('Open the day')}</a>`);
       return;
     }
   }
@@ -458,14 +466,14 @@ setInterval(applyTheme, 5 * 60e3);
 /* ---------- router ---------- */
 function parseHash() {
   const h = location.hash.replace(/^#\/?/, '').split('/');
-  if (h[0] === 'day' && +h[1] >= 1 && +h[1] <= 16) Object.assign(VIEW, { name: 'day', d: +h[1], tab: ['plan', 'stops', 'weather', 'news'].includes(h[2]) ? h[2] : 'plan' });
+  if (h[0] === 'day' && PLAN[+h[1]]) Object.assign(VIEW, { name: 'day', d: +h[1], tab: ['plan', 'stops', 'weather', 'news'].includes(h[2]) ? h[2] : 'plan' });
   else if (h[0] === 'days') VIEW.name = 'days';
   else if (h[0] === 'map') { VIEW.name = 'map'; VIEW.mapDay = +h[1] || 0; }
   else if (h[0] === 'rules') { VIEW.name = 'rules'; const rd = +h[1] || 0;
     if (rd) { VIEW.rulesBy = 'day'; if (rd !== VIEW.rulesDay) VIEW.scrollRules = true; VIEW.rulesDay = rd; }
     else if (['cat', 'day', 'country'].includes(h[1])) { VIEW.rulesBy = h[1]; try { localStorage.setItem('w123-rulesby', h[1]); } catch (e) {} }
     else if (!VIEW.rulesBy) { try { VIEW.rulesBy = localStorage.getItem('w123-rulesby') || 'cat'; } catch (e) { VIEW.rulesBy = 'cat'; } } }
-  else { VIEW.name = 'today'; if (+h[1] >= 1 && +h[1] <= 16) VIEW.d = +h[1]; }
+  else { VIEW.name = 'today'; if (PLAN[+h[1]]) VIEW.d = +h[1]; }
 }
 function go(hash) { if (location.hash !== hash) location.hash = hash; else render(); }
 function openDay(d, tab) { closeSheet(); VIEW.d = d; go(`#/day/${d}/${tab || 'plan'}`); }
@@ -517,8 +525,8 @@ document.addEventListener('click', e => {
   const op = t.closest('[data-open]'); if (op) { openDay(+op.dataset.open, op.dataset.tab); return; }
   if (t.closest('[data-close]')) { closeSheet(); return; }
   const ss = t.closest('[data-stylesheet]'); if (ss) { styleSheet(+ss.dataset.stylesheet); return; }
-  const st = t.closest('[data-step]'); if (st) { VIEW.d = Math.max(1, Math.min(16, (VIEW.d || 1) + +st.dataset.step)); go(`#/today/${VIEW.d}`); return; }
-  const os = t.closest('[data-openstep]'); if (os) { openDay(Math.max(1, Math.min(16, VIEW.d + +os.dataset.openstep)), VIEW.tab); return; }
+  const st = t.closest('[data-step]'); if (st) { VIEW.d = stepDay(VIEW.d || 1, +st.dataset.step); go(`#/today/${VIEW.d}`); return; }
+  const os = t.closest('[data-openstep]'); if (os) { openDay(stepDay(VIEW.d, +os.dataset.openstep), VIEW.tab); return; }
   if (t.closest('[data-days]')) { go('#/days'); return; }
   const dt = t.closest('[data-dtab]'); if (dt) { go(`#/day/${VIEW.d}/${dt.dataset.dtab}`); return; }
   const md = t.closest('[data-mapday]'); if (md) { go(md.dataset.mapday === '0' ? '#/map' : `#/map/${md.dataset.mapday}`); return; }
@@ -569,8 +577,8 @@ async function saveModes() {
   }
   dbRef = db;
   try { const u = await C.use('user'); canSaveShared = !!(u && await u.canEdit()); } catch (e) { canSaveShared = false; }
-  db.collection('bulletins').onSnapshot(snap => { const n = {}; for (const doc of snap.docs) { const x = doc.data(); if (x && +x.d >= 1 && +x.d <= 16) n[+x.d] = x; } BUL = n; refresh(); }, () => {});
-  db.collection('weather').onSnapshot(snap => { const n = {}; for (const doc of snap.docs) { const x = doc.data(); if (x && +x.d >= 1 && +x.d <= 16) n[+x.d] = x; } WX = n; refresh(); wxAlert(); }, () => {});
+  db.collection('bulletins').onSnapshot(snap => { const n = {}; for (const doc of snap.docs) { const x = doc.data(); if (x && PLAN[+x.d]) n[+x.d] = x; } BUL = n; refresh(); }, () => {});
+  db.collection('weather').onSnapshot(snap => { const n = {}; for (const doc of snap.docs) { const x = doc.data(); if (x && PLAN[+x.d]) n[+x.d] = x; } WX = n; refresh(); wxAlert(); }, () => {});
   db.doc('prefs/route').onSnapshot(snap => {
     if (!snap.exists) return; const x = snap.data() || {}; if (!MK.includes(x.global)) return;
     const n = { global: x.global, days: { ...(x.days || {}) } }; if (JSON.stringify(n) === JSON.stringify(MODE)) return;

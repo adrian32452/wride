@@ -207,7 +207,13 @@ V[16] = {"fast": {"same": True}, "cine": {
     "flags": ["Rovinietă still valid", "Stops are optional: drive straight through if you prefer"],
     "check": ["DN67 landslide closures", "DN7 / A1 traffic on the Sunday return"]}}
 
+TEST_WHY = "Test day: one route, the same in every mode."
+V[17] = {"fast": {"same": True, "why": TEST_WHY}, "cine": {"same": True, "why": TEST_WHY}}
+V[18] = {"fast": {"same": True, "why": TEST_WHY}, "cine": {"same": True, "why": TEST_WHY}}
+DAY_IDS = list(range(1, 17)) + [17, 18]
 BAL_CHECK = {
+ 17: ["A-2 traffic and roadworks Madrid–Calatayud", "Snow or ice on the A-2 at Medinaceli", "Fog on the N-234 near Daroca"],
+ 18: ["A-45 Las Pedrizas pass: fog, rain or ice", "Sunday hours of the Antequera dolmens and Córdoba's Mezquita", "Córdoba and Málaga low-emission zones"],
  1: ["Madrid ZBE", "A-1 and AP-68 traffic", "Bilbao ZBE weekend rules"],
  2: ["N-634 coast road closures", "San Sebastián ZBE"],
  3: ["A64 / A61 traffic", "French strikes or fuel shortages"],
@@ -225,12 +231,12 @@ BAL_CHECK = {
  15: ["Danube road closures", "Iron Gates border queues", "2 Jan holiday opening hours"],
  16: ["DN6 / A1 traffic", "Romanian rovinietă"],
 }
-for d in range(1, 17):
+for d in DAY_IDS:
     V.setdefault(d, {})
     for m in ("fast", "cine"):
         V[d].setdefault(m, {"same": True})
 exec(open(os.path.join(S, "safe_block.py")).read())
-for d in range(1, 17):
+for d in DAY_IDS:
     V.setdefault(d, {"fast": {"same": True}, "cine": {"same": True}})
     V[d]["bal"] = {"check": BAL_CHECK[d]}
     for m in ("fast", "cine"):

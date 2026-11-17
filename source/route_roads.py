@@ -13,7 +13,7 @@ roads = json.load(open(f"{S}/ne/ne_10m_roads.geojson"))
 trip = json.load(open(f"{S}/mapdata/trip.json"))
 countries = json.load(open(f"{S}/ne/countries.geojson"))
 
-LON0, LON1, LAT0, LAT1 = -9.5, 28.5, 39.0, 48.5
+LON0, LON1, LAT0, LAT1 = -9.5, 28.5, 36.0, 48.5
 def hav(a, b):
     R = 6371.0
     la1, lo1, la2, lo2 = map(math.radians, (a[1], a[0], b[1], b[0]))
@@ -178,6 +178,7 @@ def route_leg(dnum, prev, s, mode, force_local=False, with_alt=True):
 out, prev, report = {}, None, []
 day_start = {}
 for day in trip["days"]:
+    if day.get("test") or day["d"] == 1: prev = None   # test days and Day 1 start fresh
     day_start[day["d"]] = prev
     legs = []
     for s in day["stops"]:

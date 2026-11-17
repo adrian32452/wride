@@ -594,3 +594,76 @@
 1311	Drobeta-Turnu Severin ou Orșova : choisissez un hôtel avec cour fermée ou parking gardé.
 1312	Bucarest : le dimanche est gratuit sur les places de la mairie marquées en bleu. Pour la nuit, utilisez un parking gardé ou celui de l'hôtel.
 1313	Où laisser la voiture chaque jour, combien ça coûte et comment payer.
+1314	Essai : Daroca et Alcalá
+1315	Aéroport de Madrid
+1316	Pas de nuit sur place : la voiture est rendue au comptoir de location
+1317	Journée d'essai en voiture de location : les règles des vieux diesels du voyage ne s'appliquent pas
+1318	Départ de nuit : le soleil se lève vers 08:20
+1319	Calatayud
+1320	Daroca
+1321	Alcalá de Henares
+1322	Départ à 07:00, environ 80 minutes avant le lever du soleil. Une voiture de location avec vignette environnementale n'est pas concernée par les règles d'émissions de Madrid.
+1323	Ville médiévale fortifiée : entrez par la Puerta Baja, montez à la Basílica de Santa María et longez les remparts pour la vue. Environ 2 heures avec un café.
+1324	Av. de Don Juan Tenorio s/n, la zone commerciale au nord-est de la ville, près de l'A-2. La vieille ville et l'université sont à 3 km.
+1325	Retour à l'aéroport avant le coucher du soleil (vers 17:50). Faites le plein avant de rendre la voiture de location.
+1326	Essai : Antequera et Cordoue
+1327	Aéroport de Malaga
+1328	Dimanche : la Mezquita de Cordoue est ouverte aux visiteurs de 15:00 à 18:00
+1329	Fuengirola
+1330	Antequera
+1331	Cordoue
+1332	Départ à 08:00, juste avant le lever du soleil. L'itinéraire reste hors de la zone à faibles émissions de Malaga.
+1333	Promenade du front de mer au lever du soleil, et le château Sohail au-dessus de l'embouchure : à cette heure, on le voit de l'extérieur.
+1334	Dolmens de Menga et de Viera (UNESCO) : le dimanche 09:00–15:00, gratuit pour les citoyens de l'UE, parking gratuit à l'entrée.
+1335	Déjeuner, puis la Mezquita-Catedral (visites le dimanche 15:00–18:00) et le pont romain au crépuscule. Garez-vous au Paseo de la Victoria, en bordure de la vieille ville.
+1336	Dernière heure sur l'autoroute A-45 / A-7 de nuit. Faites le plein avant de rendre la voiture de location.
+1337	Daroca : Puerta Baja, les remparts et la Basílica
+1338	Garez-vous hors des remparts
+1339	Alcalá de Henares : Av. de Don Juan Tenorio, et déjeuner
+1340	Journée d'essai : un seul itinéraire, le même dans tous les modes.
+1341	Circulation et travaux sur l'A-2 Madrid–Calatayud
+1342	Neige ou verglas sur l'A-2 à Medinaceli
+1343	Brouillard sur la N-234 près de Daroca
+1344	A-2 à Medinaceli
+1345	Point le plus haut de l'A-2 (environ 1 200 m) : le premier endroit où l'on trouve neige et verglas, à l'aller comme au retour.
+1346	Si l'A-2 est fermée ou si les chaînes sont exigées, renoncez à Daroca : allez seulement à Alcalá puis à l'aéroport.
+1347	N-234 Calatayud–Daroca
+1348	Route à deux voies dans la vallée du Jiloca : brouillard givrant les matins froids.
+1349	Front de mer de Fuengirola et château Sohail
+1350	Dolmens d'Antequera
+1351	Dolmens de Menga et de Viera
+1352	Parking gratuit à l'entrée
+1353	Déjeuner dans la Judería
+1354	Garez-vous au Paseo de la Victoria
+1355	Mezquita-Catedral
+1356	Visites le dimanche à partir de 15:00
+1357	Pont romain au coucher du soleil
+1358	Col de Las Pedrizas sur l'A-45 : brouillard, pluie ou verglas
+1359	Horaires du dimanche des dolmens d'Antequera et de la Mezquita de Cordoue
+1360	Zones à faibles émissions de Cordoue et de Malaga
+1361	Col de Las Pedrizas (A-45)
+1362	Montée raide depuis Malaga jusqu'à environ 800 m : brouillard épais et fortes pluies y sont fréquents, et on le passe deux fois.
+1363	Sous une forte pluie ou dans le brouillard, ralentissez nettement ; s'il est fermé, suivez la déviation balisée ou attendez la réouverture.
+1364	A-45 Antequera–Cordoue
+1365	Campagne d'oliviers ouverte : bancs de brouillard le matin, vent de travers et fortes averses.
+1366	Voiture de location avec vignette environnementale : la zone à faibles émissions de Madrid et les règles des vieux diesels du voyage ne s'appliquent pas ce jour-là.
+1367	A-2 à Medinaceli (environ 1 200 m) : par temps de neige, les panneaux peuvent exiger chaînes ou pneus hiver, et les voitures de location en ont rarement.
+1368	Vérifiez que la voiture de location a sa balise V-16 et son gilet réfléchissant avant de quitter l'aéroport.
+1369	Voiture de location avec vignette environnementale : les zones à faibles émissions de Malaga et de Cordoue l'acceptent, et l'itinéraire reste hors de celle de Malaga.
+1370	Cordoue : les rues autour de la Mezquita sont une zone à accès restreint surveillée par caméras. N'y entrez pas en voiture : garez-vous au Paseo de la Victoria et marchez 10 minutes.
+1371	Col de Las Pedrizas sur l'A-45 : fortes pluies et brouillard sont fréquents ; vous le passez deux fois, la seconde de nuit.
+1372	Daroca : garez-vous hors des remparts et entrez à pied par la Puerta Baja.
+1373	Alcalá de Henares : les magasins de l'Av. de Don Juan Tenorio ont leurs propres parkings.
+1374	Fuengirola : utilisez un parking public près du front de mer.
+1375	Dolmens d'Antequera : parking gratuit à l'entrée.
+1376	Cordoue : parking du Paseo de la Victoria (Parkia), en bordure de la vieille ville, à partir d'environ 2,50 € l'heure.
+1377	Malaga
+1378	Pont romain et Mezquita, Cordoue
+1379	Dolmens d'Antequera
+1380	Essai {0}
+1381	Journées d'essai
+1382	Deux journées d'entraînement en voiture de location, pour tester l'appli sur la route avant le voyage.
+1383	L'essai {0} a lieu le {1} : encore {2} jours. Vous pouvez déjà le consulter.
+1384	Moyennes approximatives sur le long terme ; la vraie prévision les remplace environ 10 jours avant.
+1385	Pas encore de prévision. Le contrôle météo la remplit environ 10 jours avant.
+1386	Pas encore de bulletin d'actualités. Il commence deux jours avant.

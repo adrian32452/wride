@@ -1,0 +1,73 @@
+Test: Daroca și Alcalá
+Aeroportul Madrid
+Fără înnoptare: mașina se predă la biroul de închirieri
+Zi de test cu mașină închiriată: regulile pentru dieselurile vechi din excursie nu se aplică
+Plecare pe întuneric: răsăritul e pe la 08:20
+Calatayud
+Daroca
+Alcalá de Henares
+Plecare la 07:00, cam cu 80 de minute înainte de răsărit. O mașină închiriată cu etichetă de mediu nu e afectată de regulile de emisii din Madrid.
+Oraș medieval cu ziduri: intri pe Puerta Baja, urci la Basílica de Santa María și mergi pe ziduri pentru priveliște. Cam 2 ore, cu o cafea.
+Av. de Don Juan Tenorio s/n, zona comercială de la marginea de nord-est a orașului, lângă A-2. Centrul vechi și universitatea sunt la 3 km.
+Înapoi la aeroport înainte de apus (pe la 17:50). Alimentează înainte să predai mașina închiriată.
+Test: Antequera și Córdoba
+Aeroportul Málaga
+Duminică: Mezquita din Córdoba e deschisă vizitatorilor 15:00–18:00
+Fuengirola
+Antequera
+Córdoba
+Plecare la 08:00, chiar înainte de răsărit. Traseul rămâne în afara zonei cu emisii reduse din Málaga.
+Faleza la răsărit și Castelul Sohail deasupra gurii râului: la ora asta îl vezi din afară.
+Dolmenele Menga și Viera (UNESCO): duminica 09:00–15:00, gratuit pentru cetățenii UE, parcare gratuită la intrare.
+Prânz, apoi Mezquita-Catedral (vizite duminica 15:00–18:00) și podul roman la amurg. Parchează la Paseo de la Victoria, la marginea orașului vechi.
+Ultima oră pe autostrada A-45 / A-7 după lăsarea întunericului. Alimentează înainte să predai mașina închiriată.
+Daroca: Puerta Baja, zidurile și Basílica
+Parchează în afara zidurilor
+Alcalá de Henares: Av. de Don Juan Tenorio și prânz
+Zi de test: un singur traseu, același în orice mod.
+Trafic și lucrări pe A-2 Madrid–Calatayud
+Zăpadă sau gheață pe A-2 la Medinaceli
+Ceață pe N-234 lângă Daroca
+A-2 la Medinaceli
+Cea mai înaltă porțiune a A-2 (circa 1.200 m): primul loc unde apar zăpada și gheața, și la dus, și la întors.
+Dacă A-2 e închisă sau se cer lanțuri, sari peste Daroca: mergi doar la Alcalá și înapoi la aeroport.
+N-234 Calatayud–Daroca
+Drum cu două benzi în valea Jiloca: ceață înghețată în diminețile reci.
+Faleza din Fuengirola și Castelul Sohail
+Dolmenele din Antequera
+Dolmenele Menga și Viera
+Parcare gratuită la intrare
+Prânz în Judería
+Parchează la Paseo de la Victoria
+Mezquita-Catedral
+Vizite duminica de la 15:00
+Podul roman la apus
+Pasul Las Pedrizas pe A-45: ceață, ploaie sau gheață
+Programul de duminică al dolmenelor din Antequera și al Mezquitei din Córdoba
+Zonele cu emisii reduse din Córdoba și Málaga
+Pasul Las Pedrizas pe A-45
+Urcare abruptă din Málaga până la circa 800 m: ceața deasă și ploile puternice sunt frecvente, iar porțiunea se parcurge de două ori.
+Pe ploaie puternică sau ceață, încetinește mult; dacă e închis, urmează ocolirea semnalizată sau așteaptă redeschiderea.
+A-45 Antequera–Córdoba
+Câmpie deschisă cu măslini: bancuri de ceață dimineața, vânt lateral și averse puternice.
+Mașină închiriată cu etichetă de mediu: zona cu emisii reduse din Madrid și regulile pentru dieselurile vechi din excursie nu se aplică azi.
+A-2 la Medinaceli (circa 1.200 m): pe zăpadă, indicatoarele pot cere lanțuri sau anvelope de iarnă, iar mașinile închiriate rareori au lanțuri.
+Verifică dacă mașina închiriată are lampa V-16 și vesta reflectorizantă înainte să pleci de la aeroport.
+Mașină închiriată cu etichetă de mediu: zonele cu emisii reduse din Málaga și Córdoba o permit, iar traseul rămâne în afara zonei din Málaga.
+Córdoba: străzile din jurul Mezquitei sunt zonă cu acces restricționat, cu camere. Nu intra cu mașina: parchează la Paseo de la Victoria și mergi 10 minute pe jos.
+Pasul Las Pedrizas pe A-45: ploile puternice și ceața sunt frecvente; îl treci de două ori, a doua oară pe întuneric.
+Daroca: parchează în afara zidurilor și intră pe jos pe Puerta Baja.
+Alcalá de Henares: magazinele de pe Av. de Don Juan Tenorio au parcări proprii.
+Fuengirola: folosește o parcare publică lângă faleză.
+Dolmenele din Antequera: parcare gratuită la intrare.
+Córdoba: parcarea Paseo de la Victoria (Parkia), la marginea orașului vechi, de la circa 2,50 € pe oră.
+Málaga
+Podul roman și Mezquita, Córdoba
+Dolmenele din Antequera
+Test {0}
+Zile de test
+Două zile de exercițiu cu o mașină închiriată, ca să încerci aplicația pe drum înainte de excursie.
+Testul {0} e pe {1}: mai sunt {2} zile. Îl poți vedea de acum.
+Medii aproximative pe termen lung; prognoza reală le înlocuiește cu circa 10 zile înainte.
+Încă nu există prognoză. Verificarea vremii o completează cu circa 10 zile înainte.
+Încă nu există buletin de știri. Începe cu două zile înainte.

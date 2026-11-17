@@ -1,0 +1,104 @@
+{
+ "d": 17,
+ "label": "T1",
+ "test": true,
+ "car": "rental car with an environmental label (not the W123)",
+ "date": "2026-11-28",
+ "from": "Madrid Airport",
+ "to": "Madrid Airport",
+ "sleep": "No overnight: the car goes back to the rental desk",
+ "sunrise": "08:15",
+ "sunset": "17:50",
+ "modes": {
+  "bal": {
+   "roads": [
+    "A-2",
+    "N-234"
+   ],
+   "points": [
+    {
+     "n": "Madrid Airport",
+     "lat": 40.4722,
+     "lon": -3.5609
+    },
+    {
+     "n": "Daroca",
+     "lat": 41.1143,
+     "lon": -1.4142
+    },
+    {
+     "n": "Alcalá de Henares",
+     "lat": 40.5058,
+     "lon": -3.3324
+    },
+    {
+     "n": "Madrid Airport",
+     "lat": 40.4722,
+     "lon": -3.5609
+    }
+   ],
+   "check": [
+    "A-2 traffic and roadworks Madrid–Calatayud",
+    "Snow or ice on the A-2 at Medinaceli",
+    "Fog on the N-234 near Daroca"
+   ],
+   "drives": [
+    "07:00–09:50 Daroca via A-2 / N-234",
+    "11:50–14:20 Alcalá de Henares via N-234 / A-2",
+    "16:20–16:45 Madrid Airport via A-2 / M-14"
+   ]
+  },
+  "fast": {
+   "same_as": "bal"
+  },
+  "cine": {
+   "same_as": "bal"
+  },
+  "safe": {
+   "same_as": "bal"
+  }
+ },
+ "hot": [
+  {
+   "id": "medinaceli",
+   "n": "A-2 at Medinaceli",
+   "lat": 41.17,
+   "lon": -2.42,
+   "elev": 1200,
+   "risks": [
+    "snow",
+    "ice",
+    "fog",
+    "wind"
+   ],
+   "yr": "Medinaceli",
+   "passes": {
+    "bal": "07:00–09:50 and 11:50–14:20",
+    "fast": "07:00–09:50 and 11:50–14:20",
+    "cine": "07:00–09:50 and 11:50–14:20",
+    "safe": "07:00–09:50 and 11:50–14:20"
+   },
+   "alt": "If the A-2 is closed or chains are required, skip Daroca: drive to Alcalá and back to the airport only."
+  },
+  {
+   "id": "n234",
+   "n": "N-234 Calatayud–Daroca",
+   "lat": 41.23,
+   "lon": -1.52,
+   "elev": null,
+   "risks": [
+    "fog",
+    "ice"
+   ],
+   "yr": "Daroca",
+   "passes": {
+    "bal": "07:00–09:50 and 11:50–14:20",
+    "fast": "07:00–09:50 and 11:50–14:20",
+    "cine": "07:00–09:50 and 11:50–14:20",
+    "safe": "07:00–09:50 and 11:50–14:20"
+   },
+   "alt": "Leave later, once the fog lifts."
+  }
+ ],
+ "start": "07:00"
+}

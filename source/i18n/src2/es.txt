@@ -592,3 +592,76 @@
 1311	Drobeta-Turnu Severin u Orșova: elige un hotel con patio cerrado o aparcamiento vigilado.
 1312	Bucarest: el domingo es gratis en las plazas del Ayuntamiento marcadas en azul. Para la noche, usa un aparcamiento vigilado o el del hotel.
 1313	Dónde dejar el coche cada día, cuánto cuesta y cómo pagar.
+1314	Prueba: Daroca y Alcalá
+1315	Aeropuerto de Madrid
+1316	Sin noche fuera: el coche se devuelve en el mostrador de alquiler
+1317	Día de prueba con coche de alquiler: las normas para diésel antiguos del viaje no se aplican
+1318	Salida de noche: el amanecer es hacia las 08:20
+1319	Calatayud
+1320	Daroca
+1321	Alcalá de Henares
+1322	Salida a las 07:00, unos 80 minutos antes del amanecer. Un coche de alquiler con etiqueta ambiental no se ve afectado por las normas de emisiones de Madrid.
+1323	Ciudad medieval amurallada: entra por la Puerta Baja, sube a la Basílica de Santa María y recorre las murallas por las vistas. Unas 2 horas con un café.
+1324	Av. de Don Juan Tenorio s/n, la zona comercial del borde nordeste de la ciudad, junto a la A-2. El casco antiguo y la universidad están a 3 km.
+1325	De vuelta en el aeropuerto antes del atardecer (hacia las 17:50). Reposta antes de devolver el coche de alquiler.
+1326	Prueba: Antequera y Córdoba
+1327	Aeropuerto de Málaga
+1328	Domingo: la Mezquita de Córdoba abre a los visitantes de 15:00 a 18:00
+1329	Fuengirola
+1330	Antequera
+1331	Córdoba
+1332	Salida a las 08:00, justo antes del amanecer. La ruta queda fuera de la zona de bajas emisiones de Málaga.
+1333	Paseo marítimo al amanecer y el Castillo Sohail sobre la desembocadura del río: a esta hora, se ve desde fuera.
+1334	Dólmenes de Menga y Viera (UNESCO): domingos de 09:00 a 15:00, gratis para ciudadanos de la UE, aparcamiento gratuito en la entrada.
+1335	Comida y luego la Mezquita-Catedral (visitas en domingo de 15:00 a 18:00) y el puente romano al anochecer. Aparca en el Paseo de la Victoria, al borde del casco antiguo.
+1336	Última hora por la autovía A-45 / A-7 ya de noche. Reposta antes de devolver el coche de alquiler.
+1337	Daroca: Puerta Baja, las murallas y la Basílica
+1338	Aparca fuera de las murallas
+1339	Alcalá de Henares: Av. de Don Juan Tenorio, y comida
+1340	Día de prueba: una sola ruta, igual en todos los modos.
+1341	Tráfico y obras en la A-2 Madrid–Calatayud
+1342	Nieve o hielo en la A-2 en Medinaceli
+1343	Niebla en la N-234 cerca de Daroca
+1344	A-2 en Medinaceli
+1345	El tramo más alto de la A-2 (unos 1.200 m): el primer sitio con nieve y hielo, a la ida y a la vuelta.
+1346	Si la A-2 está cortada o se exigen cadenas, sáltate Daroca: ve solo a Alcalá y vuelve al aeropuerto.
+1347	N-234 Calatayud–Daroca
+1348	Carretera de dos carriles en el valle del Jiloca: niebla helada en las mañanas frías.
+1349	Paseo marítimo de Fuengirola y Castillo Sohail
+1350	Dólmenes de Antequera
+1351	Dólmenes de Menga y Viera
+1352	Aparcamiento gratuito en la entrada
+1353	Comida en la Judería
+1354	Aparca en el Paseo de la Victoria
+1355	Mezquita-Catedral
+1356	Visitas en domingo desde las 15:00
+1357	Puente romano al atardecer
+1358	Puerto de las Pedrizas en la A-45: niebla, lluvia o hielo
+1359	Horario de domingo de los dólmenes de Antequera y de la Mezquita de Córdoba
+1360	Zonas de bajas emisiones de Córdoba y Málaga
+1361	Puerto de las Pedrizas (A-45)
+1362	Subida empinada desde Málaga hasta unos 800 m: la niebla espesa y la lluvia fuerte son frecuentes, y se pasa dos veces.
+1363	Con lluvia fuerte o niebla, reduce mucho; si está cortado, sigue el desvío señalizado o espera a que reabra.
+1364	A-45 Antequera–Córdoba
+1365	Campiña abierta de olivares: bancos de niebla por la mañana, viento lateral y chubascos fuertes.
+1366	Coche de alquiler con etiqueta ambiental: la zona de bajas emisiones de Madrid y las normas para diésel antiguos del viaje no se aplican hoy.
+1367	A-2 en Medinaceli (unos 1.200 m): con nieve, las señales pueden exigir cadenas o neumáticos de invierno, y los coches de alquiler casi nunca llevan cadenas.
+1368	Comprueba que el coche de alquiler lleva la baliza V-16 y el chaleco reflectante antes de salir del aeropuerto.
+1369	Coche de alquiler con etiqueta ambiental: las zonas de bajas emisiones de Málaga y Córdoba lo permiten, y la ruta queda fuera de la de Málaga.
+1370	Córdoba: las calles alrededor de la Mezquita son una zona de acceso restringido con cámaras. No entres en coche: aparca en el Paseo de la Victoria y camina 10 minutos.
+1371	Puerto de las Pedrizas en la A-45: la lluvia fuerte y la niebla son frecuentes; lo pasas dos veces, la segunda ya de noche.
+1372	Daroca: aparca fuera de las murallas y entra a pie por la Puerta Baja.
+1373	Alcalá de Henares: las tiendas de la Av. de Don Juan Tenorio tienen aparcamiento propio.
+1374	Fuengirola: usa un aparcamiento público cerca del paseo marítimo.
+1375	Dólmenes de Antequera: aparcamiento gratuito en la entrada.
+1376	Córdoba: aparcamiento del Paseo de la Victoria (Parkia), al borde del casco antiguo, desde unos 2,50 € la hora.
+1377	Málaga
+1378	Puente romano y Mezquita, Córdoba
+1379	Dólmenes de Antequera
+1380	Prueba {0}
+1381	Días de prueba
+1382	Dos días de práctica con un coche de alquiler, para probar la app en carretera antes del viaje.
+1383	La prueba {0} es el {1}: faltan {2} días. Ya puedes verla.
+1384	Medias aproximadas a largo plazo; la previsión real las sustituye unos 10 días antes.
+1385	Aún no hay previsión. La comprobación del tiempo la rellena unos 10 días antes.
+1386	Aún no hay boletín de noticias. Empieza dos días antes.
