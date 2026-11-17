@@ -77,7 +77,7 @@ D = {
     ("stop", "Train back to Figline", 40, "M", "")]),
 9: ("08:00", 43.936, 12.447, 1, [
     ("drive", "Arezzo", 50, 45, "A1 (Valdarno to Arezzo)"),
-    ("stop", "Piazza Grande", 90, "M", "Parcheggio Pietri + lift"),
+    ("stop", "Piazza Grande", 90, "M", "Baldaccio car park, 10-minute walk"),
     ("drive", "Anghiari", 30, 40, "SR73"),
     ("stop", "Anghiari + quick lunch", 60, "O", ""),
     ("drive", "Bocca Trabaria (1,049 m)", 35, 50, "SS73bis"),

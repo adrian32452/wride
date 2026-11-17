@@ -673,3 +673,14 @@
 1392	Cordova: ponte romano e la Mezquita da fuori
 1393	Mezquita: visite la domenica 08:30–11:30 e 15:00–18:00
 1394	Passo di Las Pedrizas sulla A-45: piogge forti e nebbia sono frequenti; lo passi due volte.
+1395	P+R di Illunbe (San Sebastián)
+1396	Parcheggio di Via Pietrasantina (Pisa)
+1397	Parcheggio Carducci (Lucca)
+1398	Parcheggio Baldaccio (Arezzo)
+1399	P+R Dolgi most (Lubiana)
+1400	Parcheggio del Paseo de la Victoria (Cordova)
+1401	Parcheggio Baldaccio, 10 minuti a piedi
+1402	Arezzo: parcheggia al Parcheggio Baldaccio, fuori dalla ZTL. Il Parcheggio Pietri può essere riservato ai residenti nei fine settimana del mercatino di Natale.
+1403	Parcheggio Baldaccio
+1404	Parcheggio multipiano fuori dalla ZTL: aperto 24 ore, circa 3 € al giorno, 10 minuti a piedi dal centro. Il Parcheggio Pietri, con le scale mobili, può essere riservato ai residenti nei fine settimana del mercatino di Natale.
+1405	I pulsanti Waze e Google Maps portano a parcheggi fuori dalle zone a traffico limitato. Waze non ha un'impostazione per un'auto senza bollino: se ti devia verso un centro storico, ignoralo e segui le indicazioni per il parcheggio.

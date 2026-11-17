@@ -98,7 +98,12 @@
      "lon": -1.9812,
      "t": "stop",
      "note": "La Concha bay and a pintxos lunch. Park outside the ZBE.",
-     "w": "San_Sebastián"
+     "w": "San_Sebastián",
+     "go": {
+      "n": "Illunbe P+R (San Sebastián)",
+      "lat": 43.29739,
+      "lon": -1.96957
+     }
     },
     {
      "n": "Biarritz",
@@ -310,7 +315,12 @@
      "lon": 10.3966,
      "t": "stop",
      "note": "Afternoon visit, 1.5h. Park outside the walls.",
-     "w": "Piazza_dei_Miracoli"
+     "w": "Piazza_dei_Miracoli",
+     "go": {
+      "n": "Via Pietrasantina car park (Pisa)",
+      "lat": 43.729162,
+      "lon": 10.390861
+     }
     },
     {
      "n": "Lucca",
@@ -318,7 +328,12 @@
      "lon": 10.5027,
      "t": "sleep",
      "note": "Walk the city walls at dusk.",
-     "w": "Lucca"
+     "w": "Lucca",
+     "go": {
+      "n": "Carducci car park (Lucca)",
+      "lat": 43.838002,
+      "lon": 10.497298
+     }
     }
    ]
   },
@@ -353,7 +368,12 @@
      "lon": 10.5027,
      "t": "start",
      "note": "Leave after breakfast.",
-     "w": "Lucca"
+     "w": "Lucca",
+     "go": {
+      "n": "Carducci car park (Lucca)",
+      "lat": 43.838002,
+      "lon": 10.497298
+     }
     },
     {
      "n": "Castellina in Chianti",
@@ -451,7 +471,12 @@
      "lon": 11.8796,
      "t": "stop",
      "note": "Piazza Grande on a quiet Sunday morning.",
-     "w": "Arezzo"
+     "w": "Arezzo",
+     "go": {
+      "n": "Baldaccio car park (Arezzo)",
+      "lat": 43.46583,
+      "lon": 11.86991
+     }
     },
     {
      "n": "Anghiari",
@@ -617,7 +642,12 @@
      "lon": 14.5058,
      "t": "sleep",
      "note": "Christmas lights along the Ljubljanica.",
-     "w": "Ljubljana"
+     "w": "Ljubljana",
+     "go": {
+      "n": "P+R Dolgi most (Ljubljana)",
+      "lat": 46.036583,
+      "lon": 14.463289
+     }
     }
    ]
   },
@@ -939,7 +969,12 @@
      "lon": -4.7794,
      "t": "stop",
      "note": "Roman bridge, the Judería and the Mezquita from outside: on Sundays it is open to visitors only 08:30–11:30 and 15:00–18:00. Park at Paseo de la Victoria, at the edge of the old town.",
-     "w": "Mosque–Cathedral_of_Córdoba"
+     "w": "Mosque–Cathedral_of_Córdoba",
+     "go": {
+      "n": "Paseo de la Victoria car park (Córdoba)",
+      "lat": 37.884556,
+      "lon": -4.784679
+     }
     },
     {
      "n": "Málaga Airport",

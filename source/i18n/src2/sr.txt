@@ -677,3 +677,14 @@
 1392	Kordoba: rimski most i Mezquita spolja
 1393	Mezquita: nedeljne posete 08:30–11:30 i 15:00–18:00
 1394	Prevoj Las Pedrizas na A-45: jaka kiša i magla su česte; prelazite ga dvaput.
+1395	P+R Ilunbe (San Sebastijan)
+1396	Parking Via Pietrasantina (Piza)
+1397	Parking Carducci (Luka)
+1398	Parking Baldaccio (Areco)
+1399	P+R Dolgi most (Ljubljana)
+1400	Parking Paseo de la Victoria (Kordoba)
+1401	Parking Baldaccio, 10 minuta peške
+1402	Areco: parkirajte na parkingu Baldaccio, van zone ograničenog saobraćaja. Parcheggio Pietri vikendom tokom božićnog sajma može biti samo za stanare.
+1403	Parcheggio Baldaccio
+1404	Garaža na više nivoa van zone ograničenog saobraćaja: otvorena 24 sata, oko 3 € dnevno, 10 minuta peške do centra. Parcheggio Pietri, sa pokretnim stepenicama, vikendom tokom božićnog sajma može biti samo za stanare.
+1405	Dugmad Waze i Google Maps vode do parkinga van zona ograničenog saobraćaja. Waze nema podešavanje za automobil bez nalepnice: ako vas preusmeri u centar grada, zanemarite to i pratite znakove za parking.

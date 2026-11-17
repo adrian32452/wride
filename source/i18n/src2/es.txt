@@ -673,3 +673,14 @@
 1392	Córdoba: puente romano y la Mezquita por fuera
 1393	Mezquita: visitas en domingo de 08:30 a 11:30 y de 15:00 a 18:00
 1394	Puerto de las Pedrizas en la A-45: la lluvia fuerte y la niebla son frecuentes; lo pasas dos veces.
+1395	P+R de Illunbe (San Sebastián)
+1396	Aparcamiento de Via Pietrasantina (Pisa)
+1397	Aparcamiento Carducci (Lucca)
+1398	Aparcamiento Baldaccio (Arezzo)
+1399	P+R Dolgi most (Liubliana)
+1400	Aparcamiento del Paseo de la Victoria (Córdoba)
+1401	Aparcamiento Baldaccio, a 10 minutos a pie
+1402	Arezzo: aparca en el aparcamiento Baldaccio, fuera de la zona restringida. El Parcheggio Pietri puede ser solo para residentes los fines de semana del mercado navideño.
+1403	Parcheggio Baldaccio
+1404	Aparcamiento de varias plantas fuera de la zona restringida: abierto 24 horas, unos 3 € al día, a 10 minutos a pie del centro. El Parcheggio Pietri, con escaleras mecánicas, puede ser solo para residentes los fines de semana del mercado navideño.
+1405	Los botones de Waze y Google Maps llevan a aparcamientos fuera de las zonas restringidas. Waze no tiene ajuste para un coche sin etiqueta: si te desvía hacia un centro urbano, ignóralo y sigue las señales al aparcamiento.

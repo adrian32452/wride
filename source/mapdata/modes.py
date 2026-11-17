@@ -110,7 +110,7 @@ V[9] = {"fast": {
               st("Cesena", 44.137, 12.243, "via", m="mw"),
               "San Marino"],
     "steps": [("drive", "Arezzo", 50, 45, "A1 (Valdarno to Arezzo)", "mw"),
-              ("stop", "Piazza Grande", 90, "M", "Parcheggio Pietri + lift"),
+              ("stop", "Piazza Grande", 90, "M", "Baldaccio car park, 10-minute walk"),
               ("drive", "Anghiari", 30, 40, "SR73", "main"),
               ("stop", "Anghiari + quick lunch", 60, "O", ""),
               ("drive", "San Marino", 165, 135, "E45 via Sansepolcro and Cesena, A14, SS72", "mw")],
@@ -241,5 +241,30 @@ for d in DAY_IDS:
     V[d]["bal"] = {"check": BAL_CHECK[d]}
     for m in ("fast", "cine"):
         V[d].setdefault(m, {"same": True})
+# routing points that sit in town centres with traffic restrictions: navigation links use the nearest motorway point instead
+SNAP = {"Ferrara", "Padova", "Cesena", "La Spezia"}
+_roads = None
+def _snap(lat, lon):
+    global _roads
+    import math
+    if _roads is None:
+        R = json.load(open(os.path.join(S, "..", "ne", "ne_10m_roads.geojson")))
+        _roads = []
+        for f in R["features"]:
+            p = f["properties"]
+            if not (p.get("expressway") == 1 or p.get("type") in ("Major Highway",)): continue
+            g = f["geometry"]; lines = g["coordinates"] if g["type"] == "MultiLineString" else [g["coordinates"]]
+            for ln in lines:
+                for x, y in ln:
+                    if abs(y - 44) < 4 and 6 < x < 14: _roads.append((y, x))
+    best = min(_roads, key=lambda q: (q[0] - lat) ** 2 + ((q[1] - lon) * math.cos(math.radians(lat))) ** 2)
+    return round(best[0], 4), round(best[1], 4)
+for d, v in V.items():
+    for mk in ("fast", "cine", "safe"):
+        for it in (v.get(mk) or {}).get("stops", []) or []:
+            if isinstance(it, dict) and it.get("t") == "via" and it["n"] in SNAP:
+                la, lo = _snap(it["lat"], it["lon"])
+                it["go"] = {"n": it["n"] + " (motorway)", "lat": la, "lon": lo}
+                print("snap", d, mk, it["n"], (it["lat"], it["lon"]), "->", (la, lo))
 json.dump({str(k): v for k, v in sorted(V.items())}, open(f"{S}/modes.json", "w"), ensure_ascii=False, indent=1)
 print("variants:", {d: [m for m in ("fast", "cine", "safe") if not V[d][m].get("same")] for d in V})

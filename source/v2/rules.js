@@ -78,7 +78,7 @@ const DAYRULES = {
   6: [['act', 'Pisa and Lucca: restricted centres; park outside the walls.'], ['watch', 'Italian winter-equipment roads begin.']],
   7: [['watch', 'Chianti hill roads: winter tyres required on signed stretches.'], ['act', 'Village centres can be restricted; park at the edge.']],
   8: [['info', 'Florence: leave the car at the hotel; the centre is restricted.']],
-  9: [['act', 'Arezzo: park at Parcheggio Pietri, outside the restricted zone.'], ['act', 'Bocca Trabaria (SS73bis) and the E45: winter tyres or chains required.'], ['info', 'San Marino: use the signed car parks.']],
+  9: [['act', 'Arezzo: park at the Baldaccio car park, outside the restricted zone. Parcheggio Pietri may be for residents only on Christmas-market weekends.'], ['act', 'Bocca Trabaria (SS73bis) and the E45: winter tyres or chains required.'], ['info', 'San Marino: use the signed car parks.']],
   10: [['act', 'Monday: old diesels are banned in Comacchio\'s built-up area 08:30–18:30. Park outside the town sign and walk in, or see Comacchio before 08:30 or after 18:30.'], ['watch', 'Veneto: the normal smog level is paused until 6 January, but an orange or red alert would also apply.']],
   11: [['info', 'Venice: the car stays parked; go by train.']],
   12: [['act', 'Slovenia: buy the e-vignette before the first motorway.'], ['act', 'Slovenia: winter equipment required from 15 November.'], ['info', 'Ljubljana: the old centre is closed to cars.']],
@@ -110,6 +110,7 @@ function rulesByCat() {
   const out = {}; RCATS.forEach(([k]) => out[k] = []);
   PREP.forEach((p, i) => out[PREP_CAT[i]].push({ cc: '', lv: p[0], t: p[1] }));
   PARK_GEN.forEach(p => out.parking.push({ cc: '', lv: p[0], t: p[1] }));
+  out.zones.unshift({ cc: '', lv: 'act', t: "The Waze and Google Maps buttons lead to car parks outside the restricted zones. Waze has no setting for a car without a sticker, so if it reroutes you into a town centre, ignore it and follow the signs to the car park." });
   COUNTRIES.forEach(c => c.items.forEach(([kind, lv, t]) => out[ruleCat(c.cc, kind)].push({ cc: c.cc, lv, t })));
   Object.keys(DAYPARK).forEach(d => DAYPARK[d].forEach(p => out.parking.push({ day: +d, lv: p[0], t: p[1] })));
   return out;

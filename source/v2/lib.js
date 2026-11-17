@@ -84,6 +84,11 @@ function wazeLink(params) {
 const wazeQ = q => wazeLink('q=' + encodeURIComponent(q));
 const wazeLL = (lat, lon) => wazeLink(`ll=${lat},${lon}`);
 const wazeWeb = (lat, lon) => `https://waze.com/ul?ll=${lat},${lon}&navigate=yes`;
+/* where to drive: a car park or motorway point outside a traffic-restricted zone when the stop has one */
+const navPt = s => (s && s.go) || s;
+const navName = s => s && s.go ? s.go.n : (s ? s.n : '');
+const wazeTo = s => { const p = navPt(s); return wazeLL(p.lat, p.lon); };
+const wazeWebTo = s => { const p = navPt(s); return wazeWeb(p.lat, p.lon); };
 const LT = { predawn: ['Before sunrise', ''], dusk: ['After sunset', ''], afterdark: ['In the dark', ''], golden: ['Golden hour', 'g'],
   glare_east: ['Low sun ahead', ''], glare_west: ['Low sun ahead', ''], scenic_dark: ['Scenic road in poor light', 'w'], minor_dark: ['Not a motorway, after dark', 'w'] };
 const KINDT = { mw: 'Motorway', main: 'Main road', scenic: 'Scenic road' };

@@ -958,7 +958,12 @@
      "t": "via",
      "note": "",
      "w": "",
-     "m": "mw"
+     "m": "mw",
+     "go": {
+      "n": "La Spezia (motorway)",
+      "lat": 44.1488,
+      "lon": 9.9016
+     }
     },
     {
      "n": "Portovenere",
@@ -1294,7 +1299,12 @@
      "t": "via",
      "note": "",
      "w": "",
-     "m": "mw"
+     "m": "mw",
+     "go": {
+      "n": "Cesena (motorway)",
+      "lat": 44.1077,
+      "lon": 12.4392
+     }
     },
     "San Marino"
    ],
@@ -1312,7 +1322,7 @@
      "Piazza Grande",
      90,
      "M",
-     "Parcheggio Pietri + lift"
+     "Baldaccio car park, 10-minute walk"
     ],
     [
      "drive",
@@ -1389,7 +1399,12 @@
      "t": "via",
      "note": "",
      "w": "",
-     "m": "mw"
+     "m": "mw",
+     "go": {
+      "n": "Cesena (motorway)",
+      "lat": 44.1077,
+      "lon": 12.4392
+     }
     },
     "San Marino"
    ],
@@ -1407,7 +1422,7 @@
      "Piazza Grande",
      90,
      "M",
-     "Parcheggio Pietri + lift"
+     "Baldaccio car park, 10-minute walk"
     ],
     [
      "drive",
@@ -1523,7 +1538,12 @@
      "t": "via",
      "note": "",
      "w": "",
-     "m": "mw"
+     "m": "mw",
+     "go": {
+      "n": "Ferrara (motorway)",
+      "lat": 44.8349,
+      "lon": 11.5617
+     }
     },
     {
      "n": "Padova",
@@ -1532,7 +1552,12 @@
      "t": "via",
      "note": "",
      "w": "",
-     "m": "mw"
+     "m": "mw",
+     "go": {
+      "n": "Padova (motorway)",
+      "lat": 45.4305,
+      "lon": 11.8741
+     }
     },
     "Mogliano Veneto"
    ],
@@ -1603,7 +1628,12 @@
      "t": "via",
      "note": "",
      "w": "",
-     "m": "mw"
+     "m": "mw",
+     "go": {
+      "n": "Ferrara (motorway)",
+      "lat": 44.8349,
+      "lon": 11.5617
+     }
     },
     {
      "n": "Padova",
@@ -1612,7 +1642,12 @@
      "t": "via",
      "note": "",
      "w": "",
-     "m": "mw"
+     "m": "mw",
+     "go": {
+      "n": "Padova (motorway)",
+      "lat": 45.4305,
+      "lon": 11.8741
+     }
     },
     "Mogliano Veneto"
    ],

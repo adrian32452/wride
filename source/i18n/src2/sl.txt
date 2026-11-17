@@ -673,3 +673,14 @@
 1392	Córdoba: rimski most in Mezquita od zunaj
 1393	Mezquita: nedeljski obiski 08:30–11:30 in 15:00–18:00
 1394	Prelaz Las Pedrizas na A-45: močan dež in megla sta pogosta; prevozite ga dvakrat.
+1395	P+R Illunbe (San Sebastián)
+1396	Parkirišče Via Pietrasantina (Pisa)
+1397	Parkirišče Carducci (Lucca)
+1398	Parkirišče Baldaccio (Arezzo)
+1399	P+R Dolgi most (Ljubljana)
+1400	Parkirišče Paseo de la Victoria (Córdoba)
+1401	Parkirišče Baldaccio, 10 minut peš
+1402	Arezzo: parkirajte na parkirišču Baldaccio, zunaj območja z omejenim prometom. Parcheggio Pietri je lahko ob koncih tedna božičnega sejma samo za stanovalce.
+1403	Parcheggio Baldaccio
+1404	Večnadstropno parkirišče zunaj območja z omejenim prometom: odprto 24 ur, približno 3 € na dan, 10 minut peš do središča. Parcheggio Pietri s tekočimi stopnicami je lahko ob koncih tedna božičnega sejma samo za stanovalce.
+1405	Gumba Waze in Google Maps vodita na parkirišča zunaj omejenih con. Waze nima nastavitve za avto brez nalepke: če vas preusmeri v mestno središče, ga prezrite in sledite znakom za parkirišče.

@@ -57,7 +57,7 @@ const isFirst = d => ORDER.indexOf(d) <= 0, isLast = d => ORDER.indexOf(d) >= OR
 const dayOfN = d => isTest(d) ? T('Test drive {0}', DL(d)) : T('Day {0} of 16', d);
 function dayChain(d) {
   const day = TRIP.days[d - 1], m = modeOf(d), seq = stopsFor(day, m), vertices = seq.filter(s => s.t !== 'visit'), pe = prevEndOf[d];
-  const chain = (pe ? [`${pe.lat},${pe.lon}`] : []).concat(vertices.map(s => `${s.lat},${s.lon}`));
+  const chain = (pe ? [pe] : []).concat(vertices).map(navPt).map(s => `${s.lat},${s.lon}`);
   return chain.filter((x, i) => i === 0 || x !== chain[i - 1]);
 }
 function gmapsDay(d) {
@@ -131,7 +131,7 @@ function renderToday() {
     const what = r.k === 'drive' ? T('Drive to {0}', T(r.to)) : T(r.name);
     const how = r.k === 'drive' ? `${r.km} km · ${durTxt(r.min)} · ${esc(T(r.roads))}` : (r.note ? esc(T(r.note)) : (r.min ? durTxt(r.min) : ''));
     nx = `<p class="kicker">${esc(kick)}</p><p class="big num">${esc(big)}</p><p class="what">${esc(what)}</p><p class="how">${how}</p>`;
-    nx += `<div class="btnrow">` + (dest ? `<a class="btn primary" href="${wazeLL(dest.lat, dest.lon)}" target="_blank" rel="noopener">Waze</a>` : '') +
+    nx += `<div class="btnrow">` + (dest ? `<a class="btn primary" href="${wazeTo(dest)}" target="_blank" rel="noopener">${dest.go ? esc(T('Waze to {0}', T(navName(dest)))) : 'Waze'}</a>` : '') +
       `<a class="btn" href="${gmapsDay(d)}" target="_blank" rel="noopener">${esc(T('Whole day in Google Maps'))}</a></div>`;
   }
   h += `<div class="block next">${nx}</div>`;
@@ -198,7 +198,7 @@ function planTab(d) {
   const rows = P.rows.map(r => {
     if (r.k === 'drive') return `<li class="drive"><span class="tt">${r.t}</span><span><b>${esc(T('Drive to {0}', T(r.to)))}</b><br><span class="meta">${r.km} km · ${durTxt(r.min)} · ${esc(T(r.roads))} · ${T('arr. {0}', r.arr)}</span>` +
       `<span class="tags"><span class="tag">${T(KINDT[r.kind] || 'Road')}</span>${(r.light || []).filter((c, i, a) => a.indexOf(c) === i && LT[c]).map(c => `<span class="tag ${LTAG(c)}">${T(LT[c][0])}</span>`).join('')}</span>` +
-      (() => { const ds = stopByName(d, r.to); return ds ? `<span class="links"><a href="${wazeLL(ds.lat, ds.lon)}" target="_blank" rel="noopener">${esc(T('Waze to {0}', T(ds.n)))}</a></span>` : ''; })() + `</span></li>`;
+      (() => { const ds = stopByName(d, r.to); return ds ? `<span class="links"><a href="${wazeTo(ds)}" target="_blank" rel="noopener">${esc(T('Waze to {0}', T(navName(ds))))}</a></span>` : ''; })() + `</span></li>`;
     if (r.k === 'stop') return `<li class="stop"><span class="tt">${r.t}</span><span><b>${esc(T(r.name))}</b>${r.note ? `<br><span class="meta">${esc(T(r.note))}</span>` : ''}<span class="tags"><span class="tag ${r.mo === 'M' ? 'must' : 'opt'}">${T(r.mo === 'M' ? 'Must' : 'Optional')}</span>${r.min ? `<span class="tag">${durTxt(r.min)}</span>` : ''}</span></span></li>`;
     if (r.k === 'border') return `<li class="stop"><span class="tt">${r.t}</span><span><b>${esc(T(r.name))}</b><br><span class="meta">${T('Allow {0} min', r.min)}</span></span></li>`;
     if (r.k === 'tz') return `<li class="stop"><span class="tt">${r.t}</span><span><b>${esc(T(r.name))}</b></span></li>`;
@@ -211,8 +211,8 @@ function planTab(d) {
     `<div class="block"><ol class="tl">${rows}<li class="end"><span class="tt">${P.end}</span><span><b>${T('Day ends')}</b></span></li></ol></div>` +
     (flags.length ? `<div class="block"><h3>${T('Good to know')}</h3>${flags.map(f => `<p class="small">${esc(T(f))}</p>`).join('')}</div>` : '') +
     (() => { const end = stopsFor(day, m).filter(s => s.t !== 'via' && s.t !== 'visit').slice(-1)[0];
-      return `<div class="btnrow">${end ? `<a class="btn primary" href="${wazeLL(end.lat, end.lon)}" target="_blank" rel="noopener">${esc(T('Waze to {0}', T(end.n)))}</a>` : ''}<a class="btn" href="${gmapsDay(d)}" target="_blank" rel="noopener">${esc(T('Whole day in Google Maps'))}</a></div>` +
-        `<p class="note">${IS_ANDROID || IS_IOS ? T('Opens the Waze app. Not installed?') + ` <a href="${end ? wazeWeb(end.lat, end.lon) : '#'}" target="_blank" rel="noopener">${T('Waze on the web')}</a>. ` : T('On a phone this opens the Waze app.') + ' '}${T('Waze takes one destination at a time; use the Waze link on each stop above.')}</p>`; })();
+      return `<div class="btnrow">${end ? `<a class="btn primary" href="${wazeTo(end)}" target="_blank" rel="noopener">${esc(T('Waze to {0}', T(navName(end))))}</a>` : ''}<a class="btn" href="${gmapsDay(d)}" target="_blank" rel="noopener">${esc(T('Whole day in Google Maps'))}</a></div>` +
+        `<p class="note">${IS_ANDROID || IS_IOS ? T('Opens the Waze app. Not installed?') + ` <a href="${end ? wazeWebTo(end) : '#'}" target="_blank" rel="noopener">${T('Waze on the web')}</a>. ` : T('On a phone this opens the Waze app.') + ' '}${T('Waze takes one destination at a time; use the Waze link on each stop above.')}</p>`; })();
 }
 const TAGN = { start: 'Start', stop: 'Stop', road: 'On the road', sleep: 'Overnight', visit: 'Visit, no car', end: 'Finish' };
 function stopsTab(d) {
@@ -221,7 +221,7 @@ function stopsTab(d) {
     const ph = s.p && PHOTOS[s.p] && PHOTOS[s.p].t;
     return `<li class="stop">` + (ph ? `<button type="button" class="ph" style="background-image:url('${IMG(s.p + '-t.jpg')}')" data-lbkey="${s.p}" data-lbcap="${esc(T(s.n))}" aria-label="${esc(T('Enlarge photo: {0}', T(s.n)))}"></button>` : `<span class="ph none" aria-hidden="true">${ICON.pin}</span>`) +
       `<div><p class="nm">${esc(T(s.n))}</p><p class="kind">${T(TAGN[s.t] || 'Stop')}</p>${s.note ? `<p class="nt">${esc(T(s.note))}</p>` : ''}<div class="links">` +
-      (s.t !== 'visit' && s.t !== 'start' ? `<a href="${wazeLL(s.lat, s.lon)}" target="_blank" rel="noopener">Waze</a>` : '') +
+      (s.t !== 'visit' && s.t !== 'start' ? `<a href="${wazeTo(s)}" target="_blank" rel="noopener">${s.go ? esc(T('Waze to {0}', T(navName(s)))) : 'Waze'}</a>` : '') +
       (s.w ? `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(s.w).replace(/%2C/g, ',')}" target="_blank" rel="noopener">Wikipedia</a>` : '') + `</div></div></li>`;
   }).join('') + `</ul></div>`;
   const g = GAL[d];

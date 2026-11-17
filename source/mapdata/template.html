@@ -1489,6 +1489,10 @@ function wazeLink(params) {
 const wazeQ = q => wazeLink('q=' + encodeURIComponent(q));
 const wazeLL = (lat, lon) => wazeLink(`ll=${lat},${lon}`);
 const wazeWeb = (lat, lon) => `https://waze.com/ul?ll=${lat},${lon}&navigate=yes`;
+const navPt = s => (s && s.go) || s;
+const navName = s => s && s.go ? s.go.n : (s ? s.n : '');
+const wazeTo = s => { const p = navPt(s); return wazeLL(p.lat, p.lon); };
+const wazeWebTo = s => { const p = navPt(s); return wazeWeb(p.lat, p.lon); };
 const LT = { predawn: ['Before sunrise', ''], dusk: ['After sunset', ''], afterdark: ['In the dark', ''], golden: ['Golden hour', 'g'],
   glare_east: ['Low sun ahead', ''], glare_west: ['Low sun ahead', ''], scenic_dark: ['Scenic road in poor light', 'w'], minor_dark: ['Not a motorway, after dark', 'w'] };
 const KINDT = { mw: 'Motorway', main: 'Main road', scenic: 'Scenic road' };
@@ -1656,7 +1660,7 @@ function bodyHtml(day, m) {
   const v = variant(day.d, m), P = planFor(day.d, m);
   const seq = stopsFor(day, m), vertices = seq.filter(s => s.t !== 'visit'), shown = seq.filter(s => s.t !== 'via');
   const pe = prevEndOf[day.d];
-  const chain = (pe ? [`${pe.lat},${pe.lon}`] : []).concat(vertices.map(s => `${s.lat},${s.lon}`));
+  const chain = (pe ? [pe] : []).concat(vertices).map(navPt).map(s => `${s.lat},${s.lon}`);
   const uniq = chain.filter((x, i) => i === 0 || x !== chain[i - 1]);
   let gm = '';
   if (day.km > 0 && uniq.length >= 2) {
@@ -1665,15 +1669,15 @@ function bodyHtml(day, m) {
     q.set('hl', LANG);
     const lastv = vertices.filter(s => s.t !== 'via'), last = lastv[lastv.length - 1];
     gm = `<span class="navbtns"><a class="gmaps" href="https://www.google.com/maps/dir/?${q.toString()}" target="_blank" rel="noopener">${T('Open in Google Maps')} ↗</a>` +
-      `<a class="gmaps waze" href="${wazeLL(last.lat, last.lon)}" target="_blank" rel="noopener">${esc(T('Waze to {0}', T(last.n)))} ↗</a>` +
-      `<span class="navnote">${IS_ANDROID || IS_IOS ? `${T('Opens the Waze app. Not installed?')} <a href="${wazeWeb(last.lat, last.lon)}" target="_blank" rel="noopener">${T('Waze on the web')}</a>. ` : T('On a phone this opens the Waze app.') + ' '}${uniq.length > 2 ? T('Waze takes one destination at a time; use the Waze link on each stop above.') : ''}</span>` + `</span>`;
+      `<a class="gmaps waze" href="${wazeTo(last)}" target="_blank" rel="noopener">${esc(T('Waze to {0}', T(navName(last))))} ↗</a>` +
+      `<span class="navnote">${IS_ANDROID || IS_IOS ? `${T('Opens the Waze app. Not installed?')} <a href="${wazeWebTo(last)}" target="_blank" rel="noopener">${T('Waze on the web')}</a>. ` : T('On a phone this opens the Waze app.') + ' '}${uniq.length > 2 ? T('Waze takes one destination at a time; use the Waze link on each stop above.') : ''}</span>` + `</span>`;
   }
   const plates = (v ? v.roads : day.roads).map(([k, t]) => `<span class="plate p-${PLATE[k] || 'white'}">${esc(T(t))}</span>`).join('');
   const stops = shown.map(s => { const ph = s.p && PHOTOS[s.p] && PHOTOS[s.p].t; return `<li class="t-${s.t}${ph ? ' has-img' : ''}">` +
     (ph ? `<button type="button" class="thumb" data-open-day="${day.d}" data-open-key="${s.p}" data-open-src="img/${s.p}-t.jpg" data-open-label="${esc(T(s.n))}" data-open-f="${esc(PHOTOS[s.p].f)}" aria-label="${esc(T('Enlarge photo: {0}', T(s.n)))}"><img src="img/${s.p}-t.jpg" alt="${esc(T(s.n))}" loading="lazy" width="76" height="76"></button>` : '') +
     `<span class="sname">${esc(T(s.n))} <span class="tag">${T(TAG[s.t])}</span>` +
     (s.w ? `<a class="photo" href="https://en.wikipedia.org/wiki/${encodeURIComponent(s.w).replace(/%2C/g, ',')}" target="_blank" rel="noopener">Wikipedia ↗</a>` : '') +
-    (s.t !== 'visit' && s.t !== 'start' ? ` <a class="photo" href="${wazeLL(s.lat, s.lon)}" target="_blank" rel="noopener">Waze ↗</a>` : '') + `</span>` +
+    (s.t !== 'visit' && s.t !== 'start' ? ` <a class="photo" href="${wazeTo(s)}" target="_blank" rel="noopener">${s.go ? esc(T('Waze to {0}', T(navName(s)))) : 'Waze'} ↗</a>` : '') + `</span>` +
     (s.note ? `<span class="snote">${esc(T(s.note))}</span>` : '') + `</li>`; }).join('');
   const flags = (v ? v.flags : day.flags).map(f => `<span class="flag">${warnIcon}${esc(T(f))}</span>`).join('');
   const km = v && P ? P.km : day.km;
