@@ -44,8 +44,8 @@
    ],
    "drives": [
     "07:00–09:50 Daroca via A-2 / N-234",
-    "11:50–14:20 Alcalá de Henares via N-234 / A-2",
-    "16:20–16:45 Madrid Airport via A-2 / M-14"
+    "10:50–13:20 Alcalá de Henares via N-234 / A-2",
+    "14:20–14:45 Madrid Airport via A-2 / M-14"
    ]
   },
   "fast": {
@@ -73,10 +73,10 @@
    ],
    "yr": "Medinaceli",
    "passes": {
-    "bal": "07:00–09:50 and 11:50–14:20",
-    "fast": "07:00–09:50 and 11:50–14:20",
-    "cine": "07:00–09:50 and 11:50–14:20",
-    "safe": "07:00–09:50 and 11:50–14:20"
+    "bal": "07:00–09:50 and 10:50–13:20",
+    "fast": "07:00–09:50 and 10:50–13:20",
+    "cine": "07:00–09:50 and 10:50–13:20",
+    "safe": "07:00–09:50 and 10:50–13:20"
    },
    "alt": "If the A-2 is closed or chains are required, skip Daroca: drive to Alcalá and back to the airport only."
   },
@@ -92,10 +92,10 @@
    ],
    "yr": "Daroca",
    "passes": {
-    "bal": "07:00–09:50 and 11:50–14:20",
-    "fast": "07:00–09:50 and 11:50–14:20",
-    "cine": "07:00–09:50 and 11:50–14:20",
-    "safe": "07:00–09:50 and 11:50–14:20"
+    "bal": "07:00–09:50 and 10:50–13:20",
+    "fast": "07:00–09:50 and 10:50–13:20",
+    "cine": "07:00–09:50 and 10:50–13:20",
+    "safe": "07:00–09:50 and 10:50–13:20"
    },
    "alt": "Leave later, once the fog lifts."
   }

@@ -669,3 +669,11 @@
 1384	Približni dugogodišnji proseci; prava prognoza ih zamenjuje oko 10 dana pre.
 1385	Prognoze još nema. Provera vremena popuniće je oko 10 dana pre.
 1386	Vesti još nema. Počinju dva dana pre.
+1387	Srednjovekovni grad sa zidinama: uđite kroz Puerta Baja, popnite se do Basílice de Santa María i prošetajte zidinama zbog pogleda. Oko 1 sat.
+1388	Nedelja: Mezquita u Kordobi otvorena je za posetioce samo 08:30–11:30 i 15:00–18:00, van vašeg zadržavanja u 13:00
+1389	Rimski most, Huderija i Mezquita spolja: nedeljom je otvorena za posetioce samo 08:30–11:30 i 15:00–18:00. Parkirajte na Paseo de la Victoria, na ivici starog grada.
+1390	Nazad na aerodromu po danu. Natočite gorivo pre vraćanja iznajmljenog automobila.
+1391	Alkala de Enares: Av. de Don Juan Tenorio
+1392	Kordoba: rimski most i Mezquita spolja
+1393	Mezquita: nedeljne posete 08:30–11:30 i 15:00–18:00
+1394	Prevoj Las Pedrizas na A-45: jaka kiša i magla su česte; prelazite ga dvaput.

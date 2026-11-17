@@ -51,8 +51,8 @@
    "drives": [
     "08:00–08:25 Fuengirola via A-7 / AP-7",
     "09:25–10:35 Antequera dolmens via A-7 / A-45",
-    "11:50–13:15 Córdoba via A-45",
-    "16:45–18:40 Málaga Airport via A-45 / A-7"
+    "11:35–13:00 Córdoba via A-45",
+    "14:00–15:55 Málaga Airport via A-45 / A-7"
    ]
   },
   "fast": {
@@ -80,10 +80,10 @@
    ],
    "yr": "Villanueva del Rosario",
    "passes": {
-    "bal": "09:25–10:35 and 16:45–18:40",
-    "fast": "09:25–10:35 and 16:45–18:40",
-    "cine": "09:25–10:35 and 16:45–18:40",
-    "safe": "09:25–10:35 and 16:45–18:40"
+    "bal": "09:25–10:35 and 14:00–15:55",
+    "fast": "09:25–10:35 and 14:00–15:55",
+    "cine": "09:25–10:35 and 14:00–15:55",
+    "safe": "09:25–10:35 and 14:00–15:55"
    },
    "alt": "In heavy rain or fog, slow right down; if it is closed, follow the signed diversion or wait for it to reopen."
   },
@@ -99,10 +99,10 @@
    ],
    "yr": "Lucena",
    "passes": {
-    "bal": "11:50–13:15",
-    "fast": "11:50–13:15",
-    "cine": "11:50–13:15",
-    "safe": "11:50–13:15"
+    "bal": "11:35–13:00",
+    "fast": "11:35–13:00",
+    "cine": "11:35–13:00",
+    "safe": "11:35–13:00"
    },
    "alt": "Leave later, once the fog lifts."
   }

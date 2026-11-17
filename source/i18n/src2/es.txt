@@ -665,3 +665,11 @@
 1384	Medias aproximadas a largo plazo; la previsión real las sustituye unos 10 días antes.
 1385	Aún no hay previsión. La comprobación del tiempo la rellena unos 10 días antes.
 1386	Aún no hay boletín de noticias. Empieza dos días antes.
+1387	Ciudad medieval amurallada: entra por la Puerta Baja, sube a la Basílica de Santa María y recorre las murallas por las vistas. Una hora aproximadamente.
+1388	Domingo: la Mezquita de Córdoba abre a los visitantes solo de 08:30 a 11:30 y de 15:00 a 18:00, fuera de tu parada de las 13:00
+1389	Puente romano, la Judería y la Mezquita por fuera: los domingos abre a los visitantes solo de 08:30 a 11:30 y de 15:00 a 18:00. Aparca en el Paseo de la Victoria, al borde del casco antiguo.
+1390	De vuelta en el aeropuerto con luz de día. Reposta antes de devolver el coche de alquiler.
+1391	Alcalá de Henares: Av. de Don Juan Tenorio
+1392	Córdoba: puente romano y la Mezquita por fuera
+1393	Mezquita: visitas en domingo de 08:30 a 11:30 y de 15:00 a 18:00
+1394	Puerto de las Pedrizas en la A-45: la lluvia fuerte y la niebla son frecuentes; lo pasas dos veces.

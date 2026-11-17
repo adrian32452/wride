@@ -665,3 +665,11 @@
 1384	Medii aproximative pe termen lung; prognoza reală le înlocuiește cu circa 10 zile înainte.
 1385	Încă nu există prognoză. Verificarea vremii o completează cu circa 10 zile înainte.
 1386	Încă nu există buletin de știri. Începe cu două zile înainte.
+1387	Oraș medieval cu ziduri: intri pe Puerta Baja, urci la Basílica de Santa María și mergi pe ziduri pentru priveliște. Cam o oră.
+1388	Duminică: Mezquita din Córdoba e deschisă vizitatorilor doar 08:30–11:30 și 15:00–18:00, în afara opririi tale de la 13:00
+1389	Podul roman, Judería și Mezquita din afară: duminica e deschisă vizitatorilor doar 08:30–11:30 și 15:00–18:00. Parchează la Paseo de la Victoria, la marginea orașului vechi.
+1390	Înapoi la aeroport pe lumină. Alimentează înainte să predai mașina închiriată.
+1391	Alcalá de Henares: Av. de Don Juan Tenorio
+1392	Córdoba: podul roman și Mezquita din afară
+1393	Mezquita: vizite duminica 08:30–11:30 și 15:00–18:00
+1394	Pasul Las Pedrizas pe A-45: ploile puternice și ceața sunt frecvente; îl treci de două ori.

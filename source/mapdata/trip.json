@@ -848,7 +848,7 @@
      "lat": 41.1143,
      "lon": -1.4142,
      "t": "stop",
-     "note": "Walled medieval town: in through the Puerta Baja, up to the Basílica de Santa María and along the walls for the view. About 2 hours with a coffee.",
+     "note": "Walled medieval town: in through the Puerta Baja, up to the Basílica de Santa María and along the walls for the view. About 1 hour.",
      "w": "Daroca"
     },
     {
@@ -906,7 +906,7 @@
    "sleep": "No overnight: the car goes back to the rental desk",
    "flags": [
     "Test day in a rental car: the old-diesel rules of the main trip don't apply",
-    "Sunday: Córdoba's Mezquita is open to visitors 15:00–18:00"
+    "Sunday: Córdoba's Mezquita is open to visitors only 08:30–11:30 and 15:00–18:00, outside your 13:00 stop"
    ],
    "stops": [
     {
@@ -938,7 +938,7 @@
      "lat": 37.8789,
      "lon": -4.7794,
      "t": "stop",
-     "note": "Lunch, then the Mezquita-Catedral (Sunday visits 15:00–18:00) and the Roman bridge at dusk. Park at Paseo de la Victoria, at the edge of the old town.",
+     "note": "Roman bridge, the Judería and the Mezquita from outside: on Sundays it is open to visitors only 08:30–11:30 and 15:00–18:00. Park at Paseo de la Victoria, at the edge of the old town.",
      "w": "Mosque–Cathedral_of_Córdoba"
     },
     {
@@ -946,7 +946,7 @@
      "lat": 36.6749,
      "lon": -4.4991,
      "t": "end",
-     "note": "Last hour on the A-45 / A-7 motorway after dark. Refuel before returning the rental car.",
+     "note": "Back at the airport in daylight. Refuel before returning the rental car.",
      "w": ""
     }
    ]

@@ -133,7 +133,7 @@ DAYRULES[17] = [
 DAYRULES[18] = [
   ['info', "Rental car with an environmental label: Málaga's and Córdoba's low-emission zones allow it, and the route stays outside Málaga's zone."],
   ['act', "Córdoba: the streets around the Mezquita are a camera-controlled restricted zone. Don't drive in: park at Paseo de la Victoria and walk 10 minutes."],
-  ['watch', 'A-45 Las Pedrizas pass: heavy rain and fog are common; you drive it twice, the second time after dark.']
+  ['watch', 'A-45 Las Pedrizas pass: heavy rain and fog are common; you drive it twice.']
 ];
 DAYPARK[17] = [
   ['info', 'Daroca: park outside the walls and walk in through the Puerta Baja.'],

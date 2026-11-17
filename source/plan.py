@@ -118,19 +118,17 @@ D = {
     ("drive", "Drobeta-Turnu Severin", 12, 20, "DN6")]),
 17: ("07:00", 40.4722, -3.5609, 1, [
     ("drive", "Daroca", 265, 170, "A-2 / N-234"),
-    ("stop", "Daroca: Puerta Baja, the walls and the Basílica", 120, "O", "Park outside the walls"),
+    ("stop", "Daroca: Puerta Baja, the walls and the Basílica", 60, "O", "Park outside the walls"),
     ("drive", "Alcalá de Henares", 240, 150, "N-234 / A-2"),
-    ("stop", "Alcalá de Henares: Av. de Don Juan Tenorio, and lunch", 120, "O", ""),
+    ("stop", "Alcalá de Henares: Av. de Don Juan Tenorio", 60, "O", ""),
     ("drive", "Madrid Airport", 25, 25, "A-2 / M-14")]),
 18: ("08:00", 36.6749, -4.4991, 1, [
     ("drive", "Fuengirola", 25, 25, "A-7 / AP-7"),
     ("stop", "Fuengirola seafront and Sohail Castle", 60, "O", ""),
     ("drive", "Antequera dolmens", 95, 70, "A-7 / A-45"),
-    ("stop", "Dolmens of Menga and Viera", 75, "O", "Free car park at the entrance"),
+    ("stop", "Dolmens of Menga and Viera", 60, "O", "Free car park at the entrance"),
     ("drive", "Córdoba", 120, 85, "A-45"),
-    ("stop", "Lunch in the Judería", 105, "M", "Park at Paseo de la Victoria"),
-    ("stop", "Mezquita-Catedral", 75, "O", "Sunday visits from 15:00"),
-    ("stop", "Roman bridge at sunset", 30, "O", ""),
+    ("stop", "Córdoba: Roman bridge and the Mezquita from outside", 60, "O", "Mezquita: Sunday visits 08:30–11:30 and 15:00–18:00"),
     ("drive", "Málaga Airport", 170, 115, "A-45 / A-7")]),
 16: ("09:00", 44.427, 26.103, 2, [
     ("drive", "Craiova", 110, 90, "DN6"),

@@ -665,3 +665,11 @@
 1384	Približni dugogodišnji prosjeci; prava prognoza ih zamjenjuje oko 10 dana prije.
 1385	Prognoze još nema. Provjera vremena popunit će je oko 10 dana prije.
 1386	Vijesti još nema. Počinju dva dana prije.
+1387	Srednjovjekovni grad sa zidinama: uđite kroz Puerta Baja, popnite se do Basílice de Santa María i prošećite zidinama zbog pogleda. Oko 1 sat.
+1388	Nedjelja: Mezquita u Córdobi otvorena je za posjetitelje samo 08:30–11:30 i 15:00–18:00, izvan vašeg zaustavljanja u 13:00
+1389	Rimski most, Judería i Mezquita izvana: nedjeljom je otvorena za posjetitelje samo 08:30–11:30 i 15:00–18:00. Parkirajte na Paseo de la Victoria, na rubu starog grada.
+1390	Natrag u zračnoj luci po danu. Natočite gorivo prije povrata unajmljenog automobila.
+1391	Alcalá de Henares: Av. de Don Juan Tenorio
+1392	Córdoba: rimski most i Mezquita izvana
+1393	Mezquita: nedjeljni posjeti 08:30–11:30 i 15:00–18:00
+1394	Prijevoj Las Pedrizas na A-45: jaka kiša i magla su česte; prolazite ga dvaput.

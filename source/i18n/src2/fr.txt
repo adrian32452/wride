@@ -667,3 +667,11 @@
 1384	Moyennes approximatives sur le long terme ; la vraie prévision les remplace environ 10 jours avant.
 1385	Pas encore de prévision. Le contrôle météo la remplit environ 10 jours avant.
 1386	Pas encore de bulletin d'actualités. Il commence deux jours avant.
+1387	Ville médiévale fortifiée : entrez par la Puerta Baja, montez à la Basílica de Santa María et longez les remparts pour la vue. Environ 1 heure.
+1388	Dimanche : la Mezquita de Cordoue n'est ouverte aux visiteurs que 08:30–11:30 et 15:00–18:00, en dehors de votre arrêt de 13:00
+1389	Pont romain, la Judería et la Mezquita de l'extérieur : le dimanche, elle n'est ouverte aux visiteurs que 08:30–11:30 et 15:00–18:00. Garez-vous au Paseo de la Victoria, en bordure de la vieille ville.
+1390	Retour à l'aéroport de jour. Faites le plein avant de rendre la voiture de location.
+1391	Alcalá de Henares : Av. de Don Juan Tenorio
+1392	Cordoue : pont romain et la Mezquita de l'extérieur
+1393	Mezquita : visites le dimanche 08:30–11:30 et 15:00–18:00
+1394	Col de Las Pedrizas sur l'A-45 : fortes pluies et brouillard sont fréquents ; vous le passez deux fois.

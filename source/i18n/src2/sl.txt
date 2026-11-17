@@ -665,3 +665,11 @@
 1384	Približna dolgoletna povprečja; pravo napoved jih zamenja približno 10 dni prej.
 1385	Napovedi še ni. Preverjanje vremena jo izpolni približno 10 dni prej.
 1386	Novic še ni. Začnejo se dva dni prej.
+1387	Obzidano srednjeveško mesto: vstopite skozi Puerta Baja, pojdite do Basílice de Santa María in po obzidju za razgled. Približno 1 ura.
+1388	Nedelja: Mezquita v Córdobi je za obiskovalce odprta le 08:30–11:30 in 15:00–18:00, zunaj vašega postanka ob 13:00
+1389	Rimski most, Judería in Mezquita od zunaj: ob nedeljah je za obiskovalce odprta le 08:30–11:30 in 15:00–18:00. Parkirajte na Paseo de la Victoria, na robu starega mesta.
+1390	Nazaj na letališču pri dnevni svetlobi. Natočite gorivo, preden vrnete najeti avto.
+1391	Alcalá de Henares: Av. de Don Juan Tenorio
+1392	Córdoba: rimski most in Mezquita od zunaj
+1393	Mezquita: nedeljski obiski 08:30–11:30 in 15:00–18:00
+1394	Prelaz Las Pedrizas na A-45: močan dež in megla sta pogosta; prevozite ga dvakrat.
