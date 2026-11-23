@@ -688,3 +688,9 @@
 1403	Parcheggio Baldaccio
 1404	Garaža na više nivoa van zone ograničenog saobraćaja: otvorena 24 sata, oko 3 € dnevno, 10 minuta peške do centra. Parcheggio Pietri, sa pokretnim stepenicama, vikendom tokom božićnog sajma može biti samo za stanare.
 1405	Dugmad Waze i Google Maps vode do parkinga van zona ograničenog saobraćaja. Waze nema podešavanje za automobil bez nalepnice: ako vas preusmeri u centar grada, zanemarite to i pratite znakove za parking.
+1406	Probna vožnja: razgledanje automobila u Daroki i Alkali
+1407	Razgledanje automobila, 1 sat.
+1408	Razgledanje automobila, 1 sat: Av. de Don Juan Tenorio s/n, uz A-2.
+1409	Daroka: razgledanje automobila
+1410	Alkala de Enares: razgledanje automobila
+1411	Av. de Don Juan Tenorio s/n

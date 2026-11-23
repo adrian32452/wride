@@ -2536,10 +2536,10 @@
    {
     "k": "stop",
     "t": "09:50",
-    "name": "Daroca: Puerta Baja, the walls and the Basílica",
+    "name": "Daroca: car viewing",
     "min": 60,
-    "mo": "O",
-    "note": "Park outside the walls",
+    "mo": "M",
+    "note": "",
     "end": "10:50"
    },
    {
@@ -2556,10 +2556,10 @@
    {
     "k": "stop",
     "t": "13:20",
-    "name": "Alcalá de Henares: Av. de Don Juan Tenorio",
+    "name": "Alcalá de Henares: car viewing",
     "min": 60,
-    "mo": "O",
-    "note": "",
+    "mo": "M",
+    "note": "Av. de Don Juan Tenorio s/n",
     "end": "14:20"
    },
    {

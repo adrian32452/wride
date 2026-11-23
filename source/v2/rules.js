@@ -136,10 +136,7 @@ DAYRULES[18] = [
   ['act', "Córdoba: the streets around the Mezquita are a camera-controlled restricted zone. Don't drive in: park at Paseo de la Victoria and walk 10 minutes."],
   ['watch', 'A-45 Las Pedrizas pass: heavy rain and fog are common; you drive it twice.']
 ];
-DAYPARK[17] = [
-  ['info', 'Daroca: park outside the walls and walk in through the Puerta Baja.'],
-  ['info', 'Alcalá de Henares: the shops on Av. de Don Juan Tenorio have their own car parks.']
-];
+DAYPARK[17] = [];
 DAYPARK[18] = [
   ['info', 'Fuengirola: use a public car park near the seafront.'],
   ['info', 'Antequera dolmens: free car park at the entrance.'],

@@ -684,3 +684,9 @@
 1403	Parcheggio Baldaccio
 1404	Parcheggio multipiano fuori dalla ZTL: aperto 24 ore, circa 3 € al giorno, 10 minuti a piedi dal centro. Il Parcheggio Pietri, con le scale mobili, può essere riservato ai residenti nei fine settimana del mercatino di Natale.
 1405	I pulsanti Waze e Google Maps portano a parcheggi fuori dalle zone a traffico limitato. Waze non ha un'impostazione per un'auto senza bollino: se ti devia verso un centro storico, ignoralo e segui le indicazioni per il parcheggio.
+1406	Prova: visione di auto a Daroca e Alcalá
+1407	Visione di un'auto, 1 ora.
+1408	Visione di un'auto, 1 ora: Av. de Don Juan Tenorio s/n, accanto alla A-2.
+1409	Daroca: visione di un'auto
+1410	Alcalá de Henares: visione di un'auto
+1411	Av. de Don Juan Tenorio s/n

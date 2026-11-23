@@ -684,3 +684,9 @@
 1403	Parcheggio Baldaccio
 1404	Parcare etajată în afara zonei restricționate: deschisă non-stop, circa 3 € pe zi, 10 minute pe jos până în centru. Parcheggio Pietri, cu scări rulante, poate fi doar pentru rezidenți în weekendurile cu târg de Crăciun.
 1405	Butoanele Waze și Google Maps duc la parcări din afara zonelor restricționate. Waze nu are setare pentru o mașină fără etichetă, așa că dacă te redirecționează spre un centru de oraș, ignoră-l și urmează indicatoarele spre parcare.
+1406	Test: vizionări de mașini în Daroca și Alcalá
+1407	Vizionare mașină, 1 oră.
+1408	Vizionare mașină, 1 oră: Av. de Don Juan Tenorio s/n, lângă A-2.
+1409	Daroca: vizionare mașină
+1410	Alcalá de Henares: vizionare mașină
+1411	Av. de Don Juan Tenorio s/n

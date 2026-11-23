@@ -2,7 +2,7 @@ import json, os
 S = os.path.dirname(os.path.abspath(__file__))
 photos = json.load(open(f"{S}/photos.json"))
 trip = json.load(open(f"{S}/mapdata/trip.json"))
-stopkey = {"Daroca":"daroca","Alcalá de Henares":"alcala","Fuengirola":"fuengirola","Antequera":"antequera","Córdoba":"cordoba","Madrid":"madrid","Burgos Cathedral":"burgos","Bilbao":"bilbao","Getaria":"getaria","San Sebastián":"sansebastian","Biarritz":"biarritz",
+stopkey = {"Fuengirola":"fuengirola","Antequera":"antequera","Córdoba":"cordoba","Madrid":"madrid","Burgos Cathedral":"burgos","Bilbao":"bilbao","Getaria":"getaria","San Sebastián":"sansebastian","Biarritz":"biarritz",
  "Pau, Boulevard des Pyrénées":"pau","Carcassonne":"carcassonne","Pont du Gard":"pontdugard","Saint-Raphaël":"esterel1","Théoule-sur-Mer":"esterel2",
  "Menton":"menton","Villefranche-sur-Mer":"villefranche","Èze":"eze","Monaco":"monaco","Pisa, Piazza dei Miracoli":"pisa","Lucca":"lucca",
  "Florence":"florence","Greve in Chianti":"greve","Panzano in Chianti":"chianti","Castellina in Chianti":"chianti","Arezzo":"arezzo","Anghiari":"anghiari","Bocca Trabaria":"trabaria",
@@ -40,7 +40,7 @@ LABEL = {"daroca":"Daroca","alcala":"Alcalá de Henares","fuengirola":"Fuengirol
  "ravenna":"Ravenna, San Vitale","chioggia":"Chioggia","venice":"Venice","aquileia":"Aquileia","miramare":"Miramare Castle","trieste":"Trieste",
  "ljubljana":"Ljubljana","zagreb":"Zagreb","belgrade":"Belgrade","golubac":"Golubac Fortress","lepenski":"Lepenski Vir","road15":"Danube gorge & Kazan",
  "irongates":"Iron Gates dam","drobeta":"Drobeta-Turnu Severin","craiova":"Craiova","bucharest":"Bucharest"}
-DAYKEYS = {17:["daroca","alcala"],18:["fuengirola","antequera","cordoba"],1:["madrid","burgos","bilbao"],2:["road2","getaria","sansebastian","biarritz"],3:["pau","carcassonne"],4:["pontdugard","esterel","menton"],
+DAYKEYS = {18:["fuengirola","antequera","cordoba"],1:["madrid","burgos","bilbao"],2:["road2","getaria","sansebastian","biarritz"],3:["pau","carcassonne"],4:["pontdugard","esterel","menton"],
  5:["villefranche","eze","monaco"],6:["pisa","lucca"],7:["chianti","greve"],8:["florence"],9:["arezzo","anghiari","trabaria","urbania","sanmarino"],
  10:[],11:["venice"],12:["aquileia","miramare","trieste","ljubljana"],13:["zagreb"],14:["belgrade"],
  15:["golubac","lepenski","road15","irongates","drobeta"],16:["craiova","bucharest"]}

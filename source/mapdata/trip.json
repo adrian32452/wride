@@ -834,7 +834,7 @@
    "label": "T1",
    "test": true,
    "date": "2026-11-28",
-   "title": "Test drive: Daroca and Alcalá",
+   "title": "Test drive: car viewings in Daroca and Alcalá",
    "from": "Madrid Airport",
    "to": "Madrid Airport",
    "km": 530,
@@ -863,7 +863,7 @@
      "lon": -3.5609,
      "t": "start",
      "note": "Leave 07:00, about 80 minutes before sunrise. A rental car with an environmental label is not affected by Madrid's low-emission rules.",
-     "w": "Adolfo_Suárez_Madrid–Barajas_Airport"
+     "w": ""
     },
     {
      "n": "Calatayud",
@@ -878,8 +878,8 @@
      "lat": 41.1143,
      "lon": -1.4142,
      "t": "stop",
-     "note": "Walled medieval town: in through the Puerta Baja, up to the Basílica de Santa María and along the walls for the view. About 1 hour.",
-     "w": "Daroca"
+     "note": "Car viewing, 1 hour.",
+     "w": ""
     },
     {
      "n": "Calatayud",
@@ -894,8 +894,8 @@
      "lat": 40.5058,
      "lon": -3.3324,
      "t": "stop",
-     "note": "Av. de Don Juan Tenorio s/n, the retail area on the north-east edge of town, just off the A-2. The old town and the university are 3 km away.",
-     "w": "Alcalá_de_Henares"
+     "note": "Car viewing, 1 hour: Av. de Don Juan Tenorio s/n, just off the A-2.",
+     "w": ""
     },
     {
      "n": "Madrid Airport",

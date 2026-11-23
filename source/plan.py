@@ -118,9 +118,9 @@ D = {
     ("drive", "Drobeta-Turnu Severin", 12, 20, "DN6")]),
 17: ("07:00", 40.4722, -3.5609, 1, [
     ("drive", "Daroca", 265, 170, "A-2 / N-234"),
-    ("stop", "Daroca: Puerta Baja, the walls and the Basílica", 60, "O", "Park outside the walls"),
+    ("stop", "Daroca: car viewing", 60, "M", ""),
     ("drive", "Alcalá de Henares", 240, 150, "N-234 / A-2"),
-    ("stop", "Alcalá de Henares: Av. de Don Juan Tenorio", 60, "O", ""),
+    ("stop", "Alcalá de Henares: car viewing", 60, "M", "Av. de Don Juan Tenorio s/n"),
     ("drive", "Madrid Airport", 25, 25, "A-2 / M-14")]),
 18: ("08:00", 36.6749, -4.4991, 1, [
     ("drive", "Fuengirola", 25, 25, "A-7 / AP-7"),

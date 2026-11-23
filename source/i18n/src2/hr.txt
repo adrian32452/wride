@@ -684,3 +684,9 @@
 1403	Parcheggio Baldaccio
 1404	Garaža na više katova izvan zone ograničenog prometa: otvorena 24 sata, oko 3 € na dan, 10 minuta pješice do središta. Parcheggio Pietri, s pokretnim stepenicama, vikendima božićnog sajma može biti samo za stanare.
 1405	Gumbi Waze i Google Maps vode do parkirališta izvan zona ograničenog prometa. Waze nema postavku za automobil bez naljepnice: ako vas preusmjeri u središte grada, zanemarite to i slijedite znakove za parkiralište.
+1406	Probna vožnja: razgledavanje automobila u Daroci i Alcali
+1407	Razgledavanje automobila, 1 sat.
+1408	Razgledavanje automobila, 1 sat: Av. de Don Juan Tenorio s/n, uz A-2.
+1409	Daroca: razgledavanje automobila
+1410	Alcalá de Henares: razgledavanje automobila
+1411	Av. de Don Juan Tenorio s/n
