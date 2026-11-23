@@ -690,3 +690,8 @@
 1409	Daroca: vizionare mașină
 1410	Alcalá de Henares: vizionare mașină
 1411	Av. de Don Juan Tenorio s/n
+1412	Sare peste: {0}
+1413	Adaugă: {0}
+1414	Drumuri: {0} în loc de {1}
+1415	Drumuri: {0}
+1416	Atinge alt stil ca să vezi ce schimbă în această zi.

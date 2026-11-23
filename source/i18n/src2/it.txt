@@ -690,3 +690,8 @@
 1409	Daroca: visione di un'auto
 1410	Alcalá de Henares: visione di un'auto
 1411	Av. de Don Juan Tenorio s/n
+1412	Salta: {0}
+1413	Aggiunge: {0}
+1414	Strade: {0} invece di {1}
+1415	Strade: {0}
+1416	Tocca un altro stile per vedere cosa cambia in questo giorno.

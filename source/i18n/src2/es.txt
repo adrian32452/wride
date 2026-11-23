@@ -690,3 +690,8 @@
 1409	Daroca: ver un coche
 1410	Alcalá de Henares: ver un coche
 1411	Av. de Don Juan Tenorio s/n
+1412	Se salta: {0}
+1413	Añade: {0}
+1414	Carreteras: {0} en lugar de {1}
+1415	Carreteras: {0}
+1416	Toca otro estilo para ver qué cambia en este día.

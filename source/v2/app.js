@@ -210,7 +210,67 @@ function styleSeg(d) {
   const same = m !== 'bal' && !hasMode(d, m);
   const why = same ? ((MODESD[d] && MODESD[d][m] && MODESD[d][m].why) || '') : '';
   return `<div class="seg4" role="group" aria-label="${esc(T('Route for this day'))}">` + MK.map(x => `<button type="button" data-setmode="${d}:${x}" aria-pressed="${x === m}" class="${x !== 'bal' && !hasMode(d, x) ? 'same' : ''}">${T(MODE_NAME[x])}</button>`).join('') + `</div>` +
-    (same ? `<p class="stylenote">${esc(why ? T(why) : T('{0} uses the same roads as Balanced on this day.', T(MODE_NAME[m])))}</p>` : cmpText(d, m));
+    (same ? `<p class="stylenote">${esc(why ? T(why) : T('{0} uses the same roads as Balanced on this day.', T(MODE_NAME[m])))}</p>`
+      : m === 'bal' ? `<p class="stylenote">${esc(T('Tap another style to see what it changes on this day.'))}</p>` : diffHtml(d, m, true));
+}
+/* what a route style changes on a day, in words and on a small map */
+const VISITS = s => s.t === 'stop' || s.t === 'road' || s.t === 'visit';
+function routeDiff(d, m) {
+  const day = TRIP.days[d - 1], v = variant(d, m); if (!v) return null;
+  const bal = day.stops.filter(VISITS).map(s => s.n), alt = stopsFor(day, m).filter(VISITS).map(s => s.n);
+  const rB = (day.roads || []).map(r => r[1]), rA = (v.roads || []).map(r => r[1]);
+  return { skipped: bal.filter(n => !alt.includes(n)), added: alt.filter(n => !bal.includes(n)),
+    roadsIn: rA.filter(r => !rB.includes(r)), roadsOut: rB.filter(r => !rA.includes(r)), flags: v.flags || [] };
+}
+function ensureLand() {
+  if (document.getElementById('mmland')) return;
+  const holder = document.createElement('div'); holder.setAttribute('aria-hidden', 'true'); holder.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden';
+  holder.innerHTML = `<svg width="0" height="0"><defs><g id="mmland">${MAP.shapes.map(x => `<path d="${x.d}"/>`).join('')}</g></defs></svg>`;
+  document.body.appendChild(holder);
+}
+function miniMap(d, m) {
+  const D = DAYS.find(x => +x.d === d); if (!D) return '';
+  const lb = legsFor(d, 'bal') || [], la = m === 'bal' ? [] : (legsFor(d, m) || []);
+  const allS = D.stops.concat((D.mstops && D.mstops[m]) || []);
+  const df = m === 'bal' ? null : routeDiff(d, m);
+  const ps = lb.concat(la).flatMap(l => l.pts).concat(D.stops.map(s => s.xy)).concat(((D.mstops && D.mstops[m]) || []).map(s => s.xy));
+  if (!ps.length) return '';
+  let x0 = Math.min(...ps.map(p => p[0])), x1 = Math.max(...ps.map(p => p[0])), y0 = Math.min(...ps.map(p => p[1])), y1 = Math.max(...ps.map(p => p[1]));
+  const ext = Math.max(x1 - x0, y1 - y0, 12), pad = ext * 0.18; let w = x1 - x0 + 2 * pad, h = y1 - y0 + 2 * pad;
+  if (w / h < 1.6) w = h * 1.6; else h = w / 1.6;
+  const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2, vb = [cx - w / 2, cy - h / 2, w, h], u = w / 100;
+  const pts = l => l.pts.map(p => p.join(',')).join(' ');
+  const xyOf = n => (allS.find(s => s.n === n) || {}).xy;
+  let s = `<svg class="mm" viewBox="${vb.map(x => x.toFixed(1)).join(' ')}" role="img" aria-label="${esc(T('Route map'))}">`;
+  ensureLand();
+  s += `<use href="#mmland" class="mm-land"/>`;
+  s += lb.map(l => `<polyline class="${m === 'bal' ? 'mm-alt' : 'mm-bal'}" points="${pts(l)}"/>`).join('') + la.map(l => `<polyline class="mm-alt" points="${pts(l)}"/>`).join('');
+  // start = first point of the day's route, finish = its last point
+  const first = lb.length ? lb[0].pts[0] : null, lastL = lb.length ? lb[lb.length - 1].pts : null, last = lastL ? lastL[lastL.length - 1] : null;
+  const fs = 3.8 * u, boxes = [];
+  const free = (x, y, txt) => { const bw = txt.length * fs * 0.55, b = { x, y: y - fs, w: bw, h: fs * 1.2 }; if (b.x < vb[0] + u || b.x + b.w > vb[0] + vb[2] - u || b.y < vb[1] || b.y + b.h > vb[1] + vb[3]) return null; const hit = boxes.some(o => b.x < o.x + o.w && o.x < b.x + b.w && b.y < o.y + o.h && o.y < b.y + b.h); return hit ? null : b; };
+  const put = (xy, txt, cls, dot) => {
+    const cands = [[2 * u, -1.6 * u], [2 * u, 5 * u], [-2 * u, -1.6 * u, 1], [-2 * u, 5 * u, 1], [2 * u, -6 * u], [2 * u, 9.5 * u]];
+    let out = '';
+    for (const [dx, dy, left] of cands) {
+      const bw = txt.length * fs * 0.55, x = left ? xy[0] + dx - bw : xy[0] + dx, y = xy[1] + dy, b = free(x, y, txt);
+      if (b) { boxes.push(b); out = `<text class="${cls}" x="${x}" y="${y}" style="font-size:${fs}px">${esc(txt)}</text>`; break; }
+    }
+    return (dot ? `<circle class="${cls}" cx="${xy[0]}" cy="${xy[1]}" r="${(dot === 'end' ? 1.6 : 1.2) * u}"/>` : '') + out;
+  };
+  if (first) s += put(first, T(TRIP.days[d - 1].from), 'mm-end', 'end');
+  if (last && (!first || Math.hypot(last[0] - first[0], last[1] - first[1]) > 2 * u)) s += put(last, T(TRIP.days[d - 1].to), 'mm-end', 'end');
+  if (df) { df.added.forEach(n => { const xy = xyOf(n); if (xy) s += put(xy, T(n), 'mm-add', 1); }); df.skipped.forEach(n => { const xy = xyOf(n); if (xy) s += put(xy, T(n), 'mm-skip', 1); }); }
+  return s + `</svg>` + (m === 'bal' ? '' : `<div class="mm-key"><span><i class="k-alt"></i>${esc(T(MODE_NAME[m]))}</span><span><i class="k-bal"></i>${esc(T('Balanced'))}</span></div>`);
+}
+function diffHtml(d, m, withMap) {
+  const df = routeDiff(d, m); if (!df) return '';
+  const li = [];
+  df.flags.forEach(f => li.push(esc(T(f))));
+  if (df.skipped.length) li.push(esc(T('Skips: {0}', df.skipped.map(n => T(n)).join(', '))));
+  if (df.added.length) li.push(esc(T('Adds: {0}', df.added.map(n => T(n)).join(', '))));
+  if (df.roadsIn.length) li.push(esc(df.roadsOut.length ? T('Roads: {0} instead of {1}', df.roadsIn.join(', '), df.roadsOut.join(', ')) : T('Roads: {0}', df.roadsIn.join(', '))));
+  return `<div class="rdiff"><p><b>${esc(T(MODE_NAME[m]))}</b>: ${esc(T(MODE_DESC[m]))}</p>${cmpText(d, m)}${li.length ? `<ul>${li.map(x => `<li>${x}</li>`).join('')}</ul>` : ''}${withMap ? miniMap(d, m) : ''}</div>`;
 }
 function cmpText(d, m) {
   const B = PLAN[d], X = planFor(d, m); if (!B || !X || m === 'bal' || !hasMode(d, m)) return '';
@@ -479,8 +539,13 @@ function styleSheet(d) {
   const m = modeOf(d);
   sheet(`<h2>${T('Route for this day:')}<button type="button" class="iconbtn" data-close aria-label="${esc(T('Close'))}">✕</button></h2><div class="stylelist">` +
     MK.map(x => { const P = planFor(d, x), own = hasMode(d, x);
+      const df = x !== 'bal' && own ? routeDiff(d, x) : null;
+      const why = x !== 'bal' && !own && MODESD[d] && MODESD[d][x] && MODESD[d][x].why;
+      const what = df ? [...df.flags.map(f => T(f)), df.skipped.length ? T('Skips: {0}', df.skipped.map(n => T(n)).join(', ')) : '', df.added.length ? T('Adds: {0}', df.added.map(n => T(n)).join(', ')) : ''].filter(Boolean) : [];
       return `<button type="button" data-setmode="${d}:${x}" data-close aria-pressed="${x === m}"><b>${T(MODE_NAME[x])}</b><span>${T(MODE_DESC[x])}</span>` +
-        `<span>${own ? T('{0} driving, last arrival {1}.', fmtDur(durMin(P)), lastArr(P)) : esc(T('{0} uses the same roads as Balanced on this day.', T(MODE_NAME[x])))}</span></button>`; }).join('') + `</div>`);
+        `<span>${own ? T('{0} driving, last arrival {1}.', fmtDur(durMin(P)), lastArr(P)) : esc(why ? T(why) : T('{0} uses the same roads as Balanced on this day.', T(MODE_NAME[x])))}</span>` +
+        (what.length ? `<ul class="whatlist">${what.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '') +
+        (df ? miniMap(d, x) : '') + `</button>`; }).join('') + `</div>`);
 }
 function record(d) {
   FAB.d = d; FAB.msg = esc(T('Finding your position…'));

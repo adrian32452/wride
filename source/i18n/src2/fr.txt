@@ -692,3 +692,8 @@
 1409	Daroca : visite d'une voiture
 1410	Alcalá de Henares : visite d'une voiture
 1411	Av. de Don Juan Tenorio s/n
+1412	Saute : {0}
+1413	Ajoute : {0}
+1414	Routes : {0} au lieu de {1}
+1415	Routes : {0}
+1416	Touchez un autre style pour voir ce qu’il change ce jour-là.

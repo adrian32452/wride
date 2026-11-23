@@ -690,3 +690,8 @@
 1409	Daroca: ogled avtomobila
 1410	Alcalá de Henares: ogled avtomobila
 1411	Av. de Don Juan Tenorio s/n
+1412	Izpusti: {0}
+1413	Doda: {0}
+1414	Ceste: {0} namesto {1}
+1415	Ceste: {0}
+1416	Tapnite drug slog, da vidite, kaj spremeni na ta dan.

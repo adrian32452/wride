@@ -694,3 +694,8 @@
 1409	Daroka: razgledanje automobila
 1410	Alkala de Enares: razgledanje automobila
 1411	Av. de Don Juan Tenorio s/n
+1412	Preskače: {0}
+1413	Dodaje: {0}
+1414	Putevi: {0} umesto {1}
+1415	Putevi: {0}
+1416	Dodirnite drugi stil da vidite šta menja tog dana.
