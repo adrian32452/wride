@@ -317,9 +317,11 @@ function buildMap() {
       const ls = legsFor(D.d, g.m), legs = ls && ls.length ? ls : [{ r: 1, pts: D.line }];
       s += `<g data-ms="${g.ms}">` + legs.map(l => `<polyline class="r-base${l.r ? '' : ' r-local'}" points="${pts(l.pts)}"/>`).join('') + `</g>`;
     }
-    for (const st of D.stops) if (st.t === 'stop' || st.t === 'road') s += `<circle class="m-stop" data-ms="${stopModes(D.d, st.n)}" cx="${st.xy[0]}" cy="${st.xy[1]}" r="3.5"/>`;
-    for (const [mk, list] of Object.entries(D.mstops || {})) for (const st of list) s += `<circle class="m-stop" data-ms="${mk}" cx="${st.xy[0]}" cy="${st.xy[1]}" r="3.5"/>`;
-    for (const st of D.stops) s += `<text class="m-name" data-ms="${stopModes(D.d, st.n)}" x="${st.xy[0]}" y="${st.xy[1]}" dx="0.8em" dy="-0.6em">${esc(T(st.n))}</text>`;
+    for (const st of D.stops) if (st.t === 'stop' || st.t === 'road') s += `<circle class="m-stop" data-ms="${stopModes(D.d, st.n)}" data-r0="3.5" cx="${st.xy[0]}" cy="${st.xy[1]}" r="3.5"/>`;
+    for (const [mk, list] of Object.entries(D.mstops || {})) for (const st of list) s += `<circle class="m-stop" data-ms="${mk}" data-r0="3.5" cx="${st.xy[0]}" cy="${st.xy[1]}" r="3.5"/>`;
+    const seen = new Set();
+    for (const st of D.stops) { const k = st.n + '@' + Math.round(st.xy[0]) + ',' + Math.round(st.xy[1]); if (st.t === 'via' || seen.has(k)) continue; seen.add(k);
+      s += `<text class="m-name" data-ms="${stopModes(D.d, st.n)}" x="${st.xy[0]}" y="${st.xy[1]}" dx="0.8em" dy="-0.6em">${esc(T(st.n))}</text>`; }
     s += `</g>`;
   }
   const sleeps = new Map();
@@ -329,17 +331,45 @@ function buildMap() {
   }
   for (const g of sleeps.values()) {
     const lab = g.start ? 'S' : g.days.length > 1 ? `${DL(g.days[0])}–${DL(g.days[g.days.length - 1])}` : DL(g.days[0]);
-    s += `<g class="m-sleep" data-open="${g.start ? 1 : g.days[0]}" role="button" tabindex="0"><circle cx="${g.xy[0]}" cy="${g.xy[1]}" r="${lab.length > 2 ? 11 : 8.5}"/><text x="${g.xy[0]}" y="${g.xy[1]}">${lab}</text></g>`;
+    s += `<g class="m-sleep" data-open="${g.start ? 1 : g.days[0]}" data-days=" ${g.start ? 1 : ''} ${g.days.join(' ')} ${g.days.map(x => x + 1).join(' ')} " role="button" tabindex="0"><circle data-r0="${lab.length > 2 ? 11 : 8.5}" cx="${g.xy[0]}" cy="${g.xy[1]}" r="${lab.length > 2 ? 11 : 8.5}"/><text x="${g.xy[0]}" y="${g.xy[1]}">${lab}</text></g>`;
   }
   s += `<g class="me" id="me"></g>`;
   return s;
 }
-function setVB(v) { mapVB = v; const m = $('#map'); if (m) { m.setAttribute('viewBox', v.map(x => x.toFixed(1)).join(' ')); m.classList.toggle('zoomed', v[2] < MAP.W * .45); } }
+const mapF = () => { const m = document.getElementById('map'); return m && m._f || 1; };
+const ZREF = 300;   // map width (in map units) at which labels and markers have their design size
+function setVB(v) {
+  mapVB = v; const m = $('#map'); if (!m) return;
+  m.setAttribute('viewBox', v.map(x => x.toFixed(1)).join(' ')); m.classList.toggle('zoomed', v[2] < MAP.W * .45);
+  const f = Math.max(0.08, Math.min(1, v[2] / ZREF));
+  if (m._f !== f) { m._f = f; m.style.setProperty('--f', f.toFixed(3)); m.querySelectorAll('[data-r0]').forEach(c => c.setAttribute('r', (+c.dataset.r0 * f).toFixed(2))); placeLabels(m); }
+}
+/* put each stop name of the selected day where it neither hits another name nor runs off the map */
+function placeLabels(m) {
+  const texts = [...m.querySelectorAll('.r-day.sel .m-name')]; if (!texts.length) return;
+  const [vx, vy, vw, vh] = mapVB, boxes = [];
+  const marks = [...m.querySelectorAll('.m-sleep.sel circle')].map(c => { const r = +c.getAttribute('r'); return { x: +c.getAttribute('cx') - r, y: +c.getAttribute('cy') - r, width: 2 * r, height: 2 * r }; });
+  const hit = (a, b) => a.x < b.x + b.width && b.x < a.x + a.width && a.y < b.y + b.height && b.y < a.y + a.height;
+  const POS = [['0.8em', '-0.6em', 'start'], ['0.8em', '1.3em', 'start'], ['-0.8em', '-0.6em', 'end'], ['-0.8em', '1.3em', 'end'], ['0', '-1.1em', 'middle'], ['0', '1.8em', 'middle']];
+  for (const t of texts) {
+    let best = null, bestScore = 1e9;
+    for (const [dx, dy, an] of POS) {
+      t.setAttribute('dx', dx); t.setAttribute('dy', dy); t.style.textAnchor = an;
+      const b = t.getBBox(); if (!b.width) { best = null; break; }
+      const out = Math.max(0, vx - b.x) + Math.max(0, b.x + b.width - vx - vw) + Math.max(0, vy - b.y) + Math.max(0, b.y + b.height - vy - vh);
+      const score = out * 50 + boxes.filter(o => hit(o, b)).length * 1000 + marks.filter(o => hit(o, b)).length * 5;
+      if (score < bestScore) { bestScore = score; best = [dx, dy, an, { x: b.x, y: b.y, width: b.width, height: b.height }]; }
+      if (score === 0) break;
+    }
+    if (!best) continue;
+    t.setAttribute('dx', best[0]); t.setAttribute('dy', best[1]); t.style.textAnchor = best[2]; boxes.push(best[3]);
+  }
+}
 function dayVB(d) {
   const D = DAYS.find(x => x.d === d); if (!D) return [0, 0, MAP.W, MAP.H];
   const ps = (legsFor(d, modeOf(d)) || []).flatMap(l => l.pts).concat(D.stops.map(s => s.xy));
   let x0 = Math.min(...ps.map(p => p[0])), x1 = Math.max(...ps.map(p => p[0])), y0 = Math.min(...ps.map(p => p[1])), y1 = Math.max(...ps.map(p => p[1]));
-  const pad = 30, w = Math.max(90, x1 - x0 + pad * 2), hgt = Math.max(90, y1 - y0 + pad * 2), cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+  const ext = Math.max(x1 - x0, y1 - y0), pad = Math.max(3, ext * 0.14), w = Math.max(24, x1 - x0 + Math.max(pad * 2, ext * 0.5)), hgt = Math.max(24, y1 - y0 + pad * 2), cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
   const box = document.getElementById('map'), ar = box ? box.clientWidth / box.clientHeight : 1;
   let W2 = w, H2 = hgt; if (W2 / H2 < ar) W2 = H2 * ar; else H2 = W2 / ar;
   return [cx - W2 / 2, cy - H2 / 2, W2, H2];
@@ -352,8 +382,9 @@ function renderMap() {
     `<div class="mapctl"><button type="button" data-zoom="0.7" aria-label="Zoom in">+</button><button type="button" data-zoom="1.4" aria-label="Zoom out">−</button></div></div>` +
     (sel ? `<button type="button" class="btn" data-open="${sel}">${esc(T('Open the day'))}: ${esc(T(TRIP.days[sel - 1].from))} → ${esc(T(TRIP.days[sel - 1].to))}</button>` : `<p class="note">${T('Tap a day number, or an overnight stop on the map.')}</p>`);
   const svg = $('#map');
-  if (sel) svg.querySelectorAll('.r-day').forEach(g => g.classList.toggle('sel', +g.dataset.day === sel));
+  if (sel) { svg.querySelectorAll('.r-day').forEach(g => g.classList.toggle('sel', +g.dataset.day === sel)); svg.querySelectorAll('.m-sleep').forEach(g => g.classList.toggle('sel', g.dataset.days.includes(' ' + sel + ' '))); }
   setVB(sel ? dayVB(sel) : [0, 0, MAP.W, MAP.H]);
+  placeLabels(svg);
   drawMe();
   if (MAPX) fillCtx(); else fetch(BASE + 'map-extra.json').then(r => r.ok ? r.json() : null).then(X => { if (X) { MAPX = X; fillCtx(); } }).catch(() => {});
   // drag to pan, pinch to zoom
@@ -363,7 +394,7 @@ function renderMap() {
   svg.addEventListener('pointermove', e => {
     if (!ptrs.has(e.pointerId)) return; ptrs.set(e.pointerId, [e.clientX, e.clientY]);
     const r = svg.getBoundingClientRect();
-    if (ptrs.size === 2 && d0) { const [a, b] = [...ptrs.values()], f = d0.dist / Math.max(20, Math.hypot(a[0] - b[0], a[1] - b[1])); const w = Math.min(MAP.W * 1.2, Math.max(80, d0.vb[2] * f)), hh = w * d0.vb[3] / d0.vb[2]; setVB([d0.c[0] - (d0.c[0] - d0.vb[0]) * w / d0.vb[2], d0.c[1] - (d0.c[1] - d0.vb[1]) * hh / d0.vb[3], w, hh]); if (p0) p0.moved = true; return; }
+    if (ptrs.size === 2 && d0) { const [a, b] = [...ptrs.values()], f = d0.dist / Math.max(20, Math.hypot(a[0] - b[0], a[1] - b[1])); const w = Math.min(MAP.W * 1.2, Math.max(20, d0.vb[2] * f)), hh = w * d0.vb[3] / d0.vb[2]; setVB([d0.c[0] - (d0.c[0] - d0.vb[0]) * w / d0.vb[2], d0.c[1] - (d0.c[1] - d0.vb[1]) * hh / d0.vb[3], w, hh]); if (p0) p0.moved = true; return; }
     if (p0) { const dx = (e.clientX - p0.x) / r.width * p0.vb[2], dy = (e.clientY - p0.y) / r.height * p0.vb[3]; if (Math.abs(e.clientX - p0.x) + Math.abs(e.clientY - p0.y) > 6) p0.moved = true; setVB([p0.vb[0] - dx, p0.vb[1] - dy, p0.vb[2], p0.vb[3]]); }
   });
   const up = e => { ptrs.delete(e.pointerId); if (ptrs.size < 2) d0 = null; };
@@ -376,14 +407,14 @@ function fillCtx() {
   const CLS = { motorway: 'mw', main: 'main', minor: 'minor', ferry: 'ferry' };
   ctx.innerHTML = `<path class="ctx-lake" d="${X.lakes}"/><path class="ctx-river" d="${X.rivers}"/>` +
     (X.roadGroups || []).filter(r => r.c === 'motorway' || r.c === 'main').map(r => `<path class="rd rd-${CLS[r.c]}" d="${r.d}"/>`).join('') +
-    (X.towns || []).filter(t => t.t <= 1).map(t => `<g class="town t${t.t}"><circle cx="${t.xy[0]}" cy="${t.xy[1]}" r="1.4"/><text x="${t.xy[0]}" y="${t.xy[1]}" dx="0.5em" dy="0.35em">${esc(T(t.n))}</text></g>`).join('');
+    (X.towns || []).filter(t => t.t <= 1 && !DAYS.some(D => D.stops.some(s => Math.abs(s.xy[0] - t.xy[0]) < 3 && Math.abs(s.xy[1] - t.xy[1]) < 3))).map(t => `<g class="town t${t.t}"><circle data-r0="1.4" cx="${t.xy[0]}" cy="${t.xy[1]}" r="${(1.4 * mapF()).toFixed(2)}"/><text x="${t.xy[0]}" y="${t.xy[1]}" dx="0.5em" dy="0.35em">${esc(T(t.n))}</text></g>`).join('');
 }
 let WHERE = { ll: null };
 function drawMe() {
   const g = document.getElementById('me'); if (!g) return;
   if (!WHERE.ll) { g.innerHTML = ''; return; }
   const [x, y] = toXY(WHERE.ll);
-  g.innerHTML = `<circle class="pulse" cx="${x}" cy="${y}" r="12"/><circle class="dot" cx="${x}" cy="${y}" r="5"/>`;
+  const f = mapF(); g.innerHTML = `<circle class="pulse" data-r0="12" cx="${x}" cy="${y}" r="${12 * f}"/><circle class="dot" data-r0="5" cx="${x}" cy="${y}" r="${5 * f}"/>`;
 }
 
 /* ---------- record sheet, style sheet ---------- */
@@ -530,7 +561,7 @@ document.addEventListener('click', e => {
   if (t.closest('[data-days]')) { go('#/days'); return; }
   const dt = t.closest('[data-dtab]'); if (dt) { go(`#/day/${VIEW.d}/${dt.dataset.dtab}`); return; }
   const md = t.closest('[data-mapday]'); if (md) { go(md.dataset.mapday === '0' ? '#/map' : `#/map/${md.dataset.mapday}`); return; }
-  const zm = t.closest('[data-zoom]'); if (zm) { const f = +zm.dataset.zoom, v = mapVB, w = Math.min(MAP.W * 1.2, Math.max(80, v[2] * f)), h = w * v[3] / v[2]; setVB([v[0] + (v[2] - w) / 2, v[1] + (v[3] - h) / 2, w, h]); return; }
+  const zm = t.closest('[data-zoom]'); if (zm) { const f = +zm.dataset.zoom, v = mapVB, w = Math.min(MAP.W * 1.2, Math.max(20, v[2] * f)), h = w * v[3] / v[2]; setVB([v[0] + (v[2] - w) / 2, v[1] + (v[3] - h) / 2, w, h]); return; }
   const rs = t.closest('[data-reset]'); if (rs) { const d = +rs.dataset.reset; delete PROG[d]; delete LIVE.lastAlert[d]; saveProg(d); WHERE.ll = null; armAuto(); FAB.msg = ''; refresh(); return; }
   const sw = t.closest('[data-lswitch]');
   if (sw) { const [d, m] = sw.dataset.lswitch.split(':'), dn = +d; if (m === MODE.global) delete MODE.days[dn]; else MODE.days[dn] = m; saveModes(); if (PROG[dn]) { PROG[dn].mode = m; saveProg(dn); } refresh(); return; }

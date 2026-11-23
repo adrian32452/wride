@@ -837,8 +837,8 @@
    "title": "Test drive: Daroca and Alcalá",
    "from": "Madrid Airport",
    "to": "Madrid Airport",
-   "km": 540,
-   "drive": "5h30",
+   "km": 530,
+   "drive": "5h45",
    "scene": "meseta",
    "scenic": false,
    "roads": [
@@ -916,7 +916,7 @@
    "from": "Málaga Airport",
    "to": "Málaga Airport",
    "km": 410,
-   "drive": "4h30",
+   "drive": "4h55",
    "scene": "chianti",
    "scenic": false,
    "roads": [
