@@ -164,6 +164,31 @@ function renderToday() {
 }
 
 /* ---------- Days ---------- */
+/* trip overview and the route style for the whole trip (Days 1–16) */
+const TRIP_DAYS = () => TRIP.days.filter(x => !x.test);
+const SAFE_RULES = ['Every risky stretch of the day (passes, cliff roads, fog plains, bora and mistral corridors) is checked for the time you would pass it.',
+  'Snow falling or settling, freezing rain, or ice on a pass or minor road: take the Safe route.',
+  'Fog thick enough to drive in it for long stretches, or gusts above about 70 km/h on an exposed road: take the Safe route.',
+  'Heavy rain on cliff roads with rockfall, or an official red weather alert: take the Safe route, or wait if the alert covers every road.',
+  'If the Safe route is affected too: leave later, wait for the snowploughs or the fog to lift, or as a last resort add a night. Overnight towns are never changed for you.',
+  'Snow forecasts are reliable about 2–3 days ahead and fog is hard to forecast, so the final call is the evening before and the morning itself.'];
+function overviewHtml() {
+  const km = TRIP_DAYS().reduce((s, x) => s + x.km, 0), scenic = TRIP_DAYS().filter(x => x.scenic).length;
+  const stats = [['≈' + km.toLocaleString(LOCALE[LANG]), T('kilometres')], ['16', T('days')], ['9', T('countries')], [String(scenic), T('scenic driving days')], ['6.5h', T('longest drive (Day 4)')]];
+  const custom = Object.keys(MODE.days).filter(k => !isTest(+k)).length;
+  return `<section class="block overview"><p class="eyebrow">${esc(T('Road book · Sat 19 Dec 2026 – Sun 3 Jan 2027 · 16 days'))}</p>` +
+    `<h1>${esc(T('Madrid'))} → ${esc(T('Bucharest'))}</h1><p class="muted">${esc(T('A Mercedes-Benz W123 300D at 90–100 km/h, across nine countries on coast roads, Apennine passes and the Danube gorge.'))}</p>` +
+    `<ul class="ostats">${stats.map(([b, s]) => `<li><b>${b}</b><span>${esc(s)}</span></li>`).join('')}</ul>` +
+    `<details class="more"><summary>${esc(T('Planning assumptions (change any of these and the times update)'))}</summary><ul>` +
+    `<li>${esc(T("Dates Sat 19 Dec 2026 – Sun 3 Jan 2027. Holidays fall on driving days: Christmas Day in Chianti, New Year's Day on the motorway to Belgrade."))}</li>` +
+    `<li>${esc(T('Car not registered in Madrid, so Day 1 starts from the edge of the city.'))}</li>` +
+    `<li>${T('<b>Must</b> = your anchor cities; <b>Optional</b> = the extras I suggested, cut first if you run late.')}</li>` +
+    `<li>${esc(T('Drive times at W123 pace (90–95 km/h motorway, slower on coast and mountain roads), with short breaks included.'))}</li></ul></details></section>` +
+    `<section class="block gstyle"><h2>${esc(T('Route style'))}</h2><div class="mgrid">` +
+    MK.map(m => `<button type="button" class="mcard" data-gm="${m}" aria-pressed="${MODE.global === m && !custom}"><b>${esc(T(MODE_NAME[m]))}</b><span>${esc(T(MODE_DESC[m]))}</span><span class="mtot">${esc(T('{0} driving over 16 days', fmtDur(totalFor(m))))}</span></button>`).join('') +
+    `</div><p class="small muted">${esc(T('Overnight towns stay the same in every mode. Choosing a style here resets the per-day choices; each day can then be changed on its card. Scenic roads are only planned in daylight; before sunrise and after dark the plan uses motorways.'))} ${esc(canSaveShared ? T('Your choice is saved with the road book, so the news bulletin follows it.') : T('Your choice is saved in this browser.'))}</p>` +
+    `<details class="more"><summary>${esc(T('How the weather check decides when to take the Safe route'))}</summary><ul>${SAFE_RULES.map(x => `<li>${esc(T(x))}</li>`).join('')}</ul></details></section>`;
+}
 function renderDays() {
   const tn = tripDayNow();
   const row = day => {
@@ -173,7 +198,7 @@ function renderDays() {
       `<span class="s">${fmtDate(PLAN[d].date)} · ${esc(T(MODE_NAME[modeOf(d)]))}</span></span><span class="r">${right}${lv ? `<span class="lamp on ${LAMP[lv]}" title="${esc(T(HLEV[lv] || ''))}"></span>` : ''}</span></button></li>`;
   };
   const tests = DAYS_BY_DATE.filter(x => x.test), main_ = DAYS_BY_DATE.filter(x => !x.test);
-  main.innerHTML = (tests.length ? `<h1>${T('Test drives')}</h1><p class="note">${esc(T('Two practice days in a rental car, to try the app on the road before the trip.'))}</p><ul class="dlist">` + tests.map(row).join('') + `</ul>` : '') +
+  main.innerHTML = overviewHtml() + (tests.length ? `<h1>${T('Test drives')}</h1><p class="note">${esc(T('Two practice days in a rental car, to try the app on the road before the trip.'))}</p><ul class="dlist">` + tests.map(row).join('') + `</ul>` : '') +
     `<h1>${T('16 days')}</h1><ul class="dlist">` + main_.map(row).join('') + `</ul>`;
 }
 
@@ -258,6 +283,8 @@ function renderDay() {
   if (hero) h += `<div class="hero" style="background-image:url('${IMG(day.hero + '-h.jpg')}')"><button type="button" data-lbkey="${day.hero}" data-lbcap="${esc(T(day.heroAlt || day.title))}" aria-label="${esc(T('Enlarge photo: {0}', T(day.heroAlt || day.title)))}"></button></div>`;
   h += `<div class="dhead">${stone(d, true)}<div><h1>${esc(T(day.title))}</h1><p class="when">${esc(T(day.from))} → ${esc(T(day.to))} · ${T('Sleep')}: ${esc(T(day.sleep))}</p></div></div>`;
   if (drives(d)) {
+    const vv = variant(d, modeOf(d)), roads = (vv && vv.roads) || day.roads || [];
+    if (roads.length) h += `<div class="plates">${roads.map(([k, t]) => `<span class="plate p-${PLATE[k] || 'white'}">${esc(T(t))}</span>`).join('')}</div>`;
     h += styleSeg(d);
     h += `<div class="stats"><div><b>${P.km}</b><span>km</span></div><div><b>${esc(P.drive)}</b><span>${T('driving')}</span></div><div><b>${P.start}</b><span>${T('leave')}</span></div><div><b>${lastArr(P)}</b><span>${T('arrive')}</span></div></div>`;
   }
@@ -377,13 +404,22 @@ function dayVB(d) {
 function renderMap() {
   const sel = VIEW.mapDay || 0;
   main.innerHTML = `<div class="mapdays" role="group" aria-label="${esc(T('Day'))}"><button type="button" data-mapday="0" aria-pressed="${sel === 0}">${T('All days')}</button>` +
-    DAYS_BY_DATE.map(d => `<button type="button" data-mapday="${d.d}" aria-pressed="${sel === d.d}">${DL(d.d)}</button>`).join('') + `</div>` +
+    DAYS_BY_DATE.map(d => `<button type="button" data-mapday="${d.d}" class="${d.scenic ? 'scenic' : ''}" aria-pressed="${sel === d.d}">${DL(d.d)}</button>`).join('') + `</div>` +
     `<div class="mapwrap"><svg id="map" class="${sel ? 'dim' : ''}" viewBox="0 0 ${MAP.W} ${MAP.H}" role="img" aria-label="${esc(T('Route map'))}">${buildMap()}</svg>` +
     `<div class="mapctl"><button type="button" data-zoom="0.7" aria-label="Zoom in">+</button><button type="button" data-zoom="1.4" aria-label="Zoom out">−</button></div></div>` +
+    `<div class="legend">${['<i class="lg-route"></i>Route (along roads)', '<i class="lg-local"></i>Local roads, approximate', '<i class="lg-scenic"></i>Scenic driving day', '<i class="lg-sleep"></i>Overnight (day number)', '<i class="lg-stop"></i>Stop', '<i class="lg-mw"></i>Motorway', '<i class="lg-main"></i>Main road', '<i class="lg-town"></i>Town'].map(x => `<span>${T(x)}</span>`).join('')}</div>` +
     (sel ? `<button type="button" class="btn" data-open="${sel}">${esc(T('Open the day'))}: ${esc(T(TRIP.days[sel - 1].from))} → ${esc(T(TRIP.days[sel - 1].to))}</button>` : `<p class="note">${T('Tap a day number, or an overnight stop on the map.')}</p>`);
   const svg = $('#map');
   if (sel) { svg.querySelectorAll('.r-day').forEach(g => g.classList.toggle('sel', +g.dataset.day === sel)); svg.querySelectorAll('.m-sleep').forEach(g => g.classList.toggle('sel', g.dataset.days.includes(' ' + sel + ' '))); }
-  setVB(sel ? dayVB(sel) : [0, 0, MAP.W, MAP.H]);
+  if (!sel) {   // whole trip: fit the routes and size the box to them, so the map isn't a thin strip in a tall frame
+    const ps = DAYS.flatMap(D => D.line.concat(D.stops.map(s => s.xy)));
+    const x0 = Math.min(...ps.map(p => p[0])), x1 = Math.max(...ps.map(p => p[0])), y0 = Math.min(...ps.map(p => p[1])), y1 = Math.max(...ps.map(p => p[1]));
+    const pw = (x1 - x0) * 0.03 + 8, pr = (x1 - x0) * 0.04 + 8, w = x1 - x0 + pw + pr, hh = y1 - y0 + 2 * pw;
+    svg.style.minHeight = '0'; svg.style.height = Math.max(220, Math.min(svg.clientWidth * hh / w, window.innerHeight * 0.62)) + 'px';
+    const ar = svg.clientWidth / svg.clientHeight, cx = x0 - pw + w / 2, cy = (y0 + y1) / 2;
+    let W2 = w, H2 = hh; if (W2 / H2 < ar) W2 = H2 * ar; else H2 = W2 / ar;
+    setVB([cx - W2 / 2, cy - H2 / 2, W2, H2]);
+  } else setVB(dayVB(sel));
   placeLabels(svg);
   drawMe();
   if (MAPX) fillCtx(); else fetch(BASE + 'map-extra.json').then(r => r.ok ? r.json() : null).then(X => { if (X) { MAPX = X; fillCtx(); } }).catch(() => {});
@@ -545,6 +581,8 @@ document.addEventListener('click', e => {
   const gl = t.closest('[data-go]'); if (gl) { go(gl.dataset.go); return; }
   if (t.closest('[data-recsheet]')) { FAB.msg = ''; FAB.d = VIEW.d || fabDay(); recordSheet(); return; }
   const rc = t.closest('[data-rec]'); if (rc) { record(+rc.dataset.rec); return; }
+  const gm = t.closest('[data-gm]');
+  if (gm) { MODE = { global: gm.dataset.gm, days: {} }; saveModes(); refresh(); return; }
   const sm = t.closest('[data-setmode]');
   if (sm) {
     const [d, m] = sm.dataset.setmode.split(':'), dn = +d;

@@ -131,7 +131,7 @@ const MODE_DESC = { fast: 'Motorways wherever possible. Same start time and stop
   bal: 'Scenic roads where they are worth it, motorway on the dull stretches.',
   cine: 'The most scenic roads open in winter, fitted to daylight. Up to 1.5 h longer.',
   safe: 'For bad weather: low roads and motorways, no passes, cliff roads or fog-prone minor roads. Same overnight towns.' };
-const totalFor = m => TRIP.days.reduce((a, d) => a + durMin(planFor(d.d, hasMode(d.d, m) ? m : 'bal')), 0);
+const totalFor = m => TRIP.days.filter(d => !d.test).reduce((a, d) => a + durMin(planFor(d.d, hasMode(d.d, m) ? m : 'bal')), 0);
 let canSaveShared = false, dbRef = null, BUL = {}, BUL_STATE = 'loading';
 /* ---- from V1 lines 1747-1767 ---- */
 const BCAT = { road: 'Road', closure: 'Closure', works: 'Roadworks', strike: 'Strike', protest: 'Protest', restriction: 'Restriction', border: 'Border', weather: 'Weather', event: 'Event', fuel: 'Fuel', traffic: 'Traffic' };

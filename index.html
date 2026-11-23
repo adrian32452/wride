@@ -6498,8 +6498,8 @@ const stopModes = (dnum, name) => MK.filter(m => { const v = variant(dnum, m); r
 
 /* ---------- stats ---------- */
 (function stats() {
-  const km = TRIP.days.reduce((a, d) => a + d.km, 0);
-  const scenic = TRIP.days.filter(d => d.scenic).length;
+  const km = TRIP.days.filter(d => !d.test).reduce((a, d) => a + d.km, 0);
+  const scenic = TRIP.days.filter(d => d.scenic && !d.test).length;
   const items = [
     ['≈' + km.toLocaleString(LOCALE[LANG]), T('kilometres')],
     ['16', T('days')],
@@ -7321,7 +7321,7 @@ const MODE_DESC = { fast: 'Motorways wherever possible. Same start time and stop
   bal: 'Scenic roads where they are worth it, motorway on the dull stretches.',
   cine: 'The most scenic roads open in winter, fitted to daylight. Up to 1.5 h longer.',
   safe: 'For bad weather: low roads and motorways, no passes, cliff roads or fog-prone minor roads. Same overnight towns.' };
-const totalFor = m => TRIP.days.reduce((a, d) => a + durMin(planFor(d.d, hasMode(d.d, m) ? m : 'bal')), 0);
+const totalFor = m => TRIP.days.filter(d => !d.test).reduce((a, d) => a + durMin(planFor(d.d, hasMode(d.d, m) ? m : 'bal')), 0);
 let canSaveShared = false, dbRef = null, BUL = {}, BUL_STATE = 'loading';
 document.getElementById('modes').innerHTML = `<h2>${T('Route style')}</h2><div class="mgrid">` +
   MK.map(m => `<button type="button" class="mbtn" data-gm="${m}" aria-pressed="false"><b>${T(MODE_NAME[m])}</b><span>${T(MODE_DESC[m])}</span><span class="mtot">${T('{0} driving over 16 days', fmtDur(totalFor(m)))}</span></button>`).join('') +
