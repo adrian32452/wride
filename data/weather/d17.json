@@ -8,14 +8,14 @@
       "level": "watch",
       "note": "Possible frost or fog patches early; slow on bridges.",
       "what": "about 1 °C, humidity near 100%, dry, NW 10 km/h; 8–11 °C on return",
-      "when": "08:15"
+      "when": "09:50"
     },
     {
       "id": "n234",
       "level": "watch",
-      "note": "Leave later if fog is lying near Daroca.",
+      "note": "Fog near Daroca should be lifting by late morning.",
       "what": "0–3 °C, very cloudy, humid, dry, light wind",
-      "when": "09:15"
+      "when": "10:45"
     }
   ],
   "issued": "2026-11-27T06:39:00+01:00",
@@ -26,7 +26,7 @@
       "precip": "none",
       "risk": "watch",
       "sky": "overcast to very cloudy",
-      "t": "07:00",
+      "t": "08:30",
       "temp": "0–4",
       "to": "Daroca",
       "vis": "possible fog patches",
@@ -38,7 +38,7 @@
       "precip": "none",
       "risk": "ok",
       "sky": "clearing, partly cloudy",
-      "t": "10:50",
+      "t": "12:20",
       "temp": "6–12",
       "to": "Alcalá de Henares",
       "vis": "good",
@@ -50,7 +50,7 @@
       "precip": "none",
       "risk": "ok",
       "sky": "partly cloudy, high cloud",
-      "t": "14:20",
+      "t": "15:50",
       "temp": "7–10",
       "to": "Madrid Airport",
       "vis": "good",
