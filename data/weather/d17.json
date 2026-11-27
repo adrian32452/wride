@@ -1,125 +1,125 @@
 {
-  "advice": null,
-  "d": 17,
-  "forDate": "2026-11-28",
-  "hot": [
-    {
-      "id": "medinaceli",
-      "level": "watch",
-      "note": "Possible frost or fog patches early; slow on bridges.",
-      "what": "about 1 °C, humidity near 100%, dry, NW 10 km/h; 8–11 °C on return",
-      "when": "09:50"
-    },
-    {
-      "id": "n234",
-      "level": "watch",
-      "note": "Fog near Daroca should be lifting by late morning.",
-      "what": "0–3 °C, very cloudy, humid, dry, light wind",
-      "when": "10:45"
-    }
-  ],
-  "issued": "2026-11-27T06:39:00+01:00",
-  "legs": [
-    {
-      "kind": "mw",
-      "note": "Watch for frost and fog near Medinaceli and on the N-234.",
-      "precip": "none",
-      "risk": "watch",
-      "sky": "overcast to very cloudy",
-      "t": "08:30",
-      "temp": "0–4",
-      "to": "Daroca",
-      "vis": "possible fog patches",
-      "wind": "light"
-    },
-    {
-      "kind": "mw",
-      "note": "",
-      "precip": "none",
-      "risk": "ok",
-      "sky": "clearing, partly cloudy",
-      "t": "12:20",
-      "temp": "6–12",
-      "to": "Alcalá de Henares",
-      "vis": "good",
-      "wind": "light"
-    },
-    {
-      "kind": "mw",
-      "note": "",
-      "precip": "none",
-      "risk": "ok",
-      "sky": "partly cloudy, high cloud",
-      "t": "15:50",
-      "temp": "7–10",
-      "to": "Madrid Airport",
-      "vis": "good",
-      "wind": "light NE"
-    }
-  ],
-  "mode": "forecast",
-  "points": [
-    {
-      "name": "Madrid Airport",
-      "precip": "none",
-      "role": "start",
-      "sky": "overcast, then partly cloudy",
-      "tmax": 7,
-      "tmin": 4,
-      "wind": "NE 5–11 km/h, gusts ≤ 19"
-    },
-    {
-      "name": "Medinaceli",
-      "precip": "none",
-      "role": "scenic",
-      "sky": "partly cloudy",
-      "tmax": 11,
-      "tmin": 1,
-      "wind": "NW 10 km/h"
-    },
-    {
-      "name": "Daroca",
-      "precip": "none",
-      "role": "scenic",
-      "sky": "very cloudy early, clear afternoon",
-      "tmax": 14,
-      "tmin": 0,
-      "wind": "SE 8 km/h, gusts 13"
-    },
-    {
-      "name": "Madrid Airport",
-      "precip": "none",
-      "role": "overnight",
-      "sky": "partly cloudy",
-      "tmax": 7,
-      "tmin": 4,
-      "wind": "light NE"
-    }
-  ],
-  "route": "fast",
-  "source": "AEMET",
-  "summary": "Dry, mostly cloudy morning turning sunnier, with a cold start (about 0–1 °C at Medinaceli and Daroca) and possible frost or fog patches; no AEMET warnings found. Medinaceli figures are from AEMET's daily table; the hourly Medinaceli page was stale and discarded.",
-  "sunset": "High cloud and sunny spells over Madrid in the afternoon; the evening is beyond the hourly forecast found.",
-  "verdict": {
-    "level": "watch",
-    "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and at Daroca (0–3 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 7–14 °C later. Drive gently on bridges and shaded stretches before 10:00."
+ "advice": null,
+ "d": 17,
+ "forDate": "2026-11-28",
+ "hot": [
+  {
+   "id": "medinaceli",
+   "level": "watch",
+   "note": "Possible frost or fog patches early; slow on bridges and in shade.",
+   "what": "about 1 °C at dawn, humidity up to 100%, dry (20% chance), NE 15 km/h; 11–13 °C on return",
+   "when": "09:50"
   },
-  "verdicts": {
-    "bal": {
-      "level": "watch",
-      "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and at Daroca (0–3 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 7–14 °C later. Drive gently on bridges and shaded stretches before 10:00."
-    },
-    "cine": {
-      "level": "watch",
-      "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and at Daroca (0–3 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 7–14 °C later. Drive gently on bridges and shaded stretches before 10:00."
-    },
-    "fast": {
-      "level": "watch",
-      "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and at Daroca (0–3 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 7–14 °C later. Drive gently on bridges and shaded stretches before 10:00."
-    },
-    "safe": {
-      "level": "watch",
-      "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and at Daroca (0–3 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 7–14 °C later. Drive gently on bridges and shaded stretches before 10:00."
-    }
+  {
+   "id": "n234",
+   "level": "watch",
+   "note": "Fog patches possible in the morning; should lift by late morning.",
+   "what": "1 °C at dawn rising to 15 °C, humidity up to 100%, dry, N 10 km/h",
+   "when": "10:45"
   }
+ ],
+ "issued": "2026-11-27T17:50:00+01:00",
+ "legs": [
+  {
+   "kind": "mw",
+   "note": "Watch for frost and fog near Medinaceli and on the N-234.",
+   "precip": "none",
+   "risk": "watch",
+   "sky": "sunny near Madrid, very cloudy beyond Guadalajara",
+   "t": "08:30",
+   "temp": "1–6",
+   "to": "Daroca",
+   "vis": "possible fog patches",
+   "wind": "light NE"
+  },
+  {
+   "kind": "mw",
+   "note": "",
+   "precip": "none",
+   "risk": "ok",
+   "sky": "very cloudy, brighter towards Madrid",
+   "t": "12:20",
+   "temp": "9–15",
+   "to": "Alcalá de Henares",
+   "vis": "good",
+   "wind": "light"
+  },
+  {
+   "kind": "mw",
+   "note": "",
+   "precip": "none",
+   "risk": "ok",
+   "sky": "sunny",
+   "t": "15:50",
+   "temp": "11–12",
+   "to": "Madrid Airport",
+   "vis": "good",
+   "wind": "calm"
+  }
+ ],
+ "mode": "forecast",
+ "points": [
+  {
+   "name": "Madrid Airport",
+   "precip": "none",
+   "role": "start",
+   "sky": "sunny",
+   "tmax": 12,
+   "tmin": 4,
+   "wind": "calm, gusts under 10 km/h"
+  },
+  {
+   "name": "Medinaceli",
+   "precip": "20% chance, none expected",
+   "role": "scenic",
+   "sky": "very cloudy",
+   "tmax": 13,
+   "tmin": 1,
+   "wind": "NE 15 km/h"
+  },
+  {
+   "name": "Daroca",
+   "precip": "none",
+   "role": "scenic",
+   "sky": "very cloudy",
+   "tmax": 15,
+   "tmin": 1,
+   "wind": "N 10 km/h"
+  },
+  {
+   "name": "Madrid Airport",
+   "precip": "none",
+   "role": "overnight",
+   "sky": "sunny, clear evening",
+   "tmax": 12,
+   "tmin": 4,
+   "wind": "calm"
+  }
+ ],
+ "route": "fast",
+ "source": "AEMET",
+ "summary": "Dry Saturday with a cold, damp start (about 1 °C at Medinaceli and Daroca, humidity near 100%) so frost or fog patches are possible early, then 11–15 °C; no AEMET warnings for Soria. AEMET hourly pages for Medinaceli and Daroca were stale and discarded (daily tables used); the Zaragoza warnings page was stale, so Zaragoza warnings are unchecked.",
+ "sunset": "Clear sky over Madrid around sunset (17:50), about 10 °C.",
+ "verdict": {
+  "level": "watch",
+  "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and around Daroca (1 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 11–15 °C by afternoon. Drive gently on bridges and shaded stretches before 10:30."
+ },
+ "verdicts": {
+  "bal": {
+   "level": "watch",
+   "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and around Daroca (1 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 11–15 °C by afternoon. Drive gently on bridges and shaded stretches before 10:30."
+  },
+  "cine": {
+   "level": "watch",
+   "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and around Daroca (1 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 11–15 °C by afternoon. Drive gently on bridges and shaded stretches before 10:30."
+  },
+  "fast": {
+   "level": "watch",
+   "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and around Daroca (1 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 11–15 °C by afternoon. Drive gently on bridges and shaded stretches before 10:30."
+  },
+  "safe": {
+   "level": "watch",
+   "text": "Near 0 °C at dawn on the A-2 at Medinaceli (about 1 °C, humidity near 100%) and around Daroca (1 °C), so frost or fog patches are possible on the morning drive; dry with light wind, 11–15 °C by afternoon. Drive gently on bridges and shaded stretches before 10:30."
+  }
+ }
 }
