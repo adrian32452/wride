@@ -596,11 +596,11 @@
 1315	Letališče Madrid
 1316	Brez nočitve: avto se vrne na okence za najem
 1317	Preizkusni dan z najetim avtom: pravila za stare dizle s potovanja ne veljajo
-1318	Odhod v temi: sonce vzide okoli 08:20
+1318	Nazaj na letališču okoli 16:15, precej pred sončnim zahodom (17:50)
 1319	Calatayud
 1320	Daroca
 1321	Alcalá de Henares
-1322	Odhod ob 07:00, približno 80 minut pred sončnim vzhodom. Za najet avto z okoljsko nalepko pravila o izpustih v Madridu ne veljajo.
+1322	Odhod okoli 08:30, takoj po sončnem vzhodu. Za najeti avto z okoljsko nalepko madridska pravila o emisijah ne veljajo.
 1323	Obzidano srednjeveško mesto: vstopite skozi Puerta Baja, pojdite do Basílice de Santa María in po obzidju za razgled. Približno 2 uri s kavo.
 1324	Av. de Don Juan Tenorio s/n, nakupovalno območje na severovzhodnem robu mesta, ob A-2. Staro mesto in univerza sta 3 km stran.
 1325	Nazaj na letališču pred sončnim zahodom (okoli 17:50). Natočite gorivo, preden vrnete najeti avto.

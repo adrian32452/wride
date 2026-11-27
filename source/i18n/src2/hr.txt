@@ -596,11 +596,11 @@
 1315	Zračna luka Madrid
 1316	Bez noćenja: automobil se vraća na šalter najma
 1317	Probni dan s unajmljenim automobilom: pravila za stare dizelaše s putovanja ne vrijede
-1318	Polazak po mraku: izlazak sunca oko 08:20
+1318	Natrag u zračnoj luci oko 16:15, dosta prije zalaska sunca (17:50)
 1319	Calatayud
 1320	Daroca
 1321	Alcalá de Henares
-1322	Polazak u 07:00, oko 80 minuta prije izlaska sunca. Na unajmljeni automobil s ekološkom naljepnicom ne odnose se madridska pravila o emisijama.
+1322	Polazak oko 08:30, odmah nakon izlaska sunca. Na unajmljeni automobil s ekološkom oznakom madridska pravila o emisijama ne odnose se.
 1323	Srednjovjekovni grad sa zidinama: uđite kroz Puerta Baja, popnite se do Basílice de Santa María i prošećite zidinama zbog pogleda. Oko 2 sata uz kavu.
 1324	Av. de Don Juan Tenorio s/n, trgovačka zona na sjeveroistočnom rubu grada, uz A-2. Staro središte i sveučilište su 3 km dalje.
 1325	Natrag u zračnoj luci prije zalaska sunca (oko 17:50). Natočite gorivo prije povrata unajmljenog automobila.

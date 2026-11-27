@@ -598,11 +598,11 @@
 1315	Aéroport de Madrid
 1316	Pas de nuit sur place : la voiture est rendue au comptoir de location
 1317	Journée d'essai en voiture de location : les règles des vieux diesels du voyage ne s'appliquent pas
-1318	Départ de nuit : le soleil se lève vers 08:20
+1318	Retour à l’aéroport vers 16:15, bien avant le coucher du soleil (17:50)
 1319	Calatayud
 1320	Daroca
 1321	Alcalá de Henares
-1322	Départ à 07:00, environ 80 minutes avant le lever du soleil. Une voiture de location avec vignette environnementale n'est pas concernée par les règles d'émissions de Madrid.
+1322	Départ vers 08:30, juste après le lever du soleil. Une voiture de location avec vignette environnementale n’est pas concernée par les règles d’émissions de Madrid.
 1323	Ville médiévale fortifiée : entrez par la Puerta Baja, montez à la Basílica de Santa María et longez les remparts pour la vue. Environ 2 heures avec un café.
 1324	Av. de Don Juan Tenorio s/n, la zone commerciale au nord-est de la ville, près de l'A-2. La vieille ville et l'université sont à 3 km.
 1325	Retour à l'aéroport avant le coucher du soleil (vers 17:50). Faites le plein avant de rendre la voiture de location.

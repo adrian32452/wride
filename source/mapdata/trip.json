@@ -854,7 +854,7 @@
    "sleep": "No overnight: the car goes back to the rental desk",
    "flags": [
     "Test day in a rental car: the old-diesel rules of the main trip don't apply",
-    "Leaves in the dark: sunrise is about 08:20"
+    "Back at the airport about 16:15, well before sunset (17:50)"
    ],
    "stops": [
     {
@@ -862,7 +862,7 @@
      "lat": 40.4722,
      "lon": -3.5609,
      "t": "start",
-     "note": "Leave 07:00, about 80 minutes before sunrise. A rental car with an environmental label is not affected by Madrid's low-emission rules.",
+     "note": "Leave about 08:30, just after sunrise. A rental car with an environmental label is not affected by Madrid's low-emission rules.",
      "w": ""
     },
     {

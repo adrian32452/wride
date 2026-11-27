@@ -596,11 +596,11 @@
 1315	Aeroporto di Madrid
 1316	Nessun pernottamento: l'auto si riconsegna al banco del noleggio
 1317	Giorno di prova con auto a noleggio: le regole per i vecchi diesel del viaggio non valgono
-1318	Partenza col buio: l'alba è verso le 08:20
+1318	Di nuovo in aeroporto verso le 16:15, ben prima del tramonto (17:50)
 1319	Calatayud
 1320	Daroca
 1321	Alcalá de Henares
-1322	Partenza alle 07:00, circa 80 minuti prima dell'alba. Un'auto a noleggio con bollino ambientale non è toccata dalle regole sulle emissioni di Madrid.
+1322	Partenza verso le 08:30, subito dopo l’alba. Un’auto a noleggio con etichetta ambientale non è soggetta alle regole sulle emissioni di Madrid.
 1323	Città medievale murata: entra dalla Puerta Baja, sali alla Basílica de Santa María e percorri le mura per il panorama. Circa 2 ore con un caffè.
 1324	Av. de Don Juan Tenorio s/n, la zona commerciale al margine nord-est della città, accanto alla A-2. Il centro storico e l'università sono a 3 km.
 1325	Di nuovo in aeroporto prima del tramonto (verso le 17:50). Fai il pieno prima di riconsegnare l'auto a noleggio.

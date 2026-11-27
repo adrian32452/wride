@@ -596,11 +596,11 @@
 1315	Aeropuerto de Madrid
 1316	Sin noche fuera: el coche se devuelve en el mostrador de alquiler
 1317	Día de prueba con coche de alquiler: las normas para diésel antiguos del viaje no se aplican
-1318	Salida de noche: el amanecer es hacia las 08:20
+1318	De vuelta en el aeropuerto hacia las 16:15, mucho antes del atardecer (17:50)
 1319	Calatayud
 1320	Daroca
 1321	Alcalá de Henares
-1322	Salida a las 07:00, unos 80 minutos antes del amanecer. Un coche de alquiler con etiqueta ambiental no se ve afectado por las normas de emisiones de Madrid.
+1322	Salida hacia las 08:30, justo después del amanecer. Un coche de alquiler con etiqueta ambiental no se ve afectado por las normas de emisiones de Madrid.
 1323	Ciudad medieval amurallada: entra por la Puerta Baja, sube a la Basílica de Santa María y recorre las murallas por las vistas. Unas 2 horas con un café.
 1324	Av. de Don Juan Tenorio s/n, la zona comercial del borde nordeste de la ciudad, junto a la A-2. El casco antiguo y la universidad están a 3 km.
 1325	De vuelta en el aeropuerto antes del atardecer (hacia las 17:50). Reposta antes de devolver el coche de alquiler.

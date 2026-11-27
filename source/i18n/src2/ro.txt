@@ -596,11 +596,11 @@
 1315	Aeroportul Madrid
 1316	Fără înnoptare: mașina se predă la biroul de închirieri
 1317	Zi de test cu mașină închiriată: regulile pentru dieselurile vechi din excursie nu se aplică
-1318	Plecare pe întuneric: răsăritul e pe la 08:20
+1318	Înapoi la aeroport pe la 16:15, cu mult înainte de apus (17:50)
 1319	Calatayud
 1320	Daroca
 1321	Alcalá de Henares
-1322	Plecare la 07:00, cam cu 80 de minute înainte de răsărit. O mașină închiriată cu etichetă de mediu nu e afectată de regulile de emisii din Madrid.
+1322	Plecare pe la 08:30, imediat după răsărit. O mașină închiriată cu etichetă de mediu nu e afectată de regulile de emisii din Madrid.
 1323	Oraș medieval cu ziduri: intri pe Puerta Baja, urci la Basílica de Santa María și mergi pe ziduri pentru priveliște. Cam 2 ore, cu o cafea.
 1324	Av. de Don Juan Tenorio s/n, zona comercială de la marginea de nord-est a orașului, lângă A-2. Centrul vechi și universitatea sunt la 3 km.
 1325	Înapoi la aeroport înainte de apus (pe la 17:50). Alimentează înainte să predai mașina închiriată.

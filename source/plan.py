@@ -116,7 +116,7 @@ D = {
     ("border", "Serbia → Romania (Iron Gates I dam)", 45),
     ("tz", 60),
     ("drive", "Drobeta-Turnu Severin", 12, 20, "DN6")]),
-17: ("07:00", 40.4722, -3.5609, 1, [
+17: ("08:30", 40.4722, -3.5609, 1, [
     ("drive", "Daroca", 265, 170, "A-2 / N-234"),
     ("stop", "Daroca: car viewing", 60, "M", ""),
     ("drive", "Alcalá de Henares", 240, 150, "N-234 / A-2"),
