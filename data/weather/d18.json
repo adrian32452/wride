@@ -1,0 +1,137 @@
+{
+  "advice": null,
+  "d": 18,
+  "forDate": "2026-11-29",
+  "hot": [
+    {
+      "id": "pedrizas",
+      "level": "ok",
+      "note": "",
+      "what": "cloudy intervals, about 5–7 °C, dry, S 10 km/h",
+      "when": "09:45"
+    },
+    {
+      "id": "a45-north",
+      "level": "ok",
+      "note": "",
+      "what": "dry, 13–16 °C, calm",
+      "when": "12:00"
+    }
+  ],
+  "issued": "2026-11-27T06:39:00+01:00",
+  "legs": [
+    {
+      "kind": "mw",
+      "note": "",
+      "precip": "none",
+      "risk": "ok",
+      "sky": "slightly cloudy",
+      "t": "08:00",
+      "temp": "9–12",
+      "to": "Fuengirola",
+      "vis": "good",
+      "wind": "calm"
+    },
+    {
+      "kind": "mw",
+      "note": "",
+      "precip": "none",
+      "risk": "ok",
+      "sky": "cloudy intervals",
+      "t": "09:25",
+      "temp": "5–12",
+      "to": "Antequera dolmens",
+      "vis": "good",
+      "wind": "S 10 km/h"
+    },
+    {
+      "kind": "mw",
+      "note": "",
+      "precip": "none",
+      "risk": "ok",
+      "sky": "cloudy intervals to fair",
+      "t": "11:35",
+      "temp": "12–16",
+      "to": "Córdoba",
+      "vis": "good",
+      "wind": "light"
+    },
+    {
+      "kind": "mw",
+      "note": "",
+      "precip": "none",
+      "risk": "ok",
+      "sky": "cloudy intervals, fair near the coast",
+      "t": "14:00",
+      "temp": "13–20",
+      "to": "Málaga Airport",
+      "vis": "good",
+      "wind": "light"
+    }
+  ],
+  "mode": "forecast",
+  "points": [
+    {
+      "name": "Málaga Airport",
+      "precip": "none",
+      "role": "start",
+      "sky": "slightly cloudy",
+      "tmax": 20,
+      "tmin": 9,
+      "wind": "calm"
+    },
+    {
+      "name": "Antequera / Las Pedrizas",
+      "precip": "15% chance, none expected",
+      "role": "scenic",
+      "sky": "cloudy intervals",
+      "tmax": 15,
+      "tmin": 5,
+      "wind": "S 10 km/h"
+    },
+    {
+      "name": "Lucena (A-45 north)",
+      "precip": "none",
+      "role": "scenic",
+      "sky": "mostly fair",
+      "tmax": 16,
+      "tmin": 7,
+      "wind": "calm"
+    },
+    {
+      "name": "Málaga Airport",
+      "precip": "none",
+      "role": "overnight",
+      "sky": "slightly cloudy",
+      "tmax": 20,
+      "tmin": 9,
+      "wind": "calm"
+    }
+  ],
+  "route": "fast",
+  "source": "AEMET",
+  "summary": "Dry Sunday with light wind across the route, cool on the Las Pedrizas pass (about 4–13 °C); no AEMET warnings found. The Villanueva del Rosario page was stale and discarded, so the pass is judged from AEMET Antequera, adjusted for height.",
+  "sunset": "Slightly cloudy over Málaga around sunset (18:04).",
+  "verdict": {
+    "level": "ok",
+    "text": "Dry and fairly bright: Málaga 9–20 °C and calm, Antequera area 5–15 °C with cloudy intervals (15% rain chance), Lucena 7–16 °C; no warnings found. No action needed."
+  },
+  "verdicts": {
+    "bal": {
+      "level": "ok",
+      "text": "Dry and fairly bright: Málaga 9–20 °C and calm, Antequera area 5–15 °C with cloudy intervals (15% rain chance), Lucena 7–16 °C; no warnings found. No action needed."
+    },
+    "cine": {
+      "level": "ok",
+      "text": "Dry and fairly bright: Málaga 9–20 °C and calm, Antequera area 5–15 °C with cloudy intervals (15% rain chance), Lucena 7–16 °C; no warnings found. No action needed."
+    },
+    "fast": {
+      "level": "ok",
+      "text": "Dry and fairly bright: Málaga 9–20 °C and calm, Antequera area 5–15 °C with cloudy intervals (15% rain chance), Lucena 7–16 °C; no warnings found. No action needed."
+    },
+    "safe": {
+      "level": "ok",
+      "text": "Dry and fairly bright: Málaga 9–20 °C and calm, Antequera area 5–15 °C with cloudy intervals (15% rain chance), Lucena 7–16 °C; no warnings found. No action needed."
+    }
+  }
+}

@@ -2,15 +2,15 @@
   "d": 17,
   "date": "2026-11-28",
   "mode": "bal",
-  "issued": "2026-11-26T17:41:02+01:00",
-  "summary": "A dry, clear day with a frosty start: around 0–1 °C at Medinaceli and Daroca between 07:00 and 09:50, warming to 11–14 °C by midday. No closures, roadworks, strikes or events found that affect the A-2 or N-234 on 28 Nov.",
+  "issued": "2026-11-27T06:57:15+01:00",
+  "summary": "Dry day with a cold start: about 0–1 °C at Medinaceli and Daroca on the 07:00–09:50 leg, so watch for frost or fog patches, then 7–14 °C and brighter later. No closures, roadworks, strikes or events found that affect the A-2 or N-234 on 28 Nov.",
   "items": [
     {
       "cat": "weather",
       "sev": "watch",
       "where": "A-2 at Medinaceli; N-234 Calatayud–Daroca",
-      "title": "Frost on bridges and shaded bends early on",
-      "detail": "Near 0 °C on the morning leg, dry and clear, with possible mist patches near Daroca. Take bridges and the N-234 bends gently until mid-morning; no AEMET warning found for 28 Nov.",
+      "title": "Frost or fog patches possible before 10:00",
+      "detail": "About 1 °C with humidity near 100% at Medinaceli around 08:15 and 0–3 °C near Daroca around 09:15. Drive gently on bridges and shaded bends, and leave Calatayud later if fog is lying; no AEMET warning found.",
       "url": "https://www.aemet.es/es/eltiempo/prediccion/avisos",
       "src": "AEMET / weather check"
     },
@@ -19,14 +19,14 @@
       "sev": "info",
       "where": "A-2 Alcalá de Henares – Madrid",
       "title": "Bus-VAO lane on the A-2 toward Madrid",
-      "detail": "The A-2 now has a Bus-VAO (high-occupancy) lane between Alcalá and Madrid. Check the overhead signs for who may use it before moving into it on the way back to the airport.",
+      "detail": "The A-2 has a Bus-VAO (high-occupancy) lane between Alcalá and Madrid. Check the overhead signs for who may use it before moving into it on the way back to the airport.",
       "url": "https://www.dgt.es/comunicacion/notas-de-prensa/20251031-nuevo-bus-vao-de-la-a-2",
       "src": "DGT"
     }
   ],
   "weather": [
-    {"place": "Madrid Airport", "date": "2026-11-28", "tmin": 0, "tmax": 12, "sky": "clear morning, fair afternoon, cloudy evening", "precip": "0 mm", "wind": "~4 km/h"},
-    {"place": "Medinaceli", "date": "2026-11-28", "tmin": 1, "tmax": 11, "sky": "partly cloudy", "precip": "0% chance", "wind": "NW 10 km/h"},
-    {"place": "Daroca", "date": "2026-11-28", "tmin": 0, "tmax": 14, "sky": "clear", "precip": "0% chance", "wind": "W 5 km/h"}
+    {"place": "Madrid Airport", "date": "2026-11-28", "tmin": 4, "tmax": 7, "sky": "overcast, then partly cloudy", "precip": "none", "wind": "NE 5–11 km/h, gusts ≤ 19"},
+    {"place": "Medinaceli", "date": "2026-11-28", "tmin": 1, "tmax": 11, "sky": "partly cloudy", "precip": "none", "wind": "NW 10 km/h"},
+    {"place": "Daroca", "date": "2026-11-28", "tmin": 0, "tmax": 14, "sky": "very cloudy early, clear afternoon", "precip": "none", "wind": "SE 8 km/h, gusts 13"}
   ]
 }
