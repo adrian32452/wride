@@ -1,137 +1,137 @@
 {
- "advice": null,
- "d": 18,
- "forDate": "2026-11-29",
- "hot": [
-  {
-   "id": "pedrizas",
-   "level": "ok",
-   "note": "",
-   "what": "clear, about 5–7 °C, dry, S 10 km/h; about 15 °C on return",
-   "when": "09:45"
+  "advice": null,
+  "d": 18,
+  "forDate": "2026-11-29",
+  "hot": [
+    {
+      "id": "pedrizas",
+      "level": "ok",
+      "note": "",
+      "what": "cloudless, about 7–9 °C in the morning, 15–16 °C on return, dry, S 15 km/h",
+      "when": "10:00"
+    },
+    {
+      "id": "a45-north",
+      "level": "ok",
+      "note": "",
+      "what": "cloudless, about 13–16 °C, dry, E 5 km/h",
+      "when": "12:15"
+    }
+  ],
+  "issued": "2026-11-28T06:45:00+01:00",
+  "legs": [
+    {
+      "kind": "mw",
+      "note": "",
+      "precip": "none",
+      "risk": "ok",
+      "sky": "partly cloudy",
+      "t": "08:00",
+      "temp": "9",
+      "to": "Fuengirola",
+      "vis": "good",
+      "wind": "NW 14 km/h"
+    },
+    {
+      "kind": "mw",
+      "note": "",
+      "precip": "none",
+      "risk": "ok",
+      "sky": "cloudless",
+      "t": "09:25",
+      "temp": "7–12",
+      "to": "Antequera dolmens",
+      "vis": "good",
+      "wind": "S 15 km/h"
+    },
+    {
+      "kind": "mw",
+      "note": "",
+      "precip": "none",
+      "risk": "ok",
+      "sky": "cloudless",
+      "t": "11:35",
+      "temp": "12–16",
+      "to": "Córdoba",
+      "vis": "good",
+      "wind": "light E"
+    },
+    {
+      "kind": "mw",
+      "note": "",
+      "precip": "none",
+      "risk": "ok",
+      "sky": "cloudless, partly cloudy on the coast",
+      "t": "14:00",
+      "temp": "16–18",
+      "to": "Málaga Airport",
+      "vis": "good",
+      "wind": "light S to E"
+    }
+  ],
+  "mode": "forecast",
+  "points": [
+    {
+      "name": "Málaga Airport",
+      "precip": "none",
+      "role": "start",
+      "sky": "partly cloudy",
+      "tmax": 18,
+      "tmin": 8,
+      "wind": "NW 11–14 km/h in the morning, light E in the afternoon"
+    },
+    {
+      "name": "Villanueva del Rosario",
+      "precip": "none",
+      "role": "scenic",
+      "sky": "cloudless",
+      "tmax": 16,
+      "tmin": 6,
+      "wind": "S 15 km/h"
+    },
+    {
+      "name": "Lucena",
+      "precip": "none",
+      "role": "scenic",
+      "sky": "cloudless",
+      "tmax": 16,
+      "tmin": 7,
+      "wind": "E 5 km/h"
+    },
+    {
+      "name": "Málaga Airport",
+      "precip": "none",
+      "role": "overnight",
+      "sky": "partly cloudy",
+      "tmax": 18,
+      "tmin": 8,
+      "wind": "light S to SW in the evening"
+    }
+  ],
+  "route": "fast",
+  "source": "AEMET and yr.no",
+  "summary": "Dry and sunny Sunday in Málaga and Córdoba provinces, 6–18 °C with light winds; AEMET shows no hazard for the Subbética area. The Málaga warnings page found was stale (October), so Málaga warnings are unchecked; AEMET hourly pages for Villanueva del Rosario and Lucena were stale and discarded (daily tables used).",
+  "sunset": "Partly cloudy on the coast around sunset (18:04), about 14 °C.",
+  "verdict": {
+    "level": "ok",
+    "text": "Dry, sunny day: cloudless at Las Pedrizas (6–16 °C, S 15 km/h) and on the A-45 towards Córdoba (7–16 °C, light wind). No weather issues; normal driving."
   },
-  {
-   "id": "a45-north",
-   "level": "ok",
-   "note": "",
-   "what": "partly cloudy, 13–16 °C, dry, calm",
-   "when": "12:15"
+  "verdicts": {
+    "bal": {
+      "level": "ok",
+      "text": "Dry, sunny day: cloudless at Las Pedrizas (6–16 °C, S 15 km/h) and on the A-45 towards Córdoba (7–16 °C, light wind). No weather issues; normal driving."
+    },
+    "cine": {
+      "level": "ok",
+      "text": "Dry, sunny day: cloudless at Las Pedrizas (6–16 °C, S 15 km/h) and on the A-45 towards Córdoba (7–16 °C, light wind). No weather issues; normal driving."
+    },
+    "fast": {
+      "level": "ok",
+      "text": "Dry, sunny day: cloudless at Las Pedrizas (6–16 °C, S 15 km/h) and on the A-45 towards Córdoba (7–16 °C, light wind). No weather issues; normal driving."
+    },
+    "safe": {
+      "level": "ok",
+      "text": "Dry, sunny day: cloudless at Las Pedrizas (6–16 °C, S 15 km/h) and on the A-45 towards Córdoba (7–16 °C, light wind). No weather issues; normal driving."
+    }
   }
- ],
- "issued": "2026-11-27T17:50:00+01:00",
- "legs": [
-  {
-   "kind": "mw",
-   "note": "",
-   "precip": "none",
-   "risk": "ok",
-   "sky": "little cloud",
-   "t": "08:00",
-   "temp": "9–12",
-   "to": "Fuengirola",
-   "vis": "good",
-   "wind": "calm"
-  },
-  {
-   "kind": "mw",
-   "note": "",
-   "precip": "none",
-   "risk": "ok",
-   "sky": "clear",
-   "t": "09:25",
-   "temp": "5–12",
-   "to": "Antequera dolmens",
-   "vis": "good",
-   "wind": "S 10 km/h"
-  },
-  {
-   "kind": "mw",
-   "note": "",
-   "precip": "none",
-   "risk": "ok",
-   "sky": "partly cloudy",
-   "t": "11:35",
-   "temp": "12–16",
-   "to": "Córdoba",
-   "vis": "good",
-   "wind": "light"
-  },
-  {
-   "kind": "mw",
-   "note": "",
-   "precip": "none",
-   "risk": "ok",
-   "sky": "partly cloudy, little cloud near the coast",
-   "t": "14:00",
-   "temp": "14–20",
-   "to": "Málaga Airport",
-   "vis": "good",
-   "wind": "light"
-  }
- ],
- "mode": "forecast",
- "points": [
-  {
-   "name": "Málaga Airport",
-   "precip": "none",
-   "role": "start",
-   "sky": "little cloud",
-   "tmax": 20,
-   "tmin": 9,
-   "wind": "calm"
-  },
-  {
-   "name": "Antequera / Las Pedrizas",
-   "precip": "none",
-   "role": "scenic",
-   "sky": "clear morning",
-   "tmax": 17,
-   "tmin": 6,
-   "wind": "S 10 km/h"
-  },
-  {
-   "name": "Lucena (A-45 north)",
-   "precip": "none",
-   "role": "scenic",
-   "sky": "partly cloudy",
-   "tmax": 16,
-   "tmin": 7,
-   "wind": "calm"
-  },
-  {
-   "name": "Málaga Airport",
-   "precip": "none",
-   "role": "overnight",
-   "sky": "little cloud",
-   "tmax": 20,
-   "tmin": 9,
-   "wind": "calm"
-  }
- ],
- "route": "fast",
- "source": "AEMET",
- "summary": "Dry, calm Sunday across the route, cool on the Las Pedrizas pass early (about 5–7 °C); no AEMET warnings for Málaga or Córdoba. The Villanueva del Rosario pages were stale and discarded, so the pass is judged from AEMET Antequera adjusted for height.",
- "sunset": "Little cloud over Málaga around sunset (18:04).",
- "verdict": {
-  "level": "ok",
-  "text": "Dry and calm: Málaga 9–20 °C with little cloud, Antequera 6–17 °C and clear in the morning (about 5–7 °C on the Las Pedrizas pass at 09:45), Lucena 7–16 °C; no AEMET warnings for Málaga or Córdoba. No action needed."
- },
- "verdicts": {
-  "bal": {
-   "level": "ok",
-   "text": "Dry and calm: Málaga 9–20 °C with little cloud, Antequera 6–17 °C and clear in the morning (about 5–7 °C on the Las Pedrizas pass at 09:45), Lucena 7–16 °C; no AEMET warnings for Málaga or Córdoba. No action needed."
-  },
-  "cine": {
-   "level": "ok",
-   "text": "Dry and calm: Málaga 9–20 °C with little cloud, Antequera 6–17 °C and clear in the morning (about 5–7 °C on the Las Pedrizas pass at 09:45), Lucena 7–16 °C; no AEMET warnings for Málaga or Córdoba. No action needed."
-  },
-  "fast": {
-   "level": "ok",
-   "text": "Dry and calm: Málaga 9–20 °C with little cloud, Antequera 6–17 °C and clear in the morning (about 5–7 °C on the Las Pedrizas pass at 09:45), Lucena 7–16 °C; no AEMET warnings for Málaga or Córdoba. No action needed."
-  },
-  "safe": {
-   "level": "ok",
-   "text": "Dry and calm: Málaga 9–20 °C with little cloud, Antequera 6–17 °C and clear in the morning (about 5–7 °C on the Las Pedrizas pass at 09:45), Lucena 7–16 °C; no AEMET warnings for Málaga or Córdoba. No action needed."
-  }
- }
 }

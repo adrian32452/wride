@@ -1,83 +1,83 @@
 {
- "d": 18,
- "date": "2026-11-29",
- "mode": "bal",
- "issued": "2026-11-27T17:53:00+01:00",
- "summary": "On Sundays the Mezquita-Catedral is closed to tourist visits from about 11:30 to 15:00 for Mass, which is exactly when the plan has you in Córdoba (13:00–14:00), so change the Córdoba stop. Weather is dry and calm, and it is general election day (no driving restrictions).",
- "items": [
-  {
-   "cat": "event",
-   "sev": "warn",
-   "where": "Córdoba, Mezquita-Catedral",
-   "title": "Mezquita closed to visitors at midday on Sunday",
-   "detail": "Sunday tourist visits run about 08:30–11:30 and 15:00–18:00, with Masses at 12:00 and 13:30, so a 13:00–14:00 stop will not get inside. Either swap the order (Córdoba first, arriving before 11:00, then Antequera) or stay in Córdoba until 15:00 and leave about an hour later; otherwise just see the outside and the Patio de los Naranjos.",
-   "url": "https://www.turismodecordoba.org/84/gdocumental/l2_a3_c1/Horarios.pdf",
-   "src": "Turismo de Córdoba"
-  },
-  {
-   "cat": "event",
-   "sev": "watch",
-   "where": "Antequera dolmens",
-   "title": "Dolmens close at 15:00 on Sundays",
-   "detail": "From mid-September to December the Dolmens site opens 09:00–15:00 on Sundays, so the planned 10:35 visit fits; if you swap the order to see the Mezquita in the morning, you must reach the dolmens by about 14:15.",
-   "url": "https://whichmuseum.com/museum/archaeological-dolmens-of-antequera-28815/opening-hours",
-   "src": "WhichMuseum (check with the site)"
-  },
-  {
-   "cat": "restriction",
-   "sev": "watch",
-   "where": "Córdoba historic centre",
-   "title": "Low-emission zone around the Mezquita",
-   "detail": "Córdoba's zone around the Mezquita, Alcázar and Judería admits only 0 and ECO-label cars plus residents and hotel guests, all day every day. Unless the rental car has an ECO or 0 label, park outside it (south bank of the river or north of the centre) and walk in.",
-   "url": "https://andalucia.com/cities/cordoba/low-emission-zone",
-   "src": "Andalucia.com"
-  },
-  {
-   "cat": "works",
-   "sev": "watch",
-   "where": "A-45 near Casabermeja (km 116–125)",
-   "title": "Possible lane closure after summer sinkhole repairs",
-   "detail": "A sinkhole closed lanes on the A-45 near Casabermeja in July and emergency repairs followed; no current status was found. Check DGT traffic before leaving and allow a few extra minutes on the Málaga–Antequera stretch.",
-   "url": "https://euroweeklynews.com/2026/07/31/malaga-drivers-hit-by-multi-kilometre-jams-on-a-45-sinkhole-appears-in-motorway/",
-   "src": "Euro Weekly News"
-  },
-  {
-   "cat": "event",
-   "sev": "info",
-   "where": "Spain",
-   "title": "General election on Sunday 29 Nov",
-   "detail": "Polling stations are open 09:00–20:00 and there are no driving restrictions; expect a little more traffic and parking pressure around schools used as polling stations in towns.",
-   "url": "https://www.elespanol.com/elecciones/generales/",
-   "src": "El Español"
-  }
- ],
- "weather": [
-  {
-   "place": "Málaga Airport",
-   "date": "2026-11-29",
-   "tmin": 9,
-   "tmax": 20,
-   "sky": "little cloud",
-   "precip": "none",
-   "wind": "calm"
-  },
-  {
-   "place": "Antequera / Las Pedrizas",
-   "date": "2026-11-29",
-   "tmin": 6,
-   "tmax": 17,
-   "sky": "clear morning",
-   "precip": "none",
-   "wind": "S 10 km/h"
-  },
-  {
-   "place": "Lucena (A-45 north)",
-   "date": "2026-11-29",
-   "tmin": 7,
-   "tmax": 16,
-   "sky": "partly cloudy",
-   "precip": "none",
-   "wind": "calm"
-  }
- ]
+  "d": 18,
+  "date": "2026-11-29",
+  "mode": "bal",
+  "issued": "2026-11-28T06:55:00+01:00",
+  "summary": "On Sundays the Mezquita-Catedral is closed to tourist visits from about 11:30 to 15:00 for Mass, exactly when the plan has you in Córdoba (13:00–14:00), so change the Córdoba stop. Weather is dry and sunny with light wind, and it is general election day (no driving restrictions).",
+  "items": [
+    {
+      "cat": "event",
+      "sev": "warn",
+      "where": "Córdoba, Mezquita-Catedral",
+      "title": "Mezquita closed to visitors at midday on Sunday",
+      "detail": "Sunday tourist visits run about 08:30–11:30 and 15:00–18:00, with Masses at midday, so a 13:00–14:00 stop will not get inside. Either swap the order (Córdoba first, arriving before 11:00, then Antequera by 14:15) or stay in Córdoba until 15:00 and leave about an hour later; otherwise see only the outside and the Patio de los Naranjos.",
+      "url": "https://www.turismodecordoba.org/84/gdocumental/l2_a3_c1/Horarios.pdf",
+      "src": "Turismo de Córdoba"
+    },
+    {
+      "cat": "event",
+      "sev": "watch",
+      "where": "Antequera dolmens",
+      "title": "Dolmens close at 15:00 on Sundays",
+      "detail": "From mid-September to December the Dolmens site opens 09:00–15:00 on Sundays, so the planned 10:35 visit fits; if you swap the order to see the Mezquita in the morning, you must reach the dolmens by about 14:15.",
+      "url": "https://whichmuseum.com/museum/archaeological-dolmens-of-antequera-28815/opening-hours",
+      "src": "WhichMuseum (check with the site)"
+    },
+    {
+      "cat": "restriction",
+      "sev": "watch",
+      "where": "Córdoba historic centre",
+      "title": "Low-emission zone around the Mezquita",
+      "detail": "Córdoba's zone around the Mezquita, Alcázar and Judería admits only 0 and ECO-label cars plus residents and hotel guests, all day every day. Unless the rental car has an ECO or 0 label, park outside it (south bank of the river or north of the centre) and walk in.",
+      "url": "https://andalucia.com/cities/cordoba/low-emission-zone",
+      "src": "Andalucia.com"
+    },
+    {
+      "cat": "works",
+      "sev": "watch",
+      "where": "A-45 near Casabermeja (km 116–125)",
+      "title": "Possible lane closure after summer sinkhole repairs",
+      "detail": "A sinkhole closed lanes on the A-45 near Casabermeja in July and repairs followed; no current status was found. Check DGT traffic before leaving and allow a few extra minutes on the Málaga–Antequera stretch.",
+      "url": "https://euroweeklynews.com/2026/07/31/malaga-drivers-hit-by-multi-kilometre-jams-on-a-45-sinkhole-appears-in-motorway/",
+      "src": "Euro Weekly News"
+    },
+    {
+      "cat": "event",
+      "sev": "info",
+      "where": "Spain",
+      "title": "General election on Sunday 29 Nov",
+      "detail": "Polling stations are open 09:00–20:00 and there are no driving restrictions; expect a little more traffic and parking pressure around schools used as polling stations.",
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/guia-dudas-elecciones-generales-29n.aspx",
+      "src": "La Moncloa"
+    }
+  ],
+  "weather": [
+    {
+      "place": "Málaga Airport",
+      "date": "2026-11-29",
+      "tmin": 8,
+      "tmax": 18,
+      "sky": "partly cloudy",
+      "precip": "none",
+      "wind": "NW 11–14 km/h in the morning, light E in the afternoon"
+    },
+    {
+      "place": "Villanueva del Rosario (Las Pedrizas)",
+      "date": "2026-11-29",
+      "tmin": 6,
+      "tmax": 16,
+      "sky": "cloudless",
+      "precip": "none",
+      "wind": "S 15 km/h"
+    },
+    {
+      "place": "Lucena (A-45 north)",
+      "date": "2026-11-29",
+      "tmin": 7,
+      "tmax": 16,
+      "sky": "cloudless",
+      "precip": "none",
+      "wind": "E 5 km/h"
+    }
+  ]
 }

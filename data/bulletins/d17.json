@@ -1,56 +1,56 @@
 {
- "d": 17,
- "date": "2026-11-28",
- "mode": "bal",
- "issued": "2026-11-27T17:53:00+01:00",
- "summary": "Dry day with a cold, damp start: about 1 °C at Medinaceli and Daroca, so frost or fog patches are possible on the morning drive before about 10:30, then 11–15 °C. No closures, roadworks, strikes or events found that affect the A-2 or N-234 on 28 Nov.",
- "items": [
-  {
-   "cat": "weather",
-   "sev": "watch",
-   "where": "A-2 at Medinaceli; N-234 Calatayud–Daroca",
-   "title": "Frost or fog patches possible before 10:30",
-   "detail": "About 1 °C with humidity near 100% at Medinaceli and Daroca in the morning. Drive gently on bridges and shaded bends, and leave Calatayud later if fog is lying; no AEMET warning for Soria.",
-   "url": "https://www.aemet.es/es/eltiempo/prediccion/avisos",
-   "src": "AEMET / weather check"
-  },
-  {
-   "cat": "traffic",
-   "sev": "info",
-   "where": "A-2 Alcalá de Henares – Madrid",
-   "title": "Bus-VAO lane on the A-2 toward Madrid",
-   "detail": "The A-2 has a Bus-VAO (high-occupancy) lane between Alcalá and Madrid. Check the overhead signs for who may use it before moving into it on the way back to the airport.",
-   "url": "https://www.dgt.es/comunicacion/notas-de-prensa/20251031-nuevo-bus-vao-de-la-a-2",
-   "src": "DGT"
-  }
- ],
- "weather": [
-  {
-   "place": "Madrid Airport",
-   "date": "2026-11-28",
-   "tmin": 4,
-   "tmax": 12,
-   "sky": "sunny",
-   "precip": "none",
-   "wind": "calm, gusts under 10 km/h"
-  },
-  {
-   "place": "Medinaceli",
-   "date": "2026-11-28",
-   "tmin": 1,
-   "tmax": 13,
-   "sky": "very cloudy",
-   "precip": "20% chance, none expected",
-   "wind": "NE 15 km/h"
-  },
-  {
-   "place": "Daroca",
-   "date": "2026-11-28",
-   "tmin": 1,
-   "tmax": 15,
-   "sky": "very cloudy",
-   "precip": "none",
-   "wind": "N 10 km/h"
-  }
- ]
+  "d": 17,
+  "date": "2026-11-28",
+  "mode": "bal",
+  "issued": "2026-11-28T06:55:00+01:00",
+  "summary": "Dry, grey Saturday with a cold, misty start: 2–4 °C and humidity near 100% on the A-2 at Medinaceli and about 1 °C at dawn around Daroca, so fog patches or light frost are possible on the outbound drive until about 11:00. No closures, roadworks, strikes or events found that affect the A-2 or N-234 today.",
+  "items": [
+    {
+      "cat": "weather",
+      "sev": "watch",
+      "where": "A-2 at Medinaceli; N-234 Calatayud–Daroca",
+      "title": "Mist, fog or frost patches possible before 11:00",
+      "detail": "Medinaceli 3–4 °C with mist and humidity near 100% around 09:00–10:00, Daroca about 1 °C at dawn; AEMET has no warning for Soria. Use dipped lights, keep speed down in fog and take shaded bridges gently; it should lift by late morning.",
+      "url": "https://www.aemet.es/es/eltiempo/prediccion/avisos",
+      "src": "AEMET / weather check"
+    },
+    {
+      "cat": "traffic",
+      "sev": "info",
+      "where": "A-2 Alcalá de Henares – Madrid",
+      "title": "Bus-VAO lane on the A-2 toward Madrid",
+      "detail": "The A-2 has a Bus-VAO (high-occupancy) lane between Alcalá and Madrid. Check the overhead signs for who may use it before moving into it on the way back to the airport.",
+      "url": "https://www.dgt.es/comunicacion/notas-de-prensa/20251031-nuevo-bus-vao-de-la-a-2",
+      "src": "DGT"
+    }
+  ],
+  "weather": [
+    {
+      "place": "Madrid Airport",
+      "date": "2026-11-28",
+      "tmin": 5,
+      "tmax": 9,
+      "sky": "overcast",
+      "precip": "none",
+      "wind": "NE 8 km/h, gusts up to 16 km/h"
+    },
+    {
+      "place": "Medinaceli",
+      "date": "2026-11-28",
+      "tmin": 2,
+      "tmax": 11,
+      "sky": "mist early, then overcast, high cloud from 13:00",
+      "precip": "none",
+      "wind": "NW 11–14 km/h, gusts up to 23 km/h"
+    },
+    {
+      "place": "Daroca",
+      "date": "2026-11-28",
+      "tmin": 1,
+      "tmax": 15,
+      "sky": "very cloudy",
+      "precip": "none",
+      "wind": "N 10 km/h"
+    }
+  ]
 }
